@@ -28,7 +28,7 @@ Please note that these instructions are intended to generate the ISO image in a 
 
 Insert the USB into your Server and prepare to install an Ubuntu distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
 
-.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/dappnode-installation-welcome-screen.png
+.. image:: https://github.com/Shelpin/DAppNode/raw/master/doc/dappnode-installation-welcome-screen.png
 :width: 300 px
 :align: center
 
@@ -61,7 +61,7 @@ Note by following these instructions you will erase your Server's disk contents
 
 If the installation succeeded, your system will reboot, you will have to log in with the user and password provided in the installation, and it should finish with this screen:
 
-.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/dappnode-installation-ending-screen.png?raw=true
+.. image:: https://github.com/Shelpin/DAppNode/raw/master/doc/dappnode-installation-ending-screen.png?raw=true
 :width: 300 px
 :align: center
 

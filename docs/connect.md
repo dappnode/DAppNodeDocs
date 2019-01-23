@@ -23,7 +23,7 @@ If you are not able to download or install the config file, you can set it up ma
 These are the parameters you will need to configure, still depending on your operating system follow the instructions you will find in the website you will be directed to.
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/blob/master/doc/credentialsscreen.png">
+    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/credentialsscreen.png">
 </p>
 
 **VPN TYPE**: Select L2TP over IPSEC
@@ -61,5 +61,5 @@ We have updated our IPFS package (v.0.1.4), and one of the features is to provid
 ```
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/blob/master/doc/ipfsinterface.jpg">
+    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
 </p>

@@ -23,7 +23,7 @@ We have updated our IPFS package (v.0.1.4), and one of the features is to provid
 `/ip4/172.33.1.5/tcp/5001`
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/blob/master/doc/ipfsinterface.jpg">
+    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
 </p>
 
 ## VPN connection
@@ -66,7 +66,7 @@ We have updated our IPFS package (v.0.1.4), and one of the features is to provid
 `/ip4/172.33.1.5/tcp/5001`
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/blob/master/doc/ipfsinterface.jpg">
+    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
 </p>
 
 If you want to know a bit more on IPFS here is a `useful link: <https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937>`
@@ -254,5 +254,5 @@ If you are the owner of an ENS domain you can make this point to the hash you wa
 With these parameters we make the transaction in ethereum and once it’s mined the web will be accessible from that domain!!
 
 <p align="center">
-    <img width="500"src="https://github.com/Shelpin/DAppNode/blob/master/doc/walletdappnodeeth.png">
+    <img width="500"src="https://github.com/Shelpin/DAppNode/raw/master/doc/walletdappnodeeth.png">
 </p>

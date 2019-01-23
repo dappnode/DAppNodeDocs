@@ -1,0 +1,11 @@
+sudo: false
+language: python
+install:
+  - pip install mkdocs
+before_script:
+  - git config --global user.email "dappnode@dappnode.io"
+  - git config --global user.name "dappnode"
+  - git remote rm origin
+  - git remote add origin https://user:${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+script:
+  - mkdocs gh-deploy -v --clean

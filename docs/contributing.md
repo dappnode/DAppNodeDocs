@@ -15,7 +15,7 @@ When bringing people on as contributors we prefer that they start with an issue 
 
 If you want to better understand how does the development process works, please refer to our [wiki pages](https://github.com/dappnode/DAppNode/wiki)
 
-In order to get the repositories setup before contributions refer to the [README.md](https://github.com/dappnode/DAppNode/blob/master/README.md) file.
+In order to get the repositories setup before contributions refer to the [README.md](https://github.com/dappnode/DAppNode/raw/master/README.md) file.
 
 1. _Find a suitable issue_
 

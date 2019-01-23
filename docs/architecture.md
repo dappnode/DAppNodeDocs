@@ -13,9 +13,9 @@ DAppNode is a collection of interdependant docker containeraized packages (refer
 
 ## BIND
 
-Local DAppNode DNS. Links each package docker IP to a name in the format of my.[package-name].dnp.dappnode.eth. I also redirects .eth domains to the ethforward. All rules can be consulted at `eth.hosts <https://github.com/dappnode/DNP_BIND/blob/master/build/bind/eth.hosts>`\_.
+Local DAppNode DNS. Links each package docker IP to a name in the format of my.[package-name].dnp.dappnode.eth. I also redirects .eth domains to the ethforward. All rules can be consulted at `eth.hosts <https://github.com/dappnode/DNP_BIND/raw/master/build/bind/eth.hosts>`\_.
 
-It runs the native linux bind package with with a configuration specified at `named.conf <https://github.com/dappnode/DNP_BIND/blob/master/build/bind/named.conf>`\_. It attempts resolution and otherwise forwards to the Google Public DNS 8.8.8.8 / 8.8.4.4.
+It runs the native linux bind package with with a configuration specified at `named.conf <https://github.com/dappnode/DNP_BIND/raw/master/build/bind/named.conf>`\_. It attempts resolution and otherwise forwards to the Google Public DNS 8.8.8.8 / 8.8.4.4.
 
 ## VPN
 
