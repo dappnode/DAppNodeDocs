@@ -29,7 +29,7 @@ By clicking “Dashboard” you can see a summary of the components that make up
 6. Server stats
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/taabsscreen.png">
+    <img width="1000"src="https://github.com/Shelpin/DAppNode/raw/master/doc/taabsscreen.png">
 </p>
 
 **IMPORTANT NOTE ON SERVER STATS: if you note that the disk capacity is getting near to 100 % you should disable services to avoid the disk getting full. If this happens the DAppNode will get unfunctional, and you will not be able to erase packages once the memory is at 100%**
