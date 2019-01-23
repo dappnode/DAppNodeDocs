@@ -75,7 +75,7 @@ We have added a functionality that allows to customize some packages with predef
 You can also select your own customized path for the installation of the package by writing your selected path in the field aside the path by default
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/environmentvariables.png">
+    <img width="300"src="https://github.com/Shelpin/DAppNode/blob/master/doc/environmentvariables.png">
 </p>
 
 Here you have a brief description of some of the available packages:
