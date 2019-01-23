@@ -1,0 +1,14 @@
+site_name: DAppNode Docs
+theme: readthedocs
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - Install: install.md
+  - Connect to DAppNode: connect.md
+  - What can you do with DAppNode?: what-can-you-do.md
+  - User Guide: user-guide.md
+  - Architecture: architecture.md
+  - FAQs: faqs.md
+  - Troubleshooting: troubleshooting.md
+  - Security Considerations: security-considerations.md
+  - Contributing: contributing.md
