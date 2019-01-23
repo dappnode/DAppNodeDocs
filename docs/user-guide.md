@@ -29,7 +29,7 @@ By clicking “Dashboard” you can see a summary of the components that make up
 6. Server stats
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/blob/master/doc/taabsscreen.png">
+    <img width="600"src="https://github.com/Shelpin/DAppNode/blob/master/doc/taabsscreen.png">
 </p>
 
 **IMPORTANT NOTE ON SERVER STATS: if you note that the disk capacity is getting near to 100 % you should disable services to avoid the disk getting full. If this happens the DAppNode will get unfunctional, and you will not be able to erase packages once the memory is at 100%**
@@ -75,7 +75,7 @@ We have added a functionality that allows to customize some packages with predef
 You can also select your own customized path for the installation of the package by writing your selected path in the field aside the path by default
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/blob/master/doc/environmentvariables.png">
+    <img width="600"src="https://github.com/Shelpin/DAppNode/blob/master/doc/environmentvariables.png">
 </p>
 
 Here you have a brief description of some of the available packages:
