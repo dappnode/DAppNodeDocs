@@ -73,7 +73,7 @@ Ready to jump in? Here we go!
 - **Adviser & Instigator:** Jordi Baylina
 - **Project Lead:** Eduardo Antuña
 - **Front-End Lead:** DAppLion
-- **Devops:** Vdo
+- **DevOps:** Vdo
 - **Adviser:** Griff Green
 - **Community Support:** Álex Casas
 
