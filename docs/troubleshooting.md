@@ -94,7 +94,7 @@ You have to be connected to the VPN to access the ADMIN UI, in case you are conn
 
 ## I can´t install packages or it takes a lot of time to install them
 
-For installing packages the ETH node should be synchronised. In case the node is sync and your are experience this, enter in System and restart IPFS and VPN and connect again.
+For installing packages the ETH node should be synchronised. In case the node is sync and your are experiencing this, enter in System and restart IPFS and VPN and connect again.
 
 ## Ports that need to be opened
 
