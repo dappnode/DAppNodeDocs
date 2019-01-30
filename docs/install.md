@@ -2,6 +2,13 @@
 
 Think of DAppNode as an operating system. In fact, it is; our savvy team has taken an Ubuntu distribution and superpowered it to be your gateway to access the decentralized web.
 
+<p align="center">
+  <a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Installation-Guide">
+    <img width="300" height="87" src="https://github.com/dappnode/DAppNode/raw/master/doc/DappnodeInstall.png">
+  </a>
+</p>
+
+
 ## Minimum requirements
 
 You will need a dedicated machine to install it.
@@ -16,7 +23,7 @@ Okay, so you’re ready to join the real DAppers. Let us show you how to make th
 
 ### How to install DAppNode from an ISO
 
-Download the image from `DAppNode-ubuntu-18.04-server-amd64_v0.1.3.iso <https://github.com/dappnode/DAppNode/releases/download/v0.1.3/DAppNode-ubuntu-18.04-server-amd64_v0.1.3.iso>`_ or `build it from source <https://github.com/dappnode/DAppNode_Installer>`_
+Download the image from `DAppNode-ubuntu-18.04-server-amd64_v0.1.16.iso <https://github.com/dappnode/DAppNode/releases/download/v0.1.16/DAppNode-ubuntu-18.04-server-amd64_v0.1.16.iso>`_ or `build it from source <https://github.com/dappnode/DAppNode_Installer>`_
 
 ### Burn the ISO in a USB (~8 min)
 
@@ -85,31 +92,25 @@ For this example we'll be installing DAppNode on a Digital Ocean droplet, but 
 
 Install the prerequisites (docker and docker-compose) running this command in the terminal of the machine you want to install the DAppNode server,if using a Virtual Service Provider, you have first to connect you via SSH to that machine.
 
-```sh
-sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.3/dappnode_install_pre.sh | sudo bash
+```
+sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.16/dappnode_install_pre.sh | sudo bash
 ```
 
 ### Install DAppNode
 
-```sh
-sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.3/dappnode_install.sh | sudo bash
+```
+sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.16/dappnode_install.sh | sudo bash
 ```
 
-If you have an static IP and want to set it up right from the connection, then run the command with the following variable including your staatic ip
+If you have an static IP and want to set it up right from the connection, then run the command with the following variable including your static ip
 
-```sh
-sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.3/dappnode_install.sh | sudo STATIC_IP="your static IP" bash
+```
+sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.16/dappnode_install.sh | sudo STATIC_IP="your static IP" bash
 ```
 
 When the installation is done and is successful, you will be given credentials to connect to your DAppNode.
 
 Take into account that the chain will take some time to synchronize and you will not be able to perform most of the actions before that.
-
-<p align="center">
-  <a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Installation-Guide">
-    <img width="300" height="87" src="https://github.com/dappnode/DAppNode/raw/master/doc/DappnodeInstall.png">
-  </a>
-</p>
 
 
 ### How to restore an installed DAppNode to the latest version:
