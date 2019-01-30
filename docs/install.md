@@ -110,3 +110,13 @@ Take into account that the chain will take some time to synchronize and you will
     <img width="300" height="87" src="https://github.com/dappnode/DAppNode/raw/master/doc/DappnodeInstall.png">
   </a>
 </p>
+
+
+### How to restore an installed DAppNode to the latest version:
+
+If you are experiencing any problem or just want  to make  sure you are running  the latest DAppNode versions,execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes. 
+
+```
+sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.16/dappnode_install.sh | sudo UPDATE=true bash
+```
+
