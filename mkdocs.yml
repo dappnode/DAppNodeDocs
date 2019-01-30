@@ -1,5 +1,4 @@
 site_name: DAppNode Docs
-theme: readthedocs
 nav:
   - Home: index.md
   - Introduction: introduction.md
@@ -12,3 +11,4 @@ nav:
   - Troubleshooting: troubleshooting.md
   - Security Considerations: security-considerations.md
   - Contributing: contributing.md
+theme: readthedocs
