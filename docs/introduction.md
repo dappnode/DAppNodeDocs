@@ -71,10 +71,11 @@ Ready to jump in? Here we go!
 ## Team members
 
 - **Adviser & Instigator:** Jordi Baylina
-- **Project Lead:** Eduadiez
+- **Project Lead:** Eduardo Antuña
 - **Front-End Lead:** DAppLion
-- **Communication Lead:** Yalor
+- **Devops:** Vdo
 - **Adviser:** Griff Green
+- **Community Support:** Álex Casas
 
 ## Where the DAppers play
 
