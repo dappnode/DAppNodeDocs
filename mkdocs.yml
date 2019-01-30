@@ -1,6 +1,7 @@
 site_name: DAppNode Docs
 theme: readthedocs
 nav:
+
   - Home: index.md
   - Introduction: introduction.md
   - Install: install.md
