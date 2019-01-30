@@ -1,7 +1,7 @@
 site_name: DAppNode Docs
 theme: readthedocs
 nav:
-  - Home: index.md
+  - Home:index.md
   - Introduction:introduction.md
   - Install:install.md
   - Connect to DAppNode:connect.md
