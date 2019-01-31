@@ -38,32 +38,5 @@ These are the parameters you will need to configure, still depending on your ope
 
 Now it is time…
 
-## Enter your DAppNode
 
-Enter https://my.admin.dnp.dappnode.eth to access DAppNode's admin interface. Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync).
 
-Now you can do things like for example:
-
-- Navigate to a decentralized web [decentral.eth](http://decentral.eth)
-
-- Decentralized version of [Mycrypto](http://mycrypto.dappnode.eth)
-
-- Decentralized version of [ENS Manager](http://ens.dappnode.eth)
-
-- Decentralized version of [Wallet Gnosis](http://gmultisig.dappnode.eth)
-
-- Go to IPFS by entering http://my.ipfs.dnp.dappnode.eth:5001/webui into your browser.
-
-- You have a websocket of your parity node in ws://my.ethchain.dnp.dappnode.eth:8546 and you can use http://my.ethchain.dnp.dappnode.eth:8545 as a custom RPC to connect to metamask i.e
-
-**NOTE ABOUT ACCESSING IPFS WEBUI:**
-
-We have updated our IPFS package (v.0.1.4), and one of the features is to provide a more complete and user friendly web interface. The first time you access to it will ask you for your “Custom API address”, just fill the field with this address and you will be connected to your IPFS node , this is the input you have to enter in the field seen in the image below.
-
-```
-/ip4/172.33.1.5/tcp/5001
-```
-
-<p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
-</p>
