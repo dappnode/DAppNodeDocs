@@ -28,7 +28,7 @@ We envision a self-sustaining system where users support their favorite projects
 
 4. On this website, there is an extremely simple and short walk-thru for Vojtech to set up his credentials and choose which clients to deploy.
 
-5. By just checking a few boxes, Vojtech deployed his own VPN; his own local instance of MyCrypto.com; Ethereum, Bitcoin, Monero and Dogecoin Full nodes; a ZenCash Secure Node and DASH Master Node; he joined the IPFS Consortium and deployed a TrueBit Verifier and Livepeer node; and hosted Giveth, Swarm City, Aragon, Colony, and Decentraland Helper DApps to support these projects and to ensure that his interaction with these DApps cannot be censored and are fully trustless.
+5. By just checking a few boxes, Vojtech deployed his own VPN; his own local instance of MyCrypto.com; Ethereum, Bitcoin, Monero and Dogecoin Full nodes; a ZenCash Secure Node and DASH Master Node; he joined the IPFS Consortium and deployed a TrueBit Verifier and Livepeer node; and hosted Giveth, Swarm City, Aragon, Colony, and Decentraland Helper DApps to support these projects and to ensure that his interaction with these DApps cannot be censored and is fully trustless.
 
 6. Vojtech then tells his friends and family that he is the admin for his own DAppNode and he is able to give them a link that sets them up with their own credentials and access to his DAppNode, and Vojtech can deploy any other DApps that he or his friends and family want to have hosted with a couple clicks. He has become the trusted gateway to the decentralized world for his entire community.
 
@@ -42,7 +42,7 @@ This project is a community funded and fully open sourced project that has recei
 
 We are open to receive donations from any interested parties to help pay the developers working hard on the software development.
 
-See our campaign on Giveth.io to make a donation: https://beta.giveth.io/campaigns/5b44b198647f33526e67c262
+See our [campaign on Giveth.io](https://beta.giveth.io/campaigns/5b44b198647f33526e67c262) to make a donation: 
 
 Ready to jump in? Here we go!
 
