@@ -4,13 +4,13 @@ Enter https://my.admin.dnp.dappnode.eth to access DAppNode's admin interface. Be
 
 Now you can do things like for example:
 
-- Navigate to a decentralized web `decentral.eth <http://decentral.eth>`:
+- Navigate to a decentralized web [decentral.eth](http://decentral.eth)
 
-- Decentralized version of `Mycrypto <http://mycrypto.dappnode.eth>`
+- Decentralized version of [Mycrypto](http://mycrypto.dappnode.eth)
 
-- Decentralized version of `ENS Manager <http://ens.dappnode.eth>`
+- Decentralized version of [ENS Manager](http://ens.dappnode.eth)
 
-- Decentralized version of `Wallet Gnosis <http://gmultisig.dappnode.eth>`
+- Decentralized version of [Wallet Gnosis](http://gmultisig.dappnode.eth)
 
 - Go to IPFS by entering http://my.ipfs.dnp.dappnode.eth:5001/webui into your browser.
 
@@ -20,10 +20,12 @@ Now you can do things like for example:
 
 We have updated our IPFS package (v.0.1.4), and one of the features is to provide a more complete and user friendly web interface. The first time you access to it will ask you for your “Custom API address”, just fill the field with this address and you will be connected to your IPFS node , this is the input you have to enter in the field seen in the image below.
 
-`/ip4/172.33.1.5/tcp/5001`
+```
+/ip4/172.33.1.5/tcp/5001
+```
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
+    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
 </p>
 
 ## VPN connection
@@ -37,9 +39,11 @@ After a few hours of installing DAppNode you will have your own Ethereum node ru
 You have available your parity websocket in
 ws://my.ethchain.dnp.dappnode.eth:8546 and RPC connection through http://my.ethchain.dnp.dappnode.eth:8545
 
+You can run your parity node in different configurations using the "Update environment variables) button.  More info on env vars in Parity client [here](https://wiki.parity.io/Configuring-Parity-Ethereum)
+
 ## MyCrypto
 
-You can now enter a decentralized version of MyCrypto that it is not only hosted in IPFS but is using your node to connect to the Ethereum network. However, note that as the access URL is not https there might be incompatibilities; we are working hard to solve this issue and give you an awesome user experience using MyCrypto in a decentralized way. Just access it in http://mycrypto.dappnode.eth/ for now.
+You can now enter a decentralized version of MyCrypto that it is not only hosted in IPFS but is using your node to connect to the Ethereum network. However, note that as the access URL is not https there might be incompatibilities; we are working hard to solve this issue and give you an awesome user experience using MyCrypto in a decentralized way. You can access it in http://mycrypto.dappnode.eth/. In desktop version there is no need to have an https access to connect to a node or connect to your hardware wallet. 
 
 ## Metamask
 
@@ -66,10 +70,10 @@ We have updated our IPFS package (v.0.1.4), and one of the features is to provid
 `/ip4/172.33.1.5/tcp/5001`
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
+    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
 </p>
 
-If you want to know a bit more on IPFS here is a `useful link: <https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937>`
+If you want to know a bit more on IPFS here is a [useful link](https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937)
 
 ## ENS resolution
 
@@ -112,7 +116,7 @@ https://github.com/dappnode/DAppNode/wiki/DAppNode-packages-manifest
 
 In this section, we’re going to explain how it’s possible to decentralize wallet.ethereum.org using DAppNode and by decentralize we mean; distribute it’s content through IPFS, making it possible to resolve via an ENS address.
 
-Our first step is to clone the wallet.ethereum.org repository and follow the steps of the official guide, here (this tutorial is based on this commit `6a6463b1a6aa615e4364592c12c933ee816fb28b) <https://github.com/ethereum/meteor-dapp-wallet/tree/6a6463b1a6aa615e4364592c12c933ee816fb28b>`\_.
+Our first step is to clone the wallet.ethereum.org repository and follow the steps of the official guide, here (this tutorial is based on this commit [6a6463b1a6aa615e4364592c12c933ee816fb28b](https://github.com/ethereum/meteor-dapp-wallet/tree/6a6463b1a6aa615e4364592c12c933ee816fb28b).
 
 Here’s a summary of the steps that we will need to follow:
 
@@ -254,5 +258,5 @@ If you are the owner of an ENS domain you can make this point to the hash you wa
 With these parameters we make the transaction in ethereum and once it’s mined the web will be accessible from that domain!!
 
 <p align="center">
-    <img width="500"src="https://github.com/Shelpin/DAppNode/raw/master/doc/walletdappnodeeth.png">
+    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/walletdappnodeeth.png">
 </p>
