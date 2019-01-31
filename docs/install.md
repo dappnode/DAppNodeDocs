@@ -32,11 +32,11 @@ Okay, so you’re ready to join the real DAppers. Let us show you how to make th
 
 ### How to install DAppNode from an ISO
 
-Download the image from [DAppNode-ubuntu-18.04-server-amd64_v0.1.16.iso] (https://github.com/dappnode/DAppNode/releases/download/v0.1.16/DAppNode-ubuntu-18.04-server-amd64_v0.1.16.iso) or [build it from source](https://github.com/dappnode/DAppNode_Installer)
+Download the image from [DAppNode-ubuntu-18.04-server-amd64_v0.1.16.iso](https://github.com/dappnode/DAppNode/releases/download/v0.1.16/DAppNode-ubuntu-18.04-server-amd64_v0.1.16.iso) or [build it from source](https://github.com/dappnode/DAppNode_Installer)
 
 ### Burn the ISO in a USB (~8 min)
 
-Burn the ISO to an USB stick, please follow the official Ubuntu instructions for [MacOS] (https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0),[Windows] (https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0) or [Ubuntu] (https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0>).
+Burn the ISO to an USB stick, please follow the official Ubuntu instructions for [MacOS](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0) or [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0>).
 
 Please note that these instructions are intended to generate the ISO image in a bootable USB from a Mac, Windows or Linux device , and then install it in a server. **_IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED._** DAppnode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
 
@@ -44,9 +44,10 @@ Please note that these instructions are intended to generate the ISO image in a 
 
 Insert the USB into your Server and prepare to install an Ubuntu distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
 
-.. image:: https://github.com/Shelpin/DAppNode/raw/master/doc/dappnode-installation-welcome-screen.png
-:width: 300 px
-:align: center
+<p align="center">
+  <img width="600" height="450" src="https://github.com/Shelpin/DAppNode/raw/master/doc/dappnode-installation-welcome-screen.png">
+  </a>
+</p>
 
 Follow the Ubuntu installation steps; various screens will guide you through the process. You can follow this standard option for a default installation:
 
@@ -77,9 +78,12 @@ Note by following these instructions you will erase your Server's disk contents
 
 If the installation succeeded, your system will reboot, you will have to log in with the user and password provided in the installation, and it should finish with this screen:
 
-.. image:: https://github.com/Shelpin/DAppNode/raw/master/doc/dappnode-installation-ending-screen.png?raw=true
-:width: 300 px
-:align: center
+<p align="center">
+  <img width="800" height="450" src="https://github.com/Shelpin/DAppNode/raw/master/doc/dappnode-installation-ending-screen.png?raw=true">
+  </a>
+</p>
+
+
 
 
 
