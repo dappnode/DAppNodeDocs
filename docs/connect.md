@@ -27,9 +27,13 @@ These are the parameters you will need to configure, still depending on your ope
 </p>
 
 **VPN TYPE**: Select L2TP over IPSEC
+
 **Server IP**: Select the IP given by the terminal when connecting to the DAppNode via SSH. If you are behind a router without NAT Loopback, you will also find in the terminal the internal IP you need to use to be able to connect being in the same network without NAT Loopback enabled.
+
 **PSK**: Shared secret, you will find it in the terminal.
+
 **VPN User**: This is the username of the super administrator and your terminal will give it to you too.
+
 **Password**: You can also find the password in the terminal output when connecting to your DAppNode.
 
 Now it is time…
@@ -40,13 +44,13 @@ Enter https://my.admin.dnp.dappnode.eth to access DAppNode's admin interface. Be
 
 Now you can do things like for example:
 
-- Navigate to a decentralized web `decentral.eth <http://decentral.eth>`\_:
+- Navigate to a decentralized web [decentral.eth](http://decentral.eth)
 
-- Decentralized version of `Mycrypto <http://mycrypto.dappnode.eth>`\_
+- Decentralized version of [Mycrypto](http://mycrypto.dappnode.eth)
 
-- Decentralized version of `ENS Manager <http://ens.dappnode.eth>`\_
+- Decentralized version of [ENS Manager](http://ens.dappnode.eth)
 
-- Decentralized version of `Wallet Gnosis <http://gmultisig.dappnode.eth>`\_
+- Decentralized version of [Wallet Gnosis](http://gmultisig.dappnode.eth)
 
 - Go to IPFS by entering http://my.ipfs.dnp.dappnode.eth:5001/webui into your browser.
 
