@@ -2,11 +2,20 @@
 
 Think of DAppNode as an operating system. In fact, it is; our savvy team has taken an Ubuntu distribution and superpowered it to be your gateway to access the decentralized web.
 
-<p align="center">
-  <a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Installation-Guide">
-    <img width="300" height="87" src="https://github.com/dappnode/DAppNode/raw/master/doc/DappnodeInstall.png">
-  </a>
-</p>
+While you can run DAppNode on a Virtual Private Server (VPS), we **highly encourage you to run DAppNode on your own physical server**. The intention of DAppNode is to create a strong network of decentralized severs. Running DAppNode on centralized virtual servers defeats the purpose. 😉That being said, we realize it may be easiest to get started and test the system on a VPS.
+
+----------
+
+
+
+⚠️ **DappNode is intended to use in a server.Do not install DAppNode on your laptop** 
+
+⚠️ If you do so the installation will erase all its content. See details below 
+
+
+
+***
+
 
 
 ## Minimum requirements
@@ -23,11 +32,11 @@ Okay, so you’re ready to join the real DAppers. Let us show you how to make th
 
 ### How to install DAppNode from an ISO
 
-Download the image from `DAppNode-ubuntu-18.04-server-amd64_v0.1.16.iso <https://github.com/dappnode/DAppNode/releases/download/v0.1.16/DAppNode-ubuntu-18.04-server-amd64_v0.1.16.iso>`_ or `build it from source <https://github.com/dappnode/DAppNode_Installer>`_
+Download the image from [DAppNode-ubuntu-18.04-server-amd64_v0.1.16.iso] (https://github.com/dappnode/DAppNode/releases/download/v0.1.16/DAppNode-ubuntu-18.04-server-amd64_v0.1.16.iso) or [build it from source](https://github.com/dappnode/DAppNode_Installer)
 
 ### Burn the ISO in a USB (~8 min)
 
-Burn the ISO to an USB stick, please follow the official Ubuntu instructions for `MacOS <https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0>`_, `Windows <https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0>`_ or `Ubuntu <https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0>`\_.
+Burn the ISO to an USB stick, please follow the official Ubuntu instructions for [MacOS] (https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0),[Windows] (https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0) or [Ubuntu] (https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0>).
 
 Please note that these instructions are intended to generate the ISO image in a bootable USB from a Mac, Windows or Linux device , and then install it in a server. **_IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED._** DAppnode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
 
@@ -71,6 +80,8 @@ If the installation succeeded, your system will reboot, you will have to log in 
 .. image:: https://github.com/Shelpin/DAppNode/raw/master/doc/dappnode-installation-ending-screen.png?raw=true
 :width: 300 px
 :align: center
+
+
 
 ## Installation via script
 
