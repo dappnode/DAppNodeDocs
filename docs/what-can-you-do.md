@@ -83,7 +83,6 @@ Note that your browsing device is connected to your DAppNode via VPN, and the VP
 
 Now you can seamlessly navigate ETH domains in a decentralized way.
 
-======
 
 # Advanced users bonus
 
