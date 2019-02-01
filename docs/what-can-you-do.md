@@ -252,10 +252,10 @@ If you are the owner of an ENS domain you can make this point to the hash you wa
    **value:**/ipfs/QmZQ3GzqXHCRM6uccP6TcZdPGPSyqJXyhwLETD2T2o8m73
 
 <p align="center">
-    <img width="500"src="https://github.com/Shelpin/DAppNode/doc/enstransaction.jpg">
+    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/enstransaction.jpg">
 </p>
 
-With these parameters we make the transaction in ethereum and once it’s mined the web will be accessible from that domain!!
+With these parameters we make the transaction in ethereum mainet and once it’s mined the web will be accessible from that domain!!
 
 <p align="center">
     <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/walletdappnodeeth.png">
