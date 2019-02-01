@@ -73,7 +73,7 @@ We have updated our IPFS package (v.0.1.4), and one of the features is to provid
     <img width="1000"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
 </p>
 
-If you want to know a bit more on IPFS here is a [useful link](https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937)
+If you want to know a bit more on IPFS here you have a [useful link](https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937)
 
 ## ENS resolution
 
