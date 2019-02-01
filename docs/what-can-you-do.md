@@ -25,7 +25,7 @@ We have updated our IPFS package (v.0.1.4), and one of the features is to provid
 ```
 
 <p align="center">
-    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
+    <img width="1000"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
 </p>
 
 ## VPN connection
