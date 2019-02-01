@@ -39,7 +39,7 @@ After a few hours of installing DAppNode you will have your own Ethereum node ru
 You have available your parity websocket in
 ws://my.ethchain.dnp.dappnode.eth:8546 and RPC connection through http://my.ethchain.dnp.dappnode.eth:8545
 
-You can run your parity node in different configurations using the "Update environment variables) button.  More info on env vars in Parity client [here](https://wiki.parity.io/Configuring-Parity-Ethereum)
+You can run your parity node in different configurations using the "Update environment variables" button.  More info on env vars for Parity client [here](https://wiki.parity.io/Configuring-Parity-Ethereum)
 
 ## MyCrypto
 
