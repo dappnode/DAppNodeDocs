@@ -89,13 +89,15 @@ Here you have a brief description of some of the available packages:
 
 ### Testnet nodes
 
-With DAppNode, you can easily set up nodes of the Rinkeby and Kovan networks for testing purposes. Just find in Packages the testnet you want to set up in your DAppNode, install it and it will immediately start to synchronize.
+With DAppNode, you can easily set up nodes of the Rinkeby, Kovan and Ropsten networks for testing purposes. Just find in Packages the testnet you want to set up in your DAppNode, install it and it will immediately start to synchronize.
 
 As with Parity Main net node, you have your websocket in the port 8546 and your RPC connection in the port 8545 using the following URLs:
 
-my.rinkeby.dnp.dappnode.eth
-my.kovan.dnp.dappnode.eth
-my.ropsten.dnp.dappnode.eth
+* <my.rinkeby.dnp.dappnode.eth>
+
+* <my.kovan.dnp.dappnode.eth>
+
+* <my.ropsten.dnp.dappnode.eth>
 
 ### Görli
 
@@ -162,3 +164,20 @@ If you have a Static IP you can set it up here so the future VPN credentials gen
 Together with DAppNode´s SDK, this tab will help you to make the metamask transaction to  publish your own package. 
 
 Once you have used the command line SDK and you have the DNP name, the version about to be published and the IPFS hash of the manifest, you can use this tool to make the last step and send the transaction once you have connected  your metamask by clicking the "Connect" button   
+
+## Notifications
+
+In the upper right part of the ADMIN UI you will see a bell icon that will be highlighted  when there is an important  notification  for you. It will turn yellow to warn you about the need of creating new VPN credentials when you set a Static IP, or prompt you to restart the VPN services when you want to remove access to users in your DAppNode. It wilil turn red  when packages have been stopped to prevent the machine disk getting full.
+
+## Report
+
+You can contribute to DAppNode´s improvement by opening issues directly from the  ADMIN UI. When you click  the  "Report" button and Auto diagnose tool will be run to check DappNode´s overall performance.  Also you  have the option of sending tthe issuewith a prepopulated form thata will be automatically loaded in the report screen. You can  also choose to open the  issue without any data. 
+
+<p align="center">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/reportscreen.png">
+</p>
+
+
+
+
+
