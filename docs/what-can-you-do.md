@@ -1,6 +1,6 @@
 # What can you do with your DAppNode?
 
-Enter (https://my.admin.dnp.dappnode.eth) to access DAppNode's admin interface. Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync).
+Enter https://my.admin.dnp.dappnode.eth to access DAppNode's admin interface. Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync).
 
 Now you can do things like for example:
 
@@ -12,7 +12,7 @@ Now you can do things like for example:
 
 - Decentralized version of [Wallet Gnosis](http://gmultisig.dappnode.eth)
 
-- Go to IPFS by entering (http://my.ipfs.dnp.dappnode.eth:5001/webui) into your browser.
+- Go to IPFS by entering http://my.ipfs.dnp.dappnode.eth:5001/webui into your browser.
 
 - You have a websocket of your parity node in ws://my.ethchain.dnp.dappnode.eth:8546 and you can use http://my.ethchain.dnp.dappnode.eth:8545 as a custom RPC to connect to metamask i.e
 
