@@ -25,7 +25,11 @@ Centralization of blockchain networks and infrastructure is a huge problem for t
 
 ## Why can´t I connect via VPN to my DAppNode?
 
-We have created a complete troubleshooting for this question… please find it in the next section. 
+If the device with which you are trying to connect to your DAppNode is in the same local network as the DAppNode, you should have a router that supports NAT Loopback or edit the VPN configuration and change the Server IP to the internal IP of your DAppNode that you will find in the admin UI Dashboard, and in the console when you connect to the server via SSH.
+You can easily know if your router has NAT loopback enabled without accessing the router admin UI by opening your terminal and type ping + the IP of your DAppNode (where your VPN connection profile points to).
+If the ping works without getting stuck your router has NAT Loopback so if you can´t connect to the VPN the cause is not being in the same network. Check that UDP ports 500 and 4500 are opened.
+
+More information about these issues in the "VPN Connection issues" section.
 
 ## Can I share my DAppNode?
 
