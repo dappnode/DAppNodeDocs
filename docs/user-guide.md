@@ -16,20 +16,24 @@ When you first enter the Admin UI, you will see a link to a survey made to tell 
 
 By clicking “Dashboard” you can see a summary of the components that make up the system and its status. This is what a healthy DAppNode dashboard looks like:
 
-1 Tabs area
+1. Tabs area
 
-2 Name of the server / Internal IP
+2. Name of the server / Internal IP
 
-3 Health of core services
+3. Health of core services
 
-4 Error reporting area (in this example, the DAppNode is in good shape so nothing appears here)
+4. Error reporting area (in this example, the DAppNode is in good shape so nothing appears here)
 
-5 Sync State
+5. Sync State
 
 6. Server stats
 
+7. Notifications area
+
+8. Report issue / Autodiagnose tool
+
 <p align="center">
-    <img width="1000"src="https://github.com/Shelpin/DAppNode/raw/master/doc/taabsscreen.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/dashboard.jpg">
 </p>
 
 **IMPORTANT NOTE ON SERVER STATS: if you note that the disk capacity is getting near to 100 % you should disable services to avoid the disk getting full. If this happens the DAppNode will get unfunctional, and you will not be able to erase packages once the memory is at 100%**
@@ -52,7 +56,8 @@ If there is a device using the same VPN credentials, you will be able to connect
 
 You also have the ability to give a device admin privileges so the ADMIN UI can be used by them. If any device without admin credentials tries to access the ADMIN UI, it will not work.
 
-**Take in account that if you remove admin privileges to any device while that device is connected to the server, it will still be able to access the admin UI and thus that device can make itself admin again, to prevent this, after removing admin privileges to any user you should restart the VPN package by going to System / VPN / Restart. This also applies when you want to remove access to any device without admin privileges.**
+
+⚠️ **Take in account that if you remove admin privileges to any device while that device is connected to the server, it will still be able to access the admin UI and thus that device can make itself admin again, to prevent this, after removing admin privileges to any user you should restart the VPN package by going to System / VPN / Restart. This also applies when you want to remove access to any device without admin privileges.** ⚠️ 
 
 ### Guest User functionality
 
@@ -72,10 +77,10 @@ From the installer you can also install packages not shown in the interface by p
 
 We have added a functionality that allows to customize some packages with predefined configurations made by the developer of the node/ DApp, please check the project documentation to see which options to customize are available.
 
-You can also select your own customized path for the installation of the package by writing your selected path in the field aside the path by default
+You can also select your own customized path for the installation of the package by writing your selected path in the field aside the path by default. Last, if you are  an advanced user  you can also chooose the ports  to be used by the package  by editing the "ports" section. 
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/blob/master/doc/environmentvariables.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/installer.png">
 </p>
 
 Here you have a brief description of some of the available packages:
@@ -124,17 +129,32 @@ Do not buy any tanks please ;)...
 
 ## Packages
 
-Here you can see the packages you have installed and manage
-them, access to their logs, stop and restart them, remove them and preserve its data, or remove the package and the data.
+Here you can see the packages you have installed and manage them, access to their logs, stop and restart them, remove them and preserve its data, or remove the package and the data. In this screen you will also find the relevant info about the package:
+
+* Version of the package
+* Use link
+* Volumes and  space  occupied  (remember you can only choose a customised  path in the installation)
+* Info links
+* Ports used (remember you  can change them, in the instalalation or after  iit)
 
 These are the main options you can execute on your installed packages:
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/packagecontrols.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/installerservices.png">
 </p>
+
+Note that when removing a  non core package you have the following options :
+
+* Remove  only  the container: This will only remove the package but data will be kept, so if you insatll the package again in  the same path,thje container will mount the volume again and  you won´t have to sync the whole package  again.
+
+* Remove Package + volume : This will erase the container  and  the asosicated data. If you want to reinstall, the  volume will have to sync again
 
 ## System
 
 Here you can access the packages that are part of the DAppNode core and manage them, see their logs, restart them or delete its associated data to be restored.
 
 If you have a Static IP you can set it up here so the future VPN credentials generated point to that fixed ip, just include your Static IP in the box and hit “Set”, you can always disable.
+
+## SDK
+
+Together with DAppNode´s SDK, this tab will help you to make the metamask transaction to  publish your own package. Once you have used the command line SDK and you have the DNP name, the version about to be published and the IPFS hash of the manifest you can use this tool to make the last step and send the transaction once you have connected  youor metamask  clicking "Connect" button   
