@@ -93,11 +93,11 @@ With DAppNode, you can easily set up nodes of the Rinkeby, Kovan and Ropsten net
 
 As with Parity Main net node, you have your websocket in the port 8546 and your RPC connection in the port 8545 using the following URLs:
 
-* <my.rinkeby.dnp.dappnode.eth>
+* my.rinkeby.dnp.dappnode.eth
 
-* <my.kovan.dnp.dappnode.eth>
+* my.kovan.dnp.dappnode.eth
 
-* <my.ropsten.dnp.dappnode.eth>
+* my.ropsten.dnp.dappnode.eth
 
 ### Görli
 
