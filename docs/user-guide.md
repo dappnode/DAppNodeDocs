@@ -157,4 +157,6 @@ If you have a Static IP you can set it up here so the future VPN credentials gen
 
 ## SDK
 
-Together with DAppNode´s SDK, this tab will help you to make the metamask transaction to  publish your own package. Once you have used the command line SDK and you have the DNP name, the version about to be published and the IPFS hash of the manifest you can use this tool to make the last step and send the transaction once you have connected  youor metamask  clicking "Connect" button   
+Together with DAppNode´s SDK, this tab will help you to make the metamask transaction to  publish your own package. 
+
+Once you have used the command line SDK and you have the DNP name, the version about to be published and the IPFS hash of the manifest, you can use this tool to make the last step and send the transaction once you have connected  your metamask by clicking the "Connect" button   
