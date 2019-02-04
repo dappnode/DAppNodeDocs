@@ -7,9 +7,9 @@ nav:
   - Connect to DAppNode: connect.md
   - What can you do with DAppNode?: what-can-you-do.md
   - User Guide: user-guide.md
-  - Architecture: architecture.md
   - FAQs: faqs.md
   - Troubleshooting: troubleshooting.md
-  - Security Considerations: security-considerations.md
+  - Architecture: architecture.md
   - Contributing: contributing.md
+  - License: license.md
 
