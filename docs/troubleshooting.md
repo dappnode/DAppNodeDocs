@@ -59,15 +59,15 @@ Note that you have to run this command as elevated command prompt and then reboo
 If following the instructions has not made your connection to work, try to manually setup a VPN profile within your computer/phone using the credentials given in the OTP web you get after installation under the tab Linux/Android.
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipsecoopotions.jpg">
+    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipsecoopotions.jpg">
 </p>
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/username.jpg">
+    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/username.jpg">
 </p>
 
 <p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/routes.jpg">
+    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/routes.jpg">
 </p>
 
 If you are still experiencing problems to connect from your Linux device please ping us in our channels, we will be happy to help!!.
