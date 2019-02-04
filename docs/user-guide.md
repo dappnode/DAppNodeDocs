@@ -38,6 +38,8 @@ By clicking “Dashboard” you can see a summary of the components that make up
 
 **IMPORTANT NOTE ON SERVER STATS: if you note that the disk capacity is getting near to 100 % you should disable services to avoid the disk getting full. If this happens the DAppNode will get unfunctional, and you will not be able to erase packages once the memory is at 100%**
 
+To avoid this, non core packages will be automatically stopped when there is less than 5 Gbs left, and ETHCHAIN and IPFS will be automatically stopped when there is less than 1 GB available. If by any chance your DAppnode server gets to 100 % busy disk space, it  will become unworkable from the ADMIN UI and you will have to erase containers/volumes manually from the commmand line of your server.  
+
 ## Activity
 
 This tab allows easy access to the DAppNode logs in order to debug errors. We work hard to make this tab irrelevant to you, but for the time being, if you are experiencing any issue, these logs will help our support team help you identify and fix any problem. You will also find a button to download a log report file.
