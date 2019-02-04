@@ -6,9 +6,14 @@
 
 It depends on the use you want to do with it, basically the number of nodes / DApps that you want to host in it. A basic setup is at least 4 gbs RAM (ideally 8GBs) and a 200 GBs SSD disk, it is important that the disk is SSD, otherwise writing speed won´t be able to cope with the ETH chain sync. On top of that requirements add capacity as needed to run the nodes you wish to run.
 
-## Can I run DAppNode in a laptop?
+## Can I mine with DAppNode server?
 
-Yes you can!!! Different thing is if you will be able to get any relevant proof of work reward, what does not seem very likely talking about the main cryptocurrencies. Still DAppNode is a great solutions for hosting your proof of stake nodes and get some coins out of your stake easily and securely stored in your DAppNode, or mine new cryptocurrencies that are CPU mineable and still low difficulty.
+Yes you can!!! Different thing is if you will be able to get any relevant proof of work reward, what does not seem very likely talking about the main cryptocurrencies. Still, DAppNode is a great solutions for hosting your proof of stake nodes and get some coins out of your stake easily and securely stored in your DAppNode, or mine new cryptocurrencies that are CPU mineable and still have a relatively low difficulty.
+
+## Can I run DappNode in a laptop??
+
+Dappnode software is intended to be running 24/7 so a server config is more suitable for running a DAppNode and avoiding chains getting unsynced when the laptop is not online, but if you have a spare laptop with the minimum requirements you can install DAppNode in it. Please note that in the installation process the laptop will be formated to install DAppNode so do not  try to install DappNode in your personal computer or your files might be compromised.
+
 
 ## Can I run DAppNode in a cloud service?
 
@@ -16,11 +21,11 @@ Technically you can, and we recognise is the best way to try it and check how wo
 
 ## Why should I run a DAppNode?
 
-Centralization of blockchain networks and infrastructure is a huge problem for the whole bloockchain vision, that can even make it dystopian. By running your own nodes you contribute to decentralization and censorship resistance of blockchain networks with a higher degree of privacy while getting some incentives for sharing your infrastructure if you wish to!
+Centralization of blockchain networks and infrastructure is a huge problem for the whole bloockchain vision, that can even make it dystopian. By running your own nodes you contribute to decentralization and censorship resistance of blockchain networks,with a higher degree of privacy while getting some incentives for sharing your infrastructure if you wish to.
 
 ## Why can´t I connect via VPN to my DAppNode?
 
-We have created a complete troubleshooting for this question… please find it below.
+We have created a complete troubleshooting for this question… please find it in the next section. 
 
 ## Can I share my DAppNode?
 
@@ -36,7 +41,7 @@ Unfortunately not at the moment, DAppNode includes an Ethereum full node and a I
 
 ## If DAppNode is free how do you maintain operations/development?
 
-DAppNode software is an open source platform developed by the non profit association DAAppNode association in Zug. DAppNode Association is driven and funded by the community, at the moment we have three grants from EF, Aragon and ECF, but the association also has sustainabiliity sources relying on projects that want their package uploaded to DAppNode and featured in the installer section,authorised hardware resellers make a donation to the association for every piece of hardware with DAppNode pre installed they sell and we are also backed by individual donors and supporters.
+DAppNode software is an open source platform developed by the non profit association DAppNode association in Zug. DAppNode Association is driven and funded by the community, at the moment we have three grants from EF, Aragon and ECF, but the association also has sustainability sources relying on projects that want their package uploaded to DAppNode and featured in the installer section,or authorised hardware resellers that make a donation to the association for every piece of hardware with DAppNode pre installed they sell, we are also backed by individual donors and supporters.
 
 ## Can I upload my own packages to DAppNode?
 
@@ -51,7 +56,8 @@ No! One of our the critical aspects to achieve our objectives, is eliminating th
 Yes!Take in account that IPFS is a core component of DAppNode itself , used for example to host the packages to be downloaded but you can also use it your own, as you have a totally functional IPFS node. You can access to it by typing http://my.ipfs.dnp.dappnode.eth:5001/webui
 
 The first time you access to it will ask you for your “Custom API address”, just fill the field with this address and you will be connected to your IPFS node. This is the input you have to enter in the field "Is your API in a port other than 5001?
-/ip4/172.33.1.5/tcp/5001
+
+```/ip4/172.33.1.5/tcp/5001```
 
 ## Is there any way to have a Web GUI for the Parity client?
 
