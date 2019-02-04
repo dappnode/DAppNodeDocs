@@ -1,6 +1,6 @@
 # What can you do with your DAppNode?
 
-Enter https://my.admin.dnp.dappnode.eth to access DAppNode's admin interface. Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync).
+Enter <https://my.admin.dnp.dappnode.eth> to access DAppNode's admin interface. Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync).
 
 Now you can do things like for example:
 
@@ -12,7 +12,7 @@ Now you can do things like for example:
 
 - Decentralized version of [Wallet Gnosis](http://gmultisig.dappnode.eth)
 
-- Go to IPFS by entering http://my.ipfs.dnp.dappnode.eth:5001/webui into your browser.
+- Go to IPFS by entering <http://my.ipfs.dnp.dappnode.eth:5001/webui> into your browser.
 
 - You have a websocket of your parity node in ws://my.ethchain.dnp.dappnode.eth:8546 and you can use http://my.ethchain.dnp.dappnode.eth:8545 as a custom RPC to connect to metamask i.e
 
@@ -43,7 +43,7 @@ You can run your parity node in different configurations using the "Update envir
 
 ## MyCrypto
 
-You can now enter a decentralized version of MyCrypto that it is not only hosted in IPFS but is using your node to connect to the Ethereum network. However, note that as the access URL is not https there might be incompatibilities; we are working hard to solve this issue and give you an awesome user experience using MyCrypto in a decentralized way. You can access it in http://mycrypto.dappnode.eth/. In desktop version there is no need to have an https access to connect to a node or connect to your hardware wallet. 
+You can now enter a decentralized version of MyCrypto that it is not only hosted in IPFS but is using your node to connect to the Ethereum network. However, note that as the access URL is not https there might be incompatibilities; we are working hard to solve this issue and give you an awesome user experience using MyCrypto in a decentralized way. You can access it in <http://mycrypto.dappnode.eth/>. In desktop version there is no need to have an https access to connect to a node or connect to your hardware wallet. 
 
 ## Metamask
 
@@ -63,7 +63,7 @@ First, you must be connected to your DAppNode’s VPN:
 
 When you install DAppNode an IPFS daemon is installed and your account is automatically created so you can start uploading and requesting the decentralized storage that the InterPlanetary File System offers.
 
-You can access the web ui entering http://my.ipfs.dnp.dappnode.eth:5001/webui
+You can access the web ui entering <http://my.ipfs.dnp.dappnode.eth:5001/webui>
 
 We have updated our IPFS package (v.0.1.4), and one of the features is to provide a more complete and user friendly web interfaz. The first time you access to it will ask you for your “Custom API address”, just fill the field with this address and you will be connected to your IPFS node , this is the input you have to enter in the field seen in the image below.
 
@@ -105,11 +105,11 @@ So for development what we recommend is:
 
 Please take a look at these refs regarding the SDK to deploy your own packages in your DAppnode:
 
-https://github.com/dappnode/DAppNodeSDK
+* <https://github.com/dappnode/DAppNodeSDK>
 
-https://github.com/dappnode/DAppNode/wiki/DAppNode-Package-Development
+* <https://github.com/dappnode/DAppNode/wiki/DAppNode-Package-Development>
 
-https://github.com/dappnode/DAppNode/wiki/DAppNode-packages-manifest
+* <https://github.com/dappnode/DAppNode/wiki/DAppNode-packages-manifest>
 
 ## How to decentralize wallet.ethereum.org with DAppNode
 
@@ -226,21 +226,21 @@ QmZQ3GzqXHCRM6uccP6TcZdPGPSyqJXyhwLETD2T2o8m73build
 
 If we use the hash associated with `build` and access it through this URL:
 
-http://my.ipfs.dnp.dappnode.eth:8080/ipfs/QmZQ3GzqXHCRM6uccP6TcZdPGPSyqJXyhwLETD2T2o8m73
+<http://my.ipfs.dnp.dappnode.eth:8080/ipfs/QmZQ3GzqXHCRM6uccP6TcZdPGPSyqJXyhwLETD2T2o8m73>
 
 The website is now distributed in IPFS!
 
 ### Point the ENS domain to the IPFS hash
 
-If you are the owner of an ENS domain you can make this point to the hash you want. We are going to use `wallet.dappnode.eth <http://wallet.dappnode.eth>`\_ for this example:
+If you are the owner of an ENS domain you can make this point to the hash you want. We are going to use [wallet.dappnode.eth] (http://wallet.dappnode.eth) for this example:
 
-1. Go to http://mycrypto.dappnode.eth/#contracts (if you don’t have access to a DAppNode you can use the centralized alternative) https://mycrypto.com#contracts or https://www.myetherwallet.com/#contracts)
+1. Go to <http://mycrypto.dappnode.eth/#contracts> (if you don’t have access to a DAppNode you can use the centralized alternative) <https://mycrypto.com#contracts> or <https://www.myetherwallet.com/#contracts>
 
 2. Select: ENS: Public Resolver 0x5FfC014343cd971B7eb70732021E26C35B744cc4
 
 3. Access
 
-4. Go to https://etherscan.io/enslookup and search for wallet.dappnode.eth noting its NameHash (in this case 0x7407….8c02)
+4. Go to <https://etherscan.io/enslookup> and search for wallet.dappnode.eth noting its NameHash (in this case 0x7407….8c02)
 
 5. setText
 
