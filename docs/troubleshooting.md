@@ -12,7 +12,9 @@ As the config file is automated you should not have any problem to access caused
 
 You are in the same local area network that the DAppNode you want to connect to, and your router does not support / does not have enabled NAT LOOPBACK, so there are IP conflicts that prevent you from connecting.
 
-To solve it you have to figure out if your router is doing NAT LOOPBACK and activate it if it is not the case . You can easily know it by opening the terminal and typing ping + dyndns domain given at the end of the installation as server address. If the ping is successful (100% packets are transmitted with no packet loss) your router is doing NAT LOOPBACK, if it is not solving you have to either enter the admin panel of your router and look for that option and activate it, or edit the server address in the VPN profile and substitute the domain given by the internal ip of the DAppNode server (usually starting with 192.168……..). This will allow you to connect from the same local network but not from outside, to connect to your DAppNode from outside your network you will need to download another VPN profile pointing to the dyndns address (exactly as it is downloaded)
+To solve it you have to figure out if your router is doing NAT LOOPBACK and activate it if it is not the case . You can easily know it by opening the terminal and typing ping + dyndns domain given at the end of the installation as server address. If the ping is successful (100% packets are transmitted with no packet loss) your router is doing NAT LOOPBACK, if it is not solving you have to either enter the admin panel of your router and look for that option and activate it, or edit the server address in the VPN profile and substitute the domain given by the internal ip of the DAppNode server (usually starting with 192.168……..). 
+
+This will allow you to connect from the same local network but not from outside, to connect to your DAppNode from outside your network you will need to download another VPN profile pointing to the dyndns address (exactly as it is downloaded)
 
 ### VPN ports closed
 
