@@ -39,11 +39,11 @@ After a few hours of installing DAppNode you will have your own Ethereum node ru
 You have available your parity websocket in
 ws://my.ethchain.dnp.dappnode.eth:8546 and RPC connection through http://my.ethchain.dnp.dappnode.eth:8545
 
-You can run your parity node in different configurations using the "Update environment variables" button.  More info on env vars for Parity client [here](https://wiki.parity.io/Configuring-Parity-Ethereum)
+You can run your parity node in different configurations using the "Update environment variables" button. More info on env vars for Parity client [here](https://wiki.parity.io/Configuring-Parity-Ethereum)
 
 ## MyCrypto
 
-You can now enter a decentralized version of MyCrypto that it is not only hosted in IPFS but is using your node to connect to the Ethereum network. However, note that as the access URL is not https there might be incompatibilities; we are working hard to solve this issue and give you an awesome user experience using MyCrypto in a decentralized way. You can access it in <http://mycrypto.dappnode.eth/>. In desktop version there is no need to have an https access to connect to a node or connect to your hardware wallet. 
+You can now enter a decentralized version of MyCrypto that it is not only hosted in IPFS but is using your node to connect to the Ethereum network. However, note that as the access URL is not https there might be incompatibilities; we are working hard to solve this issue and give you an awesome user experience using MyCrypto in a decentralized way. You can access it in <http://mycrypto.dappnode.eth/>. In desktop version there is no need to have an https access to connect to a node or connect to your hardware wallet.
 
 ## Metamask
 
@@ -83,14 +83,13 @@ Note that your browsing device is connected to your DAppNode via VPN, and the VP
 
 Now you can seamlessly navigate ETH domains in a decentralized way.
 
-
 # Advanced users bonus
 
-## Have your own packages in your DappNode
+## Have your own packages in your DAppNode
 
 You have two ways to install your own DNPs (DAppNode Packages):
 
-1. With their ENS name, i.e. kovan.dnp.dappnode.eth (a private repo controlled by our team) or yourpackage.public.dappnode.eth, a repo with free access is available so anyone can publish packages there.
+1. With their ENS name, i.e. kovan.dnp.dappnode.eth (a private repository controlled by our team) or yourpackage.public.dappnode.eth, a repository with free access is available so anyone can publish packages there.
 
 Ultimately any ENS name that resolves to an IPFS containing a valid manifest is acceptable.
 
@@ -101,15 +100,15 @@ So for development what we recommend is:
 1.  Develop your package and test it locally
 2.  Use the SDK to build it and upload it to IPFS
 3.  Test the package by installing it with its IPFS link
-4.  Once you are sure it works perfect, publish it to the open repo public.dappnode.eth.
+4.  Once you are sure it works perfect, publish it to the open repository public.dappnode.eth.
 
-Please take a look at these refs regarding the SDK to deploy your own packages in your DAppnode:
+Please take a look at these refs regarding the SDK to deploy your own packages in your DAppNode:
 
-* <https://github.com/dappnode/DAppNodeSDK>
+- <https://github.com/dappnode/DAppNodeSDK>
 
-* <https://github.com/dappnode/DAppNode/wiki/DAppNode-Package-Development>
+- <https://github.com/dappnode/DAppNode/wiki/DAppNode-Package-Development>
 
-* <https://github.com/dappnode/DAppNode/wiki/DAppNode-packages-manifest>
+- <https://github.com/dappnode/DAppNode/wiki/DAppNode-packages-manifest>
 
 ## How to decentralize wallet.ethereum.org with DAppNode
 
@@ -232,7 +231,7 @@ The website is now distributed in IPFS!
 
 ### Point the ENS domain to the IPFS hash
 
-If you are the owner of an ENS domain you can make this point to the hash you want. We are going to use [wallet.dappnode.eth] (http://wallet.dappnode.eth) for this example:
+If you are the owner of an ENS domain you can make this point to the hash you want. We are going to use [wallet.dappnode.eth](http://wallet.dappnode.eth) for this example:
 
 1. Go to <http://mycrypto.dappnode.eth/#contracts> (if you don’t have access to a DAppNode you can use the centralized alternative) <https://mycrypto.com#contracts> or <https://www.myetherwallet.com/#contracts>
 

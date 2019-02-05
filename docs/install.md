@@ -1,32 +1,26 @@
 # Install DAppNode
 
-Think of DAppNode as an operating system. In fact, it is; our savvy team has taken an Ubuntu distribution and superpowered it to be your gateway to access the decentralized web.
+Think of DAppNode as an operating system. In fact, it is; our savvy team has taken an Ubuntu distribution and super-powered it to be your gateway to access the decentralized web.
 
-While you can run DAppNode on a Virtual Private Server (VPS), we **highly encourage you to run DAppNode on your own physical server**. The intention of DAppNode is to create a strong network of decentralized severs. Running DAppNode on centralized virtual servers defeats the purpose. 😉That being said, we realize it may be easiest to get started and test the system on a VPS.
+While you can run DAppNode on a Virtual Private Server (VPS), we **highly encourage you to run DAppNode on your own physical server**. The intention of DAppNode is to create a strong network of decentralized servers. Running DAppNode on centralized virtual servers defeats the purpose. 😉That being said, we realize it may be easiest to get started and test the system on a VPS.
 
-----------
+---
 
+⚠️ **DAppNode is intended to use in a server. Do not install DAppNode on your laptop**
 
+⚠️ If you do so the installation will erase all its content. See details below
 
-⚠️ **DappNode is intended to use in a server.Do not install DAppNode on your laptop** 
-
-⚠️ If you do so the installation will erase all its content. See details below 
-
-
-
-***
-
-
+---
 
 ## Minimum requirements
 
 You will need a dedicated machine to install it.
 
-Ethereum is big! To cope with that, you’ll need to have a powerful enough machine to keep up with Ethereum’s rapidly splitting blocks.
+Ethereum is big! To cope with that, you’ll need to have a powerful enough machine to keep up with Ethereum's rapidly splitting blocks.
 
-That is why we recommend having at least 8gbs RAM and a SSD hard drive with at least 160 GBs (add capacity as you like, keep in mind that Ethereum is 130GBs at press time).
+That is why we recommend having at least 8gbs RAM and an SSD hard drive with at least 160 GBs (add capacity as you like, keep in mind that Ethereum is 130GBs at press time).
 
-## How to install Dappnode on your machine
+## How to install DAppNode on your machine
 
 Okay, so you’re ready to join the real DAppers. Let us show you how to make that hardware sing the hardware decentralization song!
 
@@ -38,7 +32,7 @@ Download the image from [DAppNode-ubuntu-18.04-server-amd64_v0.1.16.iso](https:/
 
 Burn the ISO to an USB stick, please follow the official Ubuntu instructions for [MacOS](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0) or [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0>).
 
-Please note that these instructions are intended to generate the ISO image in a bootable USB from a Mac, Windows or Linux device , and then install it in a server. **_IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED._** DAppnode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
+Please note that these instructions are intended to generate the ISO image in a bootable USB from a Mac, Windows or Linux device, and then install it in a server. **_IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED._** DAppNode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
 
 ### Install an Ubuntu distribution (~15 min)
 
@@ -83,29 +77,25 @@ If the installation succeeded, your system will reboot, you will have to log in 
   </a>
 </p>
 
-
-
-
-
 ## Installation via script
 
 ### WARNING
 
-This software is not meant to be run in a remote machine hosted by any remote provider. What DAppNode specifically wants to avoid is centralization of the machines that our digital lives rely on; nevertheless we understand that before buying a dedicated machine to run your Dappnode you might want to test it and see how easy it is to use….
+This software is not meant to be run in a remote machine hosted by any remote provider. What DAppNode specifically wants to avoid is centralization of the machines that our digital lives rely on; nevertheless, we understand that before buying a dedicated machine to run your DAppNode you might want to test it and see how easy it is to use….
 
 And… only for that reason will we look aside when someone installs a DAppNode in a virtual provider. We want it to be clear that kind of use is not the recommended use, but for testing purposes only.
 
-Remember: **_Your hardware, your coins, your privacy, your freedom._**
+Remember **_Your hardware, your coins, your privacy, your freedom._**
 
 ### Script installation guide
 
-For this example we'll be installing DAppNode on a Digital Ocean droplet, but the process should work for any other Ubuntu Server 18.04.
+For this example, we'll be installing DAppNode on a Digital Ocean droplet, but the process should work for any other Ubuntu Server 18.04.
 
 **_We strongly recommend using 8GB+ of RAM and a 160Gb+ SSD hard drive._**
 
 ### Install DAppNode and its dependencies
 
-Install the prerequisites (docker and docker-compose) running this command in the terminal of the machine you want to install the DAppNode server,if using a Virtual Service Provider, you have first to connect you via SSH to that machine.
+Install the prerequisites (docker and docker-compose) running this command in the terminal of the machine you want to install the DAppNode server, if using a Virtual Service Provider, you have first to connect you via SSH to that machine.
 
 ```
 sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.16/dappnode_install_pre.sh | sudo bash
@@ -117,7 +107,7 @@ sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.16/da
 sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.16/dappnode_install.sh | sudo bash
 ```
 
-If you have an static IP and want to set it up right from the connection, then run the command with the following variable including your static ip
+If you have a static IP and want to set it up right from the connection, then run the command with the following variable including your static IP
 
 ```
 sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.16/dappnode_install.sh | sudo STATIC_IP="your static IP" bash
@@ -127,12 +117,10 @@ When the installation is done and is successful, you will be given credentials t
 
 Take into account that the chain will take some time to synchronize and you will not be able to perform most of the actions before that.
 
-
 ### How to restore an installed DAppNode to the latest version:
 
-If you are experiencing any problem or just want  to make  sure you are running  the latest DAppNode versions,execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes. 
+If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.
 
 ```
 sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.16/dappnode_install.sh | sudo UPDATE=true bash
 ```
-
