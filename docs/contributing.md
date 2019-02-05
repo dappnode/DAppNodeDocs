@@ -19,16 +19,15 @@ In order to get the repositories setup before contributions refer to the [README
 
 1. _Find a suitable issue_
 
-   If this is your first time look for an issue labeled [good first issue](https://github.com/dappnode/DNP_BIND/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) otherwise look for issues labeled [help wanted](https://github.com/dappnode/DNP_BIND/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) . If another issue jumps out at you please engage on the issue before starting it.
+   If this is your first-time look for an issue labeled [good first issue](https://github.com/dappnode/DNP_BIND/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) otherwise look for issues labeled [help wanted](https://github.com/dappnode/DNP_BIND/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22). If another issue jumps out at you please engage on the issue before starting it.
 
 2. _Assign yourself the issue_
 
-   Let us know you're working on it! We hate wasted labour so it's always helpful to know what our community contributors are working on.
+   Let us know you're working on it! We hate wasted labor so it's always helpful to know what our community contributors are working on.
 
 3. _Fork and clone [DAppNode](://github.com/dappnode/DAppNode)_
 
-   In general it's a good practice to fork into your own repository. We prefer if issues
-   are addressed in a branch with the issue number in it's name.
+   In general, it's a good practice to fork into your own repository. We prefer if issues are addressed in a branch with the issue number in its name.
    i.e. `29_this_is_an_issue`
 
 4. _Make contributions_
@@ -37,7 +36,7 @@ In order to get the repositories setup before contributions refer to the [README
 
 5. _Add testing_
 
-   In general we aim for full test coverage. For this reason most issues completed should include full testing. If you think there should be an exception for your issue please reach out.
+   In general, we aim for full test coverage. For this reason, most issues completed should include full testing. If you think there should be an exception for your issue please reach out.
 
 6. _Run previous tests_
 
@@ -49,7 +48,7 @@ In order to get the repositories setup before contributions refer to the [README
 
 8. _Create a Pull Request_
 
-   At this point you should either have a forked repository with your issue fixes and it is time to put in a PR. Make sure that your PR has something like `addresses #26` or `closes #26` The most important thing is that it has the relevant issue number referenced in the body of the PR.
+   At this point, you should either have a forked repository with your issue fixes and it is time to put in a PR. Make sure that your PR has something like `addresses #26` or `closes #26` The most important thing is that it has the relevant issue number referenced in the body of the PR.
 
 9. _Make noise!_
 
@@ -72,7 +71,7 @@ reporting issues, please mention the following details:
 - Which platform are you running on
 - How to reproduce the issue
 - What was the result of the issue
-- What the expected behaviour is
+- What the expected behavior is
 
 Reducing the source code that caused the issue to a bare minimum is always
 very helpful and sometimes even clarifies a misunderstanding.
@@ -90,7 +89,7 @@ and instead, `git rebase` your branch.
 Additionally, if you are writing a new feature, please ensure you write appropriate
 Boost test cases and place them under `test/`.
 
-New features and bugfixes should be added to the `Changelog.md` file: please
+New features and bug fixes should be added to the `Changelog.md` file: please
 follow the style of previous entries, when applicable.
 
 Please note that this project is released with a `Contributor Code of Conduct <https://raw.githubusercontent.com/dappnode/DAppNode/master/CODE_OF_CONDUCT.md>`\_.

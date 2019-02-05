@@ -2,7 +2,7 @@
 
 [TOC]
 
-## Welcome to Dappnode – The Admin UI
+## Welcome to DAppNode – The Admin UI
 
 Once you have succeeded in connecting to your DAppNode via VPN, you will have access to the above-mentioned URL. Be aware of this historic moment; it might very likely be the first ETH domain you visit.
 
@@ -38,7 +38,7 @@ By clicking “Dashboard” you can see a summary of the components that make up
 
 **IMPORTANT NOTE ON SERVER STATS: if you note that the disk capacity is getting near to 100 % you should disable services to avoid the disk getting full. If this happens the DAppNode will get unfunctional, and you will not be able to erase packages once the memory is at 100%**
 
-To avoid this, non core packages will be automatically stopped when there is less than 5 Gbs left, and ETHCHAIN and IPFS will be automatically stopped when there is less than 1 GB available. If by any chance your DAppnode server gets to 100 % busy disk space, it  will become unworkable from the ADMIN UI and you will have to erase containers/volumes manually from the commmand line of your server.  
+To avoid this, non core packages will be automatically stopped when there is less than 5 Gbs left, and ETHCHAIN and IPFS will be automatically stopped when there is less than 1 GB available. If by any chance your DAppNode server gets to 100 % busy disk space, it will become unworkable from the ADMIN UI and you will have to erase containers/volumes manually from the commmand line of your server.
 
 ## Activity
 
@@ -48,7 +48,7 @@ This tab allows easy access to the DAppNode logs in order to debug errors. We wo
 
 This tab is one of the cornerstones of our vision, as the functionality is meant to build trusted circles that connect to the decentralized web through a DAppNode installed on a piece of self-owned hardware that provides access to your friends and family.
 
-Just click “add a device”, name it and you will get a QR / link that contains the file to configure the VPN to connect to your DAppnode for any friend or family member.
+Just click “add a device”, name it and you will get a QR / link that contains the file to configure the VPN to connect to your DAppNode for any friend or family member.
 
 This is the same process that you performed while installing your DAppNode when you accessed the first URL that the DAppNode sent you to. In fact, the DAppNode created the first device for you, now it is your turn…
 
@@ -58,8 +58,7 @@ If there is a device using the same VPN credentials, you will be able to connect
 
 You also have the ability to give a device admin privileges so the ADMIN UI can be used by them. If any device without admin credentials tries to access the ADMIN UI, it will not work.
 
-
-⚠️ **Take in account that if you remove admin privileges to any device while that device is connected to the server, it will still be able to access the admin UI and thus that device can make itself admin again, to prevent this, after removing admin privileges to any user you should restart the VPN package by going to System / VPN / Restart. This also applies when you want to remove access to any device without admin privileges.** ⚠️ 
+⚠️ **Take in account that if you remove admin privileges to any device while that device is connected to the server, it will still be able to access the admin UI and thus that device can make itself admin again, to prevent this, after removing admin privileges to any user you should restart the VPN package by going to System / VPN / Restart. This also applies when you want to remove access to any device without admin privileges.** ⚠️
 
 ### Guest User functionality
 
@@ -79,7 +78,7 @@ From the installer you can also install packages not shown in the interface by p
 
 We have added a functionality that allows to customize some packages with predefined configurations made by the developer of the node/ DApp, please check the project documentation to see which options to customize are available.
 
-You can also select your own customized path for the installation of the package by writing your selected path in the field aside the path by default. Last, if you are  an advanced user  you can also chooose the ports  to be used by the package  by editing the "ports" section. 
+You can also select your own customized path for the installation of the package by writing your selected path in the field aside the path by default. Last, if you are an advanced user you can also chooose the ports to be used by the package by editing the "ports" section.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/installer.png">
@@ -93,11 +92,11 @@ With DAppNode, you can easily set up nodes of the Rinkeby, Kovan and Ropsten net
 
 As with Parity Main net node, you have your websocket in the port 8546 and your RPC connection in the port 8545 using the following URLs:
 
-* my.rinkeby.dnp.dappnode.eth
+- my.rinkeby.dnp.dappnode.eth
 
-* my.kovan.dnp.dappnode.eth
+- my.kovan.dnp.dappnode.eth
 
-* my.ropsten.dnp.dappnode.eth
+- my.ropsten.dnp.dappnode.eth
 
 ### Görli
 
@@ -115,7 +114,7 @@ Swarm is a distributed storage platform and content distribution service, a nati
 
 ### Monero
 
-DappNode has a Monero daemon package available that will be your very own Monero node, as using Monero without your own node is a bit like having your DappNode in AWS (defeats the purpose).
+DAppNode has a Monero daemon package available that will be your very own Monero node, as using Monero without your own node is a bit like having your DAppNode in AWS (defeats the purpose).
 
 Let’s see how to connect a Monero wallet to your node.
 
@@ -135,11 +134,11 @@ Do not buy any tanks please ;)...
 
 Here you can see the packages you have installed and manage them, access to their logs, stop and restart them, remove them and preserve its data, or remove the package and the data. In this screen you will also find the relevant info about the package:
 
-* Version of the package
-* Use link
-* Volumes and  space  occupied  (remember you can only choose a customised  path in the installation)
-* Info links
-* Ports used (remember you  can change them, in the instalalation or after  iit)
+- Version of the package
+- Use link
+- Volumes and space occupied (remember you can only choose a customised path in the installation)
+- Info links
+- Ports used (remember you can change them, in the instalalation or after iit)
 
 These are the main options you can execute on your installed packages:
 
@@ -147,11 +146,11 @@ These are the main options you can execute on your installed packages:
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/installerservices.png">
 </p>
 
-Note that when removing a  non core package you have the following options :
+Note that when removing a non core package you have the following options :
 
-* Remove  only  the container: This will only remove the package but data will be kept, so if you insatll the package again in  the same path,thje container will mount the volume again and  you won´t have to sync the whole package  again.
+- Remove only the container: This will only remove the package but data will be kept, so if you insatll the package again in the same path,thje container will mount the volume again and you won´t have to sync the whole package again.
 
-* Remove Package + volume : This will erase the container  and  the asosicated data. If you want to reinstall, the  volume will have to sync again
+- Remove Package + volume : This will erase the container and the asosicated data. If you want to reinstall, the volume will have to sync again
 
 ## System
 
@@ -161,23 +160,18 @@ If you have a Static IP you can set it up here so the future VPN credentials gen
 
 ## SDK
 
-Together with DAppNode´s SDK, this tab will help you to make the metamask transaction to  publish your own package. 
+Together with DAppNode´s SDK, this tab will help you to make the metamask transaction to publish your own package.
 
-Once you have used the command line SDK and you have the DNP name, the version about to be published and the IPFS hash of the manifest, you can use this tool to make the last step and send the transaction once you have connected  your metamask by clicking the "Connect" button   
+Once you have used the command line SDK and you have the DNP name, the version about to be published and the IPFS hash of the manifest, you can use this tool to make the last step and send the transaction once you have connected your metamask by clicking the "Connect" button
 
 ## Notifications
 
-In the upper right part of the ADMIN UI you will see a bell icon that will be highlighted  when there is an important  notification  for you. It will turn yellow to warn you about the need of creating new VPN credentials when you set a Static IP, or prompt you to restart the VPN services when you want to remove access to users in your DAppNode. It wilil turn red  when packages have been stopped to prevent the machine disk getting full.
+In the upper right part of the ADMIN UI you will see a bell icon that will be highlighted when there is an important notification for you. It will turn yellow to warn you about the need of creating new VPN credentials when you set a Static IP, or prompt you to restart the VPN services when you want to remove access to users in your DAppNode. It wilil turn red when packages have been stopped to prevent the machine disk getting full.
 
 ## Report
 
-You can contribute to DAppNode´s improvement by opening issues directly from the  ADMIN UI. When you click  the  "Report" button and Auto diagnose tool will be run to check DappNode´s overall performance.  Also you  have the option of sending tthe issuewith a prepopulated form thata will be automatically loaded in the report screen. You can  also choose to open the  issue without any data. 
+You can contribute to DAppNode´s improvement by opening issues directly from the ADMIN UI. When you click the "Report" button and Auto diagnose tool will be run to check DAppNode´s overall performance. Also you have the option of sending tthe issuewith a prepopulated form thata will be automatically loaded in the report screen. You can also choose to open the issue without any data.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/reportscreen.png">
 </p>
-
-
-
-
-

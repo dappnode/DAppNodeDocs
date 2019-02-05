@@ -2,9 +2,9 @@
 
 Welcome to DAppNode!!!
 
-If you are reading this, decentralization, privacy and security are important to you and we’re glad for that, and even more for helping people like you run their own secured hardware towards that which contributes to a truly decentralized web.
+If you are reading this, decentralization, privacy and security are important to you and we’re glad for that, and even more, for helping people like you run their own secured hardware towards that which contributes to a truly decentralized web.
 
-DAppNode is an operating system that allows you to host decentralized apps in a truly decentralized way, eliminating the reliance on vulnerable third parties and adds an extra layer of incentivization that helps to spread adoption of the blockchain ecosystem, and most important, solves the problem of infrastructure centralization.
+DAppNode is an operating system that allows you to host decentralized apps in a truly decentralized way, eliminating the reliance on vulnerable third parties and adds an extra layer of incentivization that helps to spread adoption of the blockchain ecosystem, and most important solves the problem of infrastructure centralization.
 
 You can install DAppNode on any piece of hardware (see minimum requirements) to get easy censorship-resistant access to your favorite DApps, the ability to host your own nodes and share access with family and friends.
 
@@ -14,7 +14,7 @@ DAppNode connects users to the decentralized web and creates the infrastructure 
 
 We also developed an SDK for DAppNodePackage developers and we expect to see many DApps with their own DNP that improve the user experience and decentralizes access. For example, it can be a DApp accelerator that allows the devices not having to synchronize the chain to start using it, like a cache system for the DAppNode users. It could be a prepared service for staking in any chain, it could be a client for other chains, or it could be a scrawl of a decentralized search engine, etc.
 
-Within the DAppNode project we have a storefront that will allow any person to install and configure their own project in just minutes, facilitating the visibility and decentralization of its growth and expansion. We believe this is the beginning of a new model, a P2P economy that makes projects truly decentralized and accessible to anyone.
+Within the DAppNode project, we have a storefront that will allow any person to install and configure their own project in just minutes, facilitating the visibility and decentralization of its growth and expansion. We believe this is the beginning of a new model, a P2P economy that makes projects truly decentralized and accessible to anyone.
 
 We envision a self-sustaining system where users support their favorite projects, by providing the service that the project needs and in return it provides the necessary income to amortize the costs of the DAppNode.
 
@@ -22,11 +22,11 @@ We envision a self-sustaining system where users support their favorite projects
 
 1. Vojtech has several cryptocurrencies he follows and is ready to stop using his laptop to run clients but doesn’t want to have to pay a monthly subscription in fiat to some company he doesn’t trust with his private keys.
 
-2. He hears about DAppNode and decides to buy the top of the line DAppNode Server preloaded from one of the many certified independent vendors (though he could buy his own server and install the software himself).
+2. He hears about DAppNode and decides to buy the top of the line DAppNode Server pre-loaded from one of the many certified independent vendors (though he could buy his own server and install the software himself).
 
 3. The DAppNode Server is delivered to his front door, and when Vojtech opens the box he finds a 2 step instruction card: First, plug in the Server. Second, go to dappnode.org/initialize
 
-4. On this website, there is an extremely simple and short walk-thru for Vojtech to set up his credentials and choose which clients to deploy.
+4. On this website, there is an extremely simple and short walk-through for Vojtech to set up his credentials and choose which clients to deploy.
 
 5. By just checking a few boxes, Vojtech deployed his own VPN; his own local instance of MyCrypto.com; Ethereum, Bitcoin, Monero and Dogecoin Full nodes; a ZenCash Secure Node and DASH Master Node; he joined the IPFS Consortium and deployed a TrueBit Verifier and Livepeer node; and hosted Giveth, Swarm City, Aragon, Colony, and Decentraland Helper DApps to support these projects and to ensure that his interaction with these DApps cannot be censored and is fully trustless.
 
@@ -38,11 +38,11 @@ We started working on this project mostly part-time in October 2017; now we have
 
 We have been developing in an invitingly open source manner and now that the software is completed anyone can use their own hardware to run DAppNode on it.
 
-This project is a community funded and fully open sourced project that has received support from Ethereum Foundation, Ethereum Community Fund, Eth Prize, Aragon NEST, GitCoin and private donors.
+This project is a community funded and fully open source project that has received support from Ethereum Foundation, Ethereum Community Fund, Eth Prize, Aragon NEST, GitCoin and private donors.
 
-We are open to receive donations from any interested parties to help pay the developers working hard on the software development.
+We are open to receive donations from any interested parties to help pay the developers working hard on software development.
 
-See our [campaign on Giveth.io](https://beta.giveth.io/campaigns/5b44b198647f33526e67c262) to make a donation: 
+See our [campaign on Giveth.io](https://beta.giveth.io/campaigns/5b44b198647f33526e67c262) to make a donation:
 
 Ready to jump in? Here we go!
 
