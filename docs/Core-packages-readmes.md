@@ -1,5 +1,3 @@
-#  Core packages readmes
-
 ## ETHCHAIN
 
 <p align="left">
