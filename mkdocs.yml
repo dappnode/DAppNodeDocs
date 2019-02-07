@@ -10,7 +10,7 @@ nav:
   - FAQs: faqs.md
   - Troubleshooting: troubleshooting.md
   - Architecture: architecture.md
-  - Core packages readmes
+  - Core packages readmes: Core-packages-readmes.md
   - Contributing: contributing.md
   - License: license.md
 
