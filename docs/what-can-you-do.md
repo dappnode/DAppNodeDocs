@@ -12,6 +12,8 @@ Now you can do things like for example:
 
 - Decentralized version of [Wallet Gnosis](http://gmultisig.dappnode.eth)
 
+- Decentralized version of [Oasis Direct](http://oasis.dappnode.eth) and [Eth2Dai](http://eth2dai.dappnode.eth)
+
 - Go to IPFS by entering <http://my.ipfs.dnp.dappnode.eth:5001/webui> into your browser.
 
 - You have a websocket of your parity node in ws://my.ethchain.dnp.dappnode.eth:8546 and you can use http://my.ethchain.dnp.dappnode.eth:8545 as a custom RPC to connect to metamask i.e
