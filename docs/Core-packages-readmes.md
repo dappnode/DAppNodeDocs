@@ -1,6 +1,6 @@
 #  Core packages readmes
 
-## DAppNode_Installer 
+## Installer 
 
 [![Website dappnode.io](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://dappnode.io/)
 [![Documentation Wiki](https://img.shields.io/badge/Documentation-Wiki-brightgreen.svg)](https://github.com/dappnode/DAppNode/wiki)
@@ -93,6 +93,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 [docker](https://www.docker.com/)
 
 [docker-compose](https://docs.docker.com/compose/)
+
 ## VPN
 
 [![Website dappnode.io](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://dappnode.io/)
@@ -211,7 +212,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 [docker-compose](https://docs.docker.com/compose/)
 
-## ADMIN
+## Admin
 
 [![Website dappnode.io](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://dappnode.io/)
 [![Documentation Wiki](https://img.shields.io/badge/Documentation-Wiki-brightgreen.svg)](https://github.com/dappnode/DAppNode/wiki)
@@ -449,7 +450,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 [IPFS](https://ipfs.io/)
 
-## ETHCHAIN
+## Ethchain
 
 <p align="left">
   <img src="https://github.com/dappnode/DNP_ETHCHAIN/blob/master/ETHCHAIN-min.png" width="200"/>
@@ -569,7 +570,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 [Parity](https://www.parity.io/)
 
-## DAPPMANAGER
+## Dappmanager
 
 [![Website dappnode.io](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://dappnode.io/)
 [![Documentation Wiki](https://img.shields.io/badge/Documentation-Wiki-brightgreen.svg)](https://github.com/dappnode/DAppNode/wiki)
@@ -688,7 +689,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 [docker-compose](https://docs.docker.com/compose/)
 
-## ETHFORWARD
+## Ethforward
 
 [![Website dappnode.io](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://dappnode.io/)
 [![Documentation Wiki](https://img.shields.io/badge/Documentation-Wiki-brightgreen.svg)](https://github.com/dappnode/DAppNode/wiki)
@@ -1137,7 +1138,7 @@ See also the list of [contributors](https://github.com/dappnode/DAppNode_OTP/con
 
 This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details
 
-## dyndns-server
+## Dyndns-server
 
 A Dynamic DNS server implementation for DAppNode.
 
@@ -1292,9 +1293,9 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 [Parity](https://www.parity.io/)
 
-## DAppNodeSDK
+## DAppNode SDK
 
-dappnodesdk is a tool to make as simple as possible the creation of new dappnode packages. It helps to initialize and publish an Aragon Package Manager Repo in the ethereum mainnet.
+DAppNode SDK is a tool to make as simple as possible the creation of new dappnode packages. It helps to initialize and publish an Aragon Package Manager Repo in the ethereum mainnet.
 
 We have deployed a public APM (Aragon Package Manager) registry in which anyone can create their own APM repository: [public.dappnode.eth](https://etherscan.io/address/public.dappnode.eth)
 
