@@ -59,6 +59,15 @@ First, you must be connected to your DAppNode’s VPN:
 
 4. Now you should be connected to “Private Network” and that’s it!!
 
+5. But... Do you want to be connected to a "Private Netowrk" or to your  DAppNode??? 
+
+To edit the name showed at the  upper right corner just hit advanced options under the URL of the Custom RPC and include DAppNode (or the name you  want to have) in the field alias.
+
+<p align="center">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/customnamemetamask.png">
+</p>
+
+
 ## IPFS
 
 When you install DAppNode an IPFS daemon is installed and your account is automatically created so you can start uploading and requesting the decentralized storage that the InterPlanetary File System offers.
