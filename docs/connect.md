@@ -1,46 +1,254 @@
-# Connect to DAppNode's VPN
+# Connect to DAppNode's OpenVPN
 
-Once you have your DAppNode running, you will get an URL in your terminal from where you can download the VPN config file and install it on your device. Just download it and follow the instructions. For Android, Ubuntu, and Windows you have to set the VPN following the instructions.
 
-Installing (or manually setting up)this VPN file will configure your VPN connection to your DAppNode from your device. The first device VPN connection will have super admin privileges so you can access and manage the DAppNode admin UI; this user cannot be deleted.
+For connecting to DAppNode 0.2.0 OpenVPN, you will need to have a client that supports the OpenVPN protocol in every device with which you´d like to connect to your DAppNode.
+
+Once you have your DAppNode running, you will get an URL in your terminal from where you can download the OVPN config file and open it in your device with your OpenVPN client. 
+
+If you have still not installed your OpenVPN client . Just download the credentials file it and follow the instructions.  
+
+Opening this OVPN file will configure your VPN connection to your DAppNode from your device. The first device VPN connection will have super admin privileges so you can access and manage the DAppNode admin UI; this user cannot be deleted.
 
 Take into account that some VPN clients might send all traffic through the VPN, which is not very ideal if you have many people connected to your DAppNode, or only to send traffic which points to an ETH domain.
 
 DAppNode is not intended to manage all the traffic of the devices connected to it, only the ETH domains access requests.
-As a general rule, if your DAppNode is not connected through a router that supports UPnP, you will have to manually open some ports to have complete functionality. For the VPN to work you must make sure that you have opened the 4500 and 500 ports (UDP).
-
-Here you have a sample table of the ports that should be opened in your DAppNode:
-
-| Service       | TCP   | UDP       |
-| ------------- | ----- | --------- |
-| VPN           |       | 500, 4500 |
-| SSH           | 22    |           |
-| Ethereum Node | 30303 | 30303     |
-| IPFS          | 4001  | 4002      |
-
-If you are not able to download or install the config file, you can set it up manually following the instructions for different platforms contained in the link that the terminal gives after installation. All the parameters you need to fill in are given by your terminal when you first install it or when you connect to it vía SSH.
-
-These are the parameters you will need to configure, still depending on your operating system follow the instructions you will find on the website you will be directed to.
-
-<p align="center">
-    <img width="300"src="https://github.com/Shelpin/DAppNode/raw/master/doc/credentialsscreen.png">
-</p>
-
-**VPN TYPE**: Select L2TP over IPSEC
-
-**Server IP**: Select the IP given by the terminal when connecting to the DAppNode via SSH. If you are behind a router without NAT Loopback, you will also find in the terminal the internal IP you need to use to be able to connect is in the same network without NAT Loopback enabled.
-
-**PSK**: Shared secret, you will find it in the terminal.
-
-**VPN User**: This is the username of the super administrator and your terminal will give it to you too.
-
-**Password**: You can also find the password in the terminal output when connecting to your DAppNode.
-
-**Important note on DAppNode´s VPN**
 
 **When you download and install a VPN credentials file only your ETH traffic will be going out through the VPN, the regular IP traffic will still be done with your regular IP.** 
 
 **If you want to route all your Internet traffic through your DAppNode so you are behind your VPN, you should configure it in your VPN client settings by checking the Box "Send all traffic".** 
+
+These are the recommended Open VPN clients for each OS:
+
+* Mac os: [Tunnelblick](https://tunnelblick.net/) 
+* Ios: [Open VPN connect](https://itunes.apple.com/us/app/openvpn-connect/id590379981)
+* Windows: [Open VPN (community installer)](https://openvpn.net/community-downloads/)
+* Android: [Open VPN for Android](https://play.google.com/store/apps/details?id=de.blinkt.openvpn)
+* Linux: Included in Ubuntu recent versions. 
+
+Depending on your OS these are the instructions for installing our recommended OpenVPN clients. 
+
+## Linux
+
+### Ubuntu / NetworkManager
+
+OpenVPN comes installed in Ubuntu recent versions, but to be sure, follow these steps. Run the terminal application:
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ubuntu1.png">
+</p>
+
+
+Install OpenVPN and plugin for NetworkManager:
+
+    sudo apt-get install network-manager-openvpn-gnome openvpn
+
+Once the installation is complete, restart Network Manager by typing:
+
+    sudo service network-manager restart
+
+Go to "Settings -> Network" and click to the "+" button to add a VPN connection:
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ubuntu2.png">
+</p>
+
+Select "Import from file..."
+
+ <p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ubuntu4.png">
+</p>
+
+Browse the filesystem to select the downloaded file:
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ubuntu3.png">
+</p>
+
+Add the profile with the default settings:
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ubuntu5.png">
+</p>
+
+Now you can connect selecting the profile from the network tray icon:
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ubuntu6.png">
+</p>
+
+
+## MacOS
+
+The recommended OpenVPN client is Tunnelblick and you can download it [here](https://tunnelblick.net)
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/Mac1.png">
+</p>
+
+Once you have followed the steps to install the tunnelblick client in your MAC, download the file from the URL given in the console to download the OVPN file with your credentials. 
+
+If you have already downloaded the config file before installing Tunnelblick, you can select the "I have a config file" option and browse to its location. If not, once you have downloaded the OVPN file, just double click on it and Tunnelblick will add the config for you.
+
+Select your preferred option about the users that will have access to the config. 
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/MAC4.png">
+</p>
+
+The system will probably ask for your admin password to install the VPN configuration, and it is done!
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/MAC5.png">
+</p>
+
+
+Just open Tunnelblick in your MAC and click on Connect DAppNode.
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/MAC6.png">
+</p>
+
+
+Once connected you can already access http://my.admin.dnp.dappnode.eth with your new OpenVPN connection!
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/MAC8.png">
+</p>
+
+
+## iOS
+
+The recommended OpenVPN client is OpenVPN Connect and you can download it [here](https://itunes.apple.com/us/app/openvpn-connect/id590379981?mt=8)
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios1.PNG">
+</p>
+
+Once you have installed it you can just scan the QR code and hit download:
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios4.jpg">
+</p> 
+
+and click in "Open in OpenVPN"
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios5.PNG">
+</p> 
+
+Tap the add button and name your connection
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios7.PNG">
+</p> 
+
+The phone will ask you permission for OpenVPN to add a configuration profile , please do.
+
+And it is done, you can just connect to your new OpenVPN now
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios9.PNG">
+</p> 
+  
+After a few seconds, you will see in the OopoenVPN interface that you are connected. You can either connect to your server through the OpoenVPN app or directly from the phone´s "VPN" menu in "Settings"
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios10.PNG">
+</p> 
+
+Once connected you can access http://my.admin.dnp.dappnode.eth with your new OpenVPN connection!
+
+## Android
+
+Install **OpenVPN for Android** from [Google Play](https://play.google.com/store/apps/details?id=de.blinkt.openvpn) or [F-Droid](https://f-droid.org/en/packages/de.blinkt.openvpn/):
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/android1.jpg">
+</p>
+
+Download the OpenVPN profile from the URL or scanned QR code:
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/android2.jpg">
+</p>
+
+Open the downloaded file and import it to the application, then save it with your preferred name:
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/android3.jpg">
+</p>
+
+Select the saved profile to connect to it:
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/android4.jpg">
+</p>
+
+Accept the connection request:
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/android5.jpg">
+</p>
+
+You should see a connection log similar to this:
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/android6.jpg">
+</p>
+
+Once connected, you should be able to browse the DAppNode Admin page:
+
+[http://my.admin.dnp.dappnode.eth](http://my.admin.dnp.dappnode.eth)
+
+<p align="center">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/android7.jpg">
+</p>
+
+
+
+## Windows
+
+Download the recommended client for [OpenVPN WINDOWS INSTALLER (NSIS)](https://openvpn.net/community-downloads/) and follow the steps to install it:
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/windows1.png">
+</p>
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/windows2.png">
+</p>
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/windows3.png">
+</p>
+
+Download the file from the provided link by the DAppNode administrator.
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/windows4.png">
+</p>
+
+Run the OpenVPN GUI program:
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/windows5.png">
+</p>
+
+Select "Import file..." from the tray bar icon (right click):
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/windows6.png">
+</p>
+
+Select the downloaded file:
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/windows7.png">
+</p>
+
+Finally, select "Connect" from the tray bar icon menu:
+
+<p align="center">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/windows8.png">
+</p>
+
 
 
 Now it is time…
