@@ -36,11 +36,11 @@ These are the parameters you will need to configure, still depending on your ope
 
 **Password**: You can also find the password in the terminal output when connecting to your DAppNode.
 
-*Important note on DAppNode´s VPN*
+**Important note on DAppNode´s VPN
 
-When you download and install a VPN credentials file only your ETH traffic will be going out through the VPN, the regular IP traffic will still be done with your regular IP. 
+**When you download and install a VPN credentials file only your ETH traffic will be going out through the VPN, the regular IP traffic will still be done with your regular IP. 
 
-If you want to route all your Internet traffic through your DAppNode so you are behind your VPN, you should configure it in your VPN client settings by checking the Box "Send all traffic". 
+**If you want to route all your Internet traffic through your DAppNode so you are behind your VPN, you should configure it in your VPN client settings by checking the Box "Send all traffic". 
 
 
 Now it is time…
