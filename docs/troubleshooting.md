@@ -105,7 +105,8 @@ Please find in this table the ports that need to be opened for the smooth functi
 
 However, if your router supports UPnP, do not worry about this, it will manage all the ports stuff for you.
 
-***Note that SSH port is only needed when you need, ssh access too your server, and it is not a very  good idea to let that port opened , consider restricting the access to your oown IP or just open it when you need it and then close it***
+
+***Note that SSH port is only needed when you need ssh access too your server, and it's not a very  good idea to let that port opened , consider restricting the access to your own IP or just open it when you need it and then close it***
 
 ## I need to restore the system without losing any data
 
