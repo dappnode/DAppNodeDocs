@@ -18,6 +18,8 @@ Here you have a sample table of the ports that should be opened in your DAppNode
 | Ethereum Node | 30303 | 30303     |
 | IPFS          | 4001  | 4002      |
 
+***Note that SSH port is only needed when you need, ssh access too your server, and it is not a very  good idea to let that port opened , consider restricting the access to your oown IP or just open it when you need it and then close it***
+
 If you are not able to download or install the config file, you can set it up manually following the instructions for different platforms contained in the link that the terminal gives after installation. All the parameters you need to fill in are given by your terminal when you first install it or when you connect to it vía SSH.
 
 These are the parameters you will need to configure, still depending on your operating system follow the instructions you will find on the website you will be directed to.
