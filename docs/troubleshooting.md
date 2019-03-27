@@ -99,14 +99,13 @@ Please find in this table the ports that need to be opened for the smooth functi
 | Service       | TCP   | UDP       |
 | ------------- | ----- | --------- |
 | VPN           |       | 500, 4500 |
-| SSH *           | 22    |           |
 | Ethereum Node | 30303 | 30303     |
 | IPFS          | 4001  | 4002      |
 
 However, if your router supports UPnP, do not worry about this, it will manage all the ports stuff for you.
 
 
-***Note that SSH port is only needed when you need ssh access too your server, and it's not a very  good idea to let that port opened , consider restricting the access to your own IP or just open it when you need it and then close it***
+***Note that SSH port (22) is only needed when you need ssh access to your server, and it's not a very  good idea to let that port opened , consider restricting the access to your own IP or just open it when you need it and then close it***
 
 ## I need to restore the system without losing any data
 
