@@ -112,4 +112,4 @@ However, if your router supports UPnP, do not worry about this, it will manage a
 
 Execute this command in your DAppNode terminal, this will update the core packages to the latest versions without erasing any data from your volumes.
 
-`sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.16/dappnode_install.sh | sudo UPDATE=true bash`
+`sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install.sh | sudo UPDATE=true bash`
