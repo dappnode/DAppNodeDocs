@@ -2,9 +2,9 @@
 
 Welcome to DAppNode!!!
 
-If you are reading this, decentralization, privacy and security are important to you and we’re glad for that, and even more, for helping people like you run their own secured hardware towards that which contributes to a truly decentralized web.
+If you are reading this, decentralization, privacy and security are important to you and we’re glad for that, and even more, for helping people like you, run their own secured hardware which contributes to a truly decentralized web.
 
-DAppNode is an operating system that allows you to host decentralized apps in a truly decentralized way, eliminating the reliance on vulnerable third parties and adds an extra layer of incentivization that helps to spread adoption of the blockchain ecosystem, and most important solves the problem of infrastructure centralization.
+DAppNode is an operating system that allows you to host decentralized apps in a truly decentralized way, eliminating the reliance on vulnerable third parties and adds an extra layer of incentivization that helps to spread adoption of the blockchain ecosystem, and solves the problem of infrastructure centralization.
 
 You can install DAppNode on any piece of hardware (see minimum requirements) to get easy censorship-resistant access to your favorite DApps, the ability to host your own nodes and share access with family and friends.
 
