@@ -43,5 +43,14 @@ These are the parameters you will need to configure, still depending on your ope
 
 **If you want to route all your Internet traffic through your DAppNode so you are behind your VPN, you should configure it in your VPN client settings by checking the Box "Send all traffic".** 
 
+## Connect to DAppNode via the built-in Wifi hotspot
+
+If you have your DAppNode installed in a physical device with Wi-Fi, you can directly connect to your server's Admin UI by connecting your client device to the DAppNode's wifi hotspot. 
+
+When you connect your DAppNode server to your router via Ethernet you will see a network called DAppNodeWIFI, just connect to that Wifi using the defaul password "dappnode" and you will have direct access to your DappNode server ADMIN UI while connected to that WIFI. 
+
+You can change the name of the WIFI and the password by setting up the new values in the WIFI package under the system tab. 
+
+Once you have entered the admini UI you can download your VPN credentials and create new ones under the "devices" tab
 
 Now it is time…
