@@ -1,6 +1,6 @@
 # What can you do with your DAppNode?
 
-Enter <https://my.admin.dnp.dappnode.eth> to access DAppNode's admin interface. Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync).
+Enter <http://my.admin.dnp.dappnode.eth> to access DAppNode's admin interface. Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync). Also bear in mind that you have to type the whole address including http:// , otherwise your browser might assume that you are searching for that term and take you to a websearch page. 
 
 Now you can do things like for example:
 
