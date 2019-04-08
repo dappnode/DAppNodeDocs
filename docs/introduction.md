@@ -8,7 +8,7 @@ DAppNode is an operating system that allows you to host decentralized apps in a 
 
 ## The problem
 
-Most nodes for public blockchains nowadays have a degree of architectural or/and political centralization. The first refers to the number of machines a system is made of, and the second concerns the ownership of such machines ([Vitalik, 2017])(https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274).
+Most nodes for public blockchains nowadays have a degree of architectural or/and political centralization. The first refers to the number of machines a system is made of, and the second concerns the ownership of such machines, [Vitalik Buterin, 2017](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274).
 
 A first very common case is to host a node in a Virtual Private Server (VPS). This puts your node in the hands of a highly centralized company like Digital Ocean or Amazon, which could block and censor your access. Moreover, they could be hosting different nodes in the same machine, architecturally reducing decentralization too.
 
