@@ -1,6 +1,8 @@
 # What can you do with your DAppNode?
 
-Enter <https://my.admin.dnp.dappnode.eth> to access DAppNode's admin interface. Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync).
+Enter <https://my.admin.dnp.dappnode.eth> to access DAppNode's admin interface. From DAppNode 0.2.0 you can also just type http://my.dappnode . Did we ever say that we wanted to make everything so easy...? 
+
+Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync).
 
 Now you can do things like for example:
 
@@ -14,9 +16,10 @@ Now you can do things like for example:
 
 - Decentralized version of [Oasis Direct](http://oasis.dappnode.eth) and [Eth2Dai](http://eth2dai.dappnode.eth)
 
-- Go to IPFS by entering <http://my.ipfs.dnp.dappnode.eth:5001/webui> into your browser.
+- Go to IPFS by entering <http://ipfs.dappnode:5001/webui> into your browser. 
 
-- You have a websocket of your parity node in ws://my.ethchain.dnp.dappnode.eth:8546 and you can use http://my.ethchain.dnp.dappnode.eth:8545 as a custom RPC to connect to metamask i.e
+- You have a websocket of your parity node in ws://my.ethchain.dnp.dappnode.eth:8546 or ws://fullnode.dappnode:8546 and you can use http://fullnode.dappnode:8545 as a custom RPC to connect to metamask i.e.
+
 
 **NOTE ABOUT ACCESSING IPFS WEBUI:**
 
@@ -32,14 +35,14 @@ We have updated our IPFS package (v.0.1.4), and one of the features is to provid
 
 ## VPN connection
 
-Now you have your own VPN service to privately connect to your DAppNode and also to provide access for your family and friends to connect to ETH domains through your DAppNode.
+Now you have your own VPN service to privately connect to your DAppNode and also to provide access for your family and friends to connect to your installed nodes and to ETH domains through your DAppNode.
 
 ## Parity
 
-After a few hours of installing DAppNode you will have your own Ethereum node running in your DAppNode.
+After a few hours of installing DAppNode you will have your own Ethereum fullnode running in your DAppNode.
 
 You have available your parity websocket in
-ws://my.ethchain.dnp.dappnode.eth:8546 and RPC connection through http://my.ethchain.dnp.dappnode.eth:8545
+ws://my.ethchain.dnp.dappnode.eth:8546 or ws//fullnode.dappnode:8546 and RPC connection through http://my.ethchain.dnp.dappnode.eth:8545 or http://fullnode.dappnode:8545
 
 You can run your parity node in different configurations using the "Update environment variables" button. More info on env vars for Parity client [here](https://wiki.parity.io/Configuring-Parity-Ethereum)
 
@@ -57,11 +60,11 @@ First, you must be connected to your DAppNode’s VPN:
 
 2. Click Custom RPC.
 
-3. “New RPC URL”: http://my.ethchain.dnp.dappnode.eth:8545
+3. “New RPC URL”: http://my.ethchain.dnp.dappnode.eth:8545 or http://fullnode.dappnode:8545 
 
 4. Now you should be connected to “Private Network” and that’s it!!
 
-5. But... Do you want to be connected to a "Private Netowrk" or to your  DAppNode??? 
+5. But... Do you want to be connected to a "Private Netowrk" or to your DAppNode??? 
 
 To edit the name showed at the  upper right corner just hit advanced options under the URL of the Custom RPC and include DAppNode (or the name you  want to have) in the field alias.
 
@@ -74,9 +77,9 @@ To edit the name showed at the  upper right corner just hit advanced options und
 
 When you install DAppNode an IPFS daemon is installed and your account is automatically created so you can start uploading and requesting the decentralized storage that the InterPlanetary File System offers.
 
-You can access the web ui entering <http://my.ipfs.dnp.dappnode.eth:5001/webui>
+You can access the web ui entering <http://ipfs.dappnode:5001/webui>
 
-We have updated our IPFS package (v.0.1.4), and one of the features is to provide a more complete and user friendly web interfaz. The first time you access to it will ask you for your “Custom API address”, just fill the field with this address and you will be connected to your IPFS node , this is the input you have to enter in the field seen in the image below.
+We have updated our IPFS package (v.0.1.6), and one of the features is to provide a more complete and user friendly web interfaz. The first time you access to it will ask you for your “Custom API address”, just fill the field with this address and you will be connected to your IPFS node , this is the input you have to enter in the field seen in the image below.
 
 `/ip4/172.33.1.5/tcp/5001`
 
@@ -90,7 +93,7 @@ If you want to know a bit more on IPFS here you have a [useful link](https://med
 
 When your device is connected to a #DAppNode, you can use ".eth" domains that resolve to ipfs/swarm hashes.
 
-Note that your browsing device is connected to your DAppNode via VPN, and the VPN is configured to distinguish DNS or ENS traffic, to send only the ENS traffic through the DAppNode (make sure in your VPN config that you are not sending all the traffic through the VPN). When you access a .eth domain from your browser, the DAppNode uses the ETHFORWARD core package to resolve the .eth domain to a IPFS hash via ENS, then the DAppNode looks for the hashed content in IPFS and serves the content to your browser.
+Note that your browsing device is connected to your DAppNode via VPN, and the VPN is configured to distinguish DNS or ENS traffic, to send only the ENS traffic through the DAppNode (make sure in your VPN config that you select the most adequate option for you, either not sending all the traffic through the VPN, only ETH traffic or all the traffic). When you access a .eth domain from your browser, the DAppNode uses the ETHFORWARD core package to resolve the .eth domain to a IPFS hash via ENS, then the DAppNode looks for the hashed content in IPFS and serves the content to your browser.
 
 Now you can seamlessly navigate ETH domains in a decentralized way.
 
@@ -210,7 +213,7 @@ $ meteor-build-client ../build — path ""
 
 ### Upload to IPFS
 
-When uploading content to IPFS we use a tool we have created that can be used if you are connected to DAppNode (this tool is currently experimental, and will be improved in the coming months) or you could use the command `ipfs add -r build`.
+When uploading content to IPFS we use a tool we have created that can be used if you are connected to DAppNode (this tool is currently experimental, and it is in continous improvement) or you could use the command `ipfs add -r build`.
 
 Using our tool the next steps would be:
 

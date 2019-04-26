@@ -1,6 +1,6 @@
 # Troubleshooting
 
-## VPN Connection issues
+## VPN Connection issues ( Applies to DAppNode 0.1.0...pending review of ports that need to be opened and validation for NAT / UPnP)
 
 The VPN is one of the pillars of the whole DAppNode functioning, you will need a somehow decent and stable internet connection to be able to connect to the server.
 
@@ -16,9 +16,9 @@ To solve it you have to figure out if your router is doing NAT LOOPBACK and acti
 
 This will allow you to connect from the same local network but not from outside, to connect to your DAppNode from outside your network you will need to download another VPN profile pointing to the DynDNS address (exactly as it is downloaded)
 
-### VPN ports closed
+### VPN ports closed (needs review for OPEN VPN)
 
-If your router is doing NAT LOOPBACK and you can't access your DAppNode it is very likely that the ports used to establish the VPN connection with the server are not available. To solve this you have to enter the router admin UI and open the 500 and 4500 UDP ports. Even though we use UPnP protocol so you can forget about ports management, note that some routers could not allow UPnP configuration of ports under 1024 so port 500 UDP will have to be added manually in these cases.
+If your router is doing NAT LOOPBACK and you can't access your DAppNode it is very likely that the ports used to establish the VPN connection with the server are not available. To solve this you have to enter the router admin UI and open the 1194 UDP and 8090 TCP ports. 
 
 If you have NAT LOOPBACK activated and the VPN ports are opened it is very likely that an extension you have installed or any setup you have that affects DNS routing might be interfering in the connection, please deactivate any piece of your configuration that can have influence DNS solving.
 
@@ -92,13 +92,13 @@ You have to be connected to the VPN to access the ADMIN UI, in case you are conn
 
 For installing packages the ETH node should be synchronized. In case the node is sync and you are experiencing this, enter in System and restart IPFS and VPN and connect again.
 
-## Ports that need to be opened
+## Ports that need to be opened (To be updated for OpenVPN)
 
 Please find in this table the ports that need to be opened for the smooth functioning of your DAppNode and installed packages.
 
 | Service       | TCP   | UDP       |
 | ------------- | ----- | --------- |
-| VPN           |       | 500, 4500 |
+| VPN (L2TP)    |       | 500, 4500 |
 | SSH           | 22    |           |
 | Ethereum Node | 30303 | 30303     |
 | IPFS          | 4001  | 4002      |

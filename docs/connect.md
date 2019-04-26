@@ -1,7 +1,7 @@
 # Connect to DAppNode's OpenVPN
 
 
-For connecting to DAppNode 0.2.0 OpenVPN, you will need to have a client that supports the OpenVPN protocol in every device with which you´d like to connect to your DAppNode.
+For connecting to DAppNode 0.2.0 OpenVPN, you will need to have a client that supports the OpenVPN protocol in every device with which you´d like to connect to your DAppNode. Also note that if you are running DAppNode in a physical server with WIFI you can connect to your DAppNode without need of the VPN, just by connecting to the DAppNode WIFI. 
 
 Once you have your DAppNode running, you will get an URL in your terminal from where you can download the OVPN config file and open it in your device with your OpenVPN client. 
 
@@ -23,7 +23,7 @@ These are the recommended Open VPN clients for each OS:
 * Ios: [Open VPN connect](https://itunes.apple.com/us/app/openvpn-connect/id590379981)
 * Windows: [Open VPN (community installer)](https://openvpn.net/community-downloads/)
 * Android: [Open VPN for Android](https://play.google.com/store/apps/details?id=de.blinkt.openvpn)
-* Linux: Included in Ubuntu recent versions. 
+* Linux: Already included inrecent versions. 
 
 Depending on your OS these are the instructions for installing our recommended OpenVPN clients. 
 
@@ -147,7 +147,7 @@ And it is done, you can just connect to your new OpenVPN now
     <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios9.PNG">
 </p> 
   
-After a few seconds, you will see in the OopoenVPN interface that you are connected. You can either connect to your server through the OpoenVPN app or directly from the phone´s "VPN" menu in "Settings"
+After a few seconds, you will see in the OpenVPN interface that you are connected. You can either connect to your server through the OpenVPN app or directly from the phone´s "VPN" menu in "Settings"
 
 <p align="center">
     <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios10.PNG">
@@ -249,6 +249,14 @@ Finally, select "Connect" from the tray bar icon menu:
     <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/windows8.png">
 </p>
 
+## Connect to DAppNode via the built-in Wifi hotspot
 
+If you have your DAppNode installed in a physical device with Wi-Fi, you can directly connect to your server's Admin UI by connecting your client device to the DAppNode's wifi hotspot.
+
+When you connect your DAppNode server to your router via Ethernet you will see a network called DAppNodeWIFI, just connect to that Wifi using the defaul password "dappnode" and you will have direct access to your DappNode server ADMIN UI while connected to that WIFI.
+
+You can change the name of the WIFI and the password by setting up the new values in the WIFI package under the system tab.
+
+Once you have entered the admin UI you can download your VPN credentials and create new ones under the "devices" tab
 
 Now it is time…

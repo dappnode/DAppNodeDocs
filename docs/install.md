@@ -1,6 +1,6 @@
 # Install DAppNode
 
-Think of DAppNode as an operating system. In fact, it is; our savvy team has taken an Ubuntu distribution and super-powered it to be your gateway to access the decentralized web.
+Think of DAppNode as an operating system. In fact, it is; our savvy team has taken Debian 10 and have super-powered it to be your gateway to access the decentralized web. (We started with Ubuntu but DAppNode 0.2.0 has moved to Debian)
 
 While you can run DAppNode on a Virtual Private Server (VPS), we **highly encourage you to run DAppNode on your own physical server**. The intention of DAppNode is to create a strong network of decentralized servers. Running DAppNode on centralized virtual servers defeats the purpose. 😉That being said, we realize it may be easiest to get started and test the system on a VPS.
 
@@ -16,11 +16,11 @@ While you can run DAppNode on a Virtual Private Server (VPS), we **highly encour
 
 You will need a dedicated machine to install it.
 
-Ethereum is big! To cope with that, you’ll need to have a powerful enough machine to keep up with Ethereum's rapidly splitting blocks.
+Ethereum is big! To cope with it, you’ll need to have a dedicated machine with some minimum specs to keep up with Ethereum's chain.
 
-That is why we recommend having at least 8gbs RAM and an SSD hard drive with at least 160 GBs (add capacity as you like, keep in mind that Ethereum is 130GBs at press time).
+That is why we recommend having at least 4gbs RAM (ideally 8GB) and an SSD hard drive with at least 256 GB (add capacity as you like, keep in mind that only Ethereum mainet is 180 GB at press time).
 
-In the client side you just need an OpenVPN client installed in the device with which you want to connect to your DAppNode, see info on recommended clients and installation instructions below.
+In the client side you just need an OpenVPN client installed in the device with which you want to connect to your DAppNode. See info on recommended clients and installation instructions below.
 
 ## How to install DAppNode on your machine
 
@@ -32,20 +32,24 @@ Download the image from [DAppNode-ubuntu-18.04-server-amd64_v0.1.18.iso](https:/
 
 ### Burn the ISO in a USB (~8 min)
 
-Burn the ISO to an USB stick, please follow the official Ubuntu instructions for [MacOS](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0) or [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0>).
+Burn the ISO to an USB stick. To do so we recommend using [Etcher](https://www.balena.io/etcher/) for the OS with which you will prepare the USB to boot from your server and install DAppNode
 
-Please note that these instructions are intended to generate the ISO image in a bootable USB from a Mac, Windows or Linux device, and then install it in a server. **_IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED._** DAppNode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
+Please note that Etcher is intended to generate the ISO image in a bootable USB from your desktop device, and then install it in a server. 
 
-### Install an Ubuntu distribution (~15 min)
+**_IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED._** 
 
-Insert the USB into your Server and prepare to install an Ubuntu distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
+Also, DAppNode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
+
+### Install a Debian distribution (~15 min)
+
+Insert the USB into your Server and prepare to install a Debian distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
 
 <p align="center">
   <img width="600" height="450" src="https://github.com/Shelpin/DAppNode/raw/master/doc/dappnode-installation-welcome-screen.png">
   </a>
 </p>
 
-Follow the Ubuntu installation steps; various screens will guide you through the process. You can follow this standard option for a default installation:
+Follow the Debian installation steps; various screens will guide you through the process. You can follow this standard option for a default installation:
 
 ### Recommended setup
 
@@ -91,7 +95,7 @@ Remember **_Your hardware, your coins, your privacy, your freedom._**
 
 ### Script installation guide
 
-For this example, we'll be installing DAppNode on a Digital Ocean droplet, but the process should work for any other Ubuntu Server 18.04.
+For this example, we'll be installing DAppNode on a Digital Ocean droplet, but the process should work for any other Debian 10 Server.
 
 **_We strongly recommend using 8GB+ of RAM and a <= 200 Gbs SSD hard drive._**
 
@@ -115,7 +119,7 @@ If you have a static IP and want to set it up right from the connection, then ru
 sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.18/dappnode_install.sh | sudo STATIC_IP="your static IP" bash
 ```
 
-When the installation is done and is successful, you will be given credentials to connect to your DAppNode.
+When the installation is done and is successful, you will be given a link from where you can download the credentials to connect to your DAppNode. You will also see in that page the links to the recommended versions for each OS of the needed OPenVPN client. You should download and install an OpenVPN client to open the file downnloadable from the link to connect to the ADMIN UI.
 
 Take into account that the chain will take some time to synchronize and you will not be able to perform most of the actions before that.
 
