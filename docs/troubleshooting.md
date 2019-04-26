@@ -92,21 +92,22 @@ You have to be connected to the VPN to access the ADMIN UI, in case you are conn
 
 For installing packages the ETH node should be synchronized. In case the node is sync and you are experiencing this, enter in System and restart IPFS and VPN and connect again.
 
-## Ports that need to be opened (To be updated for OpenVPN)
+## Ports that need to be opened
 
 Please find in this table the ports that need to be opened for the smooth functioning of your DAppNode and installed packages.
 
 | Service       | TCP   | UDP       |
 | ------------- | ----- | --------- |
-| VPN (L2TP)    |       | 500, 4500 |
-| SSH           | 22    |           |
+| VPN (OpenVPN) |  8090 |  1194      |
 | Ethereum Node | 30303 | 30303     |
 | IPFS          | 4001  | 4002      |
 
 However, if your router supports UPnP, do not worry about this, it will manage all the ports stuff for you.
 
+***Note that SSH port (22) is only needed when you need ssh access to your server, and it's not a very  good idea to let that port opened , consider restricting the access to your own IP or just open it when you need it and then close it***
+
 ## I need to restore the system without losing any data
 
 Execute this command in your DAppNode terminal, this will update the core packages to the latest versions without erasing any data from your volumes.
 
-`sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.16/dappnode_install.sh | sudo UPDATE=true bash`
+`sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install.sh | sudo UPDATE=true bash`

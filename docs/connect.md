@@ -27,6 +27,7 @@ These are the recommended Open VPN clients for each OS:
 
 Depending on your OS these are the instructions for installing our recommended OpenVPN clients. 
 
+
 ## Linux
 
 ### Ubuntu / NetworkManager

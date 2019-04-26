@@ -28,7 +28,7 @@ Okay, so you’re ready to join the real DAppers. Let us show you how to make th
 
 ### How to install DAppNode from an ISO
 
-Download the image from [DAppNode-ubuntu-18.04-server-amd64_v0.1.18.iso](https://github.com/dappnode/DAppNode/releases/download/v0.1.18/DAppNode-ubuntu-18.04-server-amd64_v0.1.18.iso) or [build it from source](https://github.com/dappnode/DAppNode_Installer)
+Download the image from [DAppNode-ubuntu-18.04-server-amd64_v0.1.21.iso](https://github.com/dappnode/DAppNode/releases/download/v0.1.21/DAppNode-ubuntu-18.04-server-amd64_v0.1.21.iso) or [build it from source](https://github.com/dappnode/DAppNode_Installer)
 
 ### Burn the ISO in a USB (~8 min)
 
@@ -104,19 +104,19 @@ For this example, we'll be installing DAppNode on a Digital Ocean droplet, but
 Install the prerequisites (docker and docker-compose) running this command in the terminal of the machine you want to install the DAppNode server, if using a Virtual Service Provider, you have first to connect you via SSH to that machine.
 
 ```
-sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.18/dappnode_install_pre.sh | sudo bash
+sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install_pre.sh | sudo bash
 ```
 
 ### Install DAppNode
 
 ```
-sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.18/dappnode_install.sh | sudo bash
+sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install.sh | sudo bash
 ```
 
 If you have a static IP and want to set it up right from the connection, then run the command with the following variable including your static IP
 
 ```
-sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.18/dappnode_install.sh | sudo STATIC_IP="your static IP" bash
+sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install.sh | sudo STATIC_IP="your static IP" bash
 ```
 
 When the installation is done and is successful, you will be given a link from where you can download the credentials to connect to your DAppNode. You will also see in that page the links to the recommended versions for each OS of the needed OPenVPN client. You should download and install an OpenVPN client to open the file downnloadable from the link to connect to the ADMIN UI.
@@ -128,7 +128,7 @@ Take into account that the chain will take some time to synchronize and you will
 If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.
 
 ```
-sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.18/dappnode_install.sh | sudo UPDATE=true bash
+sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install.sh | sudo UPDATE=true bash
 ```
 
 
