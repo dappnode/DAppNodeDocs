@@ -60,6 +60,10 @@ The new VPN package has not finished the installation and it is not running yet,
 
 ![](https://i.imgur.com/BZYlAv2.png)
 
+### I can't access the credentials OTP web link to dowload the .ovpn file
+
+For the credentials file to be correctly donwloaded you need to have port 8090 TCP opened, please check that that port is opened.
+
 ### I have a message in the console saying that admin credentials expired 
 
 Once a file with credentials is downloaded the link expires and you see that message. If for any reason you need to get new credentials, connect via ssh to the server and run the command 
