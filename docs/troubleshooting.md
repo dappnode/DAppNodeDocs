@@ -60,7 +60,7 @@ The new VPN package has not finished the installation and it is not running yet,
 
 ![](https://i.imgur.com/BZYlAv2.png)
 
-### I can't access the credentials OTP web link to dowload the .ovpn file
+### I can't access the credentials OTP web link to download the .ovpn file
 
 For the credentials file to be correctly donwloaded you need to have port 8090 TCP opened, please check that that port is opened.
 
