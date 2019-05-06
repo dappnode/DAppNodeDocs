@@ -66,7 +66,7 @@ For the credentials file to be correctly donwloaded you need to have port 8090 T
 
 ### I have a message in the console saying that admin credentials expired 
 
-Once a file with credentials is downloaded the link expires and you see that message. If for any reason you need to get new credentials, connect via ssh to the server and run the command 
+Once a file with credentials is downloaded, and used for connecting once, the link expires after that first connection and you see that message. If for any reason you need to get new credentials, connect via ssh to the server and run the command 
 
 ```
 dappnode_get dappnode_admin
