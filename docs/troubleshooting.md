@@ -46,19 +46,9 @@ Note that you have to run this command as elevated command prompt and then reboo
 
 ### Linux & Android
 
-If following the instructions has not made your connection to work, try to manually set up a VPN profile within your computer/phone using the credentials given in the OTP web you get after installation under the tab Linux/Android.
+If you can't import the file in Linux Open VPN client make sure you have the network-manager-openvpn and network-manager-openvpn-gnome packages installed. 
 
-<p align="center">
-    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipsecoopotions.jpg">
-</p>
-
-<p align="center">
-    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/username.jpg">
-</p>
-
-<p align="center">
-    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/routes.jpg">
-</p>
+you can see the whole instructions for Linux [here](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide#Linux)
 
 If you are still experiencing problems to connect from your Linux device please ping us in our channels, we will be happy to help!!.
 
