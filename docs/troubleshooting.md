@@ -1,12 +1,12 @@
 # Troubleshooting
 
-## VPN Connection issues ( Applies to DAppNode 0.1.0...pending review of ports that need to be opened and validation for NAT / UPnP)
+## VPN Connection issues 
 
 The VPN is one of the pillars of the whole DAppNode functioning, you will need a somehow decent and stable internet connection to be able to connect to the server.
 
 ### Os & Ios Users
 
-As the config file is automated you should not have any problem to access caused by the VPN configuration so possible causes might be:
+As with OpenVPN the config file is automated you should not have any problem to access caused by the VPN configuration so possible causes might be:
 
 ### NAT Loopback disabled
 
@@ -16,9 +16,9 @@ To solve it you have to figure out if your router is doing NAT LOOPBACK and acti
 
 This will allow you to connect from the same local network but not from outside, to connect to your DAppNode from outside your network you will need to download another VPN profile pointing to the DynDNS address (exactly as it is downloaded)
 
-### VPN ports closed (needs review for OPEN VPN)
+### VPN ports closed 
 
-If your router is doing NAT LOOPBACK and you can't access your DAppNode it is very likely that the ports used to establish the VPN connection with the server are not available. To solve this you have to enter the router admin UI and open the 1194 UDP and 8090 TCP ports. 
+If your router is doing NAT LOOPBACK and you can't access your DAppNode it is very likely that the ports used to establish the VPN connection with the server are not available. To solve this you have to enter the router admin UI and open the 1194 UDP (used for establishing the VPN connection and 8090 TCP (used to get the credentials from the OTP link) ports. 
 
 If you have NAT LOOPBACK activated and the VPN ports are opened it is very likely that an extension you have installed or any setup you have that affects DNS routing might be interfering in the connection, please deactivate any piece of your configuration that can have influence DNS solving.
 
@@ -43,16 +43,6 @@ Note that you have to run this command as elevated command prompt and then reboo
 ### For Windows XP
 
 `REG ADD HKLM\SYSTEM\CurrentControlSet\Services\RasMan\Parameters /v ProhibitIpSec /t REG_DWORD /d 0x0 /f`
-
-### Disabled Ipsec Encryption
-
-Although uncommon, some Windows systems disable IPsec encryption, causing the connection to fail. To re-enable it, run the following command and reboot your PC.
-
-For Windows XP, Vista, 7, 8.x and 10
-
-`REG ADD HKLM\SYSTEM\CurrentControlSet\Services\RasMan\Parameters /v ProhibitIpSec /t REG_DWORD /d 0x0 /f`
-
-Note that you have to run this command as elevated command prompt and then reboot your computer.
 
 ### Linux & Android
 
