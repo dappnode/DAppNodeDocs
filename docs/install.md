@@ -1,6 +1,6 @@
 # Install DAppNode
 
-Think of DAppNode as an operating system. In fact, it is; our savvy team has taken Debian 10 and have super-powered it to be your gateway to access the decentralized web. (We started with Ubuntu but DAppNode 0.2.0 has moved to Debian)
+Think of DAppNode as an operating system. In fact, it is; our savvy team has taken Debian and have super-powered it to be your gateway to access the decentralized web. (We started with Ubuntu but DAppNode 0.2.0 has moved to Debian)
 
 While you can run DAppNode on a Virtual Private Server (VPS), we **highly encourage you to run DAppNode on your own physical server**. The intention of DAppNode is to create a strong network of decentralized servers. Running DAppNode on centralized virtual servers defeats the purpose. 😉That being said, we realize it may be easiest to get started and test the system on a VPS.
 
@@ -20,7 +20,7 @@ Ethereum is big! To cope with it, you’ll need to have a dedicated machine with
 
 That is why we recommend having at least 4gbs RAM (ideally 8GB) and an SSD hard drive with at least 256 GB (add capacity as you like, keep in mind that only Ethereum mainet is 180 GB at press time).
 
-In the client side you just need an OpenVPN client installed in the device with which you want to connect to your DAppNode. See info on recommended clients and installation instructions below.
+In the client side you just need an OpenVPN client installed in the device with which you want to connect to your DAppNode. See info on recommended clients and installation [here](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
 
 ## How to install DAppNode on your machine
 
@@ -45,7 +45,7 @@ Also, DAppNode is intended to run 24/7 so if you install it in a laptop or deskt
 Insert the USB into your Server and prepare to install a Debian distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
 
 <p align="center">
-  <img width="600" height="450" src="https://github.com/Shelpin/DAppNode/raw/master/doc/dappnode-installation-welcome-screen.png">
+  <img width="600" height="450" src="https://github.com/dappnode/DAppNodeDocs/blob/DAppNodeDocsOpenVPN/img/2019-05-07%2017.22.10.jpg">
   </a>
 </p>
 
@@ -53,28 +53,29 @@ Follow the Debian installation steps; various screens will guide you through the
 
 ### Recommended setup
 
-Note by following these instructions you will erase your Server's disk contents.
+*Note* by following these instructions you will erase ALL your server's disk contents.
 
-1. **_Select a language_** - Language: [English]
-2. **_Select your location_** - Country, territory or area: [United States]
-3. **_Configure the keyboard_** - Detect keyboard layout? [Yes] Follow the instructions to detect your keyboard
-4. **_Configure the network_** - Hostname: [DAppNode]
-5. **_Set up users and passwords_** - Full name for the new user: [DAppNode]
-6. **_Set up users and passwords_** - Username for your account: [dappnode]
-7. **_Set up users and passwords_** Choose a password for the new user: [YOUR_PASSWORD]
-8. **_Set up users and passwords_** - Re-enter password to verify: [YOUR_PASSWORD]
-9. **_Set up users and passwords_** - Encrypt your home directory? [No]
-10. **_Configure the clock_** - Is this time zone correct? [Yes]
-11. **_Partition disk_** - Partitioning method: [Guided - use entire disk and set up LVM]
-12. **_Partition disk_** - Select disk to partition: [SCSI33 (0,0,0) (sda) - ...]
-13. **_Partition disk_** - Write the changes to disks and configure LVM? [Yes]
-14. **_Partition disk_** - Amount of volume group to use for guided partitioning: [Continue]
-15. **_Partition disk_** - Write the changes to disks? [Yes]
-16. **_Configure the package manager_** - HTTP proxy information (black for none): [Continue]
-17. **_Configuring tasksel_** - How do you want to manage upgrades on this system? [Install security updates automatically]
-18. **_Software selection_** - Choose software to install [OpenSSH server] Use the arrows to navigate to the option, and the spacebar to select it.
-19. **_Install the GRUB boot loader on a hard disk_** - Install the GRUB boot loader to the master boot record? [Yes]
-20. **_Finish the installation_** - Installation complete [continue]
+1. **Select a language** - Language: [English]
+2. **Select your location** - Country, territory or area: [United States or your own]
+3. **Configure the keyboard** - Keymap to use? [American English or your own] 
+4. **Configure the network** - Hostname: [dappnode]
+5. **Set up users and passwords** - Root password: [Leave blank (twice)]
+6. **Set up users and passwords** - Username for your account: [dappnode]
+7. **Set up users and passwords** Choose a password for the new user: [YOUR_PASSWORD]
+8. **Set up users and passwords** - Re-enter password to verify: [YOUR_PASSWORD]
+10. **Configure the clock** - Select your time zone: [Select your own]
+11. **Partition disk** - Partitioning method: [Guided - use entire disk and set up LVM]
+12. **Partition disk** - Select disk to partition: [SCSIX (0,0,0) (sda) - ...]
+13. **Partition disk** - Selected for partitioning: [All files in one partition]
+14. **Partition disk** - Write the changes to disks and configure LVM? [Yes]
+15. **Partition disk** - Amount of volume group to use for guided partitioning: [Continue]
+16. **Partition disk** - Write the changes to disks? [Yes]
+17. **Install the GRUB boot loader on a hard disk** - Install the GRUB boot loader to the master boot record? [Yes]
+18. **Install the GRUB boot loader on a hard disk** - [/dev/sda (or the disk selected above)]
+19. **Your public IP** - [Leave blank]
+20. **Finish the installation** - Installation complete [continue]
+
+Resume DAppNode's installation 
 
 If the installation succeeded, your system will reboot, you will have to log in with the user and password provided in the installation, and it should finish with this screen:
 
@@ -82,6 +83,10 @@ If the installation succeeded, your system will reboot, you will have to log in 
   <img width="800" height="450" src="https://github.com/Shelpin/DAppNode/raw/master/doc/dappnode-installation-ending-screen.png?raw=true">
   </a>
 </p>
+
+Now you can connect to your DAppNode by downlooading the .ovpn file that you will be able to download from the link / QR show at the end of the installation by double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
+
+Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnp enabled, if noot you will haave to open them manually.
 
 ## Installation via script
 
@@ -119,7 +124,9 @@ If you have a static IP and want to set it up right from the connection, then ru
 sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install.sh | sudo STATIC_IP="your static IP" bash
 ```
 
-When the installation is done and is successful, you will be given a link from where you can download the credentials to connect to your DAppNode. You will also see in that page the links to the recommended versions for each OS of the needed OPenVPN client. You should download and install an OpenVPN client to open the file downnloadable from the link to connect to the ADMIN UI.
+When the installation is done and is successful,you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation, just double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
+
+Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnp enabled, if noot you will haave to open them manually.
 
 Take into account that the chain will take some time to synchronize and you will not be able to perform most of the actions before that.
 
