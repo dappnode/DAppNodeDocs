@@ -27,6 +27,8 @@ These are the recommended Open VPN clients for each OS:
 
 Depending on your OS these are the instructions for installing our recommended OpenVPN clients. 
 
+Please note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnp enabled, if noot you will haave to open them manually.
+
 
 ## Linux
 
