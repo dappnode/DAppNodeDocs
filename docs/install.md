@@ -115,13 +115,13 @@ sudo wget -O - https://prerequisites.dappnode.io  | sudo bash
 ### Install DAppNode
 
 ```
-sudo wget -O - https://installer.dappnode.io  | sudo bash
+sudo wget -O - https://installer.dappnode.io | sudo bash
 ```
 
 If you have a static IP and want to set it up right from the connection, then run the command with the following variable including your static IP
 
 ```
-sudo wget -O - https://installer.dappnode.io  | sudo STATIC_IP="your static IP" bash
+sudo wget -O - https://installer.dappnode.io | sudo STATIC_IP="your static IP" bash
 
 ```
 
@@ -136,7 +136,7 @@ Take into account that the chain will take some time to synchronize and you will
 If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.
 
 ```
-sudo wget -O - https://installer.dappnode.io  | sudo UPDATE=true bash
+sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash
 ```
 
 
