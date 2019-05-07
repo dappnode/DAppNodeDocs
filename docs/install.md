@@ -109,19 +109,20 @@ For this example, we'll be installing DAppNode on a Digital Ocean droplet, but
 Install the prerequisites (docker and docker-compose) running this command in the terminal of the machine you want to install the DAppNode server, if using a Virtual Service Provider, you have first to connect you via SSH to that machine.
 
 ```
-sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install_pre.sh | sudo bash
+sudo wget -O - https://prerequisites.dappnode.io  | sudo bash
 ```
 
 ### Install DAppNode
 
 ```
-sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install.sh | sudo bash
+sudo wget -O - https://installer.dappnode.io  | sudo bash
 ```
 
 If you have a static IP and want to set it up right from the connection, then run the command with the following variable including your static IP
 
 ```
-sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install.sh | sudo STATIC_IP="your static IP" bash
+sudo wget -O - https://installer.dappnode.io  | sudo STATIC_IP="your static IP" bash
+
 ```
 
 When the installation is done and is successful,you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation, just double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
@@ -135,7 +136,7 @@ Take into account that the chain will take some time to synchronize and you will
 If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.
 
 ```
-sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install.sh | sudo UPDATE=true bash
+sudo wget -O - https://installer.dappnode.io  | sudo UPDATE=true bash
 ```
 
 
