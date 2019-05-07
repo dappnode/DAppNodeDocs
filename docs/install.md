@@ -80,7 +80,7 @@ Resume DAppNode's installation
 If the installation succeeded, your system will reboot, you will have to log in with the user and password provided in the installation, and it should finish with this screen:
 
 <p align="center">
-  <img width="800" height="450" src="https://github.com/Shelpin/DAppNode/raw/master/doc/dappnode-installation-ending-screen.png?raw=true">
+  <img width="800" height="450" src="https://github.com/dappnode/DAppNodeDocs/blob/DAppNodeDocsOpenVPN/img/installendscreen.jpg">
   </a>
 </p>
 
