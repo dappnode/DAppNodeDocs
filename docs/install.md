@@ -1,6 +1,6 @@
 # Install DAppNode
 
-Think of DAppNode as an operating system. In fact, it is; our savvy team has taken Debian and have super-powered it to be your gateway to access the decentralized web. (We started with Ubuntu but DAppNode 0.2.0 has moved to Debian)
+Think of DAppNode as an operating system. In fact, it is; our savvy team has taken Debian and have super-powered it to be your gateway to access the decentralized web. (We started with Ubuntu but DAppNode 0.2.0 has moved to Debian, with compatibility for Debian 9 and 10)
 
 While you can run DAppNode on a Virtual Private Server (VPS), we **highly encourage you to run DAppNode on your own physical server**. The intention of DAppNode is to create a strong network of decentralized servers. Running DAppNode on centralized virtual servers defeats the purpose. 😉That being said, we realize it may be easiest to get started and test the system on a VPS.
 
@@ -100,7 +100,7 @@ Remember **_Your hardware, your coins, your privacy, your freedom._**
 
 ### Script installation guide
 
-For this example, we'll be installing DAppNode on a Digital Ocean droplet, but the process should work for any other Debian 10 Server.
+For this example, we'll be installing DAppNode on a Digital Ocean droplet, but the process should work for any other Debian 9 Server. Note that most VPS still do not offer machines with Debian 10. 
 
 **_We strongly recommend using 8GB+ of RAM and a <= 200 Gbs SSD hard drive._**
 
