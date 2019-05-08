@@ -5,8 +5,8 @@ Help is always appreciated!
 In particular, we need help in the following areas:
 
 - Improving the documentation
-- Fixing and responding to `DAppNode's GitHub issues <https://github.com/dappnode/DAppNode/issues>`_, especially those tagged as
-  `Good-first-issue <https://github.com/dappnode/DAppNode/labels/Good%20first%20issue>`_ which are
+- Fixing and responding to [DAppNode's GitHub issues](https://github.com/dappnode/DAppNode/issues), especially those tagged as
+  [Good first issue](https://github.com/dappnode/DAppNode/labels/Good%20first%20issue) which are
   meant as introductory issues for external contributors.
 
 ## How to Contribute
@@ -61,7 +61,7 @@ If you still have any further questions about contribution feel free to reach ou
 ## How to Report Issues
 
 To report an issue, please use the
-`GitHub issues tracker <https://github.com/dappnode/DAppNode/issues>`\_. When
+[GitHub issues tracker](https://github.com/dappnode/DAppNode/issues). When
 reporting issues, please mention the following details:
 
 - Which version of DAppNode you are using
@@ -90,7 +90,7 @@ Boost test cases and place them under `test/`.
 New features and bug fixes should be added to the `Changelog.md` file: please
 follow the style of previous entries, when applicable.
 
-Please note that this project is released with a `Contributor Code of Conduct <https://raw.githubusercontent.com/dappnode/DAppNode/master/CODE_OF_CONDUCT.md>`\_.
+Please note that this project is released with a[Contributor Code of Conduct](https://raw.githubusercontent.com/dappnode/DAppNode/master/CODE_OF_CONDUCT.md).
 By participating in this project you agree to abide by its terms.
 
 Thank you for your help!
