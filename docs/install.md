@@ -6,9 +6,9 @@ While you can run DAppNode on a Virtual Private Server (VPS), we **highly encour
 
 ---
 
-:warning: **DAppNode is intended to be installed on a dedicated machine. Do not install DAppNode on your laptop** :warning:
+⚠️ **DAppNode is intended to be installed on a dedicated machine. Do not install DAppNode on your laptop** ⚠️
 
-:warning: If you do so the installation will erase all its content. See details below :warning:
+⚠️ If you do so the installation will erase all its content. See details below ⚠️
 
 ---
 
@@ -36,7 +36,7 @@ Download the image from [DAppNodeISO](https://iso.dappnode.io) or [build it from
 
 Burn the ISO to an USB stick. To do so we recommend using [Etcher](https://www.balena.io/etcher/) for the OS with which you will prepare the USB to boot from your server and install DAppNode
 
-:warning: Please note that Etcher is intended to generate the ISO image in a bootable USB from your desktop device, and then install it in a server :warning:
+⚠️ Please note that Etcher is intended to generate the ISO image in a bootable USB from your desktop device, and then install it in a server ⚠️
 
 **_IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED._** 
 
@@ -96,7 +96,7 @@ Now you can connect to your DAppNode by downloading the .ovpn file that you will
 
 ## Installation via installer script
 
-### :warning: WARNING
+### ⚠️ WARNING
 
 This software is not meant to be run in a remote machine hosted by any remote provider. What DAppNode specifically wants to avoid is centralization of the machines that our digital lives rely on. That said, we understand that before buying a dedicated machine to run your DAppNode you might want to test it and see how easy it is to use.
 
