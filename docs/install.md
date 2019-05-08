@@ -7,6 +7,7 @@ While you can run DAppNode on a Virtual Private Server (VPS), we **highly encour
 ---
 
 ⚠️ **DAppNode is intended to be installed on a dedicated machine. Do not install DAppNode on your laptop**
+
 ⚠️ If you do so the installation will erase all its content. See details below
 
 ---
