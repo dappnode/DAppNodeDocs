@@ -47,7 +47,7 @@ Also, DAppNode is intended to run 24/7 so if you install it in a laptop or deskt
 Insert the USB into your Server and prepare to install a Debian distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
 
 <p align="center">
-  <img width="600" height="450" src="https://github.com/dappnode/DAppNodeDocs/blob/DAppNodeDocsOpenVPN/img/2019-05-07%2017.22.10.jpg">
+  <img width="600" height="450" src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/VirtualBox_install.png">
   </a>
 </p>
 
@@ -83,13 +83,16 @@ Resume DAppNode's installation
 If the installation succeeded, your system will reboot and you will have to log in with the user and password provided in the installation steps above. Then the following screen should appear:
 
 <p align="center">
-  <img width="800" height="450" src="https://github.com/dappnode/DAppNodeDocs/blob/DAppNodeDocsOpenVPN/img/installendscreen.jpg">
+  <img width="800" height="600" src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/VirtualBox_console.png">
   </a>
 </p>
 
 Now you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation by double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
  
-:warning: Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open them manually :warning:
+
+⚠️ Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open and forward them manually ⚠️
+
+⚠️ Even if the OpenVPN files are served via HTTP, they are served encrypted, and then decrypted locally in your browser with the key provided in the link, so anyone snooping the file transfer cannot use it.
 
 ## Installation via installer script
 
@@ -105,7 +108,7 @@ Remember **_Your hardware, your coins, your privacy, your freedom._**
 
 * [docker](https://docs.docker.com/install/)
 * [docker-compose](https://docs.docker.com/compose/install/)
-* [xz](https://tukaani.org/xz/) (usually pre-installed by default on some OS)
+* [xz](https://tukaani.org/xz/) (usually it comes pre-installed by default)
 
 To install all the above prerequisites, execute the command below in the terminal of the machine you want to install DAppNode.
 If you already have the dependencies installed or you want to install them on your own you can skip this step.
@@ -154,7 +157,7 @@ Connect to your DAppNode through VPN and navigate to [my.dappnode](http://my.dap
     * Decentralized version of [ENS Manager](http://ens.dappnode.eth)
     * Decentralized version of [Wallet Gnosis](http://gmultisig.dappnode.eth)
 
-* Go to IPFS by entering [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui) into your browser.
+* Go to the IPFS web interface by entering [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui) into your browser.
 
 The first time you access to it will ask you for your `Custom API address`, just fill the field with this address and you will be connected to your IPFS node, this is the input you have to enter in the field `Is your API in a port other than 5001?`
 
