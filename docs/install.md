@@ -92,7 +92,7 @@ Now you can connect to your DAppNode by downloading the .ovpn file that you will
 
 ⚠️ Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open and forward them manually ⚠️
 
-⚠️ Even if the OpenVPN files are served via HTTP, they are served encrypted, and then decrypted locally in your browser with the key provided in the link, so anyone snooping the file transfer cannot use it.
+Even if the OpenVPN files are served via HTTP, they are served encrypted, and then decrypted locally in your browser with the key provided in the link, so anyone snooping the file transfer cannot use it.
 
 ## Installation via installer script
 
