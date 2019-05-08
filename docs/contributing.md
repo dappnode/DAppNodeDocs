@@ -90,7 +90,7 @@ Boost test cases and place them under `test/`.
 New features and bug fixes should be added to the `Changelog.md` file: please
 follow the style of previous entries, when applicable.
 
-Please note that this project is released with a[Contributor Code of Conduct](https://raw.githubusercontent.com/dappnode/DAppNode/master/CODE_OF_CONDUCT.md).
+Please note that this project is released with a [Contributor Code of Conduct](https://raw.githubusercontent.com/dappnode/DAppNode/master/CODE_OF_CONDUCT.md).
 By participating in this project you agree to abide by its terms.
 
 Thank you for your help!
