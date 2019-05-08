@@ -9,6 +9,7 @@ nav:
   - User Guide: user-guide.md
   - FAQs: faqs.md
   - Troubleshooting: troubleshooting.md
+  - Migration to v0.2.0: Migration to v0.2.0.md
   - Architecture: architecture.md
   - Core packages readmes: Core-packages-readmes.md
   - Contributing: contributing.md
