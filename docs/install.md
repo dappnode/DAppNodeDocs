@@ -1,14 +1,14 @@
 # Install DAppNode
 
-Think of DAppNode as an operating system. In fact, it is; our savvy team has taken Debian and have super-powered it to be your gateway to access the decentralized web.
+DAppNode is an Operating System. Our team has taken Debian and super-powered it to be your gateway to access the decentralized web.
 
-While you can run DAppNode on a Virtual Private Server (VPS), we **highly encourage you to run DAppNode on your own physical server**. The intention of DAppNode is to create a strong network of decentralized servers. Running DAppNode on centralized virtual servers defeats the purpose. 😉That being said, we realize it may be easiest to get started and test the system on a VPS.
+While you can run DAppNode on a Virtual Private Server (VPS), we **highly encourage you to run DAppNode on your own physical server**. The intention of DAppNode is to create a strong network of decentralized servers. Running DAppNode on (politically) centralized virtual servers defeats the purpose 😉. That being said, we realize it may be easiest to get started and test the system on a VPS.
 
 ---
 
-⚠️ **DAppNode is intended to be installed on a dedicated machine. Do not install DAppNode on your laptop**
+:warning: **DAppNode is intended to be installed on a dedicated machine. Do not install DAppNode on your laptop** :warning:
 
-⚠️ If you do so the installation will erase all its content. See details below
+:warning: If you do so the installation will erase all its content. See details below :warning:
 
 ---
 
@@ -22,7 +22,7 @@ In the client side you just need an OpenVPN client installed in the device with 
 
 # How to install DAppNode on your machine
 
-Okay, so you’re ready to join the real DAppers. Let us show you how to make that hardware sing the hardware decentralization song!
+Okay, so you’re ready to be a Nodler. Let us show you how to make that hardware sing the hardware decentralization song!
 
 You can choose between two methods to install DAppNode:
 * **Install DAppNode from an ISO** - When you want to perform a clean installation, installing the base operating system and DAppNode.
@@ -36,13 +36,13 @@ Download the image from [DAppNodeISO](https://iso.dappnode.io) or [build it from
 
 Burn the ISO to an USB stick. To do so we recommend using [Etcher](https://www.balena.io/etcher/) for the OS with which you will prepare the USB to boot from your server and install DAppNode
 
-Please note that Etcher is intended to generate the ISO image in a bootable USB from your desktop device, and then install it in a server. 
+:warning: Please note that Etcher is intended to generate the ISO image in a bootable USB from your desktop device, and then install it in a server :warning:
 
 **_IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED._** 
 
 Also, DAppNode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
 
-### Install a Debian distribution (~15 min)
+### Install the DAppNode ISO (~15 min)
 
 Insert the USB into your Server and prepare to install a Debian distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
 
@@ -51,11 +51,12 @@ Insert the USB into your Server and prepare to install a Debian distribution. Yo
   </a>
 </p>
 
-Follow the Debian installation steps; various screens will guide you through the process. You can follow this standard option for a default installation:
+Follow the installation steps. Various screens will guide you through the process and you can follow the recommended setup below for a default installation:
 
 ### Recommended setup
 
-*Note* by following these instructions you will erase ALL your server's disk contents.
+*Note by following these instructions you will erase ALL your server's disk contents.
+
 
 1. **Select a language** - Language: [English]
 2. **Select your location** - Country, territory or area: [United States or your own]
@@ -79,7 +80,7 @@ Follow the Debian installation steps; various screens will guide you through the
 
 Resume DAppNode's installation 
 
-If the installation succeeded, your system will reboot, you will have to log in with the user and password provided in the installation, and it should finish with this screen:
+If the installation succeeded, your system will reboot and you will have to log in with the user and password provided in the installation steps above. Then the following screen should appear:
 
 <p align="center">
   <img width="800" height="450" src="https://github.com/dappnode/DAppNodeDocs/blob/DAppNodeDocsOpenVPN/img/installendscreen.jpg">
@@ -88,13 +89,13 @@ If the installation succeeded, your system will reboot, you will have to log in 
 
 Now you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation by double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
  
-⚠️ Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open them manually ⚠️
+:warning: Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open them manually :warning:
 
-## Installation via installer
+## Installation via installer script
 
-### WARNING
+### :warning: WARNING
 
-This software is not meant to be run in a remote machine hosted by any remote provider. What DAppNode specifically wants to avoid is centralization of the machines that our digital lives rely on; nevertheless, we understand that before buying a dedicated machine to run your DAppNode you might want to test it and see how easy it is to use.
+This software is not meant to be run in a remote machine hosted by any remote provider. What DAppNode specifically wants to avoid is centralization of the machines that our digital lives rely on. That said, we understand that before buying a dedicated machine to run your DAppNode you might want to test it and see how easy it is to use.
 
 Remember **_Your hardware, your coins, your privacy, your freedom._**
 
@@ -106,8 +107,8 @@ Remember **_Your hardware, your coins, your privacy, your freedom._**
 * [docker-compose](https://docs.docker.com/compose/install/)
 * [xz](https://tukaani.org/xz/) (usually pre-installed by default on some OS)
 
-To install the prerequisites running this command in the terminal of the machine you want to install the DAppNode.
-(If you already have the dependencies installed or you want to install them by your own you can skip this step)
+To install all the above prerequisites, execute the command below in the terminal of the machine you want to install DAppNode.
+If you already have the dependencies installed or you want to install them on your own you can skip this step.
 
 ```
 sudo wget -O - https://prerequisites.dappnode.io  | sudo bash
@@ -115,22 +116,24 @@ sudo wget -O - https://prerequisites.dappnode.io  | sudo bash
 
 ### Install DAppNode
 
+Run the following command to install DAppNode:
+
 ```
 sudo wget -O - https://installer.dappnode.io | sudo bash
 ```
 
-If you have a static IP and want to set it up right from the connection, then run the command with the following variable including your static IP
+If you have a static IP and want to set it up right from the connection, run the command below, which includes a variable for your static IP. The majority of users will not need to add that as dynamic IPs are the most common. 
 
 ```
 sudo wget -O - https://installer.dappnode.io | sudo STATIC_IP="your static IP" bash
 
 ```
 
-When the installation is done and is successful, you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation, just double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
+When the installation is done and is successful, be it  you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation, just double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
 
 ⚠️ Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open them manually ⚠️
 
-Take into account that the ethereum blockchain will take some time to synchronize and you will not be able to perform most of the actions before that.
+Please, after installation be aware that the ethereum blockchain will take some time to synchronize and you will not be able to perform most actions before that.
 
 ### How to restore an installed DAppNode to the latest version:
 
@@ -141,7 +144,8 @@ sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash
 ```
 
 ## Enter your DAppNode!
-Navigate to [my.dappnode](http://my.dappnode) to access DAppNode's administrative page. Bare in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced.
+
+Connect to your DAppNode through VPN and navigate to [my.dappnode](http://my.dappnode) to access DAppNode's admin page. DAppNode's functionality will be limited until the Ethereum mainnet chain is synced.
 
 ### 2.3. Now you can do things like for example:
 
