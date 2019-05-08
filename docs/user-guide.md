@@ -4,7 +4,7 @@
 
 ## Welcome to DAppNode – The Admin UI
 
-Once you have succeeded in connecting to your DAppNode via VPN, you will have access to the above-mentioned URL. Be aware of this historic moment; it might very likely be the first ETH domain you visit.
+Once you have succeeded in connecting to your DAppNode via VPN, you will have access to http://my.admin.dnp.dappnode.eth . Be aware of this historic moment; it might very likely be the first ETH domain you visit. And remember that from DAppNode 0.2.0 you can also access by typing http://my.dappnode as easy as that. 
 
 The Admin UI allows the installation of packages in your DAppNode, adding devices to connect for your friends and family, monitoring its health and allowing fully functional operation without having to open the console.
 
@@ -14,26 +14,26 @@ Let’s have a look to see what you will find here.
 
 When you first enter the Admin UI, you will see a link to a survey made to tell us how the installation went and provide your insights about the process. We greatly appreciate this feedback in order to help us to make a better product.
 
-By clicking “Dashboard” you can see a summary of the components that make up the system and its status. This is what a healthy DAppNode dashboard looks like:
+By clicking “Dashboard” you can have a fast look to your server state, if you want to check the overall status and functioning click on the report button at the top right corner. 
 
 1. Tabs area
 
-2. Name of the server / Internal IP
+2. Name of the server / IP / DynDNS
 
-3. Health of core services
+3. Sync State
 
-4. Error reporting area (in this example, the DAppNode is in good shape so nothing appears here)
+4. Server Stats
 
-5. Sync State
+5. Size of ETHCHAIN and IPFS volumes
 
-6. Server stats
+6. Fast access to sync state
 
 7. Notifications area
 
-8. Report issue / Autodiagnose tool
+8. Autodiagnose tool / Report Issue 
 
 <p align="center">
-    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/dashboard.jpg">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/DAppNodeDocsOpenVPN/img/0.2.0dashboardscreenshot.png">
 </p>
 
 **IMPORTANT NOTE ON SERVER STATS: if you note that the disk capacity is getting near to 100 % you should disable services to avoid the disk getting full. If this happens the DAppNode will get unfunctional, and you will not be able to erase packages once the memory is at 100%**
@@ -46,7 +46,7 @@ This tab allows easy access to the DAppNode logs in order to debug errors. We wo
 
 ## Devices
 
-This tab is one of the cornerstones of our vision, as the functionality is meant to build trusted circles that connect to the decentralized web through a DAppNode installed on a piece of self-owned hardware that provides access to your friends and family.
+This tab is one of the cornerstones of our vision, as the functionality is meant to build trusted circles that connect to the decentralized web through a DAppNode installed on a piece of self-owned hardware that provides access to your friends and family. Remember that they should have a compatible OpenVPN client installed in their device. 
 
 Just click “add a device”, name it and you will get a QR / link that contains the file to configure the VPN to connect to your DAppNode for any friend or family member.
 
@@ -60,14 +60,6 @@ You also have the ability to give a device admin privileges so the ADMIN UI can 
 
 ⚠️ **Take in account that if you remove admin privileges to any device while that device is connected to the server, it will still be able to access the admin UI and thus that device can make itself admin again, to prevent this, after removing admin privileges to any user you should restart the VPN package by going to System / VPN / Restart. This also applies when you want to remove access to any device without admin privileges.** ⚠️
 
-### Guest User functionality
-
-In the devices section you will find a Guests functionality that can be enabled / disabled at your own discretion.
-
-This functionality allows multiple users to connect with a single pair of credentials, what is specially useful in teaching environments or when you want to connect people without adding a device for each user.
-
-When you disable this functionality, any user that is connected to the VPN will still be able to use your DAppNode until you restart the VPN service in System / VPN / Restart.
-
 ## Installer
 
 Here you have the DAppstore where you can directly install a growing amount of services and libraries just by a click and they will install. Please let us know which ones would you like to have in the DAppstore by filling out this little survey.
@@ -78,7 +70,7 @@ From the installer you can also install packages not shown in the interface by p
 
 We have added a functionality that allows to customize some packages with predefined configurations made by the developer of the node/ DApp, please check the project documentation to see which options to customize are available.
 
-You can also select your own customized path for the installation of the package by writing your selected path in the field aside the path by default. Last, if you are an advanced user you can also chooose the ports to be used by the package by editing the "ports" section.
+You can also select your own customized path for the installation of the package by writing your selected path in the field aside the path by default. Last, if you are an advanced user you can also chooose the ports to be used by the package by editing the "ports" section and upload and download files to any package using the File Manager.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/installer.png">
@@ -102,11 +94,9 @@ As with Parity Main net node, you have your websocket in the port 8546 and your 
 
 Görli, the only Proof of Authority testnet that has compatibility with Geth, Pantheon and Parity is available for you to run with a couple of clicks in your DAppNode.
 
-### Livepeer
+### Vipnode
 
-Livepeer is an open Source Video Infrastructure Services platform, built on the Ethereum Blockchain (Rinkeby). With the Livepeer package you can easily set up a Livepeer node. Have a look to https://livepeer.org to get more info and docs.
-
-Please note that if you install this package that is running in Rinkeby, you need to have installed the Rinkeby chain for LivePeer to work properly. This is the same with any other services. You will need to have a node of the chain it is running on.
+Vipnode is an open source implementation of economic incentives for running Ethereum full nodes who serve light clients — a critical component of ETH2.0 sharding. Vipnode is meant to be an incentive structure that allows nodlers — using DAppNode or any other full node — to be paid for running these nodes. At the moment the payments are made in Rinkeby ETH but soon it will be real ether.
 
 ### Swarm
 
@@ -150,13 +140,13 @@ Note that when removing a non core package you have the following options :
 
 - Remove only the container: This will only remove the package but data will be kept, so if you insatll the package again in the same path,thje container will mount the volume again and you won´t have to sync the whole package again.
 
-- Remove Package + volume : This will erase the container and the asosicated data. If you want to reinstall, the volume will have to sync again
+- Remove Package + volume : This will erase the container and the associated data. If you want to reinstall, the volume will have to sync again
 
 ## System
 
 Here you can access the packages that are part of the DAppNode core and manage them, see their logs, restart them or delete its associated data to be restored.
 
-If you have a Static IP you can set it up here so the future VPN credentials generated point to that fixed ip, just include your Static IP in the box and hit “Set”, you can always disable.
+If you have a Static IP you can set it up here so the future VPN credentials generated point to that fixed ip, just include your Static IP in the box and hit “Set”, you can always disable it.
 
 ## SDK
 
@@ -166,11 +156,11 @@ Once you have used the command line SDK and you have the DNP name, the version a
 
 ## Notifications
 
-In the upper right part of the ADMIN UI you will see a bell icon that will be highlighted when there is an important notification for you. It will turn yellow to warn you about the need of creating new VPN credentials when you set a Static IP, or prompt you to restart the VPN services when you want to remove access to users in your DAppNode. It wilil turn red when packages have been stopped to prevent the machine disk getting full.
+In the upper right part of the ADMIN UI you will see a bell icon that will be highlighted when there is an important notification for you. It will turn yellow to warn you about the need of creating new VPN credentials when you set a Static IP, or prompt you to restart the VPN services when you want to remove access to users in your DAppNode. It will turn red when packages have been stopped to prevent the machine disk getting full.
 
-## Report
+## Autodiagnose / Report
 
-You can contribute to DAppNode´s improvement by opening issues directly from the ADMIN UI. When you click the "Report" button and Auto diagnose tool will be run to check DAppNode´s overall performance. Also you have the option of sending tthe issuewith a prepopulated form thata will be automatically loaded in the report screen. You can also choose to open the issue without any data.
+In this screen you will have an overview of the functioning of your DAppNode with checks that will indicate you if there is any problem for the normal operation of your DAppNode. You can contribute to DAppNode´s improvement by opening issues directly from the ADMIN UI. When you click the "Report" you will check DAppNode´s overall performance. Also you have the option of sending the issue with a prepopulated form that will be automatically loaded in the report screen. You can also choose to open the issue without any data.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/reportscreen.png">

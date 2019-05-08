@@ -1,14 +1,15 @@
-# Troubleshooting
+# Troubleshooting 
 
-## VPN Connection issues
+
+## VPN Connection issues 
 
 The VPN is one of the pillars of the whole DAppNode functioning, you will need a somehow decent and stable internet connection to be able to connect to the server.
 
 ### Os & Ios Users
 
-As the config file is automated you should not have any problem to access caused by the VPN configuration so possible causes might be:
+As with OpenVPN the config file is automated you should not have any problem to access caused by the VPN configuration so possible causes might be:
 
-### NAT Loopback disabled
+#### NAT Loopback disabled
 
 You are in the same local area network that the DAppNode you want to connect to, and your router does not support or does not have enabled NAT LOOPBACK, so there are IP conflicts that prevent you from connecting.
 
@@ -16,9 +17,9 @@ To solve it you have to figure out if your router is doing NAT LOOPBACK and acti
 
 This will allow you to connect from the same local network but not from outside, to connect to your DAppNode from outside your network you will need to download another VPN profile pointing to the DynDNS address (exactly as it is downloaded)
 
-### VPN ports closed
+#### VPN ports closed 
 
-If your router is doing NAT LOOPBACK and you can't access your DAppNode it is very likely that the ports used to establish the VPN connection with the server are not available. To solve this you have to enter the router admin UI and open the 500 and 4500 UDP ports. Even though we use UPnP protocol so you can forget about ports management, note that some routers could not allow UPnP configuration of ports under 1024 so port 500 UDP will have to be added manually in these cases.
+If your router is doing NAT LOOPBACK and you can't access your DAppNode it is very likely that the ports used to establish the VPN connection with the server are not available. To solve this you have to enter the router admin UI and open the 1194 UDP (used for establishing the VPN connection and 8090 TCP (used to get the credentials from the OTP link) ports. 
 
 If you have NAT LOOPBACK activated and the VPN ports are opened it is very likely that an extension you have installed or any setup you have that affects DNS routing might be interfering in the connection, please deactivate any piece of your configuration that can have influence DNS solving.
 
@@ -34,49 +35,53 @@ Sometimes when having configured the VPN profile following the instructions the 
 
 To fix this error, a one-time registry change is required because the VPN server and/or client is behind NAT (e.g. home router). Run the following from an elevated command prompt. You must reboot your PC when finished.
 
-### For Windows Vista, 7, 8.x and 10
+#### For Windows Vista, 7, 8.x and 10
 
 `REG ADD HKLM\SYSTEM\CurrentControlSet\Services\PolicyAgent /v AssumeUDPEncapsulationContextOnSendRule /t REG_DWORD /d 0x2 /f`
 
 Note that you have to run this command as elevated command prompt and then reboot your computer.
 
-### For Windows XP
+#### For Windows XP
 
 `REG ADD HKLM\SYSTEM\CurrentControlSet\Services\RasMan\Parameters /v ProhibitIpSec /t REG_DWORD /d 0x0 /f`
 
-### Disabled Ipsec Encryption
-
-Although uncommon, some Windows systems disable IPsec encryption, causing the connection to fail. To re-enable it, run the following command and reboot your PC.
-
-For Windows XP, Vista, 7, 8.x and 10
-
-`REG ADD HKLM\SYSTEM\CurrentControlSet\Services\RasMan\Parameters /v ProhibitIpSec /t REG_DWORD /d 0x0 /f`
-
-Note that you have to run this command as elevated command prompt and then reboot your computer.
 
 ### Linux & Android
 
-If following the instructions has not made your connection to work, try to manually set up a VPN profile within your computer/phone using the credentials given in the OTP web you get after installation under the tab Linux/Android.
+If you can't import the file in Linux Open VPN client make sure you have the network-manager-openvpn and network-manager-openvpn-gnome packages installed. 
 
-<p align="center">
-    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipsecoopotions.jpg">
-</p>
-
-<p align="center">
-    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/username.jpg">
-</p>
-
-<p align="center">
-    <img width="600"src="https://github.com/Shelpin/DAppNode/raw/master/doc/routes.jpg">
-</p>
+you can see the whole instructions for Linux [here](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide#Linux)
 
 If you are still experiencing problems to connect from your Linux device please ping us in our channels, we will be happy to help!!.
 
-## I can´t connect with another device to my DAppNode
+### When performing the migration from v0.1.0 after connecting via ssh or loggin in to my machine I get old L2TP credentials that can't be opened in my OpenVPN client. 
+
+The new VPN package has not finished the installation and it is not running yet, so you get old credentials again. Just wait a few minutes and connect again via SSH. Once the new VPN package is running you will get your brand new OpenVPN credentials.You can check that the migration has been correctly performed and that you are getting the new OpenVPN credentials by typing in the server terminal ```docker ps``` and checking that the installed core packages have the mention 0.2.0
+
+![](https://i.imgur.com/BZYlAv2.png)
+
+### I can't access the credentials OTP web link to download the .ovpn file
+
+For the credentials file to be correctly donwloaded you need to have port 8090 TCP opened, please check that that port is opened.
+
+### I have a message in the console saying that admin credentials expired 
+
+Once a file with credentials is downloaded, and used for connecting once, the link expires after that first connection and you see that message. If for any reason you need to get new credentials, connect via ssh to the server and run the command 
+
+```
+dappnode_get dappnode_admin
+``` 
+
+If you get a "command not found" message you can run 
+
+```
+docker exec -ti DAppNodeCore-vpn.dnp.dappnode.eth vpncli get dappnode_admin
+```
+### I can´t connect with another device to my DAppNode
 
 Only one device can access your DAppNode for each VPN credentials created; each device connected should have its own VPN configuration adding the desired devices in the Devices tab of your admin UI. You can add as many devices as you want! Be nice and provide all your friends and family access to the decentralized web, please!!
 
-## My ETH node never ends up syncing
+### My ETH node never ends up syncing
 
 If you are not on a 4 GB (ideally 8 GB) RAM configuration/your HD has not a high writing speed (SSD needed), it might happen that the server is not able to catch up with Ethereum Blocks, so it never gets synced. We are sorry but the server might not be able to cope up with the chain.
 
@@ -84,30 +89,29 @@ It is also possible that the initial sync gets stuck at a given snapshot of the 
 
 If you have a proper internet connection, an SSD disk and at least 4 GB RAM the initial sync should be fine.
 
-## I can´t access the ADMIN UI
+### I can´t access the ADMIN UI
 
 You have to be connected to the VPN to access the ADMIN UI, in case you are connected and still not able to access just disconnect the VPN and connect it again.
 
-## I can´t install packages or it takes a lot of time to install them
+### I can´t install packages or it takes a lot of time to install them
 
 For installing packages the ETH node should be synchronized. In case the node is sync and you are experiencing this, enter in System and restart IPFS and VPN and connect again.
 
-## Ports that need to be opened
+### Ports that need to be opened
 
 Please find in this table the ports that need to be opened for the smooth functioning of your DAppNode and installed packages.
 
 | Service       | TCP   | UDP       |
 | ------------- | ----- | --------- |
-| VPN           |       | 500, 4500 |
+| VPN (OpenVPN) | 8090 |  1194      |
 | Ethereum Node | 30303 | 30303     |
 | IPFS          | 4001  | 4002      |
 
 However, if your router supports UPnP, do not worry about this, it will manage all the ports stuff for you.
 
-
 ***Note that SSH port (22) is only needed when you need ssh access to your server, and it's not a very  good idea to let that port opened , consider restricting the access to your own IP or just open it when you need it and then close it***
 
-## I need to restore the system without losing any data
+### I need to restore the system without losing any data
 
 Execute this command in your DAppNode terminal, this will update the core packages to the latest versions without erasing any data from your volumes.
 

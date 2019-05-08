@@ -83,13 +83,13 @@ Ready to jump in? Here we go!
 
 - **Adviser & Instigator:** Jordi Baylina
 - **Adviser:** Griff Green
-- **Adviser:** Bernd Lapp
 - **Project Lead:** Eduardo Antuña
 - **Front-End Lead:** DAppLion
 - **DevOps:** Vdo
-- **Community Support:** Álex Casas
+- **Ecosystem development:** Pol Lanski
+- **Ecosystem development:** Álex Casas
 
-## Where the DAppers play
+## Where the #nodlers play
 
 - [DAppNode](https://dappnode.io/)
 - [Riot](https://riot.im/app/#/room/#dappnode:matrix.org)
