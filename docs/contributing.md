@@ -5,21 +5,19 @@ Help is always appreciated!
 In particular, we need help in the following areas:
 
 - Improving the documentation
-- Fixing and responding to `DAppNode's GitHub issues <https://github.com/ethereum/solidity/issues>`_, especially those tagged as
-  `up-for-grabs <https://github.com/ethereum/solidity/issues?q=is%3Aopen+is%3Aissue+label%3Aup-for-grabs>`_ which are
+- Fixing and responding to `DAppNode's GitHub issues <https://github.com/dappnode/DAppNode/issues>`_, especially those tagged as
+  `Good-first-issue <https://github.com/dappnode/DAppNode/labels/Good%20first%20issue>`_ which are
   meant as introductory issues for external contributors.
 
 ## How to Contribute
 
-When bringing people on as contributors we prefer that they start with an issue tagged [good first issue](https://github.com/dappnode/DNP_BIND/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). After a contributor has shown they're a good fit and have completed 1 or 2 issues labeled [good first issue](https://github.com/dappnode/DNP_BIND/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) with pull requests that have been accepted feel free of moving on to other issues. We're thrilled to see new contributors.
-
-If you want to better understand how does the development process works, please refer to our [wiki pages](https://github.com/dappnode/DAppNode/wiki)
+When bringing people on as contributors we prefer that they start with an issue tagged [good first issue](https://github.com/dappnode/DAppNode/labels/Good%20first%20issue). After a contributor has shown they're a good fit and have completed 1 or 2 issues labeled [good first issue](https://github.com/dappnode/DAppNode/labels/Good%20first%20issue) with pull requests that have been accepted feel free of moving on to other issues. We're thrilled to see new contributors.
 
 In order to get the repositories setup before contributions refer to the [README.md](https://github.com/dappnode/DAppNode/raw/master/README.md) file.
 
 1. _Find a suitable issue_
 
-   If this is your first-time look for an issue labeled [good first issue](https://github.com/dappnode/DNP_BIND/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) otherwise look for issues labeled [help wanted](https://github.com/dappnode/DNP_BIND/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22). If another issue jumps out at you please engage on the issue before starting it.
+   If this is your first-time look for an issue labeled [good first issue](https://github.com/dappnode/DAppNode/labels/Good%20first%20issue) otherwise look for issues labeled [help wanted](https://github.com/dappnode/DAppNode/labels/help%20wanted). If another issue jumps out at you please engage on the issue before starting it.
 
 2. _Assign yourself the issue_
 
@@ -40,7 +38,7 @@ In order to get the repositories setup before contributions refer to the [README
 
 6. _Run previous tests_
 
-   Make sure that the changes that you've made don't break anything! Ensure that running `npm test` and `npm eslint` doesn't throw any new and unexpected errors.
+   Make sure that the changes that you've made don't break anything! 
 
 7. _Push all your work_
 
@@ -58,17 +56,17 @@ In order to get the repositories setup before contributions refer to the [README
 
     Find another issue, get more involved, make noise in our Riot, or find issues we may have missed. You've completed your first step to becoming a contributor. **You're helping to Decentralize the FUTURE**!
 
-If you still have any further questions about contribution feel free to reach out to `@eduadiez:matrix.org`, `@yalormewn:matrix.org`, `@liondapp:matrix.org`, or just make noise in the `#DAppNode` channel on [Riot](https://riot.im/app/#/room/#DAppNode:matrix.org).
+If you still have any further questions about contribution feel free to reach out to `@eduadiez:matrix.org`, `@alexshelpin:matrix.org`, `@liondapp:matrix.org`, or just make noise in the `#DAppNode` channel on [Riot](https://riot.im/app/#/room/#DAppNode:matrix.org).
 
 ## How to Report Issues
 
 To report an issue, please use the
-`GitHub issues tracker <https://github.com/ethereum/solidity/issues>`\_. When
+`GitHub issues tracker <https://github.com/dappnode/DAppNode/issues>`\_. When
 reporting issues, please mention the following details:
 
-- Which version of Solidity you are using
-- What was the source code (if applicable)
-- Which platform are you running on
+- Which version of DAppNode you are using
+- How did you install it and where (physycal , server / VPS)
+- Which platform are you using to connect to your [ADMIN UI](http://my.dappnode)
 - How to reproduce the issue
 - What was the result of the issue
 - What the expected behavior is
