@@ -7,6 +7,7 @@ nav:
   - Connect to DAppNode: connect.md
   - What can you do with DAppNode?: what-can-you-do.md
   - User Guide: user-guide.md
+  - DNP Manifest Reference: manifest-reference.md
   - FAQs: faqs.md
   - Troubleshooting: troubleshooting.md
   - Migration to v0.2.0: Migration to v0.2.0.md
@@ -14,4 +15,3 @@ nav:
   - Core packages readmes: Core-packages-readmes.md
   - Contributing: contributing.md
   - License: license.md
-
