@@ -1,7 +1,7 @@
 sudo: false
 language: python
 install:
-  - pip install mkdocs pygments
+  - pip install mkdocs mkdocs-material pygments
 before_script:
   - git config --global user.email "dappnode@dappnode.io"
   - git config --global user.name "dappnode"
