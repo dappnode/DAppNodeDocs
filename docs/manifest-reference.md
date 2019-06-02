@@ -14,7 +14,7 @@ The DAppNode package (DNP) defines all the necessary information for a DAppNode 
 | ------------------- | ---------- | ------ | ------------ | ----------------- | --------------------- | -------------------------------------------- |
 | Can be instantiated | No         | Stable | No           | Forbidden         | Permitted             | [manifest.schema.json](manifest.schema.json) |
 
-# Manifest example
+Manifest full reference example
 
 ```json
 {
@@ -97,7 +97,7 @@ The DAppNode package (DNP) defines all the necessary information for a DAppNode 
 }
 ```
 
-# Manifest properties
+Manifest object first level properties
 
 | Property                      | Type       | Required     |
 | ----------------------------- | ---------- | ------------ |

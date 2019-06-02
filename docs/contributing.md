@@ -38,7 +38,7 @@ In order to get the repositories setup before contributions refer to the [README
 
 6. _Run previous tests_
 
-   Make sure that the changes that you've made don't break anything! 
+   Make sure that the changes that you've made don't break anything!
 
 7. _Push all your work_
 

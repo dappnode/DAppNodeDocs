@@ -1,10 +1,8 @@
 # User Guide
 
-[TOC]
-
 ## Welcome to DAppNode – The Admin UI
 
-Once you have succeeded in connecting to your DAppNode via VPN, you will have access to http://my.admin.dnp.dappnode.eth . Be aware of this historic moment; it might very likely be the first ETH domain you visit. And remember that from DAppNode 0.2.0 you can also access by typing http://my.dappnode as easy as that. 
+Once you have succeeded in connecting to your DAppNode via VPN, you will have access to http://my.admin.dnp.dappnode.eth . Be aware of this historic moment; it might very likely be the first ETH domain you visit. And remember that from DAppNode 0.2.0 you can also access by typing http://my.dappnode as easy as that.
 
 The Admin UI allows the installation of packages in your DAppNode, adding devices to connect for your friends and family, monitoring its health and allowing fully functional operation without having to open the console.
 
@@ -14,7 +12,7 @@ Let’s have a look to see what you will find here.
 
 When you first enter the Admin UI, you will see a link to a survey made to tell us how the installation went and provide your insights about the process. We greatly appreciate this feedback in order to help us to make a better product.
 
-By clicking “Dashboard” you can have a fast look to your server state, if you want to check the overall status and functioning click on the report button at the top right corner. 
+By clicking “Dashboard” you can have a fast look to your server state, if you want to check the overall status and functioning click on the report button at the top right corner.
 
 1. Tabs area
 
@@ -30,13 +28,16 @@ By clicking “Dashboard” you can have a fast look to your server state, if yo
 
 7. Notifications area
 
-8. Autodiagnose tool / Report Issue 
+8. Autodiagnose tool / Report Issue
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/DAppNodeDocsOpenVPN/img/0.2.0dashboardscreenshot.png">
 </p>
 
-**IMPORTANT NOTE ON SERVER STATS: if you note that the disk capacity is getting near to 100 % you should disable services to avoid the disk getting full. If this happens the DAppNode will get unfunctional, and you will not be able to erase packages once the memory is at 100%**
+<!-- prettier-ignore-start -->
+!!! info
+    IMPORTANT NOTE ON SERVER STATS: if you note that the disk capacity is getting near to 100 % you should disable services to avoid the disk getting full. If this happens the DAppNode will get unfunctional, and you will not be able to erase packages once the memory is at 100%
+<!-- prettier-ignore-end -->
 
 To avoid this, non core packages will be automatically stopped when there is less than 5 Gbs left, and ETHCHAIN and IPFS will be automatically stopped when there is less than 1 GB available. If by any chance your DAppNode server gets to 100 % busy disk space, it will become unworkable from the ADMIN UI and you will have to erase containers/volumes manually from the commmand line of your server.
 
@@ -46,7 +47,7 @@ This tab allows easy access to the DAppNode logs in order to debug errors. We wo
 
 ## Devices
 
-This tab is one of the cornerstones of our vision, as the functionality is meant to build trusted circles that connect to the decentralized web through a DAppNode installed on a piece of self-owned hardware that provides access to your friends and family. Remember that they should have a compatible OpenVPN client installed in their device. 
+This tab is one of the cornerstones of our vision, as the functionality is meant to build trusted circles that connect to the decentralized web through a DAppNode installed on a piece of self-owned hardware that provides access to your friends and family. Remember that they should have a compatible OpenVPN client installed in their device.
 
 Just click “add a device”, name it and you will get a QR / link that contains the file to configure the VPN to connect to your DAppNode for any friend or family member.
 
@@ -54,11 +55,14 @@ This is the same process that you performed while installing your DAppNode when 
 
 Take into account that each device added has its own VPN credentials and is valid only for one concurrent connection, but you can add as many devices as you want.
 
-If there is a device using the same VPN credentials, you will be able to connect to the VPN with other devices, but you won´t be able to access the DAppNode.
+If there is a device using the same VPN credentials, you will be able to connect to the VPN with other devices, but you won't be able to access the DAppNode.
 
 You also have the ability to give a device admin privileges so the ADMIN UI can be used by them. If any device without admin credentials tries to access the ADMIN UI, it will not work.
 
-⚠️ **Take in account that if you remove admin privileges to any device while that device is connected to the server, it will still be able to access the admin UI and thus that device can make itself admin again, to prevent this, after removing admin privileges to any user you should restart the VPN package by going to System / VPN / Restart. This also applies when you want to remove access to any device without admin privileges.** ⚠️
+<!-- prettier-ignore-start -->
+!!! info
+    Take in account that if you remove admin privileges to any device while that device is connected to the server, it will still be able to access the admin UI and thus that device can make itself admin again, to prevent this, after removing admin privileges to any user you should restart the VPN package by going to System / VPN / Restart. This also applies when you want to remove access to any device without admin privileges.
+<!-- prettier-ignore-end -->
 
 ## Installer
 
@@ -114,9 +118,9 @@ In Monero a node is called a daemon, and does not have a wallet functionality. T
 
 For this example, we will use the official Monero GUI that you can get at  www.getmonero.org
 
-Select the GUI wallet version for your OS. Install it and open it. After showing you your keys and so on, the app will ask you which node you want to connect to.Simply select remote node, include http://my.monero.dnp.dappnode.eth as the node address, 18081 as the port and you are done!!!
+Select the GUI wallet version for your OS. Install it and open it. After showing you your keys and so on, the app will ask you which node you want to connect to.Simply select remote node, include http://my.monero.dnp.dappnode.eth as the node address, 18081 as the port and you are done!
 
-Now you have your Monero wallet connected to your own node!!!!
+Now you have your Monero wallet connected to your own node!
 
 Do not buy any tanks please ;)...
 
@@ -138,7 +142,7 @@ These are the main options you can execute on your installed packages:
 
 Note that when removing a non core package you have the following options :
 
-- Remove only the container: This will only remove the package but data will be kept, so if you insatll the package again in the same path,thje container will mount the volume again and you won´t have to sync the whole package again.
+- Remove only the container: This will only remove the package but data will be kept, so if you insatll the package again in the same path,thje container will mount the volume again and you won't have to sync the whole package again.
 
 - Remove Package + volume : This will erase the container and the associated data. If you want to reinstall, the volume will have to sync again
 

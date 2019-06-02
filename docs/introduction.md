@@ -2,9 +2,9 @@
 
 Welcome to DAppNode!
 
-If you are reading this, decentralization, privacy and security are important to you. And we get you. That's why we are here to help you run your own secure hardware which contributes to a truly decentralized web. 
+If you are reading this, decentralization, privacy and security are important to you. And we get you. That's why we are here to help you run your own secure hardware which contributes to a truly decentralized web.
 
-DAppNode is an operating system that allows you to host decentralized apps in a truly decentralized way and eliminates the reliance on  third parties vulnerable to centralization. It also adds an extra layer of incentivization that helps spread adoption of the blockchain ecosystem and solves the problem of infrastructure centralization.
+DAppNode is an operating system that allows you to host decentralized apps in a truly decentralized way and eliminates the reliance on third parties vulnerable to centralization. It also adds an extra layer of incentivization that helps spread adoption of the blockchain ecosystem and solves the problem of infrastructure centralization.
 
 ## The problem
 
@@ -12,16 +12,17 @@ Most nodes for public blockchains nowadays have a degree of architectural or/and
 
 A first very common case is to host a node in a Virtual Private Server (VPS). This puts your node in the hands of a highly centralized company like Digital Ocean or Amazon, which could block and censor your access. Moreover, they could be hosting different nodes in the same machine, architecturally reducing decentralization too.
 
-Another common case in the Ethereum blockchain is to connect through a node owned by Infura. While Infura's work on providing infrastructure for the network is comiable and a necessity at this stage, we can see how the ownership of a majority of nodes by the same company is a centralizing factor. 
+Another common case in the Ethereum blockchain is to connect through a node owned by Infura. While Infura's work on providing infrastructure for the network is comiable and a necessity at this stage, we can see how the ownership of a majority of nodes by the same company is a centralizing factor.
 
-We, DAppNode, have set up to empower everyone, regardless of their technical ability, to be able to break free of any centralization and possibility of access censorship by running their own node and host their favourite DApps. 
+We, DAppNode, have set up to empower everyone, regardless of their technical ability, to be able to break free of any centralization and possibility of access censorship by running their own node and host their favourite DApps.
 
 DAppNode connects users to the decentralized web and creates the infrastructure for DApps to run services 24x7 in a truly decentralized manner.
 
-You can start using DAppNode in two ways: 
-1) Either you can install DAppNode on any piece of hardware (see minimum requirements), or
-2) You can acquire one of our pre-installed DAppNode servers for the easiest and most convenient way of to get easy censorship-resistant access to your favorite DApps.
-With both you will have the ability to host your own nodes and also share its access with family and friends.
+You can start using DAppNode in two ways:
+
+1. Either you can install DAppNode on any piece of hardware (see minimum requirements), or
+2. You can acquire one of our pre-installed DAppNode servers for the easiest and most convenient way of to get easy censorship-resistant access to your favorite DApps.
+   With both you will have the ability to host your own nodes and also share its access with family and friends.
 
 For developers, we also developed an SDK for DAppNodePackage (DNP) developers and we expect to see many DApps with their own DNP that improve the user experience and decentralizes access. For example, there could be a DApp accelerator that allows the devices not having to synchronize the chain to start using it, like a cache system for the DAppNode users. Other use cases could be a prepared service for staking in any chain, a client for other chains, a scrawl of a decentralized search engine, etc.
 

@@ -1,14 +1,12 @@
 # FAQ´s
 
-[TOC]
-
 ## What are the hardware minimum requirements for DAppNode to work?
 
-It depends on the use you want to do with it, basically the number of nodes / DApps that you want to host in it. A basic setup is at least 4 GB RAM (ideally 8GBs) and > 200 GB SSD disk, it is important that the disk is SSD, otherwise writing speed won´t be able to cope with the ETH chain sync. On top of that requirements add capacity as needed to run the nodes you wish to run.
+It depends on the use you want to do with it, basically the number of nodes / DApps that you want to host in it. A basic setup is at least 4 GB RAM (ideally 8GBs) and > 200 GB SSD disk, it is important that the disk is SSD, otherwise writing speed won't be able to cope with the ETH chain sync. On top of that requirements add capacity as needed to run the nodes you wish to run.
 
 ## Can I mine with my DAppNode server?
 
-Yes, you can!!! However, you may not be able to get any proof of work reward, as it is not very likely for any of the main cryptocurrencies. Still, DAppNode in a near future will be a great solution for hosting your proof of stake nodes and get some coins out of your stake easily and securely stored in your DAppNode or mine new cryptocurrencies that are CPU mineable and still have a relatively low difficulty.
+Yes, you can! However, you may not be able to get any proof of work reward, as it is not very likely for any of the main cryptocurrencies. Still, DAppNode in a near future will be a great solution for hosting your proof of stake nodes and get some coins out of your stake easily and securely stored in your DAppNode or mine new cryptocurrencies that are CPU mineable and still have a relatively low difficulty.
 
 ## Can I run DAppNode in a laptop?
 
@@ -22,20 +20,20 @@ Technically you can, and we recognize is the best way to try it and check how wo
 
 Centralization of blockchain networks and infrastructure is a huge problem for the whole blockchain vision, that can even make it dystopian. By running your own nodes you contribute to decentralization and censorship resistance of blockchain networks, with a higher degree of privacy while getting some incentives for sharing your infrastructure if you wish to.
 
-## Why can´t I connect via VPN to my DAppNode?
+## Why can't I connect via VPN to my DAppNode?
 
 If the device with which you are trying to connect to your DAppNode is in the same local network as the DAppNode, you should have a router that supports NAT Loopback or edit the VPN configuration and change the Server IP to the internal IP of your DAppNode. You can easily know if your router has NAT loopback enabled without accessing the router admin UI by opening your terminal and type ping + the IP of your DAppNode (where your VPN connection profile points to).
-If the ping works without getting stuck your router has NAT Loopback so if you can´t connect to the VPN the cause is not being in the same network. Check that UDP is activated in your router to allow the opening of the needed ports for VPN access.
+If the ping works without getting stuck your router has NAT Loopback so if you can't connect to the VPN the cause is not being in the same network. Check that UDP is activated in your router to allow the opening of the needed ports for VPN access.
 
 More information about these issues in the "VPN Connection issues" section.
 
 ## Can I share my DAppNode?
 
-You can and you should!!! The devices tab of the DAppNode it is thought for you to add your beloved ones to access/use your DAppNode. You just generate his/her credentials from the ADMIN UI and they can connect via VPN to your DAppNode and use a trusted infrastructure as a gateway to the decentralized web.
+You can and you should! The devices tab of the DAppNode it is thought for you to add your beloved ones to access/use your DAppNode. You just generate his/her credentials from the ADMIN UI and they can connect via VPN to your DAppNode and use a trusted infrastructure as a gateway to the decentralized web.
 
 ## Can I use Metamask / MyCrypto connected to my own DAppNode node?
 
-Yep!!! You can customize the nodes your Metamask or MyCrypto connect to point to your very own node!!! To do so you just have to add the RPC URL http://fullnode.dappnode:8545
+Yep! You can customize the nodes your Metamask or MyCrypto connect to point to your very own node! To do so you just have to add the RPC URL http://fullnode.dappnode:8545
 
 ## Can I install DAppNode in a Raspberry Pi with extra storage?
 
@@ -47,7 +45,7 @@ DAppNode software is an open-source platform developed by the non-profit associa
 
 ## Can I upload my own packages to DAppNode?
 
-Yes!! We have developed an SDK to make the loading of packages to DAppNode easy for everyone. Check this doc! https://github.com/dappnode/DAppNodeSDK/wiki/DAppNode-SDK-tutorial
+Yes! We have developed an SDK to make the loading of packages to DAppNode easy for everyone. Check this doc! https://github.com/dappnode/DAppNodeSDK/wiki/DAppNode-SDK-tutorial
 
 ## Do I need technical knowledge to install/run a DAppNode?
 
