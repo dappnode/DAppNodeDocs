@@ -1,5 +1,7 @@
+# Project information
 site_name: DAppNode Docs
-theme: readthedocs
+
+# Customize left navigation menu
 nav:
   - Home: index.md
   - Introduction: introduction.md
@@ -15,3 +17,17 @@ nav:
   - Core packages readmes: Core-packages-readmes.md
   - Contributing: contributing.md
   - License: license.md
+
+# Configuration
+theme:
+  name: "material"
+  favicon: "/img/favicon.ico"
+markdown_extensions:
+  - codehilite
+  - admonition
+extra:
+  social:
+    - type: "github"
+      link: "https://github.com/dappnode/DAppNode"
+    - type: "twitter"
+      link: "https://twitter.com/dappnode"
