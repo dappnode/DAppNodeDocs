@@ -85,7 +85,7 @@ Now you can connect selecting the profile from the network tray icon:
 The recommended OpenVPN client is Tunnelblick and you can download it [here](https://tunnelblick.net)
 
 <p align="center">
-    <img src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/Mac1.png">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/mac1.png">
 </p>
 
 Once you have followed the steps to install the tunnelblick client in your MAC, download the file from the URL given in the console to download the OVPN file with your credentials.
@@ -95,25 +95,25 @@ If you have already downloaded the config file before installing Tunnelblick, yo
 Select your preferred option about the users that will have access to the config.
 
 <p align="center">
-    <img src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/MAC4.png">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/mac4.png">
 </p>
 
 The system will probably ask for your admin password to install the VPN configuration, and it is done!
 
 <p align="center">
-    <img src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/MAC5.png">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/mac5.png">
 </p>
 
 Just open Tunnelblick in your MAC and click on Connect DAppNode.
 
 <p align="center">
-    <img src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/MAC6.png">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/mac6.png">
 </p>
 
 Once connected you can already access http://my.admin.dnp.dappnode.eth with your new OpenVPN connection!
 
 <p align="center">
-    <img src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/MAC8.png">
+    <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/mac8.png">
 </p>
 
 ## iOS
@@ -121,25 +121,25 @@ Once connected you can already access http://my.admin.dnp.dappnode.eth with your
 The recommended OpenVPN client is OpenVPN Connect and you can download it [here](https://itunes.apple.com/us/app/openvpn-connect/id590379981?mt=8)
 
 <p align="center">
-    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios1.PNG">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ios1.png">
 </p>
 
 Once you have installed it you can just scan the QR code and hit download:
 
 <p align="center">
-    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios4.jpg">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ios4.png">
 </p>
 
 and click in "Open in OpenVPN"
 
 <p align="center">
-    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios5.PNG">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ios5.png">
 </p>
 
 Tap the add button and name your connection
 
 <p align="center">
-    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios7.PNG">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ios7.png">
 </p>
 
 The phone will ask you permission for OpenVPN to add a configuration profile , please do.
@@ -147,13 +147,13 @@ The phone will ask you permission for OpenVPN to add a configuration profile , p
 And it is done, you can just connect to your new OpenVPN now
 
 <p align="center">
-    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios9.PNG">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ios9.png">
 </p> 
   
 After a few seconds, you will see in the OpenVPN interface that you are connected. You can either connect to your server through the OpenVPN app or directly from the phone´s "VPN" menu in "Settings"
 
 <p align="center">
-    <img width="300" src="https://github.com/dappnode/DAppNode/blob/OpenVPN-client-installation-instructions/doc/openvpn/ios10.PNG">
+    <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ios10.png">
 </p>
 
 Once connected you can access http://my.admin.dnp.dappnode.eth with your new OpenVPN connection!
