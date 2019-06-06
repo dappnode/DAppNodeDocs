@@ -64,7 +64,7 @@ First, you must be connected to your DAppNode’s VPN:
 
 4. Now you should be connected to “Private Network” and that’s it!
 
-5. But... Do you want to be connected to a "Private Netowrk" or to your DAppNode???
+5. But... Do you want to be connected to a "Private Network" or to your DAppNode???
 
 To edit the name showed at the upper right corner just hit advanced options under the URL of the Custom RPC and include DAppNode (or the name you want to have) in the field alias.
 
