@@ -4,7 +4,7 @@ For connecting to DAppNode 0.2.0 OpenVPN, you will need to have a client that su
 
 Once you have your DAppNode running, you will get an URL in your terminal from where you can download the OVPN config file and open it in your device with your OpenVPN client.
 
-If you have still not installed your OpenVPN client . Just download the credentials file it and follow the instructions.
+If you have still not installed your OpenVPN client . Just download the credentials file and follow the instructions.
 
 Opening this OVPN file will configure your VPN connection to your DAppNode from your device. The first device VPN connection will have super admin privileges so you can access and manage the DAppNode admin UI; this user cannot be deleted.
 
