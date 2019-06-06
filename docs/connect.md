@@ -23,13 +23,13 @@ These are the recommended Open VPN clients for each OS:
 - Ios: [Open VPN connect](https://itunes.apple.com/us/app/openvpn-connect/id590379981)
 - Windows: [Open VPN (community installer)](https://openvpn.net/community-downloads/)
 - Android: [Open VPN for Android](https://play.google.com/store/apps/details?id=de.blinkt.openvpn)
-- Linux: Already included inrecent versions.
+- Linux: Already included in recent versions.
 
 Depending on your OS these are the instructions for installing our recommended OpenVPN clients.
 
 <!-- prettier-ignore-start -->
 !!! info
-    Please note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnp enabled, if noot you will haave to open them manually
+    Please note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnp enabled, if not you will have to open them manually
 <!-- prettier-ignore-end -->
 
 ## Linux
