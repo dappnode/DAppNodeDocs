@@ -268,7 +268,7 @@ Please immediately change the name of the WIFI and the password by setting up th
 <!-- prettier-ignore-end -->     
 
 <p align="center">
-    <img src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/wifipasswordssid.png">
+    <img src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/wifipasswordssid.png?raw=true">
 </p>
 
 Once you have entered the admin UI you can download your VPN credentials and create new ones under the "devices" tab
