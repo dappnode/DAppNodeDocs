@@ -55,6 +55,9 @@ Manifest full reference example
     "network_mode": "host",
     "command": "bundle exec thin -p 3000"
   },
+  "requirements": {
+    "minimumDappnodeVersion": "0.2.4"
+  },
   "dependencies": {
     "bitcoin.dnp.dappnode.eth": "^0.1.2",
     "swarm.dnp.dappnode.eth": "latest",
@@ -92,6 +95,9 @@ Manifest full reference example
   },
   "bugs": {
     "url": "https://github.com/dappnode/DNP_IPFS/issues"
+  },
+  "disclaimer": {
+    "message": "This software is experimental, presented “as is” and inherently carries risks."
   },
   "license": "GPL-3.0"
 }
