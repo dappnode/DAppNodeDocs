@@ -31,7 +31,7 @@ By clicking “Dashboard” you can have a fast look to your server state, if yo
 8. Autodiagnose tool / Report Issue
 
 <p align="center">
-    <img width="1000"src="/images/0.2.0dashboardscreenshot.png">
+    <img width="1000"src="../images/0.2.0dashboardscreenshot.png">
 </p>
 
 <!-- prettier-ignore-start -->
@@ -77,7 +77,7 @@ We have added a functionality that allows to customize some packages with predef
 You can also select your own customized path for the installation of the package by writing your selected path in the field aside the path by default. Last, if you are an advanced user you can also chooose the ports to be used by the package by editing the "ports" section and upload and download files to any package using the File Manager.
 
 <p align="center">
-    <img width="1000"src="/images/installer.png">
+    <img width="1000"src="../images/installer.png">
 </p>
 
 Here you have a brief description of some of the available packages:
@@ -137,7 +137,7 @@ Here you can see the packages you have installed and manage them, access to thei
 These are the main options you can execute on your installed packages:
 
 <p align="center">
-    <img width="1000"src="/images/installerservices.png">
+    <img width="1000"src="../images/installerservices.png">
 </p>
 
 Note that when removing a non core package you have the following options :
@@ -167,5 +167,5 @@ In the upper right part of the ADMIN UI you will see a bell icon that will be hi
 In this screen you will have an overview of the functioning of your DAppNode with checks that will indicate you if there is any problem for the normal operation of your DAppNode. You can contribute to DAppNode´s improvement by opening issues directly from the ADMIN UI. When you click the "Report" you will check DAppNode´s overall performance. Also you have the option of sending the issue with a prepopulated form that will be automatically loaded in the report screen. You can also choose to open the issue without any data.
 
 <p align="center">
-    <img width="1000"src="/images/reportscreen.png">
+    <img width="1000"src="../images/reportscreen.png">
 </p>

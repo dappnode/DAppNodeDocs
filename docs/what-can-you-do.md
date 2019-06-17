@@ -69,7 +69,7 @@ First, you must be connected to your DAppNode’s VPN:
 To edit the name showed at the upper right corner just hit advanced options under the URL of the Custom RPC and include DAppNode (or the name you want to have) in the field alias.
 
 <p align="center">
-    <img width="1000"src="/images/customnamemetamask.png">
+    <img width="1000"src="../images/customnamemetamask.png">
 </p>
 
 ## IPFS
