@@ -261,14 +261,15 @@ If you have your DAppNode installed in a physical device with Wi-Fi, you can dir
 When you connect your DAppNode server to your router via Ethernet you will see a network called DAppNodeWIFI, just connect to that Wifi using the defaul password "dappnode" and you will have direct access to your DappNode server ADMIN UI while connected to that WIFI.
 
 <!-- prettier-ignore-start -->
+
 !!! warning
 
 Please immediately change the name of the WIFI and the password by setting up the new values in the WIFI package under the system tab.
-    
-<!-- prettier-ignore-end -->     
+
+<!-- prettier-ignore-end -->
 
 <p align="center">
-    <img src="https://github.com/dappnode/DAppNodeDocs/blob/master/img/wifipasswordssid.png?raw=true">
+    <img src="/images/wifipasswordssid.png">
 </p>
 
 Once you have entered the admin UI you can download your VPN credentials and create new ones under the "devices" tab

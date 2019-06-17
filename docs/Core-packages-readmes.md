@@ -1,6 +1,6 @@
-#  Core packages readmes
+# Core packages readmes
 
-## Installer 
+## Installer
 
 [![Website dappnode.io](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://dappnode.io/)
 [![Documentation Wiki](https://img.shields.io/badge/Documentation-Wiki-brightgreen.svg)](https://github.com/dappnode/DAppNode/wiki)
@@ -15,35 +15,47 @@ Follow this link if you want to know how to install DAppNode: [DappNode-Installa
 ### How to generate a DAppNode's ISO
 
 #### Prerequisites
+
 Make sure the following sotfware is installed
 
 ##### 1. git
+
 Run this command to verify the git:
+
 ```
 $ git --version
 ```
+
 If you don't see a valid version, install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) commandline tool.
 
 ##### 2. docker
+
 Run this command to verify the git:
+
 ```
 $ docker -v
 ```
+
 If you don't see a valid version, install [docker](https://docs.docker.com/engine/installation). The community edition (docker-ce) will work. In Linux make sure you grant permissions to the current user to use docker by adding current user to docker group, `sudo usermod -aG docker $USER`. Once you update the users group, exit from the current terminal and open a new one to make effect.
 
 ##### 3. docker-compose
+
 Run this command to verify the git:
+
 ```
 $ docker-compose -v
 ```
+
 If you don't see a valid version, install [docker-compose](https://docs.docker.com/compose/install)
-   
+
 **Note**: Make sure you can run `git`, `docker ps`, `docker-compose` without any issue and without sudo command.
 
 ### Generate the ISO image
 
 #### 1. Generate DAppNode's ISO
+
 Run the following commands in your terminal. Make sure you have at least 2 GB of disk space available.
+
 ```
 $ git clone https://github.com/dappnode/DAppNode_Installer.git
 $ cd DAppNode_Installer
@@ -52,21 +64,23 @@ $ docker-compose up
 ```
 
 #### 2. Verify image generation
+
 When the execution of the Docker-compose finishes, run the following command to verify the image existance:
+
 ```
 $ ls -lrt images/DappNode-ubuntu-*
 -rw-r--r--  1 edu  staff  916455424 20 mar 13:19 images/DAppNode-ubuntu-18.04-server-amd64.iso
 ```
 
 #### 3. Burn the ISO into a USB
+
 Now you can burn the ISO to a DVD or create a bootable USB. Follow the tutorial of your operating system below and come back when you are finished:
 
-* [MacOS](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos)
-* [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows)
-* [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu)
+- [MacOS](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos)
+- [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows)
+- [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu)
 
 Once completed, come back to the [main guide to install an Ubuntu server](https://github.com/dappnode/DAppNode/wiki/DAppNode-Installation-Guide#13-install-an-ubuntu-distribution).
-
 
 ### Contributing
 
@@ -74,11 +88,11 @@ Please read [CONTRIBUTING.md](https://github.com/dappnode) for details on our co
 
 ### Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/dappnode/DAppNode_Installer/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/dappnode/DAppNode_Installer/tags).
 
 ### Authors
 
-* **Eduardo Antuña Díez** - *Initial work* - [eduadiez](https://github.com/eduadiez)
+- **Eduardo Antuña Díez** - _Initial work_ - [eduadiez](https://github.com/eduadiez)
 
 See also the list of [contributors](https://github.com/dappnode/DAppNode_Installer/contributors) who participated in this project.
 
@@ -103,7 +117,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/DAppNODE?lang=es)
 
 <p align="left">
-  <img src="https://github.com/dappnode/DNP_VPN/blob/master/VPN-min.png" width="200"/>
+  <img src="https://github.com/dappnode/DNP_VPN/raw/master/VPN-min.png" width="200"/>
 </p>
 
 Dappnode package responsible for providing the VPN connection
@@ -221,7 +235,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/DAppNODE?lang=es)
 
 <p align="left">
-  <img src="https://github.com/dappnode/DNP_ADMIN/blob/master/ADMINUI-min.png" width="200"/>
+  <img src="https://github.com/dappnode/DNP_ADMIN/raw/master/ADMINUI-min.png" width="200"/>
 </p>
 
 DAppNode tool responsible for providing the admin UI of DAppNode.
@@ -326,7 +340,7 @@ See also the list of [contributors](https://github.com/dappnode/DNP_ADMIN/contri
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
 
-## IPFS 
+## IPFS
 
 [![Website dappnode.io](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://dappnode.io/)
 [![Documentation Wiki](https://img.shields.io/badge/Documentation-Wiki-brightgreen.svg)](https://github.com/dappnode/DAppNode/wiki)
@@ -335,7 +349,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/DAppNODE?lang=es)
 
 <p align="left">
-  <img src="https://github.com/dappnode/DNP_IPFS/blob/master/IPFS-min.png" width="200"/>
+  <img src="https://github.com/dappnode/DNP_IPFS/raw/master/IPFS-min.png" width="200"/>
 </p>
 
 Dappnode package responsible for providing IPFS connectivity (go-ipfs v0.4.15)
@@ -453,7 +467,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 ## Ethchain
 
 <p align="left">
-  <img src="https://github.com/dappnode/DNP_ETHCHAIN/blob/master/ETHCHAIN-min.png" width="200"/>
+  <img src="https://github.com/dappnode/DNP_ETHCHAIN/raw/master/ETHCHAIN-min.png" width="200"/>
 </p>
 
 [![Website dappnode.io](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://dappnode.io/)
@@ -462,11 +476,11 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 [![RIOT DAppNode](https://img.shields.io/badge/RIOT-DAppNode-blue.svg)](https://riot.im/app/#/room/#DAppNode:matrix.org)
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/DAppNODE?lang=es)
 
-Dappnode package responsible for providing the Ethereum blockchain service. 
+Dappnode package responsible for providing the Ethereum blockchain service.
 
-Actually based on version v2.2.9-stable of [Parity](https://github.com/paritytech/parity/releases/tag/v2.2.9) and compatible with Constantinople postponement. 
+Actually based on version v2.2.9-stable of [Parity](https://github.com/paritytech/parity/releases/tag/v2.2.9) and compatible with Constantinople postponement.
 
-It is an AragonApp whose repo is deployed at this address: [0x30a933d920bc4a71a446a0f15f0e80eaf2383fc9 ](https://etherscan.io/address/0x30a933d920bc4a71a446a0f15f0e80eaf2383fc9 ) and whose ENS address is: [ethchain.dnp.dappnode.eth](https://etherscan.io/enslookup?q=ethchain.dnp.dappnode.eth])
+It is an AragonApp whose repo is deployed at this address: [0x30a933d920bc4a71a446a0f15f0e80eaf2383fc9 ](https://etherscan.io/address/0x30a933d920bc4a71a446a0f15f0e80eaf2383fc9) and whose ENS address is: [ethchain.dnp.dappnode.eth](https://etherscan.io/enslookup?q=ethchain.dnp.dappnode.eth])
 
 ### Getting Started
 
@@ -476,16 +490,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 - git
 
-   Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) commandline tool.
+  Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) commandline tool.
 
 - docker
 
-   Install [docker](https://docs.docker.com/engine/installation). The community edition (docker-ce) will work. In Linux make sure you grant permissions to the current user to use docker by adding current user to docker group, `sudo usermod -aG docker $USER`. Once you update the users group, exit from the current terminal and open a new one to make effect.
+  Install [docker](https://docs.docker.com/engine/installation). The community edition (docker-ce) will work. In Linux make sure you grant permissions to the current user to use docker by adding current user to docker group, `sudo usermod -aG docker $USER`. Once you update the users group, exit from the current terminal and open a new one to make effect.
 
 - docker-compose
 
-   Install [docker-compose](https://docs.docker.com/compose/install)
-   
+  Install [docker-compose](https://docs.docker.com/compose/install)
+
 **Note**: Make sure you can run `git`, `docker ps`, `docker-compose` without any issue and without sudo command.
 
 #### Building
@@ -496,30 +510,37 @@ $ git clone https://github.com/dappnode/DNP_ETHCHAIN.git
 
 ```
 $ docker-compose build
-or 
-$ docker build --rm -f build/Dockerfile -t dnp_ethchain:dev build 
+or
+$ docker build --rm -f build/Dockerfile -t dnp_ethchain:dev build
 ```
 
 ### Running
 
 #### Start
+
 ```
 $ docker-compose up -d
 ```
+
 #### Stop
+
 ```
 $ docker-compose down
 ```
+
 #### Status
+
 ```
 $ docker-compose ps
 ```
+
 #### Logs
+
 ```
 $ docker-compose logs -f
 ```
 
-**Note**: 
+**Note**:
 There is a time drift issue on Docker for Mac, to solve it try running [Fixing Time drift issue on Docker for Mac](https://blog.shameerc.com/2017/03/quick-tip-fixing-time-drift-issue-on-docker-for-mac):
 
 ```
@@ -528,7 +549,7 @@ $ docker run --rm --privileged alpine hwclock -s
 
 ### Generating a tar.xz image
 
-[xz](https://tukaani.org/xz/) is required 
+[xz](https://tukaani.org/xz/) is required
 
 ```
 $ docker save dnp_ethchain:dev | xz -e9vT0 > dnp_ethchain_dev.tar.xz
@@ -548,11 +569,11 @@ Please read [CONTRIBUTING.md](https://github.com/dappnode/DAppNode/blob/master/C
 
 ### Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/dappnode/DNP_ETHCHAIN/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/dappnode/DNP_ETHCHAIN/tags).
 
 ### Authors
 
-* **Eduardo Antuña Díez** - *Initial work* - [eduadiez](https://github.com/eduadiez)
+- **Eduardo Antuña Díez** - _Initial work_ - [eduadiez](https://github.com/eduadiez)
 
 See also the list of [contributors](https://github.com/dappnode/DNP_ETHCHAIN/contributors) who participated in this project.
 
@@ -579,7 +600,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/DAppNODE?lang=es)
 
 <p align="left">
-  <img src="https://github.com/dappnode/DNP_DAPPMANAGER/blob/master/DAPPMANAGER-min.png" width="200"/>
+  <img src="https://github.com/dappnode/DNP_DAPPMANAGER/raw/master/DAPPMANAGER-min.png" width="200"/>
 </p>
 
 Dappnode package responsible for providing the DappNode Package Manager
@@ -698,7 +719,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/DAppNODE?lang=es)
 
 <p align="left">
-  <img src="https://github.com/dappnode/DNP_ETHFORWARD/blob/master/ETHFORWARD-min.png" width="200"/>
+  <img src="https://github.com/dappnode/DNP_ETHFORWARD/raw/master/ETHFORWARD-min.png" width="200"/>
 </p>
 
 Dappnode package responsible for providing .eth address resolve through ENS
@@ -821,7 +842,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/DAppNODE?lang=es)
 
 <p align="left">
-  <img src="https://github.com/dappnode/DNP_BIND/blob/master/BIND-min.png" width="200"/>
+  <img src="https://github.com/dappnode/DNP_BIND/raw/master/BIND-min.png" width="200"/>
 </p>
 
 Dappnode package responsible for providing DNS resolution
@@ -970,7 +991,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/DAppNODE?lang=es)
 
 <p align="left">
-  <img src="https://github.com/dappnode/DNP_WAMP/blob/master/WAMP-min.png" width="200"/>
+  <img src="https://github.com/dappnode/DNP_WAMP/raw/master/WAMP-min.png" width="200"/>
 </p>
 
 Dappnode package responsible for providing a WAMP communication using [crossbar.io](https://crossbar.io/)
@@ -1101,7 +1122,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 - git
 
-   Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) commandline tool.
+  Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) commandline tool.
 
 #### Building
 
@@ -1130,7 +1151,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ### Authors
 
-* **DAppLion** - [dapplion](https://github.com/dapplion)
+- **DAppLion** - [dapplion](https://github.com/dapplion)
 
 See also the list of [contributors](https://github.com/dappnode/DAppNode_OTP/contributors) who participated in this project.
 
@@ -1173,12 +1194,12 @@ curl https://ns.dappnode.io/?address=0x8bb3A7F48F8c684EEF5BbE56c4c49c3Df636cd02&
 
 ### Todo
 
-* Disable logs completely in every component, so the dyndns-server doesn't store any information about existing DAppNodes.
+- Disable logs completely in every component, so the dyndns-server doesn't store any information about existing DAppNodes.
 
-## WIFI 
+## WIFI
 
 <p align="left">
-  <img src="https://github.com/dappnode/DNP_WIFI/blob/master/WIFI-min.png" width="200"/>
+  <img src="https://github.com/dappnode/DNP_WIFI/raw/master/WIFI-min.png" width="200"/>
 </p>
 
 [![Website dappnode.io](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://dappnode.io/)
@@ -1299,7 +1320,7 @@ DAppNode SDK is a tool to make as simple as possible the creation of new dappnod
 
 We have deployed a public APM (Aragon Package Manager) registry in which anyone can create their own APM repository: [public.dappnode.eth](https://etherscan.io/address/public.dappnode.eth)
 
-### Install 
+### Install
 
 ```
 $ npm install -g @dappnode/dappnodesdk
@@ -1307,23 +1328,27 @@ $ npm install -g @dappnode/dappnodesdk
 
 ### DEMO
 
-<p align="center"><img src="https://github.com/dappnode/DAppNodeSDK/blob/master/img/demo.gif"/></p>
+<p align="center"><img src="https://github.com/dappnode/DAppNodeSDK/raw/master/img/demo.gif"/></p>
 
 ### Initialization
+
 ```
 $ dappnodesdk init
 ```
 
-### build 
+### build
+
 Only generates the IPFS Hash to be able to install it without needing to create the APM Repo
+
 ```
 $ dappnodesdk build
 ```
 
-### Publish 
+### Publish
+
 It does the build of the image and shows the necessary transaction to be able to publish the package. The first time will create the repository but the rest will be updates of it.
 
-__To be able to update a repository you must be the authorized dev.__
+**To be able to update a repository you must be the authorized dev.**
 
 the script increases the current version of the repository based on the specified type (patch, minor, major), unless a version hasn't yet been published
 
@@ -1332,11 +1357,10 @@ for more information about versioning check [semver](https://semver.org/)
 ```
 $ dappnodesdk publish < patch | minor | mayor >
 ```
-Please take in account that the package version is not the internal version of the package you want to upload. 
+
+Please take in account that the package version is not the internal version of the package you want to upload.
 We use Aragon package manager, and it only lets starting with version 1 and increment one by one. Valid initial versions are 1.0.0, 0.1.0 or 0.0.1
 
 ### License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
-
-
