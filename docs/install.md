@@ -23,8 +23,9 @@ Okay, so you’re ready to be a Nodler. Let us show you how to make that hardwar
 
 You can choose between two methods to install DAppNode:
 
-- **Install DAppNode from an ISO** - When you want to perform a clean installation, installing the base operating system and DAppNode.
-- **Installation using the installer script** - When you already have a machine with an operating system and you want just to install DAppNode on it.
+- **Install DAppNode from an ISO** - When you want to perform a clean installation, installing the base operating system and DAppNode. Installing from an ISO will wipe the machine data and install Debian + DAppNode
+
+- **Installation using the installer script** - When you already have a machine with Debian installed and you just want to install DAppNode on it.
 
 ## How to install DAppNode from an ISO
 
