@@ -86,6 +86,13 @@ We have updated our IPFS package (v.0.1.6), and one of the features is to provid
     <img width="1000"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
 </p>
 
+If you want to automatically peer-connect two IPFS nodes, go to Connect with peers and send the  link to your peer. Use this resource to mitigate slow IPFS propagation
+
+<p align="center">
+    <img width="1000"src="../images/connectwithpeers.png">
+</p>
+
+
 If you want to know a bit more on IPFS here you have a [useful link](https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937)
 
 ## ENS resolution
