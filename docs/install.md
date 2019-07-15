@@ -23,8 +23,9 @@ Okay, so you’re ready to be a Nodler. Let us show you how to make that hardwar
 
 You can choose between two methods to install DAppNode:
 
-- **Install DAppNode from an ISO** - When you want to perform a clean installation, installing the base operating system and DAppNode.
-- **Installation using the installer script** - When you already have a machine with an operating system and you want just to install DAppNode on it.
+- **Install DAppNode from an ISO** - When you want to perform a clean installation, installing the base operating system and DAppNode. Installing from an ISO will wipe the machine data and install Debian + DAppNode
+
+- **Installation using the installer script** - When you already have a machine with Debian installed and you just want to install DAppNode on it.
 
 ## How to install DAppNode from an ISO
 
@@ -48,7 +49,7 @@ Also, DAppNode is intended to run 24/7 so if you install it in a laptop or deskt
 Insert the USB into your Server and prepare to install a Debian distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
 
 <p align="center">
-  <img width="600" height="450" src="../images/VirtualBox_install.png">
+  <img width="600" height="450" src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/VirtualBox_install.png?raw=true">
 </p>
 
 Follow the installation steps. Various screens will guide you through the process and you can follow the recommended setup below for a default installation:
@@ -82,7 +83,7 @@ Resume DAppNode's installation
 If the installation succeeded, your system will reboot and you will have to log in with the user and password provided in the installation steps above. Then the following screen should appear:
 
 <p align="center">
-  <img width="800" height="600" src="../images/VirtualBox_console.png">
+  <img width="800" height="600" src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/VirtualBox_console.png?raw=true">
   </a>
 </p>
 
