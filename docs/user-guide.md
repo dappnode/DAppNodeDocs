@@ -68,7 +68,20 @@ You also have the ability to give a device admin privileges so the ADMIN UI can 
 
 ## Installer
 
-Here you have the DAppstore where you can directly install a growing amount of services and libraries just by a click and they will install. Please let us know which ones would you like to have in the DAppstore by filling out this little survey.
+Here you have the DAppstore where you can directly install a growing amount of services and libraries just by a click and they will install.
+
+In the installer you can find two kind of packages: 
+
+### DAppNode Association Verified Packages
+
+These packages have been built and uploaded to DAppNode by the DAppNode association and are maintained by DAppNode, you will find a blue ticker in the DAppNode Association Verified packages. 
+
+### Non verified packages
+
+Packages without the blue ticker have been developed and uploaded by third parties. DAppNode association is not maintaining these package and has not performed any audit on its content. Use them at your own risk. DAppNode will not be liable for any loss or damage produced by the use of any package within the installer.
+
+
+Please let us know which ones would you like to have in the DAppstore by filling out this little survey.
 
 https://goo.gl/forms/EjVTHu6UBWBk60Z62
 
@@ -110,7 +123,7 @@ Swarm is a distributed storage platform and content distribution service, a nati
 
 ### Raiden
 
-Raiden Network is a second layer scaling solution for near instant paymnents on top of the Ethereum Network. Mainet  and testnet packages are available ini DAppode installer so yoou can run a Raiden node in the bbliink  of an eye.
+Raiden Network is a second layer scaling solution for near instant paymnents on top of the Ethereum Network. Mainet and testnet packages are available in DAppode installer so you can run a Raiden node in the blink of an eye.
 
 ### Monero
 
