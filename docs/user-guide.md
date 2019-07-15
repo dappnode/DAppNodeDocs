@@ -167,7 +167,6 @@ In this screen you will find the relevant info about the package:
 
 #### Control
 
-
 These are the main options you can execute on your installed packages:
 
 
@@ -204,18 +203,16 @@ This option will allow you to upload and download files from a package container
 
 ### System Packages
 
+Here you can access the packages that are part of the DAppNode core and manage them, see their logs, restart them or delete its associated data to be restored, with the same navigation structure as the installed packages
+
 <p align="center">
     <img width="1000"src="../images/systempackages.png">
 </p>
 
 
-Here you can access the packages that are part of the DAppNode core and manage them, see their logs, restart them or delete its associated data to be restored, with the same navigation structure as the installed packages
-
-
-
 ## System
 
-This area is used to configure and manage your system with differentt options that will be progressively released.
+This area is used to configure and manage your system with different options that will be progressively released.
 
 <p align="center">
     <img width="1000"src="../images/systemip.png">
