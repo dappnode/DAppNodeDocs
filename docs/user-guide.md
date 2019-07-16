@@ -31,7 +31,7 @@ By clicking “Dashboard” you can have a fast look to your server state, if yo
 8. Autodiagnose tool / Report Issue
 
 <p align="center">
-    <img width="1000"src="../images/dashboard0.2.5.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/dashboard0.2.5.png?raw=true">
 </p>
 
 <!-- prettier-ignore-start -->
@@ -57,7 +57,7 @@ If there is a device using the same VPN credentials, you will be able to connect
 You also have the ability to give a device admin privileges so the ADMIN UI can be used by them. If any device without admin credentials tries to access the ADMIN UI, it will not work.
 
 <p align="center">
-    <img width="1000"src="../images/devices.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/devices.png?raw=true">
 </p>
 
 
@@ -92,7 +92,7 @@ We have added a functionality that allows to customize some packages with predef
 You can also select your own customized path for the installation of the package by writing your selected path in the field aside the path by default. Last, if you are an advanced user you can also chooose the ports to be used by the package by editing the "ports" section and upload and download files to any package using the File Manager.
 
 <p align="center">
-    <img width="1000"src="../images/newinstaller.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/newinstaller.png?raw=true">
 </p>
 
 Here you have a brief description of some of the available packages:
@@ -154,7 +154,7 @@ Here you can see the packages you have installed and see their info, manage them
 #### Info
 
 <p align="center">
-    <img width="1000"src="../images/packageinfo.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/packageinfo.png?raw=true">
 </p>
 
 In this screen you will find the relevant info about the package:
@@ -171,12 +171,12 @@ These are the main options you can execute on your installed packages:
 
 
 <p align="center">
-    <img width="1000"src="../images/packagecontrol.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/packagecontrol.png?raw=true">
 </p>
 
 Note that when removing a non core package you have the following options :
 
-- Remove only the container: This will only remove the package but data will be kept, so if you insatll the package again in the same path,thje container will mount the volume again and you won't have to sync the whole package again.
+- Remove only the container: This will only remove the package but data will be kept, so if you insatll the package again in the same path,the container will mount the volume again and you won't have to sync the whole package again.
 
 - Remove Package + volume : This will erase the container and the associated data. If you want to reinstall, the volume will have to sync again
 
@@ -185,19 +185,23 @@ Note that when removing a non core package you have the following options :
 In this screen you can set up the different existing options and configs for each package.
 
 <p align="center">
-    <img width="1000"src="../images/packageconfig.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/packageconfig.png?raw=true">
 </p>
 
 #### Logs 
 
 This tab will show you the package logs in real time. 
 
+<p align="center">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/packagelogs.png?raw=true">
+</p>
+
 #### File Manager
 
 This option will allow you to upload and download files from a package container. For example you will use it to upload a keystore file to Raiden package, and to restore or to do a backup from your account. 
 
 <p align="center">
-    <img width="1000"src="../images/filemanager.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/filemanager.png?raw=true">
 </p>
 
 
@@ -206,7 +210,7 @@ This option will allow you to upload and download files from a package container
 Here you can access the packages that are part of the DAppNode core and manage them, see their logs, restart them or delete its associated data to be restored, with the same navigation structure as the installed packages
 
 <p align="center">
-    <img width="1000"src="../images/systempackages.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/systempackages.png?raw=true">
 </p>
 
 
@@ -215,7 +219,7 @@ Here you can access the packages that are part of the DAppNode core and manage t
 This area is used to configure and manage your system with different options that will be progressively released.
 
 <p align="center">
-    <img width="1000"src="../images/systemip.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/systemip.png?raw=true">
 </p>
 
 ### Static IP
@@ -235,7 +239,7 @@ Once you have used the command line SDK and you have the DNP name, the version a
 In this screen you will have an overview of the functioning of your DAppNode with checks that will indicate you if there is any problem for the normal operation of your DAppNode. You can contribute to DAppNode´s improvement by opening issues directly from the ADMIN UI. 
 
 <p align="center">
-    <img width="1000"src="../images/autodiagnose.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/autodiagnose.png?raw=true">
 </p>
 
 ### Report
@@ -243,7 +247,7 @@ In this screen you will have an overview of the functioning of your DAppNode wit
 When you click the "Report" tab you will chave the option of sending the issue with a prepopulated form that will be automatically loaded in the report screen. You can also choose to open the issue without any data.
 
 <p align="center">
-    <img width="1000"src="../images/report.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/report.png?raw=true">
 </p>
 
 ### Activity
@@ -252,7 +256,7 @@ This tab allows easy access to the DAppNode logs in order to debug errors. We wo
 
 
 <p align="center">
-    <img width="1000"src="../images/activity.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/activity.png?raw=true">
 </p>
 
 ## Notifications
