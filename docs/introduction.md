@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to DAppNode!
+Welcome to DAppNode!!
 
 If you are reading this, decentralization, privacy and security are important to you. And we get you. That's why we are here to help you run your own secure hardware which contributes to a truly decentralized web.
 

@@ -69,7 +69,7 @@ First, you must be connected to your DAppNode’s VPN:
 To edit the name showed at the upper right corner just hit advanced options under the URL of the Custom RPC and include DAppNode (or the name you want to have) in the field alias.
 
 <p align="center">
-    <img width="1000"src="../images/customnamemetamask.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/customnamemetamask.png?raw=true">
 </p>
 
 ## IPFS
@@ -85,6 +85,13 @@ We have updated our IPFS package (v.0.1.6), and one of the features is to provid
 <p align="center">
     <img width="1000"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
 </p>
+
+If you want to automatically peer-connect two IPFS nodes, go to Connect with peers and send the  link to your peer. Use this resource to mitigate slow IPFS propagation
+
+<p align="center">
+    <img width="1000"src="https://raw.githubusercontent.com/dappnode/DAppNodeDocs/newadminUI/docs/images/connectwithpeers.png">
+</p>
+
 
 If you want to know a bit more on IPFS here you have a [useful link](https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937)
 
