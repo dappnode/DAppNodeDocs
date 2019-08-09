@@ -2,7 +2,7 @@
 
 Enter <https://my.admin.dnp.dappnode.eth> to access DAppNode's admin interface. From DAppNode 0.2.0 you can also just type http://my.dappnode . Did we ever say that we wanted to make everything so easy...?
 
-Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync).
+Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 6~8 hours to get a warp sync).
 
 Now you can do things like for example:
 
@@ -69,7 +69,7 @@ First, you must be connected to your DAppNode’s VPN:
 To edit the name showed at the upper right corner just hit advanced options under the URL of the Custom RPC and include DAppNode (or the name you want to have) in the field alias.
 
 <p align="center">
-    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/newadminUI/docs/images/customnamemetamask.png?raw=true">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/customnamemetamask.png?raw=true">
 </p>
 
 ## IPFS
@@ -89,7 +89,7 @@ We have updated our IPFS package (v.0.1.6), and one of the features is to provid
 If you want to automatically peer-connect two IPFS nodes, go to Connect with peers and send the  link to your peer. Use this resource to mitigate slow IPFS propagation
 
 <p align="center">
-    <img width="1000"src="https://raw.githubusercontent.com/dappnode/DAppNodeDocs/newadminUI/docs/images/connectwithpeers.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/connectwithpeers.png?raw=true">
 </p>
 
 

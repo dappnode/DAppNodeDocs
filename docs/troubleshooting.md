@@ -120,3 +120,21 @@ However, if your router supports UPnP, do not worry about this, it will manage a
 Execute this command in your DAppNode terminal, this will update the core packages to the latest versions without erasing any data from your volumes.
 
 `sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.21/dappnode_install.sh | sudo UPDATE=true bash`
+
+### I can't install a package using its ENS or IPFS hash
+
+If the package has been uploaded to IPFS but it still does not have enough propagation in the network,it might be hard to install that package unless you are connected to an IPFS node that that allows direct or routed access to that package. As you can automatically peer-connect two IPFS nodes hosted in a DAppNode you can ask a DAppNode peer that already has installed hat package to connect your nodes. To do so, in the IPFS packages screen Go to Connect with peers and send the link to your peer. 
+
+
+<p align="center">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/connectwithpeers.png?raw=true">
+</p>
+
+### I need to uninstall my DAppNode 
+
+If for whichever strange reason you have to uninstall your DAppNode server you can do so by typing the following command in the DAppNode server console
+
+```wget -qO - https://uninstaller.dappnode.io  |  sudo bash```
+
+This command will uninstall DAppNode components (but not docker et al.): ⚠️ BEWARE! It will also delete all volumes and stored data!⚠️
+
