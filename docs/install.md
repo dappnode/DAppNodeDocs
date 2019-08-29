@@ -151,6 +151,13 @@ If you are experiencing any problem or just want to make sure you are running th
 ```
 sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash
 ```
+### How to uninstall DAppNode
+
+This command will uninstall DAppNode components (but not docker et al.):
+⚠️ BEWARE! It will also delete all volumes and stored data!⚠️
+```
+wget -qO - https://uninstaller.dappnode.io  |  sudo bash
+```
 
 ## Enter your DAppNode!
 
