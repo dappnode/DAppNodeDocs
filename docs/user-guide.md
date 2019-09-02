@@ -190,10 +190,10 @@ In this screen you can set up the different existing options and configs for eac
 
 #### Ports
 
-With this feature you can add customised port mappings to specific packages, select the host port and the contatiner port and hit "Update port mappings"
+With this feature you can add customised port mappings to specific packages, select the host port and the container port and hit "Update port mappings" . Please do not change these settings unless you really know what you are doing, be cautious out there. 
 
 <p align="center">
-    <img width="1000"src="images/addports.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/addports.png?raw=true">
 </p>
 
 #### Logs 
