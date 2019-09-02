@@ -188,6 +188,14 @@ In this screen you can set up the different existing options and configs for eac
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/packageconfig.png?raw=true">
 </p>
 
+#### Ports
+
+With this feature you can add customised port mappings to specific packages, select the host port and the contatiner port and hit "Update port mappings"
+
+<p align="center">
+    <img width="1000"src="images/addports.png">
+</p>
+
 #### Logs 
 
 This tab will show you the package logs in real time. 
@@ -242,12 +250,38 @@ Here you can access the packages that are part of the DAppNode core and manage t
 This area is used to configure and manage your system with different options that will be progressively released.
 
 <p align="center">
-    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/systemip.png?raw=true">
+    <img width="1000"src="images/systemtab.png">
 </p>
+
+### Auto-updates
+
+You can now choose if you want your packages to be  automatically updated by enabling these option for System Packages, installed packages, or both. Please note that tthe updates will be made 24 hours after the updated package availability is detected. 
+
+This feature is valid for non major updates, in which an admin intervention will always be needed.
+
+<p align="center">
+    <img width="1000"src="images/autoupdates.png">
+</p>
+
 
 ### Static IP
 
 If you have a Static IP you can set it up here so the future VPN credentials generated point to that fixed ip, just include your Static IP in the box and hit “Set”, you can always disable it.
+
+<p align="center">
+    <img width="1000"src="images/systemip.png">
+</p>
+
+
+
+### Power Management
+
+If you need to reboot or shut down your server as a last resource, you can do it from this section. Please be aware that if you shut down your server you will only be able to switch it on again when you have psysical access to your DAppNode. 
+
+<p align="center">
+    <img width="1000"src="images/powermanagement.png">
+</p>
+
 
 ## SDK
 

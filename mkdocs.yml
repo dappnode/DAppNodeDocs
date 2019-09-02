@@ -1,6 +1,7 @@
 # Customize left navigation menu
 nav:
   - Home: index.md
+  - Versions covered: versions.md
   - Introduction: introduction.md
   - Install: install.md
   - Connect to DAppNode: connect.md
