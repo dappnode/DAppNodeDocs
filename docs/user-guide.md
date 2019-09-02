@@ -250,8 +250,8 @@ Here you can access the packages that are part of the DAppNode core and manage t
 This area is used to configure and manage your system with different options that will be progressively released.
 
 <p align="center">
-    <img width="1000"src="images/systemtab.png">
-</p>
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/systemtab.png?raw=true">
+</p> 
 
 ### Auto-updates
 
@@ -260,7 +260,7 @@ You can now choose if you want your packages to be  automatically updated by ena
 This feature is valid for non major updates, in which an admin intervention will always be needed.
 
 <p align="center">
-    <img width="1000"src="images/autoupdates.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/autoupdates.png?raw=true">
 </p>
 
 
@@ -269,7 +269,7 @@ This feature is valid for non major updates, in which an admin intervention will
 If you have a Static IP you can set it up here so the future VPN credentials generated point to that fixed ip, just include your Static IP in the box and hit “Set”, you can always disable it.
 
 <p align="center">
-    <img width="1000"src="images/systemip.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/systemip.png?raw=true">
 </p>
 
 
@@ -279,7 +279,7 @@ If you have a Static IP you can set it up here so the future VPN credentials gen
 If you need to reboot or shut down your server as a last resource, you can do it from this section. Please be aware that if you shut down your server you will only be able to switch it on again when you have psysical access to your DAppNode. 
 
 <p align="center">
-    <img width="1000"src="images/powermanagement.png">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/powermanagement.png?raw=true">
 </p>
 
 
