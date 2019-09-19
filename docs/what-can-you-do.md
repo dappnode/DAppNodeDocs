@@ -37,14 +37,39 @@ Now you can do things like for example:
 
 Now you have your own VPN service to privately connect to your DAppNode and also to provide access for your family and friends to connect to your installed nodes and to ETH domains through your DAppNode.
 
-## Parity
+## Ethereum client
 
 After a few hours of installing DAppNode you will have your own Ethereum fullnode running in your DAppNode.
 
-You have available your parity websocket in
+You have available your node websocket in
 ws://my.ethchain.dnp.dappnode.eth:8546 or ws//fullnode.dappnode:8546 and RPC connection through http://my.ethchain.dnp.dappnode.eth:8545 or http://fullnode.dappnode:8545
 
-You can run your parity node in different configurations using the "Update environment variables" button. More info on env vars for Parity client [here](https://wiki.parity.io/Configuring-Parity-Ethereum)
+From version 0.2.7 Ethchain package allows the user to select the Ethereum client he wants to use as default of his DAppNode. 
+
+The available clients are Parity, which is the  default until version 0.2.7,  and Geth, which is the client with which your full node will sync by default since v0.2.7.
+
+You can easily switch between them in the ethchain package screen, but please note that volumes where the chains are stored are different,  so first time you switch from one to another the chain will have to sync. 
+
+To switch the client just go to “ Packages / System Packages / Ethchain / Choose client”  and select your preferred option
+
+<p align="center">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/chooseclient.jpg?raw=true">
+</p>
+
+When you switch clients you can choose between removing the chain volume of the client you are moving from, or keep it so you can easily switch back again without the need of syncing the whole chain again. 
+
+<p align="center">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/changingclient.jpg?raw=true">
+</p>
+
+
+You can still set parameters for both chains in the extra opt fields of each client. Use Extra Opts to define variables to be  applied in Parity and Extra opts GETH to do the same with the official EF client, and hit "Update environment variables"
+
+ More info on env vars for Parity client [here](https://wiki.parity.io/Configuring-Parity-Ethereum) and for Geth [here](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options)
+
+ <p align="center">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/extraoptsgeth.jpg?raw=true">
+</p>
 
 ## MyCrypto
 

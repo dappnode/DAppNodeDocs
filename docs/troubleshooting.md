@@ -84,11 +84,16 @@ Only one device can access your DAppNode for each VPN credentials created; each 
 
 ### My ETH node never ends up syncing
 
-If you are not on a 4 GB (ideally 8 GB) RAM configuration/your HD has not a high writing speed (SSD needed), it might happen that the server is not able to catch up with Ethereum Blocks, so it never gets synced. We are sorry but the server might not be able to cope up with the chain.
+If you are not on a 4 GB (ideally 8 GB) RAM configuration/ or your HD has not a high writing speed (SSD needed), it might happen that the server is not able to catch up with Ethereum Blocks, so it never gets synced. We are sorry but the server might not be able to cope up with the chain.
 
-It is also possible that the initial sync gets stuck at a given snapshot of the first sync if this happens try removing ETHCHAIN volume and let the sync start again. To do so you have to enter in System / Ethchain / Open and hit remove volume, the existing synced snapshots will be erased and the sync will start again.
+Using Parity, it is also possible that the initial sync gets stuck at a given snapshot of the first sync, if this happens try removing ETHCHAIN volume and let the sync start again. To do so you have to enter in Packages/System packages / Ethchain / Controls and hit remove volume, the existing synced snapshots will be erased and the sync will start again.
 
-If you have a proper internet connection, an SSD disk and at least 4 GB RAM the initial sync should be fine.
+When using Parity, it might happen that when the snapshots finish syncin you are still very far away the current block height so it will take ages to finish the sync block by block. You can try to set up the Parity flag ```--warp-barrier (current block height -30.000 blocks)``` so the sync takes a higher number of snapshots what will decrease the number oof spare blocks left to be synced individually.  Have a look at this example. 
+
+<p align="center">
+    <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/warpbarrier.jpg?raw=true">
+</p>
+
 
 ### I can't access the ADMIN UI
 
@@ -137,4 +142,6 @@ If for whichever strange reason you have to uninstall your DAppNode server you c
 ```wget -qO - https://uninstaller.dappnode.io  |  sudo bash```
 
 This command will uninstall DAppNode components (but not docker et al.): ⚠️ BEWARE! It will also delete all volumes and stored data!⚠️
+
+
 
