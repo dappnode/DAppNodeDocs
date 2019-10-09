@@ -8,7 +8,7 @@ DAppNode connects the decentralized internet by allowing a user to conveniently 
 
 ### I am interested in DAppNode
 
-Take a look at the [introduction](/introduction) to understand the problem that we are solving. We encourage you to try out DAppNode by cheking the [install](/install) section
+Take a look at the [introduction](./introduction) to understand the problem that we are solving. We encourage you to try out DAppNode by cheking the [install](./install) section
 
 ### I am a user
 
