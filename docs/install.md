@@ -148,6 +148,8 @@ Please, after installation be aware that the ethereum blockchain will take some 
 
 If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.
 
+⚠️ Please note that volumes are not deleted, but any EXTRA_OPTS set by the user in the packages config **must be set again** after using this script to restore the system ⚠️  
+
 ```
 sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash
 ```
