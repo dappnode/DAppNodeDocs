@@ -76,20 +76,22 @@ In the installer you can find two kind of packages:
 
 These packages have been built and uploaded to DAppNode by the DAppNode association and are maintained by DAppNode, you will find a blue ticker in the DAppNode Association Verified packages. 
 
+Please let us know which ones would you like to have in the DAppstore by filling out this little survey.
+https://goo.gl/forms/EjVTHu6UBWBk60Z62
+
 ### Non verified packages
 
 Packages without the blue ticker have been developed and uploaded by third parties. DAppNode association is not maintaining these package and has not performed any audit on its content. Use them at your own risk. DAppNode will not be liable for any loss or damage produced by the use of any package within the installer.
 
+From the installer you can also install packages not shown in the interface by pasting its IPFS hash or its ENS domain in the above bar. The interface will show you the corresponding package to that IPFS hash/ETH domain and you will be able to install it if there are no compatibility issues. (see below section Have your own packages in DAppNode).
 
-Please let us know which ones would you like to have in the DAppstore by filling out this little survey.
+### Customizing packages installation
 
-https://goo.gl/forms/EjVTHu6UBWBk60Z62
+We have added a functionality that allows to customize some packages with predefined configurations (Extra opts) made by the developer of the node/ DApp, please check the project documentation to see which options to customize are available. You can set the custom parameters in the config tab of each package. 
 
-From the installer you can also install packages not shown in the interface by pasting its IPFS hash or its ENS domain in the above bar. The interface will show you the corresponding package to that IPFS hash/ETH domain and you will be able to install it if there are no compatibility issues. (see below section Have your own packages in DAppNode)
+You can also select your own customized path for the installation of the package and its volume by writing your selected path in the field aside the path by default. Remember that you can only do this in the installation, by clicking "Show advanced options"
 
-We have added a functionality that allows to customize some packages with predefined configurations made by the developer of the node/ DApp, please check the project documentation to see which options to customize are available.
-
-You can also select your own customized path for the installation of the package by writing your selected path in the field aside the path by default. Last, if you are an advanced user you can also chooose the ports to be used by the package by editing the "ports" section and upload and download files to any package using the File Manager.
+Last, if you are an advanced user you can also chooose the ports to be used by the package by editing the "ports" section and upload and download files to any package using the File Manager.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/newinstaller.png?raw=true">
