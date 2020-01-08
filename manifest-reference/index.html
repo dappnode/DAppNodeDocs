@@ -1,0 +1,3175 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>DNP Manifest Reference - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extras.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#dappnode-package-dnp-manifest" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../images/logo_with_name.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                DNP Manifest Reference
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Documentation" class="md-nav__button md-logo">
+      
+        <img src="../images/logo_with_name.png" width="48" height="48">
+      
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../versions/" title="Versions covered" class="md-nav__link">
+      Versions covered
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../install/" title="Install" class="md-nav__link">
+      Install
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../connect/" title="Connect to DAppNode" class="md-nav__link">
+      Connect to DAppNode
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../what-can-you-do/" title="What can you do with DAppNode?" class="md-nav__link">
+      What can you do with DAppNode?
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/" title="User Guide" class="md-nav__link">
+      User Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faqs/" title="FAQs" class="md-nav__link">
+      FAQs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Migration to v0.2.0/" title="Migration to v0.2.0" class="md-nav__link">
+      Migration to v0.2.0
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        DNP Manifest Reference
+      </label>
+    
+    <a href="./" title="DNP Manifest Reference" class="md-nav__link md-nav__link--active">
+      DNP Manifest Reference
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-reference" class="md-nav__link">
+    Properties reference
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version" class="md-nav__link">
+    version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upstreamversion" class="md-nav__link">
+    upstreamVersion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shortdescription" class="md-nav__link">
+    shortDescription
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avatar" class="md-nav__link">
+    avatar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image" class="md-nav__link">
+    image
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hash" class="md-nav__link">
+    hash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#size" class="md-nav__link">
+    size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path" class="md-nav__link">
+    path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volumes" class="md-nav__link">
+    volumes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external_vol" class="md-nav__link">
+    external_vol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ports" class="md-nav__link">
+    ports
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart" class="md-nav__link">
+    restart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privileged" class="md-nav__link">
+    privileged
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cap_add" class="md-nav__link">
+    cap_add
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cap_drop" class="md-nav__link">
+    cap_drop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devices" class="md-nav__link">
+    devices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnet" class="md-nav__link">
+    subnet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv4_address" class="md-nav__link">
+    ipv4_address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network_mode" class="md-nav__link">
+    network_mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    command
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labels" class="md-nav__link">
+    labels
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chain" class="md-nav__link">
+    chain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    requirements
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minimumdappnodeversion" class="md-nav__link">
+    minimumDappnodeVersion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup" class="md-nav__link">
+    backup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_1" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path_1" class="md-nav__link">
+    path
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    changelog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warnings" class="md-nav__link">
+    warnings
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oninstall" class="md-nav__link">
+    onInstall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onupdate" class="md-nav__link">
+    onUpdate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onreset" class="md-nav__link">
+    onReset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onremove" class="md-nav__link">
+    onRemove
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatealerts" class="md-nav__link">
+    updateAlerts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from" class="md-nav__link">
+    from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to" class="md-nav__link">
+    to
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message" class="md-nav__link">
+    message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disclaimer" class="md-nav__link">
+    disclaimer
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message_1" class="md-nav__link">
+    message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#style" class="md-nav__link">
+    style
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#featuredbackground" class="md-nav__link">
+    featuredBackground
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#featuredcolor" class="md-nav__link">
+    featuredColor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#featuredavatarfilter" class="md-nav__link">
+    featuredAvatarFilter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#author" class="md-nav__link">
+    author
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contributors" class="md-nav__link">
+    contributors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#categories" class="md-nav__link">
+    categories
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keywords" class="md-nav__link">
+    keywords
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    links
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homepage" class="md-nav__link">
+    homepage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    ui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    api
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gateway" class="md-nav__link">
+    gateway
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repository" class="md-nav__link">
+    repository
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type_1" class="md-nav__link">
+    type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directory" class="md-nav__link">
+    directory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bugs" class="md-nav__link">
+    bugs
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url_1" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    license
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Core-packages-readmes.md" title="Core packages readmes" class="md-nav__link">
+      Core packages readmes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-reference" class="md-nav__link">
+    Properties reference
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version" class="md-nav__link">
+    version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upstreamversion" class="md-nav__link">
+    upstreamVersion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shortdescription" class="md-nav__link">
+    shortDescription
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avatar" class="md-nav__link">
+    avatar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image" class="md-nav__link">
+    image
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hash" class="md-nav__link">
+    hash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#size" class="md-nav__link">
+    size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path" class="md-nav__link">
+    path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volumes" class="md-nav__link">
+    volumes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external_vol" class="md-nav__link">
+    external_vol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ports" class="md-nav__link">
+    ports
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart" class="md-nav__link">
+    restart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privileged" class="md-nav__link">
+    privileged
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cap_add" class="md-nav__link">
+    cap_add
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cap_drop" class="md-nav__link">
+    cap_drop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devices" class="md-nav__link">
+    devices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnet" class="md-nav__link">
+    subnet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv4_address" class="md-nav__link">
+    ipv4_address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network_mode" class="md-nav__link">
+    network_mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    command
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labels" class="md-nav__link">
+    labels
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chain" class="md-nav__link">
+    chain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    requirements
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minimumdappnodeversion" class="md-nav__link">
+    minimumDappnodeVersion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup" class="md-nav__link">
+    backup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_1" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path_1" class="md-nav__link">
+    path
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    changelog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warnings" class="md-nav__link">
+    warnings
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oninstall" class="md-nav__link">
+    onInstall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onupdate" class="md-nav__link">
+    onUpdate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onreset" class="md-nav__link">
+    onReset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onremove" class="md-nav__link">
+    onRemove
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatealerts" class="md-nav__link">
+    updateAlerts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from" class="md-nav__link">
+    from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to" class="md-nav__link">
+    to
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message" class="md-nav__link">
+    message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disclaimer" class="md-nav__link">
+    disclaimer
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message_1" class="md-nav__link">
+    message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#style" class="md-nav__link">
+    style
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#featuredbackground" class="md-nav__link">
+    featuredBackground
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#featuredcolor" class="md-nav__link">
+    featuredColor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#featuredavatarfilter" class="md-nav__link">
+    featuredAvatarFilter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#author" class="md-nav__link">
+    author
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contributors" class="md-nav__link">
+    contributors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#categories" class="md-nav__link">
+    categories
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keywords" class="md-nav__link">
+    keywords
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    links
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homepage" class="md-nav__link">
+    homepage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    ui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    api
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gateway" class="md-nav__link">
+    gateway
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repository" class="md-nav__link">
+    repository
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type_1" class="md-nav__link">
+    type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directory" class="md-nav__link">
+    directory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bugs" class="md-nav__link">
+    bugs
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url_1" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    license
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="dappnode-package-dnp-manifest">DAppNode Package (DNP) manifest</h1>
+<p>The DAppNode Package manifest defines all the necessary information for a DAppNode to understand this package:</p>
+<ul>
+<li>IPFS of BZZ hashes to download its docker image</li>
+<li>Docker related data to configure and run its container</li>
+<li>Metadata to control how the package is shown in the admin UI.</li>
+</ul>
+<h2 id="example">Example</h2>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ipfs.dnp.dappnode.eth&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;upstreamVersion&quot;</span><span class="p">:</span> <span class="s2">&quot;2.6.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;shortDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Distributed file system for storing and accessing data.&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Welcome! IPFS is a distributed system for storing and accessing files, websites, applications, and data. If you’re new to IPFS, check our [introductory page](https://ipfs.io/#why) for an easy overview. \n\nWith this node you can upload and download files from IPFS using it own fancy web console at [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui). Other DAppNode Packages and external applications can use its API at the endpoint `http://ipfs.dappnode:5001/api`. Go to the [IPFS HTTP API full reference](https://docs.ipfs.io/reference/api/http/) to check all the features of the API.&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;avatar&quot;</span><span class="p">:</span> <span class="s2">&quot;/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;service&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">25738523</span><span class="p">,</span>
+    <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;ipfs.dnp.dappnode.eth_0.2.0.tar.xz&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;volumes&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s2">&quot;/var/run/docker.sock:/var/run/docker.sock&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;/usr/src/dappnode/config:/usr/src/app/config:ro&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;ipfsdnpdappnodeeth_data:/data/ipfs&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;external_vol&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;dncore_ethchaindnpdappnodeeth_data:/app/.ethchain:ro&quot;</span><span class="p">],</span>
+    <span class="nt">&quot;ports&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;1194:1194/udp&quot;</span><span class="p">,</span> <span class="s2">&quot;8090:3000/udp&quot;</span><span class="p">],</span>
+    <span class="nt">&quot;environment&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;RACK_ENV=development&quot;</span><span class="p">,</span> <span class="s2">&quot;SHOW=true&quot;</span><span class="p">,</span> <span class="s2">&quot;EXTRA_OPTS=&quot;</span><span class="p">,</span> <span class="s2">&quot;EMPTY_ENV&quot;</span><span class="p">],</span>
+    <span class="nt">&quot;restart&quot;</span><span class="p">:</span> <span class="s2">&quot;always&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;privileged&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;cap_add&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;NET_ADMIN&quot;</span><span class="p">,</span> <span class="s2">&quot;SYS_ADMIN&quot;</span><span class="p">],</span>
+    <span class="nt">&quot;cap_drop&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;NET_ADMIN&quot;</span><span class="p">,</span> <span class="s2">&quot;SYS_ADMIN&quot;</span><span class="p">],</span>
+    <span class="nt">&quot;devices&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;/dev/ttyUSB0:/dev/ttyUSB0&quot;</span><span class="p">,</span> <span class="s2">&quot;/dev/sda:/dev/xvdc:rwm&quot;</span><span class="p">],</span>
+    <span class="nt">&quot;subnet&quot;</span><span class="p">:</span> <span class="s2">&quot;172.33.0.0/16&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ipv4_address&quot;</span><span class="p">:</span> <span class="s2">&quot;172.33.1.4&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;network_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;bridge&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;bundle exec thin -p 3000&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;eth.dappnode.dnp.my-dnp.developer=Awesome_Name&quot;</span><span class="p">]</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;chain&quot;</span><span class="p">:</span> <span class="s2">&quot;ethereum&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;dependencies&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;bitcoin.dnp.dappnode.eth&quot;</span><span class="p">:</span> <span class="s2">&quot;^0.1.2&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;swarm.dnp.dappnode.eth&quot;</span><span class="p">:</span> <span class="s2">&quot;latest&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;requirements&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;minimumDappnodeVersion&quot;</span><span class="p">:</span> <span class="s2">&quot;0.2.0&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;keystore&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.raiden/secret/keystore&quot;</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;changelog&quot;</span><span class="p">:</span> <span class="s2">&quot;Brief summary of the most relevant changes that the user must known before installing&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;warnings&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;onInstall&quot;</span><span class="p">:</span> <span class="s2">&quot;You must set the PASSWORD ENV before installing the DAppNode Package in order for the setup to work correctly.&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;onUpdate&quot;</span><span class="p">:</span> <span class="s2">&quot;Your VPN connection will be lost when the VPN finalizes updating. Leave 1-2 minutes after executing the update and then reconnect and refresh this site.&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;onReset&quot;</span><span class="p">:</span> <span class="s2">&quot;You MUST properly close your open channels before resetting this DAppNode Package or you may lose your funds.&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;onRemove&quot;</span><span class="p">:</span> <span class="s2">&quot;You MUST properly close your open channels before removing this DAppNode Package or you may lose your funds.&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;updateAlerts&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0.1.x&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0.1.x&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Major update to OpenVPN: This update breaks compatibility with the last VPN version. Please read the migration guide: https://migration020.dappnode.io&quot;</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;disclaimer&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;This software is experimental, presented “as is” and inherently carries risks.&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;style&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;featuredBackground&quot;</span><span class="p">:</span> <span class="s2">&quot;linear-gradient(to right, #323131, #395353)&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;featuredColor&quot;</span><span class="p">:</span> <span class="s2">&quot;white&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;featuredAvatarFilter&quot;</span><span class="p">:</span> <span class="s2">&quot;invert(1)&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;DAppNode Association &lt;admin@dappnode.io&gt; (https://github.com/dappnode)&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;contributors&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;Michael First &lt;developerHanlder@project.io&gt; (https://github.com/developerHanlder)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Michael Second &lt;developerHanlder@project.io&gt; (https://github.com/developerHanlder)&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Developer tools&quot;</span><span class="p">,</span> <span class="s2">&quot;Blockchain&quot;</span><span class="p">],</span>
+  <span class="nt">&quot;keywords&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;DAppNodeCore&quot;</span><span class="p">],</span>
+  <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;homepage&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/dappnode/DNP_IPFS#readme&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ui&quot;</span><span class="p">:</span> <span class="s2">&quot;http://ipfs.dappnode:5001/webui&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;api&quot;</span><span class="p">:</span> <span class="s2">&quot;http://ipfs.dappnode:5001/api/v0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gateway&quot;</span><span class="p">:</span> <span class="s2">&quot;http://ipfs.dappnode:8080/ipfs&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;repository&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;git&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/dappnode/DNP_IPFS.git&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;directory&quot;</span><span class="p">:</span> <span class="s2">&quot;packages/react-dom&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;bugs&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/dappnode/DNP_IPFS/issues&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;GPL-3.0&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="properties-reference">Properties reference</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#name">name</a></td>
+<td><code>string</code></td>
+<td><strong>Required</strong></td>
+</tr>
+<tr>
+<td><a href="#version">version</a></td>
+<td><code>string</code></td>
+<td><strong>Required</strong></td>
+</tr>
+<tr>
+<td><a href="#upstreamversion">upstreamVersion</a></td>
+<td><code>string</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#shortdescription">shortDescription</a></td>
+<td><code>string</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#description">description</a></td>
+<td><code>string</code></td>
+<td><strong>Required</strong></td>
+</tr>
+<tr>
+<td><a href="#avatar">avatar</a></td>
+<td><code>string</code></td>
+<td><strong>Required</strong></td>
+</tr>
+<tr>
+<td><a href="#type">type</a></td>
+<td><code>enum</code></td>
+<td><strong>Required</strong></td>
+</tr>
+<tr>
+<td><a href="#image">image</a></td>
+<td><code>object</code></td>
+<td><strong>Required</strong></td>
+</tr>
+<tr>
+<td><a href="#chain">chain</a></td>
+<td><code>enum</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#dependencies">dependencies</a></td>
+<td><code>object</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#requirements">requirements</a></td>
+<td><code>object</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#backup">backup</a></td>
+<td><code>object[]</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#changelog">changelog</a></td>
+<td><code>string</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#warnings">warnings</a></td>
+<td><code>object</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#updatealerts">updateAlerts</a></td>
+<td><code>object[]</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#disclaimer">disclaimer</a></td>
+<td><code>object</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#style">style</a></td>
+<td><code>object</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#author">author</a></td>
+<td><code>string</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#contributors">contributors</a></td>
+<td><code>string[]</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#categories">categories</a></td>
+<td><code>enum[]</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#keywords">keywords</a></td>
+<td><code>string[]</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#links">links</a></td>
+<td><code>object</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#repository">repository</a></td>
+<td><code>object</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#bugs">bugs</a></td>
+<td><code>object</code></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="#license">license</a></td>
+<td><code>string</code></td>
+<td><strong>Required</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="name">name</h3>
+<p>DAppNode Package ENS name.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;ipfs.dnp.dappnode.eth&quot;</span>
+</pre></div>
+
+
+<h3 id="version">version</h3>
+<p>DAppNode Package semantic version (semver).</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+</ul>
+<p>All instances must conform to this regular expression</p>
+<div class="codehilite"><pre><span></span><span class="err">^((([0-9]+).([0-9]+).([0-9]+)))$</span>
+</pre></div>
+
+
+<ul>
+<li>test example:
+  <a href="https://regexr.com/?expression=%5E(((%5B0-9%5D%2B).(%5B0-9%5D%2B).(%5B0-9%5D%2B)))%24&amp;text=0.2.0">0.2.0</a></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;0.2.0&quot;</span>
+</pre></div>
+
+
+<h3 id="upstreamversion">upstreamVersion</h3>
+<p>For DAppNode Packages that only wrap existing software (i.e. Bitcoin node, Ethereum node), the underlying software
+version can be specified here. It will be shown in the admin UI alongside the field <code>version</code>.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>All instances must conform to this regular expression</p>
+<div class="codehilite"><pre><span></span><span class="err">^((([0-9]+).([0-9]+).([0-9]+)))$</span>
+</pre></div>
+
+
+<ul>
+<li>test example:
+  <a href="https://regexr.com/?expression=%5E(((%5B0-9%5D%2B).(%5B0-9%5D%2B).(%5B0-9%5D%2B)))%24&amp;text=2.6.0">2.6.0</a></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;2.6.0&quot;</span>
+</pre></div>
+
+
+<h3 id="shortdescription">shortDescription</h3>
+<p>Short DAppNode Package description, 6-8 words sentence briefly describing the purpose of this DAppNode Package. The
+purpose is to quickly grab users' attention and clearly define its purpose. Markdown is discouraged as it will NOT be
+rendered on the DAppNode Package store view.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;Distributed file system for storing and accessing data.&quot;</span>
+</pre></div>
+
+
+<h3 id="description">description</h3>
+<p>DAppNode Package description. Markdown and links are allowed and ecouraged to give users the option to read more
+information about this DAppNode Package.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;Welcome! IPFS is a distributed system for storing and accessing files, websites, applications, and data. If you’re new to IPFS, check our [introductory page](https://ipfs.io/#why) for an easy overview. \n\nWith this node you can upload and download files from IPFS using it own fancy web console at [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui). Other DAppNode Packages and external applications can use its API at the endpoint `http://ipfs.dappnode:5001/api`. Go to the [IPFS HTTP API full reference](https://docs.ipfs.io/reference/api/http/) to check all the features of the API.&quot;</span>
+</pre></div>
+
+
+<h3 id="avatar">avatar</h3>
+<p>IPFS / BZZ hash of the Avatar of this DAppNode Package. Must be a 300 x 300px transparent PNG. It is strongly
+encouraged that you optimize the .png before uploading it to minimize its size.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+<li>minimum length: 46 characters</li>
+</ul>
+<p>All instances must conform to this regular expression</p>
+<div class="codehilite"><pre><span></span><span class="err">^/(ipfs|bzz)/\w+$</span>
+</pre></div>
+
+
+<ul>
+<li>test example:
+  <a href="https://regexr.com/?expression=%5E%2F(ipfs%7Cbzz)%2F%5Cw%2B%24&amp;text=%2Fipfs%2FQmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8">/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8</a></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8&quot;</span>
+</pre></div>
+
+
+<h3 id="type">type</h3>
+<p>Type of this DAppNode Package. It is used to trigger some special features such as core functionality.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>default: <code>"service"</code></li>
+<li>type: <code>string</code></li>
+</ul>
+<p>The value of this property <strong>must</strong> be equal to one of the known values below.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>service</code></td>
+<td>Can have ENVs a depend on library DAppNode Packages</td>
+</tr>
+<tr>
+<td><code>library</code></td>
+<td>Should not have ENVs and cannot depend on service DAppNode Packages</td>
+</tr>
+<tr>
+<td><code>dncore</code></td>
+<td>DAppNode Packages that are part of the DAppNode core and have special permissions</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;service&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;dncore&quot;</span>
+</pre></div>
+
+
+<h3 id="image">image</h3>
+<p>Docker compose properties from which this DAppNode Package's <code>docker-compose.yml</code> will be generated. Also includes
+upload data to fetch the image tarball from IPFS of BZZ.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>object</code> with the following properties:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hash</code></td>
+<td>string</td>
+<td><strong>Required</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td>integer</td>
+<td><strong>Required</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td>string</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>volumes</code></td>
+<td>array</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>external_vol</code></td>
+<td>array</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>ports</code></td>
+<td>array</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>environment</code></td>
+<td>array</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>restart</code></td>
+<td>string</td>
+<td>Optional</td>
+<td><code>"always"</code></td>
+</tr>
+<tr>
+<td><code>privileged</code></td>
+<td>boolean</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>cap_add</code></td>
+<td>array</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>cap_drop</code></td>
+<td>array</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>devices</code></td>
+<td>array</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>subnet</code></td>
+<td>string</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>ipv4_address</code></td>
+<td>string</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>network_mode</code></td>
+<td>string</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>command</code></td>
+<td>string</td>
+<td>Optional</td>
+<td></td>
+</tr>
+<tr>
+<td><code>labels</code></td>
+<td>array</td>
+<td>Optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="hash">hash</h4>
+<p>IPFS / BZZ hash of the DAppNode Package image.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+<li>minimum length: 46 characters</li>
+</ul>
+<p>All instances must conform to this regular expression</p>
+<div class="codehilite"><pre><span></span><span class="err">^/(ipfs|bzz)/\w+$</span>
+</pre></div>
+
+
+<ul>
+<li>test example:
+  <a href="https://regexr.com/?expression=%5E%2F(ipfs%7Cbzz)%2F%5Cw%2B%24&amp;text=%2Fipfs%2FQmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8">/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8</a></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8&quot;</span>
+</pre></div>
+
+
+<h4 id="size">size</h4>
+<p>Size of the DAppNode Package image in bytes. Necessary to show a correct download progress bar when user's install this
+DAppNode Package.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>integer</code></li>
+<li>minimum value: <code>1</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="err">25738523</span>
+</pre></div>
+
+
+<h4 id="path">path</h4>
+<p>The filename of the DAppNode Package image.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;ipfs.dnp.dappnode.eth_0.2.0.tar.xz&quot;</span>
+</pre></div>
+
+
+<h4 id="volumes">volumes</h4>
+<p>DAppNode Package volume mappings.</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>string[]</code></li>
+</ul>
+<p>All items must be of the type: <code>string</code></p>
+<p>All instances must conform to this regular expression (test examples
+<a href="https://regexr.com/?expression=%5E%5B%5E%5Cs%5D%2B%3A%5B%5E%5Cs%5D%2B%24">here</a>):</p>
+<div class="codehilite"><pre><span></span><span class="err">^[^\s]+:[^\s]+$</span>
+</pre></div>
+
+
+<p>Docker volumes short syntax <code>HOST:CONTAINER:ro</code> mapping. Go to the
+<a href="https://docs.docker.com/compose/compose-file/#volumes">docker-compose file volumes reference</a> for valid values.</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span>
+  <span class="s2">&quot;/var/run/docker.sock:/var/run/docker.sock&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;/usr/src/dappnode/config:/usr/src/app/config:ro&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;ipfsdnpdappnodeeth_data:/data/ipfs&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+
+<h4 id="external_vol">external_vol</h4>
+<p>DAppNode Package external volume mappings, volumes have been created outside of this DAppNode Package's compose.</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>string[]</code></li>
+</ul>
+<p>All items must be of the type: <code>string</code></p>
+<p>All instances must conform to this regular expression (test examples
+<a href="https://regexr.com/?expression=%5E%5B%5E%5Cs%5D%2B%3A%5B%5E%5Cs%5D%2B%24">here</a>):</p>
+<div class="codehilite"><pre><span></span><span class="err">^[^\s]+:[^\s]+$</span>
+</pre></div>
+
+
+<p>Docker volumes short syntax <code>HOST:CONTAINER:ro</code> mapping. Go to the
+<a href="https://docs.docker.com/compose/compose-file/#external">docker-compose file external volumes reference</a> for valid
+values.</p>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;dncore_ethchaindnpdappnodeeth_data:/app/.ethchain:ro&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;nginxproxydnpdappnodeeth_vhost.d:/etc/nginx/vhost.d&quot;</span><span class="p">,</span> <span class="s2">&quot;nginxproxydnpdappnodeeth_html:/usr/share/nginx/html&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<h4 id="ports">ports</h4>
+<p>DAppNode Package port mappings.</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>string[]</code></li>
+</ul>
+<p>All items must be of the type: <code>string</code></p>
+<ul>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Docker ports short syntax <code>HOST:CONTAINER/protocol</code>. Go to the
+<a href="https://docs.docker.com/compose/compose-file/#ports">docker-compose file ports reference</a> for valid values.</p>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;1194:1194/udp&quot;</span><span class="p">,</span> <span class="s2">&quot;8090:3000/udp&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;4001/udp&quot;</span><span class="p">,</span> <span class="s2">&quot;4001/tcp&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;4001&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<h4 id="environment">environment</h4>
+<p>DAppNode Package environment variables. You must declare all ENVs even if they are empty.</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>string[]</code></li>
+</ul>
+<p>All items must be of the type: <code>string</code></p>
+<ul>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Docker environment variables in array form, in the format <code>KEY=VALUE</code>. Go to the
+<a href="https://docs.docker.com/compose/compose-file/#environment">docker-compose file environment reference</a> for valid
+values.</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;RACK_ENV=development&quot;</span><span class="p">,</span> <span class="s2">&quot;SHOW=true&quot;</span><span class="p">,</span> <span class="s2">&quot;EXTRA_OPTS=&quot;</span><span class="p">,</span> <span class="s2">&quot;EMPTY_ENV&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<h4 id="restart">restart</h4>
+<p>Docker restart policy, 'always' is highly recommended. Go to the
+<a href="https://docs.docker.com/compose/compose-file/#restart">docker-compose file restart reference</a> for more details.</p>
+<ul>
+<li>is optional</li>
+<li>default: <code>"always"</code></li>
+<li>type: <code>string</code></li>
+</ul>
+<p>The value of this property <strong>must</strong> be equal to one of the known values below.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>always</code></td>
+<td>Always restarts</td>
+</tr>
+<tr>
+<td><code>no</code></td>
+<td>Does not restart under any circumstance</td>
+</tr>
+<tr>
+<td><code>on-failure</code></td>
+<td>Restarts if the exit code indicates an on-failure error</td>
+</tr>
+<tr>
+<td><code>unless-stopped</code></td>
+<td>Restarts unless Docker itself is stopped or restarted</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;always&quot;</span>
+</pre></div>
+
+
+<h4 id="privileged">privileged</h4>
+<p>Grant the DAppNode Package (almost) all the capabilities of their host machine, regarding kernel features and device
+access. Go to this
+<a href="https://blog.docker.com/2013/09/docker-can-now-run-within-docker/">docker article about priviledge mode</a> for more
+details.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>boolean</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="err">true</span>
+</pre></div>
+
+
+<h4 id="cap_add">cap_add</h4>
+<p>Add container capabilities. Go to the
+<a href="https://docs.docker.com/compose/compose-file/#cap_add-cap_drop">docker-compose file cap_add reference</a> for more
+details</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>string[]</code></li>
+</ul>
+<p>All items must be of the type: <code>string</code></p>
+<ul>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>A valid docker capability key. Go to the
+<a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities">docker reference about Linux capabilities</a>
+for valid values and their meaning.</p>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;NET_ADMIN&quot;</span><span class="p">,</span> <span class="s2">&quot;SYS_ADMIN&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;ALL&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<h4 id="cap_drop">cap_drop</h4>
+<p>Drop container capabilities. Go to the
+<a href="https://docs.docker.com/compose/compose-file/#cap_add-cap_drop">docker-compose file cap_drop reference</a> for more
+details</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>string[]</code></li>
+</ul>
+<p>All items must be of the type: <code>string</code></p>
+<ul>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>A valid docker capability key. Go to the
+<a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities">docker reference about Linux capabilities</a>
+for valid values and their meaning.</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;NET_ADMIN&quot;</span><span class="p">,</span> <span class="s2">&quot;SYS_ADMIN&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<h4 id="devices">devices</h4>
+<p>Allows you to run devices inside the container without the <code>privileged</code> flag. Must be a list of device mappings. Uses
+the same format as the --device docker client create option.</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>string[]</code></li>
+</ul>
+<p>All items must be of the type: <code>string</code></p>
+<ul>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>A valid docker device mapping. Go to the
+<a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities">docker reference about runtime privileges</a>
+for valid values and more details.</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;/dev/ttyUSB0:/dev/ttyUSB0&quot;</span><span class="p">,</span> <span class="s2">&quot;/dev/sda:/dev/xvdc:rwm&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<h4 id="subnet">subnet</h4>
+<p>Specify the subnet. Go to the
+<a href="https://docs.docker.com/compose/compose-file/#ipv4_address-ipv6_address">docker-compose file ipv4_address-ipv6_address reference</a>
+for valid values.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>All instances must conform to this regular expression</p>
+<div class="codehilite"><pre><span></span><span class="err">^(?:[0-9]{1,3}.){3}[0-9]{1,3}/[0-9]+$</span>
+</pre></div>
+
+
+<ul>
+<li>test example:
+  <a href="https://regexr.com/?expression=%5E(%3F%3A%5B0-9%5D%7B1%2C3%7D.)%7B3%7D%5B0-9%5D%7B1%2C3%7D%2F%5B0-9%5D%2B%24&amp;text=172.33.0.0%2F16">172.33.0.0/16</a></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;172.33.0.0/16&quot;</span>
+</pre></div>
+
+
+<h4 id="ipv4_address">ipv4_address</h4>
+<p>Specify a static IP address for containers for this service when joining the network. Go to the
+<a href="https://docs.docker.com/compose/compose-file/#ipv4_address-ipv6_address">docker-compose file ipv4_address-ipv6_address reference</a>
+for valid values.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>All instances must conform to this regular expression</p>
+<div class="codehilite"><pre><span></span><span class="err">^(?:[0-9]{1,3}.){3}[0-9]{1,3}$</span>
+</pre></div>
+
+
+<ul>
+<li>test example:
+  <a href="https://regexr.com/?expression=%5E(%3F%3A%5B0-9%5D%7B1%2C3%7D.)%7B3%7D%5B0-9%5D%7B1%2C3%7D%24&amp;text=172.33.1.4">172.33.1.4</a></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;172.33.1.4&quot;</span>
+</pre></div>
+
+
+<h4 id="network_mode">network_mode</h4>
+<p>Connect this DAppNode Package to a specific network. See
+https://docs.docker.com/engine/reference/run/#network-settings.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;bridge&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;host&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;none&quot;</span>
+</pre></div>
+
+
+<h4 id="command">command</h4>
+<p>Override the default command. Go to the
+<a href="https://docs.docker.com/compose/compose-file/#command">docker-compose file command reference</a> for valid values.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;bundle exec thin -p 3000&quot;</span>
+</pre></div>
+
+
+<h4 id="labels">labels</h4>
+<p>Labels to be added to the DAppNode Package's docker container.</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>string[]</code></li>
+</ul>
+<p>All items must be of the type: <code>string</code></p>
+<ul>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Use reverse-DNS notation (<code>eth.dappnode.dnp.my-dnp.developer</code>) to prevent label conflicts. Go to the
+<a href="https://docs.docker.com/compose/compose-file/#labels-2">docker-compose file labels reference</a> for valid values.</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;eth.dappnode.dnp.my-dnp.developer=Awesome_Name&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<h3 id="chain">chain</h3>
+<p>Indicate that this DAppNode Package is a blockchain node so the admin UI shows its syncing status</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>The value of this property <strong>must</strong> be equal to one of the known values below.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ethereum</code></td>
+<td>Must have an Ethereum JSON RPC exposed internally at port 8545</td>
+</tr>
+<tr>
+<td><code>bitcoin</code></td>
+<td>Must have a standard Bitcoin JSON API exposed at the default port (8332). Uses the NPM package <code>bitcoin-core</code></td>
+</tr>
+<tr>
+<td><code>monero</code></td>
+<td>Must have a Monero API exposed internally at port 18081. Uses the NPM package <code>monero-rpc</code></td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;ethereum&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;bitcoin&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;monero&quot;</span>
+</pre></div>
+
+
+<h3 id="dependencies">dependencies</h3>
+<p>DAppNode Package dependencies. Must be an object where the keys are the DAppNode Package's ENS. The values must be a
+semantic range, i.e. <code>'0.2.0'</code>, <code>'^0.2.1'</code>, <code>'*'</code>, <code>'latest'</code>,
+<code>'/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8'</code>.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>object</code> with the following properties:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;bitcoin.dnp.dappnode.eth&quot;</span><span class="p">:</span> <span class="s2">&quot;^0.1.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;swarm.dnp.dappnode.eth&quot;</span><span class="p">:</span> <span class="s2">&quot;latest&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;only-for-dev-1.dappnode.eth&quot;</span><span class="p">:</span> <span class="s2">&quot;/ipfs/QmYjtig7VJQ6XsnUjqqJvj7QaMcCAwtrgNdahSiFofrE7o&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;only-for-dev-2.dappnode.eth&quot;</span><span class="p">:</span> <span class="s2">&quot;/ipfs/zdj7WWeQ43G6JJvLWQWZpyHuAMq6uYWRjkBXFad11vE2LHhQ7&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="requirements">requirements</h3>
+<p>Specify requirements to be met before allowing users to install this DAppNode Package.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>object</code> with the following properties:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>minimumDappnodeVersion</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="minimumdappnodeversion">minimumDappnodeVersion</h4>
+<p>Minimum DAppNode version that includes all the features necessary to run this DAppNode Package.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>All instances must conform to this regular expression</p>
+<div class="codehilite"><pre><span></span><span class="err">^((([0-9]+).([0-9]+).([0-9]+)))$</span>
+</pre></div>
+
+
+<ul>
+<li>test example:
+  <a href="https://regexr.com/?expression=%5E(((%5B0-9%5D%2B).(%5B0-9%5D%2B).(%5B0-9%5D%2B)))%24&amp;text=0.2.0">0.2.0</a></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;0.2.0&quot;</span>
+</pre></div>
+
+
+<h3 id="backup">backup</h3>
+<p>Allows users to download and restore a backup of key files of this package. If this property is non-empty array, a new
+view will be available in the admin UI for this DAppNode Package. The files or directories specified in the array will
+be bundled in a tarball. As long as the name properties stay the same, their associated paths can change in future
+versions. Then, when restoring an old backup, the new paths will be associated to files stored under the same name
+keys. <strong>Note:</strong> it is recommended to only backup lightweight files such as configs, keys or passwords.</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>object[]</code></li>
+</ul>
+<p>All items must be of the type: <code>object</code> with the following properties:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td><strong>Required</strong></td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td>string</td>
+<td><strong>Required</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="name_1">name</h4>
+<p>A key identifier of this file or directory. Its purpose is to allow the path to change in the future.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;keystore&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;config&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;keys&quot;</span>
+</pre></div>
+
+
+<h4 id="path_1">path</h4>
+<p>Path to the file or directory to backup. It <strong>MUST</strong> be an absolute path (do not use the <code>~</code> character) for the backup
+tool to work correctly.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;/root/.raiden/secret/keystore&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;/usr/src/app/config.json&quot;</span>
+</pre></div>
+
+
+<h3 id="changelog">changelog</h3>
+<p>Description of relevant changes of this specific version. Supports markdown and links.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;Brief summary of the most relevant changes that the user must known before installing&quot;</span>
+</pre></div>
+
+
+<h3 id="warnings">warnings</h3>
+<p>Very relevant information that MUST be shown to the user BEFORE executing a specific action in the DAppNode Package's
+lifecycle.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>object</code> with the following properties:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onInstall</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><code>onUpdate</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><code>onReset</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><code>onRemove</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="oninstall">onInstall</h4>
+<p>Will be shown before installing the DAppNode Package.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;You must set the PASSWORD ENV before installing the DAppNode Package in order for the setup to work correctly.&quot;</span>
+</pre></div>
+
+
+<h4 id="onupdate">onUpdate</h4>
+<p>Will be shown before updating the DAppNode Package, not in the first installation.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;Your VPN connection will be lost when the VPN finalizes updating. Leave 1-2 minutes after executing the update and then reconnect and refresh this site.&quot;</span>
+</pre></div>
+
+
+<h4 id="onreset">onReset</h4>
+<p>Will be shown before resetting the DAppNode Package.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;You MUST properly close your open channels before resetting this DAppNode Package or you may lose your funds.&quot;</span>
+</pre></div>
+
+
+<h4 id="onremove">onRemove</h4>
+<p>Will be shown before removing the DAppNode Package.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;You MUST properly close your open channels before removing this DAppNode Package or you may lose your funds.&quot;</span>
+</pre></div>
+
+
+<h3 id="updatealerts">updateAlerts</h3>
+<p>Alerts targeted to a specific update jump.</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>object[]</code></li>
+</ul>
+<p>All items must be of the type: <code>object</code> with the following properties:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>from</code></td>
+<td>string</td>
+<td><strong>Required</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><code>to</code></td>
+<td>string</td>
+<td>Optional</td>
+<td><code>"*"</code></td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td>string</td>
+<td><strong>Required</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="from">from</h4>
+<p>Semver range, show this message when a user updates this DAppNode Package FROM a version that satisfies this range.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;0.1.x&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;^0.2.0&quot;</span>
+</pre></div>
+
+
+<h4 id="to">to</h4>
+<p>Semver range, show this message when a user updates this DAppNode Package TO a version that satisfies this range.</p>
+<ul>
+<li>is optional</li>
+<li>default: <code>"*"</code></li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;0.1.x&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;^0.2.0&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;*&quot;</span>
+</pre></div>
+
+
+<h4 id="message">message</h4>
+<p>Alert message to be shown when <code>from</code> and <code>to</code> ranges are satisfied.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;Major update to OpenVPN: This update breaks compatibility with the last VPN version. Please read the migration guide: https://migration020.dappnode.io&quot;</span>
+</pre></div>
+
+
+<p>Specific update jump alert.</p>
+<h3 id="disclaimer">disclaimer</h3>
+<p>Disclaimer to be shown to the user on install, and will require the user to approve it.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>object</code> with the following properties:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>message</code></td>
+<td>string</td>
+<td><strong>Required</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="message_1">message</h4>
+<p>The message shown in the pop-up. Markdown and links are allowed.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;This software is experimental, presented “as is” and inherently carries risks.&quot;</span>
+</pre></div>
+
+
+<h3 id="style">style</h3>
+<p>Graphic information to control the appearance of DAppNode Package related items in the admin UI.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>object</code> with the following properties:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>featuredBackground</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><code>featuredColor</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><code>featuredAvatarFilter</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="featuredbackground">featuredBackground</h4>
+<p>CSS background property to be applied to the DAppNode Package card in the DAppNode Package store if featured. Go to the
+<a href="https://developer.mozilla.org/docs/Web/CSS/background">Mozilla CSS background reference</a> for valid values.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;linear-gradient(to right, #323131, #395353)&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;black&quot;</span>
+</pre></div>
+
+
+<h4 id="featuredcolor">featuredColor</h4>
+<p>CSS color property to be applied to the DAppNode Package card in the DAppNode Package store if featured. Go to the
+<a href="https://developer.mozilla.org/docs/Web/CSS/color">Mozilla CSS color reference</a> for valid values.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;white&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;#fff&quot;</span>
+</pre></div>
+
+
+<h4 id="featuredavatarfilter">featuredAvatarFilter</h4>
+<p>CSS filter property to be applied to <code>&lt;img&gt;</code> component (avatar) of the DAppNode Package card in the DAppNode Package
+store if featured. Go to the <a href="https://developer.mozilla.org/docs/Web/CSS/filter">Mozilla CSS filter reference</a> for
+valid values.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;invert(1)&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="s2">&quot;grayscale(80%);&quot;</span>
+</pre></div>
+
+
+<h3 id="author">author</h3>
+<p>Main author of this DAppNode Package. Must follow the structure <code>${name} &lt;${email}&gt; (${githubUserLink})</code>.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;DAppNode Association &lt;admin@dappnode.io&gt; (https://github.com/dappnode)&quot;</span>
+</pre></div>
+
+
+<h3 id="contributors">contributors</h3>
+<p>Contributing authors of this DAppNode Package.</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>string[]</code></li>
+</ul>
+<p>All items must be of the type: <code>string</code></p>
+<ul>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Contributor author. Must follow the structure <code>${name} &lt;${email}&gt; (${githubUserLink})</code>.</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span>
+  <span class="s2">&quot;Michael First &lt;developerHanlder@project.io&gt; (https://github.com/developerHanlder)&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Michael Second &lt;developerHanlder@project.io&gt; (https://github.com/developerHanlder)&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+
+<h3 id="categories">categories</h3>
+<p>Categories to organize and group DAppNode Packages in the DAppNode Package store. Only one or two categories maximum
+should be specified per package. If you feel that any of the current categories represent the nature of your package,
+please open an issue requesting a new category https://github.com/dappnode/dnp-manifest/issues/new</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>enum[]</code></li>
+</ul>
+<p>All items must be of the type: <code>string</code></p>
+<p>The value of this property <strong>must</strong> be equal to one of the known values below.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Developer tools</code></td>
+<td>Packages that their main purpose is to aid in developing, i.e. testnets</td>
+</tr>
+<tr>
+<td><code>Blockchain</code></td>
+<td>Blockchain nodes, i.e. Bitcoin, Monero</td>
+</tr>
+<tr>
+<td><code>Economic incentive</code></td>
+<td>Packages that offer an economic incentive or reward to the admin that runs it, i.e. Lightning Network</td>
+</tr>
+<tr>
+<td><code>Payment channels</code></td>
+<td>Packages whose main purpose is to manage or control payment channels, i.e. Raiden</td>
+</tr>
+<tr>
+<td><code>Storage</code></td>
+<td>Decentralized storage solutions, i.e. Swarm</td>
+</tr>
+<tr>
+<td><code>Communications</code></td>
+<td>Decentralized networking or chat solutions, i.e. Swarm</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;Developer tools&quot;</span><span class="p">,</span> <span class="s2">&quot;Blockchain&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<h3 id="keywords">keywords</h3>
+<p>Keywords, relevant and descriptive of this DAppNode Package. They will be shown in the admin UI DAppNode Package store.</p>
+<ul>
+<li>is optional</li>
+<li>type: Array type: <code>string[]</code></li>
+</ul>
+<p>All items must be of the type: <code>string</code></p>
+<ul>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Single keyword.</p>
+<h3 id="links">links</h3>
+<p>Various links (URLs) useful for the user of this package. All links will be shown in the dedicated view of this package
+in the admin UI. The predefined links properties below will be shown with concept related icons. Other links will be
+shown as well but with their plain name instead of an icon.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>object</code> with the following properties:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>homepage</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><code>ui</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><code>api</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><code>gateway</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="homepage">homepage</h4>
+<p>Url to an informative homepage for this DAppNode Package. Should be a README or landing website.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;https://github.com/dappnode/DNP_IPFS#readme&quot;</span>
+</pre></div>
+
+
+<h4 id="ui">ui</h4>
+<p>Url to this DNP's DAppNode local UI.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;http://ipfs.dappnode:5001/webui&quot;</span>
+</pre></div>
+
+
+<h4 id="api">api</h4>
+<p>Url to this DNP's DAppNode local HTTP API endpoint.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;http://ipfs.dappnode:5001/api/v0&quot;</span>
+</pre></div>
+
+
+<h4 id="gateway">gateway</h4>
+<p>Url to this DNP's DAppNode local gateway.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;http://ipfs.dappnode:8080/ipfs&quot;</span>
+</pre></div>
+
+
+<h3 id="repository">repository</h3>
+<p>DAppNode Package's repository. Must be a publicly available url that can be handed directly to a VCS program.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>object</code> with the following properties:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>string</td>
+<td><strong>Required</strong></td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>string</td>
+<td><strong>Required</strong></td>
+</tr>
+<tr>
+<td><code>directory</code></td>
+<td>string</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="type_1">type</h4>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;git&quot;</span>
+</pre></div>
+
+
+<h4 id="url">url</h4>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;https://github.com/dappnode/DNP_IPFS.git&quot;</span>
+</pre></div>
+
+
+<h4 id="directory">directory</h4>
+<ul>
+<li>is optional</li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;packages/react-dom&quot;</span>
+</pre></div>
+
+
+<h3 id="bugs">bugs</h3>
+<p>Url to your project’s issue tracker.</p>
+<ul>
+<li>is optional</li>
+<li>type: <code>object</code> with the following properties:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>url</code></td>
+<td>string</td>
+<td><strong>Required</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="url_1">url</h4>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;https://github.com/dappnode/DNP_IPFS/issues&quot;</span>
+</pre></div>
+
+
+<h3 id="license">license</h3>
+<p>DAppNode Package's License.</p>
+<ul>
+<li>is <strong>required</strong></li>
+<li>type: <code>string</code></li>
+<li>minimum length: 1 characters</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;GPL-3.0&quot;</span>
+</pre></div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../architecture/" title="Architecture" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Architecture
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../contributing/" title="Contributing" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Contributing
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/dappnode/DAppNode" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/dappnode" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://riot.dappnode.io" class="md-footer-social__link fa fa-comments"></a>
+    
+      <a href="https://medium.com/dappnode" class="md-footer-social__link fa fa-medium"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
