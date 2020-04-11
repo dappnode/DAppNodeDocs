@@ -1,0 +1,31 @@
+name: Publish docs to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v1
+
+      - name: Auth
+        run: |
+          git config --global user.email "dappnode@dappnode.io"
+          git config --global user.name "dappnode"
+          git remote rm origin
+          git remote add origin https://user:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+
+      - name: Set up Python
+        uses: actions/setup-python@v1
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Deploy docs
+        run: mkdocs gh-deploy --force -v --clean
