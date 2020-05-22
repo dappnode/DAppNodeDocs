@@ -99,6 +99,10 @@ When using Parity, it might happen that when the snapshots finish syncin you are
 
 You have to be connected to the VPN to access the ADMIN UI, in case you are connected and still not able to access just disconnect the VPN and connect it again.
 
+#### For MacOS users using Tunnelblick as VPN Client
+
+If you have set your DNS servers manually in System Preferences > Networking, `my.dappnode` will not resolve on your browser. Removing the DNS servers out of your System Preferences should let DAppNode use its resolver, which will make `my.dappnode` accessible.
+
 ### I can't install packages or it takes a lot of time to install them
 
 For installing packages the ETH node should be synchronized. In case the node is sync and you are experiencing this, enter in System and restart IPFS and VPN and connect again.
