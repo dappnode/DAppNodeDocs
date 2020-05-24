@@ -33,8 +33,8 @@
 </div>
 <!-- prettier-ignore-end -->
 
-<div class="codehilite"><pre><span></span><span class="o">/</span><span class="n">ip4</span><span class="o">/</span><span class="mi">172</span><span class="p">.</span><span class="mi">33</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">5</span><span class="o">/</span><span class="n">tcp</span><span class="o">/</span><span class="mi">5001</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="o">/</span><span class="n">ip4</span><span class="o">/</span><span class="mi">172</span><span class="p">.</span><span class="mi">33</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">5</span><span class="o">/</span><span class="n">tcp</span><span class="o">/</span><span class="mi">5001</span>
+</code></pre></div>
 
 
 <p align="center">
@@ -183,26 +183,26 @@ if (location.origin === 'file://') {</p>
 <p>To:</p>
 <p>if (location.origin === 'file://' || location.origin === 'http://my.ipfs.dnp.dappnode.eth:8080') {</p>
 <p>Solve SourceSansPro-ExtraLightIt error</p>
-<div class="codehilite"><pre><span></span><span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="p">..</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="n">ethereum_dapp</span><span class="o">-</span><span class="n">styles</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">SourceSansPro</span><span class="o">-</span><span class="n">ExtraLightIt</span><span class="p">.</span><span class="n">otf</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">wfonts</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="k">data</span><span class="o">/</span><span class="mi">2015</span><span class="o">/</span><span class="mi">10</span><span class="o">/</span><span class="mi">11</span><span class="o">/</span><span class="k">source</span><span class="o">-</span><span class="n">sans</span><span class="o">-</span><span class="n">pro</span><span class="o">-</span><span class="n">extralight</span><span class="o">/</span><span class="k">Source</span><span class="o">%</span><span class="mi">20</span><span class="n">Sans</span><span class="o">%</span><span class="mi">20</span><span class="n">Pro</span><span class="o">%</span><span class="mi">20</span><span class="n">ExtraLight</span><span class="o">%</span><span class="mi">20</span><span class="n">Italic</span><span class="p">.</span><span class="n">otf</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="p">..</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="n">ethereum_dapp</span><span class="o">-</span><span class="n">styles</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">SourceSansPro</span><span class="o">-</span><span class="n">ExtraLightIt</span><span class="p">.</span><span class="n">otf</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">wfonts</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="k">data</span><span class="o">/</span><span class="mi">2015</span><span class="o">/</span><span class="mi">10</span><span class="o">/</span><span class="mi">11</span><span class="o">/</span><span class="k">source</span><span class="o">-</span><span class="n">sans</span><span class="o">-</span><span class="n">pro</span><span class="o">-</span><span class="n">extralight</span><span class="o">/</span><span class="k">Source</span><span class="o">%</span><span class="mi">20</span><span class="n">Sans</span><span class="o">%</span><span class="mi">20</span><span class="n">Pro</span><span class="o">%</span><span class="mi">20</span><span class="n">ExtraLight</span><span class="o">%</span><span class="mi">20</span><span class="n">Italic</span><span class="p">.</span><span class="n">otf</span>
+</code></pre></div>
 
 
 <p>Once these steps are finished we’re in a position to create a new build:</p>
-<div class="codehilite"><pre><span></span>$ meteor-build-client ../build — path <span class="s2">&quot;&quot;</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code>$ meteor-build-client ../build — path <span class="s2">&quot;&quot;</span>
+</code></pre></div>
 
 
 <h3 id="upload-to-ipfs">Upload to IPFS</h3>
 <p>When uploading content to IPFS we use a tool we have created that can be used if you are connected to DAppNode (this tool is currently experimental, and it is in continous improvement) or you could use the command <code>ipfs add -r build</code>.</p>
 <p>Using our tool the next steps would be:</p>
-<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> ..
+<div class="codehilite"><pre><span></span><code>$ <span class="nb">cd</span> ..
 $ npm install -g @dappnode/ipfsuploader
 $ ipfsuploader build/
-</pre></div>
+</code></pre></div>
 
 
 <p>After executing the last command you will obtain a similar output (they will not be the same hashes) to this one:</p>
-<div class="codehilite"><pre><span></span><span class="n">Qmb5oxJWf5Zw1UnvewkRM6V5qVbxWcY5s59FvhtWhC6F4Fbuild</span><span class="o">/</span><span class="n">i18n</span>
+<div class="codehilite"><pre><span></span><code><span class="n">Qmb5oxJWf5Zw1UnvewkRM6V5qVbxWcY5s59FvhtWhC6F4Fbuild</span><span class="o">/</span><span class="n">i18n</span>
 <span class="n">QmQV1tXNCZsD82LiLwWpHvdwWqbGXJd8q1Pq2hMPxyiKFabuild</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="n">es5</span><span class="o">-</span><span class="n">shim</span>
 <span class="n">QmTte2i1HQKRgUgA8ZuVANwmqLCjjYzddmCekbUqJ3fmCAbuild</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="n">ethereum_dapp</span><span class="o">-</span><span class="n">styles</span><span class="o">/</span><span class="n">fonts</span>
 <span class="n">QmWMVompWymG8CmCgyB57dvaWegymjknMFTUQVrWfYebYubuild</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="n">ethereum_dapp</span><span class="o">-</span><span class="n">styles</span><span class="o">/</span><span class="n">icons</span>
@@ -211,7 +211,7 @@ $ ipfsuploader build/
 <span class="n">QmXQ6fGzJsDAUGuLFxG8wgMgvyvgnR6pW9yeue3VUtdHnebuild</span><span class="o">/</span><span class="n">packages</span>
 <span class="n">QmTRpmNWiAkYQnesiGZRVE9NwbEfqZLH4DnLmbCmjMGaLLbuild</span><span class="o">/</span><span class="n">sockjs</span>
 <span class="n">QmZQ3GzqXHCRM6uccP6TcZdPGPSyqJXyhwLETD2T2o8m73build</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>If we use the hash associated with <code>build</code> and access it through this URL:</p>

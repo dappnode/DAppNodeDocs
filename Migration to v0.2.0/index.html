@@ -109,7 +109,7 @@
 <p>This section will be continuously updated as we detect more common issues:</p>
 <h4 id="after-connecting-via-ssh-or-logging-to-my-machine-i-get-old-l2tp-credentials-that-cant-be-opened-in-my-openvpn-client">After connecting via ssh or logging to my machine I get old L2TP credentials that can't be opened in my OpenVPN client.</h4>
 <p>The new VPN package has not finished the installation and it is not running yet, so you get old credentials again. Just wait a few minutes and connect again via SSH. Once the new VPN package is running you will get your brand new OpenVPN credentials. You can check that the migration has been correctly performed and that you are getting the new OpenVPN credentials by typing in the server terminal <code>docker ps --format "{{.Image}}"</code> and checking that the installed core packages have the mention 0.2.x</p>
-<div class="codehilite"><pre><span></span><span class="x">root@DAppNode:# docker ps --format &quot;</span><span class="cp">{{</span><span class="nv">.Image</span><span class="cp">}}</span><span class="x">&quot;</span>
+<div class="codehilite"><pre><span></span><code><span class="x">root@DAppNode:# docker ps --format &quot;</span><span class="cp">{{</span><span class="nv">.Image</span><span class="cp">}}</span><span class="x">&quot;</span>
 <span class="x">wifi.dnp.dappnode.eth:0.2.0</span>
 <span class="x">ipfs.dnp.dappnode.eth:0.2.0</span>
 <span class="x">wamp.dnp.dappnode.eth:0.2.0</span>
@@ -119,7 +119,7 @@
 <span class="x">ethchain.dnp.dappnode.eth:0.2.0</span>
 <span class="x">vpn.dnp.dappnode.eth:0.2.0</span>
 <span class="x">ethforward.dnp.dappnode.eth:0.2.0</span>
-</pre></div>
+</code></pre></div>
 
 
 <h4 id="i-cant-access-the-credentials-otp-web-link-to-download-the-ovpn-file">I can't access the credentials OTP web link to download the .ovpn file</h4>
@@ -152,13 +152,13 @@
 </table>
 <h4 id="i-have-a-message-in-the-console-saying-that-admin-credentials-expired">I have a message in the console saying that admin credentials expired</h4>
 <p>Once a file with credentials is downloaded, and used for connecting once, the link expires after that first connection and you see that message. If for any reason you need to get new credentials, connect via ssh to the server and run the command</p>
-<div class="codehilite"><pre><span></span><span class="n">dappnode_get</span> <span class="n">dappnode_admin</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="n">dappnode_get</span> <span class="n">dappnode_admin</span>
+</code></pre></div>
 
 
 <p>If you get a <code>command not found</code> message you can run</p>
-<div class="codehilite"><pre><span></span><span class="nv">docker</span> <span class="k">exec</span> <span class="o">-</span><span class="nv">ti</span> <span class="nv">DAppNodeCore</span><span class="o">-</span><span class="nv">vpn</span>.<span class="nv">dnp</span>.<span class="nv">dappnode</span>.<span class="nv">eth</span> <span class="nv">vpncli</span> <span class="nv">get</span> <span class="nv">dappnode_admin</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="nv">docker</span> <span class="k">exec</span> <span class="o">-</span><span class="nv">ti</span> <span class="nv">DAppNodeCore</span><span class="o">-</span><span class="nv">vpn</span>.<span class="nv">dnp</span>.<span class="nv">dappnode</span>.<span class="nv">eth</span> <span class="nv">vpncli</span> <span class="nv">get</span> <span class="nv">dappnode_admin</span>
+</code></pre></div>
 
 
 <h4 id="i-cant-import-the-file-in-linux-open-vpn-client">I can't import the file in Linux Open VPN client.</h4>

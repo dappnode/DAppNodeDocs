@@ -104,19 +104,19 @@
 </ul>
 <p>To install all the above prerequisites, execute the command below in the terminal of the machine you want to install DAppNode.
 If you already have the dependencies installed or you want to install them on your own you can skip this step.</p>
-<div class="codehilite"><pre><span></span><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">prerequisites</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span><span class="err"> </span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">bash</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">prerequisites</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span>  <span class="o">|</span> <span class="n">sudo</span> <span class="n">bash</span>
+</code></pre></div>
 
 
 <h3 id="install-dappnode_1">Install DAppNode</h3>
 <p>Run the following command to install DAppNode:</p>
-<div class="codehilite"><pre><span></span><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">installer</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">bash</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">installer</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">bash</span>
+</code></pre></div>
 
 
 <p>If you have a static IP and want to set it up right from the connection, run the command below, which includes a variable for your static IP. The majority of users will not need to add that as dynamic IPs are the most common.</p>
-<div class="codehilite"><pre><span></span><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">installer</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">STATIC_IP</span><span class="o">=</span><span class="ss">&quot;your static IP&quot;</span> <span class="n">bash</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">installer</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">STATIC_IP</span><span class="o">=</span><span class="ss">&quot;your static IP&quot;</span> <span class="n">bash</span>
+</code></pre></div>
 
 
 <p>When the installation is done and is successful, be it you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation, just double click in it to open it with a compatible OpenVPN client. Here you have the <a href="https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide">recommended ones and connection instructions</a></p>
@@ -132,15 +132,15 @@ If you already have the dependencies installed or you want to install them on yo
 <h3 id="how-to-restore-an-installed-dappnode-to-the-latest-version">How to restore an installed DAppNode to the latest version:</h3>
 <p>If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.</p>
 <p>⚠️ Please note that volumes are not deleted, but any EXTRA_OPTS set by the user in the packages config <strong>must be set again</strong> after using this script to restore the system ⚠️  </p>
-<div class="codehilite"><pre><span></span><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">installer</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span> <span class="o">|</span> <span class="n">sudo</span> <span class="k">UPDATE</span><span class="o">=</span><span class="k">true</span> <span class="n">bash</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">installer</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span> <span class="o">|</span> <span class="n">sudo</span> <span class="k">UPDATE</span><span class="o">=</span><span class="k">true</span> <span class="n">bash</span>
+</code></pre></div>
 
 
 <h3 id="how-to-uninstall-dappnode">How to uninstall DAppNode</h3>
 <p>This command will uninstall DAppNode components (but not docker et al.):
 ⚠️ BEWARE! It will also delete all volumes and stored data!⚠️</p>
-<div class="codehilite"><pre><span></span><span class="n">wget</span> <span class="o">-</span><span class="n">qO</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">uninstaller</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span>  <span class="o">|</span>  <span class="n">sudo</span> <span class="n">bash</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="n">wget</span> <span class="o">-</span><span class="n">qO</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">uninstaller</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span>  <span class="o">|</span>  <span class="n">sudo</span> <span class="n">bash</span>
+</code></pre></div>
 
 
 <h2 id="enter-your-dappnode">Enter your DAppNode!</h2>
@@ -162,8 +162,8 @@ If you already have the dependencies installed or you want to install them on yo
 </li>
 </ul>
 <p>The first time you access to it will ask you for your <code>Custom API address</code>, just fill the field with this address and you will be connected to your IPFS node, this is the input you have to enter in the field <code>Is your API in a port other than 5001?</code></p>
-<div class="codehilite"><pre><span></span><span class="o">/</span><span class="n">dns4</span><span class="o">/</span><span class="n">ipfs</span><span class="p">.</span><span class="n">dappnode</span><span class="o">/</span><span class="n">tcp</span><span class="o">/</span><span class="mi">5001</span><span class="o">/</span><span class="n">http</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="o">/</span><span class="n">dns4</span><span class="o">/</span><span class="n">ipfs</span><span class="p">.</span><span class="n">dappnode</span><span class="o">/</span><span class="n">tcp</span><span class="o">/</span><span class="mi">5001</span><span class="o">/</span><span class="n">http</span>
+</code></pre></div>
 
 
 <h3 id="you-can-have-a-look-to-our-user-guide-httpsdocsdappnodeio"><strong>You can have a look to our user guide <a href="https://docs.dappnode.io">https://docs.dappnode.io</a></strong></h3>
