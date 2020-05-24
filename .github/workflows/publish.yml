@@ -12,13 +12,6 @@ jobs:
       - name: Checkout master
         uses: actions/checkout@v1
 
-      - name: Auth
-        run: |
-          git config --global user.email "dappnode@dappnode.io"
-          git config --global user.name "dappnode"
-          git remote rm origin
-          git remote add origin https://user:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-
       - name: Set up Python
         uses: actions/setup-python@v1
 
@@ -27,5 +20,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Deploy docs
-        run: mkdocs gh-deploy --force -v --clean
+      - name: Build docs
+        run: mkdocs build --site-dir site -v --clean
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
