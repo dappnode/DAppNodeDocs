@@ -1,7 +1,7 @@
 #!/bin/bash
 export MANIFEST_PATH=manifest-reference.json
 # Fetches the latest manifest in Github without downloading the rest of the package
-curl https://raw.githubusercontent.com/dappnode/dnp-manifest/master/src/manifest.schema.json > $MANIFEST_PATH
+curl https://raw.githubusercontent.com/dappnode/DAppNodeSDK/master/src/schemas/manifest.schema.json > $MANIFEST_PATH
 # Run the schema to markdown tool customized for the DAppNode docs repo
 # -x - : supresses the output of the validated schema
 # : the .md is outputed at the default 

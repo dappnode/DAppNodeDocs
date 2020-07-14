@@ -14,15 +14,15 @@ jobs:
 
       - name: Set up Python
         uses: actions/setup-python@v1
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Build schema references
+        run: ./generateManifestReference.sh
       - name: Build docs
         run: mkdocs build --site-dir site -v --clean
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

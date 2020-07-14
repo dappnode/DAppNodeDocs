@@ -12,34 +12,11 @@ The DAppNode Package manifest defines all the necessary information for a DAppNo
 {
   "name": "ipfs.dnp.dappnode.eth",
   "version": "0.2.0",
-  "upstreamVersion": "2.6.0",
+  "upstreamVersion": "2.6.0-beta",
   "shortDescription": "Distributed file system for storing and accessing data.",
   "description": "Welcome! IPFS is a distributed system for storing and accessing files, websites, applications, and data. If you’re new to IPFS, check our [introductory page](https://ipfs.io/#why) for an easy overview. \n\nWith this node you can upload and download files from IPFS using it own fancy web console at [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui). Other DAppNode Packages and external applications can use its API at the endpoint `http://ipfs.dappnode:5001/api`. Go to the [IPFS HTTP API full reference](https://docs.ipfs.io/reference/api/http/) to check all the features of the API.",
   "avatar": "/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8",
   "type": "service",
-  "image": {
-    "hash": "/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8",
-    "size": 25738523,
-    "path": "ipfs.dnp.dappnode.eth_0.2.0.tar.xz",
-    "volumes": [
-      "/var/run/docker.sock:/var/run/docker.sock",
-      "/usr/src/dappnode/config:/usr/src/app/config:ro",
-      "ipfsdnpdappnodeeth_data:/data/ipfs"
-    ],
-    "external_vol": ["dncore_ethchaindnpdappnodeeth_data:/app/.ethchain:ro"],
-    "ports": ["1194:1194/udp", "8090:3000/udp"],
-    "environment": ["RACK_ENV=development", "SHOW=true", "EXTRA_OPTS=", "EMPTY_ENV"],
-    "restart": "always",
-    "privileged": true,
-    "cap_add": ["NET_ADMIN", "SYS_ADMIN"],
-    "cap_drop": ["NET_ADMIN", "SYS_ADMIN"],
-    "devices": ["/dev/ttyUSB0:/dev/ttyUSB0", "/dev/sda:/dev/xvdc:rwm"],
-    "subnet": "172.33.0.0/16",
-    "ipv4_address": "172.33.1.4",
-    "network_mode": "bridge",
-    "command": "bundle exec thin -p 3000",
-    "labels": ["eth.dappnode.dnp.my-dnp.developer=Awesome_Name"]
-  },
   "chain": "ethereum",
   "dependencies": {
     "bitcoin.dnp.dappnode.eth": "^0.1.2",
@@ -112,7 +89,6 @@ The DAppNode Package manifest defines all the necessary information for a DAppNo
 | [description](#description)           | `string`   | **Required** |
 | [avatar](#avatar)                     | `string`   | **Required** |
 | [type](#type)                         | `enum`     | **Required** |
-| [image](#image)                       | `object`   | **Required** |
 | [chain](#chain)                       | `enum`     | Optional     |
 | [dependencies](#dependencies)         | `object`   | Optional     |
 | [requirements](#requirements)         | `object`   | Optional     |
@@ -174,19 +150,14 @@ version can be specified here. It will be shown in the admin UI alongside the fi
 - is optional
 - type: `string`
 
-All instances must conform to this regular expression
-
-```regex
-^((([0-9]+).([0-9]+).([0-9]+)))$
-```
-
-- test example:
-  [2.6.0](<https://regexr.com/?expression=%5E(((%5B0-9%5D%2B).(%5B0-9%5D%2B).(%5B0-9%5D%2B)))%24&text=2.6.0>)
-
-Example:
+Examples:
 
 ```json
-"2.6.0"
+"2.6.0-beta"
+```
+
+```json
+"any-text"
 ```
 
 ### shortDescription
@@ -266,412 +237,6 @@ Examples:
 
 ```json
 "dncore"
-```
-
-### image
-
-Docker compose properties from which this DAppNode Package's `docker-compose.yml` will be generated. Also includes
-upload data to fetch the image tarball from IPFS of BZZ.
-
-- is **required**
-- type: `object` with the following properties:
-
-| Property       | Type    | Required     | Default    |
-| -------------- | ------- | ------------ | ---------- |
-| `hash`         | string  | **Required** |            |
-| `size`         | integer | **Required** |            |
-| `path`         | string  | Optional     |            |
-| `volumes`      | array   | Optional     |            |
-| `external_vol` | array   | Optional     |            |
-| `ports`        | array   | Optional     |            |
-| `environment`  | array   | Optional     |            |
-| `restart`      | string  | Optional     | `"always"` |
-| `privileged`   | boolean | Optional     |            |
-| `cap_add`      | array   | Optional     |            |
-| `cap_drop`     | array   | Optional     |            |
-| `devices`      | array   | Optional     |            |
-| `subnet`       | string  | Optional     |            |
-| `ipv4_address` | string  | Optional     |            |
-| `network_mode` | string  | Optional     |            |
-| `command`      | string  | Optional     |            |
-| `labels`       | array   | Optional     |            |
-
-#### hash
-
-IPFS / BZZ hash of the DAppNode Package image.
-
-- is **required**
-- type: `string`
-- minimum length: 46 characters
-
-All instances must conform to this regular expression
-
-```regex
-^/(ipfs|bzz)/\w+$
-```
-
-- test example:
-  [/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8](<https://regexr.com/?expression=%5E%2F(ipfs%7Cbzz)%2F%5Cw%2B%24&text=%2Fipfs%2FQmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8>)
-
-Example:
-
-```json
-"/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8"
-```
-
-#### size
-
-Size of the DAppNode Package image in bytes. Necessary to show a correct download progress bar when user's install this
-DAppNode Package.
-
-- is **required**
-- type: `integer`
-- minimum value: `1`
-
-Example:
-
-```
-25738523
-```
-
-#### path
-
-The filename of the DAppNode Package image.
-
-- is optional
-- type: `string`
-- minimum length: 1 characters
-
-Example:
-
-```json
-"ipfs.dnp.dappnode.eth_0.2.0.tar.xz"
-```
-
-#### volumes
-
-DAppNode Package volume mappings.
-
-- is optional
-- type: Array type: `string[]`
-
-All items must be of the type: `string`
-
-All instances must conform to this regular expression (test examples
-[here](https://regexr.com/?expression=%5E%5B%5E%5Cs%5D%2B%3A%5B%5E%5Cs%5D%2B%24)):
-
-```regex
-^[^\s]+:[^\s]+$
-```
-
-Docker volumes short syntax `HOST:CONTAINER:ro` mapping. Go to the
-[docker-compose file volumes reference](https://docs.docker.com/compose/compose-file/#volumes) for valid values.
-
-Example:
-
-```json
-[
-  "/var/run/docker.sock:/var/run/docker.sock",
-  "/usr/src/dappnode/config:/usr/src/app/config:ro",
-  "ipfsdnpdappnodeeth_data:/data/ipfs"
-]
-```
-
-#### external_vol
-
-DAppNode Package external volume mappings, volumes have been created outside of this DAppNode Package's compose.
-
-- is optional
-- type: Array type: `string[]`
-
-All items must be of the type: `string`
-
-All instances must conform to this regular expression (test examples
-[here](https://regexr.com/?expression=%5E%5B%5E%5Cs%5D%2B%3A%5B%5E%5Cs%5D%2B%24)):
-
-```regex
-^[^\s]+:[^\s]+$
-```
-
-Docker volumes short syntax `HOST:CONTAINER:ro` mapping. Go to the
-[docker-compose file external volumes reference](https://docs.docker.com/compose/compose-file/#external) for valid
-values.
-
-Examples:
-
-```json
-["dncore_ethchaindnpdappnodeeth_data:/app/.ethchain:ro"]
-```
-
-```json
-["nginxproxydnpdappnodeeth_vhost.d:/etc/nginx/vhost.d", "nginxproxydnpdappnodeeth_html:/usr/share/nginx/html"]
-```
-
-#### ports
-
-DAppNode Package port mappings.
-
-- is optional
-- type: Array type: `string[]`
-
-All items must be of the type: `string`
-
-- minimum length: 1 characters
-
-Docker ports short syntax `HOST:CONTAINER/protocol`. Go to the
-[docker-compose file ports reference](https://docs.docker.com/compose/compose-file/#ports) for valid values.
-
-Examples:
-
-```json
-["1194:1194/udp", "8090:3000/udp"]
-```
-
-```json
-["4001/udp", "4001/tcp"]
-```
-
-```json
-["4001"]
-```
-
-#### environment
-
-DAppNode Package environment variables. You must declare all ENVs even if they are empty.
-
-- is optional
-- type: Array type: `string[]`
-
-All items must be of the type: `string`
-
-- minimum length: 1 characters
-
-Docker environment variables in array form, in the format `KEY=VALUE`. Go to the
-[docker-compose file environment reference](https://docs.docker.com/compose/compose-file/#environment) for valid
-values.
-
-Example:
-
-```json
-["RACK_ENV=development", "SHOW=true", "EXTRA_OPTS=", "EMPTY_ENV"]
-```
-
-#### restart
-
-Docker restart policy, 'always' is highly recommended. Go to the
-[docker-compose file restart reference](https://docs.docker.com/compose/compose-file/#restart) for more details.
-
-- is optional
-- default: `"always"`
-- type: `string`
-
-The value of this property **must** be equal to one of the known values below.
-
-| Value            | Description                                             |
-| ---------------- | ------------------------------------------------------- |
-| `always`         | Always restarts                                         |
-| `no`             | Does not restart under any circumstance                 |
-| `on-failure`     | Restarts if the exit code indicates an on-failure error |
-| `unless-stopped` | Restarts unless Docker itself is stopped or restarted   |
-
-Example:
-
-```json
-"always"
-```
-
-#### privileged
-
-Grant the DAppNode Package (almost) all the capabilities of their host machine, regarding kernel features and device
-access. Go to this
-[docker article about priviledge mode](https://blog.docker.com/2013/09/docker-can-now-run-within-docker/) for more
-details.
-
-- is optional
-- type: `boolean`
-
-Example:
-
-```
-true
-```
-
-#### cap_add
-
-Add container capabilities. Go to the
-[docker-compose file cap_add reference](https://docs.docker.com/compose/compose-file/#cap_add-cap_drop) for more
-details
-
-- is optional
-- type: Array type: `string[]`
-
-All items must be of the type: `string`
-
-- minimum length: 1 characters
-
-A valid docker capability key. Go to the
-[docker reference about Linux capabilities](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities)
-for valid values and their meaning.
-
-Examples:
-
-```json
-["NET_ADMIN", "SYS_ADMIN"]
-```
-
-```json
-["ALL"]
-```
-
-#### cap_drop
-
-Drop container capabilities. Go to the
-[docker-compose file cap_drop reference](https://docs.docker.com/compose/compose-file/#cap_add-cap_drop) for more
-details
-
-- is optional
-- type: Array type: `string[]`
-
-All items must be of the type: `string`
-
-- minimum length: 1 characters
-
-A valid docker capability key. Go to the
-[docker reference about Linux capabilities](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities)
-for valid values and their meaning.
-
-Example:
-
-```json
-["NET_ADMIN", "SYS_ADMIN"]
-```
-
-#### devices
-
-Allows you to run devices inside the container without the `privileged` flag. Must be a list of device mappings. Uses
-the same format as the --device docker client create option.
-
-- is optional
-- type: Array type: `string[]`
-
-All items must be of the type: `string`
-
-- minimum length: 1 characters
-
-A valid docker device mapping. Go to the
-[docker reference about runtime privileges](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities)
-for valid values and more details.
-
-Example:
-
-```json
-["/dev/ttyUSB0:/dev/ttyUSB0", "/dev/sda:/dev/xvdc:rwm"]
-```
-
-#### subnet
-
-Specify the subnet. Go to the
-[docker-compose file ipv4_address-ipv6_address reference](https://docs.docker.com/compose/compose-file/#ipv4_address-ipv6_address)
-for valid values.
-
-- is optional
-- type: `string`
-
-All instances must conform to this regular expression
-
-```regex
-^(?:[0-9]{1,3}.){3}[0-9]{1,3}/[0-9]+$
-```
-
-- test example:
-  [172.33.0.0/16](<https://regexr.com/?expression=%5E(%3F%3A%5B0-9%5D%7B1%2C3%7D.)%7B3%7D%5B0-9%5D%7B1%2C3%7D%2F%5B0-9%5D%2B%24&text=172.33.0.0%2F16>)
-
-Example:
-
-```json
-"172.33.0.0/16"
-```
-
-#### ipv4_address
-
-Specify a static IP address for containers for this service when joining the network. Go to the
-[docker-compose file ipv4_address-ipv6_address reference](https://docs.docker.com/compose/compose-file/#ipv4_address-ipv6_address)
-for valid values.
-
-- is optional
-- type: `string`
-
-All instances must conform to this regular expression
-
-```regex
-^(?:[0-9]{1,3}.){3}[0-9]{1,3}$
-```
-
-- test example:
-  [172.33.1.4](<https://regexr.com/?expression=%5E(%3F%3A%5B0-9%5D%7B1%2C3%7D.)%7B3%7D%5B0-9%5D%7B1%2C3%7D%24&text=172.33.1.4>)
-
-Example:
-
-```json
-"172.33.1.4"
-```
-
-#### network_mode
-
-Connect this DAppNode Package to a specific network. See
-https://docs.docker.com/engine/reference/run/#network-settings.
-
-- is optional
-- type: `string`
-- minimum length: 1 characters
-
-Examples:
-
-```json
-"bridge"
-```
-
-```json
-"host"
-```
-
-```json
-"none"
-```
-
-#### command
-
-Override the default command. Go to the
-[docker-compose file command reference](https://docs.docker.com/compose/compose-file/#command) for valid values.
-
-- is optional
-- type: `string`
-- minimum length: 1 characters
-
-Example:
-
-```json
-"bundle exec thin -p 3000"
-```
-
-#### labels
-
-Labels to be added to the DAppNode Package's docker container.
-
-- is optional
-- type: Array type: `string[]`
-
-All items must be of the type: `string`
-
-- minimum length: 1 characters
-
-Use reverse-DNS notation (`eth.dappnode.dnp.my-dnp.developer`) to prevent label conflicts. Go to the
-[docker-compose file labels reference](https://docs.docker.com/compose/compose-file/#labels-2) for valid values.
-
-Example:
-
-```json
-["eth.dappnode.dnp.my-dnp.developer=Awesome_Name"]
 ```
 
 ### chain
@@ -1119,12 +684,14 @@ The value of this property **must** be equal to one of the known values below.
 
 | Value                | Description                                                                                           |
 | -------------------- | ----------------------------------------------------------------------------------------------------- |
-| `Developer tools`    | Packages that their main purpose is to aid in developing, i.e. testnets                               |
 | `Blockchain`         | Blockchain nodes, i.e. Bitcoin, Monero                                                                |
+| `Communications`     | Decentralized networking or chat solutions, i.e. Swarm                                                |
+| `Developer tools`    | Packages that their main purpose is to aid in developing, i.e. testnets                               |
+| `ETH2.0`             | Packages to participate or use the Eth2.0 network                                                     |
 | `Economic incentive` | Packages that offer an economic incentive or reward to the admin that runs it, i.e. Lightning Network |
+| `Monitoring`         | Packages that track metrics                                                                           |
 | `Payment channels`   | Packages whose main purpose is to manage or control payment channels, i.e. Raiden                     |
 | `Storage`            | Decentralized storage solutions, i.e. Swarm                                                           |
-| `Communications`     | Decentralized networking or chat solutions, i.e. Swarm                                                |
 
 Example:
 
