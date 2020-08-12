@@ -2,6 +2,21 @@
 
 The DAppNode package setup wizard helps automate the package customization and improve your users UX. You can allow users to conveniently edit environment variables, port mappings, and upload files while interacting with a simple web form, right before installing the package.
 
+## How to use
+
+To add this functionality, create a file `setup-wizard.yml` in the root of your DAppNode package directory. Both JSON and YAML formats are supported, but YAML makes writing markdown text blocks (used in the [`description`](#description) property) much easier
+
+```diff
+  DAppNodePackage-my-package.public.dappnode.eth/
+  ├── build
+  │   ├── ...
+  │   └── Dockerfile
+  ├── avatar-my-package.png
+  ├── dappnode_package.json
+  ├── docker-compose.yml
++ └── setup-wizard.yml
+```
+
 ## Example
 
 ```yaml
