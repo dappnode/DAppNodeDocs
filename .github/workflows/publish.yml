@@ -20,7 +20,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build schema references
-        run: ./generateManifestReference.sh
+        run: ./generateReferences.sh
       - name: Build docs
         run: mkdocs build --site-dir site -v --clean
       - name: Deploy
