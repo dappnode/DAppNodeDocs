@@ -1,10 +1,10 @@
-# DAppNode Package Setup Wizard
+# Setup Wizard Reference
 
-The DAppNode package setup wizard helps automate the package customization and improve your users UX. You can allow users to conveniently edit environment variables, port mappings, and upload files while interacting with a simple web form, right before installing the package.
+The setup wizard for DAppNode packages helps automate the package customization and improve its user experience. You can allow users to conveniently edit environment variables, port mappings, and upload files while interacting with a simple web form, right before installing the package.
 
 ## How to use
 
-To add this functionality, create a file `setup-wizard.yml` in the root of your DAppNode package directory. Both JSON and YAML formats are supported, but YAML makes writing markdown text blocks (used in the [`description`](#description) property) much easier
+To add this functionality, create a file `setup-wizard.yml` in the root of your DAppNode package directory. Both JSON and YAML formats are supported, but YAML makes writing markdown text blocks much easier (its used in the [`description`](#description) property).
 
 ```diff
   DAppNodePackage-my-package.public.dappnode.eth/
@@ -87,6 +87,7 @@ id: payoutAddress
 ### target
 
 Maps the setup wizard field to a package configuration option. Supports:
+
 - [`environment`](#environment): For environment variables
 - [`portMapping`](#portMapping): For port mapping
 - [`namedVolumeMountpoint`](#namedVolumeMountpoint): To allow hosting a specific package volume into a different drive or mountpoint
