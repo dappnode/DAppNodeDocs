@@ -19,5 +19,6 @@ Start by checking [What can you do with DAppNode?](./what-can-you-do). You can a
 We highly encourage you to consider developing a DAppNode Package (DNP) so your DApp, node or idea can be distributed for all DAppNode users. Please, start by checking the [DAppNodeSDK](https://github.com/dappnode/DAppNodeSDK#dappnodesdk) for an overview of the process. Also, you might be interested in other more technical resources about DAppNode:
 
 - [Architecture](./architecture)
-- [DNP Manifest Reference](./manifest-reference)
+- [DAppNode Package Manifest Reference](./manifest-reference)
+- [DAppNode Package Setup Wizard Reference](./setup-wizard-reference)
 - [Contributing](./contributing)

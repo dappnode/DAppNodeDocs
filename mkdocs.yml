@@ -11,7 +11,8 @@ nav:
   - Troubleshooting: troubleshooting.md
   - Migration to v0.2.0: Migration to v0.2.0.md
   - Architecture: architecture.md
-  - DNP Manifest Reference: manifest-reference.md
+  - DAppNode Package Manifest Reference: manifest-reference.md
+  - DAppNode Package Setup Wizard Reference: setup-wizard-reference.md
   - Core packages readmes: Core-packages-readmes.md
   - Contributing: contributing.md
   - License: license.md
