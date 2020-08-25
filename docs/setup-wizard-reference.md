@@ -23,9 +23,10 @@ To add this functionality, create a file `setup-wizard.yml` in the root of your 
 version: "2",
 fields:
   - id: payoutAddress,
-    target: 
+    target:
       type: environment
       name: PAYOUT_ADDRESS
+      service: service1
     title: Payout address
     description: >-
       Address to send **payouts** too. [More info](https://more.info)
@@ -33,7 +34,7 @@ fields:
     secret: true
     pattern: "^0x[a-fA-F0-9]{40}$"
     patternErrorMessage: Must be a valid address (0x1fd16a...)
-    enum: 
+    enum:
       - normal
       - archive
       - advanced
@@ -106,6 +107,7 @@ To customize environment variables with user input. Targeted variables must be d
 target:
   type: environment
   name: PAYOUT_ADDRESS
+  service: service1
 ```
 
 ##### name
@@ -121,6 +123,18 @@ Example:
 name: PAYOUT_ADDRESS
 ```
 
+##### service
+
+In multi-service package, which service should be targeted with this setting.
+
+- type: `string`
+
+Examples:
+
+```yaml
+service: service1
+```
+
 #### portMapping
 
 To customize port mappings with user input. Targeted container port must be declared in the package's docker-compose.
@@ -129,6 +143,7 @@ To customize port mappings with user input. Targeted container port must be decl
 target:
   type: portMapping
   containerPort: 9554/UDP
+  service: service1
 ```
 
 ##### containerPort
@@ -147,6 +162,10 @@ containerPort: 9554
 ```yaml
 containerPort: 9554/TCP
 ```
+
+##### service
+
+See [service](#service)
 
 #### namedVolumeMountpoint
 
@@ -188,6 +207,7 @@ To allow hosting a specific package volume into a different drive or mountpoint
 target:
   type: fileUpload
   path: /usr/src/config.json
+  service: service1
 ```
 
 ##### path
@@ -202,6 +222,10 @@ Example:
 ```yaml
 path: /usr/src/config.json
 ```
+
+##### service
+
+See [service](#service)
 
 ### title
 
