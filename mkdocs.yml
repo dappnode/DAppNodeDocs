@@ -13,7 +13,6 @@ nav:
   - Architecture: architecture.md
   - DAppNode Package Manifest Reference: manifest-reference.md
   - DAppNode Package Setup Wizard Reference: setup-wizard-reference.md
-  - Core packages readmes: Core-packages-readmes.md
   - Contributing: contributing.md
   - License: license.md
 
