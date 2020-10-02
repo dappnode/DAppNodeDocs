@@ -35,6 +35,6 @@ extra:
     - type: "twitter"
       link: "https://twitter.com/dappnode"
     - type: "comments"
-      link: "https://riot.dappnode.io"
+      link: "https://discourse.dappnode.io/"
     - type: "medium"
       link: "https://medium.com/dappnode"

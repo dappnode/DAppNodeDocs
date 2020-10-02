@@ -187,5 +187,5 @@ The first time you access to it will ask you for your `Custom API address`, just
 
 Even if it's just a message to confirm that everything is running successfully, we need your feedback to provide the best decentralized server network infrastructure possible. Please message us with questions, suggestions, or just to confirm you got your DAppNode set up:
 
-- Message us in our [Riot channel](https://riot.im/app/#/room/#dappnode:matrix.org)
+- Message us in our [Discourse forum](https://discourse.dappnode.io/)
 - Make a tweet mentioning [@dappnode](https://twitter.com/dappnode)!

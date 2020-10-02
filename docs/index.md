@@ -12,7 +12,7 @@ Take a look at the [introduction](./introduction) to understand the problem that
 
 ### I am a user
 
-Start by checking [What can you do with DAppNode?](./what-can-you-do). You can also to take a look at the [user guide](./user-guide) if you have doubts and how to use DAppNode. If you are having any problem, take a look at the [troubleshooting](./troubleshooting) and [FAQs](./faqs) sections. If you can't manage to solve your problem, please don't hesitate to reach us on [Github](https://github.com/dappnode/DAppNode/issues) and [Riot](https://riot.dappnode.io).
+Start by checking [What can you do with DAppNode?](./what-can-you-do). You can also to take a look at the [user guide](./user-guide) if you have doubts and how to use DAppNode. If you are having any problem, take a look at the [troubleshooting](./troubleshooting) and [FAQs](./faqs) sections. If you can't manage to solve your problem, please don't hesitate to reach us on [Github](https://github.com/dappnode/DAppNode/issues) and [Discourse](https://discourse.dappnode.io/).
 
 ### I am a developer
 

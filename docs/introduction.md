@@ -93,5 +93,5 @@ Ready to jump in? Here we go!
 ## Where the #nodlers play
 
 - [DAppNode](https://dappnode.io/)
-- [Riot](https://riot.im/app/#/room/#dappnode:matrix.org)
+- [Discourse](https://discourse.dappnode.io/)
 - [Github](https://github.com/dappnode/DAppNode/wiki/DAppNode-Installation-Guide)
