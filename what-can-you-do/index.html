@@ -26,7 +26,6 @@
 </li>
 </ul>
 <!-- prettier-ignore-start -->
-
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>We have updated our IPFS package (v.0.1.4), and one of the features is to provide a more complete and user friendly web interface. The first time you access to it will ask you for your “Custom API address”, just fill the field with this address and you will be connected to your IPFS node , this is the input you have to enter in the field seen in the image below.</p>
@@ -35,7 +34,6 @@
 
 <div class="codehilite"><pre><span></span><code><span class="o">/</span><span class="n">ip4</span><span class="o">/</span><span class="mi">172</span><span class="p">.</span><span class="mi">33</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">5</span><span class="o">/</span><span class="n">tcp</span><span class="o">/</span><span class="mi">5001</span>
 </code></pre></div>
-
 
 <p align="center">
     <img width="1000"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
@@ -62,9 +60,10 @@ ws://my.ethchain.dnp.dappnode.eth:8546 or ws//fullnode.dappnode:8546 and RPC con
 
 <p>You can still set parameters for both chains in the extra opt fields of each client. Use Extra Opts to define variables to be  applied in Parity and Extra opts GETH to do the same with the official EF client, and hit "Update environment variables"</p>
 <p>More info on env vars for Parity client <a href="https://wiki.parity.io/Configuring-Parity-Ethereum">here</a> and for Geth <a href="https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options">here</a></p>
-<p><p align="center">
+<p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/extraoptsgeth.jpg?raw=true">
-</p></p>
+</p>
+
 <h2 id="mycrypto">MyCrypto</h2>
 <p>You can now enter a decentralized version of MyCrypto that it is not only hosted in IPFS but is using your node to connect to the Ethereum network. However, note that as the access URL is not https there might be incompatibilities; we are working hard to solve this issue and give you an awesome user experience using MyCrypto in a decentralized way. You can access it in <a href="http://mycrypto.dappnode.eth/">http://mycrypto.dappnode.eth/</a>. In desktop version there is no need to have an https access to connect to a node or connect to your hardware wallet.</p>
 <h2 id="metamask">Metamask</h2>
@@ -186,11 +185,9 @@ if (location.origin === 'file://') {</p>
 <div class="codehilite"><pre><span></span><code><span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="p">..</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="n">ethereum_dapp</span><span class="o">-</span><span class="n">styles</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">SourceSansPro</span><span class="o">-</span><span class="n">ExtraLightIt</span><span class="p">.</span><span class="n">otf</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">wfonts</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="k">data</span><span class="o">/</span><span class="mi">2015</span><span class="o">/</span><span class="mi">10</span><span class="o">/</span><span class="mi">11</span><span class="o">/</span><span class="k">source</span><span class="o">-</span><span class="n">sans</span><span class="o">-</span><span class="n">pro</span><span class="o">-</span><span class="n">extralight</span><span class="o">/</span><span class="k">Source</span><span class="o">%</span><span class="mi">20</span><span class="n">Sans</span><span class="o">%</span><span class="mi">20</span><span class="n">Pro</span><span class="o">%</span><span class="mi">20</span><span class="n">ExtraLight</span><span class="o">%</span><span class="mi">20</span><span class="n">Italic</span><span class="p">.</span><span class="n">otf</span>
 </code></pre></div>
 
-
 <p>Once these steps are finished we’re in a position to create a new build:</p>
 <div class="codehilite"><pre><span></span><code>$ meteor-build-client ../build — path <span class="s2">&quot;&quot;</span>
 </code></pre></div>
-
 
 <h3 id="upload-to-ipfs">Upload to IPFS</h3>
 <p>When uploading content to IPFS we use a tool we have created that can be used if you are connected to DAppNode (this tool is currently experimental, and it is in continous improvement) or you could use the command <code>ipfs add -r build</code>.</p>
@@ -199,7 +196,6 @@ if (location.origin === 'file://') {</p>
 $ npm install -g @dappnode/ipfsuploader
 $ ipfsuploader build/
 </code></pre></div>
-
 
 <p>After executing the last command you will obtain a similar output (they will not be the same hashes) to this one:</p>
 <div class="codehilite"><pre><span></span><code><span class="n">Qmb5oxJWf5Zw1UnvewkRM6V5qVbxWcY5s59FvhtWhC6F4Fbuild</span><span class="o">/</span><span class="n">i18n</span>
@@ -212,7 +208,6 @@ $ ipfsuploader build/
 <span class="n">QmTRpmNWiAkYQnesiGZRVE9NwbEfqZLH4DnLmbCmjMGaLLbuild</span><span class="o">/</span><span class="n">sockjs</span>
 <span class="n">QmZQ3GzqXHCRM6uccP6TcZdPGPSyqJXyhwLETD2T2o8m73build</span>
 </code></pre></div>
-
 
 <p>If we use the hash associated with <code>build</code> and access it through this URL:</p>
 <p><a href="http://my.ipfs.dnp.dappnode.eth:8080/ipfs/QmZQ3GzqXHCRM6uccP6TcZdPGPSyqJXyhwLETD2T2o8m73">http://my.ipfs.dnp.dappnode.eth:8080/ipfs/QmZQ3GzqXHCRM6uccP6TcZdPGPSyqJXyhwLETD2T2o8m73</a></p>

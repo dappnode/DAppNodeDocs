@@ -7,7 +7,6 @@
 <p>Take into account that some VPN clients might send all traffic through the VPN, which is not very ideal if you have many people connected to your DAppNode, or only to send traffic which points to an ETH domain.</p>
 <p>DAppNode is not intended to manage all the traffic of the devices connected to it, only the ETH domains access requests.</p>
 <!-- prettier-ignore-start -->
-
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>When you download and install a VPN credentials file, only your ETH traffic will be going out through the VPN, the regular IP traffic will still be done with your regular IP. If you want to route all your Internet traffic through your DAppNode so you are behind your VPN, you should configure it in your VPN client settings by checking the Box "Send all traffic".</p>
@@ -24,7 +23,6 @@
 </ul>
 <p>Depending on your OS these are the instructions for installing our recommended OpenVPN clients.</p>
 <!-- prettier-ignore-start -->
-
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Please note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnp enabled, if not you will have to open them manually</p>
@@ -42,11 +40,9 @@
 <div class="codehilite"><pre><span></span><code><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">openvpn</span><span class="o">-</span><span class="n">gnome</span> <span class="n">openvpn</span>
 </code></pre></div>
 
-
 <p>Once the installation is complete, restart Network Manager by typing:</p>
 <div class="codehilite"><pre><span></span><code><span class="n">sudo</span> <span class="n">service</span> <span class="n">network</span><span class="o">-</span><span class="n">manager</span> <span class="k">restart</span>
 </code></pre></div>
-
 
 <p>Go to "Settings -&gt; Network" and click to the "+" button to add a VPN connection:</p>
 <p align="center">
@@ -54,9 +50,10 @@
 </p>
 
 <p>Select "Import from file..."</p>
-<p><p align="center">
+<p align="center">
     <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ubuntu4.png">
-</p></p>
+</p>
+
 <p>Browse the filesystem to select the downloaded file:</p>
 <p align="center">
     <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ubuntu3.png">

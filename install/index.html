@@ -2,7 +2,6 @@
 <p>DAppNode is an Operating System. Our team has taken Debian and super-powered it to be your gateway to access the decentralized web.</p>
 <p>While you can run DAppNode on a Virtual Private Server (VPS), we <strong>highly encourage you to run DAppNode on your own physical server</strong>. The intention of DAppNode is to create a strong network of decentralized servers. Running DAppNode on (politically) centralized virtual servers defeats the purpose 😉. That being said, we realize it may be easiest to get started and test the system on a VPS.</p>
 <!-- prettier-ignore-start -->
-
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Do not install DAppNode on your laptop. The ISO installation will erase all its content. DAppNode is intended to be installed on a dedicated machine.</p>
@@ -29,7 +28,6 @@
 <h3 id="burn-the-iso-in-a-usb-8-min">Burn the ISO in a USB (~8 min)</h3>
 <p>Burn the ISO to an USB stick. To do so we recommend using <a href="https://www.balena.io/etcher/">Etcher</a> for the OS with which you will prepare the USB to boot from your server and install DAppNode</p>
 <!-- prettier-ignore-start -->
-
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Please note that Etcher is intended to generate the ISO image in a bootable USB from your desktop device, and then install it in a server</p>
@@ -77,7 +75,6 @@
 
 <p>Now you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation by double click in it to open it with a compatible OpenVPN client. Here you have the <a href="https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide">recommended ones and connection instructions</a></p>
 <!-- prettier-ignore-start -->
-
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open and forward them manually</p>
@@ -87,7 +84,6 @@
 <p>Even if the OpenVPN files are served via HTTP, they are served encrypted, and then decrypted locally in your browser with the key provided in the link, so anyone snooping the file transfer cannot use it.</p>
 <h2 id="installation-via-installer-script">Installation via installer script</h2>
 <!-- prettier-ignore-start -->
-
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>This software is not meant to be run in a remote machine hosted by a remote provider. What DAppNode specifically wants to avoid is centralization of the machines that our digital lives rely on. That said, we understand that before buying a dedicated machine to run your DAppNode you might want to test it and see how easy it is to use.</p>
@@ -107,21 +103,17 @@ If you already have the dependencies installed or you want to install them on yo
 <div class="codehilite"><pre><span></span><code><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">prerequisites</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span>  <span class="o">|</span> <span class="n">sudo</span> <span class="n">bash</span>
 </code></pre></div>
 
-
 <h3 id="install-dappnode_1">Install DAppNode</h3>
 <p>Run the following command to install DAppNode:</p>
 <div class="codehilite"><pre><span></span><code><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">installer</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">bash</span>
 </code></pre></div>
 
-
 <p>If you have a static IP and want to set it up right from the connection, run the command below, which includes a variable for your static IP. The majority of users will not need to add that as dynamic IPs are the most common.</p>
 <div class="codehilite"><pre><span></span><code><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">installer</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">STATIC_IP</span><span class="o">=</span><span class="ss">&quot;your static IP&quot;</span> <span class="n">bash</span>
 </code></pre></div>
 
-
 <p>When the installation is done and is successful, be it you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation, just double click in it to open it with a compatible OpenVPN client. Here you have the <a href="https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide">recommended ones and connection instructions</a></p>
 <!-- prettier-ignore-start -->
-
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open them manually</p>
@@ -135,13 +127,11 @@ If you already have the dependencies installed or you want to install them on yo
 <div class="codehilite"><pre><span></span><code><span class="n">sudo</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">installer</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span> <span class="o">|</span> <span class="n">sudo</span> <span class="k">UPDATE</span><span class="o">=</span><span class="k">true</span> <span class="n">bash</span>
 </code></pre></div>
 
-
 <h3 id="how-to-uninstall-dappnode">How to uninstall DAppNode</h3>
 <p>This command will uninstall DAppNode components (but not docker et al.):
 ⚠️ BEWARE! It will also delete all volumes and stored data!⚠️</p>
 <div class="codehilite"><pre><span></span><code><span class="n">wget</span> <span class="o">-</span><span class="n">qO</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">uninstaller</span><span class="p">.</span><span class="n">dappnode</span><span class="p">.</span><span class="n">io</span>  <span class="o">|</span>  <span class="n">sudo</span> <span class="n">bash</span>
 </code></pre></div>
-
 
 <h2 id="enter-your-dappnode">Enter your DAppNode!</h2>
 <p>Connect to your DAppNode through VPN and navigate to <a href="http://my.dappnode">my.dappnode</a> to access DAppNode's admin page. DAppNode's functionality will be limited until the Ethereum mainnet chain is synced.</p>
@@ -164,7 +154,6 @@ If you already have the dependencies installed or you want to install them on yo
 <p>The first time you access to it will ask you for your <code>Custom API address</code>, just fill the field with this address and you will be connected to your IPFS node, this is the input you have to enter in the field <code>Is your API in a port other than 5001?</code></p>
 <div class="codehilite"><pre><span></span><code><span class="o">/</span><span class="n">dns4</span><span class="o">/</span><span class="n">ipfs</span><span class="p">.</span><span class="n">dappnode</span><span class="o">/</span><span class="n">tcp</span><span class="o">/</span><span class="mi">5001</span><span class="o">/</span><span class="n">http</span>
 </code></pre></div>
-
 
 <h3 id="you-can-have-a-look-to-our-user-guide-httpsdocsdappnodeio"><strong>You can have a look to our user guide <a href="https://docs.dappnode.io">https://docs.dappnode.io</a></strong></h3>
 <hr />

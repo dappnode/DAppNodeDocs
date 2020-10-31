@@ -77,7 +77,6 @@
 <span class="p">}</span>
 </code></pre></div>
 
-
 <h2 id="properties-reference">Properties reference</h2>
 <table>
 <thead>
@@ -230,7 +229,6 @@
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;ipfs.dnp.dappnode.eth&quot;</span>
 </code></pre></div>
 
-
 <h3 id="version">version</h3>
 <p>DAppNode Package semantic version (semver).</p>
 <ul>
@@ -241,7 +239,6 @@
 <div class="codehilite"><pre><span></span><code><span class="o">^</span><span class="p">((([</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span><span class="o">+</span><span class="p">).([</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span><span class="o">+</span><span class="p">).([</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span><span class="o">+</span><span class="p">)))</span><span class="err">$</span>
 </code></pre></div>
 
-
 <ul>
 <li>test example:
   <a href="https://regexr.com/?expression=%5E(((%5B0-9%5D%2B).(%5B0-9%5D%2B).(%5B0-9%5D%2B)))%24&amp;text=0.2.0">0.2.0</a></li>
@@ -249,7 +246,6 @@
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;0.2.0&quot;</span>
 </code></pre></div>
-
 
 <h3 id="upstreamversion">upstreamVersion</h3>
 <p>For DAppNode Packages that only wrap existing software (i.e. Bitcoin node, Ethereum node), the underlying software
@@ -262,10 +258,8 @@ version can be specified here. It will be shown in the admin UI alongside the fi
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;2.6.0-beta&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;any-text&quot;</span>
 </code></pre></div>
-
 
 <h3 id="shortdescription">shortDescription</h3>
 <p>Short DAppNode Package description, 6-8 words sentence briefly describing the purpose of this DAppNode Package. The
@@ -279,7 +273,6 @@ rendered on the DAppNode Package store view.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;Distributed file system for storing and accessing data.&quot;</span>
 </code></pre></div>
 
-
 <h3 id="description">description</h3>
 <p>DAppNode Package description. Markdown and links are allowed and ecouraged to give users the option to read more
 information about this DAppNode Package.</p>
@@ -290,7 +283,6 @@ information about this DAppNode Package.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;Welcome! IPFS is a distributed system for storing and accessing files, websites, applications, and data. If you’re new to IPFS, check our [introductory page](https://ipfs.io/#why) for an easy overview. \n\nWith this node you can upload and download files from IPFS using it own fancy web console at [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui). Other DAppNode Packages and external applications can use its API at the endpoint `http://ipfs.dappnode:5001/api`. Go to the [IPFS HTTP API full reference](https://docs.ipfs.io/reference/api/http/) to check all the features of the API.&quot;</span>
 </code></pre></div>
-
 
 <h3 id="avatar">avatar</h3>
 <p>IPFS / BZZ hash of the Avatar of this DAppNode Package. Must be a 300 x 300px transparent PNG. It is strongly
@@ -304,7 +296,6 @@ encouraged that you optimize the .png before uploading it to minimize its size.<
 <div class="codehilite"><pre><span></span><code><span class="o">^/</span><span class="p">(</span><span class="n">ipfs</span><span class="o">|</span><span class="n">bzz</span><span class="p">)</span><span class="o">/</span><span class="err">\</span><span class="n">w</span><span class="o">+</span><span class="err">$</span>
 </code></pre></div>
 
-
 <ul>
 <li>test example:
   <a href="https://regexr.com/?expression=%5E%2F(ipfs%7Cbzz)%2F%5Cw%2B%24&amp;text=%2Fipfs%2FQmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8">/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8</a></li>
@@ -312,7 +303,6 @@ encouraged that you optimize the .png before uploading it to minimize its size.<
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8&quot;</span>
 </code></pre></div>
-
 
 <h3 id="type">type</h3>
 <p>Type of this DAppNode Package. It is used to trigger some special features such as core functionality.</p>
@@ -348,10 +338,8 @@ encouraged that you optimize the .png before uploading it to minimize its size.<
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;service&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;dncore&quot;</span>
 </code></pre></div>
-
 
 <h3 id="chain">chain</h3>
 <p>Indicate that this DAppNode Package is a blockchain node so the admin UI shows its syncing status</p>
@@ -386,14 +374,11 @@ encouraged that you optimize the .png before uploading it to minimize its size.<
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;ethereum&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;bitcoin&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;monero&quot;</span>
 </code></pre></div>
-
 
 <h3 id="mainservice">mainService</h3>
 <p>For multi-service packages, indicate which service is the main one. The root ENS domain of this package will be mapped
@@ -406,14 +391,11 @@ to this service IP.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;webserver&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;backend&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;service1&quot;</span>
 </code></pre></div>
-
 
 <h3 id="dependencies">dependencies</h3>
 <p>DAppNode Package dependencies. Must be an object where the keys are the DAppNode Package's ENS. The values must be a
@@ -446,13 +428,11 @@ semantic range, i.e. <code>'0.2.0'</code>, <code>'^0.2.1'</code>, <code>'*'</cod
 <span class="p">}</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="p">{</span>
   <span class="nt">&quot;only-for-dev-1.dappnode.eth&quot;</span><span class="p">:</span> <span class="s2">&quot;/ipfs/QmYjtig7VJQ6XsnUjqqJvj7QaMcCAwtrgNdahSiFofrE7o&quot;</span><span class="p">,</span>
   <span class="nt">&quot;only-for-dev-2.dappnode.eth&quot;</span><span class="p">:</span> <span class="s2">&quot;/ipfs/zdj7WWeQ43G6JJvLWQWZpyHuAMq6uYWRjkBXFad11vE2LHhQ7&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 
 <h3 id="requirements">requirements</h3>
 <p>Specify requirements to be met before allowing users to install this DAppNode Package.</p>
@@ -486,7 +466,6 @@ semantic range, i.e. <code>'0.2.0'</code>, <code>'^0.2.1'</code>, <code>'*'</cod
 <div class="codehilite"><pre><span></span><code><span class="o">^</span><span class="p">((([</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span><span class="o">+</span><span class="p">).([</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span><span class="o">+</span><span class="p">).([</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span><span class="o">+</span><span class="p">)))</span><span class="err">$</span>
 </code></pre></div>
 
-
 <ul>
 <li>test example:
   <a href="https://regexr.com/?expression=%5E(((%5B0-9%5D%2B).(%5B0-9%5D%2B).(%5B0-9%5D%2B)))%24&amp;text=0.2.0">0.2.0</a></li>
@@ -494,7 +473,6 @@ semantic range, i.e. <code>'0.2.0'</code>, <code>'^0.2.1'</code>, <code>'*'</cod
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;0.2.0&quot;</span>
 </code></pre></div>
-
 
 <h3 id="architectures">architectures</h3>
 <p>Build and distribute this package in multiple architectures using
@@ -526,7 +504,6 @@ semantic range, i.e. <code>'0.2.0'</code>, <code>'^0.2.1'</code>, <code>'*'</cod
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;linux/amd64&quot;</span><span class="p">,</span> <span class="s2">&quot;linux/arm64&quot;</span><span class="p">]</span>
 </code></pre></div>
-
 
 <h3 id="backup">backup</h3>
 <p>Allows users to download and restore a backup of key files of this package. If this property is non-empty array, a new
@@ -571,14 +548,11 @@ keys. <strong>Note:</strong> it is recommended to only backup lightweight files 
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;keystore&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;config&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;keys&quot;</span>
 </code></pre></div>
-
 
 <h4 id="path">path</h4>
 <p>Path to the file or directory to backup. It <strong>MUST</strong> be an absolute path (do not use the <code>~</code> character) for the backup
@@ -592,10 +566,8 @@ tool to work correctly.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;/root/.raiden/secret/keystore&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;/usr/src/app/config.json&quot;</span>
 </code></pre></div>
-
 
 <h3 id="changelog">changelog</h3>
 <p>Description of relevant changes of this specific version. Supports markdown and links.</p>
@@ -606,7 +578,6 @@ tool to work correctly.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;Brief summary of the most relevant changes that the user must known before installing&quot;</span>
 </code></pre></div>
-
 
 <h3 id="warnings">warnings</h3>
 <p>Very relevant information that MUST be shown to the user BEFORE executing a specific action in the DAppNode Package's
@@ -656,7 +627,6 @@ lifecycle.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;You must set the PASSWORD ENV before installing the DAppNode Package in order for the setup to work correctly.&quot;</span>
 </code></pre></div>
 
-
 <h4 id="onupdate">onUpdate</h4>
 <p>Will be shown before updating the DAppNode Package, not in the first installation.</p>
 <ul>
@@ -666,7 +636,6 @@ lifecycle.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;Your VPN connection will be lost when the VPN finalizes updating. Leave 1-2 minutes after executing the update and then reconnect and refresh this site.&quot;</span>
 </code></pre></div>
-
 
 <h4 id="onreset">onReset</h4>
 <p>Will be shown before resetting the DAppNode Package.</p>
@@ -678,7 +647,6 @@ lifecycle.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;You MUST properly close your open channels before resetting this DAppNode Package or you may lose your funds.&quot;</span>
 </code></pre></div>
 
-
 <h4 id="onremove">onRemove</h4>
 <p>Will be shown before removing the DAppNode Package.</p>
 <ul>
@@ -688,7 +656,6 @@ lifecycle.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;You MUST properly close your open channels before removing this DAppNode Package or you may lose your funds.&quot;</span>
 </code></pre></div>
-
 
 <h3 id="updatealerts">updateAlerts</h3>
 <p>Alerts targeted to a specific update jump.</p>
@@ -738,10 +705,8 @@ lifecycle.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;0.1.x&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;^0.2.0&quot;</span>
 </code></pre></div>
-
 
 <h4 id="to">to</h4>
 <p>Semver range, show this message when a user updates this DAppNode Package TO a version that satisfies this range.</p>
@@ -755,14 +720,11 @@ lifecycle.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;0.1.x&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;^0.2.0&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;*&quot;</span>
 </code></pre></div>
-
 
 <h4 id="message">message</h4>
 <p>Alert message to be shown when <code>from</code> and <code>to</code> ranges are satisfied.</p>
@@ -774,7 +736,6 @@ lifecycle.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;Major update to OpenVPN: This update breaks compatibility with the last VPN version. Please read the migration guide: https://migration020.dappnode.io&quot;</span>
 </code></pre></div>
-
 
 <p>Specific update jump alert.</p>
 <h3 id="disclaimer">disclaimer</h3>
@@ -808,7 +769,6 @@ lifecycle.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;This software is experimental, presented “as is” and inherently carries risks.&quot;</span>
 </code></pre></div>
-
 
 <h3 id="style">style</h3>
 <p>Graphic information to control the appearance of DAppNode Package related items in the admin UI.</p>
@@ -853,10 +813,8 @@ lifecycle.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;linear-gradient(to right, #323131, #395353)&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;black&quot;</span>
 </code></pre></div>
-
 
 <h4 id="featuredcolor">featuredColor</h4>
 <p>CSS color property to be applied to the DAppNode Package card in the DAppNode Package store if featured. Go to the
@@ -869,10 +827,8 @@ lifecycle.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;white&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;#fff&quot;</span>
 </code></pre></div>
-
 
 <h4 id="featuredavatarfilter">featuredAvatarFilter</h4>
 <p>CSS filter property to be applied to <code>&lt;img&gt;</code> component (avatar) of the DAppNode Package card in the DAppNode Package
@@ -886,10 +842,8 @@ valid values.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;invert(1)&quot;</span>
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;grayscale(80%);&quot;</span>
 </code></pre></div>
-
 
 <h3 id="author">author</h3>
 <p>Main author of this DAppNode Package. Must follow the structure <code>${name} &lt;${email}&gt; (${githubUserLink})</code>.</p>
@@ -901,7 +855,6 @@ valid values.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;DAppNode Association &lt;admin@dappnode.io&gt; (https://github.com/dappnode)&quot;</span>
 </code></pre></div>
-
 
 <h3 id="contributors">contributors</h3>
 <p>Contributing authors of this DAppNode Package.</p>
@@ -920,7 +873,6 @@ valid values.</p>
   <span class="s2">&quot;Michael Second &lt;developerHanlder@project.io&gt; (https://github.com/developerHanlder)&quot;</span>
 <span class="p">]</span>
 </code></pre></div>
-
 
 <h3 id="categories">categories</h3>
 <p>Categories to organize and group DAppNode Packages in the DAppNode Package store. Only one or two categories maximum
@@ -977,7 +929,6 @@ please open an issue requesting a new category https://github.com/dappnode/dnp-m
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;Developer tools&quot;</span><span class="p">,</span> <span class="s2">&quot;Blockchain&quot;</span><span class="p">]</span>
 </code></pre></div>
-
 
 <h3 id="keywords">keywords</h3>
 <p>Keywords, relevant and descriptive of this DAppNode Package. They will be shown in the admin UI DAppNode Package store.</p>
@@ -1039,7 +990,6 @@ shown as well but with their plain name instead of an icon.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;https://github.com/dappnode/DNP_IPFS#readme&quot;</span>
 </code></pre></div>
 
-
 <h4 id="ui">ui</h4>
 <p>Url to this DNP's DAppNode local UI.</p>
 <ul>
@@ -1049,7 +999,6 @@ shown as well but with their plain name instead of an icon.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;http://ipfs.dappnode:5001/webui&quot;</span>
 </code></pre></div>
-
 
 <h4 id="api">api</h4>
 <p>Url to this DNP's DAppNode local HTTP API endpoint.</p>
@@ -1061,7 +1010,6 @@ shown as well but with their plain name instead of an icon.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;http://ipfs.dappnode:5001/api/v0&quot;</span>
 </code></pre></div>
 
-
 <h4 id="gateway">gateway</h4>
 <p>Url to this DNP's DAppNode local gateway.</p>
 <ul>
@@ -1071,7 +1019,6 @@ shown as well but with their plain name instead of an icon.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;http://ipfs.dappnode:8080/ipfs&quot;</span>
 </code></pre></div>
-
 
 <h3 id="repository">repository</h3>
 <p>DAppNode Package's repository. Must be a publicly available url that can be handed directly to a VCS program.</p>
@@ -1115,7 +1062,6 @@ shown as well but with their plain name instead of an icon.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;git&quot;</span>
 </code></pre></div>
 
-
 <h4 id="url">url</h4>
 <ul>
 <li>is <strong>required</strong></li>
@@ -1126,7 +1072,6 @@ shown as well but with their plain name instead of an icon.</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;https://github.com/dappnode/DNP_IPFS.git&quot;</span>
 </code></pre></div>
 
-
 <h4 id="directory">directory</h4>
 <ul>
 <li>is optional</li>
@@ -1135,7 +1080,6 @@ shown as well but with their plain name instead of an icon.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;packages/react-dom&quot;</span>
 </code></pre></div>
-
 
 <h3 id="bugs">bugs</h3>
 <p>Url to your project’s issue tracker.</p>
@@ -1167,7 +1111,6 @@ shown as well but with their plain name instead of an icon.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span><code><span class="s2">&quot;https://github.com/dappnode/DNP_IPFS/issues&quot;</span>
 </code></pre></div>
-
 
 <h3 id="license">license</h3>
 <p>DAppNode Package's License.</p>

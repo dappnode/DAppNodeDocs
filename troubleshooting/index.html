@@ -36,11 +36,9 @@
 <div class="codehilite"><pre><span></span><code><span class="n">dappnode_get</span> <span class="n">dappnode_admin</span>
 </code></pre></div>
 
-
 <p>If you get a "command not found" message you can run</p>
 <div class="codehilite"><pre><span></span><code><span class="nv">docker</span> <span class="k">exec</span> <span class="o">-</span><span class="nv">ti</span> <span class="nv">DAppNodeCore</span><span class="o">-</span><span class="nv">vpn</span>.<span class="nv">dnp</span>.<span class="nv">dappnode</span>.<span class="nv">eth</span> <span class="nv">vpncli</span> <span class="nv">get</span> <span class="nv">dappnode_admin</span>
 </code></pre></div>
-
 
 <h3 id="i-cant-connect-with-another-device-to-my-dappnode">I can't connect with another device to my DAppNode</h3>
 <p>Only one device can access your DAppNode for each VPN credentials created; each device connected should have its own VPN configuration adding the desired devices in the Devices tab of your admin UI. You can add as many devices as you want! Be nice and provide all your friends and family access to the decentralized web, please!</p>
@@ -88,7 +86,6 @@
 </table>
 <p>However, if your router supports UPnP, do not worry about this, it will manage all the ports stuff for you.</p>
 <!-- prettier-ignore-start -->
-
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Note that SSH port (22) is only needed when you need ssh access to your server, and it's not a very good idea to let that port opened , consider restricting the access to your own IP or just open it when you need it and then close it</p>
