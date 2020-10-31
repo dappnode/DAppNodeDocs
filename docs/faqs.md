@@ -62,3 +62,30 @@ The first time you access to it will ask you for your “Custom API address”, 
 ## Is there any way to have a Web GUI for the Parity client?
 
 Since we updated from Parity 2.1.6 to newer versions, WEB GUI support has been deprecated by Parity, so at the moment the only way to interact with your node is through the command line. We are looking for solutions but it is not an easy issue.
+
+## Default USB keyboard connected to DAppNode is in QWERTY mode. How to change for AZERTY?
+
+ssh connect to your DappNode.
+Edit following files and add your local :
+
+```bash
+sudo vi /etc/default/locale
+```
+
+For instance for me : `LANG="fr_FR.UTF-8"`
+
+```bash
+sudo vi /etc/default/keyboard
+```
+
+For instance for me : `XKBLAYOUT="fr"`
+
+When you reboot you will this error. `Failed to start set console font and keymap.`
+
+You need to fix it with this command :
+
+```bash
+`sudo systemctl status console-setup.service
+```
+
+Reboot and your keyboard is in now AZERTY mode.
