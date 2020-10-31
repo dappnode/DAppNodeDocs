@@ -20,7 +20,7 @@ To add this functionality, create a file `setup-wizard.yml` in the root of your 
 ## Example
 
 ```yaml
-version: "2",
+version: "2"
 fields:
   - id: payoutAddress,
     target:
