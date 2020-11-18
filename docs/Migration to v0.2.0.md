@@ -123,11 +123,11 @@ ethforward.dnp.dappnode.eth:0.2.0
 
 #### I can't access the credentials OTP web link to download the .ovpn file
 
-For the credentials file to be correctly downloaded you need to have port 8090 TCP opened, please check that the following ports are opened in the router to which your server is connected
+For the credentials file to be correctly downloaded you need to have port 8092 TCP opened, please check that the following ports are opened in the router to which your server is connected
 
 | Service       | TCP   | UDP   |
 | ------------- | ----- | ----- |
-| VPN (OpenVPN) | 8090  | 1194  |
+| VPN (OpenVPN) | 8092  | 1194  |
 | Ethereum Node | 30303 | 30303 |
 | IPFS          | 4001  | 4002  |
 
