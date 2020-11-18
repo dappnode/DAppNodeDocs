@@ -8,7 +8,7 @@
 <p>To solve it you have to figure out if your router is doing NAT LOOPBACK and activate it if it is not the case . You can easily know it by opening the terminal and typing ping + DynDNS domain is given at the end of the installation as server address. If the ping is successful (100% packets are transmitted with no packet loss) your router is doing NAT LOOPBACK, if it is not solving you have to either enter the admin panel of your router and look for that option and activate it, or edit the server address in the VPN profile and substitute the domain given by the internal IP of the DAppNode server (usually starting with 192.168……..).</p>
 <p>This will allow you to connect from the same local network but not from outside, to connect to your DAppNode from outside your network you will need to download another VPN profile pointing to the DynDNS address (exactly as it is downloaded)</p>
 <h4 id="vpn-ports-closed">VPN ports closed</h4>
-<p>If your router is doing NAT LOOPBACK and you can't access your DAppNode it is very likely that the ports used to establish the VPN connection with the server are not available. To solve this you have to enter the router admin UI and open the 1194 UDP (used for establishing the VPN connection and 8090 TCP (used to get the credentials from the OTP link) ports.</p>
+<p>If your router is doing NAT LOOPBACK and you can't access your DAppNode it is very likely that the ports used to establish the VPN connection with the server are not available. To solve this you have to enter the router admin UI and open the 1194 UDP (used for establishing the VPN connection and 8092 TCP (used to get the credentials from the OTP link) ports.</p>
 <p>If you have NAT LOOPBACK activated and the VPN ports are opened it is very likely that an extension you have installed or any setup you have that affects DNS routing might be interfering in the connection, please deactivate any piece of your configuration that can have influence DNS solving.</p>
 <p>If you are still experiencing problems to connect from your mac / iPhone please ping us in our channels, we will be happy to help!.</p>
 <h3 id="windows-users">Windows users</h3>
@@ -30,7 +30,7 @@
 <p>The new VPN package has not finished the installation and it is not running yet, so you get old credentials again. Just wait a few minutes and connect again via SSH. Once the new VPN package is running you will get your brand new OpenVPN credentials.You can check that the migration has been correctly performed and that you are getting the new OpenVPN credentials by typing in the server terminal <code>docker ps</code> and checking that the installed core packages have the mention 0.2.0</p>
 <p><img alt="" src="https://i.imgur.com/BZYlAv2.png" /></p>
 <h3 id="i-cant-access-the-credentials-otp-web-link-to-download-the-ovpn-file">I can't access the credentials OTP web link to download the .ovpn file</h3>
-<p>For the credentials file to be correctly donwloaded you need to have port 8090 TCP opened, please check that that port is opened.</p>
+<p>For the credentials file to be correctly donwloaded you need to have port 8092 TCP opened, please check that that port is opened.</p>
 <h3 id="i-see-a-message-in-the-console-saying-that-admin-credentials-expired">I see a message in the console saying that admin credentials expired</h3>
 <p>Once a file with credentials is downloaded, and used for connecting once, the link expires after that first connection and you see that message. If for any reason you need to get new credentials, connect via ssh to the server and run the command</p>
 <div class="codehilite"><pre><span></span><code><span class="n">dappnode_get</span> <span class="n">dappnode_admin</span>
@@ -69,7 +69,7 @@
 <tbody>
 <tr>
 <td>VPN (OpenVPN)</td>
-<td>8090</td>
+<td>8092</td>
 <td>1194</td>
 </tr>
 <tr>
