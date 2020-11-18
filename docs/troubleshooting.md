@@ -18,7 +18,7 @@ This will allow you to connect from the same local network but not from outside,
 
 #### VPN ports closed
 
-If your router is doing NAT LOOPBACK and you can't access your DAppNode it is very likely that the ports used to establish the VPN connection with the server are not available. To solve this you have to enter the router admin UI and open the 1194 UDP (used for establishing the VPN connection and 8090 TCP (used to get the credentials from the OTP link) ports.
+If your router is doing NAT LOOPBACK and you can't access your DAppNode it is very likely that the ports used to establish the VPN connection with the server are not available. To solve this you have to enter the router admin UI and open the 1194 UDP (used for establishing the VPN connection and 8092 TCP (used to get the credentials from the OTP link) ports.
 
 If you have NAT LOOPBACK activated and the VPN ports are opened it is very likely that an extension you have installed or any setup you have that affects DNS routing might be interfering in the connection, please deactivate any piece of your configuration that can have influence DNS solving.
 
@@ -62,7 +62,7 @@ The new VPN package has not finished the installation and it is not running yet,
 
 ### I can't access the credentials OTP web link to download the .ovpn file
 
-For the credentials file to be correctly donwloaded you need to have port 8090 TCP opened, please check that that port is opened.
+For the credentials file to be correctly donwloaded you need to have port 8092 TCP opened, please check that that port is opened.
 
 ### I see a message in the console saying that admin credentials expired
 
@@ -113,7 +113,7 @@ Please find in this table the ports that need to be opened for the smooth functi
 
 | Service       | TCP   | UDP   |
 | ------------- | ----- | ----- |
-| VPN (OpenVPN) | 8090  | 1194  |
+| VPN (OpenVPN) | 8092  | 1194  |
 | Ethereum Node | 30303 | 30303 |
 | IPFS          | 4001  | 4002  |
 

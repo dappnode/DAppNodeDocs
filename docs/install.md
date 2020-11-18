@@ -91,7 +91,7 @@ Now you can connect to your DAppNode by downloading the .ovpn file that you will
 
 <!-- prettier-ignore-start -->
 !!! info
-    Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open and forward them manually
+    Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8092 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open and forward them manually
 <!-- prettier-ignore-end -->
 
 Even if the OpenVPN files are served via HTTP, they are served encrypted, and then decrypted locally in your browser with the key provided in the link, so anyone snooping the file transfer cannot use it.
@@ -139,7 +139,7 @@ When the installation is done and is successful, be it you can connect to your D
 
 <!-- prettier-ignore-start -->
 !!! info
-    Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8090 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open them manually
+    Note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8092 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnP enabled, if not you will have to open them manually
 <!-- prettier-ignore-end -->
 
 Please, after installation be aware that the ethereum blockchain will take some time to synchronize and you will not be able to perform most actions before that.
