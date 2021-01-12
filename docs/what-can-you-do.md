@@ -44,28 +44,27 @@ After a few hours of installing DAppNode you will have your own Ethereum fullnod
 You have available your node websocket in
 ws://my.ethchain.dnp.dappnode.eth:8546 or ws//fullnode.dappnode:8546 and RPC connection through http://my.ethchain.dnp.dappnode.eth:8545 or http://fullnode.dappnode:8545
 
-From version 0.2.7 Ethchain package allows the user to select the Ethereum client he wants to use as default of his DAppNode. 
+From version 0.2.7 Ethchain package allows the user to select the Ethereum client he wants to use as default of his DAppNode.
 
-The available clients are Parity, which is the  default until version 0.2.7,  and Geth, which is the client with which your full node will sync by default since v0.2.7.
+The available clients are Parity, which is the default until version 0.2.7, and Geth, which is the client with which your full node will sync by default since v0.2.7.
 
-You can easily switch between them in the ethchain package screen, but please note that volumes where the chains are stored are different,  so first time you switch from one to another the chain will have to sync. 
+You can easily switch between them in the ethchain package screen, but please note that volumes where the chains are stored are different, so first time you switch from one to another the chain will have to sync.
 
-To switch the client just go to “ Packages / System Packages / Ethchain / Choose client”  and select your preferred option
+To switch the client just go to “ Packages / System Packages / Ethchain / Choose client” and select your preferred option
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/chooseclient.jpg?raw=true">
 </p>
 
-When you switch clients you can choose between removing the chain volume of the client you are moving from, or keep it so you can easily switch back again without the need of syncing the whole chain again. 
+When you switch clients you can choose between removing the chain volume of the client you are moving from, or keep it so you can easily switch back again without the need of syncing the whole chain again.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/changingclient.jpg?raw=true">
 </p>
 
+You can still set parameters for both chains in the extra opt fields of each client. Use Extra Opts to define variables to be applied in Parity and Extra opts GETH to do the same with the official EF client, and hit "Update environment variables"
 
-You can still set parameters for both chains in the extra opt fields of each client. Use Extra Opts to define variables to be  applied in Parity and Extra opts GETH to do the same with the official EF client, and hit "Update environment variables"
-
- More info on env vars for Parity client [here](https://wiki.parity.io/Configuring-Parity-Ethereum) and for Geth [here](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options)
+More info on env vars for Parity client [here](https://wiki.parity.io/Configuring-Parity-Ethereum) and for Geth [here](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options)
 
  <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/extraoptsgeth.jpg?raw=true">
@@ -85,7 +84,13 @@ First, you must be connected to your DAppNode’s VPN:
 
 2. Click Custom RPC.
 
-3. “New RPC URL”: http://my.ethchain.dnp.dappnode.eth:8545 or http://fullnode.dappnode:8545
+3. “New RPC URL”:
+
+   3.1 Running a Full Node? http://fullnode.dappnode:8545
+
+   3.2 Running Light Client? http://geth.dappnode:8545
+
+   3.3 Running Remote? this means that you do not run you own node. You could use infura instead.
 
 4. Now you should be connected to “Private Network” and that’s it!
 
@@ -111,12 +116,11 @@ We have updated our IPFS package (v.0.1.6), and one of the features is to provid
     <img width="1000"src="https://github.com/Shelpin/DAppNode/raw/master/doc/ipfsinterface.jpg">
 </p>
 
-If you want to automatically peer-connect two IPFS nodes, go to Connect with peers and send the  link to your peer. Use this resource to mitigate slow IPFS propagation
+If you want to automatically peer-connect two IPFS nodes, go to Connect with peers and send the link to your peer. Use this resource to mitigate slow IPFS propagation
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/connectwithpeers.png?raw=true">
 </p>
-
 
 If you want to know a bit more on IPFS here you have a [useful link](https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937)
 
