@@ -88,12 +88,11 @@ If you are not on a 4 GB (ideally 8 GB) RAM configuration/ or your HD has not a 
 
 Using Parity, it is also possible that the initial sync gets stuck at a given snapshot of the first sync, if this happens try removing ETHCHAIN volume and let the sync start again. To do so you have to enter in Packages/System packages / Ethchain / Controls and hit remove volume, the existing synced snapshots will be erased and the sync will start again.
 
-When using Parity, it might happen that when the snapshots finish syncin you are still very far away the current block height so it will take ages to finish the sync block by block. You can try to set up the Parity flag ```--warp-barrier (current block height -30.000 blocks)``` so the sync takes a higher number of snapshots what will decrease the number of spare blocks left to be synced individually.  Have a look at this example. 
+When using Parity, it might happen that when the snapshots finish syncin you are still very far away the current block height so it will take ages to finish the sync block by block. You can try to set up the Parity flag `--warp-barrier (current block height -30.000 blocks)` so the sync takes a higher number of snapshots what will decrease the number of spare blocks left to be synced individually. Have a look at this example.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/warpbarrier.jpg?raw=true">
 </p>
-
 
 ### I can't access the ADMIN UI
 
@@ -132,20 +131,16 @@ Execute this command in your DAppNode terminal, this will update the core packag
 
 ### I can't install a package using its ENS or IPFS hash
 
-If the package has been uploaded to IPFS but it still does not have enough propagation in the network,it might be hard to install that package unless you are connected to an IPFS node that that allows direct or routed access to that package. As you can automatically peer-connect two IPFS nodes hosted in a DAppNode you can ask a DAppNode peer that already has installed hat package to connect your nodes. To do so, in the IPFS packages screen Go to Connect with peers and send the link to your peer. 
-
+If the package has been uploaded to IPFS but it still does not have enough propagation in the network,it might be hard to install that package unless you are connected to an IPFS node that that allows direct or routed access to that package. As you can automatically peer-connect two IPFS nodes hosted in a DAppNode you can ask a DAppNode peer that already has installed hat package to connect your nodes. To do so, in the IPFS packages screen Go to Connect with peers and send the link to your peer.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/connectwithpeers.png?raw=true">
 </p>
 
-### I need to uninstall my DAppNode 
+### I need to uninstall my DAppNode
 
 If for whichever strange reason you have to uninstall your DAppNode server you can do so by typing the following command in the DAppNode server console
 
-```wget -qO - https://uninstaller.dappnode.io  |  sudo bash```
+`wget -qO - https://uninstaller.dappnode.io | sudo bash`
 
 This command will uninstall DAppNode components (but not docker et al.): ⚠️ BEWARE! It will also delete all volumes and stored data!⚠️
-
-
-
