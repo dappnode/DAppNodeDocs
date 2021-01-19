@@ -1,5 +1,65 @@
 # Troubleshooting
 
+## Recover UI password
+
+The first time you access your DAppnode using the VPN, appear the next image:
+
+![Signin](./images/sign_in_image.png)
+
+Once you fill the fields and press the register button, DAppNode provides you with a recovery code. If you forget te DAppNode's Password you will be able to access using this token.
+
+![Recovery Token](./images/recovery_token.png.png)
+
+You should save your token in a secure place like a password manager, paper, etc. In this case, we would save this:
+
+~~~
+4LMB9w3l50Yljwr6bIgQ
+~~~
+
+### How to access to my DAppNode using the recovery token
+
+Firstly, we have to go to the login page of our DAppNode:
+
+![login](./images/login.png "")
+
+We should select the option "Forgot password?". It will appear a field where you can reset your password using the recovery token. In this example, we would use the token <code>4LMB9w3l50Yljwr6bIgQ</code>. You have to use your recovery token.
+
+![reset password](reset_password_with_recovery_token.png "")
+
+After confirming the recovery token, you can define an admin user in DAppNode and his password in the same way you did the first time you connect.
+
+![reset password](./images/sign_in_image.png "")
+
+Remember using a password with the next properties:
+
+* Minimum 8 characters
+* At least one Cap letter
+* At least one number
+
+Once you filled the field and press the register button, dappnode will provide a recovery token.
+
+![reset password](./images/recovery_token.png "")
+
+We write down and save that token and we accept we have copied our recovery token. We log in with our new credentials and we have access to our DAppNode.
+
+### How to recover your recovery token and recover admin access
+
+In case we have lost bot the password and the recovery token, we need to access our DAppNode: SSH into the DAppNode host or plug a keyboard.
+
+Once we are in our DAppNodeMachine, we type the next command which shows us the recovery token:
+
+~~~
+cat /usr/src/dappnode/DNCORE/admin-recovery-token.txt ; echo
+~~~
+The command does the next:
+
+* The admin-recover-token.txt is where the token is saved.
+* The <code>; echo</code> is used to make easier the read of the token.
+
+After inserting the command we obtain the recovery token we have to use to reset our password. 
+On the above section, How to access to my DAppNode using the recovery token you can reset your password with this recovery token.
+
+
 ## VPN Connection issues
 
 The VPN is one of the pillars of the whole DAppNode functioning, you will need a somehow decent and stable internet connection to be able to connect to the server.
