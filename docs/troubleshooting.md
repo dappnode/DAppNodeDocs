@@ -8,7 +8,7 @@ The first time you access your DAppnode using the VPN, appear the next image:
 
 Once you fill the fields and press the register button, DAppNode provides you with a recovery code. If you forget te DAppNode's Password you will be able to access using this token.
 
-![Recovery Token](./images/recovery_token.png.png)
+![Recovery Token](./images/recovery_token.png)
 
 You should save your token in a secure place like a password manager, paper, etc. In this case, we would save this:
 
