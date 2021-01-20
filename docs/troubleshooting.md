@@ -44,7 +44,7 @@ We write down and save that token and we accept we have copied our recovery toke
 
 ### How to recover your recovery token and recover admin access
 
-In case we have lost bot the password and the recovery token, we need to access our DAppNode: SSH into the DAppNode host or plug a keyboard.
+In case we have lost both the password and the recovery token, we need to access our DAppNode: SSH into the DAppNode host or plug a keyboard.
 
 Once we are in our DAppNodeMachine, we type the next command which shows us the recovery token:
 
@@ -206,6 +206,5 @@ If for whichever strange reason you have to uninstall your DAppNode server you c
 ```wget -qO - https://uninstaller.dappnode.io  |  sudo bash```
 
 This command will uninstall DAppNode components (but not docker et al.): ⚠️ BEWARE! It will also delete all volumes and stored data!⚠️
-
 
 
