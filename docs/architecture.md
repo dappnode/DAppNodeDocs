@@ -1,5 +1,7 @@
 # Architecture
 
+**testPABLO**
+
 DAppNode is a collection of interdependent docker containerized packages (referred here as core DNPs). DAppNode's core DNPs are:
 
 - DNP_BIND
