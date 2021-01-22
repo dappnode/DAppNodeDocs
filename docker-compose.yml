@@ -1,0 +1,11 @@
+version: "3.4"
+services:
+  mkdocs:
+    build: ./build
+    volumes:
+      - "./docs:/DAppNodeDocs/docs"
+    ports:
+      - "8080:8080"
+    restart: always
+volumes:
+  mkdocs_data: {}
