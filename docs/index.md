@@ -22,3 +22,9 @@ We highly encourage you to consider developing a DAppNode Package (DNP) so your 
 - [DAppNode Package Manifest Reference](./manifest-reference)
 - [DAppNode Package Setup Wizard Reference](./setup-wizard-reference)
 - [Contributing](./contributing)
+
+During development:
+
+1. `docker-compose build`
+2. `docker-compose up`
+3. Changes replicated in docker container. Exposed at http://0.0.0.0:8080
