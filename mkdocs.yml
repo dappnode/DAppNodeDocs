@@ -22,6 +22,10 @@ theme:
   name: "material"
   logo: "images/logo_with_name.png"
   favicon: "images/favicon.ico"
+  palette:
+    scheme: default
+    primary: teal
+    accent: teal
 markdown_extensions:
   - codehilite
   - admonition
