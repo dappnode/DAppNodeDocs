@@ -3,21 +3,3 @@
   display: block;
   width: 140px;
 }
-.md-header{
-  background-color: #2fbcb2;
-}
-
-@media only screen and (max-width: 76.1875em){
-
-  html .md-nav--primary .md-nav__title {
-    position: relative;
-    height: 5.6rem;
-    padding: 3rem .8rem .2rem;
-    background-color: rgba(47, 188, 178, 1);
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    line-height: 2.4rem;
-    white-space: nowrap;
-    cursor: pointer;
-  }
-}
