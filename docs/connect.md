@@ -274,4 +274,8 @@ Please immediately change the name of the WIFI and the password by setting up th
 
 Once you have entered the admin UI you can download your VPN credentials and create new ones under the "devices" tab
 
-Now it is time…
+## Via SSH (Advanced)
+
+Default credentials for SSH access are:
+U: `dappnode`
+P: `dappnode.s0`
