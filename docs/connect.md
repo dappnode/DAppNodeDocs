@@ -277,5 +277,13 @@ Once you have entered the admin UI you can download your VPN credentials and cre
 ## Via SSH (Advanced)
 
 Default credentials for SSH access are:
+
 U: `dappnode`
+
+P: `dappnode.s0`
+
+## Phisically by plugging a monitor and keyboard (Advanced)
+
+Your DAppNode will ask you for the password to log in. The default password is
+
 P: `dappnode.s0`
