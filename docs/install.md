@@ -148,18 +148,63 @@ Please, after installation be aware that the ethereum blockchain will take some 
 
 If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.
 
-⚠️ Please note that volumes are not deleted, but any EXTRA_OPTS set by the user in the packages config **must be set again** after using this script to restore the system ⚠️  
+⚠️ Please note that volumes are not deleted, but any EXTRA_OPTS set by the user in the packages config **must be set again** after using this script to restore the system ⚠️
 
 ```
 sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash
 ```
+
 ### How to uninstall DAppNode
 
 This command will uninstall DAppNode components (but not docker et al.):
 ⚠️ BEWARE! It will also delete all volumes and stored data!⚠️
+
 ```
 wget -qO - https://uninstaller.dappnode.io  |  sudo bash
 ```
+
+## DAppNodeARM Installation Guide
+
+## Minimum requirements
+
+- Raspberry model: 4, 3B+
+- Raspberry RAM: 8GB, 4GB
+- Micro SD free space: 8 or more
+- Connectivity to the Rpi
+
+## Installation of the ISO image
+
+1. First download the file `DAppNodeARM.img.gz/zip` from [here](https://github.com/dappnode/DAppNode/releases/tag/v0.2.39)
+2. Unzip the file.
+3. Write the image into the microSD. To do that, there are different tools such as Raspberry [pi imager](https://www.raspberrypi.org/downloads/) and Rufus.
+4. Insert the microSD into the Rpi.
+5. Switch on the Rpi and wait for the startup process.
+6. Login with:
+
+- **user**: _dappnode_
+- **password**: _dappnodepi_
+
+7. DAppnode installation.
+
+## DAppNode Installation
+
+1. Before proceeding with the DAppNode installation you must have internet connection, the best option is to have a wired internet connection. If not possible follow this [tutorial](https://raspberrypihq.com/how-to-connect-your-raspberry-pi-to-wifi/#:~:text=To%20tell%20the%20Raspberry%20Pi,conf.&text=Remember%20to%20replace%20this%20with,Ctrl%2BX%20followed%20by%20Y.) to setup your connection from the command line.
+2. Once the ISO has been successfully installed, its time to install DAppNode. In the terminal run the command: `sudo dappnodepi-install`
+3. **Congratulations!** You are done, your DAppNode is installed in your Rpi.
+
+## Helpful tips:
+
+In order to interact with the Rpi in some way there are 2 main options:
+
+1. Using the Rpi via ssh: first, you will have to set some requirements, following this [tutorial](https://magpi.raspberrypi.org/articles/ssh-remote-control-raspberry-pi). As well as setting the Rpi IP static, as is shown in the following [tutorial](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/).
+2. Using the RPpi via HDMI: you will have to have an extra mouse and keyboard, as well an HDMI and a monitor.
+
+Few tips regarding using external SSD on your RPI4:
+
+1. Check out our guide on mounting and using external disk with docker [here](https://github.com/dappnode/DAppNode/wiki/Mount-docker-data-on-a-different-SSD).
+2. You may run into issues with some disk enclosures so be sure to check out [this](https://www.raspberrypi.org/forums/viewtopic.php?t=245931).
+
+### **Questions?** Reach out to us in the [Discourse Forum](https://discourse.dappnode.io/).
 
 ## Enter your DAppNode!
 
