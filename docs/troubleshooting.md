@@ -12,33 +12,33 @@ Once you fill the fields and press the register button, DAppNode provides you wi
 
 You should save your token in a secure place like a password manager, paper, etc. In this case, we would save this:
 
-~~~
+```
 4LMB9w3l50Yljwr6bIgQ
-~~~
+```
 
 ### How to access to my DAppNode using the recovery token
 
 Firstly, we have to go to the login page of our DAppNode:
 
-![login](./images/login.png "")
+![login](./images/login.png)
 
 We should select the option "Forgot password?". It will appear a field where you can reset your password using the recovery token. In this example, we would use the token <code>4LMB9w3l50Yljwr6bIgQ</code>. You have to use your recovery token.
 
-![reset password with the recovery token](./images/reset_password_with_recovery_token.png "")
+![reset password with the recovery token](./images/reset_password_with_recovery_token.png)
 
 After confirming the recovery token, you can define an admin user in DAppNode and his password in the same way you did the first time you connect.
 
-![Defining the new password](./images/sign_in_image.png "")
+![Defining the new password](./images/sign_in_image.png)
 
 Remember using a password with the next properties:
 
-* Minimum 8 characters
-* At least one Cap letter
-* At least one number
+- Minimum 8 characters
+- At least one Cap letter
+- At least one number
 
 Once you filled the field and press the register button, dappnode will provide a recovery token.
 
-![Obtaining your recovery token](./images/recovery_token.png "")
+![Obtaining your recovery token](./images/recovery_token.png)
 
 We write down and save that token and we accept we have copied our recovery token. We log in with our new credentials and we have access to our DAppNode.
 
@@ -48,17 +48,17 @@ In case we have lost both the password and the recovery token, we need to access
 
 Once we are in our DAppNodeMachine, we type the next command which shows us the recovery token:
 
-~~~
+```
 cat /usr/src/dappnode/DNCORE/admin-recovery-token.txt ; echo
-~~~
+```
+
 The command does the next:
 
-* The admin-recover-token.txt is where the token is saved.
-* The <code>; echo</code> is used to make easier the read of the token.
+- The admin-recover-token.txt is where the token is saved.
+- The <code>; echo</code> is used to make easier the read of the token.
 
-After inserting the command we obtain the recovery token we have to use to reset our password. 
+After inserting the command we obtain the recovery token we have to use to reset our password.
 On the above section, How to access to my DAppNode using the recovery token you can reset your password with this recovery token.
-
 
 ## VPN Connection issues
 
@@ -148,12 +148,11 @@ If you are not on a 4 GB (ideally 8 GB) RAM configuration/ or your HD has not a 
 
 Using Parity, it is also possible that the initial sync gets stuck at a given snapshot of the first sync, if this happens try removing ETHCHAIN volume and let the sync start again. To do so you have to enter in Packages/System packages / Ethchain / Controls and hit remove volume, the existing synced snapshots will be erased and the sync will start again.
 
-When using Parity, it might happen that when the snapshots finish syncin you are still very far away the current block height so it will take ages to finish the sync block by block. You can try to set up the Parity flag ```--warp-barrier (current block height -30.000 blocks)``` so the sync takes a higher number of snapshots what will decrease the number of spare blocks left to be synced individually.  Have a look at this example. 
+When using Parity, it might happen that when the snapshots finish syncin you are still very far away the current block height so it will take ages to finish the sync block by block. You can try to set up the Parity flag `--warp-barrier (current block height -30.000 blocks)` so the sync takes a higher number of snapshots what will decrease the number of spare blocks left to be synced individually. Have a look at this example.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/warpbarrier.jpg?raw=true">
 </p>
-
 
 ### I can't access the ADMIN UI
 
@@ -192,19 +191,35 @@ Execute this command in your DAppNode terminal, this will update the core packag
 
 ### I can't install a package using its ENS or IPFS hash
 
-If the package has been uploaded to IPFS but it still does not have enough propagation in the network,it might be hard to install that package unless you are connected to an IPFS node that that allows direct or routed access to that package. As you can automatically peer-connect two IPFS nodes hosted in a DAppNode you can ask a DAppNode peer that already has installed hat package to connect your nodes. To do so, in the IPFS packages screen Go to Connect with peers and send the link to your peer. 
+If the package has been uploaded to IPFS but it still does not have enough propagation in the network,it might be hard to install that package unless you are connected to an IPFS node that that allows direct or routed access to that package. As you can automatically peer-connect two IPFS nodes hosted in a DAppNode you can ask a DAppNode peer that already has installed hat package to connect your nodes. To do so, in the IPFS packages screen Go to Connect with peers and send the link to your peer.
 
+## My DAppNode does not detect an external SSD
+
+DAppNode can automatically detect and mount external SSD drives connected via USB, thanks to a fork of a utility called [usbmount](https://github.com/dappnode/usbmount). If you plugged your drive and you cannot see it in the list of available mountpoints, check the following points.
+
+---
+
+### Partition format
+
+The most likely issue is you used a drive which is not formatted with a format natively compatible with DAppNode OS. We don't support partitions in NTFS (Windows) or APFS, HFS+, etc. (MacOS).
+The recommended filesystem format is ext4, but you can also use FAT32.
+
+### Disk not formatted
+
+Make sure your disk is formatted with a valid partition table and partitions. Use a utility like [gparted](https://gparted.org/) for Linux, or [AOMEI Partition Assistant](https://www.diskpart.com/) for Windows to accomplish that.
+
+### Internal disks
+
+If you added a disk internally in your DAppNode (it's not USB connected), it's not going to be mounted automatically, and you will need to configure it manually adding an entry in `/etc/fstab`. As a reference you can follow [this guide](https://medium.com/@sh.tsang/partitioning-formatting-and-mounting-a-hard-drive-in-linux-ubuntu-18-04-324b7634d1e0)
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/connectwithpeers.png?raw=true">
 </p>
 
-### I need to uninstall my DAppNode 
+### I need to uninstall my DAppNode
 
 If for whichever strange reason you have to uninstall your DAppNode server you can do so by typing the following command in the DAppNode server console
 
-```wget -qO - https://uninstaller.dappnode.io  |  sudo bash```
+`wget -qO - https://uninstaller.dappnode.io | sudo bash`
 
 This command will uninstall DAppNode components (but not docker et al.): ⚠️ BEWARE! It will also delete all volumes and stored data!⚠️
-
-
