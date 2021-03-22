@@ -15,7 +15,7 @@ You will need a dedicated machine to install it.
 
 We recommend having at least 4GB RAM (ideally 8GB+) and an SSD hard drive with at least 256GB (add capacity as you like, keep in mind that only Ethereum mainnet is 180GB at press time).
 
-In the client side you just need an OpenVPN client installed in the device with which you want to connect to your DAppNode. See info on recommended clients and installation [here](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
+In the client side you just need an OpenVPN client installed in the device with which you want to connect to your DAppNode. See info on recommended clients and installation [here](https://docs.dappnode.io/connect/)
 
 ## How to install DAppNode on your machine
 
@@ -87,7 +87,7 @@ If the installation succeeded, your system will reboot and you will have to log 
   </a>
 </p>
 
-Now you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation by double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
+Now you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation by double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://docs.dappnode.io/connect/)
 
 <!-- prettier-ignore-start -->
 !!! info
@@ -135,7 +135,7 @@ sudo wget -O - https://installer.dappnode.io | sudo STATIC_IP="your static IP" b
 
 ```
 
-When the installation is done and is successful, be it you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation, just double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
+When the installation is done and is successful, be it you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation, just double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://docs.dappnode.io/connect/)
 
 <!-- prettier-ignore-start -->
 !!! info
@@ -201,7 +201,7 @@ In order to interact with the Rpi in some way there are 2 main options:
 
 Few tips regarding using external SSD on your RPI4:
 
-1. Check out our guide on mounting and using external disk with docker [here](https://github.com/dappnode/DAppNode/wiki/Mount-docker-data-on-a-different-SSD).
+1. Check out our guide on mounting and using external disk with docker [here](https://docs.dappnode.io/faqs/#how-to-mount-docker-data-on-a-different-ssd).
 2. You may run into issues with some disk enclosures so be sure to check out [this](https://www.raspberrypi.org/forums/viewtopic.php?t=245931).
 
 ### **Questions?** Reach out to us in the [Discourse Forum](https://discourse.dappnode.io/).

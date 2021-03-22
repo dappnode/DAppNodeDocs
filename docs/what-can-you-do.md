@@ -155,9 +155,11 @@ Please take a look at these refs regarding the SDK to deploy your own packages i
 
 - <https://github.com/dappnode/DAppNodeSDK>
 
-- <https://github.com/dappnode/DAppNode/wiki/DAppNode-Package-Development>
+- <https://docs.dappnode.io/#i-am-a-developer>
 
-- <https://github.com/dappnode/DAppNode/wiki/DAppNode-packages-manifest>
+- <https://docs.dappnode.io/manifest-reference/>
+
+- <https://docs.dappnode.io/setup-wizard-reference/>
 
 ## How to decentralize wallet.ethereum.org with DAppNode
 
