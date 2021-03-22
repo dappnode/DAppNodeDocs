@@ -12,8 +12,8 @@ We are committed to make the user experience as easy as possible. By following t
 
 Refer to the sections below for more detailed information
 
-1. Get an OpenVPN client for your machine (see [recommended clients and download links below](https://docs.dappnode.io/migration%20to%20v0.2.0/#step-1-install-an-openvpn-client). **If you usually connect via WIFI and do not use the VPN you can skip this step.**
-2. Execute the migration (either through the [ADMIN UI hitting the "Update" button](https://docs.dappnode.io/migration%20to%20v0.2.0/#method-2-connected-through-vpn) connected [via WIFI](https://docs.dappnode.io/migration%20to%20v0.2.0/#method-1-via-wifi-hotspot-no-vpn-connection) or VPN; or [via script](https://docs.dappnode.io/migration%20to%20v0.2.0/#method-3-via-script-with-physical-access-or-via-ssh) connecting via ssh or directly with a keyboard screen to your console)
+1. Get an OpenVPN client for your machine (see [recommended clients and download links below](../migration%20to%20v0.2.0/#step-1-install-an-openvpn-client). **If you usually connect via WIFI and do not use the VPN you can skip this step.**
+2. Execute the migration (either through the [ADMIN UI hitting the "Update" button](../migration%20to%20v0.2.0/#method-2-connected-through-vpn) connected [via WIFI](../migration%20to%20v0.2.0/#method-1-via-wifi-hotspot-no-vpn-connection) or VPN; or [via script](../migration%20to%20v0.2.0/#method-3-via-script-with-physical-access-or-via-ssh) connecting via ssh or directly with a keyboard screen to your console)
 3. Allow some minutes to complete the installation. Please note that :warning: **The update progress indicator will never show the end of the update. Since a new VPN package will be installed, the current VPN connection will be lost and the Admin UI will stop refreshing. Allow for a couple of minutes after this happens to make sure all packages are installed correctly and proceed to the next step** :warning:
 
 4. Connect to your machine via a) ssh (if you do not have physical access to your DAppNode) b) WIFI Hotspot (if you have access to your physical machine) c) connecting a keyboard and a screen to your DAppNode and logging in.
@@ -31,11 +31,11 @@ You can skip this step if you use the connection via the WIFI hotspot.
 
 #### Open VPN client installation guides and the recommended OpenVPN clients for each OS
 
-- [MacOS](https://docs.dappnode.io/connect/#macos) guide - [Tunnelblick](https://tunnelblick.net/) client
-- [iOS](https://docs.dappnode.io/connect/#ios) guide - [OpenVPN connect](https://itunes.apple.com/us/app/openvpn-connect/id590379981) client
-- [Windows](https://docs.dappnode.io/connect/#windows) guide - [OpenVPN (community installer)](https://openvpn.net/community-downloads/) client
-- [Android](https://docs.dappnode.io/connect/#android) guide - [OpenVPN for Android](https://play.google.com/store/apps/details?id=de.blinkt.openvpn) client
-- [Linux](https://docs.dappnode.io/connect/#linux) guide - It's natively included in recent versions.
+- [MacOS](../connect/#macos) guide - [Tunnelblick](https://tunnelblick.net/) client
+- [iOS](../connect/#ios) guide - [OpenVPN connect](https://itunes.apple.com/us/app/openvpn-connect/id590379981) client
+- [Windows](../connect/#windows) guide - [OpenVPN (community installer)](https://openvpn.net/community-downloads/) client
+- [Android](../connect/#android) guide - [OpenVPN for Android](https://play.google.com/store/apps/details?id=de.blinkt.openvpn) client
+- [Linux](../connect/#linux) guide - It's natively included in recent versions.
 
 ### Step 2: How to upgrade to DAppNode v0.2.0 (OpenVPN)
 
@@ -43,9 +43,9 @@ Now that you already have your OpenVPN client you are ready to update your DAppN
 
 There are three methods depending on your level of comfort or your setup:
 
-1. [Without VPN](https://docs.dappnode.io/migration%20to%20v0.2.0/#method-1-via-wifi-hotspot-no-vpn-connection). The easiest way if you can connect to your DAppNode via the built-in WIFI hotspot.
-2. [Through VPN](https://docs.dappnode.io/migration%20to%20v0.2.0/#method-2-connected-through-vpn). **The standard way if you connect through a client device**.
-3. [Via Script](https://docs.dappnode.io/migration%20to%20v0.2.0/#method-3-via-script-with-physical-access-or-via-ssh). If you are comfortable with the terminal/command line, and have physical or ssh access to your server.
+1. [Without VPN](../migration%20to%20v0.2.0/#method-1-via-wifi-hotspot-no-vpn-connection). The easiest way if you can connect to your DAppNode via the built-in WIFI hotspot.
+2. [Through VPN](../#method-2-connected-through-vpn). **The standard way if you connect through a client device**.
+3. [Via Script](../migration%20to%20v0.2.0/#method-3-via-script-with-physical-access-or-via-ssh). If you are comfortable with the terminal/command line, and have physical or ssh access to your server.
 
 #### Method 1: via WIFI hotspot (No VPN Connection)
 
@@ -75,7 +75,7 @@ If you have a physical DAppNode and can connect your client device to the WIFI h
 
 ![](https://i.imgur.com/Dhy9dd5.png)
 
-In case you have problems accessing check that you have the ports of the router open: [I can’t access the credentials OTP web link to download the .ovpn file](https://docs.dappnode.io/migration%20to%20v0.2.0/#i-cant-access-the-credentials-otp-web-link-to-download-the-ovpn-file)
+In case you have problems accessing check that you have the ports of the router open: [I can’t access the credentials OTP web link to download the .ovpn file](../migration%20to%20v0.2.0/#i-cant-access-the-credentials-otp-web-link-to-download-the-ovpn-file)
 
 - Download the file, double click on it and you will be connected to your new OpenVPN profile (provided that you already have installed your OpenVPN client in step 1).
 
@@ -92,7 +92,7 @@ If you feel comfortable with the terminal/command line or can not connect to you
 
 ![](https://i.imgur.com/Dhy9dd5.png)
 
-In case you have problems accessing check that you have the ports of the router open: [I can’t access the credentials OTP web link to download the .ovpn file](https://docs.dappnode.io/migration%20to%20v0.2.0/#i-cant-access-the-credentials-otp-web-link-to-download-the-ovpn-file)
+In case you have problems accessing check that you have the ports of the router open: [I can’t access the credentials OTP web link to download the .ovpn file](../migration%20to%20v0.2.0/#i-cant-access-the-credentials-otp-web-link-to-download-the-ovpn-file)
 
 - Download the file, double click it and you will be connected to your newly added OpenVPN profile (provided that you already have installed your OpenVPN client in step 1).
 
@@ -147,6 +147,6 @@ docker exec -ti DAppNodeCore-vpn.dnp.dappnode.eth vpncli get dappnode_admin
 
 #### I can't import the file in Linux Open VPN client.
 
-Make sure you have the network-manager-openvpn and network-manager-openvpn-gnome packages installed. See instructions for [Linux here](https://docs.dappnode.io/migration%20to%20v0.2.0/#i-cant-import-the-file-in-linux-open-vpn-client).
+Make sure you have the network-manager-openvpn and network-manager-openvpn-gnome packages installed. See instructions for [Linux here](../#i-cant-import-the-file-in-linux-open-vpn-client).
 
 The complete user guide of DAppNode v0.2.0 can be found [here](https://docs.dappnode.io).

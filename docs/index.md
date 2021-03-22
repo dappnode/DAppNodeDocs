@@ -1,6 +1,6 @@
 # Welcome to the DAppNode documentation
 
-[![](https://github.com/dappnode/DAppNode/raw/master/doc/DAppNodeLogoWide.png)](https://docs.dappnode.io/install/)
+[![](https://github.com/dappnode/DAppNode/raw/master/doc/DAppNodeLogoWide.png)](../install/)
 
 DAppNode connects the decentralized internet by allowing a user to conveniently host P2P clients.
 
