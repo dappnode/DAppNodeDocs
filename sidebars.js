@@ -159,9 +159,11 @@ module.exports = {
           type: 'category',
           label: 'DAppNodeSDK',
           items: [ 
+          'dappnodesdk'
           ], 
         },
       ],
     },
   ],
 };
+
