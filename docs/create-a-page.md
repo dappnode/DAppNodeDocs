@@ -13,8 +13,8 @@ Any React or Markdown file created under `src/pages` directory is converted into
 Create a file at `src/pages/my-react-page.js`:
 
 ```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
+import React from "react";
+import Layout from "@theme/Layout";
 
 function HelloWorld() {
   return (
