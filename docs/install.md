@@ -9,6 +9,10 @@ While you can run DAppNode on a Virtual Private Server (VPS), we **highly encour
     Do not install DAppNode on your laptop. The ISO installation will erase all its content. DAppNode is intended to be installed on a dedicated machine.
 <!-- prettier-ignore-end -->
 
+- [**Install DAppNode from an ISO**](#install-dappnode-from-an-iso): When you want to perform a clean installation, installing the base operating system and DAppNode. Installing from an ISO will wipe the machine data and install Debian + DAppNode
+- [**Install DAppNode from a script**](#install-dappnode-from-a-script): When you already have a machine with Debian installed and you just want to install DAppNode on it.
+- [**Install DAppNode on ARM**](#install-dappnode-on-arm)
+
 ## Minimum requirements
 
 You will need a dedicated machine to install it.
@@ -22,17 +26,7 @@ We recommend having at least 8GB RAM and an SSD hard drive with at least 1TB. Ch
 
 In the client side you just need an OpenVPN client installed in the device with which you want to connect to your DAppNode. See info on recommended clients and installation [here](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
 
-## How to install DAppNode on your machine
-
-Okay, so you’re ready to be a Nodler. Let us show you how to make that hardware sing the hardware decentralization song!
-
-You can choose between two methods to install DAppNode:
-
-- **Install DAppNode from an ISO** - When you want to perform a clean installation, installing the base operating system and DAppNode. Installing from an ISO will wipe the machine data and install Debian + DAppNode
-
-- **Installation using the installer script** - When you already have a machine with Debian installed and you just want to install DAppNode on it.
-
-## How to install DAppNode from an ISO
+## Install DAppNode from an ISO
 
 Download the image from [DAppNodeISO](https://iso.dappnode.io) or [build it from source](https://github.com/dappnode/DAppNode_Installer)
 
@@ -49,7 +43,7 @@ Burn the ISO to an USB stick. To do so we recommend using [Etcher](https://www.b
 
 Also, DAppNode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
 
-### Install the DAppNode ISO (~15 min)
+### Boot from ISO (~15 min)
 
 Insert the USB into your Server and prepare to install a Debian distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
 
@@ -101,7 +95,7 @@ Now you can connect to your DAppNode by downloading the .ovpn file that you will
 
 Even if the OpenVPN files are served via HTTP, they are served encrypted, and then decrypted locally in your browser with the key provided in the link, so anyone snooping the file transfer cannot use it.
 
-## Installation via installer script
+## Install DAppNode from a script
 
 <!-- prettier-ignore-start -->
 !!! info
@@ -112,7 +106,7 @@ Remember **_Your hardware, your coins, your privacy, your freedom._**
 
 **_We strongly recommend using 8GB+ of RAM and a 200GB+ SSD hard drive._**
 
-### Install DAppNode prerequisites
+### Prerequisites
 
 - [docker](https://docs.docker.com/install/)
 - [docker-compose](https://docs.docker.com/compose/install/)
@@ -125,7 +119,7 @@ If you already have the dependencies installed or you want to install them on yo
 sudo wget -O - https://prerequisites.dappnode.io  | sudo bash
 ```
 
-### Install DAppNode
+### Run script
 
 Run the following command to install DAppNode:
 
@@ -149,7 +143,7 @@ When the installation is done and is successful, be it you can connect to your D
 
 Please, after installation be aware that the ethereum blockchain will take some time to synchronize and you will not be able to perform most actions before that.
 
-### How to restore an installed DAppNode to the latest version:
+## Restore to latest version from a script:
 
 If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.
 
@@ -159,7 +153,7 @@ If you are experiencing any problem or just want to make sure you are running th
 sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash
 ```
 
-### How to uninstall DAppNode
+## Uninstall DAppNode
 
 This command will uninstall DAppNode components (but not docker et al.):
 ⚠️ BEWARE! It will also delete all volumes and stored data!⚠️
@@ -168,16 +162,21 @@ This command will uninstall DAppNode components (but not docker et al.):
 wget -qO - https://uninstaller.dappnode.io  |  sudo bash
 ```
 
-## DAppNodeARM Installation Guide
+## Install DAppNode on ARM
 
-## Minimum requirements
+### Minimum requirements
 
 - Raspberry model: 4, 3B+
 - Raspberry RAM: 8GB, 4GB
 - Micro SD free space: 8 or more
 - Connectivity to the Rpi
 
-## Installation of the ISO image
+<!-- prettier-ignore-start -->
+!!! info
+    Requirments vary greatly for each usecase. Blockchain sizes change quickly, specs may be out of date.
+<!-- prettier-ignore-end -->
+
+### Prepare and boot ISO
 
 1. First download the file `DAppNodeARM.img.gz/zip` from [here](https://github.com/dappnode/DAppNode/releases/tag/v0.2.39)
 2. Unzip the file.
@@ -191,13 +190,13 @@ wget -qO - https://uninstaller.dappnode.io  |  sudo bash
 
 7. DAppnode installation.
 
-## DAppNode Installation
+### DAppNode Installation
 
 1. Before proceeding with the DAppNode installation you must have internet connection, the best option is to have a wired internet connection. If not possible follow this [tutorial](https://raspberrypihq.com/how-to-connect-your-raspberry-pi-to-wifi/#:~:text=To%20tell%20the%20Raspberry%20Pi,conf.&text=Remember%20to%20replace%20this%20with,Ctrl%2BX%20followed%20by%20Y.) to setup your connection from the command line.
 2. Once the ISO has been successfully installed, its time to install DAppNode. In the terminal run the command: `sudo dappnodepi-install`
 3. **Congratulations!** You are done, your DAppNode is installed in your Rpi.
 
-## Helpful tips:
+### Helpful tips:
 
 In order to interact with the Rpi in some way there are 2 main options:
 
@@ -209,13 +208,16 @@ Few tips regarding using external SSD on your RPI4:
 1. Check out our guide on mounting and using external disk with docker [here](https://github.com/dappnode/DAppNode/wiki/Mount-docker-data-on-a-different-SSD).
 2. You may run into issues with some disk enclosures so be sure to check out [this](https://www.raspberrypi.org/forums/viewtopic.php?t=245931).
 
-### **Questions?** Reach out to us in the [Discourse Forum](https://discourse.dappnode.io/).
+<!-- prettier-ignore-start -->
+!!! info
+    **Questions?** Reach out to us in the [Discourse Forum](https://discourse.dappnode.io/).
+<!-- prettier-ignore-end -->
 
 ## Enter your DAppNode!
 
 Connect to your DAppNode through VPN and navigate to [my.dappnode](http://my.dappnode) to access DAppNode's admin page. DAppNode's functionality will be limited until the Ethereum mainnet chain is synced.
 
-### 2.3. Now you can do things like for example:
+### Now you can do things like for example:
 
 - Navigate to a decentralized web [decentral.eth](http://decentral.eth):
 
