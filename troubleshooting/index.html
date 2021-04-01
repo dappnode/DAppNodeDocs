@@ -5,7 +5,7 @@
 <p>Once you fill the fields and press the register button, DAppNode provides you with a recovery code. If you forget te DAppNode's Password you will be able to access using this token.</p>
 <p><img alt="Recovery Token" src="../images/recovery_token.png" /></p>
 <p>You should save your token in a secure place like a password manager, paper, etc. In this case, we would save this:</p>
-<div class="codehilite"><pre><span></span><code><span class="mi">4</span><span class="n">LMB9w3l50Yljwr6bIgQ</span>
+<div class="codehilite"><pre><span></span><code><span class="err">4LMB9w3l50Yljwr6bIgQ</span>
 </code></pre></div>
 
 <h3 id="how-to-access-to-my-dappnode-using-the-recovery-token">How to access to my DAppNode using the recovery token</h3>
@@ -27,7 +27,7 @@
 <h3 id="how-to-recover-your-recovery-token-and-recover-admin-access">How to recover your recovery token and recover admin access</h3>
 <p>In case we have lost both the password and the recovery token, we need to access our DAppNode: SSH into the DAppNode host or plug a keyboard.</p>
 <p>Once we are in our DAppNodeMachine, we type the next command which shows us the recovery token:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">cat</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">dappnode</span><span class="o">/</span><span class="n">DNCORE</span><span class="o">/</span><span class="k">admin</span><span class="o">-</span><span class="n">recovery</span><span class="o">-</span><span class="n">token</span><span class="p">.</span><span class="n">txt</span> <span class="p">;</span> <span class="n">echo</span>
+<div class="codehilite"><pre><span></span><code><span class="err">cat /usr/src/dappnode/DNCORE/admin-recovery-token.txt ; echo</span>
 </code></pre></div>
 
 <p>The command does the next:</p>
@@ -71,11 +71,11 @@ On the above section, How to access to my DAppNode using the recovery token you 
 <p>For the credentials file to be correctly donwloaded you need to have port 8092 TCP opened, please check that that port is opened.</p>
 <h3 id="i-see-a-message-in-the-console-saying-that-admin-credentials-expired">I see a message in the console saying that admin credentials expired</h3>
 <p>Once a file with credentials is downloaded, and used for connecting once, the link expires after that first connection and you see that message. If for any reason you need to get new credentials, connect via ssh to the server and run the command</p>
-<div class="codehilite"><pre><span></span><code><span class="n">dappnode_get</span> <span class="n">dappnode_admin</span>
+<div class="codehilite"><pre><span></span><code><span class="err">dappnode_get dappnode_admin</span>
 </code></pre></div>
 
 <p>If you get a "command not found" message you can run</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">docker</span> <span class="k">exec</span> <span class="o">-</span><span class="nv">ti</span> <span class="nv">DAppNodeCore</span><span class="o">-</span><span class="nv">vpn</span>.<span class="nv">dnp</span>.<span class="nv">dappnode</span>.<span class="nv">eth</span> <span class="nv">vpncli</span> <span class="nv">get</span> <span class="nv">dappnode_admin</span>
+<div class="codehilite"><pre><span></span><code><span class="err">docker exec -ti DAppNodeCore-vpn.dnp.dappnode.eth vpncli get dappnode_admin</span>
 </code></pre></div>
 
 <h3 id="i-cant-connect-with-another-device-to-my-dappnode">I can't connect with another device to my DAppNode</h3>

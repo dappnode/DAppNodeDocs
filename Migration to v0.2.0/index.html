@@ -150,11 +150,11 @@
 </table>
 <h4 id="i-have-a-message-in-the-console-saying-that-admin-credentials-expired">I have a message in the console saying that admin credentials expired</h4>
 <p>Once a file with credentials is downloaded, and used for connecting once, the link expires after that first connection and you see that message. If for any reason you need to get new credentials, connect via ssh to the server and run the command</p>
-<div class="codehilite"><pre><span></span><code><span class="n">dappnode_get</span> <span class="n">dappnode_admin</span>
+<div class="codehilite"><pre><span></span><code><span class="err">dappnode_get dappnode_admin</span>
 </code></pre></div>
 
 <p>If you get a <code>command not found</code> message you can run</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">docker</span> <span class="k">exec</span> <span class="o">-</span><span class="nv">ti</span> <span class="nv">DAppNodeCore</span><span class="o">-</span><span class="nv">vpn</span>.<span class="nv">dnp</span>.<span class="nv">dappnode</span>.<span class="nv">eth</span> <span class="nv">vpncli</span> <span class="nv">get</span> <span class="nv">dappnode_admin</span>
+<div class="codehilite"><pre><span></span><code><span class="err">docker exec -ti DAppNodeCore-vpn.dnp.dappnode.eth vpncli get dappnode_admin</span>
 </code></pre></div>
 
 <h4 id="i-cant-import-the-file-in-linux-open-vpn-client">I can't import the file in Linux Open VPN client.</h4>
