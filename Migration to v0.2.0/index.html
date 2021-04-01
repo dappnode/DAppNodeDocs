@@ -6,8 +6,8 @@
 <h2 id="quickguide">Quickguide</h2>
 <p>Refer to the sections below for more detailed information</p>
 <ol>
-<li>Get an OpenVPN client for your machine (see <a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Migration-guide-to-v0.2.0-(OpenVPN)#step-1-install-an-openvpn-client">recommended clients and download links below</a>). <strong>If you usually connect via WIFI and do not use the VPN you can skip this step.</strong></li>
-<li>Execute the migration (either through the <a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Migration-guide-to-v0.2.0-(OpenVPN)#method-2-connected-through-vpn">ADMIN UI hitting the "Update" button</a> connected <a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Migration-guide-to-v0.2.0-(OpenVPN)#method-1-via-wifi-hotspot-no-vpn-connection">via WIFI</a> or VPN; or <a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Migration-guide-to-v0.2.0-(OpenVPN)#method-3-via-script-with-physical-access-or-via-ssh">via script</a> connecting via ssh or directly with a keyboard screen to your console)</li>
+<li>Get an OpenVPN client for your machine (see <a href="../migration%20to%20v0.2.0/#step-1-install-an-openvpn-client">recommended clients and download links below</a>. <strong>If you usually connect via WIFI and do not use the VPN you can skip this step.</strong></li>
+<li>Execute the migration (either through the <a href="../migration%20to%20v0.2.0/#method-2-connected-through-vpn">ADMIN UI hitting the "Update" button</a> connected <a href="../migration%20to%20v0.2.0/#method-1-via-wifi-hotspot-no-vpn-connection">via WIFI</a> or VPN; or <a href="../migration%20to%20v0.2.0/#method-3-via-script-with-physical-access-or-via-ssh">via script</a> connecting via ssh or directly with a keyboard screen to your console)</li>
 <li>
 <p>Allow some minutes to complete the installation. Please note that :warning: <strong>The update progress indicator will never show the end of the update. Since a new VPN package will be installed, the current VPN connection will be lost and the Admin UI will stop refreshing. Allow for a couple of minutes after this happens to make sure all packages are installed correctly and proceed to the next step</strong> :warning:</p>
 </li>
@@ -25,19 +25,19 @@
 <p>You can skip this step if you use the connection via the WIFI hotspot.</p>
 <h4 id="open-vpn-client-installation-guides-and-the-recommended-openvpn-clients-for-each-os">Open VPN client installation guides and the recommended OpenVPN clients for each OS</h4>
 <ul>
-<li><a href="https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide#MacOS">MacOS</a> guide - <a href="https://tunnelblick.net/">Tunnelblick</a> client</li>
-<li><a href="https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide#iOS">iOS</a> guide - <a href="https://itunes.apple.com/us/app/openvpn-connect/id590379981">OpenVPN connect</a> client</li>
-<li><a href="https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide#Windows">Windows</a> guide - <a href="https://openvpn.net/community-downloads/">OpenVPN (community installer)</a> client</li>
-<li><a href="https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide#Android">Android</a> guide - <a href="https://play.google.com/store/apps/details?id=de.blinkt.openvpn">OpenVPN for Android</a> client</li>
-<li><a href="https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide#Linux">Linux</a> guide - It's natively included in recent versions.</li>
+<li><a href="../connect/#macos">MacOS</a> guide - <a href="https://tunnelblick.net/">Tunnelblick</a> client</li>
+<li><a href="../connect/#ios">iOS</a> guide - <a href="https://itunes.apple.com/us/app/openvpn-connect/id590379981">OpenVPN connect</a> client</li>
+<li><a href="../connect/#windows">Windows</a> guide - <a href="https://openvpn.net/community-downloads/">OpenVPN (community installer)</a> client</li>
+<li><a href="../connect/#android">Android</a> guide - <a href="https://play.google.com/store/apps/details?id=de.blinkt.openvpn">OpenVPN for Android</a> client</li>
+<li><a href="../connect/#linux">Linux</a> guide - It's natively included in recent versions.</li>
 </ul>
 <h3 id="step-2-how-to-upgrade-to-dappnode-v020-openvpn">Step 2: How to upgrade to DAppNode v0.2.0 (OpenVPN)</h3>
 <p>Now that you already have your OpenVPN client you are ready to update your DAppNode and receive your new OpenVPN credentials, in case you use them. If not you can go on connecting to your DAppNode via WIFI. You have three methods to upgrade and regain access to your DAppNode with OpenVPN if you use it:</p>
 <p>There are three methods depending on your level of comfort or your setup:</p>
 <ol>
-<li><a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Migration-guide-to-v0.2.0-(OpenVPN)#method-1-via-wifi-hotspot-no-vpn-connection">Without VPN</a>. The easiest way if you can connect to your DAppNode via the built-in WIFI hotspot.</li>
-<li><a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Migration-guide-to-v0.2.0-(OpenVPN)#method-2-connected-through-vpn">Through VPN</a>. <strong>The standard way if you connect through a client device</strong>.</li>
-<li><a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Migration-guide-to-v0.2.0-(OpenVPN)#method-3-via-script-with-physical-access-or-via-ssh">Via Script</a>. If you are comfortable with the terminal/command line, and have physical or ssh access to your server.</li>
+<li><a href="../migration%20to%20v0.2.0/#method-1-via-wifi-hotspot-no-vpn-connection">Without VPN</a>. The easiest way if you can connect to your DAppNode via the built-in WIFI hotspot.</li>
+<li><a href="../#method-2-connected-through-vpn">Through VPN</a>. <strong>The standard way if you connect through a client device</strong>.</li>
+<li><a href="../migration%20to%20v0.2.0/#method-3-via-script-with-physical-access-or-via-ssh">Via Script</a>. If you are comfortable with the terminal/command line, and have physical or ssh access to your server.</li>
 </ol>
 <h4 id="method-1-via-wifi-hotspot-no-vpn-connection">Method 1: via WIFI hotspot (No VPN Connection)</h4>
 <p>If you have a physical DAppNode and can connect your client device to the WIFI hotspot, you have it the easiest of all:</p>
@@ -73,7 +73,7 @@
 </li>
 </ul>
 <p><img alt="" src="https://i.imgur.com/Dhy9dd5.png" /></p>
-<p>In case you have problems accessing check that you have the ports of the router open: <a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Migration-guide-to-v0.2.0-(OpenVPN)#i-cant-access-the-credentials-otp-web-link-to-download-the-ovpn-file">I can’t access the credentials OTP web link to download the .ovpn file</a></p>
+<p>In case you have problems accessing check that you have the ports of the router open: <a href="../migration%20to%20v0.2.0/#i-cant-access-the-credentials-otp-web-link-to-download-the-ovpn-file">I can’t access the credentials OTP web link to download the .ovpn file</a></p>
 <ul>
 <li>
 <p>Download the file, double click on it and you will be connected to your new OpenVPN profile (provided that you already have installed your OpenVPN client in step 1).</p>
@@ -94,7 +94,7 @@
 </li>
 </ul>
 <p><img alt="" src="https://i.imgur.com/Dhy9dd5.png" /></p>
-<p>In case you have problems accessing check that you have the ports of the router open: <a href="https://github.com/dappnode/DAppNode/wiki/DAppNode-Migration-guide-to-v0.2.0-(OpenVPN)#i-cant-access-the-credentials-otp-web-link-to-download-the-ovpn-file">I can’t access the credentials OTP web link to download the .ovpn file</a></p>
+<p>In case you have problems accessing check that you have the ports of the router open: <a href="../migration%20to%20v0.2.0/#i-cant-access-the-credentials-otp-web-link-to-download-the-ovpn-file">I can’t access the credentials OTP web link to download the .ovpn file</a></p>
 <ul>
 <li>
 <p>Download the file, double click it and you will be connected to your newly added OpenVPN profile (provided that you already have installed your OpenVPN client in step 1).</p>
@@ -158,5 +158,5 @@
 </code></pre></div>
 
 <h4 id="i-cant-import-the-file-in-linux-open-vpn-client">I can't import the file in Linux Open VPN client.</h4>
-<p>Make sure you have the network-manager-openvpn and network-manager-openvpn-gnome packages installed. See instructions for <a href="https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide#Linux">Linux here</a>.</p>
+<p>Make sure you have the network-manager-openvpn and network-manager-openvpn-gnome packages installed. See instructions for <a href="../#i-cant-import-the-file-in-linux-open-vpn-client">Linux here</a>.</p>
 <p>The complete user guide of DAppNode v0.2.0 can be found <a href="https://docs.dappnode.io">here</a>.</p></article></div></div></main><footer class="md-footer"><div class="md-footer-nav"><nav class="md-footer-nav__inner md-grid"><a href="../troubleshooting/" title="Troubleshooting" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev"><div class="md-flex__cell md-flex__cell--shrink"><i class="md-icon md-icon--arrow-back md-footer-nav__button"></i></div><div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span class="md-flex__ellipsis"><span class="md-footer-nav__direction">Previous</span>Troubleshooting</span></div></a><a href="../architecture/" title="Architecture" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next"><div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span class="md-flex__ellipsis"><span class="md-footer-nav__direction">Next</span>Architecture</span></div><div class="md-flex__cell md-flex__cell--shrink"><i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i></div></a></nav></div><div class="md-footer-meta md-typeset"><div class="md-footer-meta__inner md-grid"><div class="md-footer-copyright">powered by <a href="https://www.mkdocs.org">MkDocs</a> and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></div><div class="md-footer-social"><link rel="stylesheet" href="../assets/fonts/font-awesome.css"> <a href="https://github.com/dappnode/DAppNode" class="md-footer-social__link fa fa-github"></a>  <a href="https://twitter.com/dappnode" class="md-footer-social__link fa fa-twitter"></a>  <a href="https://discourse.dappnode.io/" class="md-footer-social__link fa fa-comments"></a>  <a href="https://medium.com/dappnode" class="md-footer-social__link fa fa-medium"></a> </div></div></div></footer></div><script src="../assets/javascripts/application.b260a35d.js"></script><script>app.initialize({version:"1.0.4",url:{base:".."}})</script></body></html>
