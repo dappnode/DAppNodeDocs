@@ -11,9 +11,14 @@ While you can run DAppNode on a Virtual Private Server (VPS), we **highly encour
 
 ## Minimum requirements
 
+<!-- prettier-ignore-start -->
+!!! warning
+    Requirments vary greatly for each usecase. Blockchain sizes change quickly, specs may be out of date.
+<!-- prettier-ignore-end -->
+
 You will need a dedicated machine to install it.
 
-We recommend having at least 4GB RAM (ideally 8GB+) and an SSD hard drive with at least 256GB (add capacity as you like, keep in mind that only Ethereum mainnet is 180GB at press time).
+We recommend having at least 8GB RAM and an SSD hard drive with at least 1TB. Check this resource by Etherscan on an aproximate size of an Ethereum mainnet node: https://etherscan.io/chartsync/chaindefault
 
 In the client side you just need an OpenVPN client installed in the device with which you want to connect to your DAppNode. See info on recommended clients and installation [here](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
 
