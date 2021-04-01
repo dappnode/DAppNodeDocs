@@ -30,7 +30,9 @@ In the client side you just need an OpenVPN client installed in the device with 
 
 Download the image from [DAppNodeISO](https://iso.dappnode.io) or [build it from source](https://github.com/dappnode/DAppNode_Installer)
 
-### Burn the ISO in a USB (~8 min)
+### Burn the ISO in a USB
+
+_Time to complete: ~8 min_
 
 Burn the ISO to an USB stick. To do so we recommend using [Etcher](https://www.balena.io/etcher/) for the OS with which you will prepare the USB to boot from your server and install DAppNode
 
@@ -43,7 +45,9 @@ Burn the ISO to an USB stick. To do so we recommend using [Etcher](https://www.b
 
 Also, DAppNode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
 
-### Boot from ISO (~15 min)
+### Boot from ISO
+
+_Time to complete: ~15 min_
 
 Insert the USB into your Server and prepare to install a Debian distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
 
@@ -143,7 +147,7 @@ When the installation is done and is successful, be it you can connect to your D
 
 Please, after installation be aware that the ethereum blockchain will take some time to synchronize and you will not be able to perform most actions before that.
 
-## Restore to latest version from a script:
+### Restore to latest version from a script:
 
 If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.
 
@@ -153,7 +157,7 @@ If you are experiencing any problem or just want to make sure you are running th
 sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash
 ```
 
-## Uninstall DAppNode
+### Uninstall DAppNode
 
 This command will uninstall DAppNode components (but not docker et al.):
 ⚠️ BEWARE! It will also delete all volumes and stored data!⚠️
