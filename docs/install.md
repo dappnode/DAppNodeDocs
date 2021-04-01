@@ -90,7 +90,7 @@ If the installation succeeded, your system will reboot and you will have to log 
   </a>
 </p>
 
-Now you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation by double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
+Now you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation by double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](../connect/)
 
 <!-- prettier-ignore-start -->
 !!! info
@@ -138,7 +138,7 @@ sudo wget -O - https://installer.dappnode.io | sudo STATIC_IP="your static IP" b
 
 ```
 
-When the installation is done and is successful, be it you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation, just double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](https://github.com/dappnode/DAppNode/wiki/OpenVPN-Client-Guide)
+When the installation is done and is successful, be it you can connect to your DAppNode by downloading the .ovpn file that you will be able to download from the link / QR show at the end of the installation, just double click in it to open it with a compatible OpenVPN client. Here you have the [recommended ones and connection instructions](../connect/)
 
 <!-- prettier-ignore-start -->
 !!! info
@@ -209,7 +209,7 @@ In order to interact with the Rpi in some way there are 2 main options:
 
 Few tips regarding using external SSD on your RPI4:
 
-1. Check out our guide on mounting and using external disk with docker [here](https://github.com/dappnode/DAppNode/wiki/Mount-docker-data-on-a-different-SSD).
+1. Check out our guide on mounting and using external disk with docker [here](../faqs/#how-to-mount-docker-data-on-a-different-ssd).
 2. You may run into issues with some disk enclosures so be sure to check out [this](https://www.raspberrypi.org/forums/viewtopic.php?t=245931).
 
 <!-- prettier-ignore-start -->
