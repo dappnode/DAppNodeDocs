@@ -147,10 +147,19 @@
 <li><a href="#pattern"><code>pattern</code></a>: To validate input against any Regex expression.</li>
 <li><a href="#enum"><code>enum</code></a>: Show as a select dropdown menu.</li>
 </ul>
+<p>It exists two ways of defining environment variables.
+The first one, where you define one environment var for one service, you the format to do it is the following:</p>
 <div class="codehilite"><pre><span></span><code><span class="nt">target</span><span class="p">:</span>
   <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">environment</span>
   <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PAYOUT_ADDRESS</span>
   <span class="nt">service</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">service1</span>
+</code></pre></div>
+
+<p>In case you want to define an environment variable that is used in multiple services you can define it in the next way:</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">target</span><span class="p">:</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">environment</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PAYOUT_ADDRESS</span>
+  <span class="nt">service</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">service1</span><span class="p p-Indicator">,</span> <span class="nv">service2</span><span class="p p-Indicator">,</span> <span class="nv">service2</span><span class="p p-Indicator">]</span>
 </code></pre></div>
 
 <h5 id="name">name</h5>
