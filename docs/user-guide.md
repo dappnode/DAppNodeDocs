@@ -295,6 +295,18 @@ If you need to reboot or shut down your server as a last resource, you can do it
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/powermanagement.png?raw=true">
 </p>
 
+### Advanced
+
+In this section of the System, there are several configurations.
+
+#### DAppNode Name
+
+Change DAppNode Name let you change the name that appears on the top right side of the UI. This feature does not modify the hostname of your machine.
+
+#### SSH
+
+You can enable/disable the ssh port of your dappnode. Or even modify the port that ssh uses. Remember if you change the port, you have to define this port when you want to connect via SSH.
+
 ## SDK
 
 Together with DAppNode´s SDK, this tab will help you to make the metamask transaction to publish your own package.
