@@ -103,11 +103,23 @@ To customize environment variables with user input. Targeted variables must be d
 - [`pattern`](#pattern): To validate input against any Regex expression.
 - [`enum`](#enum): Show as a select dropdown menu.
 
+It exists two ways of defining environment variables.
+The first one, where you define one environment var for one service, you the format to do it is the following:
+
 ```yaml
 target:
   type: environment
   name: PAYOUT_ADDRESS
   service: service1
+```
+
+In case you want to define an environment variable that is used in multiple services you can define it in the next way:
+
+```yaml
+target:
+  type: environment
+  name: PAYOUT_ADDRESS
+  service: [service1, service2, service2]
 ```
 
 ##### name

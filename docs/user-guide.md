@@ -41,7 +41,6 @@ By clicking “Dashboard” you can have a fast look to your server state, if yo
 
 To avoid this, non core packages will be automatically stopped when there is less than 5 Gbs left, and ETHCHAIN and IPFS will be automatically stopped when there is less than 1 GB available. If by any chance your DAppNode server gets to 100 % busy disk space, it will become unworkable from the ADMIN UI and you will have to erase containers/volumes manually from the commmand line of your server.
 
-
 ## Devices
 
 This tab is one of the cornerstones of our vision, as the functionality is meant to build trusted circles that connect to the decentralized web through a DAppNode installed on a piece of self-owned hardware that provides access to your friends and family. Remember that they should have a compatible OpenVPN client installed in their device.
@@ -60,7 +59,6 @@ You also have the ability to give a device admin privileges so the ADMIN UI can 
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/devices.png?raw=true">
 </p>
 
-
 <!-- prettier-ignore-start -->
 !!! info
     Take in account that if you remove admin privileges to any device while that device is connected to the server, it will still be able to access the admin UI and thus that device can make itself admin again, to prevent this, after removing admin privileges to any user you should restart the VPN package by going to System / VPN / Restart. This also applies when you want to remove access to any device without admin privileges.
@@ -70,11 +68,11 @@ You also have the ability to give a device admin privileges so the ADMIN UI can 
 
 Here you have the DAppstore where you can directly install a growing amount of services and libraries just by a click and they will install.
 
-In the installer you can find two kind of packages: 
+In the installer you can find two kind of packages:
 
 ### DAppNode Association Verified Packages
 
-These packages have been built and uploaded to DAppNode by the DAppNode association and are maintained by DAppNode, you will find a blue ticker in the DAppNode Association Verified packages. 
+These packages have been built and uploaded to DAppNode by the DAppNode association and are maintained by DAppNode, you will find a blue ticker in the DAppNode Association Verified packages.
 
 Please let us know which ones would you like to have in the DAppstore by filling out this little survey.
 https://goo.gl/forms/EjVTHu6UBWBk60Z62
@@ -87,7 +85,7 @@ From the installer you can also install packages not shown in the interface by p
 
 ### Customizing packages installation
 
-We have added a functionality that allows to customize some packages with predefined configurations (Extra opts) made by the developer of the node/ DApp, please check the project documentation to see which options to customize are available. You can set the custom parameters in the config tab of each package. 
+We have added a functionality that allows to customize some packages with predefined configurations (Extra opts) made by the developer of the node/ DApp, please check the project documentation to see which options to customize are available. You can set the custom parameters in the config tab of each package.
 
 You can also select your own customized path for the installation of the package and its volume by writing your selected path in the field aside the path by default. Remember that you can only do this in the installation, by clicking "Show advanced options"
 
@@ -151,7 +149,7 @@ This screen shows you the system packages and your installed packages in two tab
 
 ### My Packages
 
-Here you can see the packages you have installed and see their info, manage them, access to their logs, configure  them, and upload and download files to and from a  package
+Here you can see the packages you have installed and see their info, manage them, access to their logs, configure them, and upload and download files to and from a package
 
 #### Info
 
@@ -170,7 +168,6 @@ In this screen you will find the relevant info about the package:
 #### Control
 
 These are the main options you can execute on your installed packages:
-
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/packagecontrol.png?raw=true">
@@ -192,15 +189,15 @@ In this screen you can set up the different existing options and configs for eac
 
 #### Ports
 
-With this feature you can add customised port mappings to specific packages, select the host port and the container port and hit "Update port mappings" . Please do not change these settings unless you really know what you are doing, be cautious out there. 
+With this feature you can add customised port mappings to specific packages, select the host port and the container port and hit "Update port mappings" . Please do not change these settings unless you really know what you are doing, be cautious out there.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/addports.png?raw=true">
 </p>
 
-#### Logs 
+#### Logs
 
-This tab will show you the package logs in real time. 
+This tab will show you the package logs in real time.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/packagelogs.png?raw=true">
@@ -208,7 +205,7 @@ This tab will show you the package logs in real time.
 
 #### Backup and restore
 
-Some DAppNode packages as Lightning Network and Raiden contain private keys so we have added a simple way to backup and restore the sensitive info stored in your DAppNode,as usual,with a couple of clicks. In the packages that hold private keys in their volumes you will find a backup tab. Let us see how it works looking at the Lightning Network Package.   
+Some DAppNode packages as Lightning Network and Raiden contain private keys so we have added a simple way to backup and restore the sensitive info stored in your DAppNode,as usual,with a couple of clicks. In the packages that hold private keys in their volumes you will find a backup tab. Let us see how it works looking at the Lightning Network Package.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNode/blob/master/doc/backupscreen.jpg?raw=true">
@@ -218,25 +215,23 @@ Some DAppNode packages as Lightning Network and Raiden contain private keys so w
 
 Hit the "Backup now" button and select where do you want to keep your backup file safe. A tar.xz file will be downloaded to the selected path.
 
-
 ##### Restore
 
-If anything happens with your LN node and you have your backup you can always restore it from the ADMIN UI. Just go to Packages / My Packages and select the LN package and the backup tab. Aside the backup button you will see a "Restore" button. 
+If anything happens with your LN node and you have your backup you can always restore it from the ADMIN UI. Just go to Packages / My Packages and select the LN package and the backup tab. Aside the backup button you will see a "Restore" button.
 
-Just hit that sweet restore button, select your tar.xz backup file and confirm. 
+Just hit that sweet restore button, select your tar.xz backup file and confirm.
 
 <p align="center"><a href="#"><img width="600" title="Backup" src='https://github.com/dappnode/DAppNode/blob/master/doc/restorescreen.jpg?raw=true' /></a></p>
 
-After the backup file is uploaded your LN node is restored. 
+After the backup file is uploaded your LN node is restored.
 
 #### File Manager
 
-This option will allow you to upload and download files from a package container. For example you will use it to upload a keystore file to Raiden package, and to restore or to do a backup from your account. 
+This option will allow you to upload and download files from a package container. For example you will use it to upload a keystore file to Raiden package, and to restore or to do a backup from your account.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/filemanager.png?raw=true">
 </p>
-
 
 ### System Packages
 
@@ -246,6 +241,25 @@ Here you can access the packages that are part of the DAppNode core and manage t
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/systempackages.png?raw=true">
 </p>
 
+#### HTTPS package
+
+Since dappmanager v0.2.39, dappnode support the package https. The main purpose of this package is to add the feature of exposing services of DAppNode using the secure protocol HTTPS.
+
+Use case: Currently, if you want to use the geth node of your dappnode to connect your metamask, you need to be connected to the VPN. With this feature, you can expose this service using the protocol HTTPS. This protocol encrypts the traffic between the app and your dappnode node, but you have to know that if you expose your node, anyone who knows it will be able to use it.
+
+There are two ways of interacting with this feature.
+
+##### Basic
+
+To access the basic configuration of this package, on the UI you should go to Packages > System Packages >Https > Network
+
+On the bottom side, it should appear the predefined services that can be exposed.
+
+##### Advanced
+
+How to expose some service can be risky. We have created this list of predefined exposable services. In case you want to expose some service that is not on the list.
+
+On the network tab of every package appears a card with https mapping. Click on map updating, fill the subdomain field and the port of thr service you want to expose. Then, confirm the changes and do click on the link that appear under the column HOST. It will redirect you to the dyndns domain where your this service is exposed.
 
 ## System
 
@@ -253,18 +267,17 @@ This area is used to configure and manage your system with different options tha
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/systemtab.png?raw=true">
-</p> 
+</p>
 
 ### Auto-updates
 
-You can now choose if you want your packages to be  automatically updated by enabling these option for System Packages, installed packages, or both. Please note that tthe updates will be made 24 hours after the updated package availability is detected. 
+You can now choose if you want your packages to be automatically updated by enabling these option for System Packages, installed packages, or both. Please note that tthe updates will be made 24 hours after the updated package availability is detected.
 
 This feature is valid for non major updates, in which an admin intervention will always be needed.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/autoupdates.png?raw=true">
 </p>
-
 
 ### Static IP
 
@@ -274,16 +287,40 @@ If you have a Static IP you can set it up here so the future VPN credentials gen
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/systemip.png?raw=true">
 </p>
 
-
-
 ### Power Management
 
-If you need to reboot or shut down your server as a last resource, you can do it from this section. Please be aware that if you shut down your server you will only be able to switch it on again when you have psysical access to your DAppNode. 
+If you need to reboot or shut down your server as a last resource, you can do it from this section. Please be aware that if you shut down your server you will only be able to switch it on again when you have psysical access to your DAppNode.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/powermanagement.png?raw=true">
 </p>
 
+### Advanced
+
+In this section of the System, there are several configurations.
+
+#### DAppNode Name
+
+Change DAppNode Name let you change the name that appears on the top right side of the UI. This feature does not modify the hostname of your machine.
+
+#### SSH
+
+You can enable/disable the ssh port of your dappnode. Or even modify the port that ssh uses. Remember if you change the port, you have to define this port when you want to connect via SSH.
+
+#### Docker
+
+This process is so sensitive.
+These two feature let you update the docker-compose and docker-engine of your dappnode.
+
+Update docker engine to a stable version with DAppNode. You must update Docker compose first, then Docker engine
+
+#### Database Management
+
+These two options we recommend using only in the case someone from the staff tell you to do it.
+
+The clear cache db will remove the local cache of Aragon Package Manager (APM) entries, manifests, avatars. Also, remove the user action logs shown in the Activity tab.
+
+The clear main db will remove the local database which contains critical information about your DAppNode, such as the DynDNS identity, Ips registry, telegram configuration and more
 
 ## SDK
 
@@ -293,9 +330,9 @@ Once you have used the command line SDK and you have the DNP name, the version a
 
 ## Support
 
-### Autodiagnose 
+### Autodiagnose
 
-In this screen you will have an overview of the functioning of your DAppNode with checks that will indicate you if there is any problem for the normal operation of your DAppNode. You can contribute to DAppNode´s improvement by opening issues directly from the ADMIN UI. 
+In this screen you will have an overview of the functioning of your DAppNode with checks that will indicate you if there is any problem for the normal operation of your DAppNode. You can contribute to DAppNode´s improvement by opening issues directly from the ADMIN UI.
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/autodiagnose.png?raw=true">
@@ -312,7 +349,6 @@ When you click the "Report" tab you will chave the option of sending the issue w
 ### Activity
 
 This tab allows easy access to the DAppNode logs in order to debug errors. We work hard to make this tab irrelevant to you, but for the time being, if you are experiencing any issue, these logs will help our support team help you identify and fix any problem. You will also find a button to download a log report file.
-
 
 <p align="center">
     <img width="1000"src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/activity.png?raw=true">
