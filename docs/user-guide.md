@@ -307,6 +307,21 @@ Change DAppNode Name let you change the name that appears on the top right side 
 
 You can enable/disable the ssh port of your dappnode. Or even modify the port that ssh uses. Remember if you change the port, you have to define this port when you want to connect via SSH.
 
+#### Docker
+
+This process is so sensitive.
+These two feature let you update the docker-compose and docker-engine of your dappnode.
+
+Update docker engine to a stable version with DAppNode. You must update Docker compose first, then Docker engine
+
+#### Database Management
+
+These two options we recommend using only in the case someone from the staff tell you to do it.
+
+The clear cache db will remove the local cache of Aragon Package Manager (APM) entries, manifests, avatars. Also, remove the user action logs shown in the Activity tab.
+
+The clear main db will remove the local database which contains critical information about your DAppNode, such as the DynDNS identity, Ips registry, telegram configuration and more
+
 ## SDK
 
 Together with DAppNode´s SDK, this tab will help you to make the metamask transaction to publish your own package.
