@@ -315,6 +315,71 @@ Finally, select "Connect" from the tray bar icon menu:
     <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/windows8.png">
 </p>
 
+#### Wireguard
+
+Once you have installed the Wireguard package, you will be able to see this page:
+
+<p align="center">
+    <img src="./images/wireguard_view_installed.png">
+</p>
+
+This step is common whatever OS/device you will use as a client. By default, one profile is created, click on the Get link button which is in the column Credentials.
+Now you can see some configuration text. Keep this window for later, you will need to paste this configuration in the client app you will use as a wireguard client.
+
+Remember if you want to access with more devices, you will need to add more configurations, typing a name and clicking on Add device button.
+
+##### Ubuntu
+
+To use wireguard in ubuntu, you will need to use the terminal in the installation process. Firstly, it is needed to install the prerequisites:
+`sudo apt install openresolv`
+
+Then, you can install Wireguard:
+`sudo apt install wireguard`
+
+Create the configuration file and paste the configuration you have copied before (The configuration text you have obtained on the wireguard tab on dappnode UI):
+`sudo nano /etc/wireguard/wg0.conf`
+
+Finally, type the following command:
+`sudo wg-quick up wg0`
+
+To check you are connected you can do 2 things:
+
+1. `ifconfig` and check if there is an interface "new".
+2. Try to access the dappnode UI, if you can access it's ok.
+
+In case you can, type:
+`sudo wg show`
+
+The output of this command should be something like:
+`~$ sudo wg show interface: wg0 public key: zFhjLJdXrLl86ayX6JpyfN0/rVH+qxgF/e8HxRP9cxk= private key: (hidden) listening port: 51820`
+`peer: OQZWpDPUcNPRZMjncY6BUwsli6HtqgTUn2lAGdXVi2c= endpoint: 173.249.33.176:51820 allowed ips: 172.33.0.0/16 latest handshake: 36 seconds ago transfer: 222.36 KiB received, 81.86 KiB sent`
+
+##### Windows
+
+TODO
+
+##### Android
+
+In your mobile, go to the playstore, then look for `wireguard` and select this app and install it:
+
+<p align="center">
+    <img src="./images/wireguard_android_install.png">
+</p>
+
+Then, if you open the app you will see the next image:
+
+<p align="center">
+    <img src="./images/wireguard_android_set_up.png">
+</p>
+
+Click on the blue circle button on the right bottom:
+
+<p align="center">
+    <img src="./images/wireguard_android_set_up_2.png">
+</p>
+
+You can obtain the configuration scanning the QR you obtain on the vpn/wireguard view, download the file and import it or copy the contain of the configuration.
+
 ## Via SSH (Advanced)
 
 Default credentials for SSH access are:
