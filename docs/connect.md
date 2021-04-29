@@ -328,6 +328,14 @@ Now you can see some configuration text. Keep this window for later, you will ne
 
 Remember if you want to access with more devices, you will need to add more configurations, typing a name and clicking on Add device button.
 
+These are the recommended Open VPN clients for each OS:
+
+- macOS: [WireGuard for macOS](https://www.wireguard.com/install/#macos-app-store)
+- iOS: [WireGuard for iOS](https://www.wireguard.com/install/#ios-app-store)
+- Windows: [WireGuard for Windows](https://www.wireguard.com/install/#windows-7-8-81-10-2012-2016-2019)
+- Android: [WireGuard for Android](https://play.google.com/store/apps/details?id=com.wireguard.android)
+- Linux: [WireGuard for Linux](https://www.wireguard.com/install/#ubuntu-module-tools)
+
 ##### Ubuntu
 
 To use wireguard in ubuntu, you will need to use the terminal in the installation process. Firstly, it is needed to install the prerequisites:
