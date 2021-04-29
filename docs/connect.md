@@ -28,7 +28,44 @@ Once you have access to the wi-fi section, there are 2 tabs:
 
 ## Via VPN
 
-For connecting to DAppNode 0.2.0 OpenVPN, you will need to have a client that supports the OpenVPN protocol in every device with which you´d like to connect to your DAppNode. Also note that if you are running DAppNode in a physical server with WIFI you can connect to your DAppNode without need of the VPN, just by connecting to the DAppNode WIFI.
+We recommend accessing the dappnode via Wi-fi the first time, so you can access the admin UI and set up on a better way the VPN you want. DAppNode supports 2 kinds of VPN: OpenVPN and Wireguard. In case you don't use wi-fi or you wish to connect directly through a VPN to your DAppNode. You will have to use OpenVPN, at least the first time to access the Admin UI. Below you have a little explanation about what explains each section:
+
+- **Set up VPN from DAppNode terminal**: Read this section if you want to access via VPN directly, or your machine has not wifi interface.
+- **Set up VPN from admin UI**: Explain how access to the VPN section and what you can do from this view. (you need to have access to the admin UI).
+- **OpenVPN**: Explain how to set up OpenVPN in dappnode and how to connect your device using an OpenVPN client.
+- **Wireguard**: Explain how to set up wireguard in dappnode and how to connect your device using a wireguard client.
+
+### Set up VPN from DAppNode terminal
+
+Automatically, after installing DAppNode you should see the next image and a link where can download the credentials.
+
+<p align="center">
+    <img src="./images/VirtualBox_console.png">
+</p>
+
+If it does not happen, you can generate the OpenVPN credentials manually with the command:
+`dappnode_connect`
+
+Using the link you can download the credentials or scanning the QR you can download the credentials on your mobile phone. Once you have downloaded the credentials, you can jump into the OpenVPN section where it is explained how to set up the client in the device you will use to connect via VPN to the dappnode.
+
+### Set up VPN from admin UI
+
+Firstly, you should go to VPN page, clicking on the VPN tab on the left menu. You sill see a view where you can select 2 tabs: OpenVPN and wireguard.
+
+<p align="center">
+    <img src="./images/vpn_view.png">
+</p>
+
+In case you want to set up openVPN, follow the instruction of OpenVPN.
+On the other hand, if you wish to use wireguard, click on the tab Wireguard, you will need to install the wireguard package how you see in the below image.
+
+<p align="center">
+    <img src="./images/wireguard_view_uninstalled.png">
+</p>
+
+In case you want to set up wireguard, follow the instruction of Wireguard.
+
+#### OpenVPN
 
 Once you have your DAppNode running, you will get an URL in your terminal from where you can download the OVPN config file and open it in your device with your OpenVPN client.
 
