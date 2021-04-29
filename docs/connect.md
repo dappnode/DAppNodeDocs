@@ -363,19 +363,19 @@ TODO
 In your mobile, go to the playstore, then look for `wireguard` and select this app and install it:
 
 <p align="center">
-    <img src="./images/wireguard_android_install.png">
+    <img src="./images/wireguard_android_install.jpg">
 </p>
 
 Then, if you open the app you will see the next image:
 
 <p align="center">
-    <img src="./images/wireguard_android_set_up.png">
+    <img src="./images/wireguard_android_set_up.jpg">
 </p>
 
 Click on the blue circle button on the right bottom:
 
 <p align="center">
-    <img src="./images/wireguard_android_set_up_2.png">
+    <img src="./images/wireguard_android_set_up_2.jpg">
 </p>
 
 You can obtain the configuration scanning the QR you obtain on the vpn/wireguard view, download the file and import it or copy the contain of the configuration.
