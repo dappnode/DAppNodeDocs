@@ -18,7 +18,7 @@ Please immediately change the name of the WIFI and the password by setting up th
 <!-- prettier-ignore-end -->
 
 <p align="center">
-    <img src="../images/wifi_tab.png">
+    <img src="./images/wifi_tab.png">
 </p>
 
 Once you have access to the wi-fi section, there are 2 tabs:
