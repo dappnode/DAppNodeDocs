@@ -2,7 +2,7 @@
 module.exports = {
   title: 'DAppNode',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.dappnode.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -39,7 +39,7 @@ module.exports = {
           items: [
             {
               label: 'Docs',
-              to: 'http://localhost:3000/docs/introduction/introduction',
+              to: 'https://docs.dappnode.io/',
             },
           ],
         },
@@ -69,7 +69,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/dappnode',
             },
           ],
         },
