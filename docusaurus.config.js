@@ -86,6 +86,7 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/dappnode/DAppNodeDocs',
+            routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
