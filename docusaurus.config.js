@@ -53,6 +53,7 @@ module.exports = {
               label: 'Twitter',
               href: 'https://twitter.com/DAppNode',
             },
+   
           ],
         },
         {
@@ -65,6 +66,10 @@ module.exports = {
             {
               label: 'GitHub',
               href: 'https://github.com/dappnode',
+            },
+            {
+              label: 'Youtube',
+              href: 'https://www.youtube.com/channel/UCKnEqk4yVMN_Z6B8ikloYYA',
             },
           ],
         },
