@@ -17,13 +17,8 @@ module.exports = {
         src: 'img/dappnode-logo.png',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Docs',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/', label: 'Docs', position: 'left'},
+        //{to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/dappnode/DAppNode',
           label: 'GitHub',
