@@ -1,3 +1,7 @@
 ---
-sidebar_position: 1
+slug: "/"
 ---
+
+# Welcome to DAppNode Documentation
+
+Hello people
