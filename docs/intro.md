@@ -2,6 +2,6 @@
 slug: "/"
 ---
 
-# Welcome to DAppNode Documentation
+# Welcome to the DAppNode Documentation
 
-Hello people
+Guía how guide is organized
