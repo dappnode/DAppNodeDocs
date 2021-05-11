@@ -18,7 +18,7 @@ module.exports = {
       },
       items: [
         {to: '/', label: 'Docs', position: 'left'},
-        //{to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/donate', label: 'Donate', position: 'left'},
         {
           href: 'https://github.com/dappnode/DAppNode',
           label: 'GitHub',
