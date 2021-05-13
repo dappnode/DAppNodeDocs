@@ -99,9 +99,9 @@ module.exports = {
           ],
         },
         'user-guide/ui/dappstore',
-        'user-guide/ui/package-management',
         'user-guide/ui/system',
         'user-guide/ui/support',
+        'user-guide/ui/package-management',
         {
           type: 'category',
           label: 'Support',
