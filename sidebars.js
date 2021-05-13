@@ -98,6 +98,7 @@ module.exports = {
             },
           ],
         },
+        'user-guide/ui/dashboard',
         'user-guide/ui/dappstore',
         'user-guide/ui/system',
         'user-guide/ui/support',
