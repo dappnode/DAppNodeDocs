@@ -75,11 +75,3 @@ The cons are:
 ## Option: use remote during syncing or error
 
 This option is below the three main options. If you select a light client or Full node until your node gets all the data it needs, you will not be able to access the DAppStore, turning on this option you will be able to stay connected to the DAppNode remote node in case your node is syncing(this process can take several hours) or it has some problem.
-Light Client consists of having an ethereum client on your DAppNode, but this kind of client does not have all the information of the blockchain, so space this kind of client occupies is less. The pros of this set-up are the next:
-
-- You don't depend on third parties.
-- The hard disk space that this kind of client occupies is so much less than a full node.
-
-The cons are:
-
-- Light clients need to connect to one slot of a full node. We can say that a light client only has minimal information of the blockchain, but they require to have access to all blockchain information, so they need to be connected to a full node. Every full node only has slots for 5 light clients which means if there are so many light clients than full nodes, your node could not get a free slot.
