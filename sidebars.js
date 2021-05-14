@@ -99,10 +99,15 @@ module.exports = {
           ],
         },
         'user-guide/ui/dashboard',
+        'user-guide/ui/wi-fi',
+        'user-guide/ui/vpn',
         'user-guide/ui/dappstore',
+        'user-guide/ui/packages',
         'user-guide/ui/system',
+        'user-guide/ui/community',
+        'user-guide/ui/sdk',
         'user-guide/ui/support',
-        'user-guide/ui/package-management',
+
         {
           type: 'category',
           label: 'Support',
