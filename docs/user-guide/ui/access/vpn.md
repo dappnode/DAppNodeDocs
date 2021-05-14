@@ -46,10 +46,7 @@ Take into account that some VPN clients might send all traffic through the VPN, 
 
 DAppNode is not intended to manage all the traffic of the devices connected to it, only the ETH domains access requests.
 
-<!-- prettier-ignore-start -->
-!!! info
-    When you download and install a VPN credentials file, only your ETH traffic will be going out through the VPN, the regular IP traffic will still be done with your regular IP. If you want to route all your Internet traffic through your DAppNode so you are behind your VPN, you should configure it in your VPN client settings by checking the Box "Send all traffic".
-<!-- prettier-ignore-end -->
+> :warning: When you download and install a VPN credentials file, only your ETH traffic will be going out through the VPN, the regular IP traffic will still be done with your regular IP. If you want to route all your Internet traffic through your DAppNode so you are behind your VPN, you should configure it in your VPN client settings by checking the Box "Send all traffic".
 
 These are the recommended Open VPN clients for each OS:
 
