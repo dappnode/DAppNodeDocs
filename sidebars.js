@@ -135,6 +135,8 @@ module.exports = {
             },
           ],
         },
+        'developers/manifest',
+        'developers/wizard',
         'developers/dev-support',
       ],
     },
