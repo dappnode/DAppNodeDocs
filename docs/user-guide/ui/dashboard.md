@@ -1,27 +1,27 @@
 # Dashboard View
 
-When you first enter the Admin UI, you will see a link to a survey made to tell us how the installation went and provide your insights about the process. We greatly appreciate this feedback in order to help us to make a better product.
+The dashboard view is the main page of the DAppNode interface.s
 
-By clicking “Dashboard” you can have a fast look to your server state, if you want to check the overall status and functioning click on the report button at the top right corner.
+<p align="center">
+    <img src="../../../../static/img/dashboard_numered.png"/>
+</p>
 
-1. Tabs area
+1. **Dashboard**: To back to the main view of the DAppNode interface.
+2. **Wi-Fi panel**: set up the wifi access of your dappnode.
+3. **VPN**: set up the vpn access of your dappnode.
+4. **DAppStore**: The place where you can install the package you want.
+5. **Packages**: You can manage your packages from this view.
+6. **System**: Where you can do so many configurations of your DAppNode. You can read a more detailed guide on the system view page of this documentation.
+7. **Community**: Access to all the channels of DAppNode.
+8. **SDK**: This zone is for developers.
+9. **Support**:
+10. **Chains**: The states of your nodes.
+11. **State**: If the node has some problem, is syncing or is synced, this information will appeard here.
+12. **Machine stats**: Hardware stats of your machine: CPU, RAM, Disk Space.
+13. **Package Updates**: It will appear the enabled update for the packages you have installed.
+14. **Name of the server / IP / DynDNS**:
+15. **Fast access to sync state**: check the state of your nodes.
+16. **Notifications area**
+17. **Exit**: log out area.
 
-2. Name of the server / IP / DynDNS
-
-3. Sync State
-
-4. Server Stats
-
-5. Size of ETHCHAIN and IPFS volumes
-
-6. Fast access to sync state
-
-7. Notifications area
-
-8. Autodiagnose tool / Report Issue
-
-TODO: add image witht he new dashboard
-
-> :warning: IMPORTANT NOTE ON SERVER STATS: if you note that the disk capacity is getting near to 100 % you should disable services to avoid the disk getting full. If this happens the DAppNode will get unfunctional, and you will not be able to erase packages once the memory is at 100%
-
-To avoid this, non core packages will be automatically stopped when there is less than 5 Gbs left, IPFS will be automatically stopped when there is less than 1 GB available. If by any chance your DAppNode server gets to 100 % busy disk space, it will become unworkable from the ADMIN UI and you will have to erase containers/volumes manually from the commmand line of your server.
+You can obtain a more detailed guide os every page on the relative page view of this documentation.
