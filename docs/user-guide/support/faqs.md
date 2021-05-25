@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# FAQ´s
+# FAQ's
 
 ## About DAppNode
 
