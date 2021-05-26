@@ -6,7 +6,7 @@ module.exports = {
       type: 'category',
       label: 'Get Started',  // Level 1
       items: [
-        'get-started/introduction',
+        'get-started/intro',
         {
           type: 'category',
           label: 'Installation',
