@@ -10,7 +10,7 @@ In this screen you will have an overview of the functioning of your DAppNode wit
 
 ## Report
 
-When you click the "Report" tab you will chave the option of sending the issue with a prepopulated form that will be automatically loaded in the report screen. You can also choose to open the issue without any data.
+When you click the "Report" tab you will chave the option of sending the issue with a prepopulated form that will be automatically loaded in the report screen. You can also choose to open the issue without any data. There are 2 types of scan.
 
 <p align="center">
     <img src="../../../../static/img/support_view_report.png"/>
@@ -18,7 +18,30 @@ When you click the "Report" tab you will chave the option of sending the issue w
 
 ## Ports
 
-TODO (Pablo)
+This functionality let the user know the status of the port of its DAppNode, sometimes know certainly this status can be hard. Because of that, this feature was implemented.
+
+<p align="center">
+    <img src="../../../../static/img/support_view_port_scan.png"/>
+</p>
+
+In this view you will be able to know:
+
+- Which ports need to be opened deppending on the services you have
+- **Wich service** is demmanding each port
+- **Port status**: open, closed and unknown
+- **Port protocol**: TCP and UDP
+
+### UPnP Scan
+
+If your DAppNode is not on a VPS, you should have the option to execute a UPnP scan. Take into account that this scan may fail since each router has different specifications and may no response to DAppNode requests.
+
+### API Scan
+
+Due to the uncertainty of the UPnP scan, an external service has been created that performs a TCP port scan. This scan will throw “unknow” status for UDP ports.
+
+Almost with total security the UDP ports will have the same status as the TCP ports scanned with the API scan.
+
+Note: The UDP protocol ports cannot be scanned without prior settings on the router.
 
 ## Activity
 
