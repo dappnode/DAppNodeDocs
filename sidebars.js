@@ -26,6 +26,7 @@ module.exports = {
                 type: 'category',
                 label: 'Custom Hardware',
                 items: [
+                  'get-started/installation/custom-hardware/hardware-recommendations',
                   {
                     type: 'category',
                     label: 'Installation',
