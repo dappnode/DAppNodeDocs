@@ -12,6 +12,6 @@ This user guide has the objective to explain how the interface works.
 
 - **Support**: If you need some help, in this section you can look for your question on the FAQ's, and find where you can contact the DAppNode team.
 
-General structure
+## General structure
 
 The different subsections are ordered by difficulty and recommendations. For example; access your dappnode: the first method local proxy is the easiest for the user, wifi is the second one and if you are an advanced user or you want to access via VPN you have a guide explaining how to do it. The objective is not to do all the guides, otherwise, teach the user what he can do and how to do it.
