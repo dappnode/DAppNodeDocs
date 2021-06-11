@@ -8,6 +8,9 @@ If you have bought a DAppNode or you have installed DAppNode in a physical devic
 
 When you connect your DAppNode server to your router via Ethernet you will see a network called DAppNodeWIFI, just connect to that Wifi using the default password "dappnode" and you will have direct access to your DappNode server ADMIN UI while connected to that WIFI.
 
+SSID: DAppNodeWIFI
+Password: dappnode
+
 Once you have access to the UI, you should modify these predefined values on the WI-FI section.
 
 > :warning: Please immediately change the name of the WIFI and the password by setting up the new values in the WIFI section you can access by clicking on the Wi-Fi tab on the left menu.

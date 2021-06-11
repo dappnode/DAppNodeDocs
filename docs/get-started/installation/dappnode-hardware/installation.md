@@ -45,18 +45,7 @@ When you are connected to this wifi, go to http://my.dappnode/ and you will see 
 
 ### 3.4 VPN OpenVPN
 
-## 4. Sign up
-
-The first time you access the UI, you will be asked for signing up. You need a username and a password.
-The password has some requisites:
-
-- One cap character at least.
-- One number at least.
-- One special character at least.
-
-After defining a username and a password, dappnode will give you a recovery token, in case you forget your password or username, this token can be used to recover them. **SAVE IT**!!!!
-
-## 5. First Steps
+## 4. First Steps
 
 The first time you access your DAppNode you need to set up some parameters. You can follow all this process in a detailed way on the section [User guide First steps](https://docs.dappnode.io/first-steps).
 

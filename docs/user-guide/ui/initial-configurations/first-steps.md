@@ -7,6 +7,19 @@ sidebar_position: 1
 
 Step by step guide to the user the first time he accesses the DAppNode.
 
+## Log In
+
+The first time you access the UI, you will be asked for signing up. You need a username and a password.
+The password has some requisites:
+
+- One cap character at least.
+- One number at least.
+- One special character at least.
+
+After defining a username and a password, dappnode will give you a recovery token, in case you forget your password or username, this token can be used to recover them. **SAVE IT**!!!!
+
+## Basic Configurations
+
 After **Log In** for the first time into your DAppNode you will see this screen.
 
 1. This pop up will inform you about some required configurations. Click on the Start button.
