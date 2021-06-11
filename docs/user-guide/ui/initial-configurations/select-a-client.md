@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Select a type of Client
 
-The first time you enter to the admin UI of DAppNode, you will have to take this decisions. Firstly, it's a decision you can modify whatever you want. From DAppNode we think it's so important to explain best as possible what this selection means. Then, you will see the next window.
+The first time you enter to the admin UI of DAppNode, you will have to take this decision. Firstly, it's a decision you can modify whatever you want. From DAppNode we think it's so important to explain best as possible what this selection means. Then, you will see the next window.
 
 <p align="center">
     <img src="../../../../static/img/system_view_repository.png"/>
