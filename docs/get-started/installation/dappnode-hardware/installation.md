@@ -6,7 +6,10 @@ sidebar_position: 2
 
 This guide will follow step by step what you have to do after receiving your DAppNode Hardware in a more detailed way. So if you have experienced some trouble you can do it again following this guide.
 
-If you have bought a DAppNode you don't have to install a thing, this hardware includes the latest version of DAppNode.
+If you have bought a DAppNode you don't have to install a thing, this hardware includes the latest version of DAppNode. You will need the next requisites:
+
+- Screen and keyboard (Only for the first installation)
+- Wired conection to the DAppNode
 
 ## 1. Plug DAppNode into the router
 
