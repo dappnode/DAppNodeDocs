@@ -7,7 +7,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'DAppNode', // Usually your GitHub org/user name.
+  organizationName: 'dappnode', // Usually your GitHub org/user name.
   projectName: 'DAppNode', // Usually your repo name.
   themeConfig: {
     navbar: {

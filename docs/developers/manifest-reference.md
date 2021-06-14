@@ -1,4 +1,4 @@
-# DAppNode Package Manifest Reference
+# DAppNode Package (DNP) manifest
 
 The DAppNode Package manifest defines all the necessary information for a DAppNode to understand this package:
 
@@ -15,9 +15,10 @@ The DAppNode Package manifest defines all the necessary information for a DAppNo
   "upstreamVersion": "2.6.0-beta",
   "shortDescription": "Distributed file system for storing and accessing data.",
   "description": "Welcome! IPFS is a distributed system for storing and accessing files, websites, applications, and data. If you’re new to IPFS, check our [introductory page](https://ipfs.io/#why) for an easy overview. \n\nWith this node you can upload and download files from IPFS using it own fancy web console at [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui). Other DAppNode Packages and external applications can use its API at the endpoint `http://ipfs.dappnode:5001/api`. Go to the [IPFS HTTP API full reference](https://docs.ipfs.io/reference/api/http/) to check all the features of the API.",
-  "avatar": "/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8",
   "type": "service",
   "chain": "ethereum",
+  "mainService": "webserver",
+  "dockerTimeout": "5min",
   "dependencies": {
     "bitcoin.dnp.dappnode.eth": "^0.1.2",
     "swarm.dnp.dappnode.eth": "latest"
@@ -25,10 +26,15 @@ The DAppNode Package manifest defines all the necessary information for a DAppNo
   "requirements": {
     "minimumDappnodeVersion": "0.2.0"
   },
+  "globalEnvs": {
+    "all": "true"
+  },
+  "architectures": ["linux/amd64", "linux/arm64"],
   "backup": [
     {
       "name": "keystore",
-      "path": "/root/.raiden/secret/keystore"
+      "path": "/root/.raiden/secret/keystore",
+      "service": "validator"
     }
   ],
   "changelog": "Brief summary of the most relevant changes that the user must known before installing",
@@ -53,6 +59,14 @@ The DAppNode Package manifest defines all the necessary information for a DAppNo
     "featuredColor": "white",
     "featuredAvatarFilter": "invert(1)"
   },
+  "exposable": [
+    {
+      "name": "Geth JSON RPC",
+      "description": "JSON RPC endpoint for Geth mainnet",
+      "serviceName": "beacon_chain",
+      "port": 80
+    }
+  ],
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
   "contributors": [
     "Michael First <developerHanlder@project.io> (https://github.com/developerHanlder)",
@@ -87,17 +101,21 @@ The DAppNode Package manifest defines all the necessary information for a DAppNo
 | [upstreamVersion](#upstreamversion)   | `string`   | Optional     |
 | [shortDescription](#shortdescription) | `string`   | Optional     |
 | [description](#description)           | `string`   | **Required** |
-| [avatar](#avatar)                     | `string`   | **Required** |
 | [type](#type)                         | `enum`     | **Required** |
 | [chain](#chain)                       | `enum`     | Optional     |
+| [mainService](#mainservice)           | `string`   | Optional     |
+| [dockerTimeout](#dockertimeout)       | `string`   | Optional     |
 | [dependencies](#dependencies)         | `object`   | Optional     |
 | [requirements](#requirements)         | `object`   | Optional     |
+| [globalEnvs](#globalenvs)             | `object`   | Optional     |
+| [architectures](#architectures)       | `enum[]`   | Optional     |
 | [backup](#backup)                     | `object[]` | Optional     |
 | [changelog](#changelog)               | `string`   | Optional     |
 | [warnings](#warnings)                 | `object`   | Optional     |
 | [updateAlerts](#updatealerts)         | `object[]` | Optional     |
 | [disclaimer](#disclaimer)             | `object`   | Optional     |
 | [style](#style)                       | `object`   | Optional     |
+| [exposable](#exposable)               | `object[]` | Optional     |
 | [author](#author)                     | `string`   | Optional     |
 | [contributors](#contributors)         | `string[]` | Optional     |
 | [categories](#categories)             | `enum[]`   | Optional     |
@@ -189,30 +207,6 @@ Example:
 "Welcome! IPFS is a distributed system for storing and accessing files, websites, applications, and data. If you’re new to IPFS, check our [introductory page](https://ipfs.io/#why) for an easy overview. \n\nWith this node you can upload and download files from IPFS using it own fancy web console at [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui). Other DAppNode Packages and external applications can use its API at the endpoint `http://ipfs.dappnode:5001/api`. Go to the [IPFS HTTP API full reference](https://docs.ipfs.io/reference/api/http/) to check all the features of the API."
 ```
 
-### avatar
-
-IPFS / BZZ hash of the Avatar of this DAppNode Package. Must be a 300 x 300px transparent PNG. It is strongly
-encouraged that you optimize the .png before uploading it to minimize its size.
-
-- is **required**
-- type: `string`
-- minimum length: 46 characters
-
-All instances must conform to this regular expression
-
-```regex
-^/(ipfs|bzz)/\w+$
-```
-
-- test example:
-  [/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8](<https://regexr.com/?expression=%5E%2F(ipfs%7Cbzz)%2F%5Cw%2B%24&text=%2Fipfs%2FQmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8>)
-
-Example:
-
-```json
-"/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8"
-```
-
 ### type
 
 Type of this DAppNode Package. It is used to trigger some special features such as core functionality.
@@ -268,6 +262,47 @@ Examples:
 "monero"
 ```
 
+### mainService
+
+For multi-service packages, indicate which service is the main one. The root ENS domain of this package will be mapped
+to this service IP.
+
+- is optional
+- type: `string`
+
+Examples:
+
+```json
+"webserver"
+```
+
+```json
+"backend"
+```
+
+```json
+"service1"
+```
+
+### dockerTimeout
+
+Modify the default Docker timeout of 10 seconds. It affects package updates, removals, container restarts, start and
+stop, updating config environments and port mappings. You can either pass a numerical value in seconds or a string
+representation parsed with [timestring](http://npmjs.com/package/timestring). Available from DAPPMANAGER v0.2.36
+
+- is optional
+- type: `string`
+
+Examples:
+
+```json
+"5min"
+```
+
+```json
+"60"
+```
+
 ### dependencies
 
 DAppNode Package dependencies. Must be an object where the keys are the DAppNode Package's ENS. The values must be a
@@ -279,6 +314,7 @@ semantic range, i.e. `'0.2.0'`, `'^0.2.1'`, `'*'`, `'latest'`,
 
 | Property | Type | Required |
 | -------- | ---- | -------- |
+
 
 Examples:
 
@@ -329,6 +365,53 @@ Example:
 "0.2.0"
 ```
 
+### globalEnvs
+
+Request the DAPPMANAGER to inject global ENVs to this package's containers
+
+- is optional
+- type: `object` with the following properties:
+
+| Property | Type    | Required |
+| -------- | ------- | -------- |
+| `all`    | boolean | Optional |
+
+#### all
+
+Request the DAPPMANAGER to inject all available global ENVs
+
+- is optional
+- type: `boolean`
+
+Example:
+
+```json
+"true"
+```
+
+### architectures
+
+Build and distribute this package in multiple architectures using
+[Docker's buildx plugin](https://docs.docker.com/buildx/working-with-buildx/)
+
+- is optional
+- type: Array type: `enum[]`
+
+All items must be of the type: `string`
+
+The value of this property **must** be equal to one of the known values below.
+
+| Value         | Description                  |
+| ------------- | ---------------------------- |
+| `linux/amd64` | Default architecture, x86-64 |
+| `linux/arm64` | ARM architecture             |
+
+Example:
+
+```json
+["linux/amd64", "linux/arm64"]
+```
+
 ### backup
 
 Allows users to download and restore a backup of key files of this package. If this property is non-empty array, a new
@@ -342,10 +425,11 @@ keys. **Note:** it is recommended to only backup lightweight files such as confi
 
 All items must be of the type: `object` with the following properties:
 
-| Property | Type   | Required     |
-| -------- | ------ | ------------ |
-| `name`   | string | **Required** |
-| `path`   | string | **Required** |
+| Property  | Type   | Required     |
+| --------- | ------ | ------------ |
+| `name`    | string | **Required** |
+| `path`    | string | **Required** |
+| `service` | string | Optional     |
 
 #### name
 
@@ -386,6 +470,24 @@ Examples:
 
 ```json
 "/usr/src/app/config.json"
+```
+
+#### service
+
+Service to which the path belongs to. Must be equal to the name used in the docker-compose services object
+
+- is optional
+- type: `string`
+- minimum length: 1 characters
+
+Examples:
+
+```json
+"validator"
+```
+
+```json
+"service1"
 ```
 
 ### changelog
@@ -631,6 +733,86 @@ Examples:
 ```json
 "grayscale(80%);"
 ```
+
+### exposable
+
+Exposable services safe to be in the public internet
+
+- is optional
+- type: Array type: `object[]`
+
+All items must be of the type: `object` with the following properties:
+
+| Property      | Type   | Required     |
+| ------------- | ------ | ------------ |
+| `name`        | string | **Required** |
+| `description` | string | Optional     |
+| `serviceName` | string | Optional     |
+| `port`        | number | **Required** |
+
+#### name
+
+Short human readable name of this exposable service
+
+- is **required**
+- type: `string`
+- minimum length: 1 characters
+
+Example:
+
+```json
+"Geth JSON RPC"
+```
+
+#### description
+
+Description of this exposable service
+
+- is optional
+- type: `string`
+
+Example:
+
+```json
+"JSON RPC endpoint for Geth mainnet"
+```
+
+#### serviceName
+
+Docker compose service this exposable service belongs to. Defaults to the first service.
+
+- is optional
+- type: `string`
+- minimum length: 1 characters
+
+Example:
+
+```json
+"beacon_chain"
+```
+
+#### port
+
+Port this exposable service listens to
+
+- is **required**
+- type: `number`
+
+Examples:
+
+```
+80
+```
+
+```
+5001
+```
+
+```
+8545
+```
+
+Single exposable service item
 
 ### author
 

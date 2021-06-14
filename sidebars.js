@@ -127,7 +127,7 @@ module.exports = {
             },
           ],
         },
-        'developers/manifest',
+        'developers/manifest-reference',
         'developers/wizard',
         'developers/dev-support',
       ],
