@@ -16,9 +16,9 @@ jobs:
         run: ./generateReferences.sh
 
       - name: Build docs
-        run: yarn build
+        run: yarn build --out-dir site
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./site
