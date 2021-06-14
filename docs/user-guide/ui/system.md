@@ -85,7 +85,7 @@ On this view, we can do two thing:
 
 ## Security
 
-TODO
+It shows some security checks of your DAppNode.
 
 <p align="center">
     <img src="../../../../static/img/system_view_security.png"/>

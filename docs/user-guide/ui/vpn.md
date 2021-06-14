@@ -17,8 +17,7 @@ OpenVPN is installed by default. You will see the next image.
 
 The options are:
 
-- **Credentials**: Get link button, you are redirected to a page where you can obtain your credentials.
-- **Admin**: This option is outdated and it does not matter now.
+- **Credentials**: Get linkutdated and it does not matter now.
 - **Reset**: Remove and create new credentials for OpenVPN.
 - **Remove**: Remove the configurations of the device you select.
 

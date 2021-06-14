@@ -330,15 +330,15 @@ The output of this command should be something like:
 
 ### MacOS
 
-TODO
+Go to
 
 ### iOS
 
-TODO
+Content to be added soon.
 
 ### Windows
 
-TODO
+Content to be added soon.
 
 ### Android
 
