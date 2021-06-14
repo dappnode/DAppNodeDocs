@@ -330,7 +330,7 @@ The output of this command should be something like:
 
 ### MacOS
 
-Go to
+Content to be added soon.
 
 ### iOS
 
