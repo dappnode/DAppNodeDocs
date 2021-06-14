@@ -108,7 +108,7 @@ Note that you have to run this command as elevated command prompt and then reboo
 
 If you can't import the file in Linux Open VPN client make sure you have the network-manager-openvpn and network-manager-openvpn-gnome packages installed.
 
-you can see the whole instructions for Linux [here](../connect/)
+you can see the whole instructions for Linux [here](https://docs.dappnode.io/user-guide/ui/access/vpn#linux-1)
 
 If you are still experiencing problems to connect from your Linux device please ping us in our channels, we will be happy to help!.
 
