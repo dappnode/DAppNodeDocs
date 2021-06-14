@@ -4,4 +4,4 @@
 ./generateReferences.sh
 
 # build docs
-yarn build
+yarn build --out-dir site
