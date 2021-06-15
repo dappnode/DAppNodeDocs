@@ -154,7 +154,7 @@ Log in into the machine with the user you have defined before and the password.
 
 Once the installation process has finished, automatically DAppNode will try to prepare the first access to your DAppNode on the next order:
 
-1. [Local Proxy](https://docs.dappnode.io/user-guide/ui/access/local-proxy)
-2. [Wifi](https://docs.dappnode.io/user-guide/ui/access/wifi)
-3. [Wireguard](https://docs.dappnode.io/user-guide/ui/access/vpn#wireguard)
-4. [OpenVPN](https://docs.dappnode.io/user-guide/ui/access/vpn#openvpn)
+1. [Local Proxy](../../../../user-guide/ui/access/local-proxy)
+2. [Wifi](../../../../user-guide/ui/access/wifi)
+3. [Wireguard](../../../../user-guide/ui/access/vpn#wireguard)
+4. [OpenVPN](../../../../user-guide/ui/access/vpn#openvpn)

@@ -34,7 +34,7 @@ This feature is valid for non major updates, in which an admin intervention will
 
 ## Repository
 
-You can find a more detailed information on the section [select a type of client](https://docs.dappnode.io/user-guide/ui/initial-configurations/select-a-client). It's important to understand the pros and cons of this decision.
+You can find a more detailed information on the section [select a type of client](./initial-configurations/select-a-client). It's important to understand the pros and cons of this decision.
 This view is the same that you saw in that step.
 
 <p align="center">
@@ -48,7 +48,7 @@ Here you can choose several options:
 - **Use a Full Node**: your dappnode machine will have an Ethereum node and will be full independent from anothers.
 - **OPTION Use remote during syncing or errors**: it's and option, let you to use a remote node in case your ethereum node is syncyng or it is affected by an error.
 
-As we said before if you want to know the pros and cons of this decisions, we recommend you to read [select a type of client](https://docs.dappnode.io/user-guide/ui/initial-configurations/select-a-client) section.
+As we said before if you want to know the pros and cons of this decisions, we recommend you to read [select a type of client](./initial-configurations/select-a-client) section.
 
 ## Network
 

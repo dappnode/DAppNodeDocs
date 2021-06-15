@@ -50,6 +50,6 @@ When you are connected to this wifi, go to http://my.dappnode/ and you will see 
 
 ## 4. First Steps
 
-The first time you access your DAppNode you need to set up some parameters. You can follow all this process in a detailed way on the section [User guide First steps](https://docs.dappnode.io/first-steps).
+The first time you access your DAppNode you need to set up some parameters. You can follow all this process in a detailed way on the section [User guide First steps](../../../first-steps).
 
-After setting up your DAppNode We recommend you to read the [User Section](https://docs.dappnode.io/user-guide/overview), you can find there how this documentation is structured and how to learn more about DAppNode and its UI.
+After setting up your DAppNode We recommend you to read the [User Section](../../../user-guide/overview), you can find there how this documentation is structured and how to learn more about DAppNode and its UI.

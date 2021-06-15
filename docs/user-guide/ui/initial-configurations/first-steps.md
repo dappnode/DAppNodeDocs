@@ -33,7 +33,7 @@ After **Log In** for the first time into your DAppNode you will see this screen.
    - Turn on the Use remote during syncing or errors
    - The client, we don't have a preference between geth, nethermind ...
 
-This configuration can be modified whatever you want. You can find all the information with all the details about this decision in [this section](https://docs.dappnode.io/first-steps).
+This configuration can be modified whatever you want. You can find all the information with all the details about this decision in [this section](./first-steps).
 
 <p align="center">
     <img src="../../../../static/img/first_steps_2.png"/>

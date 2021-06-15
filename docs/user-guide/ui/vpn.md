@@ -21,7 +21,7 @@ The options are:
 - **Reset**: Remove and create new credentials for OpenVPN.
 - **Remove**: Remove the configurations of the device you select.
 
-You have a full guide about how to set up OpenVPN and the OpenVPN client [here](https://docs.dappnode.io/user-guide/ui/recommended-set-ups/add-vpn-devices).
+You have a full guide about how to set up OpenVPN and the OpenVPN client [here](./recommended-set-ups/add-vpn-devices).
 
 ## Wireguard
 
@@ -41,4 +41,4 @@ If the Wireguard package is installed you will see something like the following 
     <img src="../../../static/img/wireguard_view_1.png"/>
 </p>
 
-You have a full guide about how to set up Wireguard and the Wireguard client [here](https://docs.dappnode.io/user-guide/ui/recommended-set-ups/add-vpn-devices).
+You have a full guide about how to set up Wireguard and the Wireguard client [here](./recommended-set-ups/add-vpn-devices).
