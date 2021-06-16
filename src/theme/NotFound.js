@@ -5,7 +5,7 @@ import Layout from '@theme/Layout';
 
 function NotFound() {
     return <Layout title="Page Not Found">
-        <div className = "notFound">
+        <div class = "notFound">
             <h1>
             Oh oh... You probably weren't looking for this.
             </h1>
