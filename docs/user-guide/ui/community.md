@@ -3,7 +3,7 @@
 In this section you can find all the channels you can find us and how to can contribute to this project.
 
 <p align="center">
-    <img src="../../../../static/img/community_view.png"/>
+    <img src="../../../../img/community_view.png"/>
 </p>
 
 ## Discord Channel

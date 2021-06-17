@@ -5,7 +5,7 @@
 In this screen you will have an overview of the functioning of your DAppNode with checks that will indicate you if there is any problem for the normal operation of your DAppNode. You can contribute to DAppNode´s improvement by opening issues directly from the ADMIN UI.
 
 <p align="center">
-    <img src="../../../../static/img/support_view_auto-diagnose.png"/>
+    <img src="../../../../img/support_view_auto-diagnose.png"/>
 </p>
 
 ## Report
@@ -13,7 +13,7 @@ In this screen you will have an overview of the functioning of your DAppNode wit
 When you click the "Report" tab you will chave the option of sending the issue with a prepopulated form that will be automatically loaded in the report screen. You can also choose to open the issue without any data. There are 2 types of scan.
 
 <p align="center">
-    <img src="../../../../static/img/support_view_report.png"/>
+    <img src="../../../../img/support_view_report.png"/>
 </p>
 
 ## Ports
@@ -21,7 +21,7 @@ When you click the "Report" tab you will chave the option of sending the issue w
 This functionality let the user know the status of the port of its DAppNode, sometimes know certainly this status can be hard. Because of that, this feature was implemented.
 
 <p align="center">
-    <img src="../../../../static/img/support_view_port_scan.png"/>
+    <img src="../../../../img/support_view_port_scan.png"/>
 </p>
 
 In this view you will be able to know:
@@ -48,5 +48,5 @@ Note: The UDP protocol ports cannot be scanned without prior settings on the rou
 This tab allows easy access to the DAppNode logs in order to debug errors. We work hard to make this tab irrelevant to you, but for the time being, if you are experiencing any issue, these logs will help our support team help you identify and fix any problem. You will also find a button to download a log report file.
 
 <p align="center">
-    <img src="../../../../static/img/support_activity.png"/>
+    <img src="../../../../img/support_activity.png"/>
 </p>

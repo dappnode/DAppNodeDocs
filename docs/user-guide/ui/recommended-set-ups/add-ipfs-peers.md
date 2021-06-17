@@ -28,7 +28,7 @@ Firstly, DAppNode has a server with all the packages. In this way, we are sure a
 You should go to the System > Peers or you can try to [use this link](http://my.dappnode/#/system/add-ipfs-peer) if you are connected vpn or via wifi.
 
 <p align="center">
-    <img src="../../../../static/img/system_view_peers.png"/>
+    <img src="../../../../img/system_view_peers.png"/>
 </p>
 
 ### Get your IPFS peer link

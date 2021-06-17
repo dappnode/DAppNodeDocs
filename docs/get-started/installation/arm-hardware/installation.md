@@ -13,7 +13,7 @@ sidebar_position: 2
 3. Write the image into the microSD. To do that, there are different tools such as [Raspberry pi imager](https://www.raspberrypi.org/software/) and Rufus(for windows). In this example we used Raspberry pi imager.
 
 <p align="center">
-    <img src="../../../../static/img/arm_installation_1.png"/>
+    <img src="../../../../img/arm_installation_1.png"/>
 </p>
 
 4. Insert the microSD into the Rpi.
@@ -25,7 +25,7 @@ sidebar_position: 2
 You will see this screen.
 
 <p align="center">
-    <img src="../../../../static/img/arm_installation_2.png"/>
+    <img src="../../../../img/arm_installation_2.png"/>
 </p>
 
 The default credentials are.
