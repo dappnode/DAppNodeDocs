@@ -26,6 +26,10 @@ module.exports = {
         },
       ],
     },
+    colorMode: {
+      
+      defaultMode: 'dark',
+    },
     footer: {
       style: 'dark',
       links: [
