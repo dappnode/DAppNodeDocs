@@ -141,7 +141,7 @@ Just open Tunnelblick in your MAC and click on Connect DAppNode.
     <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/mac6.png"/>
 </p>
 
-Once connected you can already access http://my.admin.dnp.dappnode.eth with your new OpenVPN connection!
+Once connected you can already access http://my.dappnode/ with your new OpenVPN connection!
 
 <p align="center">
     <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/mac8.png"/>
@@ -187,7 +187,7 @@ After a few seconds, you will see in the OpenVPN interface that you are connecte
     <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ios10.png"/>
 </p>
 
-Once connected you can access http://my.admin.dnp.dappnode.eth with your new OpenVPN connection!
+Once connected you can access http://my.dappnode/ with your new OpenVPN connection!
 
 ### Android
 
@@ -229,7 +229,7 @@ You should see a connection log similar to this:
 
 Once connected, you should be able to browse the DAppNode Admin page:
 
-[http://my.admin.dnp.dappnode.eth](http://my.admin.dnp.dappnode.eth)
+[http://my.dappnode/](http://my.dappnode/)
 
 <p align="center">
     <img width="300" src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/android7.jpg"/>
@@ -286,7 +286,7 @@ Finally, select "Connect" from the tray bar icon menu:
 Once you have installed the Wireguard package, you will be able to see this page:
 
 <p align="center">
-    <img src="./images/wireguard_view_installed.png"/>
+    <img src="../../../../img/wireguard_view_2.png"/>
 </p>
 
 This step is common whatever OS/device you will use as a client. By default, one profile is created, click on the Get link button which is in the column Credentials.
