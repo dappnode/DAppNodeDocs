@@ -4,11 +4,15 @@
 
 The first time you access your DAppnode using the VPN, appear the next image:
 
-![Signin](../../../static/img/sign_in_image.png)
+<p align="center">
+    <img src="../../../img/sign_in_image.png"/>
+</p>
 
 Once you fill the fields and press the register button, DAppNode provides you with a recovery code. If you forget te DAppNode's Password you will be able to access using this token.
 
-![Recovery Token](../../../static/img/recovery_token.png)
+<p align="center">
+    <img src="../../../img/recovery_token.png"/>
+</p>
 
 You should save your token in a secure place like a password manager, paper, etc. In this case, we would save this:
 
@@ -20,15 +24,21 @@ You should save your token in a secure place like a password manager, paper, etc
 
 Firstly, we have to go to the login page of our DAppNode:
 
-![login](../../../static/img/login.png)
+<p align="center">
+    <img src="../../../img/login.png"/>
+</p>
 
 We should select the option "Forgot password?". It will appear a field where you can reset your password using the recovery token. In this example, we would use the token <code>4LMB9w3l50Yljwr6bIgQ</code>. You have to use your recovery token.
 
-![reset password with the recovery token](../../../static/img/reset_password_with_recovery_token.png)
+<p align="center">
+    <img src="../../../img/reset_password_with_recovery_token.png"/>
+</p>
 
 After confirming the recovery token, you can define an admin user in DAppNode and his password in the same way you did the first time you connect.
 
-![Defining the new password](../../../static/img/sign_in_image.png)
+<p align="center">
+    <img src="../../../img/sign_in_image.png"/>
+</p>
 
 Remember using a password with the next properties:
 
@@ -38,7 +48,9 @@ Remember using a password with the next properties:
 
 Once you filled the field and press the register button, dappnode will provide a recovery token.
 
-![Obtaining your recovery token](../../../static/img/recovery_token.png)
+<p align="center">
+    <img src="../../../img/recovery_token.png"/>
+</p>
 
 We write down and save that token and we accept we have copied our recovery token. We log in with our new credentials and we have access to our DAppNode.
 

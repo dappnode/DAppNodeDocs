@@ -22,14 +22,14 @@ DAppNode supports 2 kinds of VPN: OpenVPN and Wireguard. Below you have a little
 Firstly, you should go to VPN page, clicking on the VPN tab on the left menu. You sill see a view where you can select 2 tabs: OpenVPN and wireguard.
 
 <p align="center">
-    <img src="../../../../static/img/vpn_view.png"/>
+    <img src="../../../../img/vpn_view.png"/>
 </p>
 
 In case you want to set up openVPN, follow the instruction of OpenVPN.
 On the other hand, if you wish to use wireguard, click on the tab Wireguard, you will need to install the wireguard package how you see in the below image.
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_view_installed.png"/>
+    <img src="../../../../img/wireguard_view_installed.png"/>
 </p>
 
 In case you want to set up wireguard, follow the instruction of Wireguard.
@@ -345,19 +345,19 @@ Content to be added soon.
 In your mobile, go to the playstore, then look for `wireguard` and select this app and install it:
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_android_install.jpg"/>
+    <img src="../../../../img/wireguard_android_install.jpg"/>
 </p>
 
 Then, if you open the app you will see the next image:
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_android_set_up.jpg"/>
+    <img src="../../../../img/wireguard_android_set_up.jpg"/>
 </p>
 
 Click on the blue circle button on the right bottom:
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_android_set_up_2.jpg"/>
+    <img src="../../../../img/wireguard_android_set_up_2.jpg"/>
 </p>
 
 You can obtain the configuration scanning the QR you obtain on the vpn/wireguard view, download the file and import it or copy the contain of the configuration.
@@ -367,7 +367,7 @@ You can obtain the configuration scanning the QR you obtain on the vpn/wireguard
 Automatically, after installing DAppNode you should see the next image and a link where can download the credentials.
 
 <p align="center">
-    <img src="../../../../static/img/VirtualBox_console.png"/>
+    <img src="../../../../img/VirtualBox_console.png"/>
 </p>
 
 If it does not happen, you can generate the OpenVPN credentials manually with the command:

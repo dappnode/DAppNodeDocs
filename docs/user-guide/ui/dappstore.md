@@ -7,7 +7,7 @@ DAppStore is the place where you can look for, install and update the package yo
 You can access the DAppStore view clicking on the DAppStore option which appears on the left menu on the UI. You should see something similar to this image:
 
 <p align="center">
-    <img src="../../../../static/img/dappstore_view.png"/>
+    <img src="../../../../img/dappstore_view.png"/>
 </p>
 
 The main tasks you can do here are:
@@ -28,7 +28,7 @@ There are 2 ways of using this view for searching a package:
 The main view of the DAppStore shows the packages you can install.
 
 <p align="center">
-    <img src="../../../../static/img/installing_a_package_1.png"/>
+    <img src="../../../../img/installing_a_package_1.png"/>
 </p>
 
 Every of this card represents a package, the information you can obtain from that is the next:
@@ -43,7 +43,7 @@ Every of this card represents a package, the information you can obtain from tha
 You can use this bar to look for the package by its name or its IPFS Hash.
 
 <p align="center">
-    <img src="../../../../static/img/dappstore_nav_bar.png"/>
+    <img src="../../../../img/dappstore_nav_bar.png"/>
 </p>
 
 ## Install a package
@@ -51,7 +51,7 @@ You can use this bar to look for the package by its name or its IPFS Hash.
 Once you have located the package you want to install. Click on the **GET** button. You will be redirected to the next view:
 
 <p align="center">
-    <img src="../../../../static/img/installing_a_package_2.png"/>
+    <img src="../../../../img/installing_a_package_2.png"/>
 </p>
 
 On this view you can observe the next information about the package:

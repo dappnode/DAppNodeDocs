@@ -12,7 +12,7 @@ On this view, we can check what packages we have installed in our DAppNodes. You
 My packages refers to the packages the user have installed and they are not essential for the performance of DAppNode.
 
 <p align="center">
-    <img src="../../../../static/img/packages_view_1.png"/>
+    <img src="../../../../img/packages_view_1.png"/>
 </p>
 
 ## System packages
@@ -20,5 +20,5 @@ My packages refers to the packages the user have installed and they are not esse
 They are the packages that are essential for DAppNode or including a feature that is so important for DAppNode.
 
 <p align="center">
-    <img src="../../../../static/img/packages_view_2.png"/>
+    <img src="../../../../img/packages_view_2.png"/>
 </p>

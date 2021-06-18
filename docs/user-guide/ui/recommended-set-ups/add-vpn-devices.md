@@ -25,7 +25,7 @@ To set up VPN correctly, you need to open the ports 8092 TCP and 1194 UDP. You h
 You can use openvpn or wireguard. You are free to set up whatever you prefer or even both. Firstly, go to the VPN page, you can do it by clicking on the VPN on the right menu of the UI. Select the tab of the vpn you want to set up.
 
 <p align="center">
-    <img src="../../../static/img/wireguard_view_1.png"/>
+    <img src="../../../img/wireguard_view_1.png"/>
 </p>
 
 In case wireguard is not installed and you want to use it, intall the package by clicking on the link.
@@ -36,7 +36,7 @@ If you have wireguard package installed you should see this page after clicking 
 Once you have installed the Wireguard package, you will be able to see this page:
 
 <p align="center">
-    <img src="../../../static/img/wireguard_view_2.png"/>
+    <img src="../../../img/wireguard_view_2.png"/>
 </p>
 
 You can use the profile is created by default. Or create a new one and delete this. To create a new one follow the next steps.
@@ -44,19 +44,19 @@ You can use the profile is created by default. Or create a new one and delete th
 1. Type a name for your device on the field **Add Device** and click on the button o press intro.
 
 <p align="center">
-    <img src="../../../static/img/add_wireguard_device_1.png"/>
+    <img src="../../../img/add_wireguard_device_1.png"/>
 </p>
 
 If the device was created correctly, this one will appears below.
 
 <p align="center">
-    <img src="../../../static/img/add_wireguard_device_2.png"/>
+    <img src="../../../img/add_wireguard_device_2.png"/>
 </p>
 
 2. Click on the button **Get link** of this device you have created. You will be redirected to the next page:
 
 <p align="center">
-    <img src="../../../static/img/add_wireguard_device_3.png"/>
+    <img src="../../../img/add_wireguard_device_3.png"/>
 </p>
 
 If you will use a wireguard client in a laptop or pc you need to copy that text, it's the configuration of wireguard for the device that you have added. You can copy it by clicking on the **Copy remote config**.
@@ -116,19 +116,19 @@ Content to be added soon.
 In your mobile, go to the playstore, then look for `wireguard` and select this app and install it:
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_android_install.jpg"/>
+    <img src="../../../../img/wireguard_android_install.jpg"/>
 </p>
 
 Then, if you open the app you will see the next image:
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_android_set_up.jpg"/>
+    <img src="../../../../img/wireguard_android_set_up.jpg"/>
 </p>
 
 Click on the blue circle button on the right bottom:
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_android_set_up_2.jpg"/>
+    <img src="../../../../img/wireguard_android_set_up_2.jpg"/>
 </p>
 
 You can obtain the configuration scanning the QR you obtain on the vpn/wireguard view, download the file and import it or copy the contain of the configuration.
@@ -136,7 +136,7 @@ You can obtain the configuration scanning the QR you obtain on the vpn/wireguard
 ## OpenVPN
 
 <p align="center">
-    <img src="../../../static/img/openvpn_view_1.png"/>
+    <img src="../../../img/openvpn_view_1.png"/>
 </p>
 
 You can use the profile is created by default. Or create a new one and delete this. To create a new one follow the next steps.
@@ -144,19 +144,19 @@ You can use the profile is created by default. Or create a new one and delete th
 1. Type a name for your device on the field **Add Device** and click on the button o press intro.
 
 <p align="center">
-    <img src="../../../static/img/add_wireguard_device_1.png"/>
+    <img src="../../../img/add_wireguard_device_1.png"/>
 </p>
 
 If the device was created correctly, this one will appears below.
 
 <p align="center">
-    <img src="../../../static/img/add_openvpn_device_1.png"/>
+    <img src="../../../img/add_openvpn_device_1.png"/>
 </p>
 
 2. Click on the button **Get link** of this device you have created. You will be redirected to the next page:
 
 <p align="center">
-    <img src="../../../static/img/add_openvpn_device_2.png"/>
+    <img src="../../../img/add_openvpn_device_2.png"/>
 </p>
 
 These are the recommended Open VPN clients for each OS:

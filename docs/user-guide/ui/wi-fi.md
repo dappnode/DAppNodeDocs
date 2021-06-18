@@ -9,7 +9,7 @@ On the status page, you can turn on/off the wifi package. You can do this in cas
 > :warning: If you are accessing via wifi, check you can connect to your DAppNode using another method in case you will turn off the wifi.
 
 <p align="center">
-    <img src="../../../../static/img/wifi_view_1.png"/>
+    <img src="../../../../img/wifi_view_1.png"/>
 </p>
 
 ## Credentials
@@ -21,5 +21,5 @@ In this tab, you can change the current password of the wifi.
 > :warning: Remember you need to use a strong password for the wifi.
 
 <p align="center">
-    <img src="../../../../static/img/wifi_view_2.png"/>
+    <img src="../../../../img/wifi_view_2.png"/>
 </p>

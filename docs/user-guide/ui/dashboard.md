@@ -3,7 +3,7 @@
 The dashboard view is the main page of the DAppNode interface.s
 
 <p align="center">
-    <img src="../../../../static/img/dashboard_numered.png"/>
+    <img src="../../../../img/dashboard_numered.png"/>
 </p>
 
 1. **Dashboard**: To back to the main view of the DAppNode interface.

@@ -12,7 +12,7 @@ There are 2 tabs:
 OpenVPN is installed by default. You will see the next image.
 
 <p align="center">
-    <img src="../../../static/img/openvpn_view_1.png"/>
+    <img src="../../../img/openvpn_view_1.png"/>
 </p>
 
 The options are:
@@ -30,7 +30,7 @@ You have a full guide about how to set up OpenVPN and the OpenVPN client [here](
 In this case, wireguard is not installed in your DAppNode. You can do it by clicking on the link that appears.
 
 <p align="center">
-    <img src="../../../static/img/wireguard_view_1.png"/>
+    <img src="../../../img/wireguard_view_1.png"/>
 </p>
 
 ### Wireguard is installed
@@ -38,7 +38,7 @@ In this case, wireguard is not installed in your DAppNode. You can do it by clic
 If the Wireguard package is installed you will see something like the following screen.
 
 <p align="center">
-    <img src="../../../static/img/wireguard_view_1.png"/>
+    <img src="../../../img/wireguard_view_1.png"/>
 </p>
 
 You have a full guide about how to set up Wireguard and the Wireguard client [here](./recommended-set-ups/add-vpn-devices).

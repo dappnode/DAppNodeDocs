@@ -20,25 +20,25 @@ We will show how to do it step by step:
 1. Firstly, you need to go to Packages view. Selecting the Packages item on the left menu.
 
 <p align="center">
-    <img src="../../../../static/img/backup-functionality_1.png"/>
+    <img src="../../../../img/backup-functionality_1.png"/>
 </p>
 
 2. Select one package that have sensitive information. For example, bee package. Click on the name of the package you want to do the backup, and select the **Backup** tab.
 
 <p align="center">
-    <img src="../../../../static/img/backup-functionality_2.png"/>
+    <img src="../../../../img/backup-functionality_2.png"/>
 </p>
 
 3. Click on the **Backup now** button.
 
 <p align="center">
-    <img src="../../../../static/img/backup-functionality_3.png"/>
+    <img src="../../../../img/backup-functionality_3.png"/>
 </p>
 
 4. You will see a pop up where you can choose where to store the compressed file with your backup file.
 
 <p align="center">
-    <img src="../../../../static/img/backup-functionality_4.png"/>
+    <img src="../../../../img/backup-functionality_4.png"/>
 </p>
 
 And **that's all**, you have a backup that package, in this example I would have a backup of my bee package.
@@ -54,13 +54,13 @@ Following the same example above, let's imagine that my be package crashed and a
 1. Go to the view of the package, in this case, Packages > Bee > Backup and click on the **Restore** button:
 
 <p align="center">
-    <img src="../../../../static/img/backup-functionality_5.png"/>
+    <img src="../../../../img/backup-functionality_5.png"/>
 </p>
 
 2. It will appear a pop up asking you select your backup file, you have to select the same compressed file you download when you do the backup, as simple as that.
 
 <p align="center">
-    <img src="../../../../static/img/backup-functionality_6.png"/>
+    <img src="../../../../img/backup-functionality_6.png"/>
 </p>
 
 After this two steps, you would have restore your package.

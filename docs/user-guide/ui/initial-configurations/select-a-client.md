@@ -7,7 +7,7 @@ sidebar_position: 2
 The first time you enter to the admin UI of DAppNode, you will have to take this decision. Firstly, it's a decision you can modify whatever you want. From DAppNode we think it's so important to explain best as possible what this selection means. Then, you will see the next window.
 
 <p align="center">
-    <img src="../../../../static/img/system_view_repository.png"/>
+    <img src="../../../../img/system_view_repository.png"/>
 </p>
 
 You can select 3 different options. To understand correctly what are the consecuences, we will explain in a short way the context situation and the pros and cons of every option.
