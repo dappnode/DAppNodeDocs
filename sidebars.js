@@ -175,9 +175,11 @@ module.exports = {
     'dao',
     {
       type: 'category',
-      label: 'DAppNode DAO',
+      label: 'The NODE Economy',
       items: [
-          'dao/example',
+          'dao/node-drop',
+          'dao/node-stream',
+          'dao/liquidity-mining',
       ],
     },
   ],
