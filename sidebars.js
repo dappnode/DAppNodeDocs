@@ -171,4 +171,14 @@ module.exports = {
       ],
     },
   ],
+  dao: [
+    'dao',
+    {
+      type: 'category',
+      label: 'DAppNode DAO',
+      items: [
+          'dao/example',
+      ],
+    },
+  ],
 };
