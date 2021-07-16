@@ -17,9 +17,8 @@ A further 5.5% of the token supply has been reserved for future rounds of LM. At
 - NODE Governance Staking Mainnet - 0xA3beE346dD18FF6de2a5E74937691Bd4195e4771
 
 ### LP Token Addresses (Mainnet)
-- Sushiswap - 0xddfe44E3C2B2794e17b4d7C32AB4eA23C962f753
-- Uniswap v2 -0x5DE7F5F2e373f44273b1Fd1Cd4F9644fFd3E0a82
-
+- Uniswap v2 ETH/NODE LP - 0x5DE7F5F2e373f44273b1Fd1Cd4F9644fFd3E0a82
+- Sushiswap ETH/NODE LP -0xddfe44E3C2B2794e17b4d7C32AB4eA23C962f753
 ### Weekly Distribution
 
 Round 1 (26 weeks) weekly NODE rewards distribution percentages based on LM supply are as follows:
