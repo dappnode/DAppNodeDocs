@@ -11,14 +11,14 @@ Liquidity Mining (LM) launched on (DATE OF LAUNCH). 5.5% of the total token supp
 A further 5.5% of the token supply has been reserved for future rounds of LM. At the end of the first round the team will re-assess the Liquidity Mining program, potentially deploying new pools and distribution.
 
 ### Staking Contract Addresses
-- Sushiswap NODE/ETH Pool - 0xdadA02029134F73aF874640eF351A8Cf85DdADA0
-- Uniswap NODE/ETH Pool -
-- NODE Governance Staking xDai -
-- NODE Governance Staking Mainnet -
+- Sushiswap NODE/ETH Pool - 0xA075cA58f0C98fe4B1daa5c4F9dFb2D426D168bf
+- Uniswap NODE/ETH Pool - 0xb6d74BE21f800595BA90fA6A10eeA18C590cC52f
+- NODE Governance Staking xDai - 0x99D92eBe42E830aF34844b1b71F3cec1B1DBd903
+- NODE Governance Staking Mainnet - 0xA3beE346dD18FF6de2a5E74937691Bd4195e4771
 
 ### LP Token Addresses (Mainnet)
-- Sushiswap -
-- Uniswap v2 -
+- Sushiswap - 0xddfe44E3C2B2794e17b4d7C32AB4eA23C962f753
+- Uniswap v2 -0x5DE7F5F2e373f44273b1Fd1Cd4F9644fFd3E0a82
 
 ### Weekly Distribution
 
