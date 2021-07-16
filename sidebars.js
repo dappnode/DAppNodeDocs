@@ -177,6 +177,7 @@ module.exports = {
       type: 'category',
       label: 'The NODE Economy',
       items: [
+          'dao/node-basics',
           'dao/node-drop',
           'dao/node-stream',
           'dao/liquidity-mining',
