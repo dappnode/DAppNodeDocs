@@ -6,17 +6,17 @@ description: my hello page description
 
 # Governance
 ### Admin Addresses
-- Controller -
+- Deployer - 0x53346fD0fD4F744093E7EDAc4Ef3E0475B2784C1
 ### Token Addresses
 - NODE Mainnet - 0xdadA02029134F73aF874640eF351A8Cf85DdADA0
 - NODE xDai - 0x13AB0Ad0b5244A4d8503147648cDFF2C68DDe2e6
-- Uniswap ETH/NODE LP -
-- Sushiswap ETH/NODE LP -
+- Uniswap v2 ETH/NODE LP - 0x5DE7F5F2e373f44273b1Fd1Cd4F9644fFd3E0a82
+- Sushiswap ETH/NODE LP -0xddfe44E3C2B2794e17b4d7C32AB4eA23C962f753
 ### Staking Contract Addresses
-- Sushiswap NODE/ETH Pool -
-- Uniswap NODE/ETH Pool -
-- NODE Governance Staking xDai -
-- NODE Governance Staking Mainnet -
+- Sushiswap NODE/ETH Pool - 0xA075cA58f0C98fe4B1daa5c4F9dFb2D426D168bf
+- Uniswap NODE/ETH Pool - 0xb6d74BE21f800595BA90fA6A10eeA18C590cC52f
+- NODE Governance Staking xDai - 0x99D92eBe42E830aF34844b1b71F3cec1B1DBd903
+- NODE Governance Staking Mainnet - 0xA3beE346dD18FF6de2a5E74937691Bd4195e4771
 
 ### Mission & Membership
 The DAppNode DAO will be an inclusive hub in which DAppNode’s community will carry on its mission to keep the web decentralized, uncensored and resilient. Active DAO members will have the opportunity to vote on DAppNode’s future projects and on how to expand its array of hardware and software solutions.
