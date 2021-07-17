@@ -18,7 +18,7 @@ module.exports = {
       },
       items: [
         {to: '/', label: 'Docs', position: 'left'},
-        {to: '/dao', label: 'DAO', position: 'left'},
+       // {to: '/dao', label: 'DAO', position: 'left'},
         {
           href: 'https://github.com/dappnode/DAppNode',
           label: 'GitHub',
