@@ -4,10 +4,9 @@ import styles from '../../src/css/styles.css'
 
 ### NODE Basics
 
-Token Address on Mainnet - 0xdadA02029134F73aF874640eF351A8Cf85DdADA0
+Token Address on Mainnet - [0xDa007777D86AC6d989cC9f79A73261b3fC5e0DA0](https://etherscan.io/address/0xDa007777D86AC6d989cC9f79A73261b3fC5e0DA0)
 
-Token Address on xDai - 0x13AB0Ad0b5244A4d8503147648cDFF2C68DDe2e6
-
+Token Address on xDai - [0xc60e38C6352875c051B481Cbe79Dd0383AdB7817](https://blockscout.com/xdai/mainnet/address/0xc60e38C6352875c051B481Cbe79Dd0383AdB7817/transactions)
 
 NODE has a total initial supply of 100,000,000 tokens. These tokens have been distributed in accordance with the following chart:
 
