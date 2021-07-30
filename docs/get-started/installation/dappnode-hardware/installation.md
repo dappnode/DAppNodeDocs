@@ -32,7 +32,7 @@ If the method on the list does not seem to work, try the next.
 
 ### 3.1 Local Proxy
 
-From your device's browser (computer or phone), try to access your DAppNode through the URL https://dappnode.local **while connected to the same network DAppNode is connected to**. Remember, you must let the DAppNode start its processes after turning it on, so make sure you wait for around 5 minutes before trying to connect to https://dappnode.local. If you can't connect, try the next acccess method:
+From your device's browser (computer or phone), try to access your DAppNode through the URL https://dappnode.local **while connected to the same network DAppNode is connected to**. Remember, you must let the DAppNode start its processes after turning it on, so make sure you wait for around 5 minutes before trying to connect to http://dappnode.local . If you can't connect, try the next acccess method:
 
 ### 3.2 Wifi
 
