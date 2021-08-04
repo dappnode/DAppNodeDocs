@@ -10,7 +10,7 @@ Token Address on xDai - [0xc60e38C6352875c051B481Cbe79Dd0383AdB7817](https://blo
 
 NODE has a total initial supply of 100,000,000 tokens. These tokens have been distributed in accordance with the following chart:
 
-<img id="border" alt="NODEdrop Distro PIE chart" src="../../img/DAO/NODEdropPIE.png" />
+<img id="border" alt="NODEdrop Distro PIE chart" src="../../img/DAO/Distribution.png" />
 
 ### NODEdrop
 
@@ -30,18 +30,24 @@ Check your NODEdrop [here](http://app.dappnode.io/nodedrop).
 
 90% of the entire initial supply of NODE has been allocated to the "NODEstream" which is set to flow for a period of 3 years (36 months - i.e. until July 2024). This is essentially a continous stream of NODE that flows out of the "Reservoir" and into the "Claimable" section of the dashboard. NODEstream distribution can be roughly tracked as follows:
 
-| Month | Claimable | Held in Reservoir |
-| ----- | --------- | ----------------- |
-| 0     | 10%       | 90%               |
-| 9     | 32.5%     | 67.5%             |
-| 18    | 55%       | 45%               |
-| 27    | 77.5%     | 22.5%             |
-| 36    | 100%      | 0%                |
+| Date                                                         | Month | Claimable | Held in Reservoir |
+| ------------------------------------------------------------ | ----- | --------- | ----------------- |
+| Jul 17 2021 22:00:00 GMT+0200 (Central European Summer Time) | 0     | 10%       | 90%               |
+| Apr 2022                                                     | 9     | 32.5%     | 67.5%             |
+| Jan 2023                                                     | 18    | 55%       | 45%               |
+| Nov 2023                                                     | 27    | 77.5%     | 22.5%             |
+| Aug 2024                                                     | 36    | 100%      | 0%                |
 
 The NODEstream works on a time-based linear function, meaning the reservoir will gradually hold a smaller percentage of your NODE and thus more NODE is made instantly available from your staking rewards. At the end of the NODEstream The reservoir will no longer hold any NODE and 100% of your staking rewards will be instantly claimable.
 
-<img id="border" alt="NODEdrop Distro PIE chart" src="../../static/img/DAO/claimNODEui.png" />
+<p align="center">
+    <img width="800"src="../../img/DAO/nodestream-vesting.png"/>
+</p>
 
 The NODEstream has been designed to encourage long-term participation in the NODE Economy. As the NODE Economy grows and the DAppNode universe expands, our community is awarded even more NODE to use in DAO governance.
+
+<p align="center">
+    <img width="1000" src="../../img/DAO/claimNODEui.png"/>
+</p>
 
 Recipients of the NODEdrop on xDai Network are granted the NODEstream, whereas on Mainnet the NODEdrop does not include the NODEstream automatically. In order to receive and augment the flow of NODE you must provide liquidity in any of the eligible pools. Some part of the rewards earned from NODEstaking are claimable immediately, where as the other part is allocated to the reservoir for NODEstreaming.
