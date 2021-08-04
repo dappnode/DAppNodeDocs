@@ -21,8 +21,9 @@ NODE has been airdropped in a NODEdrop to our community of faithful supporters. 
 - Purchasers of DAppNode hardware
 - Code Contributors
 - Active community members, ranked by our sourcecred algorithm
-- Donors to DAppNode in Gitcoin Grants Rounds (with donations above $0.15)
+- Donors to DAppNode in Gitcoin Grants Rounds (with donations above $1)
 - Eth2 stakers who have self-identified as DAppNode runners by including the word "DAppNode" in their graffiti
+- Eth2 stakers present in the Genesis of Eth2
 
 Check your NODEdrop [here](http://app.dappnode.io/nodedrop).
 
