@@ -6,20 +6,20 @@ sidebar_position: 1
 
 Now you know what is DAppNode and want to know how you can engage with DAppNode. Firstly, you need to run DAppNode in a dedicated machine, that means you should use a machine only for dappnode.
 
-User has to understand that every package is unique and has its requirements, there are packages that need more disk space or use more the RAM.
+DAppNode users have to understand that every package is unique and has its own requirements. Some packages need more disk space or use more the RAM than others.
 
 As we said before, DAppNode is a open source project. You can see the source code and install it in your own machine. Where and how to run DAppNode?
 
 ## DAppNode Hardware
 
-If you are a non technical user, we would recommend to buy a prebuilt DAppNode Hardware, because it's easier. Firstly, you don't have to worry about hardware specifications and manual installations. You only need to plug and follow the instructions. You can get more information on the section [DAppNode Hardware](./dappnode-hardware/what-dappnode-we-should-select).
+If you are a non technical user, we recommend you buy a prebuilt DAppNode Hardware because it's easier. You don't have to worry about hardware specifications and manual installations. You only need to plug in and follow the instructions. You can get more information in the section [DAppNode Hardware](./dappnode-hardware/what-dappnode-we-should-select).
 
-The objective of this product is make easier and reduce as much as possible that an user has to use a terminal. The main [advantages](./dappnode-hardware/advantages) is you don't need to touch the terminal to access to your dappnode and it's UI.
+The objective of this product is make easier and reduce the need to use a terminal as much as possible. The main [advantage](./dappnode-hardware/advantages) is that you don't need to touch the terminal to access to your dappnode and its UI.
 
 ## Custom Hardware
 
-If you are an user who wants to run his custom hardware, you can follow the guide on the section [Custom Hardware](./introduction). There you will find all the interesting information about the different installation process and hardware recomendation.
+If you are a user who wants to run custom hardware, you can follow the guide on the section [Custom Hardware](./custom-hardware/hardware-recommendations). There you will find information about the different installation processes and hardware recomendations.
 
 ## ARM Hardware
 
-In case you will use ARM hardware, the installation process is slighltly different, you can find the correspond information on [Custom Hardware](./arm-hardware/hardware-recommendations).
+If you plan to use ARM hardware, the installation process is slighltly different. You can find the corresponding information on [ARM Hardware](./arm-hardware/hardware-recommendations).

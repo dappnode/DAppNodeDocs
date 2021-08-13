@@ -10,17 +10,17 @@ sidebar_position: 2
 
 2. Unzip the file.
 
-3. Write the image into the microSD. To do that, there are different tools such as [Raspberry pi imager](https://www.raspberrypi.org/software/) and Rufus(for windows). In this example we used Raspberry pi imager.
+3. Write the image into the microSD. To do that, there are different tools such as [Raspberry Pi imager](https://www.raspberrypi.org/software/) and Rufus(for windows). In this example we used Raspberry Pi imager.
 
 <p align="center">
     <img src="../../../../img/arm_installation_1.png"/>
 </p>
 
-4. Insert the microSD into the Rpi.
+4. Insert the microSD into the Raspberry Pi.
 
-5. Connect the raspberry pi to a screen and a keyboard.
+5. Connect the Raspberry Pi to a screen and a keyboard.
 
-6. Switch on the Rpi and wait for the startup process.
+6. Switch on the Raspberry Pi and wait for the startup process.
 
 You will see this screen.
 

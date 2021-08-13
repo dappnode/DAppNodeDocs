@@ -20,7 +20,7 @@ Most nodes for public blockchains nowadays have a degree of architectural or/and
 
 A very common case is to host a node in a Virtual Private Server (VPS). This puts your node in the hands of a highly centralized company like Digital Ocean or Amazon, which could block and censor your access. Moreover, they could be hosting different nodes in the same machine, architecturally reducing decentralization too. Your DAppNode gives you complete control over your nodes and benefits the network.
 
-Another common case in the Ethereum blockchain is to connect through a node owned by Infura. While Infura's work on providing infrastructure for the network is comiable and a necessity at this stage, we can see how the ownership of a majority of nodes by the same company is a centralizing factor.
+Another common case in the Ethereum blockchain is to connect through a node owned by Infura. While Infura's work on providing infrastructure for the network is amiable and a necessity at this stage, we can see how the ownership of a majority of nodes by the same company is a centralizing factor.
 
 **We, DAppNode, have set up to empower everyone, regardless of their technical ability, to be able to break free of any centralization and possibility of access censorship by running their own node and host their favourite DApps.**
 
@@ -29,4 +29,4 @@ DAppNode connects users to the decentralized web and creates the infrastructure 
 **You can start using DAppNode in two ways:**
 
 Either you can [install DAppNode](https://install.dappnode.io) on any compatible hardware, or
-You can acquire one of our [pre-installed DAppNode servers](https://shop.dappnode.io) for the easiest and most convenient way of to get easy censorship-resistant access to your favorite DApps. With both you will have the ability to host your own nodes and also share its access with family and friends.
+you can acquire one of our [pre-installed DAppNode servers](https://shop.dappnode.io) for the easiest and most convenient way of to get easy censorship-resistant access to your favorite DApps. With both you will have the ability to host your own nodes and also share its access with family and friends.

@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # ISO Installation
 
-When you want to perform a clean installation, installing the base operating system and DAppNode. Installing from an ISO will wipe the machine data and install Debian + DAppNode.
+When you want to perform a clean installation by installing the base operating system and DAppNode. Installing from an ISO will wipe the machine data and install Debian + DAppNode.
 
 ## Get the ISO
 
@@ -16,9 +16,9 @@ Burn the ISO to an USB stick. To do so we recommend using [Etcher](https://www.b
 
 > :warning: Please note that Etcher is intended to generate the ISO image in a bootable USB from your desktop device, and then install it in a server
 
-IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED.
+IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA, ALL EXISTING DATA WILL BE ERASED.
 
-Also, DAppNode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
+Also, DAppNode is intended to run 24/7 so if you install it on a laptop or desktop machine and you turn it off, it will not stay synced.
 
 ## Boot from ISO
 
@@ -50,7 +50,7 @@ Select a keyboard configuration.
     <img src="../../../../img/iso_install_4.png"/>
 </p>
 
-Type a hostname, this is like the name your machine will have on the network. It's not important.
+Type a hostname. This is the name your machine will have on the network. It's not important.
 
 <p align="center">
     <img src="../../../../img/iso_install_5.png"/>
@@ -62,15 +62,15 @@ Define a password for the user root.
     <img src="../../../../img/iso_install_6.png"/>
 </p>
 
-> :warning: Write down this password, you will need it in case you need to access as root to the cli of DAppNode.
+> :warning: Write down this password, you will need it in case you need to access as root to the command line interface (cli) of DAppNode.
 
-Select an username for your DAppNode and define a password.
+Select a username for your DAppNode and set a password.
 
 <p align="center">
     <img src="../../../../img/iso_install_7.png"/>
 </p>
 
-> :warning: Write down the user for dappnode and the password you define for him.
+> :warning: Write down this DAppNode username and password.
 
 <p align="center">
     <img src="../../../../img/iso_install_8.png"/>
@@ -112,7 +112,7 @@ Confirm we want to write the changes to disks.
     <img src="../../../../img/iso_install_14.png"/>
 </p>
 
-The next decision depends of you. We resommend to select yes because you dont have to confirm all the operations.
+The next decision depends on you. We recommend you choose 'Yes' because you don't have to confirm all the operations.
 
 <p align="center">
     <img src="../../../../img/iso_install_15.png"/>
@@ -130,7 +130,7 @@ Select the disk.
     <img src="../../../../img/iso_install_17.png"/>
 </p>
 
-If you have a IP you should define here. In other case, leave the field blank.
+If you have an IP you should define here. Otherwise, leave the field blank.
 
 <p align="center">
     <img src="../../../../img/iso_install_18.png"/>
@@ -148,11 +148,11 @@ The machine will restart and you will see this screen.
     <img src="../../../../img/iso_install_20.png"/>
 </p>
 
-Log in into the machine with the user you have defined before and the password.
+Log in into the machine with the DAppNode username and password you chose earlier.
 
 ## Post-Installation
 
-Once the installation process has finished, automatically DAppNode will try to prepare the first access to your DAppNode on the next order:
+Once the installation process has finished, DAppNode will try to automatically prepare the first access to your DAppNode on the next order:
 
 1. [Local Proxy](../../../../user-guide/ui/access/local-proxy)
 2. [Wifi](../../../../user-guide/ui/access/wifi)
