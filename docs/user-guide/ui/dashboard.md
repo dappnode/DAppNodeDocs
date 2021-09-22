@@ -1,6 +1,6 @@
 # Dashboard View
 
-The dashboard view is the main page of the DAppNode interface.s
+The dashboard view is the main page of the DAppNode interfaces.
 
 <p align="center">
     <img src="../../../../img/dashboard_numered.png"/>
