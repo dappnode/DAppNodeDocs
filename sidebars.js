@@ -95,6 +95,7 @@ module.exports = {
         'user-guide/ui/vpn',
         'user-guide/ui/dappstore',
         'user-guide/ui/packages',
+        'user-guide/ui/explorer',
         'user-guide/ui/system',
         'user-guide/ui/community',
         'user-guide/ui/sdk',
