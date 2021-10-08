@@ -1,5 +1,3 @@
-import styles from '../../src/css/styles.css'
-
 # The NODE Economy
 
 ### NODE Basics
