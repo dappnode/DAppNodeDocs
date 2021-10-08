@@ -24,6 +24,10 @@ module.exports = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          type: 'localeDropdown',
+          position: 'left',
+        },
       ],
     },
     colorMode: {
@@ -80,6 +84,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} DAppNode, Inc. Built with Docusaurus.`,
     },
+  },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
   },
   presets: [
     [
