@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'DAppNode',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Welcome to DAppNode',
   url: 'https://docs.dappnode.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -97,6 +97,9 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
             routeBasePath: '/',
+            editLocalizedFiles: true,
+            editUrl:
+            'https://github.com/dappnode/DAppNodeDocs/blob/master',
         },
         blog: {
           showReadingTime: true,
