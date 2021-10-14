@@ -20,13 +20,19 @@ module.exports = {
         {to: '/', label: 'Docs', position: 'left'},
         {to: '/dao', label: 'DAO', position: 'left'},
         {
-          href: 'https://github.com/dappnode/DAppNode',
-          label: 'GitHub',
+          type: 'localeDropdown',
+          dropdownItemsAfter: [
+            {
+              href: 'https://github.com/dappnode/DAppNode',
+              label: 'Help Us Translate',
+            },
+          ],
           position: 'right',
         },
         {
-          type: 'localeDropdown',
-          position: 'left',
+          href: 'https://github.com/dappnode/DAppNode',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },

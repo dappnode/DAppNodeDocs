@@ -2,7 +2,7 @@
 slug: "/"
 ---
 
-# Welcome to the DAppNode Documentation
+# Bienvenido a la documentación de DAppNODE
 
 On this documentation, you will be able to know DAppNode from 0. To understand what the project consists of, why is it necessary to how to install your DAppNode and start this experience of fighting for decentralization.
 
