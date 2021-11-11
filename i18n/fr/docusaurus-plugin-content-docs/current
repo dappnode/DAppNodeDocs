@@ -1,234 +1,183 @@
-# Troubleshooting
+# System View
 
-## Recover UI password
+This area is used to configure and manage your system with different options that will be progressively released. This page has several tabs where you can collect information about your machine and modify some configurations.
 
-The first time you access your DAppnode using the VPN, appear the next image:
+## Information
 
+In this section you can see the general metrics of your machine:
+
+- **Statistics of your machine**: RAM usage, Disk Space and CPU usage.
+- **Volumes**: The volumes of your DAppNode and how much space they occupy.
 <p align="center">
-    <img src="../../../img/sign_in_image.png"/>
+    <img src="../../../../img/system_view_main.png"/>
 </p>
 
-Once you fill the fields and press the register button, DAppNode provides you with a recovery code. If you forget te DAppNode's Password you will be able to access using this token.
+## Notifications
+
+In case you want to set up telegram notifications, this view let you use a telegram bot to show the DAppNode message in telegram.
 
 <p align="center">
-    <img src="../../../img/recovery_token.png"/>
+    <img src="../../../../img/system_view_notifications.png"/>
 </p>
 
-You should save your token in a secure place like a password manager, paper, etc. In this case, we would save this:
+If you are interested in enable this kind of notifications, we recommend you follow this guide [how to set up telegram notifications on DAppNode](https://forum.dappnode.io/t/set-up-your-dappnode-telegram-bot/816/4).
 
-```
-4LMB9w3l50Yljwr6bIgQ
-```
+## Auto-Updates
 
-### How to access to my DAppNode using the recovery token
+You can now choose if you want your packages to be automatically updated by enabling these option for System Packages, installed packages, or both. Please note that tthe updates will be made 24 hours after the updated package availability is detected.
 
-Firstly, we have to go to the login page of our DAppNode:
+This feature is valid for non major updates, in which an admin intervention will always be needed.
 
 <p align="center">
-    <img src="../../../img/login.png"/>
+    <img src="../../../../img/system_view_auto-updates.png"/>
 </p>
 
-We should select the option "Forgot password?". It will appear a field where you can reset your password using the recovery token. In this example, we would use the token <code>4LMB9w3l50Yljwr6bIgQ</code>. You have to use your recovery token.
+## Repository
+
+You can find a more detailed information on the section [select a type of client](./initial-configurations/select-a-client). It's important to understand the pros and cons of this decision. This view is the same that you saw in that step.
 
 <p align="center">
-    <img src="../../../img/reset_password_with_recovery_token.png"/>
+    <img src="../../../../img/system_view_repository.png"/>
 </p>
 
-After confirming the recovery token, you can define an admin user in DAppNode and his password in the same way you did the first time you connect.
+Here you can choose several options:
+
+- **Use a Remote client of Ethereum**: your dappnode machine will use the "DAppNode's ethereum node.
+- **Use a Light client of Ethereum**: your dappnode machine will use a light client of ethereum for communicating with Ethereum.
+- **Use a Full Node**: your dappnode machine will have an Ethereum node and will be full independent from anothers.
+- **OPTION Use remote during syncing or errors**: it's and option, let you to use a remote node in case your ethereum node is syncyng or it is affected by an error.
+
+As we said before if you want to know the pros and cons of this decisions, we recommend you to read [select a type of client](./initial-configurations/select-a-client) section.
+
+## Network
+
+In the network section we can do some technical stuff:
+
+- IP\*\*: usually, the IP we have in our houses are dynamics, so we have not a IP, because of this situation, DAppNode uses DynDNS, DynDNS associates an IP to a direction like 0773a23d34aed273.dyndns.dappnode.io, for example. It's necessary to use a direction to run some services, DynDNS is the solution to this problem. If your IP is for any reason, and you don't want to use DynDNS, you can set up with this field.
+
+**HTTPs Portal**: to see this option you need to install de HTTPS package. Here you can expose services using the protocol HTTPS. What does it mean? If you expose for example geth, you expose your geth RPC to the Internet, so you can use metamask from anywhere. You have to be careful with his feature. In this section we have listed the services we "recommend" or we think is interesting to expose to.
 
 <p align="center">
-    <img src="../../../img/sign_in_image.png"/>
+    <img src="../../../../img/system_view_network.png"/>
 </p>
 
-Remember using a password with the next properties:
+## Profile
 
-- Minimum 8 characters
-- At least one Cap letter
-- At least one number
-
-Once you filled the field and press the register button, dappnode will provide a recovery token.
+Here you can modify the password that is required to access to the UI.
 
 <p align="center">
-    <img src="../../../img/recovery_token.png"/>
+    <img src="../../../../img/system_view_profile.png"/>
 </p>
 
-We write down and save that token and we accept we have copied our recovery token. We log in with our new credentials and we have access to our DAppNode.
+## Peers
 
-### How to recover your recovery token and recover admin access
-
-In case we have lost both the password and the recovery token, we need to access our DAppNode: SSH into the DAppNode host or plug a keyboard.
-
-Once we are in our DAppNodeMachine, we type the next command which shows us the recovery token:
-
-```
-cat /usr/src/dappnode/DNCORE/admin-recovery-token.txt ; echo
-```
-
-The command does the next:
-
-- The admin-recover-token.txt is where the token is saved.
-- The <code>; echo</code> is used to make easier the read of the token.
-
-After inserting the command we obtain the recovery token we have to use to reset our password. On the above section, How to access to my DAppNode using the recovery token you can reset your password with this recovery token.
-
-## VPN Connection issues
-
-The VPN is one of the pillars of the whole DAppNode functioning, you will need a somehow decent and stable internet connection to be able to connect to the server.
-
-### Os & Ios Users
-
-As with OpenVPN the config file is automated you should not have any problem to access caused by the VPN configuration so possible causes might be:
-
-#### NAT Loopback disabled
-
-You are in the same local area network that the DAppNode you want to connect to, and your router does not support or does not have enabled NAT LOOPBACK, so there are IP conflicts that prevent you from connecting.
-
-To solve it you have to figure out if your router is doing NAT LOOPBACK and activate it if it is not the case . You can easily know it by opening the terminal and typing ping + DynDNS domain is given at the end of the installation as server address. If the ping is successful (100% packets are transmitted with no packet loss) your router is doing NAT LOOPBACK, if it is not solving you have to either enter the admin panel of your router and look for that option and activate it, or edit the server address in the VPN profile and substitute the domain given by the internal IP of the DAppNode server (usually starting with 192.168……..).
-
-This will allow you to connect from the same local network but not from outside, to connect to your DAppNode from outside your network you will need to download another VPN profile pointing to the DynDNS address (exactly as it is downloaded)
-
-#### VPN ports closed
-
-If your router is doing NAT LOOPBACK and you can't access your DAppNode it is very likely that the ports used to establish the VPN connection with the server are not available. To solve this you have to enter the router admin UI and open the 1194 UDP (used for establishing the VPN connection and 8092 TCP (used to get the credentials from the OTP link) ports.
-
-If you have NAT LOOPBACK activated and the VPN ports are opened it is very likely that an extension you have installed or any setup you have that affects DNS routing might be interfering in the connection, please deactivate any piece of your configuration that can have influence DNS solving.
-
-If you are still experiencing problems to connect from your mac / iPhone please ping us in our channels, we will be happy to help!.
-
-### Windows users
-
-The above situations are also relevant for Windows users, please check them before continuing reading.
-
-If you have NAT LOOPBACK, the ports are opened and still, you can't connect the problem is in the configuration/ VPN client. Make sure you have thoroughly followed the instructions given to set up your VPN profile step by step and that you have run the following commands that can be needed for Windows machines.
-
-Sometimes when having configured the VPN profile following the instructions the connection can not be established and you will get a “The network connection between your computer and the VPN server could not be established because the remote server is not responding”
-
-To fix this error, a one-time registry change is required because the VPN server and/or client is behind NAT (e.g. home router). Run the following from an elevated command prompt. You must reboot your PC when finished.
-
-#### For Windows Vista, 7, 8.x and 10
-
-`REG ADD HKLM\SYSTEM\CurrentControlSet\Services\PolicyAgent /v AssumeUDPEncapsulationContextOnSendRule /t REG_DWORD /d 0x2 /f`
-
-Note that you have to run this command as elevated command prompt and then reboot your computer.
-
-#### For Windows XP
-
-`REG ADD HKLM\SYSTEM\CurrentControlSet\Services\RasMan\Parameters /v ProhibitIpSec /t REG_DWORD /d 0x0 /f`
-
-### Linux & Android
-
-If you can't import the file in Linux Open VPN client make sure you have the network-manager-openvpn and network-manager-openvpn-gnome packages installed.
-
-you can see the whole instructions for Linux [here](../ui/access/vpn#linux-1)
-
-If you are still experiencing problems to connect from your Linux device please ping us in our channels, we will be happy to help!.
-
-### After the v0.2.x migration, I still get the old L2TP credentials
-
-When performing the migration from v0.1.0 after connecting via ssh or loggin in to my machine I get old L2TP credentials that can't be opened in my OpenVPN client.
-
-The new VPN package has not finished the installation and it is not running yet, so you get old credentials again. Just wait a few minutes and connect again via SSH. Once the new VPN package is running you will get your brand new OpenVPN credentials.You can check that the migration has been correctly performed and that you are getting the new OpenVPN credentials by typing in the server terminal `docker ps` and checking that the installed core packages have the mention 0.2.0
-
-![](https://i.imgur.com/BZYlAv2.png)
-
-### I can't access the credentials OTP web link to download the .ovpn file
-
-For the credentials file to be correctly donwloaded you need to have port 8092 TCP opened, please check that that port is opened.
-
-### I see a message in the console saying that admin credentials expired
-
-Once a file with credentials is downloaded, and used for connecting once, the link expires after that first connection and you see that message. If for any reason you need to get new credentials, connect via ssh to the server and run the command
-
-```
-dappnode_get dappnode_admin
-```
-
-If you get a "command not found" message you can run
-
-```
-docker exec -ti DAppNodeCore-vpn.dnp.dappnode.eth vpncli get dappnode_admin
-```
-
-### I can't connect with another device to my DAppNode
-
-Only one device can access your DAppNode for each VPN credentials created; each device connected should have its own VPN configuration adding the desired devices in the Devices tab of your admin UI. You can add as many devices as you want! Be nice and provide all your friends and family access to the decentralized web, please!
-
-### My ETH node never ends up syncing
-
-If you are not on a 4 GB (ideally 8 GB) RAM configuration/ or your HD has not a high writing speed (SSD needed), it might happen that the server is not able to catch up with Ethereum Blocks, so it never gets synced. We are sorry but the server might not be able to cope up with the chain.
-
-Using Parity, it is also possible that the initial sync gets stuck at a given snapshot of the first sync, if this happens try removing ETHCHAIN volume and let the sync start again. To do so you have to enter in Packages/System packages / Ethchain / Controls and hit remove volume, the existing synced snapshots will be erased and the sync will start again.
-
-When using Parity, it might happen that when the snapshots finish syncin you are still very far away the current block height so it will take ages to finish the sync block by block. You can try to set up the Parity flag `--warp-barrier (current block height -30.000 blocks)` so the sync takes a higher number of snapshots what will decrease the number of spare blocks left to be synced individually. Have a look at this example.
+This section is about IPFS peers. You can find more detail information about this on [add ipfs peers](recommended-set-ups/add-ipfs-peers.md), there you can know more about what is IPFS, why is important to add peers, etc.
 
 <p align="center">
-    <img width="1000" src="https://github.com/dappnode/DAppNodeDocs/blob/master/docs/images/warpbarrier.jpg?raw=true"/>
+    <img src="../../../../img/system_view_peers.png"/>
 </p>
 
-### I can't access the ADMIN UI
+On this view, we can do two thing:
 
-You have to be connected to the VPN to access the ADMIN UI, in case you are connected and still not able to access just disconnect the VPN and connect it again.
+- **Share IPFS peer:** obtain a link of our IPFS, so we can share it with people to stay connected.
+- **Add IPFS Peer**: here you can paste the link of another user to stay connected.
 
-#### For MacOS users using Tunnelblick as VPN Client
+## Security
 
-If you have set your DNS servers manually in System Preferences > Networking, `my.dappnode` will not resolve on your browser. Removing the DNS servers out of your System Preferences should let DAppNode use its resolver, which will make `my.dappnode` accessible.
-
-### I can't install packages or it takes a lot of time to install them
-
-For installing packages the ETH node should be synchronized. In case the node is sync and you are experiencing this, enter in System and restart IPFS and VPN and connect again.
-
-### Ports that need to be opened
-
-Please find in this table the ports that need to be opened for the smooth functioning of your DAppNode and installed packages.
-
-| Service       | TCP   | UDP   |
-| ------------- | ----- | ----- |
-| VPN (OpenVPN) | 8092  | 1194  |
-| Ethereum Node | 30303 | 30303 |
-| IPFS          | 4001  | 4002  |
-
-However, if your router supports UPnP, do not worry about this, it will manage all the ports stuff for you.
-
-<!-- prettier-ignore-start -->
-!!! info Note that SSH port (22) is only needed when you need ssh access to your server, and it's not a very good idea to let that port opened , consider restricting the access to your own IP or just open it when you need it and then close it
-<!-- prettier-ignore-end -->
-
-### I need to restore the system without losing any data
-
-Execute this command in your DAppNode terminal, this will update the core packages to the latest versions without erasing any data from your volumes.
-
-`sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash`
-
-### I can't install a package using its ENS or IPFS hash
-
-If the package has been uploaded to IPFS but it still does not have enough propagation in the network,it might be hard to install that package unless you are connected to an IPFS node that that allows direct or routed access to that package. As you can automatically peer-connect two IPFS nodes hosted in a DAppNode you can ask a DAppNode peer that already has installed hat package to connect your nodes. To do so, in the IPFS packages screen Go to Connect with peers and send the link to your peer.
-
-## My DAppNode does not detect an external SSD
-
-DAppNode can automatically detect and mount external SSD drives connected via USB, thanks to a fork of a utility called [usbmount](https://github.com/dappnode/usbmount). If you plugged your drive and you cannot see it in the list of available mountpoints, check the following points.
-
----
-
-### Partition format
-
-The most likely issue is you used a drive which is not formatted with a format natively compatible with DAppNode OS. We don't support partitions in NTFS (Windows) or APFS, HFS+, etc. (MacOS). The recommended filesystem format is ext4, but you can also use FAT32.
-
-### Disk not formatted
-
-Make sure your disk is formatted with a valid partition table and partitions. Use a utility like [gparted](https://gparted.org/) for Linux, or [AOMEI Partition Assistant](https://www.diskpart.com/) for Windows to accomplish that.
-
-### Internal disks
-
-If you added a disk internally in your DAppNode (it's not USB connected), it's not going to be mounted automatically, and you will need to configure it manually adding an entry in `/etc/fstab`. As a reference you can follow [this guide](https://medium.com/@sh.tsang/partitioning-formatting-and-mounting-a-hard-drive-in-linux-ubuntu-18-04-324b7634d1e0)
+It shows some security checks of your DAppNode.
 
 <p align="center">
-    <img width="1000">
+    <img src="../../../../img/system_view_security.png"/>
 </p>
 
-### I need to uninstall my DAppNode
+## Advanced
 
-If for whichever strange reason you have to uninstall your DAppNode server you can do so by typing the following command in the DAppNode server console
+The advanced area collect many different functionalities
 
-`wget -qO - https://uninstaller.dappnode.io | sudo bash`
+### Change DAppNodeName
 
-This command will uninstall DAppNode components (but not docker et al.): ⚠️ BEWARE! It will also delete all volumes and stored data!⚠️
+You can change the name that appears on the UI on the top right. It's only a visual change, so it's not a sentitive modification.
+
+<p align="center">
+    <img src="../../../../img/system_view_advanced_1.png"/>
+</p>
+
+For example, if we type that name and click on the button **Change dappnode Name**, the name will be what we wrote on the field.
+
+<p align="center">
+    <img src="../../../../img/system_view_advanced_2.png"/>
+</p>
+
+### SSH
+
+The following space let the user manage the ssh configuration of his DAppNode. You can:
+
+- **Enable/disable SSH**:
+- **Check SSH State**:
+- **Check what port ssh is using**:
+- **Change SSH port**:
+
+<p align="center">
+    <img src="../../../../img/system_view_advanced_3.png"/>
+</p>
+
+#### Check SSH status
+
+You can check if SSH is enabled by clicking the **Fetch Status** button. In case the ssh is enabled you will see the word **enabled** on the field.
+
+#### Enable/Disable SSH
+
+You can enable/disable the ssh of your dappnode machine, click on the respective button below.
+
+#### Check what port use the dappnode for ssh
+
+To check what port is using your DAppNode for SSH connections, you can find it out by clicking on the **Fech port** button.
+
+#### Change SSH port
+
+If you want to change the port DAppNode use for ssh , you can change it by typing the number you want to use and pressing the **Change** button.
+
+### Docker update
+
+This configuration is so sensitive. Here you can update the docker version of your DAppNode. We refer to docker-compose and the docker engine.
+
+<p align="center">
+    <img src="../../../../img/system_view_advanced_4.png"/>
+</p>
+
+In case you want update docker versions, you must update the docker compre first, and after the docker engine.
+
+#### Update Docker Compose
+
+You have to click on the **Check requirements** button. Two things can happen:
+
+- Docker compose is updated message, and you dont have to do anything.
+- There is a new version message, and you can update clicking on the button.
+
+#### Update Docker Engine
+
+You have to click on the **Check requirements** button. Several checks will be done and if you need or can update you could do it.
+
+### Clear cache db
+
+Remove the local cache of Aragon Package Manager (APM) entries, manifests, avatars. Also remove the user action logs shown in the Activity tab.
+
+<p align="center">
+    <img src="../../../../img/system_view_advanced_5.png"/>
+</p>
+
+### Clear main db
+
+Remove the local database which contains critical information about your DAppNode, such as the dyndns identity, Ips registry, telegram configuration etc.
+
+<p align="center">
+    <img src="../../../../img/system_view_advanced_6.png"/>
+</p>
+
+## Power
+
+If you need to reboot or shut down your server as a last resource, you can do it from this section. Please be aware that if you shut down your server you will only be able to switch it on again when you have psysical access to your DAppNode.
+
+<p align="center">
+    <img src="../../../../img/powermanagement.png"/>
+</p>
