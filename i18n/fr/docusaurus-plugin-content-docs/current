@@ -1,183 +1,35 @@
-# System View
+# Liquidity Mining
 
-This area is used to configure and manage your system with different options that will be progressively released. This page has several tabs where you can collect information about your machine and modify some configurations.
+Liquidity Mining (LM) launched on (DATE OF LAUNCH). 5.5% of the total token supply, 5.5 Million NODE, has been allocated to the first LM round of 6 months. NODE reward distribution for the 4 pools available is as follows:
 
-## Information
+- Sushiswap NODE/ETH Pool - 40% - 2,200,000 NODE
+- Uniswap NODE/ETH Pool - 40% - 2,200,000 NODE
+- NODE Governance Staking xDai - 10% - 550,000 NODE
+- NODE Governance Staking Mainnet -10% - 550,000 NODE
 
-In this section you can see the general metrics of your machine:
+A further 5.5% of the token supply has been reserved for future rounds of LM. At the end of the first round the team will re-assess the Liquidity Mining program, potentially deploying new pools and distribution.
 
-- **Statistics of your machine**: RAM usage, Disk Space and CPU usage.
-- **Volumes**: The volumes of your DAppNode and how much space they occupy.
-<p align="center">
-    <img src="../../../../img/system_view_main.png"/>
-</p>
+### Liquidity Provision Pools Contract Addresses
 
-## Notifications
+- Sushiswap NODE/ETH Pool - [0x60cd8dcc7cce0cca6a3743727ce909b6f715b2d8](https://etherscan.io/address/0x60cd8dcc7cce0cca6a3743727ce909b6f715b2d8)
+- Uniswap NODE/ETH Pool - [0xee3b01b2debd3df95bf24d4aacf8e70373113315](https://etherscan.io/address/0xee3b01b2debd3df95bf24d4aacf8e70373113315)
 
-In case you want to set up telegram notifications, this view let you use a telegram bot to show the DAppNode message in telegram.
+### LP Token Addresses (Mainnet)
 
-<p align="center">
-    <img src="../../../../img/system_view_notifications.png"/>
-</p>
+- Uniswap v2 ETH/NODE LP - [0xee3b01b2debd3df95bf24d4aacf8e70373113315](https://etherscan.io/address/0xee3b01b2debd3df95bf24d4aacf8e70373113315)
+- Sushiswap ETH/NODE LP - [0x60cd8dcc7cce0cca6a3743727ce909b6f715b2d8](https://etherscan.io/address/0x60cd8dcc7cce0cca6a3743727ce909b6f715b2d8)
 
-If you are interested in enable this kind of notifications, we recommend you follow this guide [how to set up telegram notifications on DAppNode](https://forum.dappnode.io/t/set-up-your-dappnode-telegram-bot/816/4).
+## Liquidity Mining Contracts
 
-## Auto-Updates
+- NODE Governance Staking Mainnet - [0x19992b52338B7B49De9679ae018A7027803dB1Aa](https://etherscan.io/address/0x19992b52338B7B49De9679ae018A7027803dB1Aa)
+- NODE Governance Staking xDai - [0xF66823fdc33B9F4C66dB4C3394FF139872C12f16](https://blockscout.com/xdai/mainnet/address/0xF66823fdc33B9F4C66dB4C3394FF139872C12f16/transactions)
+- Uniswap Liquidity Mining - [0x072115DbD5c8b47E971890357d2951d4569F6B27](https://etherscan.io/address/0x072115DbD5c8b47E971890357d2951d4569F6B27)
+- Sushiswap Liquidity Mining - [0x89F2e26F20Bf66bBFAc947A3b628b4b4724AaA5c](https://etherscan.io/address/0x89F2e26F20Bf66bBFAc947A3b628b4b4724AaA5c)
 
-You can now choose if you want your packages to be automatically updated by enabling these option for System Packages, installed packages, or both. Please note that tthe updates will be made 24 hours after the updated package availability is detected.
+### Weekly Distribution
 
-This feature is valid for non major updates, in which an admin intervention will always be needed.
+Round 1 (26 weeks) weekly NODE rewards distribution percentages based on LM supply are as follows:
 
-<p align="center">
-    <img src="../../../../img/system_view_auto-updates.png"/>
-</p>
-
-## Repository
-
-You can find a more detailed information on the section [select a type of client](./initial-configurations/select-a-client). It's important to understand the pros and cons of this decision. This view is the same that you saw in that step.
-
-<p align="center">
-    <img src="../../../../img/system_view_repository.png"/>
-</p>
-
-Here you can choose several options:
-
-- **Use a Remote client of Ethereum**: your dappnode machine will use the "DAppNode's ethereum node.
-- **Use a Light client of Ethereum**: your dappnode machine will use a light client of ethereum for communicating with Ethereum.
-- **Use a Full Node**: your dappnode machine will have an Ethereum node and will be full independent from anothers.
-- **OPTION Use remote during syncing or errors**: it's and option, let you to use a remote node in case your ethereum node is syncyng or it is affected by an error.
-
-As we said before if you want to know the pros and cons of this decisions, we recommend you to read [select a type of client](./initial-configurations/select-a-client) section.
-
-## Network
-
-In the network section we can do some technical stuff:
-
-- IP\*\*: usually, the IP we have in our houses are dynamics, so we have not a IP, because of this situation, DAppNode uses DynDNS, DynDNS associates an IP to a direction like 0773a23d34aed273.dyndns.dappnode.io, for example. It's necessary to use a direction to run some services, DynDNS is the solution to this problem. If your IP is for any reason, and you don't want to use DynDNS, you can set up with this field.
-
-**HTTPs Portal**: to see this option you need to install de HTTPS package. Here you can expose services using the protocol HTTPS. What does it mean? If you expose for example geth, you expose your geth RPC to the Internet, so you can use metamask from anywhere. You have to be careful with his feature. In this section we have listed the services we "recommend" or we think is interesting to expose to.
-
-<p align="center">
-    <img src="../../../../img/system_view_network.png"/>
-</p>
-
-## Profile
-
-Here you can modify the password that is required to access to the UI.
-
-<p align="center">
-    <img src="../../../../img/system_view_profile.png"/>
-</p>
-
-## Peers
-
-This section is about IPFS peers. You can find more detail information about this on [add ipfs peers](recommended-set-ups/add-ipfs-peers.md), there you can know more about what is IPFS, why is important to add peers, etc.
-
-<p align="center">
-    <img src="../../../../img/system_view_peers.png"/>
-</p>
-
-On this view, we can do two thing:
-
-- **Share IPFS peer:** obtain a link of our IPFS, so we can share it with people to stay connected.
-- **Add IPFS Peer**: here you can paste the link of another user to stay connected.
-
-## Security
-
-It shows some security checks of your DAppNode.
-
-<p align="center">
-    <img src="../../../../img/system_view_security.png"/>
-</p>
-
-## Advanced
-
-The advanced area collect many different functionalities
-
-### Change DAppNodeName
-
-You can change the name that appears on the UI on the top right. It's only a visual change, so it's not a sentitive modification.
-
-<p align="center">
-    <img src="../../../../img/system_view_advanced_1.png"/>
-</p>
-
-For example, if we type that name and click on the button **Change dappnode Name**, the name will be what we wrote on the field.
-
-<p align="center">
-    <img src="../../../../img/system_view_advanced_2.png"/>
-</p>
-
-### SSH
-
-The following space let the user manage the ssh configuration of his DAppNode. You can:
-
-- **Enable/disable SSH**:
-- **Check SSH State**:
-- **Check what port ssh is using**:
-- **Change SSH port**:
-
-<p align="center">
-    <img src="../../../../img/system_view_advanced_3.png"/>
-</p>
-
-#### Check SSH status
-
-You can check if SSH is enabled by clicking the **Fetch Status** button. In case the ssh is enabled you will see the word **enabled** on the field.
-
-#### Enable/Disable SSH
-
-You can enable/disable the ssh of your dappnode machine, click on the respective button below.
-
-#### Check what port use the dappnode for ssh
-
-To check what port is using your DAppNode for SSH connections, you can find it out by clicking on the **Fech port** button.
-
-#### Change SSH port
-
-If you want to change the port DAppNode use for ssh , you can change it by typing the number you want to use and pressing the **Change** button.
-
-### Docker update
-
-This configuration is so sensitive. Here you can update the docker version of your DAppNode. We refer to docker-compose and the docker engine.
-
-<p align="center">
-    <img src="../../../../img/system_view_advanced_4.png"/>
-</p>
-
-In case you want update docker versions, you must update the docker compre first, and after the docker engine.
-
-#### Update Docker Compose
-
-You have to click on the **Check requirements** button. Two things can happen:
-
-- Docker compose is updated message, and you dont have to do anything.
-- There is a new version message, and you can update clicking on the button.
-
-#### Update Docker Engine
-
-You have to click on the **Check requirements** button. Several checks will be done and if you need or can update you could do it.
-
-### Clear cache db
-
-Remove the local cache of Aragon Package Manager (APM) entries, manifests, avatars. Also remove the user action logs shown in the Activity tab.
-
-<p align="center">
-    <img src="../../../../img/system_view_advanced_5.png"/>
-</p>
-
-### Clear main db
-
-Remove the local database which contains critical information about your DAppNode, such as the dyndns identity, Ips registry, telegram configuration etc.
-
-<p align="center">
-    <img src="../../../../img/system_view_advanced_6.png"/>
-</p>
-
-## Power
-
-If you need to reboot or shut down your server as a last resource, you can do it from this section. Please be aware that if you shut down your server you will only be able to switch it on again when you have psysical access to your DAppNode.
-
-<p align="center">
-    <img src="../../../../img/powermanagement.png"/>
-</p>
+| % per week | 0.00% | 3.80% | 3.80% | 3.00% | 3.00% | 2.50% | 2.50% | 2.50% | 2.50% | 2.60% | 2.80% | 3.00% | 3.20% | 3.40% | 3.60% | 3.80% | 4.00% | 4.20% | 4.40% | 4.60% | 4.80% | 5.00% | 5.20% | 5.40% | 5.60% | 5.80% | 5.00% |
+| ---------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| Week       | 0     | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    | 13    | 14    | 15    | 16    | 17    | 18    | 19    | 20    | 21    | 22    | 23    | 24    | 25    | 26    |
