@@ -24,6 +24,10 @@ module.exports = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          type: 'localeDropdown',
+          position: 'left',
+        },
       ],
     },
     colorMode: {
@@ -100,4 +104,19 @@ module.exports = {
       },
     ],
   ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'fr','es'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      fr: {
+        label: 'French',
+      },
+      es: {
+        label: 'Spanish',
+      }
+    }
+  },
 };
