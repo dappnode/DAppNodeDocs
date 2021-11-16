@@ -89,6 +89,9 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
             routeBasePath: '/',
+            editLocalizedFiles: true,
+            editUrl:
+            'https://github.com/dappnode/DAppNodeDocs/blob/master',
         },
         blog: {
           showReadingTime: true,
