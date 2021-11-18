@@ -94,6 +94,17 @@ module.exports = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es', 'fr'],
+    localeConfigs:{
+      en: {
+        label: 'English',
+      },
+      fr: {
+        label: 'French',
+      },
+      es: {
+        label: 'Spanish',
+      },
+    },
   },
   presets: [
     [
