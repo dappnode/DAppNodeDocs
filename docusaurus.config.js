@@ -20,6 +20,16 @@ module.exports = {
         {to: '/', label: 'Docs', position: 'left'},
         {to: '/dao', label: 'DAO', position: 'left'},
         {
+          type: 'localeDropdown',
+          dropdownItemsAfter: [
+            {
+              to: '/help-to-translate',
+              label: 'Help Us Translate',
+            },
+          ],
+          position: 'right',
+        },
+        {
           href: 'https://github.com/dappnode/DAppNode',
           label: 'GitHub',
           position: 'right',
