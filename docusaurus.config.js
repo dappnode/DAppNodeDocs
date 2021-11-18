@@ -91,6 +91,10 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} DAppNode, Inc. Built with Docusaurus.`,
     },
   },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es', 'fr'],
+  },
   presets: [
     [
       '@docusaurus/preset-classic',
