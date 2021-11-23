@@ -1,33 +1,11 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# What DAppNode we should select?
+# Advantages
 
-In case you don't want to hesitate with hardware specifications and running a DAppNode on the easiest way. You can buy prebuilt dappnode hardware. You can find this hardware on [DAppNode Shop](https://shop.dappnode.io/).
+The advantages of buying a DAppNode hardware are:
 
-There are different machines depending on what you want to run.
-
-## DAppNodeXtreme
-
-- Processor Intel NUC i7 10 Series
-- 32 GB RAM DDR4
-- 4TB NVMe
-
-## DAppNodeMax
-
-- Intel NUC i7 10 Series
-- 16 GB RAM DDR4
-- 4TB SSD
-
-## DAppNodeAdvanced
-
-- Intel NUC i5 10 Series
-- 16 GB RAM DDR4
-- 1TB HD NVMe
-
-## DAppNodeMini
-
-- Intel NUC J5005 SERIE 7
-- KINGSTON DDR4 8GB
-- HD WD 1TB SSD
+- Ease of Setup: You don't have to fret over custom hardware specifications, install DAppNode from scratch, or troubleshoot some strange compatibility problems.
+- Ease of Maintenance: DAppNode hardware is updated to the latest version of DAppNode. You only have to set up access to your DAppNode.
+- Community Support: Using DAppNode hardware, you show your support for the DAppNode project ecosystem.
