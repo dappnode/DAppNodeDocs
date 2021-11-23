@@ -1,6 +1,6 @@
 # Liquidity Mining
 
-Liquidity Mining (LM) launched on (DATE OF LAUNCH). 5.5% of the total token supply, 5.5 Million NODE, has been allocated to the first LM round of 6 months. NODE reward distribution for the 4 pools available is as follows:
+Liquidity Mining (LM) launched on Jul 17 2021, 20:00:00 GMT. 5.5% of the total token supply, 5.5 Million NODE, has been allocated to the first LM round of 6 months. NODE reward distribution for the 4 pools available is as follows:
 
 - Sushiswap NODE/ETH Pool - 40% - 2,200,000 NODE
 - Uniswap NODE/ETH Pool - 40% - 2,200,000 NODE
