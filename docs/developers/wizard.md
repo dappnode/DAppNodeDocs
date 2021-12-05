@@ -213,7 +213,7 @@ target:
 
 #### fileUpload
 
-To allow hosting a specific package volume into a different drive or mountpoint
+To allow uploading user files to the package container
 
 ```yaml
 target:
