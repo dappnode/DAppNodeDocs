@@ -1,7 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Champion Process & Public Packages
+# Basic Packages or Supported
 
 Content to be added soon.
