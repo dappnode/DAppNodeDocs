@@ -1,13 +1,19 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
-# Local Proxy
+# CLI
 
-If you are connected on the same network of your DAppNode and you did the installation by Script. You have to be able to access to the admin UI going to the url http://dappnode.local .
+## SSH
 
-## Enable/Disable from UI
+Default credentials for SSH access are:
 
-You can Enable/Disable this access method from the UI from the Wifi page, on the tab Local Network.
+U: `dappnode`
 
-> :information_source: If Local Proxy will not work initially if you did the installation by script. You will need to install the https package to be able to enable this access method. If you want to use the local proxy method as the first access method after the installation, we recommend the ISO installation.
+P: `dappnode.s0`
+
+## Phisically by plugging a monitor and keyboard (Advanced)
+
+Your DAppNode will ask you for the password to log in. The default password is:
+
+P: `dappnode.s0`
