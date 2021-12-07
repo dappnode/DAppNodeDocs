@@ -1,35 +1,72 @@
-# Liquidity Mining
+# The NODE Economy
 
-Liquidity Mining (LM) launched on Jul 17 2021, 20:00:00 GMT. 5.5% of the total token supply, 5.5 Million NODE, has been allocated to the first LM round of 6 months. NODE reward distribution for the 4 pools available is as follows:
+### NODE Basics
 
-- Sushiswap NODE/ETH Pool - 40% - 2,200,000 NODE
-- Uniswap NODE/ETH Pool - 40% - 2,200,000 NODE
-- NODE Governance Staking xDai - 10% - 550,000 NODE
-- NODE Governance Staking Mainnet -10% - 550,000 NODE
+Token Address on Mainnet - [0xDa007777D86AC6d989cC9f79A73261b3fC5e0DA0](https://etherscan.io/address/0xDa007777D86AC6d989cC9f79A73261b3fC5e0DA0)
 
-A further 5.5% of the token supply has been reserved for future rounds of LM. At the end of the first round the team will re-assess the Liquidity Mining program, potentially deploying new pools and distribution.
+Token Address on xDai - [0xc60e38C6352875c051B481Cbe79Dd0383AdB7817](https://blockscout.com/xdai/mainnet/address/0xc60e38C6352875c051B481Cbe79Dd0383AdB7817/transactions)
 
-### Liquidity Provision Pools Contract Addresses
+NODE has a total initial supply of 100,000,000 tokens. These tokens have been distributed in accordance with the following chart:
 
-- Sushiswap NODE/ETH Pool - [0x60cd8dcc7cce0cca6a3743727ce909b6f715b2d8](https://etherscan.io/address/0x60cd8dcc7cce0cca6a3743727ce909b6f715b2d8)
-- Uniswap NODE/ETH Pool - [0xee3b01b2debd3df95bf24d4aacf8e70373113315](https://etherscan.io/address/0xee3b01b2debd3df95bf24d4aacf8e70373113315)
+<img id="border" alt="NODEdrop Distro PIE chart" src="../../img/DAO/Distribution.png" />
 
-### LP Token Addresses (Mainnet)
+### NODEdrop
 
-- Uniswap v2 ETH/NODE LP - [0xee3b01b2debd3df95bf24d4aacf8e70373113315](https://etherscan.io/address/0xee3b01b2debd3df95bf24d4aacf8e70373113315)
-- Sushiswap ETH/NODE LP - [0x60cd8dcc7cce0cca6a3743727ce909b6f715b2d8](https://etherscan.io/address/0x60cd8dcc7cce0cca6a3743727ce909b6f715b2d8)
+NODE has been airdropped in a NODEdrop to our community of faithful supporters. Recipients of the NODEdrop include:
 
-## Liquidity Mining Contracts
+- DAppNode Team Members
+- DAppNode Founders
+- Purchasers of DAppNode hardware
+- Code Contributors
+- Active community members, ranked by our sourcecred algorithm
+- Donors to DAppNode in Gitcoin Grants Rounds (with donations above $1)
+- Eth2 stakers who have self-identified as DAppNode runners by including the word "DAppNode" in their graffiti
+- Eth2 stakers present in the Genesis of Eth2
 
-- NODE Governance Staking Mainnet - [0x19992b52338B7B49De9679ae018A7027803dB1Aa](https://etherscan.io/address/0x19992b52338B7B49De9679ae018A7027803dB1Aa)
-- NODE Governance Staking xDai - [0xF66823fdc33B9F4C66dB4C3394FF139872C12f16](https://blockscout.com/xdai/mainnet/address/0xF66823fdc33B9F4C66dB4C3394FF139872C12f16/transactions)
-- Uniswap Liquidity Mining - [0x072115DbD5c8b47E971890357d2951d4569F6B27](https://etherscan.io/address/0x072115DbD5c8b47E971890357d2951d4569F6B27)
-- Sushiswap Liquidity Mining - [0x89F2e26F20Bf66bBFAc947A3b628b4b4724AaA5c](https://etherscan.io/address/0x89F2e26F20Bf66bBFAc947A3b628b4b4724AaA5c)
+Check your NODEdrop [here](http://app.dappnode.io/nodedrop).
 
-### Weekly Distribution
+### NODEstream
 
-Round 1 (26 weeks) weekly NODE rewards distribution percentages based on LM supply are as follows:
+90% of the entire initial supply of NODE has been allocated to the "NODEstream" which is set to flow for a period of 3 years (36 months - i.e. until July 2024). This is essentially a continous stream of NODE that flows out of the "Reservoir" and into the "Claimable" section of the dashboard. NODEstream distribution can be roughly tracked as follows:
 
-| % per week | 0.00% | 3.80% | 3.80% | 3.00% | 3.00% | 2.50% | 2.50% | 2.50% | 2.50% | 2.60% | 2.80% | 3.00% | 3.20% | 3.40% | 3.60% | 3.80% | 4.00% | 4.20% | 4.40% | 4.60% | 4.80% | 5.00% | 5.20% | 5.40% | 5.60% | 5.80% | 5.00% |
-| ---------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Week       | 0     | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    | 13    | 14    | 15    | 16    | 17    | 18    | 19    | 20    | 21    | 22    | 23    | 24    | 25    | 26    |
+Table for Eth
+
+| Date                                                          | Month | Claimable | Held in Reservoir |
+| ------------------------------------------------------------- | ----- | --------- | ----------------- |
+| Jul 17 2021, 22:00:00 GMT+0200 (Central European Summer Time) | 0     | 10%       | 90%               |
+| Apr 17 2022, 22:00:00 GMT+0200 (Central European Summer Time) | 9     | 32.5%     | 67.5%             |
+| Jan 17 2023, 22:00:00 GMT+0200 (Central European Summer Time) | 18    | 55%       | 45%               |
+| Oct 17 2023, 22:00:00 GMT+0200 (Central European Summer Time) | 27    | 77.5%     | 22.5%             |
+| Jul 17 2024, 16:00:00 GMT+0200 (Central European Summer Time) | 36    | 100%      | 0%                |
+
+Table for xDai
+
+| Date                                                          | Month | Claimable | Held in Reservoir |
+| ------------------------------------------------------------- | ----- | --------- | ----------------- |
+| Jul 17 2021, 22:00:00 GMT+0200 (Central European Summer Time) | 0     | 0%        | 100%              |
+| Apr 17 2022, 22:00:00 GMT+0200 (Central European Summer Time) | 9     | 25%       | 75%               |
+| Jan 17 2023, 22:00:00 GMT+0200 (Central European Summer Time) | 18    | 50%       | 50%               |
+| Oct 17 2023, 22:00:00 GMT+0200 (Central European Summer Time) | 27    | 75%       | 35%               |
+| Jul 17 2024, 16:00:00 GMT+0200 (Central European Summer Time) | 36    | 100%      | 0%                |
+
+The NODEstream works on a time-based linear function, meaning the reservoir will gradually hold a smaller percentage of your NODE and thus more NODE is made instantly available from your staking rewards. At the end of the NODEstream The reservoir will no longer hold any NODE and 100% of your staking rewards will be instantly claimable.
+
+This chart show how the function works in eth network.
+
+<p align="center">
+    <img width="800">
+</p>
+
+This chart show how the function works in dao network. In eth 10% was available at the beginning. In xdai is different, initally it was not available any % token.
+
+<p align="center">
+    <img width="800">
+</p>
+
+The NODEstream has been designed to encourage long-term participation in the NODE Economy. As the NODE Economy grows and the DAppNode universe expands, our community is awarded even more NODE to use in DAO governance.
+
+<p align="center">
+    <img width="1000" src="../../img/DAO/claimNODEui.png"/>
+</p>
+
+Recipients of the NODEdrop on xDai Network are granted the NODEstream, whereas on Mainnet the NODEdrop does not include the NODEstream automatically. In order to receive and augment the flow of NODE you must provide liquidity in any of the eligible pools. Some part of the rewards earned from NODEstaking are claimable immediately, where as the other part is allocated to the reservoir for NODEstreaming.
