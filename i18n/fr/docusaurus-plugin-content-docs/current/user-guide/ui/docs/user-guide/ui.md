@@ -1,24 +1,27 @@
-# Packages View
+# Dashboard View
 
-On this view, we can check what packages we have installed in our DAppNodes. You can check some general parameters and do the next actions on this page:
-
-- **STATUS**: indicate the state of the package, they can be 3: Running, Crashed and Stopped. Running mean is turned on. Crashed means the package has suffered some error and it's stopped. Stopped means the container has been stopped by the user.
-- **Name**: it's the name of the package.
-- **Link to de package view**: click on it to go to the package view in case you want to check some parameter or set up something related to the package.
-- **Restart package**: restart all the package, it means all the containers of the package are restarted.
-
-## My packages
-
-My packages refers to the packages the user have installed and they are not essential for the performance of DAppNode.
+The dashboard view is the main page of the DAppNode interfaces.
 
 <p align="center">
-    <img src="../../../../img/packages_view_1.png"/>
+    <img src="../../../../img/dashboard_numered.png"/>
 </p>
 
-## System packages
+1. **Dashboard**: To back to the main view of the DAppNode interface.
+2. **Wi-Fi panel**: set up the wifi access of your dappnode.
+3. **VPN**: set up the vpn access of your dappnode.
+4. **DAppStore**: The place where you can install the package you want.
+5. **Packages**: You can manage your packages from this view.
+6. **System**: Where you can do so many configurations of your DAppNode. You can read a more detailed guide on the system view page of this documentation.
+7. **Community**: Access to all the channels of DAppNode.
+8. **SDK**: This zone is for developers.
+9. **Support**:
+10. **Chains**: The states of your nodes.
+11. **State**: If the node has some problem, is syncing or is synced, this information will appeard here.
+12. **Machine stats**: Hardware stats of your machine: CPU, RAM, Disk Space.
+13. **Package Updates**: It will appear the enabled update for the packages you have installed.
+14. **Name of the server / IP / DynDNS**:
+15. **Fast access to sync state**: check the state of your nodes.
+16. **Notifications area**
+17. **Exit**: log out area.
 
-They are the packages that are essential for DAppNode or including a feature that is so important for DAppNode.
-
-<p align="center">
-    <img src="../../../../img/packages_view_2.png"/>
-</p>
+You can obtain a more detailed guide os every page on the relative page view of this documentation.
