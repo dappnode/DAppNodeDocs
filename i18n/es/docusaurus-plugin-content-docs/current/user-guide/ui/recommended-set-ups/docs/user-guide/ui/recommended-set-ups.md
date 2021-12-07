@@ -1,65 +1,42 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Backup Functionality
+# Add IPFS Peers
 
-## What is a backup and why is important to do regular backups?
+In this section, firstly you will read about what is IPFS and how it can affect to your DAppNode. Then, you will see a guide how to add IPFS peer and how to get a link of your IPFS for sharing with other users.
 
-When you make a backup of a package on DAppNode, you will download a compressed file that contains the sensitive data of the package, this information depends on the package. Usually, this information is relative to keys or some kind of identification.
+## IPFS on DAppNode
 
-It's important making backups of the important packages because in case the data is corrupted, the DAppNode machine is broken, or any catastrophe. If you have a backup, you will not have a problem to back to the situation before the catastrophe.
+### What is IPFS?
 
-We recommend to do backups regularly, and always if there is an important update, before and after.
+Shortly, IPFS is a protocol to share data between machines. On your DAppNode when you go to the DAppStore and you are installing a package, what is happening behind the scene is the next:
 
-## How to do a backup?
+1. DAppNode machine gets the IPFS address from the ethereum blockchain.
+2. DAppNode machine uses this address to find the content associated with this link.
 
-The DAppNode user interface let you to do a backup of the package you want on a easy way. We will show how to do it step by step:
+### Why is important to add peers?
 
-1. Firstly, you need to go to Packages view. Selecting the Packages item on the left menu.
+The searching process is the key to understand why is important to add peers. When your DAppNode is going to search the content associated with this link or hash. Firstly, it will ask the nearest peers to it. If it's popular information, probably the research will be fast, but in case, the information is more peculiar, it requires asking for this content for peers that are not connected to you directly. Then, if you are connected to so many peers, the propagation of the information is faster and is more probable that some of your closed peers have the information you want.
 
-<p align="center">
-    <img src="../../../../img/backup-functionality_1.png"/>
-</p>
+### How it affects to DAppNode?
 
-2. Select one package that have sensitive information. For example, bee package. Click on the name of the package you want to do the backup, and select the **Backup** tab.
+Firstly, DAppNode has a server with all the packages. In this way, we are sure all the packages are available. But the way your machine download a package to install it or even detects that there is an update of a package is by asking the nearest peers of your machine. Then, the best way to improve the propagation of the information, in this case, the release of a package, it's adding peers to your DAppNode.
 
-<p align="center">
-    <img src="../../../../img/backup-functionality_2.png"/>
-</p>
+## Sharing IPFS peer
 
-3. Click on the **Backup now** button.
+You should go to the System > Peers or you can try to [use this link](http://my.dappnode/#/system/add-ipfs-peer) if you are connected vpn or via wifi.
 
 <p align="center">
-    <img src="../../../../img/backup-functionality_3.png"/>
+    <img src="../../../../img/system_view_peers.png"/>
 </p>
 
-4. You will see a pop up where you can choose where to store the compressed file with your backup file.
+### Get your IPFS peer link
 
-<p align="center">
-    <img src="../../../../img/backup-functionality_4.png"/>
-</p>
+To get the link to share with others. Simply click copy the content of the first field (Share IPFS peer). In my case it would be:
 
-And **that's all**, you have a backup that package, in this example I would have a backup of my bee package.
+`http://my.dappnode/#/system/add-ipfs-peer/%2Fdns4%2F0773a72d55aed273.dyndns.dappnode.io%2Ftcp%2F4001%2Fipfs%2F12D3KooWT3GFZAR2fWQjqrMWg3iWN1csur7qEcpQy5Dj33abHHWZ`
 
-## How to restore your data from a backup
+### Add a peer to your DAppNode
 
-Once you have learnt how to do a backup, it's so important know how to use this backup file to restore your configuration.
-
-> :warning: Bee package is so because when you start the package first time, internally it creates an ethereum address, so if you don't save these keys and address in someplace you can't recover the access to that created address, in other packages like Prysm you could set up the package as before if you have the 24 words, but you had to set up the package, UI, etc. What we want you to say is every package works differently. But bee package is a good example to release how important is to do backups of your important packages.
-
-Following the same example above, let's imagine that my be package crashed and all its data is damaged. I could set up my package the same way before only if I did a backup.
-
-1. Go to the view of the package, in this case, Packages > Bee > Backup and click on the **Restore** button:
-
-<p align="center">
-    <img src="../../../../img/backup-functionality_5.png"/>
-</p>
-
-2. It will appear a pop up asking you select your backup file, you have to select the same compressed file you download when you do the backup, as simple as that.
-
-<p align="center">
-    <img src="../../../../img/backup-functionality_6.png"/>
-</p>
-
-After this two steps, you would have restore your package.
+When a user pass you his link, you just have to paste on the second field (Add IPFS peer ) and click on the **Add peer** button.
