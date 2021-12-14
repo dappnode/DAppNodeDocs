@@ -1,25 +1,67 @@
----
-title: DAO
-description: DAO information
----
+# Help to translate
 
-# Governance
+As you can see we have added 2 more languages to the documentation, if you want to help us with the translation process, now you can do it using the platform crowdin for it.
 
-### Token Addresses
+## How can I collaborate with the translation of DAppNode Documentation?
 
-- NODE Mainnet - [0xDa007777D86AC6d989cC9f79A73261b3fC5e0DA0](https://etherscan.io/address/0xDa007777D86AC6d989cC9f79A73261b3fC5e0DA0)
-- NODE xDai - [0xc60e38C6352875c051B481Cbe79Dd0383AdB7817](https://blockscout.com/xdai/mainnet/address/0xc60e38C6352875c051B481Cbe79Dd0383AdB7817/transactions)
+Requisites:
 
-### Mission & Membership
+- A crowdin account
 
-The DAppNode DAO will be an inclusive hub in which DAppNode’s community will carry on its mission to keep the web decentralized, uncensored and resilient. Active DAO members will have the opportunity to vote on DAppNode’s future projects and on how to expand its array of hardware and software solutions.
+### 1. Crowdin platform
 
-To get involved in Governance, DAO aspirants will need to make contributions to the ecosystem and help kick-start the NODE economy. Those who provide liquidity in the sanctioned pools (Uniswap and Sushiswap) or commit NODE to Governance Staking on Ethereum Mainnet or xDai will be granted voting powers proportional to their contributions. This way we can ensure that those with a voice are also those with a stake, and are not merely speculating with the token.
+Access https://crowdin.com/project/dappnodedocs.
 
-### Architecture
+You will see the following page, where you can select what languages you wish to translate into:
 
-DAppnode has tapped [Snapshot](https://snapshot.org/#/) technology to build its Governance structure. Snapshot is a novel piece of technology that allows off-chain voting for on-chain actions. It removes the prohibitive gas costs of participating in on-chain governance by taking snapshots of members’ NODE currently being staked. Voting and creating proposals with Snapshot is done with a simple crypto wallet signature, no gas needed.
+<p align="center">
+    <img src="../../../../img/translation_1.png"/>
+</p>
 
-### DAO Projects
+Once you have selected the language, you will see a tree folder with all the files of the documentation. You can see too two statistics:
 
-The first DAppNode project post-launch will be the hotly awaited ValidatorDAO. You can read this [Medium article](https://medium.com/dappnode/guardians-of-ethereum-a-validator-dao-proposal-d82e76231b45) to learn more about how ValidatorDAO is poised to revolutionize the relationship between Validators and Nominators!
+- Words translated: words that have been translated by someone. They are shown in colour blue.
+- Words approved: words that have been translated and someone has confirmed the translation is correct. Shown in green colour.
+
+<p align="center">
+    <img src="../../../../img/translation_2.png"/>
+</p>
+
+Navigate to the file you wish to translate and click on the filename.
+
+<p align="center">
+    <img src="../../../../img/translation_3.png"/>
+</p>
+
+In this example, we can see 2 different highlighted sections:
+
+- Red highlight: Text that has not been translated yet.
+- Green highlight: Text that has already been translated.
+
+On this page, you can do 2 things: translate the file and/or vote/approve a translation.
+
+#### 2.1 Add translation
+
+The file is divided in strings or phrases. You need to click on it the phrase you want to translate. If I want to translate the sentence `This documentation has 4 types of content depending on what you want to do:`, I click on it and I see the next image:
+
+<p align="center">
+    <img src="../../../../img/translation_4.png"/>
+</p>
+
+Translate the sentence on the right panel, under `Enter translation here`, and click on the SAVE button.
+
+##### 2.1.1 Maintain the style of the text
+
+If the original text has style tags like in the example: `<strong x-id="1">Get Started</strong> : you can find what you need to run a DAppNode, hardware recommendations or how to get DAppNode hardware.`, you will need to maintain it.
+
+<p align="center">
+    <img src="../../../../img/translation_5.png"/>
+</p>
+
+To do so, copy the tags `<strong x-id="1">Get Started</strong>` and change the content inside of them. In this example, the result would be something like:
+
+`<strong x-id="1">Iniciación</strong> : you can find what you need to run a DAppNode, hardware recommendations or how to get DAppNode hardware.`
+
+### 2.2 Approve translation or make a different suggestion.
+
+In case there's an already existing translation, you will be able to suggest an alternative translation or to validate it. For this, select the green/blue marked texts and vote up/down for the translation, or suggest an alternative translation.
