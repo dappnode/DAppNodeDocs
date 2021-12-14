@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# What do I need to develop for DAppNode?
+# Set Up DAppNode development environment
 
 Content to be added soon.
