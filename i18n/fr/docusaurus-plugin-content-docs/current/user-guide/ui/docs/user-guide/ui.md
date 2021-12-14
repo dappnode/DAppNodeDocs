@@ -1,25 +1,27 @@
-# Wifi view
+# Community View
 
-Here you can set up the wifi of your DAppNode.
-
-## Status
-
-On the status page, you can turn on/off the wifi package. You can do this in case you don't want to access it via wifi.
-
-> :warning: If you are accessing via wifi, check you can connect to your DAppNode using another method in case you will turn off the wifi.
+In this section you can find all the channels you can find us and how to can contribute to this project.
 
 <p align="center">
-    <img src="../../../../img/wifi_view_1.png"/>
+    <img src="../../../../img/community_view.png"/>
 </p>
 
-## Credentials
+## Discord Channel
 
-In the credentials section, you will be able to modify the SSID of the wifi, SSID is the name you see when you try to connect to the wifi with some device.
+On Discord, you can ask anything you want about DAppNode. You can get the invitation to the Discord channel [here](https://discord.gg/c28an8dA5k).
 
-In this tab, you can change the current password of the wifi.
+## Grants
 
-> :warning: Remember you need to use a strong password for the wifi.
+If you want to contribute with DAppNode you can do it with gitcoin grants.
 
-<p align="center">
-    <img src="../../../../img/wifi_view_2.png"/>
-</p>
+## Community Treasury
+
+If you collaborate with DAppNode, developing packages, helping other users, creating content, you can be rewarded for that. You can get more information about that on the link.
+
+## Forum Discourse
+
+[Forum](https://discourse.dappnode.io/) is a place where you can find guides, support, support questions, and so much information.
+
+## Github
+
+DAppNode is an Open Source Project, you can review the code and even contribute by yourself on [DAppNode Github](https://github.com/dappnode).
