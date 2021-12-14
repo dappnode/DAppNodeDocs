@@ -1,21 +1,50 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Overview
+# Script Installation
 
-DAppNode project is open source which means you can install it on your hardware. There are two main ways to install DAppNode:
+You can install DAppNode using the installation script. In this case, we recommend you use Ubuntu or Debian as your operating system.
 
-- [Installing with a script](./script)
-- [Installing with an ISO](./iso)
+## Prerequisites
 
-There are some little differences that we have to mention. These differences are details and it does not affect the user experience.
+Before installing DAppNode, you need to install some prerequisites:
 
-If you install DAppNode with an ISO, you will have 2 core packages installed by default:
+- [Docker](https://docs.docker.com/install/)
+- [Docker-compose](https://docs.docker.com/compose/install/)
+- [xz](https://tukaani.org/xz/)
 
-- Wireguard
-- Https
+To install all the above prerequisites, execute the command below in the terminal of the machine you want to install DAppNode. If you already have the dependencies installed or you want to install them on your own you can skip this step.
 
-Wireguard is a VPN client and HTTPS is a feature that lets you securely expose your endpoint to the public.
+`sudo wget -O - https://prerequisites.dappnode.io | sudo bash`
 
-If you install DAppNode using the script, these packages are not currently included and you can install them on your own. For the next release these packages will be installed automatically.
+## Installation
+
+To install DAppNode, install it executing the next script:
+
+`sudo wget -O - https://installer.dappnode.io | sudo bash`
+
+## Post-Installation
+
+Once the installation process has finished, DAppNode will try to automatically prepare the first access to your DAppNode on the next order:
+
+1. [Local Proxy](../../../../user-guide/ui/access/local-proxy)
+2. [Wifi](../../../../user-guide/ui/access/wifi)
+3. [Wireguard](../../../../user-guide/ui/access/vpn#wireguard)
+4. [OpenVPN](../../../../user-guide/ui/access/vpn#openvpn)
+
+## Restore to the latest version from a script
+
+If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.
+
+> :warning: Please note that volumes are not deleted, but any EXTRA_OPTS set by the user in the packages config must be set again after using this script to restore the system
+
+`sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash`
+
+## Uninstall
+
+This command will uninstall DAppNode components (but not docker et al.).
+
+> :warning: BEWARE! It will also delete all volumes and stored data!
+
+`wget -qO - https://uninstaller.dappnode.io | sudo bash`
