@@ -34,6 +34,10 @@ This feature is valid for non major updates, in which an admin intervention will
 
 ## Repository
 
+In this section, you will be able to set up what type of client you will use on your DAppNode and set up the IPFS service.
+
+### Ethereum Client
+
 You can find a more detailed information on the section [select a type of client](./initial-configurations/select-a-client). It's important to understand the pros and cons of this decision.
 This view is the same that you saw in that step.
 
@@ -50,11 +54,34 @@ Here you can choose several options:
 
 As we said before if you want to know the pros and cons of this decisions, we recommend you to read [select a type of client](./initial-configurations/select-a-client) section.
 
+### IPFS Service
+
+This feature allowes users to connect to a remote IPFS node instead of the locally hosted version.
+You can find a guide related to this feature in [this guide on the forum](https://forum.dappnode.io/t/how-to-use-dappnode-ipfs-remote/1295)
+
+<p align="center">
+    <img src="../../../../img/system_view_repository_2.png"/>
+</p>
+
+#### When to use IPFS remote?
+
+IPFS is part of the DAppNode technology stack, but it sometimes causes problems with certain routers or consumes too much of capped data plans. If you experience any of the following issues, you might want to consider switching to IPFS remote:
+
+- Home networking issues
+- The DAppStore does not render propertly
+- Issues downlading new packages or updates
+
+#### IPFS gateways and security
+
+Connecting to IPFS remote gateways could enable security risks like the gateway serving malicious content to the user. We mitigate this by verifying the content downladed with the [CID technology](https://docs.ipfs.io/concepts/content-addressing/).
+
+If the DAppNode IPFS gateway is not available (we make no uptime guarantees and we offer it on a best-effort basis) the user can set another IPFS gateway in the input field, check out all the [IPFS gateways available](https://ipfs.github.io/public-gateway-checker/). DAppNode recommends using them as the last solution.
+
 ## Network
 
 In the network section we can do some technical stuff:
 
-- IP\*\*: usually, the IP we have in our houses are dynamics, so we have not a IP, because of this situation, DAppNode uses DynDNS, DynDNS associates an IP to a direction like 0773a23d34aed273.dyndns.dappnode.io, for example. It's necessary to use a direction to run some services, DynDNS is the solution to this problem. If your IP is for any reason, and you don't want to use DynDNS, you can set up with this field.
+- IP: usually, the IP we have in our houses are dynamics, so we have not a IP, because of this situation, DAppNode uses DynDNS, DynDNS associates an IP to a direction like 0773a23d34aed273.dyndns.dappnode.io, for example. It's necessary to use a direction to run some services, DynDNS is the solution to this problem. If your IP is for any reason, and you don't want to use DynDNS, you can set up with this field.
 
 **HTTPs Portal**: to see this option you need to install de HTTPS package. Here you can expose services using the protocol HTTPS. What does it mean? If you expose for example geth, you expose your geth RPC to the Internet, so you can use metamask from anywhere. You have to be careful with his feature. In this section we have listed the services we "recommend" or we think is interesting to expose to.
 
