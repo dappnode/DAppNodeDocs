@@ -1,44 +1,25 @@
-# VPN view
+# Wifi view
 
-This page can be a bit different depending on how you have installed DAppNode or what packages are installed.
+Here you can set up the wifi of your DAppNode.
 
-There are 2 tabs:
+## Status
 
-- OpenVpn
-- Wireguard
+On the status page, you can turn on/off the wifi package. You can do this in case you don't want to access it via wifi.
 
-## OpenVpn
-
-OpenVPN is installed by default. You will see the next image.
+> :warning: If you are accessing via wifi, check you can connect to your DAppNode using another method in case you will turn off the wifi.
 
 <p align="center">
-    <img src="../../../img/openvpn_view_1.png"/>
+    <img src="../../../../img/wifi_view_1.png"/>
 </p>
 
-The options are:
+## Credentials
 
-- **Credentials**: Get linkutdated and it does not matter now.
-- **Reset**: Remove and create new credentials for OpenVPN.
-- **Remove**: Remove the configurations of the device you select.
+In the credentials section, you will be able to modify the SSID of the wifi, SSID is the name you see when you try to connect to the wifi with some device.
 
-You have a full guide about how to set up OpenVPN and the OpenVPN client [here](./recommended-set-ups/add-vpn-devices).
+In this tab, you can change the current password of the wifi.
 
-## Wireguard
-
-### Wireguard is not installed
-
-In this case, wireguard is not installed in your DAppNode. You can do it by clicking on the link that appears.
+> :warning: Remember you need to use a strong password for the wifi.
 
 <p align="center">
-    <img src="../../../img/wireguard_view_1.png"/>
+    <img src="../../../../img/wifi_view_2.png"/>
 </p>
-
-### Wireguard is installed
-
-If the Wireguard package is installed you will see something like the following screen.
-
-<p align="center">
-    <img src="../../../img/wireguard_view_1.png"/>
-</p>
-
-You have a full guide about how to set up Wireguard and the Wireguard client [here](./recommended-set-ups/add-vpn-devices).
