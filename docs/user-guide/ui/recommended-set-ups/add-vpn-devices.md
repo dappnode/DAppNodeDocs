@@ -101,7 +101,35 @@ The output of this command should be something like:
 
 ### MacOS
 
-Content to be added soon.
+In your MacOS, go to [WireGuard for macOS](https://www.wireguard.com/install/#macos-app-store) and install the latest version from the Mac App Store
+
+<p align="center">
+    <img src="../../../../img/wireguard_macos_install_1.png"/>
+</p>
+
+After installing and running the program, the icon will appearn in the top menu bar of the MacOS. Click "Manage Tunnels" and then find "Add Empty Tunnel" 
+
+<p align="center">
+    <img src="../../../../img/wireguard_macos_install_4.png"/>
+</p>
+
+Then a form will appear, you just need to fill the name and copy/paste from your profile on [dappnode UI](http://dappnode.local/#/vpn/wireguard).
+
+
+<p align="center">
+    <img src="../../../../img/wireguard_macos_install_3.png"/>
+</p>
+
+Copy the information
+<p align="center">
+    <img src="../../../../img/wireguard_macos_install_2.png"/>
+</p>
+
+And paste it on the client
+
+<p align="center">
+    <img src="../../../../img/wireguard_macos_install_5.png"/>
+</p>
 
 ### iOS
 
