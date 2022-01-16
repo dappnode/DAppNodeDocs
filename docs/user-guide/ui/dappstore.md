@@ -69,11 +69,11 @@ Some packages required an extra step before installing where you have to set up 
 
 ### DAppNode Association Verified Packages
 
-Packages without the blue ticker have been developed and uploaded by third parties. DAppNode association is not maintaining these package and has not performed any audit on its content. Use them at your own risk. DAppNode will not be liable for any loss or damage produced by the use of any package within the installer.
+These packages have been built and uploaded to DAppNode by the DAppNode association and are maintained by DAppNode, you will find a blue ticker in the DAppNode Association Verified packages.
 
 ### Non verified packages
 
-These packages have been built and uploaded to DAppNode by the DAppNode association and are maintained by DAppNode, you will find a blue ticker in the DAppNode Association Verified packages.
+Packages without the blue ticker have been developed and uploaded by third parties. DAppNode association is not maintaining these package and has not performed any audit on its content. Use them at your own risk. DAppNode will not be liable for any loss or damage produced by the use of any package within the installer.
 
 ## Commom Errors
 
