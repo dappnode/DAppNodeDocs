@@ -75,7 +75,7 @@ These packages have been built and uploaded to DAppNode by the DAppNode associat
 
 Packages without the blue ticker have been developed and uploaded by third parties. DAppNode association is not maintaining these package and has not performed any audit on its content. Use them at your own risk. DAppNode will not be liable for any loss or damage produced by the use of any package within the installer.
 
-## Commom Errors
+## Common Errors
 
 ### I can't see any package on the DAppStore
 
