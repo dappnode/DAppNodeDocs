@@ -6,8 +6,8 @@ sidebar_position: 1
 
 DAppNode project is open source which means you can install it on your hardware. There are two main ways to install DAppNode:
 
-- [Installing with a script](./script)
-- [Installing with an ISO](./iso)
+- [Installing with a script](./script.md)
+- [Installing with an ISO](./iso.md)
 
 There are some little differences that we have to mention. These differences are details and it does not affect the user experience.
 
