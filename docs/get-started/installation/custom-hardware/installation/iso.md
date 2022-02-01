@@ -8,7 +8,7 @@ When you want to perform a clean installation by installing the base operating s
 
 ## Get the ISO
 
-You can get the image downloading directly from [DAppNodeISO](https://iso.dappnode.io/) or if you prefer you can [build it from the source](https://github.com/dappnode/DAppNode_Installer).
+You can get the image downloading directly from [DAppNodeISO](https://iso.dappnode.io/) or if you prefer you can [build it from the source](https://github.com/dappnode/DAppNode#install-dappnode-with-iso).
 
 ## Burn the ISO in a USB
 
