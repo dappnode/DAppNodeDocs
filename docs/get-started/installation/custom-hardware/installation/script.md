@@ -24,6 +24,12 @@ To install DAppNode, install it executing the next script:
 
 `sudo wget -O - https://installer.dappnode.io | sudo bash`
 
+## Reboot
+
+To finalize the installation once it has finished completing, reboot your machine:
+
+`shutdown -r now`
+
 ## Post-Installation
 
 Once the installation process has finished, DAppNode will try to automatically prepare the first access to your DAppNode on the next order:
