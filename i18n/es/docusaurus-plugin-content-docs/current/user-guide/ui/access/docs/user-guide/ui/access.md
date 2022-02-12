@@ -1,26 +1,17 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Wifi Hotspot
+# Local Proxy
 
-If you have bought a DAppNode or you have installed DAppNode in a physical device with Wi-fi, you can directly connect to your server's admin UI by connecting your client device to the DAppNode's wifi hotspot.
+If you are connected on the same network of your DAppNode and you did the installation by Script. You have to be able to access to the admin UI going to the url http://dappnode.local .
 
-When you connect your DAppNode server to your router via Ethernet you will see a network called DAppNodeWIFI, just connect to that Wifi using the default password "dappnode" and you will have direct access to your DappNode server ADMIN UI while connected to that WIFI.
+# Note
 
-SSID: `DAppNodeWIFI`
+When you use the local network proxy you are limited to the admin UI dashboard at `dappnode.local` and cannot access any other UI's such as Prysm, Avalanche, Mysterium, DMS, etc.  You must use VPN (preferably Wireguard) or the DAppNode's own WiFi hotspot to access those pages.
 
-Password: `dappnode`
+## Enable/Disable from UI
 
-Once you have access to the UI, you should modify these predefined values on the WI-FI section.
+You can Enable/Disable this access method from the UI from the Wifi page, on the tab Local Network.
 
-> :warning: Please immediately change the name of the WIFI and the password by setting up the new values in the WIFI section you can access by clicking on the Wi-Fi tab on the left menu.
-
-<p align="center">
-    <img src="../../../../img/wi-fi-tab.png"/>
-</p>
-
-Once you have access to the wi-fi section, there are 2 tabs:
-
-- Status: you can enable/disable the wifi.
-- Credentials: you can set up the different values for wifi: SSID (name of the wifi network DAppNode will create) and define a new password.
+> :information_source: If Local Proxy will not work initially if you did the installation by script. You will need to install the https package to be able to enable this access method. If you want to use the local proxy method as the first access method after the installation, we recommend the ISO installation.
