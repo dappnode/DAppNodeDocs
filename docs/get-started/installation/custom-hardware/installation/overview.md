@@ -9,13 +9,11 @@ DAppNode project is open source which means you can install it on your hardware.
 - [Installing with a script](./script.md)
 - [Installing with an ISO](./iso.md)
 
-There are some little differences that we have to mention. These differences are details and it does not affect the user experience.
+There are some little differences that we have to mention. These differences are important for more technical users. It does not affect the performance of the DAppNode but it does have a slightly different user experience that is generally limited to advanced users who interact with command line often.
 
-If you install DAppNode with an ISO, you will have 2 core packages installed by default:
+If you install DAppNode with an ISO:
 
-- Wireguard
-- Https
+The root account will be locked from SSH when installed via ISO, and the host account (default username: `dappnode`) will need to manually be added to the sudoers file to access root directories or use the `sudo` command.
 
-Wireguard is a VPN client and HTTPS is a feature that lets you securely expose your endpoint to the public.
+Both the install script and ISO install the same core packages.
 
-If you install DAppNode using the script, these packages are not currently included and you can install them on your own. For the next release these packages will be installed automatically.
