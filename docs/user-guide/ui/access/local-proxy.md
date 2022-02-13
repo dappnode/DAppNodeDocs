@@ -8,7 +8,7 @@ If you are connected on the same network of your DAppNode and you did the instal
 
 # Note
 
-When you use the local network proxy you are limited to the admin UI dashboard at `dappnode.local` and cannot access any other UI's such as Prysm, Avalanche, Mysterium, DMS, etc.  You must use VPN (preferably Wireguard) or the DAppNode's own WiFi hotspot to access those pages.
+When you use the local network proxy you are limited to the admin UI dashboard at `dappnode.local` and cannot access any other UI's such as Prysm, Avalanche, Mysterium, DMS, etc.  You must use a VPN (preferably Wireguard) or the DAppNode's own WiFi hotspot to access those pages.
 
 ## Enable/Disable from UI
 
