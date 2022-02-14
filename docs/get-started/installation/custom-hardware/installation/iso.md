@@ -22,6 +22,8 @@ Also, DAppNode is intended to run 24/7 so if you install it on a laptop or deskt
 
 ## Boot from ISO
 
+> :warning: If you encounter a corrupted display during installation, ensure BIOS boot mode is: UEFI.
+
 Insert the USB into your Server and prepare to install a Debian distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
 
 <p align="center">
