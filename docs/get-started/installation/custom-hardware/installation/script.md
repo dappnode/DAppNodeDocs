@@ -34,11 +34,6 @@ To finalize the installation once it has finished completing, reboot your machin
 
 Once the installation process has finished, DAppNode will try to automatically prepare the first access to your DAppNode on the next order:
 
-1. [Local Proxy](../../../../user-guide/ui/access/local-proxy)
-2. [Wifi](../../../../user-guide/ui/access/wifi)
-3. [Wireguard](../../../../user-guide/ui/access/vpn#wireguard)
-4. [OpenVPN](../../../../user-guide/ui/access/vpn#openvpn)
-
 ## Restore to the latest version from a script
 
 If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.
