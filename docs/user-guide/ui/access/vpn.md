@@ -325,8 +325,16 @@ In case you can, type:
 `sudo wg show`
 
 The output of this command should be something like:
-`~$ sudo wg show interface: wg0 public key: zFhjLJdXrLl86ayX6JpyfN0/rVH+qxgF/e8HxRP9cxk= private key: (hidden) listening port: 51820`
-`peer: OQZWpDPUcNPRZMjncY6BUwsli6HtqgTUn2lAGdXVi2c= endpoint: 173.249.33.176:51820 allowed ips: 172.33.0.0/16 latest handshake: 36 seconds ago transfer: 222.36 KiB received, 81.86 KiB sent`
+
+    $ sudo wg show
+    interface: wg0 public key: zFhjLJdXrLl86ayX6JpyfN0/rVH+qxgF/e8HxRP9cxk=
+      private key: (hidden)
+      listening port: 51820
+    peer: OQZWpDPUcNPRZMjncY6BUwsli6HtqgTUn2lAGdXVi2c=
+      endpoint: 173.249.33.176:51820
+      allowed ips: 172.33.0.0/16, 10.20.0.0/24
+      latest handshake: 36 seconds ago
+      transfer: 222.36 KiB received, 81.86 KiB sent
 
 ### MacOS
 
