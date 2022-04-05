@@ -25,7 +25,7 @@ To set up VPN correctly, you need to open the ports 8092 TCP and 1194 UDP. You h
 You can use openvpn or wireguard. You are free to set up whatever you prefer or even both. Firstly, go to the VPN page, you can do it by clicking on the VPN on the right menu of the UI. Select the tab of the vpn you want to set up.
 
 <p align="center">
-    <img src="../../../img/wireguard_view_1.png"/>
+    <img src="/img/wireguard_view_1.png"/>
 </p>
 
 In case wireguard is not installed and you want to use it, intall the package by clicking on the link.
@@ -35,7 +35,7 @@ In case wireguard is not installed and you want to use it, intall the package by
 If you have wireguard package installed you should see this page after clicking wireguard tab: Once you have installed the Wireguard package, you will be able to see this page:
 
 <p align="center">
-    <img src="../../../img/wireguard_view_2.png"/>
+    <img src="/img/wireguard_view_2.png"/>
 </p>
 
 You can use the profile is created by default. Or create a new one and delete this. To create a new one follow the next steps.
@@ -43,19 +43,19 @@ You can use the profile is created by default. Or create a new one and delete th
 1. Type a name for your device on the field **Add Device** and click on the button o press intro.
 
 <p align="center">
-    <img src="../../../img/add_wireguard_device_1.png"/>
+    <img src="/img/add_wireguard_device_1.png"/>
 </p>
 
 If the device was created correctly, this one will appears below.
 
 <p align="center">
-    <img src="../../../img/add_wireguard_device_2.png"/>
+    <img src="/img/add_wireguard_device_2.png"/>
 </p>
 
 2. Click on the button **Get link** of this device you have created. You will be redirected to the next page:
 
 <p align="center">
-    <img src="../../../img/add_wireguard_device_3.png"/>
+    <img src="/img/add_wireguard_device_3.png"/>
 </p>
 
 If you will use a wireguard client in a laptop or pc you need to copy that text, it's the configuration of wireguard for the device that you have added. You can copy it by clicking on the **Copy remote config**.
@@ -96,31 +96,31 @@ The output of this command should be something like: `~$ sudo wg show interface:
 In your MacOS, go to [WireGuard for macOS](https://www.wireguard.com/install/#macos-app-store) and install the latest version from the Mac App Store
 
 <p align="center">
-    <img src="../../../../img/wireguard_macos_install_1.png"/>
+    <img src="/img/wireguard_macos_install_1.png"/>
 </p>
 
 After installing and running the program, the icon will appearn in the top menu bar of the MacOS. Click "Manage Tunnels" and then find "Add Empty Tunnel"
 
 <p align="center">
-    <img src="../../../../img/wireguard_macos_install_4.png"/>
+    <img src="/img/wireguard_macos_install_4.png"/>
 </p>
 
 Then a form will appear, you just need to fill the name and copy/paste from your profile on [dappnode UI](http://dappnode.local/#/vpn/wireguard).
 
-
 <p align="center">
-    <img src="../../../../img/wireguard_macos_install_3.png"/>
+    <img src="/img/wireguard_macos_install_3.png"/>
 </p>
 
 Copy the information
+
 <p align="center">
-    <img src="../../../../img/wireguard_macos_install_2.png"/>
+    <img src="/img/wireguard_macos_install_2.png"/>
 </p>
 
 And paste it on the client
 
 <p align="center">
-    <img src="../../../../img/wireguard_macos_install_5.png"/>
+    <img src="/img/wireguard_macos_install_5.png"/>
 </p>
 
 ### iOS
@@ -142,13 +142,13 @@ In your mobile, go to the playstore, then look for `wireguard` and select this a
 Then, if you open the app you will see the next image:
 
 <p align="center">
-    <img src="../../../../img/wireguard_android_set_up.jpg"/>
+    <img src="/img/wireguard_android_set_up.jpg"/>
 </p>
 
 Click on the blue circle button on the right bottom:
 
 <p align="center">
-    <img src="../../../../img/wireguard_android_set_up_2.jpg"/>
+    <img src="/img/wireguard_android_set_up_2.jpg"/>
 </p>
 
 You can obtain the configuration scanning the QR you obtain on the vpn/wireguard view, download the file and import it or copy the contain of the configuration.
@@ -156,7 +156,7 @@ You can obtain the configuration scanning the QR you obtain on the vpn/wireguard
 ## OpenVPN
 
 <p align="center">
-    <img src="../../../img/openvpn_view_1.png"/>
+    <img src="/img/openvpn_view_1.png"/>
 </p>
 
 You can use the profile is created by default. Or create a new one and delete this. To create a new one follow the next steps.
@@ -164,13 +164,13 @@ You can use the profile is created by default. Or create a new one and delete th
 1. Type a name for your device on the field **Add Device** and click on the button o press intro.
 
 <p align="center">
-    <img src="../../../img/add_wireguard_device_1.png"/>
+    <img src="/img/add_wireguard_device_1.png"/>
 </p>
 
 If the device was created correctly, this one will appears below.
 
 <p align="center">
-    <img src="../../../img/add_openvpn_device_1.png"/>
+    <img src="/img/add_openvpn_device_1.png"/>
 </p>
 
 2. Click on the button **Get link** of this device you have created. You will be redirected to the next page:
@@ -211,7 +211,9 @@ Go to "Settings -> Network" and click to the "+" button to add a VPN connection:
     <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ubuntu2.png"/>
 </p>
 
-Select "Import from file..." <p align="center">
+Select "Import from file..."
+
+ <p align="center">
     <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/ubuntu4.png"/>
 </p>
 
