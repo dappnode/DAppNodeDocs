@@ -1,4 +1,4 @@
-# Ethereum Consesus Layer (Eth 2.0) Multiclient
+# Ethereum Consensus Layer (Eth 2.0) Multiclient
 
 DAppNode is a key piece of infrastructure decentralization. Our mission is to make running infrastructure easy for everyone, so we are now introducing multiple clients to validate the Ethereum Consensus Layer.
 
@@ -54,7 +54,7 @@ You can select some of the following:
     <img width="1000"src="../../../img/multiclient_test1.png"/>
 </p>
 
-Once you have installed a Ethereum Consesus Layer client, you need to set up the web3signer package, which was installed automatically when you installed one of the previous mentioned packages. In the web3signer package you'll decide which Consesus Layer client you want to use to validate.
+Once you have installed a Ethereum Consensus Layer client, you need to set up the web3signer package, which was installed automatically when you installed one of the previous mentioned packages. In the web3signer package you'll decide which Consensus Layer client you want to use to validate.
 
 ### 1.1 Teku
 
