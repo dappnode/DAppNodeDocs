@@ -1,18 +1,20 @@
 # Ethereum Consesus Layer (Eth 2.0) Multiclient
 
-DAppNode is a key piece of infrastructure decentralization. Our mission is to make running infrastructure easy for everyone, so we are now introducing multiple clients to validate the Ethereum Consensus Layer
+DAppNode is a key piece of infrastructure decentralization. Our mission is to make running infrastructure easy for everyone, so we are now introducing multiple clients to validate the Ethereum Consensus Layer.
+
+In this document we will talk about the following chapters:
 
 - Current situation
-- Technical Aspects
-- Start validating from scratch
-- Migrate from one client to another
+- Basics to start validating
+- Installing a consensus layer client
+- Migrating from one client to another
 
 ## Current Situation
 
 **Status for Prater Testnet:** Testing phase of the new multiclient setup. Objective is to get as much feedback before releasing to Mainnet.
 
 **Status for Mainnet:** Validating on Eth Mainnet on a DAppNode is supported with Prysm only. 
-## Instructions to start validating
+### Basics to start validating
 
 Assumptions:
 
