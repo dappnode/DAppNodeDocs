@@ -1,31 +1,34 @@
-# Ethereum 2.0 Multiclient
+# Ethereum Consensus Layer (Eth 2.0) Multiclient
 
-DAppNode is a key piece of infrastructure decentralization. Our mission is to make running infrastructure easy for everyone, so we are now introducing multiple clients to validate the Ethereum Consensus Layer
+DAppNode is a key piece of infrastructure decentralization. Our mission is to make running infrastructure easy for everyone, so we are now introducing multiple clients to validate the Ethereum Consensus Layer.
+
+In this document we will talk about the following chapters:
 
 - Current situation
-- Technical Aspects
-- Start validating from scratch
-- Migrate from one client to another
+- Basics to start validating
+- Installing a consensus layer client
+- Migrating from one client to another
 
 ## Current Situation
 
-Currently, we are in testing phase. The multiclient validation setup is now available in the Ethereum Prater Testnet, and the objective is to get feedback before releasing Mainnet.
+**Status for Prater Testnet:** Testing phase of the new multiclient setup. Objective is to get as much feedback before releasing to Mainnet.
 
-## Instructions to validate
+**Status for Mainnet:** Validating on Eth Mainnet on a DAppNode is supported with Prysm only. 
+### Basics to start validating
 
 Assumptions:
 
 - The user has generated a minimum of one keystore
 - A deposit of 32 ETH to the validator account has been made
 
-### Previously in Prater tesnet and currently in mainnet (NOT MULTICLIENT):
+### Previously on Prater tesnet and currently on mainnet (NOT MULTICLIENT):
 
 1. The user connects to their DAppNode via Wifi or VPN
 2. Installs the Prysm package
 3. Complete the onboarding process where he imports their keystore/s.
 4. Once the Prysm Beacon Chain is synced and the deposit phase is completed, the validator starts aggregating, attesting and proposing, generating rewards.
 
-### Currently in Prater (MULTICLIENT):
+### Currently on Prater (MULTICLIENT):
 
 1. The user connects to their DAppNode via Wifi or VPN
 2. Picks between their validator client of choice: Prysm, Lighthouse or Teku (Nimbus and Lodestar coming soon)
@@ -33,15 +36,16 @@ Assumptions:
 4. Import the keys into the Web3Signer via the UI of the package
 5. Once the selected client's Beacon Chain is synced and the deposit phase is completed, the validator starts aggregating, attesting and proposing, generating rewards.
 
-## What is web3signer package and why is required?
+## What is the web3signer package and why is it required?
 
-The Web3signer is a remote signer that can hold validation keys and communicate with different clients. It comes bundled with a UI that make it easier to import keystores and slashing protection data.
-The Web3signer package and its combined use with the client packages is the solution to make it easier and safer for DAppNode users to set up a validator and use multiple clients.
+The Web3signer is a remote signer that can hold validation keys and communicate with different clients. It comes bundled with a UI that makes it easier to import keystores and slashing protection data.
+The Web3signer package and its combined use with the client packages is the solution to making it easier and safer for DAppNode users to set up a validator and use multiple clients.
 
-## 1. Installation a client from scratch
+## 1. Installing a client from scratch
 
-We suppose that you have generated your keystore files. Access your DAppNode via Wifi or VPN and go to the DAppStore and select the ethereum2.0 prater client, you can select some of the next ones:
+We suppose that you have generated your keystore files and completed a deposit already. Access your DAppNode via Wifi or VPN and go to the DAppStore and select your Consensus Layer Client of choice. 
 
+You can select some of the following:
 - Teku
 - Lighthouse
 - Prysm
@@ -50,28 +54,28 @@ We suppose that you have generated your keystore files. Access your DAppNode via
     <img width="1000"src="../../../img/multiclient_test1.png"/>
 </p>
 
-Once you have installed the ethereum 2.0 client, you need to set up the web3signer package, what has installed automatically when you have installed some of the previous packages, it's in the web3signer package where you decide what client you want to use for validating.
+Once you have installed a Ethereum Consensus Layer client, you need to set up the web3signer package, which was installed automatically when you installed one of the previous mentioned packages. In the web3signer package you'll decide which Consensus Layer client you want to use to validate.
 
 ### 1.1 Teku
 
-Once you select the Lighthouse package you will see the next page, then click on the Install button.
+Once you select the Teku package you will see the Package Information page, then click on the Install button.
 
 <p align="center">
     <img width="1000"src="../../../img/multiclient_test_teku_1.png"/>
 </p>
 
-You should fill the next configurations:
+Fill out the other bits of information as needed:
 
 <p align="center">
     <img width="1000"src="../../../img/multiclient_test_teku_2.png"/>
 </p>
 
-**Graffiti**: its a mesage you write on the blocks you have created,
+**Graffiti**: this is a message your validator writes on the blocks you have created,
 
-**Eth1.x node URL**: This is prater testnet, you need an endpoint of ethereum goerli testnet
+**Eth1.x node URL**: This is the prater testnet, you'll need a Ethereum Goerli testnet RPC endpoint
 
 **CHECKPOINT_SYNC_URL for fast sync**: By default, the package will start to sync from the genesis, if you paste here an URL your node will start to work immediately, and it will download all the chains in the background. Below you have a little guide how to get this url.
-(We recommend using this option because makes the client works faster. In case you don't set it up, you need to wait for the client to sync from scratch and that takes time.)
+(We recommend using this option because makes the client works faster. In case you don't set it up, you need to wait for the client to sync from scratch and that takes time.) Fast Sync option is explained at the bottom of this page.
 
 **Eth2 client**: Select the client you want to use, in this case, Teku.
 
@@ -79,24 +83,24 @@ Click on the submit button, now you have to wait some minutes until the package 
 
 ### 1.2 Lighthouse
 
-Once you select the Lighthouse package you will see the next page, then click on the Install button.
+Once you select the Lighthouse package you will see the Package Information page, then click on the Install button.
 
 <p align="center">
     <img width="1000"src="../../../img/multiclient_test_light_1.png"/>
 </p>
 
-You should fill the next configurations:
+Fill out the other bits of information as needed:
 
 <p align="center">
     <img width="1000"src="../../../img/multiclient_test_light_2.png"/>
 </p>
 
-**Graffiti**: its a mesage you write on the blocks you have created,
+**Graffiti**: this is a message your validator writes on the blocks you have created,
 
-**Eth1.x node URL**: This is prater testnet, you need an endpoint of ethereum goerli testnet
+**Eth1.x node URL**: This is the prater testnet, you'll need a Ethereum Goerli testnet RPC endpoint
 
 **CHECKPOINT_SYNC_URL for fast sync**: By default, the package will start to sync from the genesis, if you paste here an URL your node will start to work immediately, and it will download all the chains in the background. Below you have a little guide how to get this url.
-(We recommend using this option because makes the client works faster. In case you don't set it up, you need to wait for the client to sync from scratch and that takes time.)
+(We recommend using this option because makes the client works faster. In case you don't set it up, you need to wait for the client to sync from scratch and that takes time.) Fast Sync option is explained at the bottom of this page.
 
 **Eth2 client**: Select the client you want to use, in this case, Lightouse.
 
@@ -104,24 +108,24 @@ Click on the submit button, now you have to wait some minutes until the package 
 
 ### 1.3 Prysm
 
-Once you select the Lighthouse package you will see the next page, then click on the Install button.
+Once you select the Prysm package you will see the Package Information page, then click on the Install button.
 
 <p align="center">
     <img width="1000"src="../../../img/multiclient_test_prysm_1.png"/>
 </p>
 
-You should fill the next configurations:
+Fill out the other bits of information as needed:
 
 <p align="center">
     <img width="1000"src="../../../img/multiclient_test_prysm_2.png"/>
 </p>
 
-**Graffiti**: its a mesage you write on the blocks you have created,
+**Graffiti**: this is a message your validator writes on the blocks you have created,
 
-**Eth1.x node URL**: This is prater testnet, you need an endpoint of ethereum goerli testnet
+**Eth1.x node URL**: This is the prater testnet, you'll need a Ethereum Goerli testnet RPC endpoint
 
 **CHECKPOINT_SYNC_URL for fast sync**: By default, the package will start to sync from the genesis, if you paste here an URL your node will start to work immediately, and it will download all the chains in the background. Below you have a little guide how to get this url.
-(We recommend using this option because makes the client works faster. In case you don't set it up, you need to wait for the client to sync from scratch and that takes time.)
+(We recommend using this option because makes the client works faster. In case you don't set it up, you need to wait for the client to sync from scratch and that takes time.) Fast Sync option is explained at the bottom of this page.
 
 **Eth2 client**: Select the client you want to use, in this case, Prysm.
 
@@ -171,7 +175,7 @@ Firstly, go to the dappstore and install the DMS package, http://my.dappnode/#/i
     <img width="1000"src="../../../img/dms_package_1.png"/>
 </p>
 
-When the package it's installed, go Packages > DMS > click on the UI link (http://dms.dappnode/dashboards/):
+When the package is installed, go to Packages > DMS > click on the UI link (http://dms.dappnode/dashboards/):
 
 <p align="center">
     <img width="1000"src="../../../img/dms_package_2.png"/>
@@ -181,15 +185,15 @@ When the package it's installed, go Packages > DMS > click on the UI link (http:
 
 ## Change from one client to another
 
-If you have installed and set up a validator and you want to change the client you are using for validating the recommended process would be the next one:
+If you have installed and set up a validator and you want to change the client you are using for validating the recommended process would be the following one:
 
-- Install the client you want, wait to this client is synced
+- Install the client you want, wait until this client is synced to the head of the chain
 - Set up the web3signer package to work with this new client
-- Check it's working and delete if you wish the previous client you have installed.
+- Check it's working and delete, if you wish to do so, the previous client you have installed.
 
 ### Example of changing client
 
-In this example we will change from Prysm to teku. Firstly, we should go to the DAppStore and install the teku package.
+In this example we will change from Prysm to Teku. Firstly, we should go to the DAppStore and install the Teku package.
 
 <p align="center">
     <img width="1000"src="../../../img/multiclient_test_teku_1.png"/>
@@ -201,7 +205,7 @@ You should fill the next configurations:
     <img width="1000"src="../../../img/multiclient_test_teku_2.png"/>
 </p>
 
-Wait this package is synced. When this happens, its time to go to the web3signer package, config section and change this parameter to the new client you want to use.
+Wait until this package is synced. When this happens, its time to go to the web3signer package, config section and change this parameter to the new client you want to use.
 
 <p align="center">
     <img width="1000"src="../../../img/multiclient_test_change_1.png"/>
@@ -227,5 +231,5 @@ Select Endpoints Prater:
     <img width="1000"src="../../../img/multiclient_test_infura_2.png"/>
 </p>
 
-Then, opy the https url. This is the url you should paste in the field.
+Then, copy the https url. This is the url you should paste in the field.
 In this example, i should copy and paste this `https://27Tg3BWDMSnd7sE4LLQt5jYwRVs:f6a18cd69f23267d1b5acacfc4fa37f8@eth2-beacon-prater.infura.io`.
