@@ -10,24 +10,20 @@ There are different machines depending on what you want to run.
 
 ## DAppNodeXtreme
 
+<p align="left">
+    <img width="600"src="../../../img/dappnode-hardware.png"/>
+</p>
+
 - Processor Intel NUC i7 10 Series
 - 32 GB RAM DDR4
 - 4TB NVMe
 
 ## DAppNodeMax
 
+<p align="left">
+    <img width="600"src="../../../img/dappnode-hardware.png"/>
+</p>
+
 - Intel NUC i7 10 Series
 - 16 GB RAM DDR4
 - 4TB SSD
-
-## DAppNodeAdvanced
-
-- Intel NUC i5 10 Series
-- 16 GB RAM DDR4
-- 1TB HD NVMe
-
-## DAppNodeMini
-
-- Intel NUC J5005 SERIE 7
-- KINGSTON DDR4 8GB
-- HD WD 1TB SSD
