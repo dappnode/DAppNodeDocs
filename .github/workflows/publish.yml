@@ -14,7 +14,10 @@ jobs:
 
       - name: Build schema references
         run: ./generateReferences.sh
-
+      - name: Setup node 16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.15.0
       - name: Install deps
         run: yarn
       - name: Build docs
