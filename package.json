@@ -17,6 +17,7 @@
     "@algolia/client-search": "^4.5.1",
     "@docusaurus/core": "2.0.0-beta.20",
     "@docusaurus/preset-classic": "2.0.0-beta.20",
+    "@easyops-cn/docusaurus-search-local": "^0.23.2",
     "@mdx-js/react": "^1.6.21",
     "@types/react": "17.0.37",
     "clsx": "^1.1.1",

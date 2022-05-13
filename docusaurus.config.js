@@ -118,13 +118,20 @@ module.exports = {
             editUrl:
             'https://github.com/dappnode/DAppNodeDocs/blob/master',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+      },
+    ],
+  ],
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        docsRouteBasePath: "/",
+        language: "en",
       },
     ],
   ],
