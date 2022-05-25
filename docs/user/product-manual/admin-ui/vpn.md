@@ -45,4 +45,4 @@ If the Wireguard package is installed you will see something like the following 
     <img src="../../../img/wireguard_view_1.png"/>
 </p>
 
-You have a full guide about how to set up Wireguard and the Wireguard client [here](./recommended-set-ups/add-vpn-devices).
+<!-- You have a full guide about how to set up Wireguard and the Wireguard client [here](./recommended-set-ups/add-vpn-devices). -->
