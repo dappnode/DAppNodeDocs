@@ -1,3 +1,7 @@
+---
+sidebar_position: 9
+---
+
 # SDK view
 
 This page is mainly for developers. If you a developer and you would like to create a package by yourself. You have a link to the tool we use to create a package **DAppNodeSDK**.

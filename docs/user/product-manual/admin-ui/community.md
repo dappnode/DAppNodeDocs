@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # Community View
 
 In this section you can find all the channels you can find us and how to can contribute to this project.

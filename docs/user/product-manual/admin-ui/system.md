@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # System View
 
 This area is used to configure and manage your system with different options that will be progressively released. This page has several tabs where you can collect information about your machine and modify some configurations.

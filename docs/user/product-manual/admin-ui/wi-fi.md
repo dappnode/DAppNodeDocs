@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Wifi view
 
 Here you can set up the wifi of your DAppNode.

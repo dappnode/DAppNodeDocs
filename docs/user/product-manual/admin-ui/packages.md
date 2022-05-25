@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Packages View
 
 On this view, we can check what packages we have installed in our DAppNodes. You can check some general parameters and do the next actions on this page:

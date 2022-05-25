@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # DAppStore View
 
 ## What is the DAppStore?
