@@ -38,8 +38,8 @@ In this section, you will be able to set up what type of client you will use on 
 
 ### Ethereum Client
 
-You can find a more detailed information on the section [select a type of client](./initial-configurations/select-a-client). It's important to understand the pros and cons of this decision.
-This view is the same that you saw in that step.
+<!-- You can find a more detailed information on the section [select a type of client](./initial-configurations/select-a-client). It's important to understand the pros and cons of this decision.
+This view is the same that you saw in that step. -->
 
 <p align="center">
     <img src="../../../../img/system_view_repository.png"/>
@@ -52,7 +52,7 @@ Here you can choose several options:
 - **Use a Full Node**: your dappnode machine will have an Ethereum node and will be full independent from anothers.
 - **OPTION Use remote during syncing or errors**: it's and option, let you to use a remote node in case your ethereum node is syncyng or it is affected by an error.
 
-As we said before if you want to know the pros and cons of this decisions, we recommend you to read [select a type of client](./initial-configurations/select-a-client) section.
+<!-- As we said before if you want to know the pros and cons of this decisions, we recommend you to read [select a type of client](./initial-configurations/select-a-client) section. -->
 
 ### IPFS Service
 
@@ -99,7 +99,8 @@ Here you can modify the password that is required to access to the UI.
 
 ## Peers
 
-This section is about IPFS peers. You can find more detail information about this on [add ipfs peers](recommended-set-ups/add-ipfs-peers.md), there you can know more about what is IPFS, why is important to add peers, etc.
+<!--
+This section is about IPFS peers. You can find more detail information about this on [add ipfs peers](recommended-set-ups/add-ipfs-peers.md), there you can know more about what is IPFS, why is important to add peers, etc. -->
 
 <p align="center">
     <img src="../../../../img/system_view_peers.png"/>
