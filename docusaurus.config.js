@@ -17,8 +17,8 @@ module.exports = {
         src: 'img/dappnode-logo.png',
       },
       items: [
-        {to: '/', label: 'Docs', position: 'left'},
         {to: '/user', label: 'User Guide', position: 'left'},
+        {to: '/', label: 'Builder Docs', position: 'left'},
         {to: '/dao', label: 'DAO', position: 'left'},
         {
           type: 'localeDropdown',
