@@ -3,7 +3,7 @@ title: User Guide
 slug: "/"
 ---
 
-Welcome to the DAppNode user guide.
+Wellcome to the DAppNode user guide.
 If you have just installed or bought a DAppNode, the section quick start will help you to do the first step on your DAppNode.
 
 If you want to validate or know how to do cool stuff go to the guides section.
