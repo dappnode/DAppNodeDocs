@@ -1,6 +1,7 @@
 
 module.exports = {
   docs: [
+    'intro',
     {
       type: 'category',
       label: 'Package Developer',
