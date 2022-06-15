@@ -27,9 +27,17 @@ In case you have validators, in some dashboards of the DMS you can find some met
 
 ## How to test staking with goEth and where do I get goEth?
 
-## Why is my Dappnode louder than normal?
+Currently, we are testing the multiclient feature in DAppNode, you have a guide here where it's explained how to install the required packages for participating in a testnet of Ethereum.
+Firstly, you will need at least 32 görli Eth. You can obtain this token from the faucet and some discord channels that are related to staking like ethstakers.
+
+- https://goerlifaucet.com/
+- https://goerli-faucet.slock.it/
+- https://goerli-faucet.mudit.blog/
 
 ## What can I do if my hardrive runs out of space?
+
+You can find a detailed guide how you can expand the space of your dappnode [here](https://forum.dappnode.io/t/how-to-expand-your-dappnode-filesystem-space/1296).
+You can add a nvme hard disk (if there is a free slot in the dappnode machine), and set it up using the feature which is in the system > hardware. This feature only works with nvme hard disk.
 
 ## Who helps me if I run into a problem?
 
