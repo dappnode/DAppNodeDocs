@@ -4,7 +4,8 @@ sidebar_position: 3
 
 # Script Installation
 
-You can install DAppNode using the installation script. In this case, we recommend you use Ubuntu or Debian as your operating system.
+You can install DAppNode using the installation script. Use Debian buster, bullseye or stretch as your operating system (jammy not yet supported).
+
 
 ## Prerequisites
 
