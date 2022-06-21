@@ -10,6 +10,6 @@ If you have just installed DAppNode on your own hardware or bought a DAppNode fr
 
 If you want to run your own validator, access decentralised apps or learn how to do cool stuff on your DAppNode visit the [Guides section](/user/guides).
 
-If you have problems with your DAppNode or want to get in touch with us, please take a look at the [FAQs](/user/faqs/general).
+If you have problems with your DAppNode or want to get in touch with us, please take a look at the [FAQs](/user/faq/general).
 
 The [product manual](/user/product-manual/dashboard) aims to give you an overview of the whole DAppNode interface, accompanied by a functional explanation of that part of the UI.
