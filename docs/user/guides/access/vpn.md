@@ -3,37 +3,174 @@ title: VPN
 sidebar_position: 3
 ---
 
-# VPN's
+# Accessing your DAppNode via VPN
+---
 
-Firstly, if you don't know what VPN is, below you can read a little description you can find on the Internet.
+## Introduction to VPNs
 
-_A virtual private network, or VPN, is an encrypted connection over the Internet from a device to a network. The encrypted connection helps ensure that sensitive data is safely transmitted. It prevents unauthorized people from eavesdropping on the traffic and allows the user to conduct work remotely._
+If you don't know what a VPN (Virtual Private Network) is, here is a little description:
 
-The main purpose of setting up the VPN access is to let the user safely connect to his DAppNode in case he wants to access it remotely.
+> A virtual private network, or VPN, is an encrypted connection over the Internet from a device to a network. The encrypted connection helps ensure that sensitive data is safely transmitted. It prevents unauthorized people from eavesdropping on the traffic and allows the user to conduct work remotely.
 
-DAppNode supports 2 kinds of VPN: OpenVPN and Wireguard. Below you have a little explanation about what explains each section:
+The main purpose of the VPN is to provide a secure connection to your DAppNode when you need remote access to its hosted services (eg. Blockchain clients or IPFS) or your DAppNode itself (eg. updating packages). 
 
-- **Set up VPN from admin UI**: Explain how access to the VPN section and what you can do from this view. (you need to have access to the admin UI).
-- **OpenVPN**: Explain how to set up OpenVPN in dappnode and how to connect your device using an OpenVPN client.
-- **Wireguard**: Explain how to set up wireguard in dappnode and how to connect your device using a wireguard client.
-- **Set up VPN from DAppNode terminal**: Read this section if you want to access via VPN directly, or your machine has not wifi interface.
+DAppNode supports 2 different kinds of VPN protocols and software: **WireGuard** (preferred) and **OpenVPN**.  
 
-## Set up VPN from admin UI
+This document is structured as follows:
 
-Firstly, you should go to VPN page, clicking on the VPN tab on the left menu. You sill see a view where you can select 2 tabs: OpenVPN and wireguard.
+- [**Selecting a VPN client in the admin UI**](#selecting-a-vpn-client-in-the-admin-ui): Explains how to access and select a VPN client in the DAppNode UI
+- [**WireGuard** (preferred)](#WireGuard-preferred): Explains how to set up WireGuard on your DAppNode, configure a profile and how to connect your devices using WireGuard clients
+- [**OpenVPN**](#openvpn): Explains how to set up OpenVPN on your DAppNode and how to connect your devices using OpenVPN clients
+- [**Setting up a VPN client from the DAppNode terminal**](#setting-up-a-vpn-client-from-the-dappnode-terminal): Read this section if you want to access via VPN directly, or your machine has not wifi interface.
 
-<p align="center">
-    <img src="../../../../img/vpn_view.png"/>
-</p>
-
-In case you want to set up openVPN, follow the instruction of OpenVPN.
-On the other hand, if you wish to use wireguard, click on the tab Wireguard, you will need to install the wireguard package how you see in the below image.
+## Selecting a VPN client in the admin UI
+So select a VPN client, choose the `VPN` menu item in the left sidebar or click [this link](hhttp://my.dappnode/#/vpn/WireGuard). You will see a page where you can select either WireGuard or OpenVPN.
 
 <p align="center">
-    <img src="../../../../img/wireguard_view_installed.png"/>
+    <img src="../../../../img/vpn_view_new.png"/>
 </p>
 
-In case you want to set up wireguard, follow the instruction of Wireguard.
+If you want to set up WireGuard, follow the [WireGuard instructions](#WireGuard-preferred).  
+On the other hand, if you wish to use OpenVPN, click on the OpenVPN tab and install the OpenVPN package. Continue with the [OpenVPN instructions](#openvpn).
+
+<p align="center">
+    <img src="../../../../img/openvpn_install_package.png"/>
+</p>
+
+
+## WireGuard (preferred)
+
+On the WireGuard tab, you'll be able to see the default profiles. By default we create a single profile, called `dappnode_admin`.
+
+<p align="center">
+    <img src="../../../../img/WireGuard_view_2_new.png"/>
+</p>
+
+### Gathering your VPN credentials
+The steps on how to get your VPN credentials are the same across all clients and platforms. If you wish, you can create a new as follows:
+
+<p align="center">
+    <img src="../../../../img/WireGuard_new_device.png"/>
+</p>
+
+After the successful creation of that profile, click on `Get link`. This will prompt you with the configuration text for your WireGuard client. Keep this window open for later, you will need to paste this configuration text into your respective WireGuard client or you can download the configuration as a text file.
+
+> :warning: If you want to access your DAppNode with multiple devices, make sure to create a configuration profile for each and every device that hosts a WireGuard client :warning:
+
+These are the recommended WireGuard clients:
+
+- macOS: [WireGuard for macOS](https://www.WireGuard.com/install/#macos-app-store)
+- iOS: [WireGuard for iOS](https://www.WireGuard.com/install/#ios-app-store)
+- Windows: [WireGuard for Windows](https://www.WireGuard.com/install/#windows-7-8-81-10-2012-2016-2019)
+- Android: [WireGuard for Android](https://play.google.com/store/apps/details?id=com.WireGuard.android)
+- Linux: [WireGuard for Linux](https://www.WireGuard.com/install/#ubuntu-module-tools)
+
+### Linux
+> :warning: These steps require a terminal :warning:
+
+To install WireGuard on Linux, please take a look at `WireGuard for Linux` page linked above and look for the corresponding Distribution you're using.
+
+After installing WireGuard, you'll need to create the config file and copy the content of the DAppNode UI there (the configuration you obtained in the steps above):  
+`sudo nano /etc/WireGuard/wg0.conf` or  
+`sudo vim /etc/WireGuard/wg0.conf`
+    
+Finally, type the following command (this starts the WireGuard client and connects the VPN interface):  
+`sudo wg-quick up wg0`
+
+To check you are connected you can try a few things:
+
+1. Type `ifconfig` and check if there is a new interface you're not familiar with
+2. Ping the DAppNode interface with `ping my.dappnode`
+3. Try to access the [DAppNode UI](http://my.dappnode/)
+
+If you want to see some statistics, type:
+`sudo wg show`
+
+The output of this command should look something like this:
+
+    $ sudo wg show
+    interface: wg0 public key: zFhjLJdXrLl86ayX6JpyfN0/rVH+qxgF/e8HxRP9cxk=
+      private key: (hidden)
+      listening port: 51820
+    peer: OQZWpDPUcNPRZMjncY6BUwsli6HtqgTUn2lAGdXVi2c=
+      endpoint: 173.249.33.176:51820
+      allowed ips: 172.33.0.0/16, 10.20.0.0/24
+      latest handshake: 36 seconds ago
+      transfer: 222.36 KiB received, 81.86 KiB sent
+
+> :warning: If it seems that you can't connect to your DAppNode, check the [troubleshooting steps here](../../../user/faq/troubleshooting#why-cant-i-connect-via-vpn-to-my-dappnode)
+
+### macOS
+
+To install the official WireGuard macOS client, head to the [Mac App Store](https://www.WireGuard.com/install/#macos-app-store)link and install the client.
+
+After installing the client, open your Finder, click `Go` in the menu bar and choose `Applications`.
+<p align="center">
+    <img src="../../../../img/Screenshot 2022-06-21 at 6.14.33 PM.png"
+    width="300"
+    height="300"/>
+</p>
+
+In the list of Applications, search for `WireGuard`. Double-click the Application. A new icon will appear in the top menu bar, containing the WireGuard logo. 
+
+Click on that icon and select `Manage Tunnels`. Proceed by adding a new empty tunnel as pictured:
+<p align="center">
+    <img src="../../../../img/wireguard_macos_new_tunnel.png"
+    width="500"
+    height="350"/>
+</p>
+
+Give your WireGuard profile a name (preferably the one you also set in the DAppNode VPN UI). Copy and paste the configuration text into the big textbox as in the example below:
+
+<p align="center">
+    <img src="../../../../img/wireguard_macos_config.png"
+    width="500"
+    height="350"/>
+</p>
+
+Now you're ready to connect to your DAppNode! Click on the WireGuard icon in the menu bar once more and select the profile you just created, in this example `DAppNode`:
+
+<p align="center">
+    <img src="../../../../img/wireguard_macos_connect.png"
+    width="300"
+    height="300"
+    />
+</p>
+
+
+To check if you have successfully connected to your DAppNode, try opening the [DAppNode Dashboard](http://my.dappnode). 
+
+> :warning: If it seems that you can't connect to your DAppNode, check the [troubleshooting steps here](../../../user/faq/troubleshooting#why-cant-i-connect-via-vpn-to-my-dappnode)
+
+### iOS
+
+Content to be added soon.
+
+### Windows
+
+Content to be added soon.
+
+### Android
+
+In your mobile, go to the playstore, then look for `WireGuard` and select this app and install it:
+
+<p align="center">
+    <img src="../../../../img/WireGuard_android_install.jpg"/>
+</p>
+
+Then, if you open the app you will see the next image:
+
+<p align="center">
+    <img src="../../../../img/WireGuard_android_set_up.jpg"/>
+</p>
+
+Click on the blue circle button on the right bottom:
+
+<p align="center">
+    <img src="../../../../img/WireGuard_android_set_up_2.jpg"/>
+</p>
+
+You can obtain the configuration scanning the QR you obtain on the vpn/WireGuard view, download the file and import it or copy the contain of the configuration.
 
 ## OpenVPN
 
@@ -282,96 +419,7 @@ Finally, select "Connect" from the tray bar icon menu:
     <img src="https://github.com/dappnode/DAppNode/raw/master/doc/openvpn/windows8.png"/>
 </p>
 
-## Wireguard
-
-Once you have installed the Wireguard package, you will be able to see this page:
-
-<p align="center">
-    <img src="../../../../img/wireguard_view_2.png"/>
-</p>
-
-This step is common whatever OS/device you will use as a client. By default, one profile is created, click on the Get link button which is in the column Credentials.
-Now you can see some configuration text. Keep this window for later, you will need to paste this configuration in the client app you will use as a wireguard client.
-
-Remember if you want to access with more devices, you will need to add more configurations, typing a name and clicking on Add device button.
-
-These are the recommended Open VPN clients for each OS:
-
-- macOS: [WireGuard for macOS](https://www.wireguard.com/install/#macos-app-store)
-- iOS: [WireGuard for iOS](https://www.wireguard.com/install/#ios-app-store)
-- Windows: [WireGuard for Windows](https://www.wireguard.com/install/#windows-7-8-81-10-2012-2016-2019)
-- Android: [WireGuard for Android](https://play.google.com/store/apps/details?id=com.wireguard.android)
-- Linux: [WireGuard for Linux](https://www.wireguard.com/install/#ubuntu-module-tools)
-
-### Linux
-
-To use wireguard in ubuntu, you will need to use the terminal in the installation process. Firstly, it is needed to install the prerequisites:
-`sudo apt install openresolv`
-
-Then, you can install Wireguard:
-`sudo apt install wireguard`
-
-Create the configuration file and paste the configuration you have copied before (The configuration text you have obtained on the wireguard tab on dappnode UI):
-`sudo nano /etc/wireguard/wg0.conf`
-
-Finally, type the following command:
-`sudo wg-quick up wg0`
-
-To check you are connected you can do 2 things:
-
-1. `ifconfig` and check if there is an interface "new".
-2. Try to access the dappnode UI, if you can access it's ok.
-
-In case you can, type:
-`sudo wg show`
-
-The output of this command should be something like:
-
-    $ sudo wg show
-    interface: wg0 public key: zFhjLJdXrLl86ayX6JpyfN0/rVH+qxgF/e8HxRP9cxk=
-      private key: (hidden)
-      listening port: 51820
-    peer: OQZWpDPUcNPRZMjncY6BUwsli6HtqgTUn2lAGdXVi2c=
-      endpoint: 173.249.33.176:51820
-      allowed ips: 172.33.0.0/16, 10.20.0.0/24
-      latest handshake: 36 seconds ago
-      transfer: 222.36 KiB received, 81.86 KiB sent
-
-### MacOS
-
-Content to be added soon.
-
-### iOS
-
-Content to be added soon.
-
-### Windows
-
-Content to be added soon.
-
-### Android
-
-In your mobile, go to the playstore, then look for `wireguard` and select this app and install it:
-
-<p align="center">
-    <img src="../../../../img/wireguard_android_install.jpg"/>
-</p>
-
-Then, if you open the app you will see the next image:
-
-<p align="center">
-    <img src="../../../../img/wireguard_android_set_up.jpg"/>
-</p>
-
-Click on the blue circle button on the right bottom:
-
-<p align="center">
-    <img src="../../../../img/wireguard_android_set_up_2.jpg"/>
-</p>
-
-You can obtain the configuration scanning the QR you obtain on the vpn/wireguard view, download the file and import it or copy the contain of the configuration.
-
-## Set up VPN from DAppNode terminal
+## Setting up a VPN client from the DAppNode terminal
 
 Automatically, after installing DAppNode you should see the next image and a link where can download the credentials.
 
