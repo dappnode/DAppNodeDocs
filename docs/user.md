@@ -3,11 +3,13 @@ title: User Guide
 slug: "/"
 ---
 
-Wellcome to the DAppNode user guide.
-If you have just installed or bought a DAppNode, the section quick start will help you to do the first step on your DAppNode.
+Welcome to the DAppNode user guide.
+===
+---
+If you have just installed DAppNode on your own hardware or bought a DAppNode from our [store](https://shop.dappnode.io/), the [Quick Start section](/user/quick-start/home) will help you through the first steps with your DAppNode.
 
-If you want to validate or know how to do cool stuff go to the guides section.
+If you want to run your own validator, access decentralised apps or learn how to do cool stuff on your DAppNode visit the [Guides section](/user/guides).
 
-If you have some problem or doubt about dappnode, go to the FAQS.
+If you have problems with your DAppNode or want to get in touch with us, please take a look at the [FAQs](/user/faq/general).
 
-The product manual will show you what does every button and part of the UI.
+The [product manual](/user/product-manual/dashboard) aims to give you an overview of the whole DAppNode interface, accompanied by a functional explanation of that part of the UI.
