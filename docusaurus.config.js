@@ -62,7 +62,7 @@ module.exports = {
             },
             {
               label: 'Discord',
-              href: 'https://discord.com/invite/c28an8dA5k',
+              href: 'https://discord.com/invite/dappnode',
             },
             {
               label: 'Twitter',
