@@ -11,7 +11,7 @@ Prerequisites for doing so:
 - A Crowdin account
 
 ### Available languages
-On the project page you will see the available languages you can contribute to:
+On the Crowdin project page you will see the available languages which you can contribute to:
 
 <p align="center">
     <img src="../../../../img/translation_1.png"/>
