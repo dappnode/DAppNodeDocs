@@ -24,7 +24,7 @@ module.exports = {
           type: 'localeDropdown',
           dropdownItemsAfter: [
             {
-              to: '/help-to-translate',
+              to: '/help-us-translate',
               label: 'Help Us Translate',
             },
           ],
