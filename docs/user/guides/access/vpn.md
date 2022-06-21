@@ -144,7 +144,26 @@ To check if you have successfully connected to your DAppNode, try opening the [D
 
 ### iOS
 
-Content to be added soon.
+Open the iOS AppStore, search for `WireGuard` and install the following App.
+<p align="center">
+    <img src="../../../../img/wireguard_ios_appstore.jpeg"
+    width="300"
+    height="300"
+    />
+</p>
+
+Open up the app and select `Add a tunnel`, followed by your preferred option:
+<p align="center">
+    <img src="../../../../img/wireguard_ios_new_tunnel.jpeg"
+    width="300"
+    height="300"
+    />
+</p>
+
+You can then either scan the QR code that is created when you take a look at your VPN profile in the DAppNode VPN UI, import the configuration file that you can download or input all the data yourself.
+
+> :warning: If it seems that you can't connect to your DAppNode, check the [troubleshooting steps here](../../../user/faq/troubleshooting#why-cant-i-connect-via-vpn-to-my-dappnode)
+
 
 ### Windows
 
@@ -171,6 +190,8 @@ Click on the blue circle button on the right bottom:
 </p>
 
 You can obtain the configuration scanning the QR you obtain on the vpn/WireGuard view, download the file and import it or copy the contain of the configuration.
+
+> :warning: If it seems that you can't connect to your DAppNode, check the [troubleshooting steps here](../../../user/faq/troubleshooting#why-cant-i-connect-via-vpn-to-my-dappnode)
 
 ## OpenVPN
 
