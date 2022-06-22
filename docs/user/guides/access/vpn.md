@@ -102,11 +102,11 @@ The output of this command should look something like this:
 
 ### macOS
 
-To install the official WireGuard macOS client, head to the [Mac App Store](https://www.WireGuard.com/install/#macos-app-store)link and install the client.
+To install the official WireGuard macOS client, head to the [Mac App Store](https://www.WireGuard.com/install/#macos-app-store) link and install the client.
 
 After installing the client, open your Finder, click `Go` in the menu bar and choose `Applications`.
 <p align="center">
-    <img src="../../../../img/Screenshot 2022-06-21 at 6.14.33 PM.png"
+    <img src="../../../../img/wireguard_macos_finder.png"
     width="300"
     height="300"/>
 </p>
