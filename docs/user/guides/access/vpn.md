@@ -24,6 +24,8 @@ This document is structured as follows:
 - [**Setting up a VPN client from the DAppNode terminal**](#setting-up-a-vpn-client-from-the-dappnode-terminal): Read this section if you want to access via VPN directly, or your machine has not wifi interface.
 
 ## Selecting a VPN client in the admin UI
+> :warning: Please connect to your DAppNodes WiFi or local network access before you attempt these steps. :warning:
+
 So select a VPN client, choose the `VPN` menu item in the left sidebar or click [this link](hhttp://my.dappnode/#/vpn/WireGuard). You will see a page where you can select either WireGuard or OpenVPN.
 
 <p align="center">
@@ -183,6 +185,10 @@ Now you're ready to connect to your DAppNode! Click on the, in the screenshot hi
 <p align="center">
     <img src="../../../../img/wireguard_windows_connect.png"/>
 </p>
+
+To check if you have successfully connected to your DAppNode, try opening the [DAppNode Dashboard](http://my.dappnode). 
+
+> :warning: If it seems that you can't connect to your DAppNode, check the [troubleshooting steps here](../../../user/faq/troubleshooting#why-cant-i-connect-via-vpn-to-my-dappnode)
 
 ### Android
 
