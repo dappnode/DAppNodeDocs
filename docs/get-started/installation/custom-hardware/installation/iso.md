@@ -4,7 +4,10 @@ sidebar_position: 2
 
 # ISO Installation
 
-When you want to perform a clean installation by installing the base operating system and DAppNode. Installing from an ISO will wipe the machine data and install Debian + DAppNode.
+Installing from the official DAppNode ISO will wipe the existing machine data and replace it with a Debian operating system and DAppNode. 
+
+# ISO Installation on an Intel NUC
+If you are installing DAppNode on an Intel NUC, please ensure you have upgraded your BIOS to the latest version. Instructions for downloading and installing these updates can be found on the manufacturers website.
 
 ## Get the ISO
 
