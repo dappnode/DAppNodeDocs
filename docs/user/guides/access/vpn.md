@@ -19,7 +19,7 @@ DAppNode supports 2 different kinds of VPN protocols and software: **WireGuard**
 This document is structured as follows:
 
 - [**Selecting a VPN client in the admin UI**](#selecting-a-vpn-client-in-the-admin-ui): Explains how to access and select a VPN client in the DAppNode UI
-- [**WireGuard** (preferred)](#WireGuard-preferred): Explains how to set up WireGuard on your DAppNode, configure a profile and how to connect your devices using WireGuard clients
+- [**WireGuard** (preferred)](#wireguard-preferred): Explains how to set up WireGuard on your DAppNode, configure a profile and how to connect your devices using WireGuard clients
 - [**OpenVPN**](#openvpn): Explains how to set up OpenVPN on your DAppNode and how to connect your devices using OpenVPN clients
 - [**Setting up a VPN client from the DAppNode terminal**](#setting-up-a-vpn-client-from-the-dappnode-terminal): Read this section if you want to access via VPN directly, or your machine has not wifi interface.
 
@@ -59,11 +59,11 @@ After the successful creation of that profile, click on `Get link`. This will pr
 
 These are the recommended WireGuard clients:
 
-- macOS: [WireGuard for macOS](https://www.WireGuard.com/install/#macos-app-store)
-- iOS: [WireGuard for iOS](https://www.WireGuard.com/install/#ios-app-store)
-- Windows: [WireGuard for Windows](https://www.WireGuard.com/install/#windows-7-8-81-10-2012-2016-2019)
-- Android: [WireGuard for Android](https://play.google.com/store/apps/details?id=com.WireGuard.android)
-- Linux: [WireGuard for Linux](https://www.WireGuard.com/install/#ubuntu-module-tools)
+- macOS: [WireGuard for macOS](https://www.wireguard.com/install/#macos-app-store)
+- iOS: [WireGuard for iOS](https://www.wireguard.com/install/#ios-app-store)
+- Windows: [WireGuard for Windows](https://www.wireguard.com/install/#windows-7-8-81-10-2012-2016-2019)
+- Android: [WireGuard for Android](https://play.google.com/store/apps/details?id=com.wireguard.android)
+- Linux: [WireGuard for Linux](https://www.wireguard.com/install/#ubuntu-module-tools)
 
 ### Linux
 > :warning: These steps require a terminal :warning:
@@ -167,61 +167,68 @@ You can then either scan the QR code that is created when you take a look at you
 
 ### Windows
 
-Content to be added soon.
+To install WireGuard on Windows, you can download the installer, linked [here](https://download.wireguard.com/windows-client/wireguard-installer.exe). 
+
+After installing WireGuard, press the Windows key and search for `WireGuard`. A new windows should pop up:
+<p align="center">
+    <img src="../../../../img/wireguard_windows_settings.png"/>
+</p>
+
+You can then either press `Import tunnel(s) from file` or click on the little arrow, next to `Add Tunnel` and click `Add empty tunnel...` to add your WireGuard config which you have opened or downloaded above. Don't forget to also give your tunnel a name:
+<p align="center">
+    <img src="../../../../img/wireguard_windows_tunnel.png"/>
+</p>
+
+Now you're ready to connect to your DAppNode! Click on the, in the screenshot highlighted in green, `Activate` button:
+<p align="center">
+    <img src="../../../../img/wireguard_windows_connect.png"/>
+</p>
 
 ### Android
 
-In your mobile, go to the playstore, then look for `WireGuard` and select this app and install it:
+On your Android phone, go to the PlayStore, then look for `WireGuard` and select this app and install it:
 
 <p align="center">
     <img src="../../../../img/WireGuard_android_install.jpg"/>
 </p>
 
-Then, if you open the app you will see the next image:
+Then, if you open the app you will see the following view:
 
 <p align="center">
     <img src="../../../../img/WireGuard_android_set_up.jpg"/>
 </p>
 
-Click on the blue circle button on the right bottom:
+Click on the blue circle button on the bottom right:
 
 <p align="center">
     <img src="../../../../img/WireGuard_android_set_up_2.jpg"/>
 </p>
 
-You can obtain the configuration scanning the QR you obtain on the vpn/WireGuard view, download the file and import it or copy the contain of the configuration.
+You can then either scan the QR code that is created when you take a look at your VPN profile in the DAppNode VPN UI, import the configuration file that you can download or input all the data yourself.
+
+To check if you have successfully connected to your DAppNode, try opening the [DAppNode Dashboard](http://my.dappnode). 
 
 > :warning: If it seems that you can't connect to your DAppNode, check the [troubleshooting steps here](../../../user/faq/troubleshooting#why-cant-i-connect-via-vpn-to-my-dappnode)
 
+
 ## OpenVPN
 
-Once you have your DAppNode running, you will get an URL in your terminal from where you can download the OVPN config file and open it in your device with your OpenVPN client.
+On the OpenVPN tab you'll be able to see the default profile, once you have installed the OpenVPN package from the DAppStore.
+The default device profile has super admin privileges so you can access and manage the DAppNode admin UI; this user cannot be deleted.
 
-If you have still not installed your OpenVPN client . Just download the credentials file and follow the instructions.
+Take into account that some VPN clients might send all your local traffic through the VPN, which is not very ideal if you have many devices connected to your DAppNode, saturating the bandwidth of your DAppNode. Your DAppNode is not intended to manage all the traffic of the devices connected to it, only the traffic that goes to your DAppNode packages.
 
-Opening this OVPN file will configure your VPN connection to your DAppNode from your device. The first device VPN connection will have super admin privileges so you can access and manage the DAppNode admin UI; this user cannot be deleted.
+> :warning: When you download and install a VPN credentials file, only your DAppNode package traffic will be routed through the VPN, your regular traffic will still be done with your local interface. If you want to route all your traffic through your DAppNode, you should configure it in your VPN client settings by checking the box "Send all traffic" (or something similar).
 
-Take into account that some VPN clients might send all traffic through the VPN, which is not very ideal if you have many people connected to your DAppNode, or only to send traffic which points to an ETH domain.
+These are the recommended OpenVPN clients:
 
-DAppNode is not intended to manage all the traffic of the devices connected to it, only the ETH domains access requests.
-
-> :warning: When you download and install a VPN credentials file, only your ETH traffic will be going out through the VPN, the regular IP traffic will still be done with your regular IP. If you want to route all your Internet traffic through your DAppNode so you are behind your VPN, you should configure it in your VPN client settings by checking the Box "Send all traffic".
-
-These are the recommended Open VPN clients for each OS:
-
-- Mac os: [Tunnelblick](https://tunnelblick.net/)
-- Ios: [Open VPN connect](https://itunes.apple.com/us/app/openvpn-connect/id590379981)
+- macOS: [Tunnelblick](https://tunnelblick.net/)
+- iOS: [Open VPN connect](https://itunes.apple.com/us/app/openvpn-connect/id590379981)
 - Windows: [Open VPN (community installer)](https://openvpn.net/community-downloads/)
 - Android: [Open VPN for Android](https://play.google.com/store/apps/details?id=de.blinkt.openvpn)
 - Linux: Already included in recent versions.
 
 Depending on your OS these are the instructions for installing our recommended OpenVPN clients.
-
-<!-- prettier-ignore-start -->
-!!! info
-    Please note that for the ovpn to be correctly downloaded from the link given you will need to have the TCP port 8092 opened and that the default port to connect via OpenVPN is 1194 UDP. UPnP should have opened them for you if your router has UPnp enabled, if not you will have to open them manually
-<!-- prettier-ignore-end -->
-
 ### Linux
 
 #### Ubuntu / NetworkManager
@@ -442,13 +449,15 @@ Finally, select "Connect" from the tray bar icon menu:
 
 ## Setting up a VPN client from the DAppNode terminal
 
-Automatically, after installing DAppNode you should see the next image and a link where can download the credentials.
+After installing your DAppNode, upon reaching the terminal prompt, you can enter the following command to generate a WireGuard config to connect to your DAppNode:
 
-<p align="center">
-    <img src="../../../../img/VirtualBox_console.png"/>
-</p>
+    dappnode_wireguard
 
-If it does not happen, you can generate the OpenVPN credentials manually with the command:
-`dappnode_connect`
 
-Using the link you can download the credentials or scanning the QR you can download the credentials on your mobile phone. Once you have downloaded the credentials, you can jump into the OpenVPN section where it is explained how to set up the client in the device you will use to connect via VPN to the dappnode.
+This will provide you the WireGuard configuration to get you started.
+
+If you prefer to get a QR code you can scan on your phone, use this command:
+
+    dappnode_wireguard --qr
+
+Using the above-mentioned configuration, you can take a look at the [WireGuard configuration tutorial](#wireguard-preferred) above.
