@@ -79,7 +79,12 @@ After installing WireGuard, you'll need to create the config file and copy the c
 Finally, type the following command (this starts the WireGuard client and connects the VPN interface):  
 `sudo wg-quick up wg0`
 
-To check you are connected you can try a few things:
+
+:tada: Now you're ready to connect to your DAppNode! :tada:   
+
+Disconnect from your DAppNodes WiFi hotspot if connected and connect to your usual WiFi network or wired connection.  
+
+To check if you are connected you can try a few things:
 
 1. Type `ifconfig` and check if there is a new interface you're not familiar with
 2. Ping the DAppNode interface with `ping my.dappnode`
@@ -130,7 +135,11 @@ Give your WireGuard profile a name (preferably the one you also set in the DAppN
     height="350"/>
 </p>
 
-Now you're ready to connect to your DAppNode! Click on the WireGuard icon in the menu bar once more and select the profile you just created, in this example `DAppNode`:
+:tada: Now you're ready to connect to your DAppNode! :tada:   
+
+Disconnect from your DAppNodes WiFi hotspot if connected and connect to your usual WiFi network or wired connection.  
+
+Click on the WireGuard icon in the menu bar once more and select the profile you just created, in this example `DAppNode`:
 
 <p align="center">
     <img src="../../../../img/wireguard_macos_connect.png"
@@ -164,6 +173,10 @@ Open up the app and select `Add a tunnel`, followed by your preferred option:
 
 You can then either scan the QR code that is created when you take a look at your VPN profile in the DAppNode VPN UI, import the configuration file that you can download or input all the data yourself.
 
+:tada: Now you're ready to connect to your DAppNode! :tada:   
+
+Disconnect from your DAppNodes WiFi hotspot if connected and connect to your usual WiFi network.  
+
 > :warning: If it seems that you can't connect to your DAppNode, check the [troubleshooting steps here](../../../user/faq/troubleshooting#why-cant-i-connect-via-vpn-to-my-dappnode)
 
 
@@ -185,6 +198,10 @@ Now you're ready to connect to your DAppNode! Click on the, in the screenshot hi
 <p align="center">
     <img src="../../../../img/wireguard_windows_connect.png"/>
 </p>
+
+:tada: Now you're ready to connect to your DAppNode! :tada:   
+
+Disconnect from your DAppNodes WiFi hotspot if connected and connect to your normal WiFi network or wired connection.  
 
 To check if you have successfully connected to your DAppNode, try opening the [DAppNode Dashboard](http://my.dappnode). 
 
@@ -211,6 +228,10 @@ Click on the blue circle button on the bottom right:
 </p>
 
 You can then either scan the QR code that is created when you take a look at your VPN profile in the DAppNode VPN UI, import the configuration file that you can download or input all the data yourself.
+
+:tada: Now you're ready to connect to your DAppNode! :tada:   
+
+Disconnect from your DAppNodes WiFi hotspot if connected and connect to your normal WiFi network.  
 
 To check if you have successfully connected to your DAppNode, try opening the [DAppNode Dashboard](http://my.dappnode). 
 
