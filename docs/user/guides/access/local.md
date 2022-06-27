@@ -3,14 +3,34 @@ title: Local Network
 sidebar_position: 2
 ---
 
-# Local Proxy
+# Local network access to DAppNode
+---
+## How to access your DAppNode
+If you have installed your DAppNode via script, an ISO file or are connected to the same network as your DAppNode you will be able to access the DAppNode Admin UI by visiting http://dappnode.local.
 
-If you are connected on the same network of your DAppNode and you did the installation by Script. You have to be able to access to the admin UI going to the url http://dappnode.local .
+> :warning: **Important**: When you use the local network proxy you are limited to the Admin UI dashboard at `dappnode.local` and cannot access any other features such as blockchain clients (Ethereum, Gnosis Chain, etc). You must configure and use [a VPN](vpn) or the DAppNodes included WiFi hotspot to access those features. :warning:
 
-# Note
+## Enable or disable local network access
 
-When you use the local network proxy you are limited to the admin UI dashboard at `dappnode.local` and cannot access any other UI's such as Prysm, Avalanche, Mysterium, DMS, etc. You must use a VPN (preferably Wireguard) or the DAppNode's own WiFi hotspot to access those pages.
+If you have no use for local network access because you're using the VPN features or the included WiFi hotspot, you can also disable (and of course enable it again later) in the WiFi sidebar menu on your DAppNode:
 
-## Enable/Disable from UI
+<p align="center">
+    <img src="../../../../img/local-network-wifi.png"
+    width="200"
+    heigth="200"/>
+</p>
 
-You can Enable/Disable this access method from the UI from the Wifi page, on the tab Local Network.
+Switch to the `Local Network` tab:
+<p align="center">
+    <img src="../../../../img/local-network-tab.png"
+    width="300"
+    heigth="200"/>
+</p>
+
+And toggle the local network functionality:
+<p align="center">
+    <img src="../../../../img/local-network-toggle.png"
+    />
+</p>
+
+

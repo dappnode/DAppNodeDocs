@@ -24,7 +24,7 @@ module.exports = {
           type: 'localeDropdown',
           dropdownItemsAfter: [
             {
-              to: '/help-to-translate',
+              to: '/help-us-translate',
               label: 'Help Us Translate',
             },
           ],
@@ -62,7 +62,7 @@ module.exports = {
             },
             {
               label: 'Discord',
-              href: 'https://discord.com/invite/c28an8dA5k',
+              href: 'https://discord.com/invite/dappnode',
             },
             {
               label: 'Twitter',
