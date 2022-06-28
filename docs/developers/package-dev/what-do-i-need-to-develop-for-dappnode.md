@@ -6,7 +6,7 @@ sidebar_position: 1
 
 It's required to use the [DAppNodeSDK](https://github.com/dappnode/DAppNodeSDK), this tool will help you to create the basic files to create a package, let you to upload the package to IPFS and prepare the package for dappnode software.
 
-Its optional but we recommend to have installed docker-compose and docker. So you can test if the containers works themselves, with no interactions of the dappnode system.
+It's optional but we recommend having installed docker-compose and docker. So you can test if the containers work themselves, with no interactions of the dappnode system.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ You need to have installed npm.
 
 ### Installation
 
-You can install it gloablly in your laptop or PC by executing:
+You can install it globally in your laptop or PC by executing:
 
 ```
 npm install -g @dappnode/dappnodesdk
@@ -30,11 +30,11 @@ npm install -g @dappnode/dappnodesdk
 dappnodesdk init
 ```
 
-This command creates a basic files of a pakcage. Even you can build this package and install it in a dappnode in order to check if all is correct.
+This command creates basic files of a package. Even you can build this package and install it in a dappnode to check if all is correct.
 
 #### build
 
-This command without options build the package and upload the package via IPFS to your dappnode only if you are connected via VPN to your dappnode.
+This command without options builds the package and uploads the package via IPFS to your dappnode only if you are connected via VPN to your dappnode.
 
 ```
 dappnodesdk build
