@@ -377,8 +377,9 @@ Automatically, after installing DAppNode you should see the next image and a lin
 <p align="center">
     <img src="../../../../img/VirtualBox_console.png"/>
 </p>
-
-If it does not happen, you can generate the OpenVPN credentials manually with the command:
+## I did not test this next part of the procedure; just corrected the "OpenVPN" incorrect text to "WireGuard VPN", since this is in the WireGuard section 
+If it does not happen, you can generate the WireGuard VPN credentials manually with the command:
 `dappnode_connect`
 
-Using the link you can download the credentials or scanning the QR you can download the credentials on your mobile phone. Once you have downloaded the credentials, you can jump into the OpenVPN section where it is explained how to set up the client in the device you will use to connect via VPN to the dappnode.
+## I did not test this next part of the procedure; just corrected the "OpenVPN" incorrect text to "WireGuard VPN", since this is in the WireGuard section
+Using the link you can download the credentials or scanning the QR you can download the credentials on your mobile phone. Once you have downloaded the credentials, you can jump into the WireGuard VPN section where it is explained how to set up the client in the device you will use to connect via VPN to the dappnode.
