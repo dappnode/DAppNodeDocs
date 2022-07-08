@@ -9,7 +9,7 @@ In this section you can see the general metrics of your machine:
 - **Statistics of your machine**: RAM usage, Disk Space and CPU usage.
 - **Volumes**: The volumes of your DAppNode and how much space they occupy.
 <p align="center">
-    <img src="../../../../img/system_view_main.png"/>
+    <img src="../../../../static/img/system_view_main.png"/>
 </p>
 
 ## Notifications
@@ -17,7 +17,7 @@ In this section you can see the general metrics of your machine:
 In case you want to set up telegram notifications, this view let you use a telegram bot to show the DAppNode message in telegram.
 
 <p align="center">
-    <img src="../../../../img/system_view_notifications.png"/>
+    <img src="../../../../static/img/system_view_notifications.png"/>
 </p>
 
 If you are interested in enable this kind of notifications, we recommend you follow this guide [how to set up telegram notifications on DAppNode](https://forum.dappnode.io/t/set-up-your-dappnode-telegram-bot/816/4).
@@ -29,7 +29,7 @@ You can now choose if you want your packages to be automatically updated by enab
 This feature is valid for non major updates, in which an admin intervention will always be needed.
 
 <p align="center">
-    <img src="../../../../img/system_view_auto-updates.png"/>
+    <img src="../../../../static/img/system_view_auto-updates.png"/>
 </p>
 
 ## Repository
@@ -42,7 +42,7 @@ In this section, you will be able to set up what type of client you will use on 
 This view is the same that you saw in that step. -->
 
 <p align="center">
-    <img src="../../../../img/system_view_repository.png"/>
+    <img src="../../../../static/img/system_view_repository.png"/>
 </p>
 
 Here you can choose several options:
@@ -60,7 +60,7 @@ This feature allowes users to connect to a remote IPFS node instead of the local
 You can find a guide related to this feature in [this guide on the forum](https://forum.dappnode.io/t/how-to-use-dappnode-ipfs-remote/1295)
 
 <p align="center">
-    <img src="../../../../img/system_view_repository_2.png"/>
+    <img src="../../../../static/img/system_view_repository_2.png"/>
 </p>
 
 #### When to use IPFS remote?
@@ -86,7 +86,7 @@ In the network section we can do some technical stuff:
 **HTTPs Portal**: to see this option you need to install de HTTPS package. Here you can expose services using the protocol HTTPS. What does it mean? If you expose for example geth, you expose your geth RPC to the Internet, so you can use metamask from anywhere. You have to be careful with his feature. In this section we have listed the services we "recommend" or we think is interesting to expose to.
 
 <p align="center">
-    <img src="../../../../img/system_view_network.png"/>
+    <img src="../../../../static/img/system_view_network.png"/>
 </p>
 
 ## Profile
@@ -94,7 +94,7 @@ In the network section we can do some technical stuff:
 Here you can modify the password that is required to access to the UI.
 
 <p align="center">
-    <img src="../../../../img/system_view_profile.png"/>
+    <img src="../../../../static/img/system_view_profile.png"/>
 </p>
 
 ## Peers
@@ -103,7 +103,7 @@ Here you can modify the password that is required to access to the UI.
 This section is about IPFS peers. You can find more detail information about this on [add ipfs peers](recommended-set-ups/add-ipfs-peers.md), there you can know more about what is IPFS, why is important to add peers, etc. -->
 
 <p align="center">
-    <img src="../../../../img/system_view_peers.png"/>
+    <img src="../../../../static/img/system_view_peers.png"/>
 </p>
 
 On this view, we can do two thing:
@@ -116,7 +116,7 @@ On this view, we can do two thing:
 It shows some security checks of your DAppNode.
 
 <p align="center">
-    <img src="../../../../img/system_view_security.png"/>
+    <img src="../../../../static/img/system_view_security.png"/>
 </p>
 
 ## Advanced
@@ -128,13 +128,13 @@ The advanced area collect many different functionalities
 You can change the name that appears on the UI on the top right. It's only a visual change, so it's not a sentitive modification.
 
 <p align="center">
-    <img src="../../../../img/system_view_advanced_1.png"/>
+    <img src="../../../../static/img/system_view_advanced_1.png"/>
 </p>
 
 For example, if we type that name and click on the button **Change dappnode Name**, the name will be what we wrote on the field.
 
 <p align="center">
-    <img src="../../../../img/system_view_advanced_2.png"/>
+    <img src="../../../../static/img/system_view_advanced_2.png"/>
 </p>
 
 ### SSH
@@ -171,7 +171,7 @@ If you want to change the port DAppNode use for ssh , you can change it by typin
 This configuration is so sensitive. Here you can update the docker version of your DAppNode. We refer to docker-compose and the docker engine.
 
 <p align="center">
-    <img src="../../../../img/system_view_advanced_4.png"/>
+    <img src="../../../../static/img/system_view_advanced_4.png"/>
 </p>
 
 In case you want update docker versions, you must update the docker compre first, and after the docker engine.
@@ -192,7 +192,7 @@ You have to click on the **Check requirements** button. Several checks will be d
 Remove the local cache of Aragon Package Manager (APM) entries, manifests, avatars. Also remove the user action logs shown in the Activity tab.
 
 <p align="center">
-    <img src="../../../../img/system_view_advanced_5.png"/>
+    <img src="../../../../static/img/system_view_advanced_5.png"/>
 </p>
 
 ### Clear main db
@@ -200,7 +200,7 @@ Remove the local cache of Aragon Package Manager (APM) entries, manifests, avata
 Remove the local database which contains critical information about your DAppNode, such as the dyndns identity, Ips registry, telegram configuration etc.
 
 <p align="center">
-    <img src="../../../../img/system_view_advanced_6.png"/>
+    <img src="../../../../static/img/system_view_advanced_6.png"/>
 </p>
 
 ## Power
@@ -208,5 +208,5 @@ Remove the local database which contains critical information about your DAppNod
 If you need to reboot or shut down your server as a last resource, you can do it from this section. Please be aware that if you shut down your server you will only be able to switch it on again when you have psysical access to your DAppNode.
 
 <p align="center">
-    <img src="../../../../img/powermanagement.png"/>
+    <img src="../../../../static/img/powermanagement.png"/>
 </p>
