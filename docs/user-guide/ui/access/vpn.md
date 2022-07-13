@@ -294,7 +294,7 @@ Now you can see some configuration text. Keep this window for later, you will ne
 
 Remember if you want to access with more devices, you will need to add more configurations, typing a name and clicking on Add device button.
 
-These are the recommended Open VPN clients for each OS:
+These are the recommended Wireguard clients for each OS:
 
 - macOS: [WireGuard for macOS](https://www.wireguard.com/install/#macos-app-store)
 - iOS: [WireGuard for iOS](https://www.wireguard.com/install/#ios-app-store)
