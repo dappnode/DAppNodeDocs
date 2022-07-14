@@ -7,7 +7,7 @@ sidebar_position: 2
 Installing from the official DAppNode ISO will wipe the existing machine data and replace it with a Debian operating system and DAppNode. 
 
 # ISO Installation on an Intel NUC
-If you are installing DAppNode on an Intel NUC, please ensure you have upgraded your BIOS to the latest version. Instructions for downloading and installing these updates can be found on the manufacturers website.
+If you are installing DAppNode on an Intel NUC 10+ that was not purchased through DAppNode, please ensure you have upgraded your BIOS to the latest version.  All units we ship out are upgraded and confirmed to work with the current software. Instructions for downloading and installing these updates can be found on the manufacturer's website [here](https://www.intel.com/content/www/us/en/support/articles/000005636/intel-nuc.html) or [here](https://www.intel.com/content/www/us/en/support/articles/000033291/intel-nuc.html) depending on model.  All downloads of firmware, BIOS files, and software can be found on both above links.
 
 ## Get the ISO
 
