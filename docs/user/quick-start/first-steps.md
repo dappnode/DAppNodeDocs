@@ -1,0 +1,62 @@
+---
+sidebar_position: 1
+---
+
+# First steps with DAppNode
+---
+If you bought a DAppNode from our [store](https://shop.dappnode.io/), built your own custom NUC or installed DAppNode on a device you have lying around, theres a few steps you need to do in order start accessing your favorite chains.  
+
+
+### First login
+
+The first time you access the [DAppNode UI](http://my.dappnode), you will be asked to create a new account on your DAppNode. You will need to supply a username and a password. We use the following password:
+
+- At least **one (1)** capital letter
+- At least **one (1)** number
+- At least **one (1)** special character (eg. !,?,/)
+
+Once you've chosen a username and a password that matches the criteria posted above, your DAppNode will prompt you with your personal DAppNode recovery token. You can use this token to reset your username and password in case you forget them. Make sure to keep this token in a safe place!
+
+On your first login your DAppNode will guide you through some basic configuration settings. 
+
+<p align="center">
+    <img src="../../../../img/first_steps_1.png"/>
+</p>
+
+Let's dive in!
+
+### Setting up your repository source
+
+The first thing your DAppNode will ask you about is the `Repository Source`. This configures how your DAppNode will interact with the blockchain in order to grab packages from the DAppStore. 
+
+We have three options available right now:
+
+**<font color="green">Full node</font>**: This is the most secure and decentralized way of accessing a blockchain. This requires the most resources in terms of bandwidth, storage and CPU.
+
+**<font color="yellow">Light client</font>**: This is a middle-of-the-road approach and will install the `Geth` blockchain client. This client uses slots on other Geth full nodes that act as a `light server`. Those slots can be sparse and might not return data if there is no open slot for your DAppNode to connect to. It also does not use as much of your resources as the full node option.
+
+**<font color="orange">Remote source</font>**: This option is the least decentralized option, as you'll have to trust the full nodes from us, the DAppNode maintainers, to provide you with accurate blockchain data. This uses next to no resources and is well suited for low-power devices or network/bandwidth-constrained networks.
+
+Now that you know what each of the options are, it's your time to choose. We generally recommend the following set-up:
+
+- Use the **Full Node** option (if your hardware and your bandwidth allows you to)
+- Turn on `Use remote during syncing or errors` on the bottom left
+- Select one of the clients listed in the dropdown menu. All of them are tested options . If you need help choosing, you can take a look at the [Ethereum Foundation Website regarding 'Execution clients'](https://ethereum.org/en/developers/docs/nodes-and-clients/#advantages-of-different-implementations) 
+
+<p align="center">
+    <img src="../../../../img/first_steps_2.png"/>
+</p>
+
+### Automatic System Updates
+The next window will ask you about automatic system updates. If you turn on this option, your DAppNode will be updated automatically when it detects that there is a new version published to the official DAppNode repositories. Roughly 24 hours after your DAppNode recognizes that there is a new version, it will start the upgrade to the new version.  
+
+The DAppNode maintainers **strongly** recommend you leave this option enabled.
+<p align="center">
+    <img src="../../../../img/first_steps_3.png"/>
+</p>
+
+**You've made it**! This screen shows you that the initial DAppNode configuration is complete.
+
+<p align="center">
+    <img src="../../../../img/first_steps_4.png"/>
+</p>
