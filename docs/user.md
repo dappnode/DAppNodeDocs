@@ -6,7 +6,7 @@ slug: "/"
 Welcome to the DAppNode user guide.
 ===
 ---
-If you have just installed DAppNode on your own hardware or bought a DAppNode from our [store](https://shop.dappnode.io/), the [Quick Start section](/user/quick-start/home) will help you through the first steps with your DAppNode.
+If you have just installed DAppNode on your own hardware or bought a DAppNode from our [store](https://shop.dappnode.io/), the [Quick Start section](/user/quick-start/first-steps) will help you through the first steps with your DAppNode.
 
 If you want to run your own validator, access decentralised apps or learn how to do cool stuff on your DAppNode visit the [Guides section](/user/guides).
 
