@@ -52,6 +52,9 @@ Now that you know what each of the options are, it's your time to choose. We gen
 The next window will ask you about automatic package updates for all packages, *core packages have automatic updates enabled by default*, If you enable this option, all your installed DAppNode packages will be updated automatically when it detects that there is a new version published to the official DAppNode repositories. Roughly 24 hours after your DAppNode recognizes that there is a new version, it will start the update to the new version.  
 
 The DAppNode team **strongly** recommends you leave this option enabled.
+
+:warning: Note: Major system upgrades will require manual approval, even with Auto Updates enabled for all packages.  
+
 <p align="center">
     <img src="../../../../img/first_steps_3.png"/>
 </p>
