@@ -4,13 +4,14 @@ sidebar_position: 1
 
 # First steps with DAppNode
 ---
-If you bought a DAppNode from our [store](https://shop.dappnode.io/), built your own custom NUC or installed DAppNode on a device you have lying around, theres a few steps you need to do in order start accessing your favorite chains.  
+If you bought a DAppNode from our [store](https://shop.dappnode.io/), built your own custom NUC or installed DAppNode on a device you have lying around, theres a few steps you need to do in order start accessing your favorite web3 applications and blockchains.  
 
 
 ### First login
 
-The first time you access the [DAppNode UI](http://my.dappnode), you will be asked to create a new account on your DAppNode. You will need to supply a username and a password. We use the following password:
+The first time you access the [DAppNode UI](http://my.dappnode), you will be asked to create a new account on your DAppNode. You will need to supply a username and a strong password. We have the following password requirements:
 
+- Between **8 and 32** characters
 - At least **one (1)** capital letter
 - At least **one (1)** number
 - At least **one (1)** special character (eg. !,?,/)
@@ -48,9 +49,9 @@ Now that you know what each of the options are, it's your time to choose. We gen
 </p>
 
 ### Automatic System Updates
-The next window will ask you about automatic system updates. If you turn on this option, your DAppNode will be updated automatically when it detects that there is a new version published to the official DAppNode repositories. Roughly 24 hours after your DAppNode recognizes that there is a new version, it will start the upgrade to the new version.  
+The next window will ask you about automatic package updates for all packages, *core packages have automatic updates enabled by default*, If you enable this option, all your installed DAppNode packages will be updated automatically when it detects that there is a new version published to the official DAppNode repositories. Roughly 24 hours after your DAppNode recognizes that there is a new version, it will start the update to the new version.  
 
-The DAppNode maintainers **strongly** recommend you leave this option enabled.
+The DAppNode team **strongly** recommends you leave this option enabled.
 <p align="center">
     <img src="../../../../img/first_steps_3.png"/>
 </p>
