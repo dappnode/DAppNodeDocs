@@ -2,6 +2,13 @@
 title: Troubleshooting
 ---
 
+## I can't access my DAppNode
+If its the first time you try to access your dappnode, these are the methods you have to access:
+
+- If you are connected to the same network that your dappnode, you should be able to access the UI through http://dappnode.local/
+- Wifi, if you have installed dappnode or bought one, you should see a new wifi network called DAppNodeWifi, if so, connect to it.
+
+  If its some specific problem, We recommend you to go to the discord or forum and talk about your specific case.
 ## I can't access the ADMIN UI
 
 There are several ways to access the dappnode.

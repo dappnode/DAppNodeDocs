@@ -2,6 +2,6 @@
 sidebar_position: 2
 ---
 
-# Set Up DAppNode development environment
+# Tutorial: How to create a package from scratch
 
 Content to be added soon.
