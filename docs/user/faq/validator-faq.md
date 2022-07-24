@@ -1,31 +1,44 @@
-## Is there a way to monitor validator uptime?
+---
+title: Ethereum Validator Questions
+---
 
-In some dashboards of the DMS you can find some metrics related to the uptime. But you can find how your validator is workin on the next pages:
+<details>
+  <summary>Is there a way to monitor validator uptime?</summary>
+  <div>
+    <div>
+    On some dashboards in the DAppNode Monitoring System (DMS) you can find metrics related to the uptime of your validator. 
+    <br /><br />
+    But you can also find out how your validator is doing on the Beaconchain website of their respective network. Just enter your validator index ID in the search field.
+    <br /><br />
 
-- Ethereum 2.0: https://beaconcha.in/
-- GNosis: https://beacon.gnosischain.com/
+<ul>
+  <li><a href="https://beaconcha.in/">Ethereum Beacon Chain</a></li>
+  <li><a href="https://beacon.gnosischain.com/">Gnosis Beacon Chain</a></li>
+</ul>
 
-## How to test staking with goEth and where do I get goEth?
+</div>
+  </div>
+</details>
 
-Currently, we are testing the multiclient feature in DAppNode, you have a guide here where it's explained how to install the required packages for participating in a testnet of Ethereum.
-Firstly, you will need at least 32 görli Eth. You can obtain this token from the faucet and some discord channels that are related to staking like ethstakers.
+<details>
+  <summary>What happens if my node is offline while validating - do I get slashed?</summary>
+  <div>
+    <div>
+    There are two kinds of punishment when you validate on Ethereum 2.0 (this is applied in gnosis chain too):
+    <br /><br />
+<ul>
+  <li>Penalty or Inactivity Leak: Reduces the token balance of the validator for either not attesting or not getting included</li>
+  <li>Slashing: Removes the validator from the consensus mechanism and slowly leaks Ether</li>
+</ul>
 
-- https://goerlifaucet.com/
-- https://goerli-faucet.slock.it/
-- https://goerli-faucet.mudit.blog/
+Slashing only occurs if:
 
-## What happens if my node is offline while validating - do I get slashed?
+<ul>
+  <li>A validator acts like a proposer and signs two different beacon blocks for the same slot</li>
+  <li>A validator acts like an attester and signs two different attestations with the same target</li>
+</ul>
 
-There are two kinds of punishment when you validate on Ethereum 2.0 (this is applied in gnosis chain too):
-
-- Penalty: Reduce the token of the validator
-- Slashing: Remove the validator from the beacon-chain and the balance of the validator continues decreasing.
-
-The penalty happens when a validator is not active or misses some attestation.
-
-A validator gets slashed if :
-
-- Acts like a proposer and signs two different beacon blocks for the same slot
-- Acts like an attester and signs two different attestations with the same target
-
-  The second one can happen in case you have two validators running with the same key.
+You will not have to worry about getting slashed on DAppNode. Slashing usually occurs when you have two instances of the same validator running at the same time. DAppNodes are configured in a way where that does not happen.
+</div>
+  </div>
+</details>
