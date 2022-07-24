@@ -106,13 +106,13 @@ If you want to install the DAppNode platform on an old computer or on custom har
 <details>
   <summary>What are the first steps logging in for the first time?</summary>
   <div>
-    <div>We have created a `First steps with DAppNode` guide <a href="/user/quick-start/first-steps">here</a>.
+    <div>We have created a 'First steps with DAppNode' guide <a href="/user/quick-start/first-steps">here</a>.
 </div>
   </div>
 </details>
 
 <details>
-  <summary>Which packages should I install? first?</summary>
+  <summary>Which packages should I install first?</summary>
   <div>
     <div>We recommend that you install a Ethereum client (as written in the 'First steps' guide), the 'DMS' and 'DAppNode Exporter' packages. 
     <br /><br />
@@ -130,28 +130,23 @@ If you want to install the DAppNode platform on an old computer or on custom har
 </details>
 
 <details>
-  <summary>How do I install a fallback?</summary>
-  <div>
-    <div>Content needed.
-</div>
-  </div>
-</details>
-
-<details>
   <summary>What can I do if my hard-drive runs out of space?</summary>
   <div>
     <div>
-    You can find a detailed guide how to expand the storage space of your DAppNode system [here](https://forum.dappnode.io/t/how-to-expand-your-dappnode-filesystem-space/1296).
-You can add a NVMe hard disk (if there is a free slot in the DAppNode machine), and set it up using the expansion feature which can be found under System > Hardware. This feature only works with a NVMe hard disk.
+    You can find a detailed guide how to expand the storage space of your DAppNode system <a href="https://forum.dappnode.io/t/how-to-expand-your-dappnode-filesystem-space/1296">here</a>.
+    <br /><br />
+You can add a NVMe hard disk (if there is a free slot in the DAppNode machine) and set it up using the expansion feature which can be found under System > Hardware. This feature only works with a NVMe hard disk.
 </div>
   </div>
 </details>
 
 <details>
-  <summary>Who helps me if I run into a problem?</summary>
+  <summary>Who can help me if I run into a problem?</summary>
   <div>
     <div>
-If you have an issue with your DAppNode, we recommend using the [DAppNode discord channel](https://discord.com/invite/dappnode) or the [DAppNode forum](https://forum.dappnode.io/). If its something a bit more technical, you can also go to DAppNode Github repository and open an issue there.
+If you have an issue with your DAppNode, we recommend using the <a href="https://discord.com/invite/dappnode">DAppNode discord channel</a> or the <a href="https://forum.dappnode.io/">DAppNode forum</a>. The community will always try to help. 
+<br /><br />
+If its something a bit more technical, you can also go to DAppNode Github repository and open an issue there.
 </div>
   </div>
 </details>
@@ -160,9 +155,9 @@ If you have an issue with your DAppNode, we recommend using the [DAppNode discor
   <summary>How can I secure my DAppNode?</summary>
   <div>
     <div>
-Change all the default passwords, including the Wi-Fi and admin password. You'll be prompted to change the admin password is when you access the UI for the first time.
+Change all the default passwords, including the Wi-Fi and admin password. You'll be prompted to change the admin password when you access the UI for the first time.
 <br /><br />
-Furthermore, it's good practice to disable SSH access in case you are not going to use it.
+Furthermore, it is good practice to disable SSH access in case you are not going to use it.
 </div>
   </div>
 </details>
@@ -171,7 +166,7 @@ Furthermore, it's good practice to disable SSH access in case you are not going 
   <summary>What is port-forwarding and why do I need it?</summary>
   <div>
     <div>
-Port-forwarding lets the router know where to send a specific data package or data stream. This usually occurs when something from outside of the network (Internet) communicates with a device inside of a network (LAN).
+Port-forwarding lets the router know where to send a specific data package or data stream. This usually occurs when something from outside of the network (Internet) communicates with a device inside of the network (LAN).
 <br /><br />
 Some routers use a feature called 'UPnP' to automatically open the requested ports but sometimes this protocol does not work well on specific routers or is straight up not available. 
 <br />
@@ -184,8 +179,7 @@ In this case, you'll have to manually forward the required ports. Please search 
   <summary>How to find out which Ports I need to forward?</summary>
   <div>
     <div>
-You can check the Port support page of your DAppNode [here](http://my.dappnode/#/support/ports)
+You can check the Port support page of your DAppNode <a href="http://my.dappnode/#/support/ports">here</a>.
 </div>
   </div>
 </details>
-
