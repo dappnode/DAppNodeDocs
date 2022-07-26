@@ -84,9 +84,9 @@ Once you've filled out those fields and pressed 'Register', your DAppNode will o
   <summary>What do I do if I lost the password AND my token?!</summary>
   <div>
     <div>
-In the case where you have lost both the password and the recovery token, we will need either SSH or local access to the DAppNode machine.
+In the case where you have lost both the password and the recovery token, you will need either SSH or local access to the DAppNode machine.
 <br /><br />
-Once we are connected to our DAppNode, we type the next command which prints the recovery token to the terminal:
+Once you are connected to your DAppNode, type the following command which prints the recovery token to the terminal:
 
 ```
 cat /usr/src/dappnode/DNCORE/admin-recovery-token.txt ; echo
@@ -94,10 +94,10 @@ cat /usr/src/dappnode/DNCORE/admin-recovery-token.txt ; echo
 
 The command does the following:
 
-- We read the admin-recover-token.txt file where the token is saved.
+- Reads the admin-recover-token.txt file where the token is saved.
 - The <code>; echo</code> is used to make it easier to read and copy the token.
 
-After inserting the command above, we obtain the recovery token and use that one to recover our admin access.
+After inserting the command above, you can obtain the recovery token and use that one to recover your admin access.
 
 In the question above you can check out how to use your token to regain access.
 </div>
@@ -111,6 +111,7 @@ In the question above you can check out how to use your token to regain access.
     If you are experiencing an issue or just want to make sure you are running the latest DAppNode version, execute this command below in the DAppNode terminal. 
     <br /><br />
     This will update the core packages to the latest versions without erasing any data from your DAppNode.
+    ⚠️ This will clear any EXTRA_OPTS fields, but no chain data, keys, or other configurations will be affected
     <br/><br />
 <code> sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash` </code>
 
