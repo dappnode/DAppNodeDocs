@@ -22,12 +22,15 @@ If all of the above does not work, visit our <a href="https://discord.com/invite
   <summary>Why can't I connect to my DAppNode via VPN?</summary>
   <div>
     <div>
-    If you have set up OpenVPN and you cant access your DAppNode, remember that you might need to set up port forwarding on your router. Sometimes the feature called 'UPnP' enables these ports on your router automatically but this sometimes does not work or is not available on your router.
+    If you have set up <b>OpenVPN</b> and you cant access your DAppNode, remember that you might need to set up port forwarding on your router. Sometimes the feature called 'UPnP' enables these ports on your router automatically but this sometimes does not work or is not available on your router.
     <br /><br />
 
 To do this, you need to access your router configuration and "port-forward" the following ports: TCP Port 8092 and UDP Port 1194. 
+<br />
+In case you have set up <b>Wireguard</b>, you might need to "port-forward" the following port: 51820
+<br /><br />
 
-In case you have set up Wireguard, you might have to create two profiles:
+Once you have done that <i>AND</i> you still can not access your DAppNode, you might have to create two profiles:
 
 <ul>
     <li>A Local profile: This profile is used when you are connecting from within the same network that the DAppNode resides in.</li>
@@ -35,6 +38,10 @@ In case you have set up Wireguard, you might have to create two profiles:
 </ul>
   When you create the VPN profiles, there is a link that generates the profile for either local usage or remote usage.
   <br /><br />
+  <p align="center">
+  <img src="../../../img/wireguard_local_profile.png"/>
+  </p>
+
 You can also check out our guides on how to configure VPN access <a href="/user/guides/access/vpn">here</a>.
 </div>
   </div>
