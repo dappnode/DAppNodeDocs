@@ -47,7 +47,8 @@ You can also check out our guides on how to configure VPN access <a href="/user/
   </div>
 </details>
 
-<details>
+ [//]: # "We have to place the recovery tag here for it to show the bottom details tag" 
+<details id="recovery"> 
   <summary>Can I recover a lost admin password?</summary>
   <div>
     <div>
@@ -106,7 +107,10 @@ The command does the following:
 
 After inserting the command above, you can obtain the recovery token and use that one to recover your admin access.
 
-In the question above you can check out how to use your token to regain access.
+ [//]: # "Recovery tag anchors to details element above, even though we set it to the one above it." 
+
+In the section above ('<b><a href='#recovery'>"How do I recover a lost admin password using my recovery token?</a></b>') you can check out how to use your token to regain access.
+
 </div>
   </div>
 </details>
@@ -122,7 +126,6 @@ In the question above you can check out how to use your token to regain access.
     ⚠️ This will clear any EXTRA_OPTS fields, but no chain data, keys, or other configurations will be affected ⚠️
     <br/><br />
 <code> sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash` </code>
-
 </div>
   </div>
 </details>
