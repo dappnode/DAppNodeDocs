@@ -111,7 +111,8 @@ In the question above you can check out how to use your token to regain access.
     If you are experiencing an issue or just want to make sure you are running the latest DAppNode version, execute this command below in the DAppNode terminal. 
     <br /><br />
     This will update the core packages to the latest versions without erasing any data from your DAppNode.
-    ⚠️ This will clear any EXTRA_OPTS fields, but no chain data, keys, or other configurations will be affected
+    <br /><br />
+    ⚠️ This will clear any EXTRA_OPTS fields, but no chain data, keys, or other configurations will be affected ⚠️
     <br/><br />
 <code> sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash` </code>
 
