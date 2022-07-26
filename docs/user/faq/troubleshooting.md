@@ -84,9 +84,9 @@ Once you've filled out those fields and pressed 'Register', your DAppNode will o
   <summary>What do I do if I lost the password AND my token?!</summary>
   <div>
     <div>
-In the case where you have lost both the password and the recovery token, we will need either SSH or local access to the DAppNode machine.
+In the case where you have lost both the password and the recovery token, you will need either SSH or local access to the DAppNode machine.
 <br /><br />
-Once you are connected to our DAppNode, type the following command which prints the recovery token to the terminal:
+Once you are connected to your DAppNode, type the following command which prints the recovery token to the terminal:
 
 ```
 cat /usr/src/dappnode/DNCORE/admin-recovery-token.txt ; echo
@@ -111,6 +111,7 @@ In the question above you can check out how to use your token to regain access.
     If you are experiencing an issue or just want to make sure you are running the latest DAppNode version, execute this command below in the DAppNode terminal. 
     <br /><br />
     This will update the core packages to the latest versions without erasing any data from your DAppNode.
+    ⚠️ This will clear any EXTRA_OPTS fields, but no chain data, keys, or other configurations will be affected
     <br/><br />
 <code> sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash` </code>
 
