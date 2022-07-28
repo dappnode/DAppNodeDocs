@@ -9,7 +9,7 @@ title: Troubleshooting
     If it is your first time trying to access your DAppNode, please try one of the following steps:
     <br /><br />
 <ul>
-    <li>If you are connected to the same network as your DappNode via wired Ethernet, try to access the UI using the address <a href="http://dappnode.local">http://dappnode.local</a></li>
+    <li>If you are connected to the same network as your DAppNode via wired Ethernet, try to access the UI using the address <a href="http://dappnode.local">http://dappnode.local</a></li>
     <li>If you've bought a DAppNode or installed it on a machine with integrated Wi-Fi, try to access the Wi-Fi hotspot 'DAppNodeWifi'.</li>
 </ul>
 
@@ -27,7 +27,7 @@ If all of the above does not work, visit our <a href="https://discord.com/invite
 
 To do this, you need to access your router configuration and "port-forward" the following ports: TCP Port 8092 and UDP Port 1194. 
 <br />
-In case you have set up <b>Wireguard</b>, you might need to "port-forward" the following port: 51820
+In case you have set up <b>WireGuard</b>, you might need to "port-forward" the following port: 51820
 <br /><br />
 
 Once you have done that <i>AND</i> you still can not access your DAppNode, you might have to create two profiles:
@@ -36,7 +36,7 @@ Once you have done that <i>AND</i> you still can not access your DAppNode, you m
     <li>A Local profile: This profile is used when you are connecting from within the same network that the DAppNode resides in.</li>
     <li> A Remote profile: This profile is used when you are connecting from a different network than the one where your DAppNode resides in.</li>
 </ul>
-  When you create the VPN profiles, there is a link that generates the profile for either local usage or remote usage.
+  When you create the VPN profiles, there is a link that generates that toggles config creation for either local or remote usage.
   <br /><br />
   <p align="center">
   <img src="../../../img/wireguard_local_profile.png"/>
@@ -52,7 +52,7 @@ You can also check out our guides on how to configure VPN access <a href="/user/
   <summary>Can I recover a lost admin password?</summary>
   <div>
     <div>
-    You can not outright recover your admin password but you can regain access to your DAppNode if you wrote down the recovery token provided during the inital setup. 
+    You can not outright recover your admin password but you can regain access to your DAppNode if you wrote down the recovery token provided during the initial setup. 
     <br /><br />
     More about the initial setup can be found <a href="/user/quick-start/first-steps">here</a>
     <br /><br />
