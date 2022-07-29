@@ -6,13 +6,13 @@ sidebar_position: 3
 
 If you don't know what VPN is; below you can read a little description you can find on the Internet.
 
-_A Virtual Private Network, or VPN, is a special SSL encrypted connection over the Internet that connects a device to a different network, such as your home or work local network (LAN) when you are not physically connected to this private network. The encrypted connection helps ensure that sensitive data is safely transmitted. It prevents unauthorized people from eavesdropping on the traffic and allows the user to conduct work remotely as if they were sitting right next to their node even if it's actually on the other side of the world in a datacenter that's inaccessible to the public at all times. 
-There are 2 major use cases for a VPN.  For our use of VPN(s) with DAppNode we use the VPN to be able to securely connect to the private internal Docker network of your DAppNode, a private network that exists within your DAppNode, which is how you can access and navigate the Admin UI and all other package specific UI's that are unavailable using the Local Proxy by creating a direct virtual encrypted tunnel that makes your client device part of the internal DAppNode private network.  
+_A Virtual Private Network, or VPN, is a special SSL encrypted connection over the Internet that connects a device to a different network, such as your home or work local network (LAN) when you are not physically connected to this private network. The encrypted connection helps ensure that sensitive data is safely transmitted. It prevents unauthorized people from eavesdropping on the traffic and allows the user to conduct work remotely as if they were sitting right next to their node even if it's actually on the other side of the world in a datacenter that's inaccessible to the public at all times.
+There are 2 major use cases for a VPN. For our use of VPN(s) with DAppNode we use the VPN to be able to securely connect to the private internal Docker network of your DAppNode, a private network that exists within your DAppNode, which is how you can access and navigate the Admin UI and all other package specific UI's that are unavailable using the Local Proxy by creating a direct virtual encrypted tunnel that makes your client device part of the internal DAppNode private network.  
 The other primary use of a VPN which yu may already know is a privacy use case where users purchase subscriptions from VPN providors who instead of connecting your tunnel to a specific private LAN they create a tunnel from your client device to their VPN server which then allows you to browse the Internet from a different goegraphic location and IP address than you would without a VPN_
 
-The main purpose of setting up VPN access is to allow the user to safely connect to their DAppNode locally or remotely, in both cases these are encrypted tunnels that allow for complete access to your DAppNode.  While you can use the DAppNode created WiFi hotspot to access the same things, you are limited to the range of the Node's WiFi, and internet access is generally heavily degraded since you are routing everything on your client through your node, which works, but is not designed to be used as such.  This is why VPNs although just one of several ways to connect to your DAppNode, is the most important, and should be used most often, as the default method of connecting
+The main purpose of setting up VPN access is to allow the user to safely connect to their DAppNode locally or remotely, in both cases these are encrypted tunnels that allow for complete access to your DAppNode. While you can use the DAppNode created WiFi hotspot to access the same things, you are limited to the range of the Node's WiFi, and internet access is generally heavily degraded since you are routing everything on your client through your node, which works, but is not designed to be used as such. This is why VPNs although just one of several ways to connect to your DAppNode, is the most important, and should be used most often, as the default method of connecting
 
-DAppNode supports 2 kinds of VPN: OpenVPN and Wireguard.  Wireguard has proven to be the best option for a VPN, it's easier to setup and is more stable than OpenVPN.  Below you have a little explanation about what each section contains:
+DAppNode supports 2 kinds of VPN: OpenVPN and Wireguard. Wireguard has proven to be the best option for a VPN, it's easier to setup and is more stable than OpenVPN. Below you have a little explanation about what each section contains:
 
 - **Set up VPN from the Admin UI**: Explains how access to the VPN section and what you can do from this view. (you need to have access to the admin UI already to do this which means you need to first connect via the Local Proxy or via the DAppNode's WiFi hotspot).
 - **Wireguard**: Explains how to set up Wireguard in DAppNode and how to connect your device using a Wireguard client.
@@ -24,7 +24,7 @@ DAppNode supports 2 kinds of VPN: OpenVPN and Wireguard.  Wireguard has proven t
 Once connected to and logged into the Admin UI, navigate to the VPN page by clicking on the VPN tab in the Navigation Bar to the left of the UI. When opened you will see a page where you can select 2 tabs: OpenVPN and Wireguard.
 
 <p align="center">
-    <img src="../../../../static/img/vpn_view.png"/>
+    <img src="../../../../img/vpn_view.png"/>
 </p>
 
 To set up OpenVPN, follow the instructions below for OpenVPN.
@@ -32,18 +32,17 @@ To set up OpenVPN, follow the instructions below for OpenVPN.
 If you wish to use Wireguard (the recommended method), click on the Wireguard tab; you may need to install the Wireguard package if you see the below image.
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_view_1.png"/>
+    <img src="../../../../img/wireguard_view_1.png"/>
 </p>
 
 Install the Wireguard package if necessary. If already installed, follow the instructions for Wireguard below.
-
 
 ## Wireguard
 
 Once you have installed the Wireguard package, you will be able to see this page:
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_view_2.png"/>
+    <img src="../../../../img/wireguard_view_2.png"/>
 </p>
 
 This step is common whatever OS/device you will use as a client. By default, one profile is created, click on the Get link button which is in the column Credentials.
@@ -76,19 +75,19 @@ Content to be added soon.
 In your mobile, go to the Playstore, then look for `wireguard` and select this app and install it:
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_android_install.jpg"/>
+    <img src="../../../../img/wireguard_android_install.jpg"/>
 </p>
 
 Then, if you open the app you will see the next image:
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_android_set_up.jpg"/>
+    <img src="../../../../img/wireguard_android_set_up.jpg"/>
 </p>
 
 Click on the blue circle button on the right bottom:
 
 <p align="center">
-    <img src="../../../../static/img/wireguard_android_set_up_2.jpg"/>
+    <img src="../../../../img/wireguard_android_set_up_2.jpg"/>
 </p>
 
 You can obtain the configuration scanning the QR you obtain on the vpn/wireguard view, download the file and import it or copy the contain of the configuration.
@@ -126,8 +125,6 @@ The output of this command should be something like:
       allowed ips: 172.33.0.0/16, 10.20.0.0/24
       latest handshake: 36 seconds ago
       transfer: 222.36 KiB received, 81.86 KiB sent
-
-
 
 ## OpenVPN
 
