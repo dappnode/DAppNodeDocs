@@ -1,10 +1,10 @@
-# DAppNode Multiclient for Validators (ETH2, GNO)
+# Dappnode Multiclient for Validators (ETH2, GNO)
 ---
-DAppNode is a key piece of infrastructure decentralization. Our mission is to make running infrastructure easy for everyone, so we are now introducing multiple clients to validate on the Ethereum and Gnosis Consensus Layers (including testnets).
+Dappnode is a key piece of infrastructure decentralization. Our mission is to make running infrastructure easy for everyone, so we are now introducing multiple clients to validate on the Ethereum and Gnosis Consensus Layers (including testnets).
 
 ---
 
-## Current Status of Multiclient on DAppNode
+## Current Status of Multiclient on Dappnode
 
 **Status for ETH Mainnet:** Multiclient officially released for public use!
 
@@ -16,7 +16,7 @@ DAppNode is a key piece of infrastructure decentralization. Our mission is to ma
 
 ## Short Multiclient Guide
 
-1. The user connects to their DAppNode via Wifi or VPN
+1. The user connects to their Dappnode via Wifi or VPN
 2. Picks between their validator client of choice (depending on the Network this includes: Prysm, Lighthouse, Teku, Nimbus or Lodestar)
 3. With the installation of any client, a second package gets installed called `Web3Signer`. This package will hold the keys and avoid having them in two places at the same time
 4. User imports the keys into Web3Signer via the UI of the package
@@ -29,7 +29,7 @@ DAppNode is a key piece of infrastructure decentralization. Our mission is to ma
 ## 1. Installing a client from scratch 
 
 We suppose that you have generated your keystore files and completed a deposit already. <br /> <br />
-Access your DAppNode via WiFi or VPN and go to the DAppStore and select your Consensus Layer Client of choice.
+Access your Dappnode via WiFi or VPN and go to the DAppStore and select your Consensus Layer Client of choice.
 
 You can select any of the following for ETH Mainnet (might be different for other networks):
 
@@ -123,7 +123,7 @@ Click on the Submit/Update button and wait until the package gets installed, con
 ### Question: Why is this package needed?
 
 The Web3signer is a remote signer that holds validation keys and communicates with different clients through a standardized API. It comes bundled with a UI that makes it easy to import keystores and slashing protection data.
-The Web3signer package and its combined use with the CL client packages is the solution to making it easier and safer for DAppNode users to set up a validator and switch between multiple clients seamlessly.
+The Web3signer package and its combined use with the CL client packages is the solution to making it easier and safer for Dappnode users to set up a validator and switch between multiple clients seamlessly.
 
 ### 2.1 Import the keystore files
 

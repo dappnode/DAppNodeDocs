@@ -2,17 +2,17 @@
 title: General Questions
 ---
 <details>
-  <summary>What is the purpose of the DAppNode?</summary>
+  <summary>What is the purpose of the Dappnode?</summary>
   <div>
-    <div>The main purpose or mission of DAppNode is to make it easy for everyone to participate in decentralized networks. Furthermore, DAppNode aims to increase the decentralization of blockchain infrastructure.</div>
+    <div>The main purpose or mission of Dappnode is to make it easy for everyone to participate in decentralized networks. Furthermore, Dappnode aims to increase the decentralization of blockchain infrastructure.</div>
     <br/>
   </div>
 </details>
 
 <details>
-  <summary>What can I do with DAppNode?</summary>
+  <summary>What can I do with Dappnode?</summary>
   <div>
-    <div>The DAppNode platform lets you run nodes and applications interfacing with all different kinds of blockchains like Bitcoin, Ethereum, Gnosis Chain and many more in a easy and user-friendly way. 
+    <div>The Dappnode platform lets you run nodes and applications interfacing with all different kinds of blockchains like Bitcoin, Ethereum, Gnosis Chain and many more in a easy and user-friendly way. 
     <br/> <br/>
     Furthermore, you can run validators or staking nodes in networks like Ethereum, Gnosis Chain, Avalanche and more to come.
 </div>
@@ -20,10 +20,10 @@ title: General Questions
 </details>
 
 <details>
-  <summary>What hardware do I need to run a DAppNode?</summary>
+  <summary>What hardware do I need to run a Dappnode?</summary>
   <div>
     <div>
-  You can run the DAppNode platform on various machines ranging from low-end hardware (such as old laptops) to high-end hardware (such as high performance servers).
+  You can run the Dappnode platform on various machines ranging from low-end hardware (such as old laptops) to high-end hardware (such as high performance servers).
   <br /><br />
   The resources you need will depend on how many and which kind packages you are going to run.
   <br /><br />
@@ -46,30 +46,30 @@ title: General Questions
 </details>
 
 <details>
-  <summary>What are the advantages of running a DAppNode?</summary>
+  <summary>What are the advantages of running a Dappnode?</summary>
   <div>
     <div>
-  The main advantages of hosting your own nodes with DAppNode are privacy, independence and the ease of setup.
+  The main advantages of hosting your own nodes with Dappnode are privacy, independence and the ease of setup.
   <br /><br />
   Once you're hosting your own nodes, you are not affected by outages at big providers like Infura (the default gateway in Metamask for many networks) anymore. This allows you to submit transactions without having to worry about a third-party.
   <br /><br />
 
   It is also beneficial to your own transactional privacy as major providers have been caught censoring transactions coming from specific countries ([Link](https://metamask.zendesk.com/hc/en-us/articles/360059386712-Why-MetaMask-and-Infura-cannot-serve-certain-areas), [Link](https://twitter.com/lawmaster/status/1499423160957034496)).
 
-  Furthermore, running blockchain nodes has never been easy as with the DAppNode platform. You install a package from our DAppStore and you're good to go. Automatic updates included.
+  Furthermore, running blockchain nodes has never been easy as with the Dappnode platform. You install a package from our DAppStore and you're good to go. Automatic updates included.
 </div>
   </div>
 </details>
 
 <details>
-  <summary>What is the difference between buying a DAppNode or installing a DAppNode by yourself?</summary>
+  <summary>What is the difference between buying a Dappnode or installing a Dappnode by yourself?</summary>
   <div>
     <div>
     The underlying system is the same.
     <br /><br />
-    The prebuilt DAppNode machine is built for people who do not want to worry about buying hardware themselves, looking up hardware requirements or installing the DAppNode software on compatible machines. The DAppNode software was meant to be used on those prebuilt machines but you can run it on any hardware regardless. 
+    The prebuilt Dappnode machine is built for people who do not want to worry about buying hardware themselves, looking up hardware requirements or installing the Dappnode software on compatible machines. The Dappnode software was meant to be used on those prebuilt machines but you can run it on any hardware regardless. 
     <br /><br />
-If you want to install the DAppNode platform on an old computer or on custom hardware please check out the <a href="/user/quick-start/core">Guides here</a>.
+If you want to install the Dappnode platform on an old computer or on custom hardware please check out the <a href="/user/quick-start/core">Guides here</a>.
   </div>
   <br/>
   </div>
@@ -78,7 +78,7 @@ If you want to install the DAppNode platform on an old computer or on custom har
 <details>
   <summary>Is my Internet Connection fast enough?</summary>
   <div>
-    <div>This depends on the amount of chains and applications you want to run on top of your DAppNode. 
+    <div>This depends on the amount of chains and applications you want to run on top of your Dappnode. 
     <br /><br />
     For a singular chain (for example Ethereum EL + CL) you'll need around 10 to 20 Megabits (up and down). Running more chains will increase the amount of bandwidth you need. 
     <br/> <br/>
@@ -88,17 +88,17 @@ If you want to install the DAppNode platform on an old computer or on custom har
 </details>
 
 <details>
-  <summary>Do I need terminal or command line experience to use DAppNode?</summary>
+  <summary>Do I need terminal or command line experience to use Dappnode?</summary>
   <div>
-    <div>You generally wont need to use a terminal on your DAppNode unless instructed to in specific support cases. One of the key objectives of the DAppNode platform is to avoid using the terminal.
+    <div>You generally wont need to use a terminal on your Dappnode unless instructed to in specific support cases. One of the key objectives of the Dappnode platform is to avoid using the terminal.
 </div>
   </div>
 </details>
 
 <details>
-  <summary>Do I need terminal or command line experience to use DAppNode?</summary>
+  <summary>Do I need terminal or command line experience to use Dappnode?</summary>
   <div>
-    <div>You generally wont need to use a terminal on your DAppNode unless instructed to in specific support cases. One of the key objectives of the DAppNode platform is to avoid using the terminal.
+    <div>You generally wont need to use a terminal on your Dappnode unless instructed to in specific support cases. One of the key objectives of the Dappnode platform is to avoid using the terminal.
 </div>
   </div>
 </details>
@@ -106,7 +106,7 @@ If you want to install the DAppNode platform on an old computer or on custom har
 <details>
   <summary>What are the first steps logging in for the first time?</summary>
   <div>
-    <div>We have created a 'First steps with DAppNode' guide <a href="/user/quick-start/first-steps">here</a>.
+    <div>We have created a 'First steps with Dappnode' guide <a href="/user/quick-start/first-steps">here</a>.
 </div>
   </div>
 </details>
@@ -114,9 +114,9 @@ If you want to install the DAppNode platform on an old computer or on custom har
 <details>
   <summary>Which packages should I install first?</summary>
   <div>
-    <div>We recommend that you install a Ethereum client (as written in the 'First steps' guide), the 'DMS' and 'DAppNode Exporter' packages. 
+    <div>We recommend that you install a Ethereum client (as written in the 'First steps' guide), the 'DMS' and 'Dappnode Exporter' packages. 
     <br /><br />
-    You'll need an ethereum node to search for all available DAppNode packages and the 'DMS' and 'DAppNode Exporter' gather system information and metrics and visualize them in easy to read dashboards. This way, you'll always know how your DAppNode is performing.
+    You'll need an ethereum node to search for all available Dappnode packages and the 'DMS' and 'Dappnode Exporter' gather system information and metrics and visualize them in easy to read dashboards. This way, you'll always know how your Dappnode is performing.
 </div>
   </div>
 </details>
@@ -133,9 +133,9 @@ If you want to install the DAppNode platform on an old computer or on custom har
   <summary>What can I do if my hard-drive runs out of space?</summary>
   <div>
     <div>
-    You can find a detailed guide how to expand the storage space of your DAppNode system <a href="https://forum.dappnode.io/t/how-to-expand-your-dappnode-filesystem-space/1296">here</a>.
+    You can find a detailed guide how to expand the storage space of your Dappnode system <a href="https://forum.dappnode.io/t/how-to-expand-your-dappnode-filesystem-space/1296">here</a>.
     <br /><br />
-You can add a NVMe hard disk (if there is a free slot in the DAppNode machine) and set it up using the expansion feature which can be found under System > Hardware. This feature only works with a NVMe hard disk.
+You can add a NVMe hard disk (if there is a free slot in the Dappnode machine) and set it up using the expansion feature which can be found under System > Hardware. This feature only works with a NVMe hard disk.
 </div>
   </div>
 </details>
@@ -144,15 +144,15 @@ You can add a NVMe hard disk (if there is a free slot in the DAppNode machine) a
   <summary>Who can help me if I run into a problem?</summary>
   <div>
     <div>
-If you have an issue with your DAppNode, we recommend using the <a href="https://discord.com/invite/dappnode">DAppNode discord channel</a> or the <a href="https://forum.dappnode.io/">DAppNode forum</a>. The community will always try to help. 
+If you have an issue with your Dappnode, we recommend using the <a href="https://discord.com/invite/dappnode">Dappnode discord channel</a> or the <a href="https://forum.dappnode.io/">Dappnode forum</a>. The community will always try to help. 
 <br /><br />
-If its something a bit more technical, you can also go to DAppNode Github repository and open an issue there.
+If its something a bit more technical, you can also go to Dappnode Github repository and open an issue there.
 </div>
   </div>
 </details>
 
 <details>
-  <summary>How can I secure my DAppNode?</summary>
+  <summary>How can I secure my Dappnode?</summary>
   <div>
     <div>
 Change all the default passwords, including the Wi-Fi and admin password. You'll be prompted to change the admin password when you access the UI for the first time.
@@ -179,7 +179,7 @@ In this case, you'll have to manually forward the required ports. Please search 
   <summary>How to find out which Ports I need to forward?</summary>
   <div>
     <div>
-You can check the Port support page of your DAppNode <a href="http://my.dappnode/#/support/ports">here</a>.
+You can check the Port support page of your Dappnode <a href="http://my.dappnode/#/support/ports">here</a>.
 </div>
   </div>
 </details>

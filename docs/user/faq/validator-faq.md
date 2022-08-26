@@ -6,7 +6,7 @@ title: Ethereum Validator Questions
   <summary>Is there a way to monitor validator uptime?</summary>
   <div>
     <div>
-    On some dashboards in the DAppNode Monitoring System (DMS) you can find metrics related to the uptime of your validator. 
+    On some dashboards in the Dappnode Monitoring System (DMS) you can find metrics related to the uptime of your validator. 
     <br /><br />
     But you can also find out how your validator is doing on the Beaconchain website of their respective network. Just enter your validator index ID in the search field.
     <br /><br />
@@ -38,7 +38,7 @@ Slashing only occurs if:
   <li>A validator acts like an attester and signs two different attestations with the same target</li>
 </ul>
 
-You will not have to worry about getting slashed on DAppNode. Slashing usually occurs when you have two instances of the same validator running at the same time. DAppNodes are configured in a way where that does not happen.
+You will not have to worry about getting slashed on Dappnode. Slashing usually occurs when you have two instances of the same validator running at the same time. DAppNodes are configured in a way where that does not happen.
 </div>
   </div>
 </details>

@@ -3,10 +3,11 @@ title: Wi-Fi
 sidebar_position: 1
 ---
 
-If you have bought a DAppNode from our store or you installed DAppNode in a physical device with a Wi-Fi chip inside, you can directly connect to your DAppNodes UI by connecting your client device to the DAppNode's Wi-Fi hotspot.
+If you have bought a Dappnode from our store or you installed Dappnode in a physical device with a Wi-Fi chip inside, you can directly connect to your DAppNodes UI by connecting your client device to the Dappnode's Wi-Fi hotspot.
+
 _If you did not purchase your hardware from us there is a possibility the built in Wi-Fi card may not be recognized by the OS on install and will need to be activated manually, this varies greatly depending on what hardware is used if you encounter an issue please reach out to support on [Discord!](https://discord.gg/dappnode/)_
 
-### Connecting to your DAppNode Wi-Fi
+### Connecting to your Dappnode Wi-Fi
 
 Using your devices Wi-Fi browser, search for the following network name and enter the below-mentioned password to connect:
 - SSID or Name: `DAppNodeWIFI`

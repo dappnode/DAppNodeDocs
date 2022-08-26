@@ -1,8 +1,8 @@
 ---
-title: DAppNode DAO FAQ
+title: Dappnode DAO FAQ
 ---
 <details>
-  <summary>What is a DAO? What is the purpose and mission of the DAppNode DAO?
+  <summary>What is a DAO? What is the purpose and mission of the Dappnode DAO?
 </summary>
   <div>
     <div>Content needed.</div>
