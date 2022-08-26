@@ -1,4 +1,5 @@
 ---
+title: SSH or Terminal Access
 sidebar_position: 4
 ---
 

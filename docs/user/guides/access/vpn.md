@@ -1,6 +1,6 @@
 ---
 title: VPN
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Accessing your DAppNode via VPN
