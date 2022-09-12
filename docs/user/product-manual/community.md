@@ -10,13 +10,10 @@ In this section you can find all the channels you can find us and how to can con
     <img src="../../../../img/community_view.png"/>
 </p>
 
-## Discord Channel
+## Discord Server
 
-On Discord, you can ask anything you want about DAppNode. You can get the invitation to the Discord channel [here](https://discord.gg/c28an8dA5k).
+On Discord, you can ask anything you want about DAppNode, and it's the best place to find support. You can get an invitation to our Discord Server [here](https://discord.gg/dappnode).
 
-## Grants
-
-If you want to contribute with DAppNode you can do it with gitcoin grants.
 
 ## Community Treasury
 
