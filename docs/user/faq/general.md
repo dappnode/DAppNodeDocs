@@ -40,7 +40,7 @@ title: General Questions
   <ul>
     <li>A Wired Ethernet Connection</li>
     <li>An NVMe drive (we recommend at least 2TB but more storage space will not hurt either)</li>
-    <li>16GB of RAM</li>
+    <li>16GB of RAM (32 GB recommended for some future proofing, and ability to maintain backup clients)</li>
   </ul>
 
 </div>
