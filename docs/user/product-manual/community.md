@@ -17,12 +17,12 @@ On Discord, you can ask anything you want about DAppNode, and it's the best plac
 
 ## Community Treasury
 
-If you collaborate with DAppNode, developing packages, helping other users, creating content, you can be rewarded for that. You can get more information about that on the link.
+If you collaborate with DAppNode, developing packages, helping other users, creating content, you can be rewarded for that. You can get more information about our Community Treasury here.
 
 ## Forum Discourse
 
-[Forum](https://discourse.dappnode.io/) is a place where you can find guides, support, support questions, and so much information.
+Our [Forum](https://discourse.dappnode.io/) is a place where you can find guides, support, support questions, and other information.
 
 ## Github
 
-DAppNode is an Open Source Project, you can review the code and even contribute by yourself on [DAppNode Github](https://github.com/dappnode).
+DAppNode is an Open Source Project, you can review the code and even contribute to the project yourself on our [Github Page](https://github.com/dappnode).
