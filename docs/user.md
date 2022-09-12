@@ -12,4 +12,4 @@ If you want to run your own validator, access decentralised apps, or learn how t
 
 If you have problems with your Dappnode or want to get in touch with us, please take a look at the [FAQs](/user/faq/general).
 
-The [product manual](/user/product-manual/dashboard) aims to give you an overview of the whole Dappnode interface, accompanied by a functional explanation of that part of the UI.
+The [product manual](/user/product-manual/dashboard) aims to give you an overview of the entire Dappnode interface, accompanied by a functional explanation of the AdminUI, the primary dashboard for managing your Dappnode.
