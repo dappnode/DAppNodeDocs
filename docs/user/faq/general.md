@@ -14,7 +14,7 @@ title: General Questions
   <div>
     <div>The Dappnode platform lets you run nodes and applications interfacing with all different kinds of blockchains like Bitcoin, Ethereum, Gnosis Chain and many more in a easy and user-friendly way. 
     <br/> <br/>
-    Furthermore, you can run validators or staking nodes in networks like Ethereum, Gnosis Chain, Avalanche and more to come.
+    Furthermore, you can earn passive income by running validators securing a blockchain or staking nodes in networks like Ethereum, Gnosis Chain, Avalanche and more to come.  Other Web3 projects you can currently participate in to generate passive income with your Dappnode is to share disk space on the StorJ network, or to share some of your bandwidth for the decentralized VPN provider Mysterium.  Our core developers and community of builders are constantly adding integrations for other Web3 projects, many with economic incentives.
 </div>
   </div>
 </details>
