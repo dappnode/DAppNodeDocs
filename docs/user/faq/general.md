@@ -23,21 +23,23 @@ title: General Questions
   <summary>What hardware do I need to run a Dappnode?</summary>
   <div>
     <div>
-  You can run the Dappnode platform on various machines ranging from low-end hardware (such as old laptops) to high-end hardware (such as high performance servers).
+  You can run the Dappnode platform on various machines ranging from mid-range hardware (such as older desktops) to high-end hardware (such as high performance servers).
   <br /><br />
-  The resources you need will depend on how many and which kind packages you are going to run.
+  You can run Dappnode on Single-Board Computers, like the Raspberry Pi 4 8GB RAM. Keep in mind that not every package will be available and some packages might never sync entirely and that the minimum requirements below do not reflect such hardware.
+  <br /><br />
+  The resources you need will depend on how many and what kind packages you are going to run.
   <br /><br />
   The most <b>basic</b> hardware requirements you should meet are:
   <ul>
     <li>A Wired Ethernet Connection</li>
-    <li>An SSD or faster (Size depends on amount of chains and packages - a good target is at least 500GB)</li>
-    <li>8GB of RAM</li>
+    <li>An NVMe drive (Size depends on amount of chains and packages - a good target is at least 1 TB)</li>
+    <li>8GB of RAM (this will quickly become a limiting factor, it is recommended to go higher if possible)</li>
   </ul>
 
   If you intend to run a <b>Ethereum validator</b>, we recommend the following hardware specs:
   <ul>
     <li>A Wired Ethernet Connection</li>
-    <li>An NVMe drive (we recommend at least 1TB but more storage space will not hurt either)</li>
+    <li>An NVMe drive (we recommend at least 2TB but more storage space will not hurt either)</li>
     <li>16GB of RAM</li>
   </ul>
 
