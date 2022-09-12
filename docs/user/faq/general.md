@@ -2,7 +2,7 @@
 title: General Questions
 ---
 <details>
-  <summary>What is the purpose of the Dappnode?</summary>
+  <summary>What is the purpose of Dappnode?</summary>
   <div>
     <div>The main purpose or mission of Dappnode is to make it easy for everyone to participate in decentralized networks and the burgeoning Web3 Ecosystem. Furthermore, Dappnode aims to increase the decentralization of blockchains and other Web3 infrastructure.</div>
     <br/>
