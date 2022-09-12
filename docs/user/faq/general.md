@@ -2,9 +2,9 @@
 title: General Questions
 ---
 <details>
-  <summary>What is the purpose of the Dappnode?</summary>
+  <summary>What is the purpose of Dappnode?</summary>
   <div>
-    <div>The main purpose or mission of Dappnode is to make it easy for everyone to participate in decentralized networks. Furthermore, Dappnode aims to increase the decentralization of blockchain infrastructure.</div>
+    <div>The main purpose or mission of Dappnode is to make it as easy as possible for everyone, even those with limited technical skills, to participate in decentralized networks and the burgeoning Web3 ecosystem. Furthermore, Dappnode aims to increase the decentralization of blockchains and other Web3 infrastructure by lowering the technical barriers of entry to this growing and exciting ecosystem.</div>
     <br/>
   </div>
 </details>
@@ -12,9 +12,9 @@ title: General Questions
 <details>
   <summary>What can I do with Dappnode?</summary>
   <div>
-    <div>The Dappnode platform lets you run nodes and applications interfacing with all different kinds of blockchains like Bitcoin, Ethereum, Gnosis Chain and many more in a easy and user-friendly way. 
+    <div>The Dappnode platform lets you run nodes and applications interfacing with all different kinds of Web3 projects including blockchains like Bitcoin, Ethereum, Gnosis Chain and many more in an easy and user-friendly way. 
     <br/> <br/>
-    Furthermore, you can run validators or staking nodes in networks like Ethereum, Gnosis Chain, Avalanche and more to come.
+    Furthermore, you can earn passive income by running validators securing a blockchain or staking nodes in networks like Ethereum, Gnosis Chain, Avalanche and more to come.  Other Web3 projects you can currently participate in to generate passive income with your Dappnode is to share disk space on the StorJ network, or to share some of your bandwidth for the decentralized VPN provider Mysterium.  Our core developers and community of builders are constantly adding integrations for other Web3 projects, many with economic incentives.
 </div>
   </div>
 </details>
