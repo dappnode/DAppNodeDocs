@@ -1,4 +1,4 @@
-# Translating the DAppNode Documentation
+# Translating the Dappnode Documentation
 ---
 So far we have added two additional languages to the documentation. If you want to help us by translating the documentation, you can do that via the Crowdin platform as shown below.
 
@@ -61,7 +61,7 @@ Translate the sentence on the right panel, under `Enter translation here`, and c
 ### Maintaining the formatting and style of the original text
 
 If the original text has style tags like those in the example:   
-`<strong x-id="1">Get Started</strong> : you can find what you need to run a DAppNode, hardware recommendations or how to get DAppNode hardware.`  
+`<strong x-id="1">Get Started</strong> : you can find what you need to run a Dappnode, hardware recommendations or how to get Dappnode hardware.`  
 
 You will need to keep those tags and make them work in your translation.
 
@@ -71,7 +71,7 @@ You will need to keep those tags and make them work in your translation.
 
 To do so, copy those tags `<strong x-id="1">Get Started</strong>` and change the content inside of them. Rearrange them if needed. In this example, the result would be something like this:  
 
-`<strong x-id="1">Iniciación</strong> : you can find what you need to run a DAppNode, hardware recommendations or how to get DAppNode hardware.`
+`<strong x-id="1">Iniciación</strong> : you can find what you need to run a Dappnode, hardware recommendations or how to get Dappnode hardware.`
 
 ### Approve existing translations or submit a change
 

@@ -1,27 +1,27 @@
 ---
-title: WI-FI
+title: Wi-Fi
 sidebar_position: 1
 ---
 
-# Wifi Hotspot
+If you have bought a Dappnode from our store or you installed Dappnode in a physical device with a Wi-Fi chip inside, you can directly connect to your DAppNodes UI by connecting your client device to the Dappnode's Wi-Fi hotspot.
 
-If you have bought a DAppNode or you have installed DAppNode in a physical device with Wi-fi, you can directly connect to your server's admin UI by connecting your client device to the DAppNode's wifi hotspot.
+_If you did not purchase your hardware from us there is a possibility the built in Wi-Fi card may not be recognized by the OS on install and will need to be activated manually, this varies greatly depending on what hardware is used if you encounter an issue please reach out to support on [Discord!](https://discord.gg/dappnode/)_
 
-When you connect your DAppNode server to your router via Ethernet you will see a network called DAppNodeWIFI, just connect to that Wifi using the default password "dappnode" and you will have direct access to your DappNode server ADMIN UI while connected to that WIFI.
+### Connecting to your Dappnode Wi-Fi
 
-SSID: `DAppNodeWIFI`
+Using your devices Wi-Fi browser, search for the following network name and enter the below-mentioned password to connect:
+- SSID or Name: `DAppNodeWIFI`
+- Password: `dappnode`
 
-Password: `dappnode`
-
-Once you have access to the UI, you should modify these predefined values on the WI-FI section.
-
-> :warning: Please immediately change the name of the WIFI and the password by setting up the new values in the WIFI section you can access by clicking on the Wi-Fi tab on the left menu.
+>### :warning: Please immediately, once connected, change the password of the Wi-Fi hotspot to a password only you know by navigating to the Wi-Fi section found on the left menubar :warning:
 
 <p align="center">
-    <img src="../../../../img/wi-fi-tab.png"/>
+    <img src="../../../../img/wi-fi-menubar.png"/>
 </p>
 
-Once you have access to the wi-fi section, there are 2 tabs:
+### Available Wi-Fi options to configure
 
-- Status: you can enable/disable the wifi.
-- Credentials: you can set up the different values for wifi: SSID (name of the wifi network DAppNode will create) and define a new password.
+Once you have navigated to the Wi-Fi options, there are two main configuration items:
+
+- **Toggling of Wi-Fi capability**: You can disable or enable the Wi-Fi capability here
+- **Wi-Fi credentials**: Allows you to set a new name and password for your DAppNodes Wi-Fi hotspot (highly recommended!)

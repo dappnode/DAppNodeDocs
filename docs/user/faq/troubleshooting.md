@@ -2,99 +2,130 @@
 title: Troubleshooting
 ---
 
-## I can't access the ADMIN UI
+<details>
+  <summary>Help! I can't access my Dappnode!</summary>
+  <div>
+    <div>
+    If it is your first time trying to access your Dappnode, please try one of the following steps:
+    <br /><br />
+<ul>
+    <li>If you are connected to the same network as your Dappnode via wired Ethernet, try to access the UI using the address <a href="http://dappnode.local">http://dappnode.local</a></li>
+    <li>If you've bought a Dappnode or installed it on a machine with integrated Wi-Fi, try to access the Wi-Fi hotspot 'DAppNodeWifi'.</li>
+</ul>
 
-There are several ways to access the dappnode.
-If you are connected to the same network as the dappnode, you can try to access it via local by going to the url http://dappnode.local/
-If this is not possible, you can try to access it via wifi, by default the dappnode software tries to expose wifi called dappnodewifi.
-These two methods are the basics methods to access the first time.
+If all of the above does not work, visit our <a href="https://discord.com/invite/dappnode">Discord</a> and ask for help in the #support channel.
+</div>
+  </div>
+</details>
 
-## Why can't I connect via VPN to my DAppNode?
+<details>
+  <summary>Why can't I connect to my Dappnode via VPN?</summary>
+  <div>
+    <div>
+    If you have set up <b>OpenVPN</b> and you cant access your Dappnode, remember that you might need to set up port forwarding on your router. Sometimes the feature called 'UPnP' enables these ports on your router automatically but this sometimes does not work or is not available on your router.
+    <br /><br />
 
-If you have set up openvpn and you cant access your dappnode, remember you need to set up the port forwarding in your router. To do this, you need to access your router configuration and "open" the next ports: TCP port 8092 and 1194 UDP. Sometimes the UPnP of the router enable these ports automatically but another does not and it's required to do this.
+To do this, you need to access your router configuration and "port-forward" the following ports: TCP Port 8092 and UDP Port 1194. 
+<br />
+In case you have set up <b>WireGuard</b>, you might need to "port-forward" the following port: 51820
+<br /><br />
 
-In case you have set up wireguard vpn, you have to create two profiles:
+Once you have done that <i>AND</i> you still can not access your Dappnode, you might have to create two profiles:
 
-- Local: This profile is used when you are connected from the same network that the dappnode.
-- Remote: This profile is used when you are connected from a different network that the dappnode.
-  When you create the vpn profile there is a link that generate the profile for local or remote.
+<ul>
+    <li>A Local profile: This profile is used when you are connecting from within the same network that the Dappnode resides in.</li>
+    <li> A Remote profile: This profile is used when you are connecting from a different network than the one where your Dappnode resides in.</li>
+</ul>
+  When you create the VPN profiles, there is a link that generates that toggles config creation for either local or remote usage.
+  <br /><br />
+  <p align="center">
+  <img src="../../../img/wireguard_local_profile.png"/>
+  </p>
 
-## Can I recover my admin password?
+You can also check out our guides on how to configure VPN access <a href="/user/guides/access/vpn">here</a>.
+</div>
+  </div>
+</details>
 
-You can't recover your admin password, but you can access to your dappnode if you wrote down the recovery token, and then change the admin password.
+ [//]: # "We have to place the recovery tag here for it to show the bottom details tag" 
+<details id="recovery"> 
+  <summary>Can I recover a lost admin password?</summary>
+  <div>
+    <div>
+    You can not outright recover your admin password but you can regain access to your Dappnode if you wrote down the recovery token provided during the initial setup. 
+    <br /><br />
+    More about the initial setup can be found <a href="/user/quick-start/first-steps">here</a>
+    <br /><br />
+</div>
+  </div>
+</details>
 
-The first time you access your DAppnode,it appears the next image:
-
-<p align="center">
-    <img src="../../../img/sign_in_image.png"/>
-</p>
-
-Once you fill the fields and press the register button, DAppNode provides you with a recovery code. If you forget te DAppNode's Password you will be able to access using this token.
-
-<p align="center">
-    <img src="../../../img/recovery_token.png"/>
-</p>
-
-You should save your token in a secure place like a password manager, paper, etc. In this case, we would save this:
-
-```
-4LMB9w3l50Yljwr6bIgQ
-```
-
-## Can I recover my recovery token?
-
-Firstly, we have to go to the login page of our DAppNode:
-
-<p align="center">
+<details>
+  <summary>How do I recover a lost admin password using my recovery token?</summary>
+  <div>
+    <div>
+    Visit the login page of your Dappnode:
+    <br /><br />
+    <p align="center">
     <img src="../../../img/login.png"/>
-</p>
+    </p>
 
-We should select the option "Forgot password?". It will appear a field where you can reset your password using the recovery token. In this example, we would use the token <code>4LMB9w3l50Yljwr6bIgQ</code>. You have to use your recovery token.
-
+You will then see the option 'Forgot password?' underneath the 'Login' button. Once you click that, a new input field will appear where you can input your recovery token. We will use <code>4LMB9w3l50Yljwr6bIgQ</code> in this example.
 <p align="center">
     <img src="../../../img/reset_password_with_recovery_token.png"/>
 </p>
-
-After confirming the recovery token, you can define an admin user in DAppNode and his password in the same way you did the first time you connect.
-
+If you have entered the correct recovery token, you'll then be prompted to enter a new admin password.
+<br /><br />
 <p align="center">
     <img src="../../../img/sign_in_image.png"/>
 </p>
-
-Remember using a password with the next properties:
-
-- Minimum 8 characters
-- At least one Cap letter
-- At least one number
-
-Once you filled the field and press the register button, dappnode will provide a recovery token.
-
+Once you've filled out those fields and pressed 'Register', your Dappnode will once again provide you a recovery token. <b>Do not forget to write down and save this one!</b>
 <p align="center">
     <img src="../../../img/recovery_token.png"/>
 </p>
 
-We write down and save that token and we accept we have copied our recovery token. We log in with our new credentials and we have access to our DAppNode.
+</div>
+  </div>
+</details>
 
-## How to recover your recovery token and recover admin access
-
-In case we have lost both the password and the recovery token, we need to access our DAppNode: SSH into the DAppNode host or plug a keyboard.
-
-Once we are in our DAppNodeMachine, we type the next command which shows us the recovery token:
+<details>
+  <summary>What do I do if I lost the password AND my token?!</summary>
+  <div>
+    <div>
+In the case where you have lost both the password and the recovery token, you will need either SSH or local access to the Dappnode machine.
+<br /><br />
+Once you are connected to your Dappnode, type the following command which prints the recovery token to the terminal:
 
 ```
 cat /usr/src/dappnode/DNCORE/admin-recovery-token.txt ; echo
 ```
 
-The command does the next:
+The command does the following:
 
-- The admin-recover-token.txt is where the token is saved.
-- The <code>; echo</code> is used to make easier the read of the token.
+- Reads the admin-recover-token.txt file where the token is saved.
+- The <code>; echo</code> is used to make it easier to read and copy the token.
 
-After inserting the command we obtain the recovery token we have to use to reset our password.
-On the above section, How to access to my DAppNode using the recovery token you can reset your password with this recovery token.
+After inserting the command above, you can obtain the recovery token and use that one to recover your admin access.
 
-## I need to restore the system without losing any data
+ [//]: # "Recovery tag anchors to details element above, even though we set it to the one above it." 
 
-If you are experiencing any problem or just want to make sure you are running the latest DAppNode versions, execute this command in the DAppNode terminal. This will update the core packages to the latest versions without erasing any data from your volumes.
-You need to access to the terminal, you can do it by plugging a keyboard and a screen, once you have logged in type the next command:
-`sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash`
+In the section above ('<b><a href='#recovery'>"How do I recover a lost admin password using my recovery token?</a></b>') you can check out how to use your token to regain access.
+
+</div>
+  </div>
+</details>
+
+<details>
+  <summary>How do I force update my Dappnode without losing data?</summary>
+  <div>
+    <div>
+    If you are experiencing an issue or just want to make sure you are running the latest Dappnode version, execute this command below in the Dappnode terminal. 
+    <br /><br />
+    This will update the core packages to the latest versions without erasing any data from your Dappnode.
+    <br /><br />
+    ⚠️ This will clear any EXTRA_OPTS fields, but no chain data, keys, or other configurations will be affected ⚠️
+    <br/><br />
+<code> sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash` </code>
+</div>
+  </div>
+</details>

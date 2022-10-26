@@ -1,4 +1,5 @@
 ---
+title: SSH or Terminal Access
 sidebar_position: 4
 ---
 
@@ -14,6 +15,6 @@ P: `dappnode.s0`
 
 ## Phisically by plugging a monitor and keyboard (Advanced)
 
-Your DAppNode will ask you for the password to log in. The default password is:
+Your Dappnode will ask you for the password to log in. The default password is:
 
 P: `dappnode.s0`

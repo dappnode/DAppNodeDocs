@@ -67,6 +67,6 @@ module.exports = {
     },
   ],
   dao: [
-    'dao', 'dao/node-basics', 'dao/liquidity-mining',
+    'dao', 'dao/node-basics', 'dao/liquidity-mining','dao/faq',
   ],
 };
