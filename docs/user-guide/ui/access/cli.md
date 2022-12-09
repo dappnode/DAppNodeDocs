@@ -23,4 +23,6 @@ U: `dappnode`
 
 P: `dappnode.s0`
 
-*Note if you have changed the root password in an .ISO install, you can log right into the root account when directly attached to the console, but not over SSH. you would need to elevate privledges by logging into the host account and executing `su -` followed by the root password to get root access remotely over SSH*
+*Note if you have changed the root password in an .ISO install, you can log right into the root account when directly attached to the console, but not over SSH. you would need to elevate privledges by logging into the host account and executing `su -` (or `sudo su -`, depending on the ISO version) followed by the root password to get root access remotely over SSH*
+
+*Also note that if you have changed the host password from the web UI (http://my.dappnode), this will be the password for the user dappnode of the host machine*
