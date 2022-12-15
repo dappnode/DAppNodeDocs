@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkd_app_node_docs=self.webpackChunkd_app_node_docs||[]).push([[2535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/es/blog/welcome"},{"title":"Hello","permalink":"/es/blog/hello-world"},{"title":"Hola","permalink":"/es/blog/hola"}]}')}}]);
