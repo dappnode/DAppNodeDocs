@@ -88,21 +88,6 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} DAppNode, Inc. Built with Docusaurus.`,
     },
   },
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'es', 'fr'],
-    localeConfigs:{
-      en: {
-        label: 'English',
-      },
-      fr: {
-        label: 'French',
-      },
-      es: {
-        label: 'Spanish',
-      },
-    },
-  },
   presets: [
     [
       '@docusaurus/preset-classic',

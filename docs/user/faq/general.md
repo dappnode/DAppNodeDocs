@@ -1,6 +1,7 @@
 ---
 title: General Questions
 ---
+
 <details>
   <summary>What is the purpose of Dappnode?</summary>
   <div>
@@ -36,7 +37,8 @@ title: General Questions
     <li>8GB of RAM (this will quickly become a limiting factor, it is recommended to go higher if possible)</li>
   </ul>
 
-  If you intend to run a <b>Ethereum validator</b>, we recommend the following hardware specs:
+If you intend to run a <b>Ethereum validator</b>, we recommend the following hardware specs:
+
   <ul>
     <li>A Wired Ethernet Connection</li>
     <li>An NVMe drive (we recommend at least 2TB but more storage space will not hurt either)</li>
@@ -56,9 +58,10 @@ title: General Questions
   Once you're hosting your own nodes, you are not affected by outages at big providers like Infura (the default gateway in Metamask for many networks) anymore. This allows you to submit transactions without having to worry about a third-party.
   <br /><br />
 
-  It is also beneficial to your own transactional privacy as major providers have been caught censoring transactions coming from specific countries ([Link](https://metamask.zendesk.com/hc/en-us/articles/360059386712-Why-MetaMask-and-Infura-cannot-serve-certain-areas), [Link](https://twitter.com/lawmaster/status/1499423160957034496)).
+It is also beneficial to your own transactional privacy as major providers have been caught censoring transactions coming from specific countries ([Link](https://metamask.zendesk.com/hc/en-us/articles/360059386712-Why-MetaMask-and-Infura-cannot-serve-certain-areas), [Link](https://twitter.com/lawmaster/status/1499423160957034496)).
 
-  Furthermore, running blockchain nodes has never been easy as with the Dappnode platform. You install a package from our DAppStore and you're good to go. Automatic updates included.
+Furthermore, running blockchain nodes has never been easy as with the Dappnode platform. You install a package from our DAppStore and you're good to go. Automatic updates included.
+
 </div>
   </div>
 </details>
@@ -71,7 +74,7 @@ title: General Questions
     <br /><br />
     The prebuilt Dappnode machine is built for people who do not want to worry about buying hardware themselves, looking up hardware requirements or installing the Dappnode software on compatible machines. The Dappnode software was meant to be used on those prebuilt machines but you can run it on any hardware regardless. 
     <br /><br />
-If you want to install the Dappnode platform on an old computer or on custom hardware please check out the <a href="/user/quick-start/core">Guides here</a>.
+If you want to install the Dappnode platform on an old computer or on custom hardware please check out the <a href="/user/quick-start/core/installation">Guides here</a>.
   </div>
   <br/>
   </div>
