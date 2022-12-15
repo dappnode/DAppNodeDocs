@@ -104,7 +104,7 @@ Here you can modify the password that is required to access to the UI.
 ## Peers
 
 <!--
-This section is about IPFS peers. You can find more detail information about this on [add ipfs peers](recommended-set-ups/add-ipfs-peers.md), there you can know more about what is IPFS, why is important to add peers, etc. -->
+This section is about IPFS peers -->
 
 <p align="center">
     <img src="../../../../img/system_view_peers.png"/>
