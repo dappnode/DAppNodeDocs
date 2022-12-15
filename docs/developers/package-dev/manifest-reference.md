@@ -749,6 +749,8 @@ All items must be of the type: `object` with the following properties:
 | `description` | string | Optional     |
 | `serviceName` | string | Optional     |
 | `port`        | number | **Required** |
+| `fromSubdomain`| string | Optional   |
+
 
 #### name
 

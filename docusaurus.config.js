@@ -6,7 +6,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.png',
   organizationName: 'dappnode', // Usually your GitHub org/user name.
   projectName: 'DAppNode', // Usually your repo name.
   themeConfig: {
@@ -14,7 +14,7 @@ module.exports = {
       title: 'DAppNode',
       logo: {
         alt: 'DAppNode Logo',
-        src: 'img/dappnode-logo.png',
+        src: 'img/logo.png',
       },
       items: [
         {to: '/', label: 'User Guide', position: 'left'},
