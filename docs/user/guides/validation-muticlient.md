@@ -1,5 +1,7 @@
 # Dappnode Multiclient for Validators (ETH2, GNO)
+
 ---
+
 Dappnode is a key piece of infrastructure decentralization. Our mission is to make running infrastructure easy for everyone, so we are now introducing multiple clients to validate on the Ethereum and Gnosis Consensus Layers (including testnets).
 
 ---
@@ -24,215 +26,158 @@ Dappnode is a key piece of infrastructure decentralization. Our mission is to ma
 
 ---
 
-## Detailed Multiclient Guide (using ETH Mainnet as an example)
+## Detailed Multiclient Guide (using GNOSIS as an example)
 
-## 1. Installing a client from scratch 
+## Step 1. Install the required packages for validating
 
-We suppose that you have generated your keystore files and completed a deposit already. <br /> <br />
-Access your Dappnode via WiFi or VPN and go to the DAppStore and select your Consensus Layer Client of choice.
+Once you have access to the dappnode UI, go to the stakers-ui page , you can access by clicking on http://my.dappnode/#/stakers/gnosis or click in Stakers section you can find in the left menu, then click on the Gnosis tab.
 
-You can select any of the following for ETH Mainnet (might be different for other networks):
+![Select Stakers in the left side menu](/img/user/guides/dappnode-left-menu.png#center)
 
-- [Teku](http://my.dappnode/#/installer/teku.dnp.dappnode.eth)
-- [Lighthouse](http://my.dappnode/#/installer/lighthouse.dnp.dappnode.eth)
-- [Prysm](http://my.dappnode/#/installer/prysm.dnp.dappnode.eth) 
-- [Nimbus](http://my.dappnode/#/installer/nimbus.dnp.dappnode.eth)
+Make sure to select the Gnosis chain tab,
 
-During the installation of your chosen CL client, you'll be asked to select a client in the web3signer package. Choose the client you're about to install there. This allows the web3signer package to talk to your chosen client.
-### 1.1 Teku
+![Select the tab Gnosis Chain](/img/user/guides/dappnode-stakers-ui.png#center)
 
-Install Teku using [this link](http://my.dappnode/#/installer/teku.dnp.dappnode.eth) or search for it in the DAppStore.
+The next step is to select the combination of client you want to use in your dappnode. For this process you need to select:
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_test_teku_1.png"/>
-</p>
+- 1. Select the execution client: Nethermind-xdai. Click in the package
+- 2. Select the consensus client, here you can install one of the following options: Teku-gnosis, Lighthouse-gnosis and Prysm-gnosis
+- 3. Install the web3signer. This is required becausethis is the package that will contain the keystores.
 
-Fill in the following details:
-- **Graffiti**: A word or underscore/dash-delimited sentence that gets appended to blocks and will be visible on chain
-- **Execution Client Endpoint**: Engine API of your Execution Layer Client (usually ends with port :8551)
-- **Fee Recipient Address**: An address you control where fees for proposed blocks will be sent to
-- **Optional: Checkpoint sync**: You can use this to use a Infura checkpoint sync endpoint or point it to the beacon API of an already installed CL client. For more on that, check out [this](#checkpoint-sync-option)
+![Select the execution and consensus clients](/img/user/guides/dappnode-stakers-ui-2.png#center)
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_config_page.png"/>
-</p>
+1.  Select the Execution client. For now, or in the moment this guide was created, nethermind is the only execution client that supports gnosis chain.
 
-Click on the Submit/Update button and wait until the package gets installed, configured and booted up.
+    ![Execution client ](/img/user/guides/dappnode-execution-client.png#center)
 
-### 1.2 Lighthouse
+2.  Select the consensus client. You will see the next fields when you click in the package chard.
 
-Install Lighthouse using [this link](http://my.dappnode/#/installer/lighthouse.dnp.dappnode.eth) or search for it in the DAppStore.
+    ![Select a consensus client](/img/user/guides/dappnode-consensus-client.png#center)
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_test_light_1.png"/>
-</p>
+**Fee Recipient Address**
 
-Fill in the following details:
-- **Graffiti**: A word or underscore/dash-delimited sentence that gets appended to blocks and will be visible on chain
-- **Execution Client Endpoint**: Engine API of your Execution Layer Client (usually ends with port :8551)
-- **Fee Recipient Address**: An address you control where fees for proposed blocks will be sent to
-- **Optional: Checkpoint sync**: You can use this to use a Infura checkpoint sync endpoint or point it to the beacon API of an already installed CL client. For more on that, check out [this](#checkpoint-sync-option)
+The fee recipient is the regular Gnosis `0x` address that will receive priority fees of the proposed block. You will only receive fees at this address for blocks you propose, not for attestations. Any Gnosis EOA or Safe address
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_config_page.png"/>
-</p>
+**Graffiti**
 
-Click on the Submit/Update button and wait until the package gets installed, configured and booted up.
+Choose a string that will be appended to your proposed blocks. You will be able to change later so it can be left as is for now.
 
-### 1.3 Prysm
+**Checkpoint for fast sync**
 
-Install Prysm using [this link](http://my.dappnode/#/installer/prysm.dnp.dappnode.eth) or search for it in the DAppStore.
+To get your beacon node up and running in only a few minutes, you can start it from a recent finalized checkpoint state rather than syncing from genesis. This is substantially faster and consumes fewer resources than syncing from genesis while still providing all the same features.
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_test_prysm_1.png"/>
-</p>
+Be sure you are using a trusted node for the fast sync. Get your checkpoint sync(Dappnode fills this field with the checkpoint sync they provide by default) from a running Gnosis Beacon Chain node or use the official one.
 
-Fill in the following details:
-- **Graffiti**: A word or underscore/dash-delimited sentence that gets appended to blocks and will be visible on chain
-- **Execution Client Endpoint**: Engine API of your Execution Layer Client (usually ends with port :8551)
-- **Fee Recipient Address**: An address you control where fees for proposed blocks will be sent to
-- **Optional: Checkpoint sync**: You can use this to use a Infura checkpoint sync endpoint or point it to the beacon API of an already installed CL client. For more on that, check out [this](#checkpoint-sync-option)
+https://checkpoint.gnosischain.com
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_config_page.png"/>
-</p>
+3. Select the web3signer.
 
-Click on the Submit/Update button and wait until the package gets installed, configured and booted up.
-### 1.4 Nimbus
+![Select web3signer](/img/user/guides/dappnode-web3signer-stakers.png#center)
 
-Install Nimbus using [this link](http://my.dappnode/#/installer/nimbus.dnp.dappnode.eth) or search for it in the DAppStore.
+Then click in the below button that says "Apply changes"
+![Apply the changes](/img/user/guides/dappnode-stakers-ui-apply.png#center)
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_nimbus_install.png"/>
-</p>
+Be patience, the installation process can take several minutes. You can check all have been installed in the [dashboard page](http://my.dappnode/#/dashboard).
 
-Fill in the following details:
-- **Graffiti**: A word or underscore/dash-delimited sentence that gets appended to blocks and will be visible on chain
-- **Execution Client Endpoint**: Engine API of your Execution Layer Client (usually ends with port :8551)
-- **Fee Recipient Address**: An address you control where fees for proposed blocks will be sent to
-- **Optional: Checkpoint sync**: You can use this to use a Infura checkpoint sync endpoint or point it to the beacon API of an already installed CL client. For more on that, check out [this](#checkpoint-sync-option)
+### Step 3: Key Generation
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_config_page.png"/>
-</p>
+<details>
+  <summary><strong>Docker Command Line Instructions</strong> (only needed if you have trouble with Wagyu)</summary>
+  <div>
+    <div>
+      <ol>
+        <li>Pull the docker image for the data generator<br/>
+          <pre>docker pull ghcr.io/gnosischain/validator-data-generator:latest</pre>
+        </li>
+        <li>If this is your first time running the process and there is no an existing mnemonic to generate keystores and deposit data, replace the variables below with your info then run the command.
+        <pre>docker run -it --rm -v /path/to/validator_keys:/app/validator_keys ghcr.io/gnosischain/validator-data-generator:latest new-mnemonic --num_validators=NUM --mnemonic_language=english --chain=gnosis --folder=/app/validator_keys --eth1_withdrawal_address=WITHDRAWAL_ADDRESS</pre>
+        </li>
+        <li>Choose a secure password and confirm. You will be shown a mnemonic seed phrase. Write down and store your keystore password and mnemonic safely offline.<br/>
+          <img src="/img/user/guide/dappnode-step3.png"/>
+          Following execution, the path you defined for <code>/path/to/validator_keys</code> will contain the keystores and <code>deposit_data*.json</code> file.
+        </li>
+      </ol>
+    </div>
+    <details>
+      <summary>Drop down for variable descriptions</summary>
+        <div>
+          <ul>
+            <li><code>NUM</code> The number of signing keys (validators) to generate.</li>
+            <li><code>START_NUM</code> Index for the first validator key. If this is the first time generating keys with this mnemonic, use 0. If keys were previously generated with this mnemonic, use the subsequent index number (e.g., if 4 keys have been generated before (keys #0, #1, #2, #3, then enter 4 here).</li>
+            <li><code>WITHDRAWAL_ADDRESS</code> Use this parameter to provide a regular Gnosis Chain <code>0x</code> address for mGNO withdrawal. This parameter can also be omitted to generate withdrawal credentials with the mnemonic-derived withdrawal public key in the <a href="https://eips.ethereum.org/EIPS/eip-2334#eth2-specific-parameters">EIP-2334 format</a> (ETH2 address format). <strong>Withdrawals will not be available until after the Shanghai upgrade.</strong></li>
+            <li><code>/path/to/</code> should be replaced with a valid and existing path where you want to create the validator_keys folder. Or, to create the validator_keys folder in your current working directory, use <code>$(PWD)/validator_keys:/app/validator_keys</code></li>
+            <li>More details about command line arguments can be found <a href="https://github.com/gnosischain/validator-data-generator">here</a></li>
+          </ul>
+      </div>
+    </details>
+  </div>
+</details>
 
-Click on the Submit/Update button and wait until the package gets installed, configured and booted up.
+:::caution KEEP YOUR KEYSTORES SAFE
+We highly recommend generating keystores on a safe, completely offline device. To do so, you will need internet to access the latest release of Gnosis Chain Port of the Wagyu Key-Gen from [GitHub](https://github.com/alexpeterson91/wagyu-key-gen/releases) (step 1), then disconnect internet or better yet copy the program to a USB drive to proceed with completely offline key generation (step 2), then finally save your deposit_data.json file (step 3) to a usb key or other transfer method that does not require online connection.
 
-## 2. Web3Signer Setup
+**Securely backup your mnemonic, keystores, and password, and keep them in a safe place.**
 
-### Question: Why is this package needed?
+<GenerateValidatorKeysWagyuPartial />
 
-The Web3signer is a remote signer that holds validation keys and communicates with different clients through a standardized API. It comes bundled with a UI that makes it easy to import keystores and slashing protection data.
-The Web3signer package and its combined use with the CL client packages is the solution to making it easier and safer for Dappnode users to set up a validator and switch between multiple clients seamlessly.
+### Step 4: Upload Keystores to Web3Signer
 
-### 2.1 Import the keystore files
+Now that you’ve generated your deposit data and keystores, go ahead and upload your keystores to Web3Signer Gnosis.
 
-After installing your chosen CL client, a new package will appear in your `Packages` tab. <br /><br />
-Open the Web3Signer package page.
+Return to your DAppNode’s Admin UI and navigate to the [info page of the Web3Signer Gnosis package](http://my.dappnode/#/packages/web3signer-gnosis.dnp.dappnode.eth/info).
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_test_web3signer_1.png"/>
-</p>
+![DAppNode Step 4](/img/user/guides/dappnode-step4.png#center)
 
-Click on `UI`, listed below the version of the package. You will then see something like this appear:
+Open the UI by clicking the [`🏠Ui`](http://ui.web3signer-gnosis.dappnode/) link, then click the `Import Keystores` button on the lower part of the Web3Signer UI.
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_test_web3signer_2.png"/>
-</p>
+![DAppNode Step 4b](/img/user/guides/dappnode-step4b.png#center)
 
-Click on the <font color="royalblue">blue</font> `Import Keystores` button:
+Select the keystore file(s) you generated the the password you chose during the last step.
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_test_web3signer_3.png"/>
-</p>
+![DAppNode Step 4c](/img/user/guides/dappnode-step4c.png#center)
 
+You will be able to see all the keystores you’ve uploaded.
 
-You can import your keystore using the first highlighted box. You can either click this box or drag-and-drop your validator keystore over this box.
+![DAppNode Step 4d](/img/user/guides/dappnode-step4d.png#center)
 
-When you have selected your keystore, you will be asked for the keystores password you used when you created the during its generation process.
+You are now ready to fund these validators and start validating.
 
-If it is the first time using this validator or this validator hasn't been attesting for the past 2 to 3 epochs, it is not needed to import the slashing protection database via the second highlighted box. 
+### Step 5: Fund Your Validators
 
-Otherwise, before importing your keystore, make sure your validator has not attested in the past 2 to 3 epochs or import the slashing database you pulled from your old validator. 
+:::tip
+In case you need some xDai for transaction fees you can get some from the [official xDai faucet for Gnosis](https://stakely.io/en/faucet/gnosis-chain-xdai).
 
->## :warning: If you do not follow the paragraph above, you might get slashed! :warning:
+:::
 
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_test_web3signer_4.png"/>
-</p>
+1. Navigate to: [https://deposit.gnosischain.com/](https://deposit.gnosischain.com/)
+2. Connect your wallet.
+3. Upload the `deposit_data*.json` you generated with the key generator tool in Step 3.
+4. Your deposit file will be validated and list the number of validator deposits you are making and the required GNO to deposit. Click `Deposit` to continue.
+5. Check that you understand the risks and ensure you are interacting with the correct contract before proceeding.
+6. Click `Ok` and confirm the transaction in your wallet to complete the deposit.
 
-## 3. Metrics and Checks
+7. Our proxy smart contract will deposit the 4 GNO to your validators! YOU control the private keys, YOU control the withdrawal key... these validators are now **yours**. Take good care of them!
 
-You should install the DMS package to check the performance of your validator(s) and the resources they're consuming and the beaconcha.in web page to check how well your validator is attesting.
+:::tip DAppNode <\> Gnosis Chain Incentive Program
+If you are claiming the 4 Gnosis validators from the incentive program, select the DAppNode tab instead. Be sure to use the same wallet that you provided when placing your DAppNode order.
 
-### 3.1 Validator metrics
+If you encounter an issue claiming your incentive program validators, such as an error about your address not being whitelisted or that it has expired, please visit the [DAppNode Discord Server](https://discord.gg/dappnode) and open a support ticket in [`#1-sales-support-ticket`](https://discord.gg/mGtA9emHw3).
 
-To install the DMS package, go to the DAppStore or use [this link](http://my.dappnode/#/installer/dms.dnp.dappnode.eth).
+:::
 
-<p align="center">
-    <img width="1000"src="../../../img/dms_package_1.png"/>
-</p>
+This guide was done with the inestimable help of DAppNode Team Member `@voss`, with some additions from `@Lanski`.
 
-When the package is installed, go to Packages > DMS > click on the UI link (or [this link](http://dms.dappnode/dashboards/)) and look for the dashboard that belongs to your chosen client.
+## Installing DAppNode on Custom Hardware {#custom-hardware}
 
-<p align="center">
-    <img width="1000"src="../../../img/dms_package_2.png"/>
-</p>
+A community written guide by @GLCstaked which goes into detail the entire setup process for a validator using linux with docker. This is for beginners new to linux who wish to get familiar with every step of the process and configuration. Can be found [here](https://mirror.xyz/0xf3bF9DDbA413825E5DdF92D15b09C2AbD8d190dd/wkE51RqApadbSW1GQartYJ5Jz71mnz2y60TNu3XNtNM)
 
-## Migrating from one client to another
-
-If you have installed and set up a validator and you want to change the client you are using the recommended process would be the following one:
-
-- **Install** the client you want, wait until this client is synced to the head of the chain (using checkpoint sync or normal sync)
-- **Set up** the web3signer package to work with this new client
-- **Verify** your setup is working and delete the previous client if you wish to do so
-
-### Example of migrating clients
-
-In this example we will migrate from Prysm to Teku. First of all, we should go to the DAppStore and install the Teku package.
-
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_test_teku_1.png"/>
-</p>
-
-Fill in the following details:
-- **Graffiti**: A word or underscore/dash-delimited sentence that gets appended to blocks and will be visible on chain
-- **Execution Client Endpoint**: Engine API of your Execution Layer Client (usually ends with port :8551)
-- **Fee Recipient Address**: An address you control where fees for proposed blocks will be sent to
-- **Optional: Checkpoint sync**: You can use this to use a Infura checkpoint sync endpoint or point it to the beacon API of an already installed CL client. For more on that, check out [this](#checkpoint-sync-option)
-
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_config_page.png"/>
-</p>
-
-Wait until this package is synced to the head of the chain. <br /> 
-Once that has happened, it is time to go to the web3signer package config section and change the following parameter to the new client you want to use.
-
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_test_change_1.png"/>
-</p>
-
-Change to the new client.
-
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_test_change_2.png"/>
-</p>
-
-## Checkpoint sync option
-
-Infura provides everyone with an account a free ETH CL Beacon API. For that, you'll need to create an account [here](https://infura.io/dashboard). <br /> <br />
-Once you've done this and logged in, go to your [Infura Dashboard](https://infura.io/dashboard) and click on create new project and select `ETH2`.
-
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_test_Infura_1.png"/>
-</p>
-
-Once the project has been created, click on `Manage Key` at the top right of the page.
-
-Select the Ethereum Mainnet endpoint and copy the URL that starts with `https://`:
-
-<p align="center">
-    <img width="1000"src="../../../img/multiclient_infura_checkpoint_endpoint.png"/>
-</p>
-
-Paste this URL into the checkpoint sync option of your chosen CL client.
+1. Start with a fresh installation of Debian or Ubuntu.
+2. Log in with an account with `sudo` privileges.
+3. Install the prerequisites: [Docker](https://docs.docker.com/install/), [Docker Compose](https://docs.docker.com/compose/install/), and [xz](https://tukaani.org/xz/). The prerequisites can be installed manually or by using this command:
+   `curl https://prerequisites.dappnode.io | sudo sh`
+4. Run the installer script to install DAppNode:
+   `curl https://installer.dappnode.io | sudo sh`
+5. Once the installation has finished, reboot your machine:
+   `sudo shutdown -r now`
+6. DAppNode will try to automatically prepare for the first access. DAppNode's official documentation explains how to connect using the [four supported connection methods](https://docs.dappnode.io/get-started/installation/custom-hardware/installation/script#post-installation).
+7. Once you have successfully connected to DAppNode, follow the [Using DAppNode](#install-on-dappnode) steps above.
