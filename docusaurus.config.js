@@ -17,13 +17,14 @@ module.exports = {
         src: 'img/logo.png',
       },
       items: [
-        {to: '/', label: 'Docs', position: 'left'},
+        {to: '/', label: 'User Guide', position: 'left'},
+        {to: '/intro', label: 'Builder Docs', position: 'left'},
         {to: '/dao', label: 'DAO', position: 'left'},
         {
           type: 'localeDropdown',
           dropdownItemsAfter: [
             {
-              to: '/help-to-translate',
+              to: '/help-us-translate',
               label: 'Help Us Translate',
             },
           ],
@@ -61,7 +62,7 @@ module.exports = {
             },
             {
               label: 'Discord',
-              href: 'https://discord.com/invite/c28an8dA5k',
+              href: 'https://discord.com/invite/dappnode',
             },
             {
               label: 'Twitter',
@@ -73,10 +74,6 @@ module.exports = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/dappnode',

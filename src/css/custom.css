@@ -30,3 +30,8 @@
   margin-top: 10%;
   margin-bottom: 10%;
 }
+
+img[src*='#center'] { 
+  display: block;
+  margin: auto;
+}
