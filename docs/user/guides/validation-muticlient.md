@@ -79,7 +79,7 @@ Then click in the below button that says "Apply changes"
 
 Be patience, the installation process can take several minutes. You can check all have been installed in the [dashboard page](http://my.dappnode/#/dashboard).
 
-### Step 3: Key Generation
+## Step 2: Key Generation
 
 <details>
   <summary><strong>Docker Command Line Instructions</strong> (only needed if you have trouble with Wagyu)</summary>
@@ -118,9 +118,9 @@ We highly recommend generating keystores on a safe, completely offline device. T
 
 **Securely backup your mnemonic, keystores, and password, and keep them in a safe place.**
 
-<GenerateValidatorKeysWagyuPartial />
+:::
 
-### Step 4: Upload Keystores to Web3Signer
+## Step 3: Upload Keystores to Web3Signer
 
 Now that you’ve generated your deposit data and keystores, go ahead and upload your keystores to Web3Signer Gnosis.
 
@@ -142,7 +142,7 @@ You will be able to see all the keystores you’ve uploaded.
 
 You are now ready to fund these validators and start validating.
 
-### Step 5: Fund Your Validators
+## Step 4: Fund Your Validators
 
 :::tip
 In case you need some xDai for transaction fees you can get some from the [official xDai faucet for Gnosis](https://stakely.io/en/faucet/gnosis-chain-xdai).
@@ -166,18 +166,3 @@ If you encounter an issue claiming your incentive program validators, such as an
 :::
 
 This guide was done with the inestimable help of DAppNode Team Member `@voss`, with some additions from `@Lanski`.
-
-## Installing DAppNode on Custom Hardware {#custom-hardware}
-
-A community written guide by @GLCstaked which goes into detail the entire setup process for a validator using linux with docker. This is for beginners new to linux who wish to get familiar with every step of the process and configuration. Can be found [here](https://mirror.xyz/0xf3bF9DDbA413825E5DdF92D15b09C2AbD8d190dd/wkE51RqApadbSW1GQartYJ5Jz71mnz2y60TNu3XNtNM)
-
-1. Start with a fresh installation of Debian or Ubuntu.
-2. Log in with an account with `sudo` privileges.
-3. Install the prerequisites: [Docker](https://docs.docker.com/install/), [Docker Compose](https://docs.docker.com/compose/install/), and [xz](https://tukaani.org/xz/). The prerequisites can be installed manually or by using this command:
-   `curl https://prerequisites.dappnode.io | sudo sh`
-4. Run the installer script to install DAppNode:
-   `curl https://installer.dappnode.io | sudo sh`
-5. Once the installation has finished, reboot your machine:
-   `sudo shutdown -r now`
-6. DAppNode will try to automatically prepare for the first access. DAppNode's official documentation explains how to connect using the [four supported connection methods](https://docs.dappnode.io/get-started/installation/custom-hardware/installation/script#post-installation).
-7. Once you have successfully connected to DAppNode, follow the [Using DAppNode](#install-on-dappnode) steps above.
