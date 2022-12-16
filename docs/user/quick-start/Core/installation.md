@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Installation
 
-Now you know what is DAppNode and want to know how you can engage with DAppNode. Firstly, you need to run DAppNode in a dedicated machine, that means you should use a machine only for dappnode.
+Now you know what is DAppNode and want to know how you can engage with DAppNode. Firstly, it is highly recommended to run DAppNode in a dedicated machine, that means you should use a machine only for dappnode. DAppNode packages usually need to be capable of using specific ports, so running external apps might result in port conflicts. Moreover, some packages require considerable usage of memory, disk or CPU, so having other apps running in the same machine can cause malfunctioning.
 
 DAppNode users have to understand that every package is unique and has its own requirements. Some packages need more disk space or use more the RAM than others.
 
