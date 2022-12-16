@@ -9,12 +9,12 @@ sidebar_position: 4
 
 Default credentials for SSH access are:
 
-U: `dappnode`
+user: `dappnode` / password: `dappnode.s0`
 
-P: `dappnode.s0`
+## Physically by plugging a monitor and keyboard
 
-## Phisically by plugging a monitor and keyboard (Advanced)
+The following credentials are available for accessing the DAppNode physically:
 
-Your Dappnode will ask you for the password to log in. The default password is:
+user: `dappnode` / password: `dappnode.s0`
 
-P: `dappnode.s0`
+user: `root` / password: `dappnode.s0`
