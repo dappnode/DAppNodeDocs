@@ -52,9 +52,8 @@ This view is the same that you saw in that step. -->
 Here you can choose several options:
 
 - **Use a Remote client of Ethereum**: your dappnode machine will use the "DAppNode's ethereum node.
-- **Use a Light client of Ethereum**: your dappnode machine will use a light client of ethereum for communicating with Ethereum.
 - **Use a Full Node**: your dappnode machine will have an Ethereum node and will be full independent from anothers.
-- **OPTION Use remote during syncing or errors**: it's and option, let you to use a remote node in case your ethereum node is syncyng or it is affected by an error.
+- **OPTION Use remote during syncing or errors**: This option lets you to use a remote node in case your ethereum node is syncyng or it is affected by an error.
 
 <!-- As we said before if you want to know the pros and cons of this decisions, we recommend you to read [select a type of client](./initial-configurations/select-a-client) section. -->
 
@@ -72,22 +71,22 @@ You can find a guide related to this feature in [this guide on the forum](https:
 IPFS is part of the DAppNode technology stack, but it sometimes causes problems with certain routers or consumes too much of capped data plans. If you experience any of the following issues, you might want to consider switching to IPFS remote:
 
 - Home networking issues
-- The DAppStore does not render propertly
-- Issues downlading new packages or updates
+- The DAppStore does not render properly
+- Issues downloading new packages or updates
 
 #### IPFS gateways and security
 
 Connecting to IPFS remote gateways could enable security risks like the gateway serving malicious content to the user. We mitigate this by verifying the content downladed with the [CID technology](https://docs.ipfs.io/concepts/content-addressing/).
 
-If the DAppNode IPFS gateway is not available (we make no uptime guarantees and we offer it on a best-effort basis) the user can set another IPFS gateway in the input field, check out all the [IPFS gateways available](https://ipfs.github.io/public-gateway-checker/). DAppNode recommends using them as the last solution.
+If the DAppNode IPFS gateway is not available (we make no uptime guarantees and we offer it on a best-effort basis) the user can set another IPFS gateway in the input field, check out all the [IPFS gateways available](https://ipfs.github.io/public-gateway-checker/). DAppNode recommends using them as a last resort.
 
 ## Network
 
 In the network section we can do some technical stuff:
 
-- IP: usually, the IP we have in our houses are dynamics, so we have not a IP, because of this situation, DAppNode uses DynDNS, DynDNS associates an IP to a direction like 0773a23d34aed273.dyndns.dappnode.io, for example. It's necessary to use a direction to run some services, DynDNS is the solution to this problem. If your IP is for any reason, and you don't want to use DynDNS, you can set up with this field.
+- IP: usually, the IP's assigned by residential ISPs are dynamic IPs. As a result most users do not have a static IP that remains unchaged.  This means that it can be difficult to connect to your home IP as it changes dynamically as per your ISP. To resolve this very common situation, Dappnode uses DynDNS, a DDNS. DynDNS associates any IP including dynamicly assigned IPs to a unique URL like 0773a23d34aed273.dyndns.dappnode.io, for example, for persistant access to a dynamic destination. It's necessary to use a this to run some services, and DynDNS is the solution to this problem. If your IP is Static for any reason, and you don't want to use DynDNS, you can set up with this field.
 
-**HTTPs Portal**: to see this option you need to install de HTTPS package. Here you can expose services using the protocol HTTPS. What does it mean? If you expose for example geth, you expose your geth RPC to the Internet, so you can use metamask from anywhere. You have to be careful with his feature. In this section we have listed the services we "recommend" or we think is interesting to expose to.
+**HTTPs Portal**: to see this option you need to install the HTTPS package. Here you can expose services using the protocol HTTPS. What does it mean? If you expose for example Geth, you expose your Geth RPC to the Internet, so you can connect to your node via MetaMask or another Web3 Wallet of your choice from anywhere. You must be careful using this feature. In this section we have listed the services we "recommend" or we beleive can be useful for various use cases.  None are exposed by default for security purposes but if you so choose to expose any of the ports of the below services you can with one click generate a secure link directly to your node's API port via a unique HTTPS URL to acces the API remotely.  Take care in what you expose and with whom you share the generated URL as to not expose more than you intended.  Be sure to understand the implications of opening/exposing any package's API ports to the internet.
 
 <p align="center">
     <img src="../../../../img/system_view_network.png"/>
@@ -110,7 +109,7 @@ This section is about IPFS peers -->
     <img src="../../../../img/system_view_peers.png"/>
 </p>
 
-On this view, we can do two thing:
+On this view, we can do two things:
 
 - **Share IPFS peer:** obtain a link of our IPFS, so we can share it with people to stay connected.
 - **Add IPFS Peer**: here you can paste the link of another user to stay connected.
@@ -125,17 +124,17 @@ It shows some security checks of your DAppNode.
 
 ## Advanced
 
-The advanced area collect many different functionalities
+The advanced area collects many different functionalities
 
-### Change DAppNodeName
+### Change Dappnode Name
 
-You can change the name that appears on the UI on the top right. It's only a visual change, so it's not a sentitive modification.
+You can change the name that appears on the UI on the top right. This is a visual change only, thus it's not a sentitive modification.
 
 <p align="center">
     <img src="../../../../img/system_view_advanced_1.png"/>
 </p>
 
-For example, if we type that name and click on the button **Change dappnode Name**, the name will be what we wrote on the field.
+For example, if we type this name and click on the button **Change Dappnode Name**, the name will be what we entered in the field.
 
 <p align="center">
     <img src="../../../../img/system_view_advanced_2.png"/>
@@ -160,36 +159,36 @@ You can check if SSH is enabled by clicking the **Fetch Status** button. In case
 
 #### Enable/Disable SSH
 
-You can enable/disable the ssh of your dappnode machine, click on the respective button below.
+You can enable/disable the ssh of your Dappnode machine, click on the respective button below.
 
-#### Check what port use the dappnode for ssh
+#### Check what port is set on your Dappnode's SSH server for remote access
 
 To check what port is using your DAppNode for SSH connections, you can find it out by clicking on the **Fech port** button.
 
-#### Change SSH port
+#### Change SSH access port
 
-If you want to change the port DAppNode use for ssh , you can change it by typing the number you want to use and pressing the **Change** button.
+If you want to change the port DAppNode use for SSH , you can change it by typing the number you want to use and pressing the **Change** button.
 
 ### Docker update
 
-This configuration is so sensitive. Here you can update the docker version of your DAppNode. We refer to docker-compose and the docker engine.
+This configuration is highly sensitive, take care in using these functions, if in doubt, ask support on Discord. Here you can update the Docker version of your Dappnode. From here we can update specifically: Docker-Compose and the Docker Engine.
 
 <p align="center">
     <img src="../../../../img/system_view_advanced_4.png"/>
 </p>
 
-In case you want update docker versions, you must update the docker compre first, and after the docker engine.
+In case you want update Docker versions, you must update Docker-Compose first, and after it has comepleted upating, only then attempt updating the Docker Engine.
 
-#### Update Docker Compose
+#### Update Docker-Compose
 
 You have to click on the **Check requirements** button. Two things can happen:
 
-- Docker compose is updated message, and you dont have to do anything.
+- Docker-Compose is updated message, and you dont have to do anything.
 - There is a new version message, and you can update clicking on the button.
 
-#### Update Docker Engine
+#### Update the Docker Engine
 
-You have to click on the **Check requirements** button. Several checks will be done and if you need or can update you could do it.
+You have to click on the **Check requirements** button. Several checks will be performed and inform you if you need to or even can update it currently.
 
 ### Clear cache db
 
@@ -209,7 +208,7 @@ Remove the local database which contains critical information about your DAppNod
 
 ## Power
 
-If you need to reboot or shut down your server as a last resource, you can do it from this section. Please be aware that if you shut down your server you will only be able to switch it on again when you have psysical access to your DAppNode.
+If you need to reboot or shut down your server as a last resort, you can do it from this section. Please be aware that if you shut down your server you will only be able to switch it on again when you have psysical access to your DAppNode.
 
 <p align="center">
     <img src="../../../../img/powermanagement.png"/>
