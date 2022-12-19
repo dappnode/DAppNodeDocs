@@ -18,19 +18,19 @@ In this section you can see the general metrics of your machine:
 
 ## Notifications
 
-In case you want to set up telegram notifications, this view let you use a telegram bot to show the DAppNode message in telegram.
+To set up notifications from your node, this section explains how to set up a free private Telegram bot to send you DAppNode alert messages in a private Telegram channel you setup with your bot.
 
 <p align="center">
     <img src="../../../../img/system_view_notifications.png"/>
 </p>
 
-If you are interested in enable this kind of notifications, we recommend you follow this guide [how to set up telegram notifications on DAppNode](https://forum.dappnode.io/t/set-up-your-dappnode-telegram-bot/816/4).
+If you are interested in enabling these kinds of remote notifications, we recommend you follow this guide [How to Set Up Telegram Notifications on DAppNode](https://forum.dappnode.io/t/set-up-your-dappnode-telegram-bot/816/4).
 
 ## Auto-Updates
 
-You can now choose if you want your packages to be automatically updated by enabling these option for System Packages, installed packages, or both. Please note that tthe updates will be made 24 hours after the updated package availability is detected.
+You can now choose if you want your packages to be automatically updated by enabling this option for System Packages (Strongly reccomended to be enabled to ensure proper functioning of your Dappnode), installed packages, or both. Please note that tthe updates will be made 24 hours after the updated package is detected on the Smart Contracts
 
-This feature is valid for non major updates, in which an admin intervention will always be needed.
+This feature is works for non-major updates, Major updates which are less frequent than normal updates requre manually approval by the user to avoid breaking changes, which major updates often include.
 
 <p align="center">
     <img src="../../../../img/system_view_auto-updates.png"/>
@@ -38,7 +38,7 @@ This feature is valid for non major updates, in which an admin intervention will
 
 ## Repository
 
-In this section, you will be able to set up what type of client you will use on your DAppNode and set up the IPFS service.
+In this section, you will be able to set up what type of Ethereum client(s) you will use on your DAppNode and set up the IPFS service.
 
 ### Ethereum Client
 
@@ -82,9 +82,9 @@ If the DAppNode IPFS gateway is not available (we make no uptime guarantees and 
 
 ## Network
 
-In the network section we can do some technical stuff:
+In the network section we alter some technical networking configuration:
 
-- IP: usually, the IP's assigned by residential ISPs are dynamic IPs. As a result most users do not have a static IP that remains unchaged.  This means that it can be difficult to connect to your home IP as it changes dynamically as per your ISP. To resolve this very common situation, Dappnode uses DynDNS, a DDNS. DynDNS associates any IP including dynamicly assigned IPs to a unique URL like 0773a23d34aed273.dyndns.dappnode.io, for example, for persistant access to a dynamic destination. It's necessary to use a this to run some services, and DynDNS is the solution to this problem. If your IP is Static for any reason, and you don't want to use DynDNS, you can set up with this field.
+- Static IP: Usually, IPs assigned by residential ISPs are dynamic IPs. As a result most users do not have a static IP that remains unchaged.  This means that it can be difficult to connect to your home IP as it changes dynamically as per your ISP. To resolve this very common situation, Dappnode uses DynDNS, a DDNS. DynDNS associates any IP including dynamicly assigned IPs to a unique URL like 0773a23d34aed273.dyndns.dappnode.io, for example, for persistant access to a dynamic destination. It's necessary to use a this to run some services, and DynDNS is the solution to this problem. If your IP is Static for any reason, and you don't want to use DynDNS, you can set up with this field.
 
 **HTTPs Portal**: to see this option you need to install the HTTPS package. Here you can expose services using the protocol HTTPS. What does it mean? If you expose for example Geth, you expose your Geth RPC to the Internet, so you can connect to your node via MetaMask or another Web3 Wallet of your choice from anywhere. You must be careful using this feature. In this section we have listed the services we "recommend" or we beleive can be useful for various use cases.  None are exposed by default for security purposes but if you so choose to expose any of the ports of the below services you can with one click generate a secure link directly to your node's API port via a unique HTTPS URL to acces the API remotely.  Take care in what you expose and with whom you share the generated URL as to not expose more than you intended.  Be sure to understand the implications of opening/exposing any package's API ports to the internet.
 
@@ -171,7 +171,8 @@ If you want to change the port DAppNode use for SSH , you can change it by typin
 
 ### Docker update
 
-This configuration is highly sensitive, take care in using these functions, if in doubt, ask support on Discord. Here you can update the Docker version of your Dappnode. From here we can update specifically: Docker-Compose and the Docker Engine.
+This section is highly sensitive. Please take extreme care using these functions; if in doubt, ask support on Discord. 
+Here you can update the Docker version of your Dappnode. From here we can update specifically: Docker-Compose and the Docker Engine.
 
 <p align="center">
     <img src="../../../../img/system_view_advanced_4.png"/>
@@ -181,18 +182,18 @@ In case you want update Docker versions, you must update Docker-Compose first, a
 
 #### Update Docker-Compose
 
-You have to click on the **Check requirements** button. Two things can happen:
+You must to click on the **Check requirements** button. Two things can happen:
 
-- Docker-Compose is updated message, and you dont have to do anything.
-- There is a new version message, and you can update clicking on the button.
+- Receive a "Docker-Compose is updated" message, and you don't have to do anything as it's updated to the latest compatible version.
+- Receive a "There is a new version" message, Update to it by clicking the update button.
 
 #### Update the Docker Engine
 
-You have to click on the **Check requirements** button. Several checks will be performed and inform you if you need to or even can update it currently.
+You must to click on the **Check requirements** button. Several checks will be performed and inform you if you need to or even can update it currently.
 
 ### Clear cache db
 
-Remove the local cache of Aragon Package Manager (APM) entries, manifests, avatars. Also remove the user action logs shown in the Activity tab.
+Remove the local cache of the Aragon Package Manager (APM) entries, package manifests, package avatars. Also removes the user action logs shown in the Activity tab.
 
 <p align="center">
     <img src="../../../../img/system_view_advanced_5.png"/>
@@ -200,7 +201,7 @@ Remove the local cache of Aragon Package Manager (APM) entries, manifests, avata
 
 ### Clear main db
 
-Remove the local database which contains critical information about your DAppNode, such as the dyndns identity, Ips registry, telegram configuration etc.
+Remove the local database which contains critical information about your DAppNode, such as its DynDNS identity, IPFS registry, Telegram Bot configuration, auto update and repository selections, etc.
 
 <p align="center">
     <img src="../../../../img/system_view_advanced_6.png"/>
