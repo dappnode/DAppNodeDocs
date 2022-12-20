@@ -11,14 +11,14 @@ This area is used to configure and manage your system with different options tha
 In this section you can see the general metrics of your machine:
 
 - **Statistics of your machine**: RAM usage, Disk Space and CPU usage.
-- **Volumes**: The volumes of your DAppNode and how much space they occupy.
+- **Volumes**: The volumes of your DAppNode and how much space they currently occupy.
 <p align="center">
     <img src="../../../../img/system_view_main.png"/>
 </p>
 
 ## Notifications
 
-To set up notifications from your node, this section explains how to set up a free private Telegram bot to send you DAppNode alert messages in a private Telegram channel you setup with your bot.
+To set up notifications from your node, this section explains how to set up a free private Telegram Bot to send you DAppNode alert messages in a private Telegram channel you setup with your bot.
 
 <p align="center">
     <img src="../../../../img/system_view_notifications.png"/>
@@ -28,9 +28,9 @@ If you are interested in enabling these kinds of remote notifications, we recomm
 
 ## Auto-Updates
 
-You can now choose if you want your packages to be automatically updated by enabling this option for System Packages (Strongly reccomended to be enabled to ensure proper functioning of your Dappnode), installed packages, or both. Please note that tthe updates will be made 24 hours after the updated package is detected on the Smart Contracts
+You can now choose if you want your packages to be automatically updated by enabling this option for System Packages (Strongly reccomended to be enabled to ensure proper functioning of your Dappnode), selected user installed packages, or all. Please note that the auto-update(s) will be performed ~24 hours after an updated package is detected on the smart contracts which store our version data on-chain.
 
-This feature is works for non-major updates, Major updates which are less frequent than normal updates requre manually approval by the user to avoid breaking changes, which major updates often include.
+This feature works for non-major updates. Major updates, which are less frequent than normal (non-major) updates, require manual approval from the user to update in order to avoid unexpected breaking changes, which major updates often include.
 
 <p align="center">
     <img src="../../../../img/system_view_auto-updates.png"/>
@@ -38,7 +38,7 @@ This feature is works for non-major updates, Major updates which are less freque
 
 ## Repository
 
-In this section, you will be able to set up what type of Ethereum client(s) you will use on your DAppNode and set up the IPFS service.
+In this section, you can select which Ethereum client(s) you will use on your DAppNode and set up the basic configuration for your IPFS service: Remote Node or Local Node (Local is a core installed package with additional advanced configuration options on its package configuration page).
 
 ### Ethereum Client
 
@@ -51,16 +51,16 @@ This view is the same that you saw in that step. -->
 
 Here you can choose several options:
 
-- **Use a Remote client of Ethereum**: your dappnode machine will use the "DAppNode's ethereum node.
-- **Use a Full Node**: your dappnode machine will have an Ethereum node and will be full independent from anothers.
-- **OPTION Use remote during syncing or errors**: This option lets you to use a remote node in case your ethereum node is syncyng or it is affected by an error.
+- **Use a Remote Ethereum Client**: your Dappnode will use Dappnode's officially maintained Ethereum node.
+- **Use a Full Node**: your Dappnode will locally run an Ethereum node and will not need to rely on trusting any third parties.
+- **OPTION Use remote during syncing or errors**: This option, when enabled, will automatically switch from your Local node to the Dappnode Remote node if your Ethereum node is unreachable or unavailable because it's still syncing or is unavailable for some other reason. This option allows you to maintain a connection to the Dappnode smart contracts in case your Local node cannot, which can help keep your Dappnode updated in case theres some issue with your Local node.
 
-<!-- As we said before if you want to know the pros and cons of this decisions, we recommend you to read [select a type of client](./initial-configurations/select-a-client) section. -->
+<!-- As we said before if you want to know the pros and cons of this decisions, we recommend you read [select a type of client](./initial-configurations/select-a-client) section. -->
 
 ### IPFS Service
 
-This feature allowes users to connect to a remote IPFS node instead of the locally hosted version.
-You can find a guide related to this feature in [this guide on the forum](https://forum.dappnode.io/t/how-to-use-dappnode-ipfs-remote/1295)
+This feature allowes users to connect to a remote IPFS node instead of a locally hosted IPFS Package.
+You can find a guide related to this feature in [this post on the forum](https://forum.dappnode.io/t/how-to-use-dappnode-ipfs-remote/1295)
 
 <p align="center">
     <img src="../../../../img/system_view_repository_2.png"/>
@@ -68,25 +68,25 @@ You can find a guide related to this feature in [this guide on the forum](https:
 
 #### When to use IPFS remote?
 
-IPFS is part of the DAppNode technology stack, but it sometimes causes problems with certain routers or consumes too much of capped data plans. If you experience any of the following issues, you might want to consider switching to IPFS remote:
+IPFS is a core and essential element of the DAppNode technology stack, but running a full IPFS node locally on your Dappnode sometimes causes problems with certain routers or consumes too much of capped data plans. If you experience any of the following issues, you might want to consider switching to IPFS remote:
 
-- Home networking issues
+- Home network issues being seemingly related to your Dappnode being on or off
 - The DAppStore does not render properly
 - Issues downloading new packages or updates
 
 #### IPFS gateways and security
 
-Connecting to IPFS remote gateways could enable security risks like the gateway serving malicious content to the user. We mitigate this by verifying the content downladed with the [CID technology](https://docs.ipfs.io/concepts/content-addressing/).
+Connecting to IPFS remote gateways could enable security risks. For example, the gateway could attempt to serve malicious content to the user. We mitigate this risk by verifying the content downladed with [CID technology](https://docs.ipfs.io/concepts/content-addressing/).
 
 If the DAppNode IPFS gateway is not available (we make no uptime guarantees and we offer it on a best-effort basis) the user can set another IPFS gateway in the input field, check out all the [IPFS gateways available](https://ipfs.github.io/public-gateway-checker/). DAppNode recommends using them as a last resort.
 
 ## Network
 
-In the network section we alter some technical networking configuration:
+In the network section we can alter some technical networking configuration:
 
-- Static IP: Usually, IPs assigned by residential ISPs are dynamic IPs. As a result most users do not have a static IP that remains unchaged.  This means that it can be difficult to connect to your home IP as it changes dynamically as per your ISP. To resolve this very common situation, Dappnode uses DynDNS, a DDNS. DynDNS associates any IP including dynamicly assigned IPs to a unique URL like 0773a23d34aed273.dyndns.dappnode.io, for example, for persistant access to a dynamic destination. It's necessary to use a this to run some services, and DynDNS is the solution to this problem. If your IP is Static for any reason, and you don't want to use DynDNS, you can set up with this field.
+- Static IP: Usually, IPs assigned by residential ISPs are dynamic IPs. As a result most users do not have a static IP that remains unchaged.  This means that it can be difficult to connect to your home IP as it changes dynamically as per your ISP. To resolve this very common situation, Dappnode uses DynDNS, a DDNS. DynDNS associates any IP including dynamicly assigned IPs to a unique URL such as `0773a23d34aed273.dyndns.dappnode.io`. This allows for persistent access to a dynamic destination. It's necessary to use a this to run some services, and DynDNS is the solution to this problem. If your IP is Static for any reason, and you don't want to use DynDNS, you can set up with this field.
 
-**HTTPs Portal**: to see this option you need to install the HTTPS package. Here you can expose services using the protocol HTTPS. What does it mean? If you expose for example Geth, you expose your Geth RPC to the Internet, so you can connect to your node via MetaMask or another Web3 Wallet of your choice from anywhere. You must be careful using this feature. In this section we have listed the services we "recommend" or we beleive can be useful for various use cases.  None are exposed by default for security purposes but if you so choose to expose any of the ports of the below services you can with one click generate a secure link directly to your node's API port via a unique HTTPS URL to acces the API remotely.  Take care in what you expose and with whom you share the generated URL as to not expose more than you intended.  Be sure to understand the implications of opening/exposing any package's API ports to the internet.
+**HTTPs Portal**: to see this option you need to install the HTTPS package. Here you can expose services using the protocol HTTPS. **_What does this mean?_** If you expose for example Geth, you expose your Geth RPC to the Internet, so you can connect to your node via MetaMask or another Web3 Wallet of your choice from anywhere. You must be careful using this feature. In this section we have listed the services we "recommend" or we beleive can be useful for various use cases.  None are exposed by default for security purposes but if you so choose to expose any of the ports of the listed services, you can, with one click, generate a secure link directly to your node's API port via a unique HTTPS URL to acces the API remotely.  Take care in what you expose and with whom you share the generated URL as to not expose more than you intended.  Be sure to understand the implications of opening/exposing any package's API ports to the Internet.
 
 <p align="center">
     <img src="../../../../img/system_view_network.png"/>
@@ -109,14 +109,14 @@ This section is about IPFS peers -->
     <img src="../../../../img/system_view_peers.png"/>
 </p>
 
-On this view, we can do two things:
+On this view, you can do two things:
 
-- **Share IPFS peer:** obtain a link of our IPFS, so we can share it with people to stay connected.
+- **Share IPFS peer:** obtain a link of your Dappnode's IPFS, so you can share it with others to help them get or stay connected.  For example if you can find an update to a package that they can't, if you share your IPFS Peer link with them when they click it they will automatically add you as a peer and be able to access the content they couldn't before.
 - **Add IPFS Peer**: here you can paste the link of another user to stay connected.
 
 ## Security
 
-It shows some security checks of your DAppNode.
+This view shows some security checks of your Dappnode.
 
 <p align="center">
     <img src="../../../../img/system_view_security.png"/>
@@ -163,22 +163,23 @@ You can enable/disable the ssh of your Dappnode machine, click on the respective
 
 #### Check what port is set on your Dappnode's SSH server for remote access
 
-To check what port is using your DAppNode for SSH connections, you can find it out by clicking on the **Fech port** button.
+To check what port is using your Dappnode for SSH connections, you can find it out by clicking on the **Fech port** button.
 
 #### Change SSH access port
 
-If you want to change the port DAppNode use for SSH , you can change it by typing the number you want to use and pressing the **Change** button.
+If you want to change the port Dapppnode uses for SSH, you can change it by entering the port number you want to use in the field and press the **Change** button to apply.
 
-### Docker update
+### Docker Update
 
-This section is highly sensitive. Please take extreme care using these functions; if in doubt, ask support on Discord. 
-Here you can update the Docker version of your Dappnode. From here we can update specifically: Docker-Compose and the Docker Engine.
+_This section is highly sensitive. Please take extreme care using these functions. If in doubt: ask for support on our [Discord](https://discord.gg/dappnode)._
+
+Here you can update the Docker version(s) of your Dappnode. You can update: Docker-Compose and the Docker Engine.
 
 <p align="center">
     <img src="../../../../img/system_view_advanced_4.png"/>
 </p>
 
-In case you want update Docker versions, you must update Docker-Compose first, and after it has comepleted upating, only then attempt updating the Docker Engine.
+If you want update Docker versions, you must update Docker-Compose first, and after it has comepleted updating, or shows that it is up-to-date, only then attempt to update the Docker Engine.
 
 #### Update Docker-Compose
 
@@ -193,7 +194,7 @@ You must to click on the **Check requirements** button. Several checks will be p
 
 ### Clear cache db
 
-Remove the local cache of the Aragon Package Manager (APM) entries, package manifests, package avatars. Also removes the user action logs shown in the Activity tab.
+Removes the local cache of Aragon Package Manager (APM) entries, package manifests, and package avatars. Also removes the user action logs shown in the Activity tab. **DO NOT USE unless instructed to by support staff**
 
 <p align="center">
     <img src="../../../../img/system_view_advanced_5.png"/>
@@ -201,7 +202,7 @@ Remove the local cache of the Aragon Package Manager (APM) entries, package mani
 
 ### Clear main db
 
-Remove the local database which contains critical information about your DAppNode, such as its DynDNS identity, IPFS registry, Telegram Bot configuration, auto update and repository selections, etc.
+Removes the local database which contains critical information about your Dappnode, such as its DynDNS identity, IPFS registry, Telegram Bot configuration, auto-update and repository selections, etc. **DO NOT USE unless instructed to by support staff**
 
 <p align="center">
     <img src="../../../../img/system_view_advanced_6.png"/>
@@ -209,7 +210,7 @@ Remove the local database which contains critical information about your DAppNod
 
 ## Power
 
-If you need to reboot or shut down your server as a last resort, you can do it from this section. Please be aware that if you shut down your server you will only be able to switch it on again when you have psysical access to your DAppNode.
+If you need to reboot or shut down your server as a last resort, you can do it from this section. Please be aware that if you shut down your server you will only be able to switch it on again when you have psysical access to your Dapnode.
 
 <p align="center">
     <img src="../../../../img/powermanagement.png"/>
