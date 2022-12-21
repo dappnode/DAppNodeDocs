@@ -95,15 +95,7 @@ If you want to install the Dappnode platform on an old computer or on custom har
 <details>
   <summary>Do I need terminal or command line experience to use Dappnode?</summary>
   <div>
-    <div>You generally wont need to use a terminal on your Dappnode unless instructed to in specific support cases. One of the key objectives of the Dappnode platform is to avoid using the terminal.
-</div>
-  </div>
-</details>
-
-<details>
-  <summary>Do I need terminal or command line experience to use Dappnode?</summary>
-  <div>
-    <div>You generally wont need to use a terminal on your Dappnode unless instructed to in specific support cases. One of the key objectives of the Dappnode platform is to avoid using the terminal.
+    <div>You generally won't need to use a terminal with your Dappnode unless instructed to by staff troubleshooting certain support cases. One of the key objectives of the Dappnode platform is to avoid needing to use a terminal or command line at every level.
 </div>
   </div>
 </details>
@@ -149,9 +141,9 @@ You can add a NVMe hard disk (if there is a free slot in the Dappnode machine) a
   <summary>Who can help me if I run into a problem?</summary>
   <div>
     <div>
-If you have an issue with your Dappnode, we recommend using the <a href="https://discord.com/invite/dappnode">Dappnode discord channel</a> or the <a href="https://forum.dappnode.io/">Dappnode forum</a>. The community will always try to help. 
+If you have an issue with your Dappnode, we recommend using the <a href="https://discord.com/invite/dappnode">Dappnode Discord Server</a> or the <a href="https://forum.dappnode.io/">Dappnode forum</a>. The community will always try to help. 
 <br /><br />
-If its something a bit more technical, you can also go to Dappnode Github repository and open an issue there.
+If it's something a bit more technical, you can also go to Dappnode Github repository and open an issue there.
 </div>
   </div>
 </details>
@@ -162,7 +154,7 @@ If its something a bit more technical, you can also go to Dappnode Github reposi
     <div>
 Change all the default passwords, including the Wi-Fi and admin password. You'll be prompted to change the admin password when you access the UI for the first time.
 <br /><br />
-Furthermore, it is good practice to disable SSH access in case you are not going to use it.
+Furthermore, it is a good security practice to disable SSH access if you don't intend on using it.
 </div>
   </div>
 </details>
