@@ -95,15 +95,7 @@ If you want to install the Dappnode platform on an old computer or on custom har
 <details>
   <summary>Do I need terminal or command line experience to use Dappnode?</summary>
   <div>
-    <div>You generally wont need to use a terminal on your Dappnode unless instructed to in specific support cases. One of the key objectives of the Dappnode platform is to avoid using the terminal.
-</div>
-  </div>
-</details>
-
-<details>
-  <summary>Do I need terminal or command line experience to use Dappnode?</summary>
-  <div>
-    <div>You generally wont need to use a terminal on your Dappnode unless instructed to in specific support cases. One of the key objectives of the Dappnode platform is to avoid using the terminal.
+    <div>You generally won't need to use a terminal with your Dappnode unless instructed to by staff troubleshooting certain support cases. One of the key objectives of the Dappnode platform is to avoid needing to use a terminal or command line at every level.
 </div>
   </div>
 </details>
@@ -162,7 +154,7 @@ If its something a bit more technical, you can also go to Dappnode Github reposi
     <div>
 Change all the default passwords, including the Wi-Fi and admin password. You'll be prompted to change the admin password when you access the UI for the first time.
 <br /><br />
-Furthermore, it is good practice to disable SSH access in case you are not going to use it.
+Furthermore, it is a good security practice to disable SSH access if you don't intend on using it.
 </div>
   </div>
 </details>
