@@ -141,9 +141,9 @@ You can add a NVMe hard disk (if there is a free slot in the Dappnode machine) a
   <summary>Who can help me if I run into a problem?</summary>
   <div>
     <div>
-If you have an issue with your Dappnode, we recommend using the <a href="https://discord.com/invite/dappnode">Dappnode discord channel</a> or the <a href="https://forum.dappnode.io/">Dappnode forum</a>. The community will always try to help. 
+If you have an issue with your Dappnode, we recommend using the <a href="https://discord.com/invite/dappnode">Dappnode Discord Server</a> or the <a href="https://forum.dappnode.io/">Dappnode forum</a>. The community will always try to help. 
 <br /><br />
-If its something a bit more technical, you can also go to Dappnode Github repository and open an issue there.
+If it's something a bit more technical, you can also go to Dappnode Github repository and open an issue there.
 </div>
   </div>
 </details>
