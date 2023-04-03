@@ -15,7 +15,11 @@ To install DAppNodeSDK, open a terminal window and run the following command:
 ```console
 $ npm install -g @dappnode/dappnodesdk
 ```
-This will install DAppNodeSDK globally on your machine.
+This will install DAppNodeSDK globally on your machine. Alternatively, if you have `npx` installed on your machine, you can use the following command to ensure that you're using the latest version of DAppNodeSDK without having to install it globally:
+
+```console
+$ npx @dappnode/dappnodesdk <command>
+```
 
 ## Initalizing a new DappNode Package
 After installing DAppNodeSDK, the first step in creating a DAppNode package is to initialize the repository containing all its files. You can do this by running the `init` command in a terminal window:
