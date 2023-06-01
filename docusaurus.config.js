@@ -15,6 +15,7 @@ module.exports = {
       logo: {
         alt: 'DAppNode Logo',
         src: 'img/logo.png',
+        href: 'https://dappnode.com'
       },
       items: [
         {to: '/', label: 'User Guide', position: 'left'},
