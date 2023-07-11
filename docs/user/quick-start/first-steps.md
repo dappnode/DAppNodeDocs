@@ -5,6 +5,7 @@ sidebar_position: 1
 # First steps with Dappnode
 ---
 If you are here, you must have already:
+
 a) bought a Dappnode from our [store](https://dappnode.io/), connected it to the router via ethernet, turned it on, connected to the wifi hotspot and navigated for the first time to [my.dappnode](http://my.dappnode)
 
 b) installed Dappnode on a device or cloud and connected via VPN and navigated to [my.dappnode](http://my.dappnode)
