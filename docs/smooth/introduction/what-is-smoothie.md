@@ -1,6 +1,6 @@
-# Smoothie
+# Smooth
 
-## What is Smoothie and why it matters
+## What is Smooth and why it matters
 
 Smooth is an MEV Smoothing Pool. It helps earn higher rewards on average by pooling MEV rewards among a group of Stakers. 
 
