@@ -20,7 +20,7 @@ module.exports = {
       items: [
         {to: '/', label: 'User Guide', position: 'left'},
         {to: '/intro', label: 'Builder Docs', position: 'left'},
-        {to: '/smoothie', label: 'Smoothie', position: 'left'},
+        {to: '/smooth', label: 'Smooth', position: 'left'},
         {to: '/dao', label: 'DAO', position: 'left'},
         {
           type: 'localeDropdown',
