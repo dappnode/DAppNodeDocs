@@ -4,7 +4,11 @@ sidebar_position: 1
 
 # First steps with Dappnode
 ---
-If you bought a Dappnode from our [store](https://shop.dappnode.io/), built your own custom NUC or installed Dappnode on a device you have lying around, theres a few steps you need to do in order start accessing your favorite web3 applications and blockchains.  
+If you are here, you must have already:
+
+a) bought a Dappnode from our [store](https://dappnode.io/), connected it to the router via ethernet, turned it on, connected to the wifi hotspot and navigated for the first time to [my.dappnode](http://my.dappnode)
+
+b) installed Dappnode on a device or cloud and connected via VPN and navigated to [my.dappnode](http://my.dappnode)
 
 
 ### First login
@@ -16,7 +20,13 @@ The first time you access the [Dappnode UI](http://my.dappnode), you will be ask
 - At least **one (1)** number
 - At least **one (1)** special character (eg. !,?,/)
 
-Once you've chosen a username and a password that matches the criteria posted above, your Dappnode will prompt you with your personal Dappnode recovery token. You can use this token to reset your username and password in case you forget them. Make sure to keep this token in a safe place!
+Once you've chosen a username and a password that matches the criteria posted above, your Dappnode will prompt you with your **personal Dappnode recovery token**. Keep it safe. **If you forget your Username / Password, it will allow you to regenerate them**.
+
+:::caution
+
+Keep your **Recovery Token** safe in a different place than your Username / Password. If you use a password manager for your Username / Password and you don't have access to that, and you keep the **Recovery Token** in the same place, you will have no way to access your Dappnode.
+
+:::
 
 On your first login your Dappnode will guide you through some basic configuration settings. 
 
@@ -30,11 +40,9 @@ Let's dive in!
 
 The first thing your Dappnode will ask you about is the `Repository Source`. This configures how your Dappnode will interact with the blockchain in order to grab packages from the DAppStore. 
 
-We have three options available right now:
+We have two options available right now:
 
 **<font color="green">Full node</font>**: This is the most secure and decentralized way of accessing a blockchain. This requires the most resources in terms of bandwidth, storage and CPU.
-
-**<font color="yellow">Light client</font>**: This is a middle-of-the-road approach and will install the `Geth` blockchain client. This client uses slots on other Geth full nodes that act as a `light server`. Those slots can be sparse and might not return data if there is no open slot for your Dappnode to connect to. It also does not use as much of your resources as the full node option.
 
 **<font color="orange">Remote source</font>**: This option is the least decentralized option, as you'll have to trust the full nodes from us, the Dappnode maintainers, to provide you with accurate blockchain data. This uses next to no resources and is well suited for low-power devices or network/bandwidth-constrained networks.
 
