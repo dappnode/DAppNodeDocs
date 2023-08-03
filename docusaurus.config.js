@@ -1,122 +1,157 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
-  title: 'DAppNode',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://docs.dappnode.io/',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.png',
-  organizationName: 'dappnode', // Usually your GitHub org/user name.
-  projectName: 'DAppNode', // Usually your repo name.
-  themeConfig: {
-    navbar: {
-      title: 'DAppNode',
-      logo: {
-        alt: 'DAppNode Logo',
-        src: 'img/logo.png',
-        href: 'https://dappnode.com'
-      },
-      items: [
-        {to: '/', label: 'User Guide', position: 'left'},
-        {to: '/intro', label: 'Builder Docs', position: 'left'},
-        {to: '/smooth', label: 'Smooth', position: 'left'},
-        {to: '/dao', label: 'DAO', position: 'left'},
-        {
-          type: 'localeDropdown',
-          dropdownItemsAfter: [
-            {
-              to: '/help-us-translate',
-              label: 'Help Us Translate',
-            },
-          ],
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/dappnode/DAppNode',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
-    },
-    colorMode: {
-      
-      defaultMode: 'dark',
-    },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Docs',
-              to: 'https://docs.dappnode.io/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Medium',
-              href: 'https://medium.com/dappnode',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.com/invite/dappnode',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/DAppNode',
-            },
-   
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/dappnode',
-            },
-            {
-              label: 'Youtube',
-              href: 'https://www.youtube.com/channel/UCKnEqk4yVMN_Z6B8ikloYYA',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} DAppNode, Inc. Built with Docusaurus.`,
-    },
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: "DAppNode",
+  tagline: "Simplifying decentralization",
+  favicon: "img/logo.png",
+
+  // Set the production url of your site here
+  url: "https://docs.dappnode.io/",
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: "/",
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: "dappnode", // Usually your GitHub org/user name.
+  projectName: "DAppNode", // Usually your repo name.
+
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en"],
   },
+
   presets: [
     [
-      '@docusaurus/preset-classic',
-      {
+      "classic",
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-            routeBasePath: '/',
-            editLocalizedFiles: true,
-            editUrl:
-            'https://github.com/dappnode/DAppNodeDocs/blob/master',
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
-      },
+      }),
     ],
   ],
-  themes: [
-    // ... Your other themes.
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      {
-        hashed: true,
-        docsRouteBasePath: "/",
-        language: "en",
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      // Replace with your project's social card
+      image: "img/docusaurus-social-card.jpg",
+      navbar: {
+        title: "DAppNode",
+        logo: {
+          alt: "DAppNode Logo",
+          src: "img/logo.svg",
+          href: "/", // https://dappnode.com
+        },
+        items: [
+          {
+            type: "docSidebar",
+            sidebarId: "userSidebar",
+            position: "left",
+            label: "User Docs",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "devSidebar",
+            position: "left",
+            label: "Dev Docs",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "smoothSidebar",
+            position: "left",
+            label: "Smooth",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "daoSidebar",
+            position: "left",
+            label: "DAO",
+          },
+          {
+            href: "https://github.com/dappnode/DAppNodeDocs",
+            label: "GitHub",
+            position: "right",
+          },
+        ],
       },
-    ],
-  ],
+      footer: {
+        style: "dark",
+        links: [
+          {
+            title: "Docs",
+            items: [
+              {
+                label: "Tutorial",
+                to: "/docs/intro",
+              },
+            ],
+          },
+          {
+            title: "Community",
+            items: [
+              {
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              },
+              {
+                label: "Discord",
+                href: "https://discordapp.com/invite/docusaurus",
+              },
+              {
+                label: "Twitter",
+                href: "https://twitter.com/docusaurus",
+              },
+            ],
+          },
+          {
+            title: "More",
+            items: [
+              {
+                label: "Blog",
+                to: "/blog",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/facebook/docusaurus",
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+    }),
 };
+
+module.exports = config;
