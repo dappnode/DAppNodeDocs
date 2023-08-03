@@ -158,6 +158,11 @@ const sidebars = {
     "dev",
     {
       type: "doc",
+      label: "Command line",
+      id: "dev/cli",
+    },
+    {
+      type: "doc",
       label: "Build",
       id: "dev/build",
     },
