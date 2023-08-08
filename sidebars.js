@@ -20,12 +20,12 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Choose your path",
+          label: "choose your path",
           id: "user/getting-started/choose-your-path",
         },
         {
           type: "doc",
-          label: "Connect your dappnode to the router",
+          label: "connect your dappnode to the router",
           id: "user/getting-started/connect-dappnode-to-the-router",
         },
         {
@@ -35,6 +35,12 @@ const sidebars = {
         },
         {
           type: "doc",
+          label: "register",
+          id: "user/getting-started/register",
+        },
+        {
+          type: "doc",
+          label: "setup",
           id: "user/getting-started/setup",
         },
         {
