@@ -27,3 +27,60 @@
   --ifm-color-primary-lightest: #c6daff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Custom HTML components styling */
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.beautiful-big-button {
+  /* Size */
+  padding: 16px 32px;
+  font-size: 20px;
+
+  /* Gradient Styling */
+  background: linear-gradient(
+    45deg,
+    var(--ifm-color-primary-lighter),
+    var(--ifm-color-primary)
+  );
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  /* Optional: Add some shadow for a more "elevated" look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Smooth transition for hover effects */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.beautiful-big-button:hover {
+  background: linear-gradient(
+    45deg,
+    var(--ifm-color-primary-dark),
+    var(--ifm-color-primary-darkest)
+  );
+  transform: scale(1.05);
+}
+
+[data-theme="dark"] .beautiful-big-button {
+  background: linear-gradient(
+    45deg,
+    var(--ifm-color-primary-light),
+    var(--ifm-color-primary-darker)
+  );
+  /* Adjust other properties as needed for dark theme */
+}
+
+[data-theme="dark"] .beautiful-big-button:hover {
+  background: linear-gradient(
+    45deg,
+    var(--ifm-color-primary),
+    var(--ifm-color-primary-darkest)
+  );
+}
