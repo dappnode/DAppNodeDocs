@@ -2,6 +2,10 @@
 
 Accessing the terminal of your Dappnode, often referred to as the command-line interface (CLI), provides deep control and management capabilities. However, this method is considered advanced and requires familiarity with command line interactions. Incorrect or misguided commands can lead to unintended changes or potential system damage.
 
+:::caution
+Proceed with caution when using terminal access. Always understand the implications of commands and configurations before executing them.
+:::
+
 ## SSH Access
 
 SSH (Secure Shell) allows secure remote access to systems.
@@ -48,7 +52,3 @@ Directly interface with Dappnode using a monitor and keyboard:
 2. Plug in a USB keyboard.
 3. Power on or restart the Dappnode machine.
 4. When prompted, enter the password: `dappnode.s0` (or the one you've set if changed during onboarding).
-
-:::caution
-Proceed with caution when using terminal access. Always understand the implications of commands and configurations before executing them.
-:::
