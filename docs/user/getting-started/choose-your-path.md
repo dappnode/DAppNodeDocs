@@ -11,11 +11,8 @@ Regardless of how you wish to utilize DAppNode, taking the initiative to contrib
 </a>
 </div>
 
-<hr />
+<br />
 
-### Troubleshooting
-
-<details>
-  <summary>Interested in purchasing a DAppNode? </summary>
-Explore our <a href="https://dappnode.io">official store</a>.
-</details>
+:::info
+Interested in purchasing a DAppNode? Explore our <a href="https://dappnode.io">official store</a>.
+:::
