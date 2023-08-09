@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
         Start now!
       </>
     ),
-    url: "/docs/user/getting-started/introduction",
+    url: "/docs/user/getting-started/choose-your-path",
   },
   {
     title: "Solo staking",
