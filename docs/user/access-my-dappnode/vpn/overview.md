@@ -12,7 +12,7 @@ Virtual Private Network (VPN) is a robust method for accessing your Dappnode. It
 - OpenVPN is a well-established VPN protocol praised for its security and reliability.
 - It's more versatile and can bypass most network restrictions and firewalls. [Learn more](https://openvpn.net/)
 
-## Local vs. Remote Access:
+## Local vs. Remote Access
 
 - **Local Access**: Connecting to your Dappnode when you're on the same local network. Generally, this means that your Dappnode machine and the device you're using to access it are connected to the same router.
   
