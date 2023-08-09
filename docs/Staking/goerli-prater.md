@@ -1,0 +1,1 @@
+The Goerli testnet is currently the most active testnet for the Ethereum network. Dappnode lets you run a node for the Goerli testnet under the Prater tab in the Stakers Menu. Running a validator in the Goerli testnet is also a common practice by users that want to get a grasp of what running a node is without using real ETH.
