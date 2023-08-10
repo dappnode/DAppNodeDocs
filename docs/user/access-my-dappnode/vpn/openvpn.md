@@ -109,14 +109,13 @@ Once you have installed the OpenVPN client on your device, follow the steps belo
 <details>
 <summary><b>Windows</b></summary>
 
-1. Launch the OpenVPN GUI for Windows.
-2. Right-click on the OpenVPN GUI icon in the system tray.
-3. Choose "Import file".
-4. Navigate and select the `.ovpn` file you downloaded earlier.
-5. After importing, right-click the OpenVPN GUI icon again and click "Connect".
+1. Launch the OpenVPN for Windows app.
+2. Click on "Import file".
+3. Upload the `.ovpn` file you downloaded earlier.
+4. Allow the app to create a VPN connection.
 
 <p align="center">
-  <img src="/img/openvpn_windows.png" alt="Import file in Windows" style={{width: 20 + "em"}}/>
+  <img src="/img/openvpn_windows.jpg" alt="Import file in Windows" style={{width: 20 + "em"}}/>
 </p>
 
 </details>
@@ -142,12 +141,11 @@ Once you have installed the OpenVPN client on your device, follow the steps belo
 </details>
 
 <details>
-<summary> <b>Linux</b></summary>
+<summary> <b>Other Linux</b></summary>
 
 1. Open the terminal.
 2. Navigate to the directory where you have stored your `.ovpn` file.
-3. Execute the command: `sudo openvpn --config yourfilename.ovpn`.
-4. Once connected, you can access Dappnode by navigating to the Dappmanager UI in your web browser.
+3. Execute the command: `sudo openvpn DAppNode_VPN.ovpn`.
 
 </details>
 
