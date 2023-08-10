@@ -4,11 +4,11 @@ OpenVPN is a widely-accepted VPN protocol known for its reliability and high-sec
 
 ## Setting Up OpenVPN
 
-### 1. Get VPN Credentials Link
+### 1. Get VPN Credentials URL
 
 There are two primary methods to obtain your VPN credentials, based on your access level to the Dappmanager:
 
-#### Option 1: Via Dappmanager UI
+#### _Option 1_: Via Dappmanager UI
 
 If you have access to the Dappmanager:
 
@@ -20,9 +20,9 @@ If you have access to the Dappmanager:
 
    - **To retrieve the credentials:**
      1. Click on the 'Get Link' button.
-     2. Copy the URL displayed. This URL contains the necessary credentials for OpenVPN access.
+     2. Copy the URL displayed.
 
-#### Option 2: Via Dappnode Terminal
+#### _Option 2_: Via Dappnode Terminal
 
 If you can't access the Dappmanager, you'll need to get the credentials via the Dappnode terminal:
 
@@ -30,11 +30,7 @@ If you can't access the Dappmanager, you'll need to get the credentials via the 
 
 2. Execute the command: `dappnode_openvpn`.
 
-3. A URL will be displayed on the terminal. Copy this URL. Like in the previous method, this URL contains your OpenVPN credentials.
-
-:::tip
-Ensure that you store the URL or credentials securely. It provides direct access to your Dappnode, so treat it with the same caution you'd treat a password.
-:::
+3. A URL will be displayed on the terminal. Copy it.
 
 ### 2. Download OpenVPN Credentials
 
@@ -44,6 +40,6 @@ With the URL you obtained in the previous step, you'll now download the OpenVPN 
 2. Paste the URL you copied into the address bar and navigate to it.
 3. You should be taken to a page where the OpenVPN credentials for your Dappnode can be downloaded. Click on the download button or link to download the `.ovpn` file, which contains your OpenVPN configuration and credentials.
 
-:::note
-The `.ovpn` file is essential for connecting to your Dappnode via OpenVPN. Keep it safe and do not share it recklessly. Anyone with this file can access your Dappnode.
+:::caution
+Ensure that you **store credentials securely**. The `.ovpn` file provides direct access to your Dappnode, so treat it with the same caution you'd treat a password.
 :::
