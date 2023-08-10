@@ -141,13 +141,18 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "DAppNode Home",
-          id: "user/install/dappnode-home",
+          label: "ISO",
+          id: "user/install/iso",
         },
         {
           type: "doc",
-          label: "DAppNode Core",
-          id: "user/install/dappnode-core",
+          label: "Script",
+          id: "user/install/script",
+        },
+        {
+          type: "doc",
+          label: "Arm",
+          id: "user/install/arm",
         },
       ],
     },
