@@ -69,7 +69,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Ethical metrics",
-    Image: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    Image: require("@site/static/img/logo.svg").default,
     description: (
       <>
         Ethical metrics is privacy-ensured solution for monitoring your
@@ -86,7 +86,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Smoothing pool",
-    Image: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    Image: require("@site/static/img/logo.svg").default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
