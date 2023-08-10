@@ -4,7 +4,7 @@ WireGuard is a modern, high-performance VPN protocol that offers a simple and st
 
 ## Setting Up WireGuard
 
-### 1. Get VPN Credentials
+### Get VPN Credentials
 
 There are two primary methods to obtain your VPN credentials:
 
@@ -53,18 +53,109 @@ Always remember: Local credentials **only work inside your own network**. If you
 Ensure you store these credentials securely. They provide direct access to your Dappnode. Treat them with the same level of caution as you would a password.
 :::
 
-### 2. Input WireGuard Credentials
+### Installing WireGuard Client
 
-Once you have the credentials:
+After obtaining your VPN credentials, the next step is to install the WireGuard client. You can download the one that's compatible with the device you are going to use to connect to the Dappnode machine from the [WireGuard website](https://www.wireguard.com/install/).
 
-1. Install a WireGuard client on your device. The official WireGuard website provides [clients for various platforms](https://www.wireguard.com/install/).
+### Setting Up WireGuard Client
 
-2. Launch the WireGuard client and add a new VPN configuration.
-   
-3. Paste the credentials you copied into the appropriate fields or section in the client interface.
+After installing the client:
 
-4. Connect to your Dappnode using the WireGuard client. If everything is set up correctly, you should establish a secure connection.
+1. Launch the WireGuard application.
+2. Click on 'Add Tunnel' or 'Import Tunnel from File' based on your platform.
+3. Import the credentials you obtained in the earlier steps.
+4. Once imported, connect to your Dappnode by activating the tunnel.
 
-:::note
-Always ensure your WireGuard client is updated to the latest version to maintain a secure and stable connection to your Dappnode.
+:::tip Connection Status
+You can verify your connection status within the WireGuard application. It will display if the tunnel is active, as well as data transfer rates.
+:::
+
+### Connecting to Dappnode via WireGuard
+
+<details>
+<summary><b>Android</b></summary>
+
+1. Launch the OpenVPN for Android app.
+2. Tap on "+" icon.
+3. Select the option that fits you best to import the credentials: Scan QR code, Import file or Paste from clipboard to an empty profile.
+
+<p align="center">
+  <img src="/img/wireguard_android.jpg" alt="Import file in Android" style={{width: 20 + "em"}}/>
+</p>
+
+</details>
+
+<details>
+<summary><b>iPhone/iPad</b></summary>
+
+1. Launch the OpenVPN for Android app.
+2. Tap on "Add a tunnel".
+3. Select the option that fits you best to import the credentials: Scan QR code, Import file or Paste from clipboard to an empty profile.
+
+<p align="center">
+  <img src="/img/wireguard_ios_tunnel.jpeg" alt="Import file in iPhone" style={{width: 20 + "em"}}/>
+</p>
+
+</details>
+
+<details>
+<summary> <b>Linux</b></summary>
+
+1. Create a file for your credentials: `sudo nano /etc/wireguard/wg0.conf`
+2. Paste your credentials there and save the file (Ctrl+Shift+V, Ctrl+O, Ctrl+X).
+3. Activate the tunnel: `sudo wg-quick up wg0`
+
+:::note Tunnel Deactivation
+To deactivate the tunnel, execute the command: `sudo wg-quick down wg0`.
+:::
+
+</details>
+
+<details>
+<summary><b>macOS</b></summary>
+
+1. In the list of Applications, search for WireGuard and launch it.
+2. Click on "Manage Tunnels".
+3. Click on the "+" button.
+4. Select "Add empty tunnel".
+5. Paste the credentials you obtained earlier.
+6. Give a name to this profile and click on "Save".
+7. Click on "Activate" to connect to your Dappnode.
+
+<p align="center">
+  <img src="/img/wireguard_macos_tunnel.png" alt="Manage tunnels in macOS" style={{width: 40 + "em"}}/>
+</p>
+
+<p align="center">
+  <img src="/img/wireguard_macos_credentials.png" alt="Credentials in macOS" style={{width: 40 + "em"}}/>
+</p>
+
+</details>
+
+<details>
+<summary><b>Windows</b></summary>
+
+1. Launch the OpenVPN for Windows app.
+2. Click on "Add Tunnel".
+3. Paste the credentials you obtained earlier and save.
+4. Activate the tunnel.
+
+<p align="center">
+  <img src="/img/wireguard_windows.png" alt="Import file in Windows" style={{width: 40 + "em"}}/>
+</p>
+
+<p align="center">
+  <img src="/img/wireguard_windows_tunnel.png" alt="Import file in Windows" style={{width: 40 + "em"}}/>
+</p>
+
+<p align="center">
+  <img src="/img/wireguard_windows_activate.png" alt="Import file in Windows" style={{width: 40 + "em"}}/>
+</p>
+
+</details>
+
+<br/>
+
+:::tip Testing Your Connection
+Once connected, you can directly type [http://my.dappnode](http://my.dappnode) in your browser to access the Dappmanager.
 :::

@@ -78,19 +78,6 @@ Once you have installed the OpenVPN client on your device, follow the steps belo
 </details>
 
 <details>
-<summary><b>macOS</b></summary>
-
-1. Launch the OpenVPN for macOS app.
-2. Click on "Import file".
-3. Upload the `.ovpn` file you downloaded earlier.
-
-<p align="center">
-  <img src="/img/openvpn_mac.png" alt="Import file in macOS" style={{width: 20 + "em"}}/>
-</p>
-
-</details>
-
-<details>
 <summary><b>iPhone/iPad</b></summary>
 
 1. Go to the URL you obtained in the previous step.
@@ -102,6 +89,19 @@ Once you have installed the OpenVPN client on your device, follow the steps belo
 
 <p align="center">
   <img src="/img/openvpn_iphone_import.jpg" alt="Import file in iPhone" style={{width: 10 + "em"}}/>
+</p>
+
+</details>
+
+<details>
+<summary><b>macOS</b></summary>
+
+1. Launch the OpenVPN for macOS app.
+2. Click on "Import file".
+3. Upload the `.ovpn` file you downloaded earlier.
+
+<p align="center">
+  <img src="/img/openvpn_mac.png" alt="Import file in macOS" style={{width: 20 + "em"}}/>
 </p>
 
 </details>

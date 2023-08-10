@@ -2,6 +2,10 @@
 
 Virtual Private Network (VPN) is a robust method for accessing your Dappnode. It ensures a secure and encrypted connection between your device and the Dappnode, allowing you to manage your Dappnode from virtually anywhere. Depending on your needs and preferences, Dappnode offers support for two primary VPN technologies: **WireGuard** and **OpenVPN**.
 
+:::note
+It is not possible to use both Dappnode WiFi hotspot and VPN at the same time. If you want to use VPN, you'll need to disconnect your device from the WiFi hotspot.
+::::
+
 ## VPN Clients
 
 ### [WireGuard](/docs/user/access-my-dappnode/vpn/wireguard) (Recommended)
