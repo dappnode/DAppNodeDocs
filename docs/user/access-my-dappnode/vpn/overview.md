@@ -4,7 +4,7 @@ Virtual Private Network (VPN) is a robust method for accessing your Dappnode. It
 
 ## VPN Clients
 
-### [WireGuard](/docs/user/access-my-dappnode/vpn/wireguard)
+### [WireGuard](/docs/user/access-my-dappnode/vpn/wireguard) (Recommended)
 - WireGuard is a newer, streamlined VPN protocol known for its simplicity, speed, and security.
 - It requires less configuration and is considered more efficient in terms of CPU usage. [Learn more](https://www.wireguard.com/)
 
