@@ -57,6 +57,13 @@
 
   /* Smooth transition for hover effects */
   transition: background-color 0.3s, transform 0.3s;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.beautiful-big-button:active {
+  transform: scale(0.98); /* Slightly scale down */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1); /* Less shadow than default state */
 }
 
 .beautiful-big-button:hover {
@@ -66,6 +73,8 @@
     var(--ifm-color-primary-darkest)
   );
   transform: scale(1.05);
+
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
 }
 
 [data-theme="dark"] .beautiful-big-button {
@@ -83,4 +92,21 @@
     var(--ifm-color-primary),
     var(--ifm-color-primary-darkest)
   );
+}
+
+/* Flexbox for larger screens */
+@media screen and (min-width: 768px) {
+  .button-container {
+    flex-direction: row;
+  }
+}
+
+/* Flexbox for smaller screens */
+@media screen and (max-width: 767px) {
+  .button-container {
+    flex-direction: column;
+  }
+  .beautiful-big-button {
+    margin-bottom: 10px; /* Add spacing between the buttons */
+  }
 }
