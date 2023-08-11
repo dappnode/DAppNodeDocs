@@ -8,11 +8,11 @@ It is not possible to use both Dappnode WiFi hotspot and VPN at the same time. I
 
 ## VPN Clients
 
-### [WireGuard](/docs/user/access-my-dappnode/vpn/wireguard) (Recommended)
+### [WireGuard](/docs/user/access-your-dappnode/vpn/wireguard) (Recommended)
 - WireGuard is a newer, streamlined VPN protocol known for its simplicity, speed, and security.
 - It requires less configuration and is considered more efficient in terms of CPU usage. [Learn more](https://www.wireguard.com/)
 
-### [OpenVPN](/docs/user/access-my-dappnode/vpn/openvpn)
+### [OpenVPN](/docs/user/access-your-dappnode/vpn/openvpn)
 - OpenVPN is a well-established VPN protocol praised for its security and reliability.
 - It's more versatile and can bypass most network restrictions and firewalls. [Learn more](https://openvpn.net/)
 

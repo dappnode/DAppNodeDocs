@@ -30,7 +30,7 @@ If you have access to the Dappmanager:
 
 If you can't access the Dappmanager, you'll need to get the credentials via the Dappnode terminal:
 
-1. Access the Dappnode terminal, as explained [here](/docs/user/access-my-dappnode/terminal).
+1. Access the Dappnode terminal, as explained [here](/docs/user/access-your-dappnode/terminal).
 
 2. Execute the command: `dappnode_wireguard`.
 

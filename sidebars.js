@@ -20,49 +20,49 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "choose your path",
+          label: "Choose your path",
           id: "user/getting-started/choose-your-path",
         },
         {
           type: "doc",
-          label: "connect your dappnode to the router",
+          label: "Connect your Dappnode to the router",
           id: "user/getting-started/connect-dappnode-to-the-router",
         },
         {
           type: "doc",
-          label: "access DAppNode via WiFi",
+          label: "Access your Dappnode via WiFi",
           id: "user/getting-started/access-dappnode-via-wifi",
         },
         {
           type: "doc",
-          label: "register",
+          label: "Register",
           id: "user/getting-started/register",
         },
         {
           type: "doc",
-          label: "setup",
+          label: "Setup",
           id: "user/getting-started/setup",
         },
         {
           type: "doc",
-          label: "next steps",
+          label: "Next steps",
           id: "user/getting-started/next-steps",
         },
       ],
     },
     {
       type: "category",
-      label: "Access my dappnode",
+      label: "Access your dappnode",
       items: [
         {
           type: "doc",
           label: "Overview",
-          id: "user/access-my-dappnode/overview",
+          id: "user/access-your-dappnode/overview",
         },
         {
           type: "doc",
           label: "Wi-Fi",
-          id: "user/access-my-dappnode/wifi",
+          id: "user/access-your-dappnode/wifi",
         },
         {
           type: "category",
@@ -71,29 +71,29 @@ const sidebars = {
             {
               type: "doc",
               label: "Overview",
-              id: "user/access-my-dappnode/vpn/overview",
+              id: "user/access-your-dappnode/vpn/overview",
             },
             {
               type: "doc",
               label: "OpenVPN",
-              id: "user/access-my-dappnode/vpn/openvpn",
+              id: "user/access-your-dappnode/vpn/openvpn",
             },
             {
               type: "doc",
               label: "Wireguard",
-              id: "user/access-my-dappnode/vpn/wireguard",
+              id: "user/access-your-dappnode/vpn/wireguard",
             },
           ],
         },
         {
           type: "doc",
           label: "Terminal (Advanced)",
-          id: "user/access-my-dappnode/terminal",
+          id: "user/access-your-dappnode/terminal",
         },
         {
           type: "doc",
           label: "Local Proxy (Recovery)",
-          id: "user/access-my-dappnode/local",
+          id: "user/access-your-dappnode/local",
         },
       ],
     },
