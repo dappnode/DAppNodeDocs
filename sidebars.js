@@ -107,24 +107,62 @@ const sidebars = {
           id: "user/staking/overview",
         },
         {
-          type: "doc",
+          type: "category",
+          label: "LSD Pools",
+          items: [
+            {
+              type: "doc",
+              label: "Rocketpool",
+              id: "user/staking/lsd-pools/rocketpool",
+            },
+            {
+              type: "doc",
+              label: "Stakewise",
+              id: "user/staking/lsd-pools/stakewise",
+            },
+            {
+              type: "doc",
+              label: "Stakehouse",
+              id: "user/staking/lsd-pools/stakehouse",
+            }
+          ],
+        },
+        {
+          type: "category",
+          label: "DVT Technologies",
+          items: [
+            {
+              type: "doc",
+              label: "Obol",
+              id: "user/staking/dvt-technologies/obol",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "Solo",
-          id: "user/staking/solo",
-        },
-        {
-          type: "doc",
-          label: "Rocketpool",
-          id: "user/staking/rocketpool",
-        },
-        {
-          type: "doc",
-          label: "Stakehouse",
-          id: "user/staking/stakehouse",
-        },
-        {
-          type: "doc",
-          label: "Stakewise",
-          id: "user/staking/stakewise",
+          items: [
+            {
+              type: "doc",
+              label: "Ethereum mainnet",
+              id: "user/staking/solo/ethereum",
+            },
+            {
+              type: "doc",
+              label: "Ethereum testnet",
+              id: "user/staking/solo/goerli-prater",
+            },
+            {
+              type: "doc",
+              label: "Gnosis Chain",
+              id: "user/staking/solo/gnosis-chain",
+            },
+            {
+              type: "doc",
+              label: "LUKSO",
+              id: "user/staking/solo/lukso",
+            },
+          ],
         },
       ],
     },
