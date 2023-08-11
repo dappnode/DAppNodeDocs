@@ -11,7 +11,7 @@ Here are **four ways** you can connect to your Dappnode:
 
 3. [**🔗 Local Proxy (Recovery)**](/docs/user/access-your-dappnode/local.md): This is a backup connection method. It allows you to connect to Dappmanager when you're on the same local network. It's mainly for recovery purposes because of its limitations.
 
-4. [**💻 Terminal (Advanced, Recovery)**](/docs/user/access-your-dappnode/ssh.md): This is for those who know their way around computer commands. It provides complete control but might be complex for some users.
+4. [**💻 Terminal (Advanced, Recovery)**](/docs/user/access-your-dappnode/terminal.md): This is for those who know their way around computer commands. It provides complete control but might be complex for some users.
 
 :::info
 💡 To ensure you can always access your Dappnode, it's a smart idea to set up and know more than one connection method. In the coming sections, we'll guide you through setting up each of these connection ways.
