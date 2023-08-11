@@ -1,7 +1,8 @@
 Ethereum is the industry-leading smart contract platform. Since its transition of consensus mechanisms, from Proof of Work (PoW) to Proof of Stake (PoS), participating in Ethereum's block production by staking ETH has been an increasingly popular activity. Dappnode is an easy way to become a Solo Staker, but to achieve this you'll need a synced Ethereum full node. A full node is made of:
 - 1x execution client (Geth, Nethermind, Erigon or Besu)
 - 1x consensus client (Prysm, Lighthouse, Teku, Nimbus or Lodestar)
-<img width="1414" alt="image" src="https://github.com/dappnode/DAppNodeDocs/assets/75956027/3f47403f-025f-4800-ae83-7b07c753fa4c">
+
+![Stakers](/img/stakers-mainnet.png)
 
 If you visit the Stakers Menu, you'll find that picking an execution and consensus client is very intuitive. For your consensus client, keep in mind that enabling checksync when selecting it, will significantly reduce sync time by starting off a synced checkpoint and then syncing backwards from there. Once your consensus client is synced, your execution client will start syncing and take several hours to sync. Please be patient and if in doubt, always check your execution client's logs.
 
