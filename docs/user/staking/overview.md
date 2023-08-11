@@ -2,7 +2,7 @@
 
 **Unlock the potential of your Dappnode by becoming a Node Runner.**
 
-When you validate blocks for prominent Proof-of-Stake chains such as Ethereum, Gnosis Chain, LUKSO, and Avalanche, not only do you contribute to the network's security, but you also earn handsome rewards.
+When you validate blocks for prominent Proof-of-Stake chains such as Ethereum, Gnosis Chain and LUKSO, not only do you contribute to the network's security, but you also earn handsome rewards.
 
 ## What is Staking?
 Staking is the act of allocating a portion of your cryptocurrency holdings as collateral to participate in:

@@ -1,11 +1,31 @@
-Ethereum is the industry-leading smart contract platform. Since its transition of consensus mechanisms, from Proof of Work (PoW) to Proof of Stake (PoS), participating in Ethereum's block production by staking ETH has been an increasingly popular activity. Dappnode is an easy way to become a Solo Staker, but to achieve this you'll need a synced Ethereum full node. A full node is made of:
-- 1x execution client (Geth, Nethermind, Erigon or Besu)
-- 1x consensus client (Prysm, Lighthouse, Teku, Nimbus or Lodestar)
+# Ethereum mainnet
+
+Ethereum stands as a titan in the realm of smart contract platforms. Its monumental shift from Proof of Work (PoW) to Proof of Stake (PoS) has opened up opportunities for individuals to participate in Ethereum's block production by staking ETH.
+
+Dappnode simplifies your journey to becoming a **Solo Staker**. However, a crucial prerequisite is having a fully synchronized Ethereum node.
+
+## Components of a Full Ethereum Node
+
+- **Execution Client** (Choose one): Geth, Nethermind, Erigon, or Besu.
+- **Consensus Client** (Choose one): Prysm, Lighthouse, Teku, Nimbus, or Lodestar.
 
 ![Stakers](/img/stakers-mainnet.png)
 
-If you visit the Stakers Menu, you'll find that picking an execution and consensus client is very intuitive. For your consensus client, keep in mind that enabling checksync when selecting it, will significantly reduce sync time by starting off a synced checkpoint and then syncing backwards from there. Once your consensus client is synced, your execution client will start syncing and take several hours to sync. Please be patient and if in doubt, always check your execution client's logs.
+## Easy Client Selection
 
-If you are becoming a Solo Staker, to run a validator you'll need to select Web3Signer, which is a tool that will help you load your keystore files into your node.
+Head to the **Stakers Menu** for a straightforward selection process:
 
-Optionally, you can include MEV Boost if you're interested in offering different relays whenever your validator node gets to propose a block. We highly recommend doing your own, extensive research on those relays you'll be running, as well as any local regulations in your jurisdiction.
+1. **Pick your Execution Client.**
+2. **Choose your Consensus Client.** 
+   - Utilizing the *checksync* option can drastically cut down on synchronization time. It begins at a synced checkpoint and then syncs backward.
+3. After syncing your consensus client, the execution client starts its synchronization process. This can take a few hours, so patience is essential. For clarity or troubleshooting, consult your execution client's logs.
+
+## Becoming a Solo Staker
+
+To actively run a validator, you'll need **Web3Signer**. This tool assists in loading your keystore files directly into your node.
+
+## Additional Opportunities: MEV Boost
+
+Considering MEV Boost? It allows your validator node to propose different relays when it's its turn. However, before diving in, a thorough understanding of the relays and any local regulations is paramount.
+
+**Remember**: Embarking on the staking journey requires diligence. Always keep abreast of developments and make informed decisions.
