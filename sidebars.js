@@ -173,6 +173,11 @@ const sidebars = {
           label: "ARM",
           id: "user/install/arm",
         },
+        {
+          type: "doc",
+          label: "Dappnode commands",
+          id: "user/install/dappnode-commands",
+        },
       ],
     },
     {
@@ -247,7 +252,7 @@ const sidebars = {
           type: "doc",
           label: "Setup Wizard",
           id: "dev/references/setup-wizard",
-        }
+        },
       ],
     },
     {
