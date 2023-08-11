@@ -110,3 +110,60 @@
     margin-bottom: 10px; /* Add spacing between the buttons */
   }
 }
+
+/* "Choose your path" section cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 18rem; /* Adjust as per your preference */
+  height: 20rem; /* Adjust as per your preference */
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+  text-decoration: none;
+}
+
+.card:active {
+  transform: translateY(-0.25rem);
+}
+
+.card img {
+  width: auto;       
+  display: block;  
+  margin: 0 auto;  
+  border-radius: 0.5rem;
+}
+
+.dappnode-box {
+  height: 61% !important;
+}
+
+.card h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #777;
+  flex-grow: 1; /* This makes sure the text takes up remaining space and pushes buttons to the bottom */
+}
