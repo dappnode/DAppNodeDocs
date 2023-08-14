@@ -24,7 +24,7 @@ Here are basic instructions to enable UPnP on most routers:
 ### Troubleshooting
 
 <details>
-  <summary>How can I check the ports have been opened successfully by UPnP?</summary>
+  <summary><b>How can I verify that the ports were successfully opened by UPnP? </b></summary>
 
 Access your dappnode <a href="http://my.dappnode/support/ports">support > ports</a> view and execute an API scan of the ports.
 
@@ -38,8 +38,8 @@ Alternatively, you can use tools like `nmap` to scan your own ports from a diffe
 
 </details>
 <details>
-  <summary>Why I cannot connect my dappnode to the router via wifi?</summary>
+  <summary><b>Why can't I connect my DappNode to the router via Wi-Fi?</b></summary>
   
-ATM, Dappnode does not support to connect to a router via Wi-fi, only via ethernet. Make sure your dappnode is directly wired to the router via an ethernet cable
+Currently, Dappnode doesn't support Wi-Fi connections to a router. Ensure your Dappnode is connected directly to the router using an ethernet cable.
 
 </details>
