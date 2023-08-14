@@ -4,7 +4,7 @@ Virtual Private Network (VPN) is a robust method for accessing your Dappnode. It
 
 :::note
 It is not possible to use both Dappnode WiFi hotspot and VPN at the same time. If you want to use VPN, you'll need to disconnect your device from the WiFi hotspot.
-::::
+:::
 
 ## VPN Clients
 
