@@ -30,7 +30,7 @@ Choose an IPFS gateway available at https://ipfs.github.io/public-gateway-checke
 
 Connecting to IPFS remote gateways could enable security risks. For example, the gateway could attempt to serve malicious content to the user. We mitigate this risk by verifying the content downladed with [CID technology](https://docs.ipfs.io/concepts/content-addressing/).
 
-If the DAppNode IPFS gateway is not available (we make no uptime guarantees and we offer it on a best-effort basis) the user can set another IPFS gateway in the input field, check out all the [IPFS gateways available](https://ipfs.github.io/public-gateway-checker/). DAppNode recommends using them as a last resort.
+If the Dappnode IPFS gateway is not available (we make no uptime guarantees and we offer it on a best-effort basis) the user can set another IPFS gateway in the input field, check out all the [IPFS gateways available](https://ipfs.github.io/public-gateway-checker/). Dappnode recommends using them as a last resort.
 
 <hr />
 

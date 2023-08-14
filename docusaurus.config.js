@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "DAppNode",
+  title: "Dappnode",
   tagline: "Simplifying decentralization",
   favicon: "img/logo.png",
 
@@ -19,7 +19,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "dappnode", // Usually your GitHub org/user name.
-  projectName: "DAppNode", // Usually your repo name.
+  projectName: "Dappnode", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -43,7 +43,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/dappnode/DAppNodeDocs",
+          editUrl: "https://github.com/dappnode/DappnodeDocs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -58,9 +58,9 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "DAppNode Docs",
+        title: "Dappnode Docs",
         logo: {
-          alt: "DAppNode Logo",
+          alt: "Dappnode Logo",
           src: "img/logo.svg",
           href: "/", // https://dappnode.com
         },
@@ -90,7 +90,7 @@ const config = {
             label: "DAO",
           },
           {
-            href: "https://github.com/dappnode/DAppNodeDocs",
+            href: "https://github.com/dappnode/DappnodeDocs",
             label: "GitHub",
             position: "right",
           },

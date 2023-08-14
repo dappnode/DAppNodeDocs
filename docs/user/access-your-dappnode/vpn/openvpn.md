@@ -145,7 +145,7 @@ Once you have installed the OpenVPN client on your device, follow the steps belo
 
 1. Open the terminal.
 2. Navigate to the directory where you have stored your `.ovpn` file.
-3. Execute the command: `sudo openvpn DAppNode_VPN.ovpn`.
+3. Execute the command: `sudo openvpn Dappnode_VPN.ovpn`.
 
 </details>
 

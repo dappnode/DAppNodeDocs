@@ -1,6 +1,6 @@
-# DAppNode Package (DNP) manifest
+# Dappnode Package (DNP) manifest
 
-The DAppNode Package manifest defines all the necessary information for a DAppNode to understand this package:
+The Dappnode Package manifest defines all the necessary information for a Dappnode to understand this package:
 
 - IPFS of BZZ hashes to download its docker image
 - Docker related data to configure and run its container
@@ -14,7 +14,7 @@ The DAppNode Package manifest defines all the necessary information for a DAppNo
   "version": "0.2.0",
   "upstreamVersion": "2.6.0-beta",
   "shortDescription": "Distributed file system for storing and accessing data.",
-  "description": "Welcome! IPFS is a distributed system for storing and accessing files, websites, applications, and data. If you’re new to IPFS, check our [introductory page](https://ipfs.io/#why) for an easy overview. \n\nWith this node you can upload and download files from IPFS using it own fancy web console at [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui). Other DAppNode Packages and external applications can use its API at the endpoint `http://ipfs.dappnode:5001/api`. Go to the [IPFS HTTP API full reference](https://docs.ipfs.io/reference/api/http/) to check all the features of the API.",
+  "description": "Welcome! IPFS is a distributed system for storing and accessing files, websites, applications, and data. If you’re new to IPFS, check our [introductory page](https://ipfs.io/#why) for an easy overview. \n\nWith this node you can upload and download files from IPFS using it own fancy web console at [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui). Other Dappnode Packages and external applications can use its API at the endpoint `http://ipfs.dappnode:5001/api`. Go to the [IPFS HTTP API full reference](https://docs.ipfs.io/reference/api/http/) to check all the features of the API.",
   "type": "service",
   "chain": "ethereum",
   "mainService": "webserver",
@@ -39,10 +39,10 @@ The DAppNode Package manifest defines all the necessary information for a DAppNo
   ],
   "changelog": "Brief summary of the most relevant changes that the user must known before installing",
   "warnings": {
-    "onInstall": "You must set the PASSWORD ENV before installing the DAppNode Package in order for the setup to work correctly.",
+    "onInstall": "You must set the PASSWORD ENV before installing the Dappnode Package in order for the setup to work correctly.",
     "onUpdate": "Your VPN connection will be lost when the VPN finalizes updating. Leave 1-2 minutes after executing the update and then reconnect and refresh this site.",
-    "onReset": "You MUST properly close your open channels before resetting this DAppNode Package or you may lose your funds.",
-    "onRemove": "You MUST properly close your open channels before removing this DAppNode Package or you may lose your funds."
+    "onReset": "You MUST properly close your open channels before resetting this Dappnode Package or you may lose your funds.",
+    "onRemove": "You MUST properly close your open channels before removing this Dappnode Package or you may lose your funds."
   },
   "updateAlerts": [
     {
@@ -67,13 +67,13 @@ The DAppNode Package manifest defines all the necessary information for a DAppNo
       "port": 80
     }
   ],
-  "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
+  "author": "Dappnode Association <admin@dappnode.io> (https://github.com/dappnode)",
   "contributors": [
     "Michael First <developerHanlder@project.io> (https://github.com/developerHanlder)",
     "Michael Second <developerHanlder@project.io> (https://github.com/developerHanlder)"
   ],
   "categories": ["Developer tools", "Blockchain"],
-  "keywords": ["DAppNodeCore"],
+  "keywords": ["DappnodeCore"],
   "links": {
     "homepage": "https://github.com/dappnode/DNP_IPFS#readme",
     "ui": "http://ipfs.dappnode:5001/webui",
@@ -127,7 +127,7 @@ The DAppNode Package manifest defines all the necessary information for a DAppNo
 
 ### name
 
-DAppNode Package ENS name.
+Dappnode Package ENS name.
 
 - is **required**
 - type: `string`
@@ -140,7 +140,7 @@ Example:
 
 ### version
 
-DAppNode Package semantic version (semver).
+Dappnode Package semantic version (semver).
 
 - is **required**
 - type: `string`
@@ -162,7 +162,7 @@ Example:
 
 ### upstreamVersion
 
-For DAppNode Packages that only wrap existing software (i.e. Bitcoin node, Ethereum node), the underlying software
+For Dappnode Packages that only wrap existing software (i.e. Bitcoin node, Ethereum node), the underlying software
 version can be specified here. It will be shown in the admin UI alongside the field `version`.
 
 - is optional
@@ -180,9 +180,9 @@ Examples:
 
 ### shortDescription
 
-Short DAppNode Package description, 6-8 words sentence briefly describing the purpose of this DAppNode Package. The
+Short Dappnode Package description, 6-8 words sentence briefly describing the purpose of this Dappnode Package. The
 purpose is to quickly grab users' attention and clearly define its purpose. Markdown is discouraged as it will NOT be
-rendered on the DAppNode Package store view.
+rendered on the Dappnode Package store view.
 
 - is optional
 - type: `string`
@@ -195,8 +195,8 @@ Example:
 
 ### description
 
-DAppNode Package description. Markdown and links are allowed and ecouraged to give users the option to read more
-information about this DAppNode Package.
+Dappnode Package description. Markdown and links are allowed and ecouraged to give users the option to read more
+information about this Dappnode Package.
 
 - is **required**
 - type: `string`
@@ -204,12 +204,12 @@ information about this DAppNode Package.
 Example:
 
 ```json
-"Welcome! IPFS is a distributed system for storing and accessing files, websites, applications, and data. If you’re new to IPFS, check our [introductory page](https://ipfs.io/#why) for an easy overview. \n\nWith this node you can upload and download files from IPFS using it own fancy web console at [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui). Other DAppNode Packages and external applications can use its API at the endpoint `http://ipfs.dappnode:5001/api`. Go to the [IPFS HTTP API full reference](https://docs.ipfs.io/reference/api/http/) to check all the features of the API."
+"Welcome! IPFS is a distributed system for storing and accessing files, websites, applications, and data. If you’re new to IPFS, check our [introductory page](https://ipfs.io/#why) for an easy overview. \n\nWith this node you can upload and download files from IPFS using it own fancy web console at [http://ipfs.dappnode:5001/webui](http://ipfs.dappnode:5001/webui). Other Dappnode Packages and external applications can use its API at the endpoint `http://ipfs.dappnode:5001/api`. Go to the [IPFS HTTP API full reference](https://docs.ipfs.io/reference/api/http/) to check all the features of the API."
 ```
 
 ### type
 
-Type of this DAppNode Package. It is used to trigger some special features such as core functionality.
+Type of this Dappnode Package. It is used to trigger some special features such as core functionality.
 
 - is **required**
 - default: `"service"`
@@ -219,9 +219,9 @@ The value of this property **must** be equal to one of the known values below.
 
 | Value     | Description                                                                       |
 | --------- | --------------------------------------------------------------------------------- |
-| `service` | Can have ENVs a depend on library DAppNode Packages                               |
-| `library` | Should not have ENVs and cannot depend on service DAppNode Packages               |
-| `dncore`  | DAppNode Packages that are part of the DAppNode core and have special permissions |
+| `service` | Can have ENVs a depend on library Dappnode Packages                               |
+| `library` | Should not have ENVs and cannot depend on service Dappnode Packages               |
+| `dncore`  | Dappnode Packages that are part of the Dappnode core and have special permissions |
 
 Examples:
 
@@ -235,7 +235,7 @@ Examples:
 
 ### chain
 
-Indicate that this DAppNode Package is a blockchain node so the admin UI shows its syncing status
+Indicate that this Dappnode Package is a blockchain node so the admin UI shows its syncing status
 
 - is optional
 - type: `string`
@@ -305,7 +305,7 @@ Examples:
 
 ### dependencies
 
-DAppNode Package dependencies. Must be an object where the keys are the DAppNode Package's ENS. The values must be a
+Dappnode Package dependencies. Must be an object where the keys are the Dappnode Package's ENS. The values must be a
 semantic range, i.e. `'0.2.0'`, `'^0.2.1'`, `'*'`, `'latest'`,
 `'/ipfs/QmWwMb3XhuCH6JnCF6m6EQzA4mW9pHHtg7rqAfhDr2ofi8'`.
 
@@ -333,7 +333,7 @@ Examples:
 
 ### requirements
 
-Specify requirements to be met before allowing users to install this DAppNode Package.
+Specify requirements to be met before allowing users to install this Dappnode Package.
 
 - is optional
 - type: `object` with the following properties:
@@ -344,7 +344,7 @@ Specify requirements to be met before allowing users to install this DAppNode Pa
 
 #### minimumDappnodeVersion
 
-Minimum DAppNode version that includes all the features necessary to run this DAppNode Package.
+Minimum Dappnode version that includes all the features necessary to run this Dappnode Package.
 
 - is optional
 - type: `string`
@@ -414,7 +414,7 @@ Example:
 ### backup
 
 Allows users to download and restore a backup of key files of this package. If this property is non-empty array, a new
-view will be available in the admin UI for this DAppNode Package. The files or directories specified in the array will
+view will be available in the admin UI for this Dappnode Package. The files or directories specified in the array will
 be bundled in a tarball. As long as the name properties stay the same, their associated paths can change in future
 versions. Then, when restoring an old backup, the new paths will be associated to files stored under the same name
 keys. **Note:** it is recommended to only backup lightweight files such as configs, keys or passwords.
@@ -504,7 +504,7 @@ Example:
 
 ### warnings
 
-Very relevant information that MUST be shown to the user BEFORE executing a specific action in the DAppNode Package's
+Very relevant information that MUST be shown to the user BEFORE executing a specific action in the Dappnode Package's
 lifecycle.
 
 - is optional
@@ -519,7 +519,7 @@ lifecycle.
 
 #### onInstall
 
-Will be shown before installing the DAppNode Package.
+Will be shown before installing the Dappnode Package.
 
 - is optional
 - type: `string`
@@ -527,12 +527,12 @@ Will be shown before installing the DAppNode Package.
 Example:
 
 ```json
-"You must set the PASSWORD ENV before installing the DAppNode Package in order for the setup to work correctly."
+"You must set the PASSWORD ENV before installing the Dappnode Package in order for the setup to work correctly."
 ```
 
 #### onUpdate
 
-Will be shown before updating the DAppNode Package, not in the first installation.
+Will be shown before updating the Dappnode Package, not in the first installation.
 
 - is optional
 - type: `string`
@@ -545,7 +545,7 @@ Example:
 
 #### onReset
 
-Will be shown before resetting the DAppNode Package.
+Will be shown before resetting the Dappnode Package.
 
 - is optional
 - type: `string`
@@ -553,12 +553,12 @@ Will be shown before resetting the DAppNode Package.
 Example:
 
 ```json
-"You MUST properly close your open channels before resetting this DAppNode Package or you may lose your funds."
+"You MUST properly close your open channels before resetting this Dappnode Package or you may lose your funds."
 ```
 
 #### onRemove
 
-Will be shown before removing the DAppNode Package.
+Will be shown before removing the Dappnode Package.
 
 - is optional
 - type: `string`
@@ -566,7 +566,7 @@ Will be shown before removing the DAppNode Package.
 Example:
 
 ```json
-"You MUST properly close your open channels before removing this DAppNode Package or you may lose your funds."
+"You MUST properly close your open channels before removing this Dappnode Package or you may lose your funds."
 ```
 
 ### updateAlerts
@@ -586,7 +586,7 @@ All items must be of the type: `object` with the following properties:
 
 #### from
 
-Semver range, show this message when a user updates this DAppNode Package FROM a version that satisfies this range.
+Semver range, show this message when a user updates this Dappnode Package FROM a version that satisfies this range.
 
 - is **required**
 - type: `string`
@@ -604,7 +604,7 @@ Examples:
 
 #### to
 
-Semver range, show this message when a user updates this DAppNode Package TO a version that satisfies this range.
+Semver range, show this message when a user updates this Dappnode Package TO a version that satisfies this range.
 
 - is optional
 - default: `"*"`
@@ -667,7 +667,7 @@ Example:
 
 ### style
 
-Graphic information to control the appearance of DAppNode Package related items in the admin UI.
+Graphic information to control the appearance of Dappnode Package related items in the admin UI.
 
 - is optional
 - type: `object` with the following properties:
@@ -680,7 +680,7 @@ Graphic information to control the appearance of DAppNode Package related items 
 
 #### featuredBackground
 
-CSS background property to be applied to the DAppNode Package card in the DAppNode Package store if featured. Go to the
+CSS background property to be applied to the Dappnode Package card in the Dappnode Package store if featured. Go to the
 [Mozilla CSS background reference](https://developer.mozilla.org/docs/Web/CSS/background) for valid values.
 
 - is optional
@@ -698,7 +698,7 @@ Examples:
 
 #### featuredColor
 
-CSS color property to be applied to the DAppNode Package card in the DAppNode Package store if featured. Go to the
+CSS color property to be applied to the Dappnode Package card in the Dappnode Package store if featured. Go to the
 [Mozilla CSS color reference](https://developer.mozilla.org/docs/Web/CSS/color) for valid values.
 
 - is optional
@@ -716,7 +716,7 @@ Examples:
 
 #### featuredAvatarFilter
 
-CSS filter property to be applied to `<img>` component (avatar) of the DAppNode Package card in the DAppNode Package
+CSS filter property to be applied to `<img>` component (avatar) of the Dappnode Package card in the Dappnode Package
 store if featured. Go to the [Mozilla CSS filter reference](https://developer.mozilla.org/docs/Web/CSS/filter) for
 valid values.
 
@@ -816,7 +816,7 @@ Single exposable service item
 
 ### author
 
-Main author of this DAppNode Package. Must follow the structure `${name} <${email}> (${githubUserLink})`.
+Main author of this Dappnode Package. Must follow the structure `${name} <${email}> (${githubUserLink})`.
 
 - is optional
 - type: `string`
@@ -825,12 +825,12 @@ Main author of this DAppNode Package. Must follow the structure `${name} <${emai
 Example:
 
 ```json
-"DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)"
+"Dappnode Association <admin@dappnode.io> (https://github.com/dappnode)"
 ```
 
 ### contributors
 
-Contributing authors of this DAppNode Package.
+Contributing authors of this Dappnode Package.
 
 - is optional
 - type: Array type: `string[]`
@@ -852,7 +852,7 @@ Example:
 
 ### categories
 
-Categories to organize and group DAppNode Packages in the DAppNode Package store. Only one or two categories maximum
+Categories to organize and group Dappnode Packages in the Dappnode Package store. Only one or two categories maximum
 should be specified per package. If you feel that any of the current categories represent the nature of your package,
 please open an issue requesting a new category https://github.com/dappnode/dnp-manifest/issues/new
 
@@ -882,7 +882,7 @@ Example:
 
 ### keywords
 
-Keywords, relevant and descriptive of this DAppNode Package. They will be shown in the admin UI DAppNode Package store.
+Keywords, relevant and descriptive of this Dappnode Package. They will be shown in the admin UI Dappnode Package store.
 
 - is optional
 - type: Array type: `string[]`
@@ -911,7 +911,7 @@ shown as well but with their plain name instead of an icon.
 
 #### homepage
 
-Url to an informative homepage for this DAppNode Package. Should be a README or landing website.
+Url to an informative homepage for this Dappnode Package. Should be a README or landing website.
 
 - is optional
 - type: `string`
@@ -924,7 +924,7 @@ Example:
 
 #### ui
 
-Url to this DNP's DAppNode local UI.
+Url to this DNP's Dappnode local UI.
 
 - is optional
 - type: `string`
@@ -937,7 +937,7 @@ Example:
 
 #### api
 
-Url to this DNP's DAppNode local HTTP API endpoint.
+Url to this DNP's Dappnode local HTTP API endpoint.
 
 - is optional
 - type: `string`
@@ -950,7 +950,7 @@ Example:
 
 #### gateway
 
-Url to this DNP's DAppNode local gateway.
+Url to this DNP's Dappnode local gateway.
 
 - is optional
 - type: `string`
@@ -963,7 +963,7 @@ Example:
 
 ### repository
 
-DAppNode Package's repository. Must be a publicly available url that can be handed directly to a VCS program.
+Dappnode Package's repository. Must be a publicly available url that can be handed directly to a VCS program.
 
 - is optional
 - type: `object` with the following properties:
@@ -1033,7 +1033,7 @@ Example:
 
 ### license
 
-DAppNode Package's License.
+Dappnode Package's License.
 
 - is **required**
 - type: `string`

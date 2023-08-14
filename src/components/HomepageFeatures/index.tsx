@@ -16,10 +16,10 @@ const FeatureList: FeatureItem[] = [
     Image: require("@site/static/img/getting-started.png").default,
     description: (
       <>
-        Kickstart your blockchain journey with DAppNode. Our straightforward
+        Kickstart your blockchain journey with Dappnode. Our straightforward
         setup guides you to deploy and manage your decentralized applications
         easily. No more technical jargon, just a seamless blockchain experience.
-        With DAppNode, diving into decentralization has never been simpler.
+        With Dappnode, diving into decentralization has never been simpler.
         Start now!
       </>
     ),
@@ -30,10 +30,10 @@ const FeatureList: FeatureItem[] = [
     Image: require("@site/static/img/solo-staking-ethereum.png").default,
     description: (
       <>
-        Experience the future of Ethereum with DAppNode. Simplify your solo
+        Experience the future of Ethereum with Dappnode. Simplify your solo
         staking journey with our user-friendly platform, empowering you to run
         your own Ethereum 2.0 validator node with ease and security. With
-        DAppNode, you're in control. Stake smarter, stake with DAppNode.
+        Dappnode, you're in control. Stake smarter, stake with Dappnode.
       </>
     ),
     url: "/docs/user/staking/introduction",
@@ -43,7 +43,7 @@ const FeatureList: FeatureItem[] = [
     Image: require("@site/static/img/stakehouse-logo.png").default,
     description: (
       <>
-        Boost your staking game with DAppNode's Stakehouse! Stakehouse
+        Boost your staking game with Dappnode's Stakehouse! Stakehouse
         streamlines the process, making it effortless to stake your Ethereum
         directly from home. With a user-friendly interface and robust support,
         Stakehouse offers an unrivaled staking experience, making you a part of

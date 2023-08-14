@@ -29,12 +29,12 @@ assignees:
 
 <!--If applicable, add screenshots to help explain your problem.-->
 
-**DAppNode version:**
+**Dappnode version:**
 
-<!--Print the DAppNode versions and info found in http://my.dappnode/#/support/report -->
+<!--Print the Dappnode versions and info found in http://my.dappnode/#/support/report -->
 
 - Package version: <!-- v0.1.14, upstream: prysm-1.0.0-beta -->
-- OS: <!-- Ubuntu, Debian, DAppNode Mini, DAppNode Advance -->
+- OS: <!-- Ubuntu, Debian, Dappnode Mini, Dappnode Advance -->
 - Browser <!-- If applicable: Brave, Firefox, Chrome, Safari -->
 
 **Additional context**

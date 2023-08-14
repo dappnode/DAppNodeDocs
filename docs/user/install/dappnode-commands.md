@@ -8,7 +8,7 @@ Dappnode comes with a set of commands that can be used to manage the system. The
 Go to the [Access your dappnode via ssh](/docs/user/cli/) section to learn more about how to access your dappnode via ssh
 :::
 
-Below is a list of available commands in DAppNode:
+Below is a list of available commands in Dappnode:
 
 - `dappnode_help`: prints out this message
 
@@ -18,7 +18,7 @@ Below is a list of available commands in DAppNode:
 
 - `dappnode_wireguard`: get Wireguard VPN credentials. Use `dappnode_wireguard --help` for more info
 
-- `dappnode_connect`: check connectivity methods available in DAppNode
+- `dappnode_connect`: check connectivity methods available in Dappnode
 
 - `dappnode_status`: get status of dappnode containers
 
@@ -26,7 +26,7 @@ Below is a list of available commands in DAppNode:
 
 - `dappnode_stop`: stop dappnode containers
 
-To run a command, enter it in your DAppNode terminal. For example:
+To run a command, enter it in your Dappnode terminal. For example:
 
 ```bash
 dappnode_help

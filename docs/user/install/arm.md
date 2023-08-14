@@ -4,11 +4,11 @@
 
 - 8 Gb RAM memory
 - Screen and keyboard (Only for the first installation)
-- Wired connection to the DAppNode
+- Wired connection to the Dappnode
 
 ## Prepare and boot ISO
 
-1. Download the file `DAppNodeARM-x.x.xx.img.gz/zip` from [here](https://github.com/dappnode/DAppNode/releases/tag/v0.2.39).
+1. Download the file `DappnodeARM-x.x.xx.img.gz/zip` from [here](https://github.com/dappnode/Dappnode/releases/tag/v0.2.39).
 
 2. Unzip the file.
 
@@ -38,13 +38,13 @@ Password:
 
 Once you have logged in, you will see the next message:
 `If you want to add any additional partition or disk, do it now.`
-`Run 'sudo dappnodepi-install' command to install DAppNode when ready.`
+`Run 'sudo dappnodepi-install' command to install Dappnode when ready.`
 Connect your raspberry to the internet.
 Execute `sudo dappnodedepi-install` to finalize the dappnode installation.
 
 ## Basic Setup
 
-In case you have installed DAppNode in a raspberry using a sd card and you want to use a ssd hard disk you should to mount docker in this ssd. To do this follow the next steps:
+In case you have installed Dappnode in a raspberry using a sd card and you want to use a ssd hard disk you should to mount docker in this ssd. To do this follow the next steps:
 
 - Stop Docker service
   `systemctl stop docker`

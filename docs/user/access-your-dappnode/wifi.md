@@ -7,7 +7,7 @@ For those who got their hardware elsewhere, there's a chance the Wi-Fi card migh
 ## Connecting to Dappnode Wi-Fi
 
 1. 📱 On a device of your choice, navigate to the **Wi-Fi settings**.
-2. 🔍 Search and select the network labeled as `DAppNodeWIFI`.
+2. 🔍 Search and select the network labeled as `DappnodeWIFI`.
 3. 🔑 Enter the password: `dappnode`.
 4. 🌐 Open a browser and go to http://my.dappnode/.
 

@@ -1,6 +1,6 @@
 # Connect your dappnode to the router
 
-DAppNode offers a seamless plug-and-play experience. For optimal performance and to ensure smooth operation, please connect your DAppNode to your router and enable UPnP settings within the router.
+Dappnode offers a seamless plug-and-play experience. For optimal performance and to ensure smooth operation, please connect your Dappnode to your router and enable UPnP settings within the router.
 
 ![Connect to router](/img/connect-to-router.png)
 

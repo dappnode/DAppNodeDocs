@@ -14,13 +14,13 @@ NODE has a total initial supply of 100,000,000 tokens. These tokens have been di
 
 NODE has been airdropped in a NODEdrop to our community of faithful supporters. Recipients of the NODEdrop include:
 
-- DAppNode Team Members
-- DAppNode Founders
-- Purchasers of DAppNode hardware
+- Dappnode Team Members
+- Dappnode Founders
+- Purchasers of Dappnode hardware
 - Code Contributors
 - Active community members, ranked by our sourcecred algorithm
-- Donors to DAppNode in Gitcoin Grants Rounds (with donations above $1)
-- Eth2 stakers who have self-identified as DAppNode runners by including the word "DAppNode" in their graffiti
+- Donors to Dappnode in Gitcoin Grants Rounds (with donations above $1)
+- Eth2 stakers who have self-identified as Dappnode runners by including the word "Dappnode" in their graffiti
 - Eth2 stakers present in the Genesis of Eth2
 
 Check your NODEdrop [here](http://app.dappnode.io/nodedrop).
@@ -63,7 +63,7 @@ This chart show how the function works in dao network. In Ethereum 10% was avail
     <img width="70%"src="../../img/nodestream_vesting_xdai.png"/>
 </p>
 
-The NODEstream has been designed to encourage long-term participation in the NODE Economy. As the NODE Economy grows and the DAppNode universe expands, our community is awarded even more NODE to use in DAO governance.
+The NODEstream has been designed to encourage long-term participation in the NODE Economy. As the NODE Economy grows and the Dappnode universe expands, our community is awarded even more NODE to use in DAO governance.
 
 <p align="center">
     <img src="../../img/claimNODE.png"/>

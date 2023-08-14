@@ -1,9 +1,9 @@
 # Choose your path
 
-Regardless of how you wish to utilize DAppNode, taking the initiative to contribute to decentralization and earning rewards is commendable. Embark on your desired path and experience the full potential of DAppNode.
+Regardless of how you wish to utilize Dappnode, taking the initiative to contribute to decentralization and earning rewards is commendable. Embark on your desired path and experience the full potential of Dappnode.
 
 :::note
-Interested in purchasing a DAppNode? Explore our <a href="https://dappnode.io">official store</a>.
+Interested in purchasing a Dappnode? Explore our <a href="https://dappnode.io">official store</a>.
 :::
 
 <br />

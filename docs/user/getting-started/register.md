@@ -39,7 +39,7 @@ With your account ready and Recovery Token secured:
 
 1. Proceed to the **Login** page.
 2. Input your **Username** and **Password**.
-3. Press the **Login** button to dive into your DAppNode account.
+3. Press the **Login** button to dive into your Dappnode account.
 
 <p align="center">
     <img width="50%" src="/img/register-login.png" alt="Login"/>
