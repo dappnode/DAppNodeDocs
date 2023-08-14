@@ -37,7 +37,7 @@ If the Dappnode IPFS gateway is not available (we make no uptime guarantees and 
 ### Troubleshooting
 
 <details>
-  <summary>Im running local IPFS and Im having issues, what can I do?</summary>
+  <summary><b>I'm running local IPFS and I'm having issues, what can I do?</b></summary>
 This may be due to different reasons:
 
 - Poor internet connection: in this case you can try switching your IPFS node mode to lowpower mode at http://my.dappnode/packages/system/ipfs.dnp.dappnode.eth/config
@@ -46,8 +46,4 @@ This may be due to different reasons:
 
 If none of this works you can always switch to remote IPFS mode at http://my.dappnode/repository/ipfs
 
-</details>
-
-<details>
-  <summary></summary>
 </details>

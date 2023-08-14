@@ -15,11 +15,11 @@ In order to setup your Ethical Metrics notification system, you need to follow t
 ### Troubleshooting
 
 <details>
-  <summary>How can I make sure my dappnode is registered? </summary>
+  <summary><b>How can I make sure my dappnode is registered?</b> </summary>
 </details>
 <details>
-  <summary>How can I test a dappnode down notification? </summary>
+  <summary><b>How can I test a dappnode down notification?</b> </summary>
 </details>
 <details>
-  <summary>How can I unregister from the monitoring system? </summary>
+  <summary><b>How can I unregister from the monitoring system?</b> </summary>
 </details>

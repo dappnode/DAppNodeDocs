@@ -33,7 +33,7 @@ dappnode_help
 ```
 
 <details>
-  <summary>I get the error "command not found"</summary>
+  <summary><b>I get the error "command not found"</b></summary>
   
 If you get the error `command not found` when trying to execute a dappnode command, it means that the command is not available in your system. You need to load the dappndoe profile as follows:
 
