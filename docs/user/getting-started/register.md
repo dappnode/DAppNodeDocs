@@ -1,51 +1,55 @@
 # Register
 
-## Register as new user
+## 1. Register as New User
 
-Begin the journey by registering a new account:
+Start by setting up your new account:
 
-1. Enter your preferred Username.
-2. Choose a strong Password. Ensure it contains a mix of characters, numbers, and symbols to enhance security.
-3. Re-enter the password in the Confirm Password field to make sure there are no mistakes.
-4. Click on the Register button.
+1. **Input** your desired **Username**.
+2. **Select a secure password**. It should include a combination of characters, numbers, and special symbols for optimal security.
+3. **Confirm your password** to ensure accuracy.
+4. Click the **Register** button.
 
-![register](/img/register.png)
+<p align="center">
+    <img width="50%" src="/img/register.png" alt="Register"/>
+</p>
 
-## Copy and save recovery token
+## 2. Secure Your Recovery Token
 
-After registering, you'll receive a Recovery Token. This token is vital for:
+Upon successful registration, you'll be provided with a Recovery Token. This token is crucial for:
 
-- Resetting your password if you forget it.
-- Restoring your account in case of any access issues.
-- To ensure your token's safety:
+- Retrieving your password if forgotten.
+- Regaining account access if needed.
 
-Click on the button or link prompting you to view your Recovery Token.
-
-Carefully copy the token and keep it in a secure place.
+   **To safeguard your token**:
+   
+- Click the button or link labeled "View Recovery Token".
+- Diligently copy the token and store it in a safe location.
 
 :::caution
-It's advisable to store it both digitally (in encrypted storage) and physically (written down and stored safely).
+Store your token in both digital (encrypted) and physical forms (noted and stored securely).
 :::
 
-Congratulations! You're now registered and logged in to DAppNode. Ensure you keep your password and recovery token safe. Always refer to the official DAppNode documentation or community for further queries or support.
+<p align="center">
+    <img width="50%" src="/img/register-token.png" alt="Recovery Token"/>
+</p>
 
-![register-token](/img/register-token.png)
+## 3. Logging In
 
-## Login
+With your account ready and Recovery Token secured:
 
-Now that your account is set up and you have your recovery token secured:
+1. Proceed to the **Login** page.
+2. Input your **Username** and **Password**.
+3. Press the **Login** button to dive into your DAppNode account.
 
-1. Navigate to the Login page.
-2. Enter your Username and Password.
-3. Click on the Login button to access your DAppNode account.
+<p align="center">
+    <img width="50%" src="/img/register-login.png" alt="Login"/>
+</p>
 
-![register-login](/img/register-login.png)
-
-<hr />
+---
 
 ### Troubleshooting
 
 <details>
-  <summary>How can I change my password? </summary>
-Go to http://my.dappnode/system/profile and reset your password
+  <summary><b>Forgot your password?</b></summary>
+Visit <a href="http://my.dappnode/system/profile">Profile Settings</a> to reset it.
 </details>
