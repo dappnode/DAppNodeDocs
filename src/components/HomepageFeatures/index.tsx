@@ -36,7 +36,7 @@ const FeatureList: FeatureItem[] = [
         Dappnode, you're in control. Stake smarter, stake with Dappnode.
       </>
     ),
-    url: "/docs/user/staking/introduction",
+    url: "/docs/user/staking/overview",
   },
   {
     title: "Stakehouse",
@@ -50,7 +50,7 @@ const FeatureList: FeatureItem[] = [
         the network's security. Stake smart, choose Stakehouse!
       </>
     ),
-    url: "/docs/user/packages/stakehouse",
+    url: "/docs/user/staking/lsd-pools/stakehouse",
   },
   {
     title: "Rocketpool",
@@ -65,11 +65,11 @@ const FeatureList: FeatureItem[] = [
         minipool.
       </>
     ),
-    url: "/docs/user/packages/rocketpool",
+    url: "/docs/user/staking/lsd-pools/rocketpool",
   },
   {
     title: "Ethical metrics",
-    Image: require("@site/static/img/logo.svg").default,
+    Image: require("@site/static/img/ethical-metrics-logo.png").default,
     description: (
       <>
         Ethical metrics is privacy-ensured solution for monitoring your
@@ -82,7 +82,7 @@ const FeatureList: FeatureItem[] = [
         your staking experience.
       </>
     ),
-    url: "/docs/user/ethical-metrics/introduction",
+    url: "/docs/user/ethical-metrics/overview",
   },
   {
     title: "Smoothing pool",
@@ -93,7 +93,7 @@ const FeatureList: FeatureItem[] = [
         be extended while reusing the same header and footer.
       </>
     ),
-    url: "/docs/smooth/introduction",
+    url: "/docs/smooth/overview",
   },
 ];
 
