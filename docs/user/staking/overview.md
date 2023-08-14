@@ -1,4 +1,4 @@
-# Staking Overview
+# Staking in Dappnode
 
 **Unlock the potential of your Dappnode by becoming a Node Runner.**
 
