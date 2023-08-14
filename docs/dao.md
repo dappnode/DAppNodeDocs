@@ -3,6 +3,11 @@ title: DAO
 description: DAO information
 ---
 
+:::danger Documentation alert
+The DAO section of our documentation is currently outdated due to a security incident. For a detailed explanation of the issue and our response plan, please refer to our [post-mortem report on the node hack](https://discourse.dappnode.io/t/node-hack-post-mortem-and-recovery-plan/1826).
+:::
+
+
 # Governance
 
 ### Token Addresses
