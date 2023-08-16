@@ -103,8 +103,16 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Getting Started",
+                to: "/docs/user/getting-started/choose-your-path",
+              },
+              {
+                label: "Staking",
+                to: "/docs/user/staking/overview",
+              },
+              {
+                label: "Access your dappnode",
+                to: "/docs/user/access-your-dappnode/overview",
               },
             ],
           },
@@ -124,10 +132,6 @@ const config = {
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
               {
                 label: "GitHub",
                 href: "https://github.com/dappnode",

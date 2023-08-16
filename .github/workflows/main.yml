@@ -12,18 +12,14 @@ jobs:
       - name: Checkout master
         uses: actions/checkout@v1
 
-      - name: Build schema references
-        run: ./generateReferences.sh
-      - name: Setup node 16
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16.15.0
       - name: Install deps
-        run: yarn
+        run: npm i
+
       - name: Build docs
-        run: yarn build --out-dir site
+        run: npm run build
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ./build
