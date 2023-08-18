@@ -1,6 +1,6 @@
 # OpenVPN Access to Dappnode
 
-OpenVPN is a widely-accepted VPN protocol known for its reliability and high-security standards.Here's how you can set it up with Dappnode.
+OpenVPN is a widely-accepted VPN protocol known for its reliability and high-security standards. Here's how you can set it up with Dappnode.
 
 ## Setting Up OpenVPN
 
@@ -96,9 +96,10 @@ Once you have installed the OpenVPN client on your device, follow the steps belo
 <details>
 <summary><b>macOS</b></summary>
 
-1. Launch the OpenVPN for macOS app.
-2. Click on "Import file".
-3. Upload the `.ovpn` file you downloaded earlier.
+1. Launch Tunnelblick app for macOS.
+2. Click on "VPN Details" in the top bar menu.
+3. Drag and drop the `.ovpn` file you downloaded earlier in the left side bar.
+4. Click on Connect.
 
 <p align="center">
   <img src="/img/openvpn_mac.png" alt="Import file in macOS" style={{width: 20 + "em"}}/>
