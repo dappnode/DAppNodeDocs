@@ -4,7 +4,7 @@
 
 ## Joining the Gnosis Chain as a Validator
 
-Staking on the Gnosis Chain is both easy and economical. All it takes is a mere **1 GNO** to kickstart your journey as a Gnosis Chain validator. This low barrier to entry ensures that anyone, regardless of their financial position, can participate actively in the network.
+Staking on the Gnosis Chain is both easy and economical. All it takes is **1 GNO** to kickstart your journey as a Gnosis Chain validator. This low barrier to entry ensures that anyone, regardless of their financial position, can participate actively in the network as a block proposer.
 
 ## Finding Your Way in Dappnode
 
@@ -27,5 +27,5 @@ Venture into the **Stakers Menu**, and under the **Gnosis Chain** tab, you'll di
 2. **Sync Optimization**: Activate checksync during consensus client selection. This initiates a synced checkpoint, reducing synchronization time considerably by syncing backwards.
 3. **Nethermind Xdai Syncing**: Post consensus client sync, Nethermind Xdai will embark on its syncing journey. This process might span a few hours. Stay patient and monitor the progress. For clarity, always refer to Nethermind's logs.
 
-**Note**: Similar to Ethereum's mainnet, opting to run one or multiple validators necessitates the **Web3Signer Gnosis** tool.
+**Note**: Similar to Ethereum's mainnet, opting to run one or multiple validators will require the **Web3Signer Gnosis** tool.
 
