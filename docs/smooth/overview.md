@@ -12,7 +12,7 @@ A Solo staker proposes 5 or 6 blocks on average per year. The chances of getting
 
 If we pool together all our rewards, we have collectively a much higher chance of getting lottery blocks, and then we divide the big payout among all participants! It's the same concept as Bitcoin Mining Pools.
 
-In short, a participant gives up their almost impossible chance of getting a Lottery Block by the much higher chance of getting higher rewards. In [bakctesting simulations](https://github.com/htimsk/SPanalysis), rewards were up to 80% higher than being a solo staker!
+In short, a participant gives up their almost impossible chance of getting a Lottery Block by the much higher chance of getting higher rewards. In [backtesting simulations](https://github.com/htimsk/SPanalysis), rewards were up to 80% higher than being a solo staker!
 
 ### Finally getting at par with Lido and big Exchanges!
 
@@ -62,7 +62,7 @@ Rewards are only shared among subscribed participants in the pool. Hereunder it'
 
 Note that the collateral that a validator deposits via its withdrawal address is added to the validator `PendingRewards`. This means that it is returned after the first valid block proposal. In other words, the pool doesnt get the collateral, it just blocks it until the validator proposes a block. See `PendingRewards`, `AccumulatedRewards` down below. Note also that if by mistake a validator deposits the colateral twice, the second one is also returned.
 
-**Unsunscribing** from the pool:
+**Unsubscribing** from the pool:
 * `Unsubscribe`: Similarly, the oracle shall detect the following event from the smoothing pool smart contract, which signals that a given `validatorIndex` was unsubscribed from the pool. Note that the unsubscription is only considered valid if the `sender` matches the validator withdrawal address.
 
 **Banning** from the pool:
