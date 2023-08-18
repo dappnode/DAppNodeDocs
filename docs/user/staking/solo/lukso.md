@@ -10,12 +10,13 @@
 
 LUKSO shares more than just roots with Ethereum. It uses the same trusted tools to run its network. Some of the main Ethereum clients are also compatible with LUKSO:
 
-- **Execution Client**:
-  - Geth (Available within Dappnode)
+- **Execution Clients**:
+  - Lukso Geth 
+  - Lukso Erigon (Coming Soon to Dappnode)
 
 - **Consensus Clients**:
-  - Prysm
-  - Teku (Both tailored for LUKSO)
+  - Prysm Lukso
+  - Teku Lukso
 
 ## Venturing into the LUKSO Ecosystem
 
