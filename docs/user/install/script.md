@@ -1,4 +1,4 @@
-# Install - script
+# Script installation
 
 You can install Dappnode using the installation script. In this case, we recommend you use Ubuntu or Debian as your operating system.
 
@@ -8,7 +8,7 @@ Before installing Dappnode, you need to install some prerequisites:
 
 - [Docker](https://docs.docker.com/install/)
 - [Docker-compose](https://docs.docker.com/compose/install/)
-- [xz](https://tukaani.org/xz/)
+- [xz](https://packages.debian.org/sid/xz-utils)
 
 To install all the above prerequisites, execute the command below in the terminal of the machine you want to install Dappnode. If you already have the dependencies installed or you want to install them on your own you can skip this step.
 
@@ -18,7 +18,7 @@ sudo wget -O - https://prerequisites.dappnode.io | sudo bash
 
 ## Install Dappnode
 
-To install Dappnode, install it executing the next script:
+To install Dappnode, execute the next script:
 
 ```bash
 sudo wget -O - https://installer.dappnode.io | sudo bash
@@ -26,7 +26,7 @@ sudo wget -O - https://installer.dappnode.io | sudo bash
 
 ## Reboot
 
-To finalize the installation once it has finished completing, reboot your machine:
+To finalize the installation once it has finished completing, reboot your machine (you might need to do this twice):
 
 ```bash
 shutdown -r now

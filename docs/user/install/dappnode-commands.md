@@ -5,7 +5,7 @@ Dappnode comes with a set of commands that can be used to manage the system. The
 ![commands-welcome-message](/img/commands_welcome_message.png)
 
 :::tip
-Go to the [Access your dappnode via ssh](/docs/user/access-your-dappnode/terminal) section to learn more about how to access your dappnode via ssh
+Go to the [Access your Dappnode's terminal](/docs/user/access-your-dappnode/terminal) section to learn more about how to access the terminal.
 :::
 
 Below is a list of available commands in Dappnode:

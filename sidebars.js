@@ -209,6 +209,11 @@ const sidebars = {
       items: [
         {
           type: "doc",
+          label: "Overview",
+          id: "user/install/overview",
+        },
+        {
+          type: "doc",
           label: "ISO",
           id: "user/install/iso",
         },
