@@ -100,7 +100,8 @@ const sidebars = {
     {
       type: "category",
       label: "Staking",
-      items: [
+      items: 
+      [
         {
           type: "doc",
           label: "Overview",
@@ -108,62 +109,71 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "LSD Pools",
-          items: [
+          label: "Ethereum",
+          items: 
+          [
             {
               type: "doc",
-              label: "Rocketpool",
-              id: "user/staking/lsd-pools/rocketpool",
+              label: "Ethereum Solo Staking",
+              id: "user/staking/ethereum/solo/ethereum",
             },
             {
-              type: "doc",
-              label: "Stakewise",
-              id: "user/staking/lsd-pools/stakewise",
+              type: "category",
+              label: "LSD Pools",
+              items: [
+                {
+                  type: "doc",
+                  label: "Rocketpool",
+                  id: "user/staking/ethereum/lsd-pools/rocketpool",
+                },
+                {
+                  type: "doc",
+                  label: "Stakewise",
+                  id: "user/staking/ethereum/lsd-pools/stakewise",
+                },
+                {
+                  type: "doc",
+                  label: "Stakehouse",
+                  id: "user/staking/ethereum/lsd-pools/stakehouse",
+                }
+              ],
             },
             {
-              type: "doc",
-              label: "Stakehouse",
-              id: "user/staking/lsd-pools/stakehouse",
+              type: "category",
+              label: "DVT Technologies",
+              items: 
+              [
+                {
+                  type: "doc",
+                  label: "Obol",
+                  id: "user/staking/ethereum/dvt-technologies/obol-network",
+                },
+              ]  
             }
-          ],
+          ]  
         },
         {
           type: "category",
-          label: "DVT Technologies",
+          label: "Gnosis Chain",
           items: [
             {
               type: "doc",
-              label: "Obol",
-              id: "user/staking/dvt-technologies/obol-network",
-            },
-          ],
+              label: "Gnosis Chain Staking",
+              id: "user/staking/gnosis-chain/gnosis-chain",
+            }
+          ]
         },
         {
           type: "category",
-          label: "Solo",
+          label: "LUKSO",
           items: [
             {
               type: "doc",
-              label: "Ethereum mainnet",
-              id: "user/staking/solo/ethereum",
-            },
-            {
-              type: "doc",
-              label: "Ethereum testnet",
-              id: "user/staking/solo/goerli-prater",
-            },
-            {
-              type: "doc",
-              label: "Gnosis Chain",
-              id: "user/staking/solo/gnosis-chain",
-            },
-            {
-              type: "doc",
-              label: "LUKSO",
-              id: "user/staking/solo/lukso",
-            },
-          ],
-        },
+              label: "LUKSO Staking",
+              id: "user/staking/lukso/lukso",
+            }
+          ]
+        }
       ],
     },
     {
