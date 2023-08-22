@@ -75,13 +75,13 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "OpenVPN",
-              id: "user/access-your-dappnode/vpn/openvpn",
+              label: "Wireguard",
+              id: "user/access-your-dappnode/vpn/wireguard",
             },
             {
               type: "doc",
-              label: "Wireguard",
-              id: "user/access-your-dappnode/vpn/wireguard",
+              label: "OpenVPN",
+              id: "user/access-your-dappnode/vpn/openvpn",
             },
           ],
         },
