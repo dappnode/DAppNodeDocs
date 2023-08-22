@@ -46,4 +46,6 @@ The following are all the metrics related to your dappnode configuration. These 
 
 These metrics provide insights into various aspects of your dappnode's performance and health, including resource utilization, memory usage, disk activity, and Eth2 staking-related data. Rest assured that your privacy is of utmost importance to us, and all data transmission occurs through the TOR network to protect your privacy.
 
+:::note
 For any questions or concerns about the metrics collected by Ethical Metrics, feel free to reach out to our support team.
+:::
