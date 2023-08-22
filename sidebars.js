@@ -248,6 +248,11 @@ const sidebars = {
           label: "Notifications",
           id: "user/ethical-metrics/notifications",
         },
+        {
+          type: "doc",
+          label: "Metrics collected",
+          id: "user/ethical-metrics/metrics",
+        },
       ],
     },
     {
