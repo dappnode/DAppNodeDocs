@@ -177,12 +177,12 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "ethical-metrics",
+          label: "Ethical Metrics",
           id: "user/packages/ethical-metrics",
         },
         {
           type: "doc",
-          label: "rocketpool",
+          label: "Rocketpool",
           id: "user/packages/rocketpool",
         },
       ],

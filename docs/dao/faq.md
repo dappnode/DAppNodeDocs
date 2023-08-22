@@ -5,9 +5,6 @@ title: Dappnode DAO FAQ
   <summary><b>What is a DAO?</b></summary>
 
 A DAO, or Decentralized Autonomous Organization, is an organization represented by rules encoded as a computer program that is transparent, controlled by the organization members, and not influenced by a centralized government. It operates autonomously and can execute actions such as making decisions and managing resources based on pre-defined rules or through a consensus mechanism.
-
-
-
     
 </details>
 
