@@ -1,4 +1,4 @@
-## Notifications
+# Notifications
 
 Ethical Metrics provides you with a range of notifications to keep you informed about the status and performance of your dappnode. These notifications are designed to help you proactively address any potential issues. Currently, the following notifications are available:
 
