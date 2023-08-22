@@ -6,45 +6,13 @@
 - Screen and keyboard (Only for the first installation)
 - Wired connection to the Dappnode
 
-## Prepare and boot ISO
+## Install Dappnode via Script
 
-1. Download the file `DappnodeARM-x.x.xx.img.gz/zip` from [here](https://github.com/dappnode/Dappnode/releases/tag/v0.2.39).
+Follow the instructions you can find in [Script Installation](/docs/user/install/script)
 
-2. Unzip the file.
+## Add an external SSD
 
-3. Write the image into the microSD. To do that, there are different tools such as [Raspberry Pi imager](https://www.raspberrypi.org/software/) and Rufus(for windows). In this example we used Raspberry Pi imager.
-
-<p align="center">
-    <img src="../../../../img/arm_installation_1.png"/>
-</p>
-
-4. Insert the microSD into the Raspberry Pi.
-
-5. Connect the Raspberry Pi to a screen and a keyboard.
-
-6. Switch on the Raspberry Pi and wait for the startup process.
-
-You will see this screen.
-
-<p align="center">
-    <img src="../../../../img/arm_installation_2.jpeg"/>
-</p>
-
-The default credentials are.
-User:
-`dappnode`
-Password:
-`dappnodepi`
-
-Once you have logged in, you will see the next message:
-`If you want to add any additional partition or disk, do it now.`
-`Run 'sudo dappnodepi-install' command to install Dappnode when ready.`
-Connect your raspberry to the internet.
-Execute `sudo dappnodedepi-install` to finalize the dappnode installation.
-
-## Basic Setup
-
-In case you have installed Dappnode in a raspberry using a sd card and you want to use a ssd hard disk you should to mount docker in this ssd. To do this follow the next steps:
+In case you have installed Dappnode in a Raspberry using a SD card and you want to add an external SSD you should mount docker data in it. To do this, follow the next steps:
 
 - Stop Docker service
   `systemctl stop docker`
