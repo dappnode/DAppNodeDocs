@@ -12,7 +12,7 @@ This documentation is for experienced people in the dappnode ecosystem or develo
 
 ## Contributing
 
-We welcome contributions from the community! If you'd like to contribute to Dappnode, please review our [Contributing Guidelines](contributing.md) to understand how you can get involved.
+We welcome contributions from the community! If you'd like to contribute to Dappnode, please review our [Contributing Guidelines] to understand how you can get involved.
 
 ## Feedback and Support
 
