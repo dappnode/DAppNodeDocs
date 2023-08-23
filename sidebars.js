@@ -113,9 +113,20 @@ const sidebars = {
           items: 
           [
             {
-              type: "doc",
-              label: "Ethereum Solo Staking",
-              id: "user/staking/ethereum/solo/ethereum",
+              type: "category",
+              label: "Solo Staking",
+              items: [
+                {
+                  type: "doc",
+                  label: "Mainnet",
+                  id: "user/staking/ethereum/solo/mainnet",
+                },
+                {
+                  type: "doc",
+                  label: "Testnet",
+                  id: "user/staking/ethereum/solo/goerli-prater",
+                }
+              ]
             },
             {
               type: "category",
@@ -158,8 +169,8 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              label: "Gnosis Chain Staking",
-              id: "user/staking/gnosis-chain/gnosis-chain",
+              label: "Gnosis Solo Staking",
+              id: "user/staking/gnosis-chain/solo",
             }
           ]
         },
@@ -169,8 +180,8 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              label: "LUKSO Staking",
-              id: "user/staking/lukso/lukso",
+              label: "LUKSO Solo Staking",
+              id: "user/staking/lukso/solo",
             }
           ]
         }
