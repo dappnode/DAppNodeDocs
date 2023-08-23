@@ -1,7 +1,5 @@
 # Rocketpool
 
-**DappNode Documentation: Rocketpool Package Section**
-
 ---
 
 ### **Rocketpool Overview**
