@@ -5,7 +5,7 @@
 Dappnode makes it **extremely simple** to stake and validate Proof-of-Stake chains such as Ethereum, Gnosis Chain and LUKSO. **Not only do you contribute to the network's security, but you also earn handsome rewards.**
 
 ## The Stakers UI
-You can run all the infrastructure for [Ethereum](/docs/user/staking/ethereum/ethereum.md), [Gnosis Chain](/docs/user/staking/gnosis/gnosis.md) and [LUKSO](/docs/user/staking/LUKSO/lukso.md) through the Stakers UI.
+You can run all the infrastructure for [Ethereum](/docs/user/staking/ethereum/ethereum), [Gnosis Chain](/docs/user/staking/gnosis/gnosis) and [LUKSO](/docs/user/staking/LUKSO/lukso) through the Stakers UI.
 
 
 
