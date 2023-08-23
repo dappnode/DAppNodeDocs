@@ -104,7 +104,7 @@ const sidebars = {
       [
         {
           type: "doc",
-          label: "Overview",
+          label: "Earn with Staking",
           id: "user/staking/overview",
         },
         {
