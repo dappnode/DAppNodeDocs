@@ -300,19 +300,20 @@ const sidebars = {
   devSidebar: [
     "dev",
     {
-      type: "doc",
-      label: "Command line",
-      id: "dev/cli",
-    },
-    {
-      type: "doc",
-      label: "Build",
-      id: "dev/build",
-    },
-    {
-      type: "doc",
-      label: "Publish",
-      id: "dev/publish",
+      type: "category",
+      label: "DappnodeSDK",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "dev/sdk/overview",
+        },
+        {
+          type: "doc",
+          label: "Commands",
+          id: "dev/sdk/commands",
+        },
+      ],
     },
     {
       type: "category",
