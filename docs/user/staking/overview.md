@@ -1,8 +1,13 @@
 # Staking in Dappnode
 
-**Unlock the potential of your Dappnode by becoming a Node Runner.**
+**Decentralize Proof-of-Stake chains and earn**
 
-When you validate blocks for prominent Proof-of-Stake chains such as Ethereum, Gnosis Chain and LUKSO, not only do you contribute to the network's security, but you also earn handsome rewards.
+Dappnode makes it **extremely simple** to stake and validate Proof-of-Stake chains such as Ethereum, Gnosis Chain and LUKSO. **Not only do you contribute to the network's security, but you also earn handsome rewards.**
+
+## The Stakers UI
+You can run all the infrastructure for [Ethereum](/docs/user/staking/ethereum/solo/mainnet), [Gnosis Chain](/docs/user/staking/gnosis-chain/solo) and [LUKSO](/docs/user/staking/lukso/solo) through the Stakers UI.
+
+
 
 ## What is Staking?
 Staking is the act of allocating a portion of your cryptocurrency holdings as collateral to participate in:
