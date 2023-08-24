@@ -38,7 +38,7 @@ Rocketpool is a decentralized Ethereum staking solution that allows users to ear
    - Send the amount of ETH you’ve chosen to the provided address. Make sure you keep track of this address, as it will be the address of your minipool.
 
 5. **Monitoring and Management:**
-   - Once your minipool is active, you can monitor its performance, rewards, and other details with Dappnode's [Ethical Monitor]().
+   - Once your minipool is active, you can monitor its performance, rewards, and other details with Dappnode's [DMS](/docs/user/packages/dms).
 
 ---
 
