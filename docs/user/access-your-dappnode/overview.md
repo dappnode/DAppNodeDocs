@@ -1,6 +1,6 @@
 # 🌐 Access your Dappnode
 
-Dappnode is made to work on a dedicated computer, and its main control panel, the **Dappmanager**, is accessed from another device, as it is meant to be installed over an operating system that does not include a graphical interface.
+Dappnode is made to work on a dedicated computer, and its main control panel, the **Dappmanager**, is accessed from another device via [my.dappnode](http://my.dappnode/) , as it is meant to be installed over an operating system that does not include a graphical interface.
 
 Here are **four ways** you can connect to your Dappnode:
 

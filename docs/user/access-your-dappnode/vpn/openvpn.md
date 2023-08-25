@@ -53,12 +53,12 @@ With the URL you obtained in the previous step, you'll now download the OpenVPN 
 Ensure that you **store credentials securely**. The `.ovpn` file provides direct access to your Dappnode, so treat it with the same caution you'd treat a password.
 :::
 
-## OpenVPN Installation
+## 3. OpenVPN Installation
 
 Once you've obtained your OpenVPN credentials, the next step is to install an OpenVPN client. You can download the one that's compatible with the device you are going to use to connect to the Dappnode machine from the [OpenVPN website](https://openvpn.net/client/).
 
 
-## Connecting to Dappnode via OpenVPN
+## 4. Connecting to Dappnode via OpenVPN
 
 Once you have installed the OpenVPN client on your device, follow the steps below based on your operating system to connect to Dappnode:
 

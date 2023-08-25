@@ -2,13 +2,20 @@
 
 WireGuard is a modern, high-performance VPN protocol that offers a simple and streamlined approach for securely accessing your Dappnode. This guide will walk you through setting up WireGuard with your Dappnode.
 
+You will need: 
+1. Your dappnode
+2. A Wireguard client installed on your usual device (laptop, mobile, etc.)
+
 ## Setting Up WireGuard
 
-### Get VPN Credentials
+### 1. Get VPN Credentials
 
 There are two primary methods to obtain your VPN credentials:
 
 #### Option 1: Via Dappmanager UI
+
+
+![VPN_credentials](/img/vpn-1.png)
 
 If you have access to the Dappmanager:
 
@@ -25,6 +32,7 @@ If you have access to the Dappmanager:
   - **For Local Access Credentials:**
     1. Click on 'Show Local Credentials'.
     2. Copy the local credentials displayed.
+
 
 #### Option 2: Via Dappnode Terminal
 
@@ -53,11 +61,11 @@ Always remember: Local credentials **only work inside your own network**. If you
 Ensure you store these credentials securely. They provide direct access to your Dappnode. Treat them with the same level of caution as you would a password.
 :::
 
-### Installing WireGuard Client
+### 2. Installing WireGuard Client
 
 After obtaining your VPN credentials, the next step is to install the WireGuard client. You can download the one that's compatible with the device you are going to use to connect to the Dappnode machine from the [WireGuard website](https://www.wireguard.com/install/).
 
-### Setting Up WireGuard Client
+### 3. Setting Up WireGuard Client
 
 After installing the client:
 
@@ -70,7 +78,7 @@ After installing the client:
 You can verify your connection status within the WireGuard application. It will display if the tunnel is active, as well as data transfer rates.
 :::
 
-### Connecting to Dappnode via WireGuard
+### 4. Connecting to Dappnode via WireGuard
 
 <details>
 <summary><b>Android</b></summary>
