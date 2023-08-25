@@ -26,7 +26,7 @@ Upon successful registration, you'll be provided with a Recovery Token. This tok
 - Diligently copy the token and store it in a safe location.
 
 :::caution
-Store your token in both digital (encrypted) and physical forms (noted and stored securely).
+We recommend that you store your token in both digital (encrypted) and physical forms (noted and stored securely). If you lose access to both your password and token, you will lose access to your account.
 :::
 
 <p align="center">

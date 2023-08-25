@@ -1,9 +1,15 @@
 # Access Dappnode via Wi-Fi
 
-After connecting your Dappnode to the router, the most straightforward method to access it is via the Dappnode Wi-Fi.
+After connecting your Dappnode to the router and power, and turning it on, it's time to connect to it.
+
+:::tip
+You **don't need** a monitor, keyboard, or mouse to use Dappnode. You just need to plug it to your router and you can access it from your laptop or mobile phone's browser!
+:::
+
 
 ## 1. **Connect to DappnodeWIFI**:
-  - On any device you wish to connect with, scan for the Wi-Fi network named **DappnodeWIFI**.
+  - After a couple of minutes of being turned on, your dappnode will generate a WiFi hotspot
+  - From the device you wish to connect with, look for the Wi-Fi network named **DappnodeWIFI**.
   - Connect using the default password: **dappnode**.
     
   ![Connect to Dappnode Wi-Fi](/img/dappnode-wifi.png)
