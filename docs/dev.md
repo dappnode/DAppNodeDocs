@@ -18,5 +18,5 @@ We welcome contributions from the community! If you'd like to contribute to Dapp
 
 We're here to help! If you encounter any issues, have questions, or want to provide feedback, feel free to:
 
-- Join our community on [Discord](https://discord.gg/your-discord-link)
-- Open an issue on [GitHub](https://github.com/your-project-repo)
+- Join our community on [Discord](https://discord.com/invite/dappnode)
+- Open an issue on [GitHub](https://github.com/dappnode)
