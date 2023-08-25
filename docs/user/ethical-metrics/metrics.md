@@ -1,8 +1,14 @@
 # Metrics Collected by Ethical Metrics
 
-In Dappnode, we are fully committed to maintaining total transparency about the metrics we collect from your dappnode when using Ethical Metrics. We want you to have a clear understanding of the information that is being monitored. The metrics we collect fall into several categories. Here's an overview of the metrics we gather.
+Dappnode has absolutely no hidden telemetry and is completely private by design. We were reluctant of setting up a Monitoring Service because we did NOT want to collect any data from our users. Because of the request of our users to offer alerts, we came up with a private solution so we can offer alerts without compromising your privacy.
+
+Even if we cannot associate the metrics that your Dappnode sends with you, **we are fully committed to maintaining total transparency about the metrics we collect from your dappnode when using Ethical Metrics**. We want you to have a clear understanding of the information that is being monitored. The metrics we collect fall into several categories. Here's an overview of the metrics we gather.
 
 :::info
+These metrics also help us better allocate resources by knowing what our users are running on their dappnodes. This way, we can better understand what packages are most popular and what packages need improvement.
+:::
+
+:::note
 Ethical Metrics is one of our newest packages and it is still under improvement. This section will be updated as we add or remove metrics.
 :::
 
