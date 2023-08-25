@@ -51,4 +51,4 @@ Directly interface with Dappnode using a monitor and keyboard:
 1. Connect a monitor via the HDMI/VGA port.
 2. Plug in a USB keyboard.
 3. Power on or restart the Dappnode machine.
-4. When prompted, enter the password: `dappnode.s0` (or the one you've set if changed during onboarding).
+4. When prompted, enter the password: `dappnode.s0` (or [the one you've set if changed during onboarding](docs/user/getting-started/setup.md)).
