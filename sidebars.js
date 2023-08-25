@@ -196,6 +196,26 @@ const sidebars = {
           label: "DMS",
           id: "user/packages/dms",
         },
+        {
+          type: "doc",
+          label: "Bitcoin",
+          id: "user/packages/bitcoin",
+        },
+        {
+          type: "doc",
+          label: "Eth Classic",
+          id: "user/packages/ethclassic",
+        },
+        {
+          type: "doc",
+          label: "Avalanche",
+          id: "user/packages/avalanche",
+        },
+        {
+          type: "doc",
+          label: "Monero",
+          id: "user/packages/monero",
+        },
       ],
     },
     {
