@@ -15,9 +15,9 @@ Before you dive in, choose the source from which Dappnode retrieves its data:
 - **Full Node**: Have your Dappnode host the complete Ethereum blockchain. This ensures maximum decentralization and independence, but it requires more storage and bandwidth.
 
 :::info Why is this important?
-Dappnode uses smart contracts to publish DApps. For this reason, Dappnode needs access to an Ethereum node to read the contents of the smart contract. Choosing between a remote and a full node directly impacts how decentralized your setup is.
+Dappnode uses smart contracts to publish the dapps that are accessible in the dappstore. For this reason, Dappnode needs access to an Ethereum node to read the contents of said smart contract. Choosing between a remote and a full node directly impacts how decentralized your setup is.
 
-**Decentralization Benefits**: By relying less on third-party services, you enhance security, reduce points of failure, and support the Ethereum network's robustness.
+**Decentralization Benefits**: By relying less on third-party services, you enhance security, reduce points of failure, and support the Ethereum network's robustness, but it might not work for you if you have limited storage or bandwidth.
 :::
 
 ## Enable/Disable System Auto Updates
@@ -25,6 +25,10 @@ Dappnode uses smart contracts to publish DApps. For this reason, Dappnode needs 
 Dappnode comes with an auto-update feature. This means it will automatically update itself with new releases, ensuring you always have the latest and most secure version. Activate auto-updates to lessen maintenance and better guard against vulnerabilities.
 
 ![setup-3](/img/setup-3.png)
+
+:::tip
+We **strongly** recommend activating auto-updates to ensure your Dappnode is always up to date with the latest versions.
+:::
 
 ## Change Host User Password
 
