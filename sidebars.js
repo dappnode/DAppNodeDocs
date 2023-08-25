@@ -196,16 +196,6 @@ const sidebars = {
           label: "DMS",
           id: "user/packages/dms",
         },
-        {
-          type: "doc",
-          label: "Ethical Metrics",
-          id: "user/packages/ethical-metrics",
-        },
-        {
-          type: "doc",
-          label: "Rocketpool",
-          id: "user/packages/rocketpool",
-        },
       ],
     },
     {
