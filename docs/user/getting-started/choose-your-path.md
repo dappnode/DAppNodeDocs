@@ -6,8 +6,6 @@ Regardless of how you wish to utilize Dappnode, taking the initiative to contrib
 Interested in purchasing a Dappnode? Explore our <a href="https://dappnode.io">official store</a>.
 :::
 
-<br />
-
 <div className="card-container">
   <a href="/docs/user/getting-started/connect-dappnode-to-the-router" className="card">
     <img src="/img/dappnode_box.png" alt="Dappnode Box" className="dappnode-box"/>
