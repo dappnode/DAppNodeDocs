@@ -4,11 +4,7 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
-let baseUrl = "/";
-
-if (process.env.DEPLOY_ENV === "ghpages") {
-  baseUrl = "/DAppNodeDocs/";
-}
+const baseUrl = process.env.DEPLOY_ENV === "ghpages" ? "/DAppNodeDocs/" : "/";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
