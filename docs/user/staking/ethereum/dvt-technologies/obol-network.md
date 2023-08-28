@@ -31,4 +31,4 @@ For creating a new cluster with a group, you'll need the following information f
 - Clients every participant is running
 - Distribution scheme of validator rewards between participants
 
-The Obol wizard will guide you through this process and you'll need to input the information mentioned above. If you have any questions, don't hesitate to drop by the [Dappnode Discord server](https://discord.gg/dappnode)https://discord.gg/dappnode.
+The Obol wizard will guide you through this process and you'll need to input the information mentioned above. If you have any questions, don't hesitate to drop by the [Dappnode Discord server](https://discord.gg/dappnode).
