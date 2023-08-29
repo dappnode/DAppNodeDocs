@@ -4,8 +4,6 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
-const baseUrl = process.env.DEPLOY_ENV === "ghpages" ? "/DAppNodeDocs/" : "/";
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Dappnode",
@@ -16,7 +14,7 @@ const config = {
   url: "https://docs.dappnode.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: baseUrl,
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
