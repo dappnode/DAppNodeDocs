@@ -76,21 +76,19 @@ const FeatureList: FeatureItem[] = [
         Dappnode. This service alerts you about your Dappnode's status, using
         Tor hidden services to maintain the privacy of your IP address. Setting
         up is straightforward, requiring only an email address to receive
-        alerts. In forthcoming updates, look forward to more types of alerts.
-        Ethical Monitor is a genuine reflection of Dappnode's commitment to
-        delivering services that value user's privacy and provide control over
-        your staking experience.
+        alerts.
       </>
     ),
     url: "/docs/user/ethical-metrics/overview",
   },
   {
-    title: "Smoothing pool",
+    title: "Smooth",
     Image: require("@site/static/img/logo.svg").default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Smooth is a opt-in feature that enables solo stakers to earn higher MEV
+        rewards. Joining Smooth is easier than ever with Dappnode.
+        Simply set your Fee Recipient Address to Smooth and claim your rewards after proposing a slot!
       </>
     ),
     url: "/docs/smooth/overview",
