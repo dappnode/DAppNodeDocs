@@ -90,6 +90,11 @@ const config = {
             label: "DAO",
           },
           {
+            href: "https://dappnode.com/",
+            label: "Dappnode",
+            position: "right",
+          },
+          {
             href: "https://github.com/dappnode/DappnodeDocs",
             label: "GitHub",
             position: "right",
@@ -135,6 +140,10 @@ const config = {
               {
                 label: "GitHub",
                 href: "https://github.com/dappnode",
+              },
+              {
+                label: "Dappnode",
+                href: "https://dappnode.com/",
               },
             ],
           },
