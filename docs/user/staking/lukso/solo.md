@@ -21,12 +21,12 @@ Similar to Ethereum mainnet, Dappnode makes it very easy to set up your LUKSO va
 ![Stakers](/img/lukso-staking-screenshot.png)
 
 - **Execution Clients** (Choose one):
-  - Lukso Geth 
+  - Lukso Geth
   - Lukso Erigon (Coming soon to Dappnode)
 - **Consensus Clients** (Choose one):
   - Prysm Lukso
   - Teku Lukso
--Web3Signer LUKSO
+    -Web3Signer LUKSO
 
 :::tip Checkpoint Sync is your friend for syncing Consensus Clients
 Execution clients take a long time to sync. Hence, once you start staking with one you will most likely stick with it. However, you can switch consensus clients at any time thanks to the magic of "checkpoint sync". Make sure to toggle the "use checksync" option when installing your consensus client, and you can change at any point from one to another with barely any downtime.
@@ -45,17 +45,16 @@ This guide will use the [LUKSO Wagyu Keygen Tool](https://github.com/lukso-netwo
 
 🛡️ The damage of getting your **mnemonic phrase** compromised has been reduced dramatically since withdrawals are already activated in LUKSO (Shapella upgrade), as you can create the keystores with a set withdrawal address and nobody can change that after, even if they get to your **mnemonic phrase**. Nevertheless, if you lose the keystore and the mnemonic, you will not be able to sign an exit message and you will be forced to validate forever.
 
-🔑 **Withdrawal address** this brings us to the withdrawal address, which is the address that will receive all the balance above 32 LYX while your validator is active, and all your balance above 32 LYX when you exit the validator set. You need to keep this address safe as it's where your LYX will go, and cannot be changed. 
+🔑 **Withdrawal address** this brings us to the withdrawal address, which is the address that will receive all the balance above 32 LYX while your validator is active, and all your balance above 32 LYX when you exit the validator set. You need to keep this address safe as it's where your LYX will go, and cannot be changed.
 :::
 
+1. Download the latest release of the LUKSO Wagyu Keygen Tool from [here](https://github.com/lukso-network/tools-wagyu-key-gen/releases).
 
-1) Download the latest release of the LUKSO Wagyu Keygen Tool from [here](https://github.com/lukso-network/tools-wagyu-key-gen/releases).
-
-2) Disconnect from the internet, so it will be harder to have any leaks on the information you use, and open the LUKSO Wagyu Keygen Tool. You will be given 2 options, either create a new mnemonic or import an existing mnemonic. The GUI is very user friendly and explains all steps along the way.
+2. Disconnect from the internet, so it will be harder to have any leaks on the information you use, and open the LUKSO Wagyu Keygen Tool. You will be given 2 options, either create a new mnemonic or import an existing mnemonic. The GUI is very user friendly and explains all steps along the way.
 
 ![LUKSO Wagyu - 1st screen](/img/lukso-wagyu1.png)
 
-You will be shown your Mnemonic Phrase. Keep it safe, as it is used to recreate the validator keys! We recommend copying it in an encrypted volume or in paper stored in a safe place. 
+You will be shown your Mnemonic Phrase. Keep it safe, as it is used to recreate the validator keys! We recommend copying it in an encrypted volume or in paper stored in a safe place.
 
 To ensure that you have copied it somewhere, it will ask you to type it again.
 
@@ -99,7 +98,7 @@ The final step is to fund your validator with the 32 LYX necessary to register a
 
 To do this, you will need to send 32 LYX to the LUKSO deposit contract. We will be using the official LUKSO launchpad for this.
 
-Navigate to [the LUKSO launchpad]([https://launchpad.ethereum.org/](https://deposit.mainnet.lukso.network/en/))
+Navigate to [the LUKSO launchpad](https://deposit.mainnet.lukso.network/en/)
 
 Read all the advisories... they contain important information that will help you understand the whole process!
 
@@ -130,4 +129,3 @@ After the deposit is done, you will be able to check the progress of your deposi
 ![LUKSO Web3Signer](/img/lukso-web3signer.png)
 
 **Remember**: Embarking on the staking journey requires diligence. Always keep abreast of developments and make informed decisions.
-
