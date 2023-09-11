@@ -1,9 +1,11 @@
 # Ethical Metrics
+
 :::note
 Ethical Metrics requires the [Dappnode Monitoring Service (DMS)](../packages/dms.md) as a dependency.
 :::
 
 ## Introduction
+
 When it comes to monitoring your dappnode, the [Dappnode Monitoring Service (DMS)](../packages/dms.md) offers valuable insights into the health and performance of your packages and system. Yet, there's a key thing that DMS can't do: **DMS can't notify you when your dappnode goes offline**. This limitation arises because DMS operates from within your dappnode, so it can't help when your dappnode experiences downtime.
 
 **Ethical Metrics solves this DMS limitation.** It is a service that allows for external monitoring of your dappnode externally **without leaking any identifying information**. This way, you will be able to recieve notifications when your dappnode goes offline and other useful cases, such as when your dappnode is at high CPU usage during an extended period of time or your disk space is running out.
@@ -12,7 +14,7 @@ When it comes to monitoring your dappnode, the [Dappnode Monitoring Service (DMS
 Ethical Metrics comes from the request of the users to have useful alerts and the strict compromise of Dappnode of preserving privacy for its users.
 :::
 
-So, how did we manage to overcome the difficulty of monitoring your dappnode without compromising your privacy? In order to keep your privacy intact, **all the communication between your dappnode and our monitoring servers is done through the TOR network**. The TOR network is enables anonymous communication by directing Internet traffic via a free, worldwide, volunteer overlay network that consists of more than seven thousand relays. 
+So, how did we manage to overcome the difficulty of monitoring your dappnode without compromising your privacy? In order to keep your privacy intact, **all the communication between your dappnode and our monitoring servers is done through the TOR network**. The TOR network is enables anonymous communication by directing Internet traffic via a free, worldwide, volunteer overlay network that consists of more than seven thousand relays.
 
 :::tip
 In a nutshell, your dappnode signals that it's alive via a private channel so we don't know where it comes from. If it stops sending the signal that it's alive, we can assume that it's offline and send an alert to the email associated with that particular dappnode. This way, your dappnode's IP address remains hidden and nobody (not even us) can identify which metrics belong to who.
@@ -24,18 +26,21 @@ To send alerts, it is necessary that you provide an alert where to send these al
 
 **To put it simply:** Ethical Metrics enables us to monitor a group of dappnode metrics for you. In the event that your dappnode goes offline, Ethical Metrics can send notifications to an email address you provide during installation. All this communication occurs via the TOR network, which guarantees the protection of your DappNode's IP address and the confidentiality of your metrics.
 
-
 ![setup-5](/img/ethical-metrics.png)
 
 :::info
 Ethical metrics is one of our newest packages and it is still under constant improvement. Please come back to this page to check for updates on this package.
 :::
-## Installing Ethical Metrics
+
+## Set-up Ethical Metrics
+
 In order to setup your Ethical Metrics notification system, you need to follow these steps:
 
-1. Install the [Ethical Metrics package](http://my.dappnode/installer/dnp/ethical-metrics.dnp.dappnode.eth) from the DAppStore.
-2. Introduce the email address where you want to receive the notifications.
-3. Thats it! Your ethical metrics will automatically register your tor instance with the email address you provided through the Tor network preserving your privacy.
+1. Navigate to http://my.dappnode/system/notifications
+2. Introduce the email address where you want to receive the notifications and click on the switch to activate the notifications.
+3. Thats it! Your ethical metrics will automatically register your tor instance with the email address you provided through the Tor network preserving your privacy. (you should have received a welcome email)
+
+[setup-6](/img/ethical-metrics-setup.png)
 
 <hr />
 
@@ -58,4 +63,3 @@ In order to setup your Ethical Metrics notification system, you need to follow t
   
   Unregistering from the monitoring system is as easy as uninstalling the Ethical Metrics package. After uninstalling the package, you will no longer receive notifications, and we will no longer collect metrics from your dappnode.
 </details>
-
