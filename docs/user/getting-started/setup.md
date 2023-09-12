@@ -30,6 +30,12 @@ Dappnode comes with an auto-update feature. This means it will automatically upd
 We **strongly** recommend activating auto-updates to ensure your Dappnode is always up to date with the latest versions.
 :::
 
+## Enable system notifications
+
+Dappnode can send you notifications about important events, such as your dappnode being offline or high CPU usage. This is a great way to stay on top of your Dappnode's health and performance.
+
+![setup-4](/img/setup-4.png)
+
 ## Change Host User Password
 
 Beneath the hood, Dappnode operates on a Linux framework, protected by a password, which will be needed to access your [Dappnode's terminal](/docs/user/access-your-dappnode/terminal) To amplify your Dappnode's defense:
@@ -42,7 +48,7 @@ Beneath the hood, Dappnode operates on a Linux framework, protected by a passwor
 Always save and backup your password. This is crucial for ensuring uninterrupted access to your Dappnode.
 :::
 
-![setup-4](/img/setup-4.png)
+![setup-4](/img/setup-5.png)
 
 ## All Set!
 
@@ -54,4 +60,4 @@ With these steps, your Dappnode should be up and running efficiently. Always ref
 Remember to regularly check for updates and best practices to ensure your Dappnode stays secure and efficient.
 :::
 
-![setup-5](/img/setup-5.png)
+![setup-5](/img/setup-6.png)
