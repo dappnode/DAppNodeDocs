@@ -55,7 +55,7 @@ The following metrics are all related directly to the staking packages, includin
 - `api_rpc_exec_syncing`: Wether your staking consensus clients are syncing.
 
 
-To sum it up, the metrics we collect give you a peek into how your dappnode is doing, like how it uses resources, memory, disk, and even info related to Eth2 staking. Rest assured, your privacy is of utmost importance to us, and all data transmission occurs through the TOR network to protect your privacy.
+To sum it up, the metrics we collect give us a peek into how your dappnode is doing, like how it uses resources, memory, disk, and even info related to staking. Rest assured, your privacy is of utmost importance to us, and all data transmission occurs through the TOR network to protect your privacy.
 
 :::note
 For any questions or concerns about the metrics collected by Ethical Metrics, feel free to reach out to our support team.
