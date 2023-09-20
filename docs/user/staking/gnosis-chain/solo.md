@@ -126,3 +126,40 @@ Please review the deposit address in the next step! MAKE SURE YOU ARE SENDING YO
 After the deposit is gone, you will be able to check the progress of your deposit by searching for your validator key in the [Gnosis Beacon Chain Explorer](https://gnosischa.in/), which is a fork of the [Ethereum Beaconcha.in](https://beaconcha.in/) explorer. You can get a direct link to this by clicking on the `View in Beaconcha.in` button in the upper, right corner of the Dappnode Web3signer Gnosis UI, where you uploaded the keystores.
 
 **Remember**: Embarking on the staking journey requires diligence. Always keep abreast of developments and make informed decisions.
+
+
+## Withdrawing my GNO
+
+Once you want to finish your staking journey, you will need to withdraw your GNO from the Gnosis Chain. This is a 2 step process of exiting the validator from the Dappnode UI and claiming the GNO from the deposit contract. 
+
+:::info Gnosis Chain withdrawals ≠ Ethereum withdrawals
+Because the native token of Gnosis Chain is xDAI (you pay fees in it), but the staking token is GNO, withdrawals work differntly than in the Ethereum chain and do not happen automatically. You must claim your withdrawn tokens from the Deposit Contract. More info [here](https://docs.gnosischain.com/node/management/withdrawals).
+:::
+
+### 1. Exit the validator from the Dappnode UI
+
+![Gnosis Withdrawals](/img/gnosiswithdrawals1.png)
+
+Navigate to the Stakers > Gnosis Chain menu and click on the `Upload Keystores` button on the Web3Signer card.
+Once you are in the Web3Signer UI, select the validators you want to exit and click on the `Exit Validator` button on the top right part of the UI.
+Follow the instructions and type "I want to exit", followed by `Exit`.
+
+Now the message to exit will be broadcasted to the network. 
+
+:::caution Withdrawal queue
+Your validator will not exit immediately. It will be queued to exit and you can track when it's due in the [Gnosis Beacon Chain Explorer](https://gnosischa.in/). 
+Even then, you will need to claim your GNO from the deposit contract as per the next step.
+:::
+
+### 2. Claim your GNO from the deposit contract
+As soon as your withdrawal has been processed by the Beacon Chain, you will be able to claim your GNO from the deposit contract. You can claim from any of your wallets that hold xDAI to pay gas fees.
+
+1. Go to the [Gnosis Chain Deposit Contract page in Gnosisscan.io](https://gnosisscan.io/address/0x0b98057ea310f4d31f2a452b414647007d1645d9#writeProxyContract#F3) and navigate to the `Write as Proxy` tab,
+
+2. Connect your wallet with the `Connect to Web3` button and then locate the `3. claimWithdrawal` function.
+
+3. Type your withdrawal address in the field and click `Write`. A transaction should trigger on your wallet. Approve it and wait for it to be included in a block. 
+
+![Claiming from the Smart Contract](/img/gnosiswithdrawals2.png)
+
+Voilà! Your GNO will appear on your withdrawal address!
