@@ -41,16 +41,21 @@ The following are all the metrics related to your dappnode configuration. These 
 - `dappmanager_auto_updates_user_packages`: Wether auto updates for user packages is enabled.
 - `dappmanager_auto_updates_system_packages`: Wether auto updates for system packages is enabled.
 
-<!-- ## Eth2 Staking Metrics
-
-- `eth2_slashingprotection_prevented_signings`: Number of prevented Eth2 slashing protection signings.
-- `signing_signers_loaded_count`: Count of loaded signers for signing.
+## Staking Metrics
+The following metrics are all related directly to the staking packages, including web3signer.
+- `eth2_slashingprotection_prevented_signings`: Number of prevented slashing signings.
+- `signing_signers_loaded_count`: Count of loaded validators signing in web3signer.
 - `signing_bls_signing_duration`: Duration of BLS signing.
 - `signing_bls_signing_duration_count`: Count of BLS signing durations.
 - `signing_bls_signing_duration_sum`: Sum of BLS signing durations.
-- `signing_bls_missing_identifier_count`: Count of missing BLS identifier. -->
+- `signing_bls_missing_identifier_count`: Count of missing BLS identifier.
+- `api_rpc_cons_peers`: Number of connected peers to your staking execution clients.
+- `api_rpc_exec_peers`: Number of connected peers to your staking consensus clients.
+- `api_rpc_cons_syncing`: Wether your staking execution clients are syncing.
+- `api_rpc_exec_syncing`: Wether your staking consensus clients are syncing.
 
-These metrics provide insights into various aspects of your dappnode's performance and health, including resource utilization, memory usage, disk activity, and Eth2 staking-related data. Rest assured that your privacy is of utmost importance to us, and all data transmission occurs through the TOR network to protect your privacy.
+
+To sum it up, the metrics we collect give you a peek into how your dappnode is doing, like how it uses resources, memory, disk, and even info related to Eth2 staking. Rest assured, your privacy is of utmost importance to us, and all data transmission occurs through the TOR network to protect your privacy.
 
 :::note
 For any questions or concerns about the metrics collected by Ethical Metrics, feel free to reach out to our support team.
