@@ -20,8 +20,8 @@ Upon successful registration, you'll be provided with a Recovery Token. This tok
 - Retrieving your password if forgotten.
 - Regaining account access if needed.
 
-   **To safeguard your token**:
-   
+  **To safeguard your token**:
+
 - Click the button or link labeled "View Recovery Token".
 - Diligently copy the token and store it in a safe location.
 
@@ -50,6 +50,21 @@ With your account ready and Recovery Token secured:
 ### Troubleshooting
 
 <details>
-  <summary><b>Forgot your password?</b></summary>
+  <summary><b>Want to change your password?</b></summary>
 Visit <a href="http://my.dappnode/system/profile">Profile Settings</a> to reset it.
+</details>
+
+<details>
+  <summary><b>Forgot your password?</b></summary>
+Go to the <a href="http://my.dappnode/">Login</a> page and click on "Forgot your password?". You'll be prompted to enter the recovery token you saved during registration. Once entered, you'll be able to reset your password.
+</details>
+
+<details>
+  <summary><b>Lost your recovery token?</b></summary>
+If you've lost your recovery token, there is still a chance to regain access to the Dappmanager UI. However, you will require [accessing via terminal](/docs/user/access-your-dappnode/terminal). Once you are in, you can get your recovery token by running the following command:
+
+```bash
+cat /usr/src/dappnode/DNCORE/admin-recovery-token.txt
+```
+
 </details>
