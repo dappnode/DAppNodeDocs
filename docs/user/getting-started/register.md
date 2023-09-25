@@ -61,7 +61,7 @@ Go to the <a href="http://my.dappnode/">Login</a> page and click on "Forgot your
 
 <details>
   <summary><b>Lost your recovery token?</b></summary>
-If you've lost your recovery token, there is still a chance to regain access to the Dappmanager UI. However, you will require [accessing via terminal](/docs/user/access-your-dappnode/terminal). Once you are in, you can get your recovery token by running the following command:
+If you've lost your recovery token, there is still a chance to regain access to the Dappmanager UI. However, you will require <a href="/docs/user/access-your-dappnode/terminal">accessing via terminal</a>. Once you are in, you can get your recovery token by running the following command:
 
 ```bash
 cat /usr/src/dappnode/DNCORE/admin-recovery-token.txt
