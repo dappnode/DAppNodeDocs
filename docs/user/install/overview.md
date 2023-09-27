@@ -1,5 +1,20 @@
 # Installation Overview
 
+## Specifications & Minimum Requirements
+Dappnode is a Debian-based OS, which makes it friendly with most available commercial hardware. Depending on what you intend to run in your Dappnode you might need higher specifications, but a great number of available features can be used with the following recommendations:
+- Intel Core i5/i7
+- 32 GB RAM
+- 4 TB NVMe storage
+
+As minimum requirements we recommend:
+- Intel Core i3
+- 16 GB RAM
+- 2 TB NVMe or fast SSD storage
+
+If you don't have enough technical experience to customize your own hardware, remember you can always get a plug n play [Dappnode Home](https://dappnode.com/collections/all) in our online shop.
+
+## Installation Methods
+
 Installing Dappnode can be achieved through two primary methods:
 
 ### 1. [ISO Installation](/docs/user/install/iso)
