@@ -100,8 +100,7 @@ const sidebars = {
     {
       type: "category",
       label: "Staking",
-      items: 
-      [
+      items: [
         {
           type: "doc",
           label: "Earn with Staking",
@@ -110,8 +109,7 @@ const sidebars = {
         {
           type: "category",
           label: "Ethereum",
-          items: 
-          [
+          items: [
             {
               type: "category",
               label: "Solo Staking",
@@ -125,8 +123,8 @@ const sidebars = {
                   type: "doc",
                   label: "Testnet",
                   id: "user/staking/ethereum/solo/goerli-prater",
-                }
-              ]
+                },
+              ],
             },
             {
               type: "category",
@@ -146,22 +144,21 @@ const sidebars = {
                   type: "doc",
                   label: "Stakehouse",
                   id: "user/staking/ethereum/lsd-pools/stakehouse",
-                }
+                },
               ],
             },
             {
               type: "category",
               label: "DVT Technologies",
-              items: 
-              [
+              items: [
                 {
                   type: "doc",
                   label: "Obol",
                   id: "user/staking/ethereum/dvt-technologies/obol-network",
                 },
-              ]  
-            }
-          ]  
+              ],
+            },
+          ],
         },
         {
           type: "category",
@@ -171,8 +168,8 @@ const sidebars = {
               type: "doc",
               label: "Gnosis Solo Staking",
               id: "user/staking/gnosis-chain/solo",
-            }
-          ]
+            },
+          ],
         },
         {
           type: "category",
@@ -182,9 +179,25 @@ const sidebars = {
               type: "doc",
               label: "LUKSO Solo Staking",
               id: "user/staking/lukso/solo",
-            }
-          ]
-        }
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Rollups",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "user/rollups/overview",
+        },
+        {
+          type: "doc",
+          label: "Optimism",
+          id: "user/rollups/optimism",
+        },
       ],
     },
     {
