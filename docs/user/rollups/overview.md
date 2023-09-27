@@ -5,3 +5,11 @@ Rollups are advanced layer-2 scaling solutions designed to increase the throughp
 Currently, we support:
 
 - [**:four_leaf_clover: Optimism**](/docs/user/rollups/optimism): An optimistic Layer 2 solution for Ethereum, enhancing speed and efficiency.
+
+## Enable rollups
+
+To enable this feature, you need to switch on the rollups module in the top bar of the Dappnode UI (Dappmanager):
+
+<p align="center">
+    <img width="70%"src="/img/rollups-module.png"/>
+</p>
