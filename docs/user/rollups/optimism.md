@@ -2,6 +2,8 @@
 
 Optimism is Ethereum's Layer 2 solution, leveraging Optimistic Rollups to enhance transaction speeds and lower costs. It conducts transactions off-chain, reconciling final states on the main Ethereum chain, all while preserving compatibility with Ethereum smart contracts.
 
+![Optimism Rollup](/img/optimism-menu.png)
+
 ## Setting Up an Optimism Node
 
 Optimism stands out as the inaugural choice in the Rollups suite. Initiating an Optimism node on Dappnode parallels the familiar Stakers Menu, yet with some distinctions:
