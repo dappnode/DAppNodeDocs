@@ -1,13 +1,18 @@
-## Optimism rollup
+# Optimism Rollup
 
-Optimism is a Layer 2 scaling solution for Ethereum, using Optimistic Rollups to increase transaction speeds and reduce costs. It processes transactions off-chain and settles final states on the Ethereum main chain, while maintaining compatibility with Ethereum smart contracts.
+Optimism is Ethereum's Layer 2 solution, leveraging Optimistic Rollups to enhance transaction speeds and lower costs. It conducts transactions off-chain, reconciling final states on the main Ethereum chain, all while preserving compatibility with Ethereum smart contracts.
 
-## Running an Optimism Node
+## Setting Up an Optimism Node
 
-Optimism is the first implementation in the Rollups menu. Running an Optimism node in Dappnode is very similar to the Stakers Menu you familiarize with, but with a couple of key differences:
-You’ll need an `op-node` client to connect to the Optimism Mainnet.
-An `op-geth` or `op-erigon` (coming soon) client to connect your `op-node` with Ethereum mainnet’s execution layer. Similar to how a beacon chain/consensus client works on mainnet.
-Only for archive nodes, you’ll need `op-legacy` for transactions previous to the Bedrock upgrade.
-You’ll also need to be connected to an Ethereum Mainnet node. In case your Dappnode is running one, the Rollups menu will take care of the configuration for you. If this isn’t the case, you can add a public RPC for connecting to Ethereum Mainnet.
+Optimism stands out as the inaugural choice in the Rollups suite. Initiating an Optimism node on Dappnode parallels the familiar Stakers Menu, yet with some distinctions:
 
-For more information, we recommend visiting Optimism’s [documentation on op-geth](https://op-geth.optimism.io/).
+- Utilize an `op-node` client to link with the Optimism Mainnet.
+- Employ `op-geth` or the forthcoming `op-erigon` client to bridge your `op-node` to Ethereum's execution layer, echoing the beacon chain/consensus client's role on the mainnet.
+- For archive nodes, `op-legacy` is essential for transactions predating the Bedrock upgrade.
+- A connection to an Ethereum Mainnet node is required. If your Dappnode already operates one, the Rollups menu will streamline configuration. Otherwise, integrate a public RPC for Ethereum Mainnet connection.
+
+For a deeper dive, consult Optimism’s documentation:
+
+- [OP Geth docs](https://op-geth.optimism.io/)
+
+- [OP Node Operator](https://community.optimism.io/docs/developers/bedrock/node-operator-guide/)
