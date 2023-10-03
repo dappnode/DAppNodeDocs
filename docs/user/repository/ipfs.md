@@ -3,7 +3,6 @@
 Dappnode leverages IPFS for distributing packages available in the Dappstore. To download these packages, your Dappnode requires a connection to an IPFS node. When it comes to connecting to the IPFS network, you have two primary choices:
 
 - **Run Your Own IPFS Node**: By opting for this, you maintain full control, ensuring that you directly access the distributed packages without intermediaries. However, it might require some disk space.
-  
 - **Use a Remote Node**: This is a convenient option, but it comes with the caveat of needing to trust the remote node operator. It is really useful in case your own IPFS node becomes unreliable or unavailable.
 
 :::tip
@@ -38,13 +37,49 @@ If the Dappnode IPFS gateway is not available (we make no uptime guarantees and 
 ### Troubleshooting
 
 <details>
-  <summary><b>I'm running local IPFS and I'm having issues, what can I do?</b></summary>
-This may be due to different reasons:
+<summary><b>I can't see the logos of the packages in the Dappstore/Stakers tab. Why?</b></summary>
+<p>
 
-- **Poor internet connection**: in this case you can try switching your IPFS node mode to lowpower mode at http://my.dappnode/packages/system/ipfs.dnp.dappnode.eth/config
-- **Your local IPFS node space is full**: remode your IPFS node volume data by clicking on "Remove volumes" here http://my.dappnode/packages/system/ipfs.dnp.dappnode.eth/info
-- **Dappnode Official Gateway has not been added as peer to your local IPFS**. Add it by clicking [here](http://my.dappnode/system/add-ipfs-peer/%2Fdns4%2Fipfs.dappnode.io%2Ftcp%2F4001%2Fipfs%2FQmfB6dT5zxUq1BXiXisgcZKYkvjywdDYBK5keRaqDKH633)
+This might be related to an issue with IPFS. Try the following solutions:
 
-If none of this works you can always **switch to remote IPFS mode** at http://my.dappnode/repository/ipfs
+1. **IPFS Mode**:
 
+   - Navigate to the [repository](http://my.dappnode/repository/ipfs).
+   - Toggle between `local` and `remote` IPFS modes to see which one works.
+
+2. **IPFS Package Status**:
+
+   - If your IPFS mode is set to `local`, ensure that the IPFS package is running.
+   - Visit [IPFS Package](http://my.dappnode/packages/system/ipfs.dnp.dappnode.eth/info) to verify its status and click on "Start" if it is stopped.
+   - If it's restarting, consider updating the IPFS package to its latest version. Post update, remove its volumes to address any potential database migration issues.
+
+3. **Gateway Validity**:
+   - For `remote` IPFS mode, make sure the gateway URL in the [repository](http://my.dappnode/repository/ipfs) is correct.
+
+</p>
+</details>
+
+<details>
+<summary><b>I'm using local IPFS and encountering issues downloading packages. What should I do?</b></summary>
+<p>
+
+This could arise from various factors:
+
+1. **Internet Connection**:
+
+   - Your connection might be unstable. Consider switching your IPFS node mode to `lowpower` by accessing [IPFS config](http://my.dappnode/packages/system/ipfs.dnp.dappnode.eth/config).
+
+2. **Disk Space**:
+
+   - Your local IPFS node might be out of storage.
+   - Clear the storage by opting for "Remove volumes" at [IPFS package info](http://my.dappnode/packages/system/ipfs.dnp.dappnode.eth/info).
+
+3. **Dappnode Official Gateway as Peer**:
+
+   - Ensure that the Dappnode Official Gateway is added as a peer to your local IPFS.
+   - You can add it directly by clicking [here](http://my.dappnode/system/add-ipfs-peer/%2Fdns4%2Fipfs.dappnode.io%2Ftcp%2F4001%2Fipfs%2FQmfB6dT5zxUq1BXiXisgcZKYkvjywdDYBK5keRaqDKH633).
+
+**Tip**: If these solutions don't resolve the issue, switch to the `remote IPFS mode` at [IPFS repository](http://my.dappnode/repository/ipfs).
+
+</p>
 </details>
