@@ -136,3 +136,28 @@ After the deposit is gone, you will be able to check the progress of your deposi
 Considering MEV Boost? It allows your validator node to propose different relays when it's its turn. However, before diving in, a thorough understanding of the relays and any local regulations is paramount.
 
 **Remember**: Embarking on the staking journey requires diligence. Always keep abreast of developments and make informed decisions.
+
+## Withdrawing my ETH
+
+Once you want to finish your staking journey, you will need to withdraw your ETH from the Beacon Chain. This process consists of exiting the validator from the Dappnode UI. 
+
+:::info Ethereum withdrawals are state changes in the execution layer
+This means that once you reach the end of the Beacon Chain's exit queue, your 32 ETH will show up in your withdrawal address as a state change in the blockchain, and not as a deposit. You can find more info [here](https://ethereum.org/en/staking/withdrawals/#exiting-staking-entirely).
+:::
+
+### Opening your Web3Signer UI.
+
+Navigate to the Stakers > Ethereum menu and click on the `Upload Keystores` button on the Web3Signer card.
+Once you are in the Web3Signer UI, select the validators you want to exit and click on the `Exit Validator` button on the top right part of the UI.
+
+![Ethereum Withdrawals](ethereum-exit-validator.png)
+
+Follow the instructions and type "I want to exit", followed by `Exit`.
+
+Now the message to exit will be broadcasted to the network.
+
+:::caution Withdrawal queue
+Your validator will not exit immediately. It will be queued to exit and you can track when it's due in the [Beacon Chain Explorer](https://beaconcha.in/). Please be patient as the Beacon Chain exit queue can get long and wait times might take up to several weeks.
+:::
+
+Voilà! Your ETH will appear on your withdrawal address!
