@@ -128,4 +128,23 @@ After the deposit is done, you will be able to check the progress of your deposi
 
 ![LUKSO Web3Signer](/img/lukso-web3signer.png)
 
+## 3. Adding a Withdrawal Address to your LUKSO validator
+:::info
+This step is only necessary if your validator doesn't have a withdrawal address configured. In the [consensus explorer](https://explorer.consensus.mainnet.lukso.network/), it shows as an address that starts with a `0x00` and needs to be upgraded to a `0x01`. If your validator already shows a `0x01` address, you DON'T need to follow these steps.
+:::
+
+**Step 1**: Open the [LUKSO Wagyu Keygen tool](https://github.com/lukso-network/tools-wagyu-key-gen/releases) and click "Use existing recovery phrase", then you'll need to select "Generate your BLS to Execution change" option. Type in your seed phrase and follow the steps to generate a JSON file you'll need in step 3. Make sure you are offline during this step!
+
+**Step 2**: You'll have to locate your LUKSO consensus client's container IP. If you're using Prysm, you can find it [here](http://my.dappnode/packages/my/prysm-lukso.dnp.dappnode.eth/network) under the service box in the upper part, and if you're using Teku, you'll be able to find it [here](http://my.dappnode/packages/my/teku-lukso.dnp.dappnode.eth/network) in the same location.
+
+**Step 3**: Open a terminal window where you'll need to input:
+`curl -X 'POST' \
+  '<node-url>/eth/v1/beacon/pool/bls_to_execution_changes' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '<post-request-content>'`
+  Where `<node-url>` is your LUKSO consensus client's container IP, and `<post-request-content>` the JSON file you generated in step 1.
+
+**Step 4**: After successfully broadcasting the message, check your validator in the [LUKSO Consensus Explorer](https://explorer.consensus.mainnet.lukso.network/), where you should now be able to see a `0x01` withdrawal address.
+
 **Remember**: Embarking on the staking journey requires diligence. Always keep abreast of developments and make informed decisions.
