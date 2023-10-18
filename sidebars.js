@@ -229,6 +229,11 @@ const sidebars = {
           label: "Monero",
           id: "user/packages/monero",
         },
+        {
+          type: "doc",
+          label: "Swarm",
+          id: "user/packages/swarm",
+        },
       ],
     },
     {
