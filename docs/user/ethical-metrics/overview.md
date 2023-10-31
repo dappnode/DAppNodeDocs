@@ -40,7 +40,7 @@ In order to setup your Ethical Metrics notification system, you need to follow t
 2. Introduce the email address where you want to receive the notifications and click on the switch to activate the notifications.
 3. Thats it! Your ethical metrics will automatically register your tor instance with the email address you provided through the Tor network preserving your privacy. (you should have received a welcome email)
 
-[setup-6](/img/ethical-metrics-setup.png)
+![setup-6](/img/ethical-metrics-setup.png)
 
 <hr />
 
@@ -59,7 +59,10 @@ In order to setup your Ethical Metrics notification system, you need to follow t
 </details>
 
 <details>
-  <summary><strong>How can I unregister from the monitoring system?</strong></summary>
+  <summary><strong>How can I unregister from the Ethical Metrics monitoring system?</strong></summary>
   
-  Unregistering from the monitoring system is as easy as uninstalling the Ethical Metrics package. After uninstalling the package, you will no longer receive notifications, and we will no longer collect metrics from your dappnode.
+  Unregistering from the monitoring system is as easy as <b>navigating to <a href="http://my.dappnode/system/notifications">Sytem>Notifications</a> and turning off Ethical Metrics</b>. After doing this, you will no longer receive notifications, and we will no longer collect metrics from your dappnode. While Ethical Metrics notifications are turned on in the Dappnode UI, your dappnode will be registered in our monitoring system. <br/> <br/>
+
+If your <b>Dappnode</b> is <b>no longer available</b> and you want to stop receiving notifications, you can search for the <b>_unregister link_</b> included <b>in the welcome mail</b> you received when you registered. Take into account this method will not protect the request with the IP hiding measures, but you can add other measures like using a VPN.
+
 </details>
