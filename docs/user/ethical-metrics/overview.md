@@ -59,10 +59,12 @@ In order to setup your Ethical Metrics notification system, you need to follow t
 </details>
 
 <details>
-  <summary><strong>How can I unregister from the Ethical Metrics monitoring system?</strong></summary>
+    <summary><strong>How can I unregister from the Ethical Metrics monitoring system?</strong></summary>
+    
+    <p><strong>1. Using the Dappnode Interface:</strong> For an active Dappnode, simply navigate to <a href="http://my.dappnode/system/notifications">System > Notifications</a> and toggle off <b>Ethical Metrics</b>. This will stop all notifications and halt metric collection from your Dappnode. As long as Ethical Metrics notifications are enabled in the Dappnode UI, your device remains registered in our monitoring system.</p>
   
-  Unregistering from the monitoring system is as easy as <b>navigating to <a href="http://my.dappnode/system/notifications">Sytem>Notifications</a> and turning off Ethical Metrics</b>. After doing this, you will no longer receive notifications, and we will no longer collect metrics from your dappnode. While Ethical Metrics notifications are turned on in the Dappnode UI, your dappnode will be registered in our monitoring system. <br/> <br/>
-
-If your <b>Dappnode</b> is <b>no longer available</b> and you want to stop receiving notifications, you can search for the <b>_unregister link_</b> included <b>in the welcome mail</b> you received when you registered. Take into account this method will not protect the request with the IP hiding measures, but you can add other measures like using a VPN.
+    <p><strong>2. For Inactive Dappnodes:</strong> If your Dappnode is no longer accessible, locate the <b>unregister link</b> in the welcome email you received upon registration. Keep in mind that using this method won't employ our IP hiding measures, but you can enhance security using tools like a VPN.</p>
+    
+    <p><strong>3. Manual Unregistration:</strong> Lost the welcome email? You can also unregister by inputting the following URL into your browser: <code>https://ethical-metrics.dappnode.io/unregister-from-email/?instance=<i>YOUR_INSTANCE</i>.onion%3A9090</code>. Make sure to replace <i>YOUR_INSTANCE</i> with the unique identifier for your Dappnode, excluding ".onion:9090".</p>
 
 </details>
