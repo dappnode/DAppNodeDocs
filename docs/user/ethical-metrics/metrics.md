@@ -40,6 +40,7 @@ The following are all the metrics related to your dappnode configuration. These 
 - `dappmanager_eth_client_target_local`: Wether ethereum client is in local or remote mode.
 - `dappmanager_auto_updates_user_packages`: Wether auto updates for user packages is enabled.
 - `dappmanager_auto_updates_system_packages`: Wether auto updates for system packages is enabled.
+- `dappmanager_host_info`: Details including Docker and Docker Compose versions, kernel version, operating system version, and architecture type.
 
 ## Staking Metrics
 The following metrics are all related directly to the staking packages, including web3signer.
