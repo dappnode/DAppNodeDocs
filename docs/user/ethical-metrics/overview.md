@@ -65,6 +65,6 @@ In order to setup your Ethical Metrics notification system, you need to follow t
   
     <p><strong>2. For Inactive Dappnodes:</strong> If your Dappnode is no longer accessible, locate the <b>unregister link</b> in the welcome email you received upon registration. Keep in mind that using this method won't employ our IP hiding measures, but you can enhance security using tools like a VPN. Please keep in mind that if your DAppNode is still up and running with Ethical Metrics notifications turned on, it'll register again by itself.</p>
     
-    <p><strong>3. Manual Unregistration:</strong> Lost the welcome email? You can also unregister by inputting the following URL into your browser: <code>https://ethical-metrics.dappnode.io/unregister-from-email/?instance=<i>YOUR_INSTANCE</i>.onion%3A9090</code>. Make sure to replace <i>YOUR_INSTANCE</i> with the unique identifier for your Dappnode, excluding ".onion:9090".</p>
+    <p><strong>3. Manual Unregistration:</strong> Lost the welcome email? You can also unregister by inputting the following URL into your browser: <code>https://ethical-metrics.dappnode.io/unregister-from-email/?instance=<i>YOUR_INSTANCE</i>.onion%3A9090</code>. Make sure to replace <i>YOUR_INSTANCE</i> with the unique identifier for your Dappnode, excluding ".onion:9090", which is already included in the provided URL.</p>
 
 </details>
