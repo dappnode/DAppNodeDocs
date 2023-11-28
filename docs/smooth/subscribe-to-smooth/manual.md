@@ -13,18 +13,18 @@ Change the fee recipient of your validator to Smooth's address, just as if you w
 :::danger Keep the fee recipient set to Smooth's address!
 It is crucial that you keep the fee recipient of your validator set to Smooth's address (`0xAdFb8D27671F14f297eE94135e266aAFf8752e35`) as long as it is subscribed to Smooth. If, at any point, you change the fee recipient of your validator and propose a block without unsubscribing first, you will be banned from Smooth and will not be able to participate in it again.
 :::
-### Step 2: Log in to Smooth's website
+### Step 2: Log in to Smooth's website.
 
 Go to [Smooth's website](https://smooth.dappnode.io/) and log in with your wallet. A list of all the validators with the same withdrawal address as your logged in wallet will appear.
 
-### Step 3: Select your validator 
+### Step 3: Select your validator .
 
 Select the validator you want to subscribe to Smooth by clicking on the "Subscribe" button.
 ![my_validators](/img/smooth_my_validators.png)
 
 When clicking on the "Subscribe" button, Smooth will check if your validator is registered to any MEV relay. If it is, it will also check if the fee recipient of your validator is set to Smooth's address in each relay. **Three different dialogs can appear**, depending on the state of your validator and the MEV relays it is registered to.
 
-#### Possible Dialog 1: Validator is not registered to any MEV relay
+#### Possible Dialog 1: Validator is not registered to any MEV relay.
 
 <p align="center">
   <img src="/img/smooth_no_relays.png" alt="no_relays" width="400"/>
@@ -55,7 +55,7 @@ Relays that you no longer use won't reflect the fee recipient changes you did fo
 This is the dialog you want to see! If you see this dialog, it means that your validator is registered to at least one MEV relay, and that the fee recipient of your validator is set to Smooth's address all relays it has been registered to. In other words, this means that your validator is ready to subscribe to Smooth!
 
 
-### Step 4: Confirm Relays check
+### Step 4: Confirm Relays check.
 
 <p align="center">
   <img src="/img/smooth_mev_blocks.png" alt="mev_blocks" width="400"/>
@@ -76,7 +76,7 @@ Once the deposit transaction is processed by the chain, your validator will be s
   <img src="/img/smooth_subscribe_success.png" alt="subscription_success" width="400"/>
 </p>
 
-## Troubleshooting
+## Troubleshooting.
 
 <details>
   <summary><strong>I have changed my fee recipient but the <i>"Fee recipient warning"</i> warning still appears!</strong></summary>
