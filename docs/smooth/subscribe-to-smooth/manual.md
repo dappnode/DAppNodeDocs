@@ -8,10 +8,10 @@ The manual subscription is done through **[Smooth's website](https://smooth.dapp
 
 Change the fee recipient of your validator to Smooth's address, just as if you were subscribing automatically. In dappnode, this process is as simple as changing the fee recipient in your [staking brain](http://brain.web3signer.dappnode/).
 
-**This step is extremely important**. Make sure you're changing the fee recipient of the validators you are going to subscribe and that the fee recipient is correctly set to Smooth's address (`0xAdFb8D27671F14f297eE94135e266aAFf8752e35`). If a subscribed validator proposes a block with an incorrect fee recipient, it will be banned from Smooth and will not be able to participate in it again.
+**This step is extremely important**. Make sure you're changing the fee recipient of the validators you are going to manually subscribe and that the fee recipient is correctly set to Smooth's address (`0xAdFb8D27671F14f297eE94135e266aAFf8752e35`). If a subscribed validator proposes a block with an incorrect fee recipient, it will be banned from Smooth and will not be able to participate in it again.
 
-:::caution Keep the fee recipient set to Smooth's address!
-It is crucial that you keep the fee recipient of your validator set to Smooth's address(`0xAdFb8D27671F14f297eE94135e266aAFf8752e35`). If, at any point, you change the fee recipient of your validator and propose a block without unsubscribing from Smooth first, you will be banned from Smooth and will not be able to participate in it again.
+:::danger Keep the fee recipient set to Smooth's address!
+It is crucial that you keep the fee recipient of your validator set to Smooth's address (`0xAdFb8D27671F14f297eE94135e266aAFf8752e35`) as long as it is subscribed to Smooth. If, at any point, you change the fee recipient of your validator and propose a block without unsubscribing first, you will be banned from Smooth and will not be able to participate in it again.
 :::
 ### Step 2: Log in to Smooth's website
 
@@ -40,9 +40,11 @@ When doing a manual subscription, it is obligatory to be registered in at least 
   <img src="/img/smooth_incorrect_fee_recipient.png" alt="incorrect_fee_recipient" width="400"/>
 </p>
 
-When registered to a MEV relay, Smooth can check if your validator has the Smooth's address as the fee recipient in each relay registered to. Since having the correct fee recipient (Smooth's address) is crucial to not get banned and participate in Smooth correctly, we will warn you if your validator does not have the correct fee recipient set in any of the relays it is registered to. If this warning appears, please make sure that you have done step 1 correctly, and that the fee recipient of your validator is set to Smooth's address in your [staking brain](http://brain.web3signer.dappnode/). 
+If this dialog appears, it means that the fee recipient of your validator is not set to Smooth's address in at least one relay. Please make sure that you have done step 1 correctly, and that the fee recipient of your validator is set to Smooth's address in your [staking brain](http://brain.web3signer.dappnode/). 
 
-If you have already changed your fee recipient but the warning still appears, please check the "Troubleshooting" section down below.
+:::info
+Relays that you no longer use won't reflect the fee recipient changes you did for each validator in your staking brain. If you have already changed your fee recipient but the warning still appears, please check the "Troubleshooting" section down below.
+:::
 
 #### Possible Dialog 3: Validator is registered to at least one MEV relay and has the correct fee recipient set.
 
@@ -81,8 +83,8 @@ Once the deposit transaction is processed by the chain, your validator will be s
   
 If you have changed your fee recipient to Smooth's address (<code>0xAdFb8D27671F14f297eE94135e266aAFf8752e35</code>) but this warning still appears, it could be because of two reasons:
 <ul>
-    <li>The relays you are registered to are not reflecting the change in fee recipient yet. It can take up to a few hours for the relays to reflect your change in fee recipient. This is something that is out of Smooth's control. We recommend you to wait a few hours and try again.</li>
-    <li>The fee recipient is only updated in your current <strong>active</strong> relays. This means that if you used to be registered to a relay, but you are not anymore, the fee recipient of your validator will not be updated in that relay. To solve this, you can either quickly register and unregister again to the outdated relays to force an update the fee recipient there, or continue the subscription normally, since inactive relays won't be used by your validator when submitting a block. </li>
+    <li>The relays you are registered to are not reflecting the change in the fee recipient yet. It can take up to a few minutes for the relays to reflect your  fee recipient update. This is something that is out of Smooth's control. We recommend you to wait a few minutes and try again.</li>
+    <li>The fee recipient is only updated in your current <strong>active</strong> relays. This means that if you used to be registered to a relay, but you are not using it anymore, the fee recipient of your validator will not be updated in that relay. This is something expected and that it wont affect your validator's subscription to Smooth. If you want to update the fee recipient in the relays you are no longer registered to, you can quickly register and unregister again to the outdated relays to force an update the fee recipient there.</li>
   </ul>
   To clarify: As long as the fee recipient of your validator is set to Smooth's address in your <a href="http://brain.web3signer.dappnode/">staking brain</a>, you can continue the subscription process normally.
  </details>
