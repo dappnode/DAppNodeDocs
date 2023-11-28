@@ -398,6 +398,11 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: "doc",
+      label: "Unsubscribe from Smooth",
+      id: "smooth/unsubscribe-from-smooth",
+    },
   ],
   daoSidebar: ["dao", "dao/node-basics", "dao/liquidity-mining", "dao/faq"],
 };
