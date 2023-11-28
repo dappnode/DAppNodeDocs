@@ -377,6 +377,11 @@ const sidebars = {
       label: "Overview",
       id: "smooth/overview",
     },
+    {
+      type: "doc",
+      label: "Subscribe to Smooth!",
+      id: "smooth/subscribe_to_smooth",
+    },
   ],
   daoSidebar: ["dao", "dao/node-basics", "dao/liquidity-mining", "dao/faq"],
 };
