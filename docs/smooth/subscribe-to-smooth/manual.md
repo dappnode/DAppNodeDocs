@@ -43,7 +43,7 @@ When doing a manual subscription, it is obligatory to be registered in at least 
 If this dialog appears, it means that the fee recipient of your validator is not set to Smooth's address in at least one relay. Please make sure that you have done step 1 correctly, and that the fee recipient of your validator is set to Smooth's address in your [staking brain](http://brain.web3signer.dappnode/). 
 
 :::info
-Relays that you no longer use won't reflect the fee recipient changes you did for each validator in your staking brain. If you have already changed your fee recipient but the warning still appears, please check the "Troubleshooting" section down below.
+Relays that you no longer use won't reflect the fee recipient changes you did for each validator in your staking brain. If you have already changed your fee recipient but the warning still appears, please check the "Troubleshooting" section down below for more information.
 :::
 
 #### Possible Dialog 3: Validator is registered to at least one MEV relay and has the correct fee recipient set.
