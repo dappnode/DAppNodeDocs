@@ -21,9 +21,8 @@ If you dont want to wait until your next proposed block to start accumulating re
 Change the fee recipient of your validator to Smooth's address, just as if you were subscribing automatically. In dappnode, this process is as simple as changing the fee recipient in your [staking brain](http://brain.web3signer.dappnode/).
 
 :::caution Keep the fee recipient set to Smooth's address!
-It is extremely important that you keep the fee recipient of your validator set to Smooth's address. If, at any point, you change the fee recipient of your validator and propose a block to Smooth while being subscribed to it, you will be banned from Smooth and will not be able to participate in it again.
+It is extremely important that you keep the fee recipient of your validator set to Smooth's address. If, at any point, you change the fee recipient of your validator and propose a block without unsubscribing from Smooth first, you will be banned from Smooth and will not be able to participate in it again.
 :::
-
 ### Step 2: Log in to Smooth's website
 
 Go to [Smooth's website](https://smooth.dappnode.io/) and log in with your wallet. A list of all the validators with the same withdrawal address as your logged in wallet will appear. 
