@@ -3,7 +3,7 @@
 Unsubscribing from Smooth is as simple as subscribing to it. You can unsubscribe from Smooth at any time, it is done through **[Smooth's website](https://smooth.dappnode.io/)** and it only takes one simple transaction.
 
 :::caution
-When unsubscribing a validator from Smooth, you will lose all pending rewards attached to it. We recommend unsubscribingjust after successfully proposing a block, so lost pending rewards are minimized.
+When unsubscribing a validator from Smooth, you will lose all pending rewards attached to it. We recommend unsubscribing just after successfully proposing a block, so lost pending rewards are minimized.
 :::
 
 ## Step 1: Log in to Smooth's website.
