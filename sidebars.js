@@ -378,9 +378,25 @@ const sidebars = {
       id: "smooth/overview",
     },
     {
-      type: "doc",
+      type: "category",
       label: "Subscribe to Smooth!",
-      id: "smooth/subscribe_to_smooth",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "smooth/subscribe-to-smooth/overview",
+        },
+        {
+          type: "doc",
+          label: "Automatic subscription",
+          id: "smooth/subscribe-to-smooth/automatic",
+        },
+        {
+          type: "doc",
+          label: "Manual subscription",
+          id: "smooth/subscribe-to-smooth/manual",
+        },
+      ],
     },
   ],
   daoSidebar: ["dao", "dao/node-basics", "dao/liquidity-mining", "dao/faq"],
