@@ -83,3 +83,17 @@ Once the deposit transaction is processed by the chain, your validator will be s
 <p align="center">
   <img src="/img/smooth_subscribe_success.png" alt="subscription_success" width="400"/>
 </p>
+
+
+## Troubleshooting
+
+<details>
+  <summary><strong>I have changed my fee recipient but the <i>"Fee recipient warning"</i> warning still appears!</strong></summary>
+  
+If you have changed your fee recipient to Smooth's address (<code>0xAdFb8D27671F14f297eE94135e266aAFf8752e35</code>) but this warning still appears, it could be because of two reasons:
+<ul>
+    <li>The relays you are registered to are not reflecting the change in fee recipient yet. It can take up to a few hours for the relays to reflect your change in fee recipient. This is something that is out of Smooth's control. We recommend you to wait a few hours and try again.</li>
+    <li>The fee recipient is only updated in your current <strong>active</strong> relays. This means that if you used to be registered to a relay, but you are not anymore, the fee recipient of your validator will not be updated in that relay. To solve this, you can either quickly register and unregister again to the outdated relays to force an update the fee recipient there, or continue the subscription normally, since inactive relays won't be used by your validator when submitting a block. </li>
+  </ul>
+  To clarify: As long as the fee recipient of your validator is set to Smooth's address in your <a href="http://brain.web3signer.dappnode/">staking brain</a>, you can continue the subscription process normally.
+ </details>
