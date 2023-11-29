@@ -3,17 +3,18 @@ title: Smooth
 description: Smooth introduction
 ---
 
-# Smooth, dappnode's MEV Smoothing Pool
+# Welcome to Smooth, dappnode's MEV Smoothing Pool!
 
-Welcome to the Smooth Documentation! This section provides valuable insights into the Smooth project, an MEV Smoothing Pool designed to enhance rewards for participants in the Ethereum network. Please note that this documentation is a work in progress (WIP) and aims to offer an overview of what the project entails.
+Welcome to the Smooth Documentation! This section provides valuable insights into the Smooth project, an MEV Smoothing Pool designed to enhance rewards for participants in the Ethereum network. 
 
+:::info
+This documentation is a work in progress. 
+:::
 ## What is Smooth and why it matters
 
 Smooth is an MEV Smoothing Pool. It helps earn higher rewards on average by pooling MEV rewards among a group of Stakers. 
 
-:::info
-Smooth works by setting the Fee Recipient address of a group of validators to the Smooth Smart Contract, and the rewards that the Smart Contract receives are distributed among all those who are pooling their rewards.
-:::
+**Smooth works by setting the Fee Recipient address of a group of validators to the Smooth Smart Contract, and the rewards that the Smart Contract receives are distributed among all those who are pooling their rewards.**
 
 ### Higher rewards?
 
