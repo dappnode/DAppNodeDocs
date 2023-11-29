@@ -1,28 +1,10 @@
-# Smooth
+# General Overview
 
-## What is Smooth and why it matters
+In this page, you will find an in-depth explanation on how Smooth works. This includes the different components of Smooth, all states possible of a subscribed Smooth validator, and much more! 
 
-Smooth is an MEV Smoothing Pool. It helps earn higher rewards on average by pooling MEV rewards among a group of Stakers. 
-
-It works by setting the Fee Recipient address to the Smooth Smart Contract, and the rewards that the Smart Contract receives are distributed among all those who are pooling their rewards.
-
-### Higher rewards?
-
-A Solo staker proposes 5 or 6 blocks on average per year. The chances of getting a "Lottery Block" are very slim, and most likely we are going to get rewards on the order of 0.00-something ETH. 
-
-If we pool together all our rewards, we have collectively a much higher chance of getting lottery blocks, and then we divide the big payout among all participants! It's the same concept as Bitcoin Mining Pools.
-
-In short, a participant gives up their almost impossible chance of getting a Lottery Block by the much higher chance of getting higher rewards. In [backtesting simulations](https://github.com/htimsk/SPanalysis), rewards were up to 80% higher than being a solo staker!
-
-### Finally getting at par with Lido and big Exchanges!
-
-Lido, Centralized Exchanges and other pools with lots of validators consistently hit lottery blocks because of the sheer numbers of validators they have. They naturally split these rewards between all their validators, effectively being at an advantage vs the average solo staker. 
-
-This is a centralizing force, as the rich become richer and bigger operations get bigger rewards. Now Solo Stakers with few validators don't depend on luck to be at par with the big guys!
-
-The pool has two main components:
-* **oracle**: Calculates off-chain the rewards that each participant of the smoothing pool can claim, using on-chain data from the consensus and execution layer. It also summarizes all balances and addresses with the right to claim in a merkle root, that is periodically stored on-chain, making it non-revertable. On the other hand it serves as a data availability layer, that can be used to get the proofs one needs to use on-chain to claim their share of the rewards.
-* **contract**: Gets all the rewards produced by the members of the pool and provides a set of functions to subscribe, unsubscribe and claim rewards by providing the appropriate proofs.
+:::info
+We recommend reading and understanding the contents of this page before subscribing to Smooth.
+:::
 
 ## Configuration parameters
 
@@ -37,11 +19,11 @@ The smoothing pool shall contain the following configuration parameters:
 * `POOL_FEES_ADDRESS`: Address with `0x` prefix of the account that can claim the smoothing pool fees.
 * `POOL_FEES_PERCENT`: Amount in % (scaled by 100) that `POOL_FEES_ADDRESS` gets for every reward sent to the smoothing pool. Note that it also gets rounding remainders on top, but this is almost neglectable.
 
-## Source of rewards
+## Smooth's source of rewards
 
 A `Reward` is considered to be any balance denominated in Eth that is sent to the `POOL_CONTRACT_ADDRESS`. These are detected by the oracle and shared fairly among all the participants in the pool at a given time. The oracle shall detect all these types of rewards and distribute them fairly (see rewards calculation section). All of these rewards are denominated in `ETH` and other types of tokens such as ERC20 are not considered by the oracle:
 * `MevBlock`: Comes from a block proposal where the reward was obtained via an off-chain agreement using tools such as mev-boost, usually coming as the last transaction in the block.
-* `VanilaBlock`: Comes from a block proposal where the reward was sent via the protocol `fee_recipient`.
+* `VanilaBlock`: Comes from a block proposal where no MEV relays participated.
 * `Donation`: Any address can send an arbitrary amount, either via an Eth tx or via a smart contract to the pool.
 
 ## Subscribe/unsubscribe/ban
@@ -53,8 +35,8 @@ Only the following validators can subscribe into the pool:
 Rewards are only shared among subscribed participants in the pool. Hereunder it's explained the different ways in which a validator can join or leave the pool. Joining can be done with manual or automatatic subscription. And leaving can be done by unsubscribing to the pool or by being banned from it.
 
 **Subscribing** to the pool:
-* `ManualSubscription`: If any validator sends a `MevBlock` or `VanilaBlock` reward to the smoothing pool contract `POOL_CONTRACT_ADDRESS` it is considered automatically subscribed into the pool, and will start accruing rewards from that moment. This type of subscription doesn't require any collateral or lock up of funds, since by successfully proposing a block with the correct fee recipient, we consider that this validator has enough skin in the game. However, since block proposals are a rare event, it can take weeks or even months for a validator to get automatically subscribed. This is not ideal because it won't be leveraging the benefits of the smoothing pool during this time.
-* `AutoSubscription`: On the other hand, a validator can start earning rewards from the very beginning if it adds `COLLATERAL_GWEI` amount as collateral. This collateral can be deposited by calling the register function in the oracle smart contract. This type of subscription allows the validator to start earning rewards without having to wait weeks or months until a proposal is detected. A subscription is only considered valid if:
+* `Automatic Subscription`: If any validator sends a `MevBlock` or `VanilaBlock` reward to the smoothing pool contract `POOL_CONTRACT_ADDRESS` it is considered automatically subscribed into the pool, and will start accruing rewards from that moment. This type of subscription doesn't require any collateral or lock up of funds, since by successfully proposing a block with the correct fee recipient, we consider that this validator has enough skin in the game. However, since block proposals are a rare event, it can take weeks or even months for a validator to get automatically subscribed. This is not ideal because it won't be leveraging the benefits of the smoothing pool during this time.
+* `Manual Subscription`: On the other hand, a validator can start earning rewards from the very beginning if it adds `COLLATERAL_GWEI` amount as collateral. This collateral can be deposited by calling the register function in the oracle smart contract. This type of subscription allows the validator to start earning rewards without having to wait weeks or months until a proposal is detected. A subscription is only considered valid if:
   * `collateral>=COLLATERAL_GWEI`
   * The `validatorIndex` included is the transaction
   * The account that sent the transaction matches the `validatorIndex` withdrawal credentials.
@@ -68,19 +50,22 @@ Note that the collateral that a validator deposits via its withdrawal address is
 **Banning** from the pool:
 * The oracle shall detect if an active validator in the smoothing pool proposed a block with a `fee_recipieint` different than `POOL_CONTRACT_ADDRESS`. This means that this validator sent its reward to a different address, so we consider this misbehaving and the validator will be banned forever from the smoothing pool.
 
+:::danger
+Comprehending the purpose of the fee recipient and why it's vital for validators not to change it while subscribed to Smooth is crucial. Modifying a validator's fee recipient to an address that is not Smooth's and proposing a block with it while being subscribed to the pool constitutes misconduct. Such behavior will lead to the validator being banned from participating in the pool.
+:::
 
 ## State machine
 
-The oracle uses the following [state machine](https://excalidraw.com/#json=lnKxFVwNZ82gz7gVZNHoq,m3mIc64GhKrpg3urVyI6dg) to track the status of the different validators that are subscribed to the smoothing pool. Different actions can trigger a state change and in the following image all possible transitions are described.
+The oracle uses the following **state machine** to track the status of the different validators that are subscribed to Smooth. Different actions can trigger a state change and in the following image all possible transitions are described.
 
 ![statemachine](https://github.com/dappnode/mev-sp-oracle/blob/main/spec/states.png?raw=true)
 
 There are 5 different states a validator can have:
 * `Active`: A validator is active and subscribed to the pool, earning rewards over the time.
 * `YellowCard`: The validator missed only its last block proposal, but still earns rewards.
-* `RedCard`: The validator missed two block proposals in a row. In this state the validator does not earn rewards until a valid block has been proposed.
-* `NotSubscribed:` The validator is no longer subscribed to the pool, but still tracked by the validator. For example, a validator that unsubscribed. Note that this is still tracked because a validator can unsubscribe but it may still pending balance to claim. In this state the validator does not earn rewards.
-* `Banned`: The validator is banned forever from the pool. A validator is banned when its subscribed to the pool but proposes a block with the wrong fee recipient.
+* `RedCard`: The validator missed two block proposals in a row. In this state the validator does not earn rewards until a valid block has been proposed by it.
+* `NotSubscribed:` The validator is no longer subscribed to the pool, but still tracked by the validator. For example, a validator that unsubscribed. Note that this is still tracked because a validator can unsubscribe but it may still have pending balance to claim. In this state the validator does not earn rewards.
+* `Banned`: The validator is banned forever from the pool. **A validator is banned when its subscribed to the pool but proposes a block with the wrong fee recipient**.
 * `Untracked`: The validator is not tracked by the pool. It never subscribed before nor has any active subscription.
 
 And 6 different actions can trigger a state transition:
