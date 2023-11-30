@@ -76,6 +76,10 @@ Once the deposit transaction is processed by the chain, your validator will be s
   <img src="/img/smooth_subscribe_success.png" alt="subscription_success" width="400"/>
 </p>
 
+:::caution
+Since the Oracle operates with only finalized data, it will take up to 35 minutes to process your subscription. Your "My Validator" table will be updated instantly, but it may take a while to see how "Total Subscribers" counter increases. To know more, visit the [Deep Dive into Smooth](/docs/smooth/deep-dive-into-smooth/overview) section.
+:::
+
 ## Troubleshooting.
 
 <details>

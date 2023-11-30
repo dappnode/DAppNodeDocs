@@ -13,6 +13,10 @@ Computing and storing all rewards calculations onchain would be almost impossibl
 
 As mentioned before, **the Oracle is responsible for computing the rewards of each validator**. It does so by computing a merkle tree that summarizes the state of all validators subscribed to the pool. This merkle tree, computed offchain, is summarized into a **Merkle Root**.
 
+:::caution
+Oracle works only with finalized data. This means that Oracle will effectively work with data from a few epochs ago. This is done to ensure that the data Oracle processes is non-reversible and no reorgs are possible.
+:::
+
 Once every 28800 slots (4 days), the Oracle sends a transaction to the Smart Contract with the updated Merkle Root. 
 
 :::info
