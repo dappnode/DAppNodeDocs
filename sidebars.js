@@ -379,6 +379,27 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Deep dive into Smooth",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "smooth/deep-dive-into-smooth/overview",
+        },
+        {
+          type: "doc",
+          label: "Rewards",
+          id: "smooth/deep-dive-into-smooth/rewards",
+        },
+        {
+          type: "doc",
+          label: "Validator States",
+          id: "smooth/deep-dive-into-smooth/states",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Subscribe to Smooth!",
       items: [
         {
