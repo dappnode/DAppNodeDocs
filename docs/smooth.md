@@ -8,7 +8,7 @@ description: Smooth introduction
 Welcome to the Smooth Documentation! This section provides valuable insights into the Smooth project, an MEV Smoothing Pool designed to enhance rewards for participants in the Ethereum network. 
 
 :::info
-This documentation is a work in progress. 
+Start by reading [Deep Dive into Smooth](/docs/smooth/deep-dive-into-smooth/overview.md) to get a general idea of what Smooth is and how it works.
 :::
 ## What is Smooth and why it matters
 
@@ -18,7 +18,7 @@ Smooth is an MEV Smoothing Pool. It helps earn higher rewards on average by pool
 
 ### Higher rewards?
 
-A Solo staker proposes 5 or 6 blocks on average per year. The chances of getting a "Lottery Block" are very slim, and most likely we are going to get rewards on the order of 0.00-something ETH. 
+A Solo staker proposes 3 blocks on average per year. The chances of getting a "Lottery Block" are very slim, and most likely we are going to get rewards on the order of 0.00-something ETH. 
 
 If we pool together all our rewards, we have collectively a much higher chance of getting lottery blocks, and then we divide the big payout among all participants! It's the same concept as Bitcoin Mining Pools.
 
