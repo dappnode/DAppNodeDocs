@@ -24,7 +24,7 @@ Therefore, we consider that a validator has 2 types of rewards:
 * **Pending Rewards**: Rewards that are not consolidated yet. They can not be claimed yet.
 * **Accumulated Rewards**: Rewards that are consolidated and can be claimed by the validator.
 
-:::tip
+:::info
 Dappnode receives a **7%** fee of all rewards distributed by Smooth. This fee is automatically deducted from the rewards before they are distributed to validators. This fee serves to support the development and sustainability of Smooth and Dappnode!
 :::
 

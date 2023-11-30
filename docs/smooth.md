@@ -8,7 +8,7 @@ description: Smooth introduction
 Welcome to the Smooth Documentation! This section provides valuable insights into the Smooth project, an MEV Smoothing Pool designed to enhance rewards for participants in the Ethereum network. 
 
 :::info
-This documentation is a work in progress. 
+Start by reading [Deep Dive into Smooth](/docs/smooth/deep-dive-into-smooth/overview.md) to get a general idea of what Smooth is and how it works.
 :::
 ## What is Smooth and why it matters
 

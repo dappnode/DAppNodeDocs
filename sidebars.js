@@ -373,11 +373,6 @@ const sidebars = {
   smoothSidebar: [
     "smooth",
     {
-      type: "doc",
-      label: "Overview",
-      id: "smooth/in-depth-overview",
-    },
-    {
       type: "category",
       label: "Deep dive into Smooth",
       items: [
@@ -395,6 +390,11 @@ const sidebars = {
           type: "doc",
           label: "Validator States",
           id: "smooth/deep-dive-into-smooth/states",
+        },
+        {
+          type: "doc",
+          label: "Oracle & Smart Contract",
+          id: "smooth/deep-dive-into-smooth/oracle-sm",
         },
       ],
     },
