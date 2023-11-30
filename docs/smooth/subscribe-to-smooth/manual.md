@@ -6,7 +6,7 @@ The manual subscription is done through **[Smooth's website](https://smooth.dapp
 
 ### Step 1: Change your fee recipient to Smooth's address.
 
-Change the fee recipient of your validator to Smooth's address, just as if you were subscribing automatically. In dappnode, this process is as simple as changing the fee recipient in your [staking brain](http://brain.web3signer.dappnode/).
+Change the fee recipient of your validator to Smooth's address, just as if you were subscribing automatically. In Dappnode, this process is as simple as changing the fee recipient in your [staking brain](http://brain.web3signer.dappnode/).
 
 **This step is extremely important**. Make sure you're changing the fee recipient of the validators you are going to manually subscribe and that the fee recipient is correctly set to Smooth's address (`0xAdFb8D27671F14f297eE94135e266aAFf8752e35`). If a subscribed validator proposes a block with an incorrect fee recipient, it will be banned from Smooth and will not be able to participate in it again.
 
@@ -24,17 +24,17 @@ Select the validator you want to subscribe to Smooth by clicking on the "Subscri
 
 When clicking on the "Subscribe" button, Smooth will check if your validator is registered to any MEV relay. If it is, it will also check if the fee recipient of your validator is set to Smooth's address in each relay. **Three different dialogs can appear**, depending on the state of your validator and the MEV relays it is registered to.
 
-#### Possible Dialog 1: Validator is not registered to any MEV relay.
+#### Scenario 1: Validator is not registered to any MEV relay.
 
 <p align="center">
   <img src="/img/smooth_no_relays.png" alt="no_relays" width="400"/>
 </p>
 
-When doing a manual subscription, it is obligatory to be registered in at least one MEV relay. In dappnode, registering and using a relay is as simple as selecting the desired relay in the "MEV Boost" Card at the [Stakers UI](http://my.dappnode/stakers/ethereum/). Once you have selected at least one relay, you can go back to the Smooth website and click on the "Subscribe" button again.
+When doing a manual subscription, it is obligatory to be registered in at least one MEV relay. In Dappnode, registering and using a relay is as simple as selecting the desired relay in the "MEV Boost" Card at the [Stakers UI](http://my.dappnode/stakers/ethereum/). Once you have selected at least one relay, you can go back to the Smooth website and click on the "Subscribe" button again.
 
 
 
-#### Possible Dialog 2: Validator does not have the Smooth's address as fee recipient in relays.
+#### Scenario 2: Validator does not have the Smooth's address as fee recipient in relays.
 
 <p align="center">
   <img src="/img/smooth_incorrect_fee_recipient.png" alt="incorrect_fee_recipient" width="400"/>
@@ -46,7 +46,7 @@ If this dialog appears, it means that the fee recipient of your validator is not
 Relays that you no longer use won't reflect the fee recipient changes you did for each validator in your staking brain. If you have already changed your fee recipient but the warning still appears, please check the "Troubleshooting" section down below for more information.
 :::
 
-#### Possible Dialog 3: Validator is registered to at least one MEV relay and has the correct fee recipient set.
+#### Scenario 3: Validator is registered to at least one MEV relay and has the correct fee recipient set.
 
 <p align="center">
   <img src="/img/smooth_correct_fee_recipient.png" alt="correct_fee_recipient" width="400"/>
