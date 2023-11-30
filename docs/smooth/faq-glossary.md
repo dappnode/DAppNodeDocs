@@ -12,7 +12,7 @@
 </details>
 
 <details closed>
-  <summary>If I want to unsibscribe my validator from Smooth, when is the best time to do it?</summary>
+  <summary>If I want to unsubscribe my validator from Smooth, when is the best time to do it?</summary>
     Unsubscribing a validator from Smooth causes it to lose all its pending rewards. Hence, the ideal moment to exit Smooth is after successfully proposing a block. A successful block proposal transfers all pending rewards claimable, allowing you to claim them before unsubscribing. This approach minimizes the pending rewards lost when unsubscribing.
 </details>
 
