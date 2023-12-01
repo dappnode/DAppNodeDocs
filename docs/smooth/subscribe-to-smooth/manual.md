@@ -70,7 +70,7 @@ This step is just a confirmation of the relays your validators has the correct f
 
 This is the last step! In this step, you will make the deposit to subscribe your validator to Smooth. The deposit is a one-time upfront payment that will be returned to you as Claimable rewards when proposing your first block to Smooth. The deposit is 0.01 ETH, and it is used to prevent spam and malicious validators from subscribing to Smooth.
 
-Once the deposit transaction is processed by the chain, your validator will be subscribed to Smooth and you will start recieving rewards from other members of Smooth!
+Once the deposit transaction is processed by the chain, your validator will be subscribed to Smooth and you will start receiving rewards from other members of Smooth!
 
 <p align="center">
   <img src="/img/smooth_subscribe_success.png" alt="subscription_success" width="400"/>
