@@ -29,7 +29,7 @@ Once clicking on the "Unsubscribe" button, a dialog will appear warning you that
   <img src="/img/smooth-unsubscribe-done.png" alt="unsub-done" width="400"/>
 </p>
 
-Once the subscription transaction is processed by the chain, your validator will have been unsubscribed sucessfully from Smooth. You can check it by reloading your validator's table.
+Once the subscription transaction is processed by the chain, your validator will have been unsubscribed successfully from Smooth. You can check it by reloading your validator's table.
 
 :::caution
 After unsubscribing, we recommend to change your validator's fee recipient back to another address as soon as possible, in order to avoid automatically subscribing to Smooth again.
