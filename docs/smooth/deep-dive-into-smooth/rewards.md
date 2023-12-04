@@ -21,7 +21,7 @@ Later on, when a validator sends a valid block proposal to Smooth, all its `Pend
 
 Therefore, we consider that a validator has 2 types of rewards:
 
-* **Pending Rewards**: Rewards that are not consolidated yet. They can not be claimed yet.
+* **Pending Rewards**: Rewards that are not consolidated yet. They can not be claimed.
 * **Accumulated Rewards**: Rewards that are consolidated and can be claimed by the validator.
 
 :::info
