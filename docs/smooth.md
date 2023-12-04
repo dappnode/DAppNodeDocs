@@ -3,33 +3,40 @@ title: Smooth
 description: Smooth introduction
 ---
 
-# Welcome to Smooth, dappnode's MEV Smoothing Pool!
+# Welcome to Smooth, Dappnode's MEV Smoothing Pool!
 
-Welcome to the Smooth Documentation! This section provides valuable insights into the Smooth project, an MEV Smoothing Pool designed to enhance rewards for participants in the Ethereum network. 
+Welcome to the Smooth Documentation! Here, you'll find detailed insights and essential information to navigate and maximize your experience with Smooth, an MEV Smoothing Pool designed to enhance rewards for Solo Stakers in the Ethereum network. 
 
 :::info
-Start by reading [Deep Dive into Smooth](/docs/smooth/deep-dive-into-smooth/overview.md) to get a general idea of what Smooth is and how it works.
+Interested in Smooth? Check out **[Deep Dive into Smooth](/docs/smooth/deep-dive-into-smooth/overview.md)** to get a general idea of how Smooth works, or check the **[subscription guides](/docs/smooth/subscribe-to-smooth/overview.md)** to learn how to join!
 :::
-## What is Smooth and why it matters
+## What is Smooth and you should join it?
 
-Smooth is an MEV Smoothing Pool. It helps earn higher rewards on average by pooling MEV rewards among a group of Stakers. 
+Smooth is a MEV Smoothing Pool designed to elevate the Ethereum solo staking experience. By pooling MEV rewards, **Smooth offers Solo Stakers the unique opportunity to earn higher rewards consistently**, reducing reliance on luck and maximizing the potential of every staked ether. Join Smooth and take your solo staking experience to the next level!
 
-**Smooth works by setting the Fee Recipient address of a group of validators to the Smooth Smart Contract, and the rewards that the Smart Contract receives are distributed among all those who are pooling their rewards.**
+### :slot_machine: Stop Depending on Luck!
+Currently, luck plays a big role in every Solo Staker when it comes to earning rewards. While the average validator will propose 3 blocks per year, some will propose more, some less. A Solo Staker does not have any control over this, and can only hope to get luck and propose as much blocks as possible to maximize their rewards. 
 
-### Higher rewards?
+**Smooth changes this by pooling together the block proposals of all its members, so that every member gets a share of the rewards of every block proposed by the pool**. This way, you can stop worrying about luck and start earning rewards consistently! 
 
-A Solo staker proposes 3 blocks on average per year. The chances of getting a "Lottery Block" are very slim, and most likely we are going to get rewards on the order of 0.00-something ETH. 
+### :rocket: Dont miss high fee seasons!
 
-If we pool together all our rewards, we have collectively a much higher chance of getting lottery blocks, and then we divide the big payout among all participants! It's the same concept as Bitcoin Mining Pools.
+With an average of only 3 block proposals per year, how likely are you to catch a period of high fees? How much does it hurt to see a NFT sale, or a peak in activity and not catch any of the action? 
 
-In short, a participant gives up their almost impossible chance of getting a Lottery Block by the much higher chance of getting higher rewards. **In [backtesting simulations](https://github.com/htimsk/SPanalysis), rewards were up to 80% higher than being a solo staker!**
+In Smooth, block proposals are constant, so **no matter what happens in the network, you will always be there to get your share of it!**
 
-### Finally getting at par with Lido and big Exchanges!
+### :moneybag: Hitting MEV Lottery Blocks
+Ever since they arrived, MEV rewards are distributed very unevenly. The vast majority of blocks have very low MEV rewards, while only very few blocks have very high rewards. As a Solo Staker, you have a _very_ low chance of hitting one of these high-reward blocks. TThe median MEV typically hovers around 0.05 ETH, but certain lottery blocks can reach up to 30, 90, or even 300 ETH!
 
-Lido, Centralized Exchanges and other pools with lots of validators consistently hit lottery blocks because of the sheer numbers of validators they have. They naturally split these rewards between all their validators, effectively being at an advantage vs the average solo staker. 
+By adding together all our chances of hitting a lottery block, we have a much higher chance of proposing one! **In [backtesting simulations](https://github.com/htimsk/SPanalysis), rewards of a Smoothing Pool participant are up to 60% higher than those of a Solo Staker!** 
 
-This is a centralizing force, as the rich become richer and bigger operations get bigger rewards. Now Solo Stakers with few validators don't depend on luck to be at par with the big guys!
+:::tip  
+For a detailed comparison between Solo Stakers and Smoothing Pool participants' rewards, explore this [Smoothing Pool analysis](https://github.com/htimsk/SPanalysis)
+:::
 
-The pool has two main components:
-* **oracle**: Calculates off-chain the rewards that each participant of the smoothing pool can claim, using on-chain data from the consensus and execution layer. It also summarizes all balances and addresses with the right to claim in a merkle root, that is periodically stored on-chain, making it non-revertable. On the other hand it serves as a data availability layer, that can be used to get the proofs one needs to use on-chain to claim their share of the rewards.
-* **contract**: Gets all the rewards produced by the members of the pool and provides a set of functions to subscribe, unsubscribe and claim rewards by providing the appropriate proofs.
+Lido, Centralized Exchanges and other pools with lots of validators consistently hit lottery blocks because of the sheer numbers of validators they have. They naturally split these rewards between all their validators, effectively being at an advantage vs the average Solo Staker.
+
+This is a centralizing force, as the rich become richer and bigger operations get bigger rewards. **Now, Solo Stakers with few validators don't depend on luck to be at par with the big guys!**
+
+
+
