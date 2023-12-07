@@ -91,7 +91,7 @@ const FeatureList: FeatureItem[] = [
         Simply set your Fee Recipient Address to Smooth and claim your rewards after proposing a slot!
       </>
     ),
-    url: "/docs/smooth/overview",
+    url: "/docs/smooth",
   },
 ];
 
