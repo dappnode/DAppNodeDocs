@@ -19,12 +19,12 @@ It is crucial that you keep the fee recipient of your validator set to Smooth's 
 
 Go to [Smooth's website](https://smooth.dappnode.io/) and log in with your wallet. A list of all the validators with the same withdrawal address as your logged in wallet will appear.
 
-### Step 3: Select your validator .
+### Step 3: Select your validator.
 
 Select the validator you want to subscribe to Smooth by clicking on the "Subscribe" button.
 ![my_validators](/img/smooth_my_validators.png)
 
-When clicking on the "Subscribe" button, Smooth will check if your validator is registered to any MEV relay. If it is, it will also check if the fee recipient of your validator is set to Smooth's address in each relay. **Three different dialogs can appear**, depending on the state of your validator and the MEV relays it is registered to.
+When clicking on the "Subscribe" button, Smooth will check if your validator is registered to any MEV relay. If it is, it will also check if the fee recipient of your validator is set to Smooth's address in each relay. **Four different dialogs can appear**, depending on the state of your validator and the MEV relays it is registered to.
 
 #### Scenario 1: Validator is not registered to any MEV relay.
 
@@ -34,27 +34,35 @@ When clicking on the "Subscribe" button, Smooth will check if your validator is 
 
 When doing a manual subscription, it is obligatory to be registered in at least one MEV relay. In Dappnode, registering and using a relay is as simple as selecting the desired relay in the "MEV Boost" Card at the [Stakers UI](http://my.dappnode/stakers/ethereum/). Once you have selected at least one relay, you can go back to the Smooth website and click on the "Subscribe" button again.
 
+#### Scenario 2: Validator registered to MEV relays but without Smooth's address as fee recipient in any relay.
+<p align="center">
+  <img src="/img/smooth_subscription_norelays.png" alt="incorrect_fee_recipient" width="400"/>
+</p>
 
+Please make sure that you have correctly done the first step of this guide! This dialog means that not a single relay has reflected your fee recipient change to Smooth's address. If running a dappnode, make sure your MEV boost package is running!
+:::info
+It can take up to a few minutes for relays to reflect your fee recipient change. If you have already changed your fee recipient but this alert still appears, please check the "Troubleshooting" section down below for more information.
+:::
 
-#### Scenario 2: Validator does not have the Smooth's address as fee recipient in relays.
+#### Scenario 3: Validator does not have the Smooth's address as fee recipient in some relays.
 
 <p align="center">
   <img src="/img/smooth_incorrect_fee_recipient.png" alt="incorrect_fee_recipient" width="400"/>
 </p>
 
-If this dialog appears, it means that the fee recipient of your validator is not set to Smooth's address in at least one relay. Please make sure that you have done step 1 correctly, and that the fee recipient of your validator is set to Smooth's address in your [staking brain](http://brain.web3signer.dappnode/). 
+If this dialog appears, it means that your validator's fee recipient is set to Smooth in some relays while also being set to an incorrect address in others. This situation likely arises because your validator was registered in a relay it no longer uses, and the fee recipient in that specific relay wasn't updated accordingly.
 
 :::info
 Relays that you no longer use won't reflect the fee recipient changes you did for each validator in your staking brain. If you have already changed your fee recipient but the warning still appears, please check the "Troubleshooting" section down below for more information.
 :::
 
-#### Scenario 3: Validator is registered to at least one MEV relay and has the correct fee recipient set.
+#### Scenario 4: Validator is registered to at least one MEV relay and has the correct fee recipient set.
 
 <p align="center">
   <img src="/img/smooth_correct_fee_recipient.png" alt="correct_fee_recipient" width="400"/>
 </p>
 
-This is the dialog you want to see! If you see this dialog, it means that your validator is registered to at least one MEV relay, and that the fee recipient of your validator is set to Smooth's address all relays it has been registered to. In other words, this means that your validator is ready to subscribe to Smooth!
+This is the dialog you want to see! If you see this dialog, it means that your validator is registered to at least one MEV relay, and that the fee recipient of your validator is set to Smooth's address in all relays it has been registered to. In other words, this means that your validator is ready to subscribe to Smooth!
 
 
 ### Step 4: Confirm Relays check.
@@ -63,14 +71,14 @@ This is the dialog you want to see! If you see this dialog, it means that your v
   <img src="/img/smooth_mev_blocks.png" alt="mev_blocks" width="400"/>
 </p>
 
-This step is just a confirmation of the relays your validators has the correct fee recipient set in. Click on "Next" to continue the subscription process, we're almost there!
+This step is just a confirmation of the relays your validator has the correct fee recipient set in. Click on "Next" to continue the subscription process, we're almost there!
 
 ### Step 5: Make the deposit and subscribe!
 <p align="center">
   <img src="/img/smooth_make_deposit.png" alt="deposit" width="400"/>
 </p>
 
-This is the last step! In this step, you will make the deposit to subscribe your validator to Smooth. The deposit is a one-time upfront payment that will be returned to you as Claimable rewards when proposing your first block to Smooth. The deposit is 0.01 ETH, and it is used to prevent spam and malicious validators from subscribing to Smooth.
+This is the last step! Here, you will make the deposit to subscribe your validator to Smooth. The deposit is a one-time upfront payment that will be returned to you as Claimable rewards when proposing your first block to Smooth. The deposit is 0.01 ETH, and it is used to prevent spam and malicious validators from subscribing to Smooth.
 
 Once the deposit transaction is processed by the chain, your validator will be subscribed to Smooth and you will start recieving rewards from other members of Smooth!
 
