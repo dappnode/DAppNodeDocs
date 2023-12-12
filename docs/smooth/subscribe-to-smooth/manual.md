@@ -8,6 +8,8 @@ The manual subscription is done through **[Smooth's website](https://smooth.dapp
 
 Change the fee recipient of your validator to Smooth's address, just as if you were subscribing automatically. In Dappnode, this process is as simple as changing the fee recipient in your [staking brain](http://brain.web3signer.dappnode/).
 
+![fee_recipient](/img/smooth_fee_recipient.png)
+
 **This step is extremely important**. Make sure you're changing the fee recipient of the validators you are going to manually subscribe and that the fee recipient is correctly set to Smooth's address (`0xAdFb8D27671F14f297eE94135e266aAFf8752e35`). If a subscribed validator proposes a block with an incorrect fee recipient, it will be banned from Smooth and will not be able to participate in it again.
 
 :::danger Keep the fee recipient set to Smooth's address!
