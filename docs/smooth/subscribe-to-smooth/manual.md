@@ -44,7 +44,7 @@ Please make sure that you have correctly done the first step of this guide! This
 It can take up to a few minutes for relays to reflect your fee recipient change. If you have already changed your fee recipient but this alert still appears, please check the "Troubleshooting" section down below for more information.
 :::
 
-#### Scenario 3: Validator does not have the Smooth's address as fee recipient some relays.
+#### Scenario 3: Validator does not have the Smooth's address as fee recipient in some relays.
 
 <p align="center">
   <img src="/img/smooth_incorrect_fee_recipient.png" alt="incorrect_fee_recipient" width="400"/>
