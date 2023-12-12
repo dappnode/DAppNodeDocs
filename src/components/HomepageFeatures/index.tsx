@@ -50,7 +50,7 @@ const FeatureList: FeatureItem[] = [
         the network's security. Stake smart, choose Stakehouse!
       </>
     ),
-    url: "/docs/user/staking/lsd-pools/stakehouse",
+    url: "/docs/user/staking/ethereum/lsd-pools/stakehouse",
   },
   {
     title: "Rocketpool",
