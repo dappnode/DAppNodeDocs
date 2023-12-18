@@ -26,8 +26,12 @@ If you have access to the Dappmanager:
      2. Click on 'Add New Device'.
 
    - **To retrieve the credentials:**
-     1. Click on the 'Get Credentials' button.
-     2. Copy the credentials displayed directly from the UI.
+     1. Click on the 'Get link' button on the credentials column.
+     2. You will be shown 3 different ways of retrieving the credentials:
+        a. Download config - it will donwload a .txt file with the credentials in plaintext
+        b. Copy config - it will copy the credentials in your clipboard so you can paste them in your wireguard client
+        c. Show config QR code - it will generate a QR that you can scan with a wireguard mobile client to add the config directly
+     4. Please, see step 3. Setting up Wireguard client to see how to use this config once you have a client in your device (desktop/laptop/phone)
 
   - **For Local Access Credentials:**
     1. Click on 'Show Local Credentials'.
