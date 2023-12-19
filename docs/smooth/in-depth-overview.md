@@ -1,9 +1,9 @@
 # General Overview
 
-In this page, you will find an in-depth explanation on how Smooth works. This includes the different components of Smooth, all states possible of a subscribed Smooth validator, and much more! 
+In this page, you will find an in-depth explanation on how [Smooth](https://smooth.dappnode.io/) works. This includes the different components of Smooth, all states possible of a subscribed Smooth validator, and much more! 
 
 :::info
-We recommend reading and understanding the contents of this page before subscribing to Smooth.
+We recommend reading and understanding the contents of this page before subscribing to [Smooth](https://smooth.dappnode.io/).
 :::
 
 ## Configuration parameters
@@ -23,7 +23,7 @@ The smoothing pool shall contain the following configuration parameters:
 
 A `Reward` is considered to be any balance denominated in Eth that is sent to the `POOL_CONTRACT_ADDRESS`. These are detected by the oracle and shared fairly among all the participants in the pool at a given time. The oracle shall detect all these types of rewards and distribute them fairly (see rewards calculation section). All of these rewards are denominated in `ETH` and other types of tokens such as ERC20 are not considered by the oracle:
 * `MevBlock`: Comes from a block proposal where the reward was obtained via an off-chain agreement using tools such as mev-boost, usually coming as the last transaction in the block.
-* `VanilaBlock`: Comes from a block proposal where no MEV relays participated.
+* `VanillaBlock`: Comes from a block proposal where no MEV relays participated.
 * `Donation`: Any address can send an arbitrary amount, either via an Eth tx or via a smart contract to the pool.
 
 ## Subscribe/unsubscribe/ban
@@ -35,7 +35,7 @@ Only the following validators can subscribe into the pool:
 Rewards are only shared among subscribed participants in the pool. Hereunder it's explained the different ways in which a validator can join or leave the pool. Joining can be done with manual or automatatic subscription. And leaving can be done by unsubscribing to the pool or by being banned from it.
 
 **Subscribing** to the pool:
-* `Automatic Subscription`: If any validator sends a `MevBlock` or `VanilaBlock` reward to the smoothing pool contract `POOL_CONTRACT_ADDRESS` it is considered automatically subscribed into the pool, and will start accruing rewards from that moment. This type of subscription doesn't require any collateral or lock up of funds, since by successfully proposing a block with the correct fee recipient, we consider that this validator has enough skin in the game. However, since block proposals are a rare event, it can take weeks or even months for a validator to get automatically subscribed. This is not ideal because it won't be leveraging the benefits of the smoothing pool during this time.
+* `Automatic Subscription`: If any validator sends a `MevBlock` or `VanillaBlock` reward to the smoothing pool contract `POOL_CONTRACT_ADDRESS` it is considered automatically subscribed into the pool, and will start accruing rewards from that moment. This type of subscription doesn't require any collateral or lock up of funds, since by successfully proposing a block with the correct fee recipient, we consider that this validator has enough skin in the game. However, since block proposals are a rare event, it can take weeks or even months for a validator to get automatically subscribed. This is not ideal because it won't be leveraging the benefits of the smoothing pool during this time.
 * `Manual Subscription`: On the other hand, a validator can start earning rewards from the very beginning if it adds `COLLATERAL_GWEI` amount as collateral. This collateral can be deposited by calling the register function in the oracle smart contract. This type of subscription allows the validator to start earning rewards without having to wait weeks or months until a proposal is detected. A subscription is only considered valid if:
   * `collateral>=COLLATERAL_GWEI`
   * The `validatorIndex` included is the transaction
@@ -48,15 +48,15 @@ Note that the collateral that a validator deposits via its withdrawal address is
 * `Unsubscribe`: Similarly, the oracle shall detect the following event from the smoothing pool smart contract, which signals that a given `validatorIndex` was unsubscribed from the pool. Note that the unsubscription is only considered valid if the `sender` matches the validator withdrawal address.
 
 **Banning** from the pool:
-* The oracle shall detect if an active validator in the smoothing pool proposed a block with a `fee_recipieint` different than `POOL_CONTRACT_ADDRESS`. This means that this validator sent its reward to a different address, so we consider this misbehaving and the validator will be banned forever from the smoothing pool.
+* The oracle shall detect if an active validator in the smoothing pool proposed a block with a `fee_recipient` different than `POOL_CONTRACT_ADDRESS`. This means that this validator sent its reward to a different address, so we consider this misbehaving and the validator will be banned forever from the smoothing pool.
 
 :::danger
-Comprehending the purpose of the fee recipient and why it's vital for validators not to change it while subscribed to Smooth is crucial. Modifying a validator's fee recipient to an address that is not Smooth's and proposing a block with it while being subscribed to the pool constitutes misconduct. Such behavior will lead to the validator being banned from participating in the pool.
+Comprehending the purpose of the fee recipient and why it's vital for validators not to change it while subscribed to [Smooth](https://smooth.dappnode.io/) is crucial. Modifying a validator's fee recipient to an address that is not Smooth's and proposing a block with it while being subscribed to the pool constitutes misconduct. Such behavior will lead to the validator being banned from participating in the pool.
 :::
 
 ## State machine
 
-The oracle uses the following **state machine** to track the status of the different validators that are subscribed to Smooth. Different actions can trigger a state change and in the following image all possible transitions are described.
+The oracle uses the following **state machine** to track the status of the different validators that are subscribed to [Smooth](https://smooth.dappnode.io/). Different actions can trigger a state change and in the following image all possible transitions are described.
 
 ![statemachine](https://github.com/dappnode/mev-sp-oracle/blob/main/spec/states.png?raw=true)
 
@@ -81,7 +81,7 @@ And 6 different actions can trigger a state transition:
 When a validator has an active subscription to the pool (`Active` or `YellowCard` state) it is eligible for rewards, meaning that it will receive a given share of each reward that is sent to the pool. Validators in `RedCard` are considered subscribed, but don't earn rewards until they become active again.
 
 There are two **sources of rewards**:
-* Block proposals (execution layer rewards earned via tips or MEV), see `MevBlock` or `VanilaBlock`.
+* Block proposals (execution layer rewards earned via tips or MEV), see `MevBlock` or `VanillaBlock`.
 * Donations by any user that sends an arbitrary amount of Eth balance to the contract, see `PayableDonation` or `NonPayableDonation`.
 
 With the incoming rewards to the pool, the oracle calculates two different types of validator rewards:
