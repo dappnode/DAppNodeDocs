@@ -138,6 +138,10 @@ Because the native token of Gnosis Chain is xDAI (you pay fees in it), but the s
 
 ### 1. Exit the validator from the Dappnode UI
 
+:::warning 
+Make sure that your validator have a `0x01` type withdrawal address before exiting your validator or you will lose your funds. In the [consensus explorer](https://gnosischa.in/), if your withdrawal address shows as an address that starts with a `0x00` it means that your withdrawal address needs to be upgraded to a `0x01`, please refer to the guide in the [Gnosis Chain documentation](https://docs.gnosischain.com/node/management/withdrawals#how-to-change-the-withdrawal-credential). If your validator already shows a `0x01` address, you DON'T need to follow these steps.
+:::
+
 ![Gnosis Withdrawals](/img/gnosiswithdrawals1.png)
 
 Navigate to the Stakers > Gnosis Chain menu and click on the `Upload Keystores` button on the Web3Signer card.
