@@ -1,10 +1,10 @@
 # Smooth Validator States
 
-A Smooth validator can be in multiple states depending on its behavior. In this section we will explain all possible states a validator can have, the consequences of being each state, and how a validator can transition from one state to another.
+A [Smooth](https://smooth.dappnode.io/) validator can be in multiple states depending on its behavior. In this section we will explain all possible states a validator can have, the consequences of being each state, and how a validator can transition from one state to another.
 
 ## State Machine Overview
 
-The oracle employs a **state machine** to monitor the status of subscribed validators within Smooth. Various actions trigger state changes, detailed in the following image encompassing all possible transitions. Let's take a look at it:
+The oracle employs a **state machine** to monitor the status of subscribed validators within [Smooth](https://smooth.dappnode.io/). Various actions trigger state changes, detailed in the following image encompassing all possible transitions. Let's take a look at it:
 
 ![statemachine](https://github.com/dappnode/mev-sp-oracle/blob/main/spec/states.png?raw=true)
 
