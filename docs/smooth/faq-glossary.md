@@ -1,4 +1,5 @@
 # FAQ & Glossary
+
 ## FAQ
 
 <details closed>
@@ -7,18 +8,18 @@
 </details>
 
 <details closed>
-  <summary>Is there a fee that Dappnode takes for participating in [Smooth](https://smooth.dappnode.io/)?</summary>
-  7% of all the Rewards goes to supporting the development of Dappnode and sustainability of [Smooth](https://smooth.dappnode.io/).
+  <summary>Is there a fee that Dappnode takes for participating in <a href="https://smooth.dappnode.io/">Smooth</a>?</summary>
+  7% of all the Rewards goes to supporting the development of Dappnode and sustainability of <a href="https://smooth.dappnode.io/">Smooth</a>
 </details>
 
 <details closed>
-  <summary>If I want to unsubscribe my validator from [Smooth](https://smooth.dappnode.io/), when is the best time to do it?</summary>
-    Unsubscribing a validator from [Smooth](https://smooth.dappnode.io/) causes it to lose all its pending rewards. Hence, the ideal moment to exit [Smooth](https://smooth.dappnode.io/) is just after your last successful block proposal is reflected in Smooth's Smart Contract. A successful block proposal transfers all pending rewards claimable, allowing you to claim them before unsubscribing. This approach minimizes the pending rewards lost when unsubscribing.
+  <summary>If I want to unsubscribe my validator from <a href="https://smooth.dappnode.io/">Smooth</a>, when is the best time to do it?</summary>
+    Unsubscribing a validator from <a href="https://smooth.dappnode.io/">Smooth</a> causes it to lose all its pending rewards. Hence, the ideal moment to exit <a href="https://smooth.dappnode.io/">Smooth</a> is just after your last successful block proposal is reflected in Smooth's Smart Contract. A successful block proposal transfers all pending rewards claimable, allowing you to claim them before unsubscribing. This approach minimizes the pending rewards lost when unsubscribing.
 </details>
 
 <details closed>
-  <summary>Does [Smooth](https://smooth.dappnode.io/) take my Consensus Layer (CL) rewards?</summary>
-  No, [Smooth](https://smooth.dappnode.io/) does not take your CL rewards. CL rewards are always sent directly to your withdrawal address. [Smooth](https://smooth.dappnode.io/) only takes the execution layer rewards, which are the fees or MEV of the blocks you propose. These are the rewards that are sent to the fee recipient.
+  <summary>Does <a href="https://smooth.dappnode.io/">Smooth</a> take my Consensus Layer (CL) rewards?</summary>
+  No, <a href="https://smooth.dappnode.io/">Smooth</a> does not take your CL rewards. CL rewards are always sent directly to your withdrawal address. <a href="https://smooth.dappnode.io/">Smooth</a> only takes the execution layer rewards, which are the fees or MEV of the blocks you propose. These are the rewards that are sent to the fee recipient.
 </details>
 
 ## Glossary
