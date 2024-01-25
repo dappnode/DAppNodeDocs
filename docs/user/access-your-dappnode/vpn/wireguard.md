@@ -2,7 +2,8 @@
 
 WireGuard is a modern, high-performance VPN protocol that offers a simple and streamlined approach for securely accessing your Dappnode. This guide will walk you through setting up WireGuard with your Dappnode.
 
-You will need: 
+You will need:
+
 1. Your dappnode
 2. A Wireguard client installed on your usual device (laptop, mobile, etc.)
 
@@ -14,29 +15,29 @@ There are two primary methods to obtain your VPN credentials:
 
 #### Option 1: Via Dappmanager UI
 
-
 ![VPN_credentials](/img/vpn-1.png)
 
 If you have access to the Dappmanager:
 
 - Navigate to **VPN > WireGuard**.
 
-   - **If you don't see any device added to the list:**
-     1. Provide a name for your device.
-     2. Click on 'Add New Device'.
+  - **If you don't see any device added to the list:**
 
-   - **To retrieve the credentials:**
-     1. Click on the 'Get link' button on the credentials column.
-     2. You will be shown 3 different ways of retrieving the credentials:
-        a. Download config - it will donwload a .txt file with the credentials in plaintext
-        b. Copy config - it will copy the credentials in your clipboard so you can paste them in your wireguard client
-        c. Show config QR code - it will generate a QR that you can scan with a wireguard mobile client to add the config directly
-     4. Please, see step 3. Setting up Wireguard client to see how to use this config once you have a client in your device (desktop/laptop/phone)
+    1. Provide a name for your device.
+    2. Click on 'Add New Device'.
+
+  - **To retrieve the credentials:**
+
+    1. Click on the 'Get link' button on the credentials column.
+    2. You will be shown 3 different ways of retrieving the credentials:
+       - _Download config:_ it will download a .txt file with the credentials in plaintext
+       - _Copy config:_ it will copy the credentials in your clipboard so you can paste them in your wireguard client
+       - _Show config QR code:_ it will generate a QR that you can scan with a wireguard mobile client to add the config directly
+    3. Please, see step 3. Setting up Wireguard client to see how to use this config once you have a client in your device (desktop/laptop/phone)
 
   - **For Local Access Credentials:**
     1. Click on 'Show Local Credentials'.
     2. Copy the local credentials displayed.
-
 
 #### Option 2: Via Dappnode Terminal
 
@@ -48,9 +49,9 @@ If you can't access the Dappmanager, you'll need to get the credentials via the 
 
 3. The credentials will be displayed directly on the terminal. Copy these credentials.
 
-  - **For Local Access Credentials:**
-    1. Execute the command: `dappnode_wireguard --local`.
-    2. Copy the local credentials displayed.
+- **For Local Access Credentials:**
+  1. Execute the command: `dappnode_wireguard --local`.
+  2. Copy the local credentials displayed.
 
 :::info Local Credentials Explained
 Local credentials allow you to establish a connection to your Dappnode when you are on the same local network. They are especially useful when remote credentials might not work due to certain network restrictions or configurations.
@@ -59,7 +60,6 @@ While remote credentials enable access from outside your local network, local cr
 
 Always remember: Local credentials **only work inside your own network**. If you're trying to access your Dappnode from a different location or network, you'll need to use the remote credentials.
 :::
-
 
 :::tip
 Ensure you store these credentials securely. They provide direct access to your Dappnode. Treat them with the same level of caution as you would a password.
