@@ -40,22 +40,19 @@ This guide will use the Wagyu keygen tool to generate your validator keys. There
 :::caution What are all these keys?
 🔒 **Validator keys** will be online (stored in your Dappnode) and signing the blocks of the chain. You will create them from a **mnemonic phrase**, which is important to keep safe as it's the only way to regenerate these validator keys if you lose them.
 
-🛡️ The damage of getting your **mnemonic phrase** compromised has been reduced dramatically since withdrawals have been activated, as you can create the keystores with a set withdrawal address and nobody can change that after, even if they get to your **mnemonic phrase**. Nevertheless, if you lose the keystore and the mnemonic, you will not be able to sign an exit message and you will be forced to validate forever. 
+🛡️ The damage of getting your **mnemonic phrase** compromised has been reduced dramatically since withdrawals have been activated, as you can create the keystores with a set withdrawal address and nobody can change that after, even if they get to your **mnemonic phrase**. Nevertheless, if you lose the keystore and the mnemonic, you will not be able to sign an exit message and you will be forced to validate forever.
 
-🔑 **Withdrawal address** this brings us to the withdrawal address, which is the address that will receive all the balance above 32 ETH while your validator is active, and all your balance above 0 ETH when you exit the validator set. You need to keep this address safe as it's where your ETH will go, and cannot be changed. 
+🔑 **Withdrawal address** this brings us to the withdrawal address, which is the address that will receive all the balance above 32 ETH while your validator is active, and all your balance above 0 ETH when you exit the validator set. You need to keep this address safe as it's where your ETH will go, and cannot be changed.
 :::
 
+1. Download the latest release of the Wagyu Key Gen from [here](https://wagyu.gg).
 
-1) Download the latest release of the Wagyu Key Gen from [here](https://wagyu.gg).
-
-
-2) Disconnect from the internet, so it will be harder to have any leaks on the information you use, and open the program. You will be given 2 options, either create a new mnemonic or import an existing mnemonic, and you will be able to choose the network for which you are generating the keys. The GUI is very user friendly and explains all steps along the way.
+2. Disconnect from the internet, so it will be harder to have any leaks on the information you use, and open the program. You will be given 2 options, either create a new mnemonic or import an existing mnemonic, and you will be able to choose the network for which you are generating the keys. The GUI is very user friendly and explains all steps along the way.
 
 ![Wagyu - 1st screen](/img/wagyu1.png)
 ![Wagyu - 2nd screen](/img/wagyu2.png)
 
-
-You will be shown your Mnemonic Phrase. Keep it safe, as it is used to recreate the validator keys! We recommend copying it in an encrypted volume or in paper stored in a safe place. 
+You will be shown your Mnemonic Phrase. Keep it safe, as it is used to recreate the validator keys! We recommend copying it in an encrypted volume or in paper stored in a safe place.
 
 To ensure that you have copied it somewhere, it will ask you to type it again.
 
@@ -83,13 +80,13 @@ You are now done with the key generation process, and your generated keys and de
 💡 *`Want to learn more about Ethereum keys and key generation?`*💡[Learn more](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/keys/#two-types-of-keys)
 :::
 
-Now that you’ve generated your deposit data and keystores, go ahead and upload your keystores to the Web3signer that you installed during step 1. 
+Now that you’ve generated your deposit data and keystores, go ahead and upload your keystores to the Web3signer that you installed during step 1.
 
 Return to the Dappnode UI and navigate to the Stakers > Ethereum menu. Your Web3Signer will have a link saying `Upload Keystores` . If it doesn’t, make sure that you have waited enough time since step 1 for all the packages to be installed (around 5 minutes) and refresh the page.
 
-Then click on the `Import Keystores`  button on the lower part of the Web3Signer UI.
+Then click on the `Import Keystores` button on the lower part of the Web3Signer UI.
 
-Here browse for the keystore file(s) you generated in the previous step and enter them along with the password you chose to secure your keystores. 
+Here browse for the keystore file(s) you generated in the previous step and enter them along with the password you chose to secure your keystores.
 
 You are now ready to fund these validator accounts and start validating!
 
@@ -139,7 +136,7 @@ Considering MEV Boost? It allows your validator node to propose different relays
 
 ## Withdrawing my ETH
 
-Once you want to finish your staking journey, you will need to withdraw your ETH from the Beacon Chain. This process consists of exiting the validator from the Dappnode UI. 
+Once you want to finish your staking journey, you will need to withdraw your ETH from the Beacon Chain. This process consists of exiting the validator from the Dappnode UI.
 
 :::info Ethereum withdrawals are state changes in the execution layer
 This means that once you reach the end of the Beacon Chain's exit queue, your 32 ETH will show up in your withdrawal address as a state change in the blockchain, and not as a deposit. You can find more info [here](https://ethereum.org/en/staking/withdrawals/#exiting-staking-entirely).
@@ -150,7 +147,7 @@ This means that once you reach the end of the Beacon Chain's exit queue, your 32
 Navigate to the Stakers > Ethereum menu and click on the `Upload Keystores` button on the Web3Signer card.
 Once you are in the Web3Signer UI, select the validators you want to exit and click on the `Exit Validator` button on the top right part of the UI.
 
-![Ethereum Withdrawals](ethereum-exit-validator.png)
+![Ethereum Withdrawals](/img/ethereum-exit-validator.png)
 
 Follow the instructions and type "I want to exit", followed by `Exit`.
 
