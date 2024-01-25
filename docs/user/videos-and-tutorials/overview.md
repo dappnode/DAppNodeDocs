@@ -4,4 +4,4 @@ Welcome to the Videos and Tutorials section! Here, you'll find a curated list of
 
 ## First steps
 
-🔗 [How to connect a wallet to my node](/user/videos-and-tutorials/connect-node)
+🔗 [How to connect a wallet to my node](/user/videos-and-tutorials/connect-node.md)
