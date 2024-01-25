@@ -32,5 +32,5 @@ Once clicking on the "Unsubscribe" button, a dialog will appear warning you that
 Once the subscription transaction is processed by the chain, your validator will have been unsubscribed sucessfully from [Smooth](https://smooth.dappnode.io/). You can check it by reloading your validator's table.
 
 :::caution
-After unsubscribing, we recommend to change your validator's fee recipient back to another address as soon as possible, in order to avoid automatically subscribing to [Smooth](https://smooth.dappnode.io/)https://smooth.dappnode.io/ again.
+After unsubscribing, we recommend to change your validator's fee recipient back to another address as soon as possible, in order to avoid automatically subscribing to [Smooth](https://smooth.dappnode.io/) again.
 :::
