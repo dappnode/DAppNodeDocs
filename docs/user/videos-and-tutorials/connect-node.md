@@ -14,7 +14,8 @@ http://fullnode.dappnode:8545
 
 2. Do note that this domain is only accessible when you're connected to Dappnode either via WiFi or VPN.
 
-3. If you intend to use the RPC externally (i.e., without needing to connect to Dappnode), you'll need to refer to our tutorial on ["How to expose an RPC externally"](link-to-that-tutorial).
+3. If you intend to use the RPC externally (i.e., without needing to connect to Dappnode), you'll need to refer to our tutorial on How to expose an RPC externally.
+<!--["How to expose an RPC externally"](link-to-that-tutorial).-->
 
 ## Other Nodes in Stakers tab
 
