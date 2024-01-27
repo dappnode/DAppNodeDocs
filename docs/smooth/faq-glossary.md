@@ -30,4 +30,4 @@
 
 `Accumulated rewards`: All consolidated rewards your validator has generated, i.e. those claimed and claimable.
 
-`Claimable rewards`: Rewards ready to claim. Claimable rewards are the sum of all your accumulated rewards minus the rewards that have been claimed already. Only the withdrawal address of the validator can claim it's rewards.
+`Claimable rewards`: Rewards ready to claim. Claimable rewards are the sum of all your accumulated rewards minus the rewards that have been claimed already. Only the withdrawal address of the validator can claim its rewards.
