@@ -318,6 +318,11 @@ const sidebars = {
           label: "How to connect a wallet to my node",
           id: "user/videos-and-tutorials/connect-node",
         },
+        {
+          type: "doc",
+          label: "Core release 0.3.0 - IP range migration",
+          id: "user/videos-and-tutorials/release-0.3.0",
+        },
       ],
     },
     {
