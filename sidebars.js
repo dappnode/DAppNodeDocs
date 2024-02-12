@@ -234,6 +234,11 @@ const sidebars = {
           label: "Swarm",
           id: "user/packages/swarm",
         },
+        {
+          type: "doc",
+          label: "Packages' signature",
+          id: "user/packages/signature",
+        },
       ],
     },
     {
