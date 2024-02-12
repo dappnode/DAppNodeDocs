@@ -65,7 +65,7 @@ const FeatureList: FeatureItem[] = [
         minipool.
       </>
     ),
-    url: "/docs/user/staking/lsd-pools/rocketpool",
+    url: "/docs/user/staking/ethereum/lsd-pools/rocketpool",
   },
   {
     title: "Ethical metrics",
