@@ -36,6 +36,46 @@ First of all, don't panic. We have done our best to make the migration as smooth
 </details>
 
 <details>
+  <summary><strong>I cannot access dappnode UI and I am using Wireguard as access method</strong></summary>
+  
+  If you cannot access the UI after waiting several minutes and you are using wireguard as access method, do not panic you might be experiencing a cache issue.
+  Try refreshing the browser or even closing and reopening the browser. If you still cannot access the UI, try removing the legacy dns from the wireguard configuration:
+
+From:
+
+```config
+[Interface]
+PrivateKey = xxxxxxxxxxxxx
+ListenPort = 51820
+Address = xxxxxxxxx
+DNS = 172.33.1.2, 10.20.0.2
+
+[Peer]
+PublicKey = xxxxxxxxxxxxxxxx
+AllowedIPs = 172.33.0.0/16, 10.20.0.0/24 <- to change!
+Endpoint = xxxxxxxxxxxxxxx
+```
+
+to:
+
+```config
+[Interface]
+PrivateKey = xxxxxxxxxxxxx
+ListenPort = 51820
+Address = xxxxxxxxx
+DNS = 172.33.1.2, 10.20.0.2
+
+[Peer]
+PublicKey = xxxxxxxxxxxxxxxx
+AllowedIPs = 10.20.0.0/24
+Endpoint = xxxxxxxxxxxxxxx
+```
+
+Then restart the wireguard service.
+
+</details>
+
+<details>
   <summary><strong>I cannot access dappnode UI after the migration and I have waited 30 mins</strong></summary>
   
   If you cannot access the UI after 30 minutes, you can try to restart the dappnode machine. This will restart all the services and ensure the network configuration is restored.
