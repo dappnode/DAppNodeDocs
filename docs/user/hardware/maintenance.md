@@ -14,7 +14,7 @@ One of the key elements to keep your Dappnode's performance optimal is where you
 
 You've probably seen one of these in the past:
 
-<img src="https://github.com/dappnode/DAppNodeDocs/assets/75956027/36cdf8fa-e012-40ec-ac6a-d0c8fb5b3abc" alt="dust-cleaner"  width="600" />
+<img src="https://github.com/dappnode/DAppNodeDocs/assets/75956027/36cdf8fa-e012-40ec-ac6a-d0c8fb5b3abc" alt="dust-cleaner"  width="300" />
 
 These cans are very helpful to get your Dappnode's insides clean. You can do this by carefully oppening the bottom metal lid. Loosen its four screws and be specially careful when lifting it, as there's a SATA ribbon cable attached to the NUC's board and the metal lid that can be damaged if handled roughly.
 
