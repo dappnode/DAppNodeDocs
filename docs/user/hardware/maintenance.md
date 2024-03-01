@@ -10,9 +10,9 @@ This section will cover four different approaches to servicing your hardware. Th
 
 One of the key elements to keep your Dappnode's performance optimal is where you place it. There's this myth about air conditioning or cool air being able to lower your devices' temperatures, however constant **air flow** is much more important than the temperature of the air itself. We recommend picking a place for your Dappnode that will favor this, and where the heat it produces won't stay in the same room and raise the atmosphere temperature. An open room with windows is great for this, so you should avoid closets or small storage rooms. If your Dappnode is still struggling to keep its temperature low, try removing the upper lid. It won't look as pretty, but it'll get the job done!
 
-### 2. Dust clean
+### 2. Dust cleaning
 
-You've probably seen one of these in the past:
+Dust is the enemy of electronics. It can cause overheating and short circuits, so it's important to keep your Dappnode clean. The best way to do this is by using a can of compressed air, which you can find in any hardware store.
 
 <img src="https://github.com/dappnode/DAppNodeDocs/assets/75956027/36cdf8fa-e012-40ec-ac6a-d0c8fb5b3abc" alt="dust-cleaner"  width="300" />
 
