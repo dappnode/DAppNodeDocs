@@ -12,9 +12,7 @@ One of the key elements to keep your Dappnode's performance optimal is where you
 
 ### 2. Dust cleaning
 
-Dust is the enemy of electronics. It can cause overheating and short circuits, so it's important to keep your Dappnode clean. The best way to do this is by using a can of compressed air, which you can find in any hardware store.
-
-<img src="https://github.com/dappnode/DAppNodeDocs/assets/75956027/36cdf8fa-e012-40ec-ac6a-d0c8fb5b3abc" alt="dust-cleaner"  width="300" />
+Dust is the enemy of electronics. It can cause overheating and short circuits, so it's important to keep your Dappnode clean. The best way to do this is by using a can of compressed air (also called air dusters), which you can find in any hardware store.
 
 These cans are very helpful to get your Dappnode's insides clean. You can do this by carefully oppening the bottom metal lid. Loosen its four screws and be specially careful when lifting it, as there's a SATA ribbon cable attached to the NUC's board and the metal lid that can be damaged if handled roughly.
 

@@ -2,6 +2,10 @@
 
 Keeping a close eye to your Dappnode's temperature is part of the Node Runner's basic good practices. Dappnode provides you with metrics 📊 in the [main dashboard](http://my.dappnode/dashboard) to do so.
 
+<p align="center">
+    <img width="100%" src="/img/temp_dashboard.png" alt="CPU_temp"/>
+</p>
+
 If you want to configure notifications 🔔 for temperature changes, you can find two options:
 
 1. In the [DMS Dashboard](http://dms.dappnode/dashboards) you'll be able to configure Grafana notifications.
