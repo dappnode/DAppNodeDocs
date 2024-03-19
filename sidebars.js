@@ -99,6 +99,27 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Hardware",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "user/hardware/overview",
+        },
+        {
+          type: "doc",
+          label: "Maintenance",
+          id: "user/hardware/maintenance",
+        },
+        {
+          type: "doc",
+          label: "Temperature",
+          id: "user/hardware/temperature",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Staking",
       items: [
         {
