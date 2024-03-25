@@ -1,13 +1,3 @@
-# Videos and Tutorials
-
-Welcome to the Videos and Tutorials section! Here, you'll find a curated list of videos and written tutorials designed to help you get the most out of Dappnode. Whether you're a beginner or an advanced user, there's something here for everyone.
-
-## Tutorial docs
-
-In this section, you will find comprehensive written guides that provide step-by-step instructions on various topics related to Dappnode. These documents are a valuable resource for anyone looking to deepen their understanding and enhance their Dappnode experience.
-
-🔗 [How to connect a wallet to my node](/user/videos-and-tutorials/connect-node.md)
-
 ## Dappnode Driving School
 
 The Dappnode Driving School is a set of video tutorials that will help you understand the basics about setting up your Dappnode for the first time. These videos are made for newcommers and non-technical users, but if you have questions don't hesitate to drop by our [Dappnode Discord Community](https://discord.gg/dappnode), where the community will be happy to provide as much help as you need.
@@ -28,7 +18,9 @@ The Dappnode Driving School is a set of video tutorials that will help you under
 
 ### II. Configuring your Dappnode
 
-🛠️ Coming soon...
+🛠️ [How Repositories work in your Dappnode](https://youtu.be/b3NN2E6YALU)
+
+🛠️ [What is Dappnode Monitoring Service](https://youtu.be/l4T1G9u17xg)
 
 ### III. Dappnode Troubleshooting
 
