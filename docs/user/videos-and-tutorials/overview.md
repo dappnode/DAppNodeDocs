@@ -6,7 +6,7 @@ Welcome to the Videos and Tutorials section! Here, you'll find a curated list of
 
 In this section, you will find comprehensive written guides that provide step-by-step instructions on various topics related to Dappnode. These documents are a valuable resource for anyone looking to deepen their understanding and enhance their Dappnode experience.
 
-🔗 [How to connect a wallet to my node](/user/videos-and-tutorials/connect-node.md)
+🔗 [How to connect a wallet to my node](/user/videos-and-tutorials/guides/connect-node.md)
 
 ## Dappnode Driving School
 
