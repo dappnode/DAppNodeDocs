@@ -335,14 +335,41 @@ const sidebars = {
       label: "Videos and tutorials",
       items: [
         {
-          type: "doc",
-          label: "Overview",
-          id: "user/videos-and-tutorials/overview",
+          type: "category",
+          label: "Driving School",
+          items: [
+            {
+              type: "doc",
+              label: "Initial setup",
+              id: "user/videos-and-tutorials/driving-school/initial-setup",
+            },
+            {
+              type: "doc",
+              label: "Configuration",
+              id: "user/videos-and-tutorials/driving-school/configuration",
+            },
+            {
+              type: "doc",
+              label: "Troubleshooting",
+              id: "user/videos-and-tutorials/driving-school/troubleshooting",
+            },
+          ],
         },
         {
           type: "doc",
-          label: "How to connect a wallet to my node",
-          id: "user/videos-and-tutorials/connect-node",
+          label: "Crash Course",
+          id: "user/videos-and-tutorials/crash-course",
+        },
+        {
+          type: "category",
+          label: "Guides",
+          items: [
+            {
+              type: "doc",
+              label: "How to connect a wallet to my node",
+              id: "user/videos-and-tutorials/guides/connect-node",
+            },
+          ],
         },
       ],
     },
