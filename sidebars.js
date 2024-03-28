@@ -320,13 +320,18 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Notifications",
-          id: "user/ethical-metrics/notifications",
+          label: "Setting up Notifications",
+          id: "user/ethical-metrics/setup",
         },
         {
           type: "doc",
           label: "Metrics collected",
           id: "user/ethical-metrics/metrics",
+        },
+        {
+          type: "doc",
+          label: "Troubleshooting",
+          id: "user/ethical-metrics/troubleshooting",
         },
       ],
     },

@@ -1,20 +1,21 @@
 # Metrics Collected by Ethical Metrics
 
-Dappnode has absolutely no hidden telemetry and is completely private by design. We were reluctant of setting up a Monitoring Service because we did NOT want to collect any data from our users. Because of the request of our users to offer alerts, we came up with a private solution so we can offer alerts without compromising your privacy.
+Dappnode has absolutely no hidden telemetry and is completely private by design. We were reluctant of setting up a monitoring service because we did NOT want to collect any data from our users. Because of our community's continuous requests to offer alerts, we came up with a solution that doesn't compromise your privacy.
 
-Even if we cannot associate the metrics that your Dappnode sends with you, **we are fully committed to maintaining total transparency about the metrics we collect from your dappnode when using Ethical Metrics**. We want you to have a clear understanding of the information that is being monitored. The metrics we collect fall into several categories. Here's an overview of the metrics we gather.
+Even if we can't link the metrics from your Dappnode to your identity, **we are fully committed to maintain total transparency about the metrics we collect from your Dappnode when using Ethical Metrics**. We want you to have a clear understanding of the information that is being monitored. The metrics we collect fall into several categories. Here's an overview of the metrics we gather.
 
 :::info
-These metrics also help us better allocate resources by knowing what our users are running on their dappnodes. This way, we can better understand what packages are most popular and what packages need improvement.
+These metrics also help us better allocate resources by knowing what our users are running on their Dappnodes. This way, we can better understand which packages are the most popular and which ones need improvement.
 :::
 
 :::note
-Ethical Metrics is one of our newest packages and it is still under improvement. This section will be updated as we add or remove metrics.
+Ethical Metrics is one of our newest packages and it is still under constant improvement. This section will be updated as we add or remove metrics.
 :::
 
 ## Dappnode host metrics
 
-These are all the metrics related directly to the host machine running your dappnode. All of these metrics are collected by the Dappnode Exporter package.
+These are all the metrics related directly to the host machine running your Dappnode. All of these metrics are collected by the Dappnode Exporter package.
+
 - `node_cpu_seconds_total`: Total CPU usage in seconds by the node.
 - `container_memory_usage_bytes`: Memory usage in bytes by containers.
 - `container_memory_cache`: Memory cache usage by containers.
@@ -33,8 +34,10 @@ These are all the metrics related directly to the host machine running your dapp
 - `container_cpu_usage_seconds_total`: Total CPU usage in seconds by containers.
 
 ## Dappmanager metrics
-The following are all the metrics related to your dappnode configuration. These are all stored in your dappmanager.
-- `dappmmanager_staker_config`: Your current staking package. 
+
+The following are all the metrics related to your Dappnode's configuration. These are all stored in your Dappmanager.
+
+- `dappmmanager_staker_config`: Your current staking package.
 - `dappmanager_ipfs_client_target_local`: Wether IPFS client is in local or remote mode.
 - `dappmanager_eth_fallback_enabled`: Wether the ethereum fallback client is enabled.
 - `dappmanager_eth_client_target_local`: Wether ethereum client is in local or remote mode.
@@ -43,7 +46,9 @@ The following are all the metrics related to your dappnode configuration. These 
 - `dappmanager_host_info`: Details including Docker and Docker Compose versions, kernel version, operating system version, and architecture type.
 
 ## Staking Metrics
-The following metrics are all related directly to the staking packages, including web3signer.
+
+The following metrics are all related directly to the staking packages, including Web3Signer.
+
 - `eth2_slashingprotection_prevented_signings`: Number of prevented slashing signings.
 - `signing_signers_loaded_count`: Count of loaded validators signing in web3signer.
 - `signing_bls_signing_duration`: Duration of BLS signing.
@@ -55,8 +60,9 @@ The following metrics are all related directly to the staking packages, includin
 - `api_rpc_cons_syncing`: Wether your staking execution clients are syncing.
 - `api_rpc_exec_syncing`: Wether your staking consensus clients are syncing.
 
+To sum it up, the metrics we collect give us a peek into how your Dappnode is doing overall, how it allocates resources, memory, disk, and even info related to staking performance.
 
-To sum it up, the metrics we collect give us a peek into how your dappnode is doing, like how it uses resources, memory, disk, and even info related to staking. Rest assured, your privacy is of utmost importance to us, and all data transmission occurs through the TOR network to protect your privacy.
+Your privacy is of utmost importance to us. Remember that all this data transmission occurs through the TOR network to protect your privacy.
 
 :::note
 For any questions or concerns about the metrics collected by Ethical Metrics, feel free to reach out to our support team.
