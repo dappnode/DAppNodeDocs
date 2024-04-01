@@ -5,8 +5,9 @@ Experiencing trouble when setting your notifications up? Check this FAQ. If your
 <details>
   <summary><strong>How can I make sure my Dappnode is registered?</strong></summary>
   
-  **Email:** Upon registering, an email will be sent to your configured email address. If you don't receive this email, please check your spam folder.
-    **Telegram:** Once your bot has been set up, you can press the "Send Test Notification" button to see if everything is working as expected.
+  <b>Email:</b> Upon registering, an email will be sent to your configured email address. If you don't receive this email, please check your spam folder. <br/>
+  
+  <b>Telegram:</b> Once your bot has been set up, you can press the "Send Test Notification" button to see if everything is working as expected.
 </details>
 
 <details>
