@@ -2,8 +2,7 @@
 
 import VideoCarousel from '../../../../src/components/carouselFeatures/videoCarousel';
 
-Welcome to Dappnode Driving School! Here you'll find a series of videos that will guide you through the initial setup process. From booting dappnode from ISO and accessing it through VPN, to setting up your ethereum node, we've got you covered.
-
+Welcome to Dappnode Driving School! Here you'll find a series of videos that will guide you through the initial setup process. From booting dappnode from ISO and accessing it through VPN, to setting up your Ethereum node, we've got you covered.
 
 <div className="video-carousel-wrapper">
   <VideoCarousel

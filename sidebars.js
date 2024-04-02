@@ -348,11 +348,6 @@ const sidebars = {
               label: "Configuration",
               id: "user/videos-and-tutorials/driving-school/configuration",
             },
-            {
-              type: "doc",
-              label: "Troubleshooting",
-              id: "user/videos-and-tutorials/driving-school/troubleshooting",
-            },
           ],
         },
         {
