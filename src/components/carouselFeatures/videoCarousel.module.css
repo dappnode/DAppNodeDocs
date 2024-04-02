@@ -1,0 +1,20 @@
+.carousel {
+  display: flex;
+  overflow-x: auto; /* Changed to auto to ensure scrollbar is visible when necessary */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.videoItem {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 640px;
+  scroll-snap-align: start;
+  text-align: center;
+  margin: 0 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 360px;
+}

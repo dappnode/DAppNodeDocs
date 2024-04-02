@@ -119,6 +119,10 @@ const config = {
                 label: "Access your dappnode",
                 to: "/docs/user/access-your-dappnode/overview",
               },
+              {
+                label: "Driving School",
+                to: "/docs/user/videos-and-tutorials/driving-school/initial-setup",
+              },
             ],
           },
           {
