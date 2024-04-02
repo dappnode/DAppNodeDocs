@@ -121,7 +121,7 @@ const config = {
               },
               {
                 label: "Driving School",
-                to: "/docs/user/driving-school/overview",
+                to: "/docs/user/videos-and-tutorials/driving-school/initial-setup",
               },
             ],
           },
