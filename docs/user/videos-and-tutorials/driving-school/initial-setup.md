@@ -7,7 +7,7 @@ Welcome to Dappnode Driving School! Here you'll find a series of videos that wil
 The first step you will need to take when your hardware is ready for installing Dappnode. If you have experience installing Linux you'll know what this is about, but if you don't there's nothing to worry about, as most of the process is automated.
 
 <center>
-<iframe src="https://www.youtube.com/embed/lh5hADm1Iuk" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lh5hADm1Iuk" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
 </center>
 
 <br />
@@ -17,7 +17,7 @@ The first step you will need to take when your hardware is ready for installing 
 The most common way to interact with your dappnode is through a web browser in another computer. This means that Dappnode works as a server, and doesn't have a traditional graphic interface as regular personal computers do, so if you're sitting in front of a login prompt wondering what's next you're doing great so far!
 
 <center>
-<iframe src="https://www.youtube.com/embed/Z1uDv_J7wlg" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z1uDv_J7wlg" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
 </center>
 
 <br />
@@ -27,7 +27,7 @@ The most common way to interact with your dappnode is through a web browser in a
 Now that you're inside your Dappnode we gotta make sure no unauthorized users have access! There are four kinds of security credentials in Dappnode and we'll go through each one of them in this video.
 
 <center>
-<iframe src="https://www.youtube.com/embed/TZUK39yiZ30" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TZUK39yiZ30" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
 </center>
 
 <br />
@@ -37,7 +37,7 @@ Now that you're inside your Dappnode we gotta make sure no unauthorized users ha
 The best way to remotely and safely access your Dappnode is through VPN. Discover the options that Dappnode has to offer for VPNs in this Dappnode Driving School lesson!
 
 <center>
-<iframe src="https://www.youtube.com/embed/qB0sMaNpXpU" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qB0sMaNpXpU" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
 </center>
 
 <br />
@@ -47,7 +47,7 @@ The best way to remotely and safely access your Dappnode is through VPN. Discove
 This is what you came here for! Let's start syncing your clients to get your nodes up and running. Whether you want them for better privacy while exploring web3 or because you're interested in validating, syncing your node is a must in your Dappnode journey.
 
 <center>
-<iframe src="https://www.youtube.com/embed/zJowD3X-MUc" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zJowD3X-MUc" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
 </center>
 
 <br />
@@ -57,6 +57,6 @@ This is what you came here for! Let's start syncing your clients to get your nod
 Now that everything is working as expected, here's some information on what keeps Dappnode running the way it's meant to. This video is also great if you're looking into putting your own hardware together, since it goes through the minimum requirements to run Dappnode.
 
 <center>
-<iframe src="https://www.youtube.com/embed/1GW-GbGKs7o?si=DZVO185qWNWiXFl4" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1GW-GbGKs7o?si=DZVO185qWNWiXFl4" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
 </center>
 

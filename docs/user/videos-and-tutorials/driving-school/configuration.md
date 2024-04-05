@@ -10,7 +10,7 @@ Once you have your Dappnode up and running, you can start configuring it to suit
 
 Your Dappnode uses two technologies in order to stay decentralized and permissionless. In this video we'll go through Ethereum and IPFS and how do they work in Dappnode.
 
-<center><iframe src="https://www.youtube.com/embed/b3NN2E6YALU?si=lId8rJGykwgPn0Mz" frameborder="0" allow="accelerometer; autoplay; fullscreen" ></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/b3NN2E6YALU?si=lId8rJGykwgPn0Mz" frameborder="0" allow="accelerometer; autoplay; fullscreen" ></iframe></center>
 
 <br />
 <br />
@@ -19,5 +19,4 @@ Your Dappnode uses two technologies in order to stay decentralized and permissio
 
 This video is about Dappnode Monitoring Service, a tool that will make it easy to monitor your Dappnode's health and activity.
 
-<center><iframe src="https://www.youtube.com/embed/l4T1G9u17xg?si=f82B9iT_0UNdsyq2" frameborder="0" allow="accelerometer; autoplay; fullscreen" ></iframe></center>
-
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/l4T1G9u17xg?si=f82B9iT_0UNdsyq2" frameborder="0" allow="accelerometer; autoplay; fullscreen" ></iframe></center>
