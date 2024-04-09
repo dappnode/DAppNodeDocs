@@ -1,16 +1,10 @@
 # Holesky Testnet
 
-:::info
-The Holesky testnet launched on September 15th, 2023 and will eventually replace the current Ethereum Goerli testnet. Holesky aims to replicate an Ethereum environment that can scale its number of active validators.
-:::
-
-The **Holesky testnet** is a testnet for the Ethereum ecosystem, serving as a sandbox for users and developers alike. 
-
-Dappnode paves an easy pathway for enthusiasts to operate a node on the Holesky testnet, ensuring practical experience without the risks associated with the mainnet.
+Launched on September 15th, 2023, **Holesky** is a testnet for the Ethereum ecosystem, serving as a sandbox for users and developers alike. 
 
 ## Navigating to Holesky in Dappnode
 
-You can locate the Holesky testnet under the [**Holesky** tab](http://my.dappnode/stakers/holesky) in the **Stakers Menu** starting on Dappnode Core v0.2.83. This intuitive design ensures that even novices can seamlessly set up their testnet node. If you want to run Holesky testnet validators, you'll also need to select Web3Signer Holesky.
+You can locate the Holesky testnet under the [**Holesky** tab](http://my.dappnode/stakers/holesky) in the **Stakers Menu**. Dappnode offers the same execution and consensus client options If you want to run Holesky testnet validators, you'll also need to select Web3Signer Holesky.
 
 ![Holesky - Stakers Menu](/img/holesky-stakers.png)
 
