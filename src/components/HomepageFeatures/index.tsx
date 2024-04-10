@@ -50,7 +50,7 @@ const FeatureList: FeatureItem[] = [
         tailored for both beginners and seasoned users.
       </>
     ),
-    url: "/docs/user/staking/ethereum/lsd-pools/stakehouse",
+    url: "/docs/user/videos-and-tutorials/driving-school/initial-setup",
   },
   {
     title: "Rocketpool",
