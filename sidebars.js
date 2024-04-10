@@ -143,7 +143,7 @@ const sidebars = {
                 {
                   type: "doc",
                   label: "Testnet",
-                  id: "user/staking/ethereum/solo/goerli-prater",
+                  id: "user/staking/ethereum/solo/holesky",
                 },
               ],
             },
