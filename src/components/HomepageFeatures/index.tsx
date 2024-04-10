@@ -39,18 +39,18 @@ const FeatureList: FeatureItem[] = [
     url: "/docs/user/staking/overview",
   },
   {
-    title: "Stakehouse",
-    Image: require("@site/static/img/stakehouse-logo.png").default,
+    title: "Driving School",
+    Image: require("@site/static/img/driving-school-logo.png").default,
     description: (
       <>
-        Boost your staking game with Dappnode's Stakehouse! Stakehouse
-        streamlines the process, making it effortless to stake your Ethereum
-        directly from home. With a user-friendly interface and robust support,
-        Stakehouse offers an unrivaled staking experience, making you a part of
-        the network's security. Stake smart, choose Stakehouse!
+        Dappnode Driving School is a collection of tutorial videos that provide
+        all the tools you need for a successful Dappnode journey. From initial
+        installation to advanced VPN setups, exploring hardware essentials, and
+        expanding functionalities, each video offers step-by-step instructions
+        tailored for both beginners and seasoned users.
       </>
     ),
-    url: "/docs/user/staking/ethereum/lsd-pools/stakehouse",
+    url: "/docs/user/videos-and-tutorials/driving-school/initial-setup",
   },
   {
     title: "Rocketpool",
@@ -87,8 +87,9 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Smooth is a opt-in feature that enables solo stakers to earn higher MEV
-        rewards. Joining Smooth is easier than ever with Dappnode.
-        Simply set your Fee Recipient Address to Smooth and claim your rewards after proposing a slot!
+        rewards. Joining Smooth is easier than ever with Dappnode. Simply set
+        your Fee Recipient Address to Smooth and claim your rewards after
+        proposing a slot!
       </>
     ),
     url: "/docs/smooth",
