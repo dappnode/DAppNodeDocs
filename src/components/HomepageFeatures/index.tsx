@@ -40,7 +40,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Driving School",
-    Image: require("@site/static/img/dds-logo.png").default,
+    Image: require("@site/static/img/driving-school-logo.png").default,
     description: (
       <>
         Dappnode Driving School is a collection of tutorial videos that provide
