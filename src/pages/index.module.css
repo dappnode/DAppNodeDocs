@@ -29,7 +29,9 @@
 .carousel {
   display: flex;
   overflow-x: auto;
-  gap: 20px; /* Adjust this to control spacing between videos */
+  gap: 25px; /* spacing between videos */
+  max-width: 89%;  /* carousel width */
+  margin: auto; 
 }
 
 .videoModal {

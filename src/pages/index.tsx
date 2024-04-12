@@ -12,23 +12,33 @@ const crashCourseVideos: {
   featured: boolean;
 }[] = [
   {
-    title: "How to set up dappnode from scratch using your own hardware",
-    url: "https://www.youtube.com/embed/VBUIIV8Jo_U",
+    title: "Booting from the Dappnode ISO",
+    url: "https://www.youtube.com/embed/lh5hADm1Iuk",
     featured: true,
   },
   {
-    title: "How to set up a validator",
-    url: "https://www.youtube.com/embed/Bc6FomfhkbI",
+    title: "Accessing the Dappnode User Interface or Dashboard",
+    url: "https://www.youtube.com/embed/Z1uDv_J7wlg",
     featured: true,
   },
   {
-    title: "How to setup Stakehouse node operator",
-    url: "https://www.youtube.com/embed/tQwy096M8L8",
+    title: "Setting up Dappnode Security",
+    url: "https://www.youtube.com/embed/TZUK39yiZ30",
     featured: true,
   },
   {
-    title: "How to withdraw your staked ETH",
-    url: "https://www.youtube.com/embed/1uxOIcR92uQ",
+    title: "Configuring your Dappnode VPN",
+    url: "https://www.youtube.com/embed/qB0sMaNpXpU",
+    featured: true,
+  },
+  {
+    title: "Syncing your clients/An overview on node running",
+    url: "https://www.youtube.com/embed/zJowD3X-MUc",
+    featured: true,
+  },
+  {
+    title: "Understanding your Dappnode's Hardware",
+    url: "https://www.youtube.com/embed/1GW-GbGKs7o?si=DZVO185qWNWiXFl4",
     featured: true,
   },
 ];
