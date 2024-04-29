@@ -1,4 +1,4 @@
-# Subscribing to [Smooth](https://smooth.dappnode.io/)
+# Subscribing to Smooth
 
 Hello! In this section you will find all the information on how to subscribe your Validators to [Smooth](https://smooth.dappnode.io/). Even though the process is simple, it is important to follow the steps carefully. 
 
