@@ -19,7 +19,7 @@
     
     <p>You'll most likely have to switch your IPFS repository to remote, perform updates and go back to your Local IPFS node:</p>
     <ol>
-        <li>Try switching local/remote in IPFS repository: <a href="http://my.dappnode/#/repository/ipfs">http://my.dappnode/#/repository/ipfs</a></li>
+        <li>Try switching local/remote in IPFS repository: <a href="http://my.dappnode/repository/ipfs">http://my.dappnode/repository/ipfs</a></li>
         <li>Wait a few seconds, then retry downloading/updating your package.</li>
         <li>Make sure you set your IPFS node to Local for optimal Dappnode performance.</li>
     </ol>
