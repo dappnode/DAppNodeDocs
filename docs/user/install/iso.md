@@ -35,6 +35,10 @@ After burning the ISO to the USB stick:
 
 The machine should now boot from the USB, and you'll see the Dappnode installation interface.
 
+:::info
+Make sure that an Ethernet cable is plugged in to your device during the installation process, otherwise it will fail.
+:::
+
 ## Follow the Installation Prompts
 
 - If you've chosen the **Attended ISO**, you'll be presented with a series of prompts asking for configuration details and preferences. Follow the on-screen instructions and provide the necessary input to proceed.
