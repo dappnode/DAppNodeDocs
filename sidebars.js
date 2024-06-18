@@ -177,6 +177,11 @@ const sidebars = {
                   label: "Obol",
                   id: "user/staking/ethereum/dvt-technologies/obol-network",
                 },
+                {
+                  type: "doc",
+                  label: "SSV",
+                  id: "user/staking/ethereum/dvt-technologies/ssv-network",
+                },
               ],
             },
           ],
