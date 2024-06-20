@@ -182,6 +182,11 @@ const sidebars = {
                   label: "SSV",
                   id: "user/staking/ethereum/dvt-technologies/ssv-network",
                 },
+                {
+                  type: "doc",
+                  label: "Diva",
+                  id: "user/staking/ethereum/dvt-technologies/diva",
+                },
               ],
             },
           ],
