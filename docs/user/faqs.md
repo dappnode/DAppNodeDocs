@@ -49,14 +49,25 @@
         <li>Are you in the same network as the Dappnode? Use the local proxy access to configure your VPN: <a href="http://dappnode.local/">http://dappnode.local/</a></li>
         <li>Is UPnP enabled in your router settings? Try restarting your router after applying this setting!</li>
         <li>Is the port for Wireguard open in your router's port forwarding settings? (UDP 51820)</li>
+        <li>If you're using OpenVPN, is its port open as well? (UDP 1194)</li>
         <li>Are you behind a CGNAT? You need to contact your ISP and request an IPv4 static address.</li>
         <li>Are you connected to another VPN? Please disconnect from this VPN before connecting to your Dappnode's VPN.</li>
-        <li>If you're trying to access with Wireguard through a local network, make sure you're using your local credentials:</li>
+        <li>If you're trying to access with Wireguard through a local network, **make sure you're using your local credentials**</li>
     </ul>
       
 </details>
 
 <!--![vpn-fix](/img/vpn-fix-faq.png)-->
+
+<details>
+    <summary><strong>How can I know if I'm using Wireguard's local or remote credentials?</strong></summary>
+    
+    <ul>
+        <li>If you're using local credentials, your Wireguard profile's endpoint should be an IP + Port. Ex. `192.168.X.X:<port>`</li>
+        <li> If you're using remote credentials, then the endpoint should be a dynDNS string + Port. Ex. `<randomstring>.dyndns.dappnode.io:<port>`</li>
+    </ul>
+      
+</details>
 
 <details>
     <summary><strong>My Web3Signer status has an odd grey bar in its status, is something wrong?</strong></summary>
