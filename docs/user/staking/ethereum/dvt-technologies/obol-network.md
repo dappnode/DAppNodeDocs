@@ -21,7 +21,8 @@ The distributed validator clients in these nodes come to consensus on what shoul
 In order to create a DV, it's important for the participants to have a successfully synced Dappnode before the Key Generation event.
 
 :::tip It's important that you understand that the requirements of the DV node runner are not the same as a Solo Stakers'. This technology facilitates the creation of Distributed Validators between a group of independent people. This means you are placing significant trust in the participants you'll run this Distributed Validator Cluster with.
-You need to ensure every operator in the Cluster is competent and trustworthy before sharing this responsibility. Negligence on behalf of others in your group can put you at risk. however a minimum amount of these nodes should be synced at all times in order to keep the validator running. tip::::
+You need to ensure every operator in the Cluster is competent and trustworthy before sharing this responsibility. Negligence on behalf of others in your group can put you at risk. however a minimum amount of these nodes should be synced at all times in order to keep the validator running.
+:::
 
 Once all participants have synced nodes, you'll need to install the [Obol Distributed Validator Dappnode package](http://my.dappnode/installer/dnp/%2Fipfs%2FQmfFh6YCjwh7b876G2KgYhvwUWyhmfugYDT5W5sTW5Fq53). After Dappnodes are ready, continue by entering Obol's [Distributed Validator Launchpad](https://goerli.launchpad.obol.tech/), connecting your wallet and selecting the option that best fits your DV's distribution and setup.
 
