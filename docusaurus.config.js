@@ -116,7 +116,7 @@ const config = {
                 to: "/docs/user/staking/overview",
               },
               {
-                label: "Access your dappnode",
+                label: "Access your Dappnode",
                 to: "/docs/user/access-your-dappnode/overview",
               },
               {
