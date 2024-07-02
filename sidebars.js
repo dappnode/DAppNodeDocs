@@ -395,6 +395,11 @@ const sidebars = {
           label: "Commands",
           id: "dev/sdk/commands",
         },
+        {
+          type: "doc",
+          label: "SDK-Publish",
+          id: "dev/sdk/sdk-publish",
+        },
       ],
     },
     {
