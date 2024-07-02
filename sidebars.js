@@ -230,17 +230,17 @@ const sidebars = {
       type: "category",
       label: "Packages",
       items: [
-       {
+        {
           type: "doc",
           label: "Understanding Dappnode Packages",
           id: "user/packages/understanding-dappnode-packages",
-       },
-       {
+        },
+        {
           type: "doc",
           label: "Packages' signature",
           id: "user/packages/signature",
-       }, 
-       {
+        },
+        {
           type: "doc",
           label: "DMS",
           id: "user/packages/dms",
@@ -342,6 +342,49 @@ const sidebars = {
           type: "doc",
           label: "Troubleshooting",
           id: "user/ethical-metrics/troubleshooting",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Dappnode Cloud",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "user/dappnode-cloud/overview",
+        },
+        {
+          type: "category",
+          label: "Cloud Providers",
+          items: [
+            {
+              type: "category",
+              label: "AWS",
+              items: [
+                {
+                  type: "doc",
+                  label: "AWS Overview",
+                  id: "user/dappnode-cloud/providers/aws/overview",
+                },
+                {
+                  type: "doc",
+                  label: "How to set up an Instance",
+                  id: "user/dappnode-cloud/providers/aws/set-up-instance",
+                },
+                {
+                  type: "doc",
+                  label: "FAQs & Troubleshooting",
+                  id: "user/dappnode-cloud/providers/aws/faqs",
+                },
+              ],
+            },
+            {
+              type: "doc",
+              label: "More coming soon",
+              id: "user/dappnode-cloud/providers/coming-soon",
+            },
+          ],
         },
       ],
     },
