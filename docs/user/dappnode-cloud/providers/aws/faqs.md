@@ -97,20 +97,6 @@ Having SSH access is crucial for maintaining and managing your Dappnode instance
 </details>
 
 <details>
-    <summary><strong>Why do I want to connect via SSH to my Dappnode?</strong></summary>
-
-Connecting via SSH to your Dappnode allows you to access your instance's terminal directly. Even if you have obtained your Wireguard credentials via Telegram, having SSH access is important for several reasons:
-
-- **Full Control:** SSH access gives you complete control over your Dappnode instance, allowing you to perform advanced configurations and manage the system directly.
-
-- **Troubleshooting:** In case of potential issues or errors, accessing the terminal via SSH enables you to diagnose and fix problems efficiently.
-- **Advanced Management:** You can run commands, update software, monitor system performance, and manage services that may not be accessible through the standard Dappnode UI.
-
-Having SSH access is crucial for maintaining and managing your Dappnode instance effectively, ensuring you can handle any technical challenges that arise.
-
-</details>
-
-<details>
     <summary><strong>I've already launched my instance and I'm not getting my Wireguard credentials</strong></summary>
 
 If you are not receiving your Wireguard credentials immediately after launching your instance, the Dappnode Image might still be installing. If this happens, wait a few minutes and try again.

@@ -25,15 +25,17 @@ With Dappnode Cloud, you can easily scale your resources up or down based on you
 
 It is much better to run a physical Dappnode at your place for these 2 main reasons:
 
-### 1. Economics
-A physical machine has a higher initial cost, but leverages your existing internet connection and consumes less energy than your fridge. This initial cost is pretty much the only cost you will have for the lifetime of the hardware you use. 
+### 1. Economics 💲
+
+A physical machine has a higher initial cost, but leverages your existing internet connection and consumes less energy than your fridge. This initial cost is pretty much the only cost you will have for the lifetime of the hardware you use.
 Cloud servers have monthly costs associated with it that never go away, resulting in higher cost in the long term.
 
 In summary, you will be better off with a physical machine if you plan to use your Dappnode for a long time, and better off with a Dappnode Cloud if you only want to use the instance for a short period of time.
 
-### 2. Decentralization
-The networks you will run on your Dapppnode become more resilient to corporate capture, government interference and localized events the more decentralized their nodes are. By running a Node in the cloud it is very likely that there is already a node of that network in the same data center, therefore adding no extra value to the decentralization of the network. 
-If instead you run the same node in a home setup from your home, you are adding a node that is much harder to censor, block, locate and subjugate than a node controlled by a big infrastructure corporation. 
+### 2. Decentralization 🗽
+
+The networks you will run on your Dapppnode become more resilient to corporate capture, government interference and localized events the more decentralized their nodes are. By running a Node in the cloud it is very likely that there is already a node of that network in the same data center, therefore adding no extra value to the decentralization of the network.
+If instead you run the same node in a home setup from your home, you are adding a node that is much harder to censor, block, locate and subjugate than a node controlled by a big infrastructure corporation.
 
 Remember, "The Cloud" is just someone else's computer.
 

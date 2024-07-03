@@ -12,11 +12,17 @@ To launch a Dappnode AMI instance, follow these steps:
 
 - In case you end up on another website after signing up, navigate again to the [AWS Marketplace](https://aws.amazon.com/marketplace/).
 
-### 3. **Choose Dappnode AMI** 📀
+### 3. **Subscribe to Dappnode AMI** 📀
 
 - Search "Dappnode" in the top search bar and choose the "Dappnode Cloud - Telegram Credentials - By Dappnode" option.
 
 - On our Dappnode AMI page, you can check some information about our image. When you are ready, click "Continue to Subscribe".
+
+- Accept the terms and click "Continue to Configuration".
+
+- Check the region and click "Continue to Launch" to proceed with the instance launch.
+
+- In the "Choose Action" dropdown, select "Launch through EC2" and click "Launch".
 
 ### 4. **Set Up Telegram for Wireguard Credentials (Optional)** 💬
 
@@ -27,14 +33,6 @@ This step is only necessary if you are planning to get your Wireguard credential
 - You will also need to provide your Telegram user ID. You can get it by sending `/start` to a bot such as `@RawDataBot`.
 
 ### 5. **Launch Instance** 🚀
-
-After subscribing, you will need to follow these steps to launch your Dappnode instance:
-
-- Accept the terms and click "Continue to Configuration".
-- Check the region and click "Continue to Launch" to proceed with the instance launch.
-- In the "Choose Action" dropdown, select "Launch through EC2" and click "Launch".
-
-#### Instance Configuration
 
 Once in the EC2 "Launch an instance" UI you will have to choose the configuration of your instance. Next steps will explain you what configurations do you need to modify section by section.
 
@@ -105,45 +103,48 @@ Once in the EC2 "Launch an instance" UI you will have to choose the configuratio
 
 To obtain the Wireguard credentials for your instance, you have two different approaches:
 
-1.  **Via SSH**
+1.  **Via Telegram Bot**
 
-- After launching the instance, click the "Connect" button in the AWS console.
-- Go to the "SSH client" tab where it will provide you with a command like this:
-  `ssh -i "yourKeyPair-aws.pem" root@yourInstanceDNS`
-  Open your terminal and modify the command to use the `ubuntu` user and add `sudo` for permissions:
+    - Ensure you have completed the optional Telegram setup steps mentioned earlier in the guide.
 
-```sh
-sudo ssh -i "yourKeyPair-aws.pem" ubuntu@yourInstanceDNS
-```
+    - After launching the instance, go to your new bot's chat using the link provided by BotFather.
 
-:::info
-Ensure this command is run in the directory where your key pair file is located.
-:::
+    - Send any message to your bot. If the configuration is correct, you should receive a message saying `✅ Successfully saved channel ID`.
 
-- Once connected to your instance, run the following command:
+    - Send the command `/get_wireguard_credentials` in the bot chat. The bot should return your Wireguard credentials. Copy them, as the next step will explain how to use these credentials.
 
-```sh
-dappnode_wireguard
-```
+2.  **Via SSH**
 
-This command will output your Wireguard credentials. Copy them from your terminal using `Ctrl+Shift+C` / `⌘+Shift+C`. The next step will explain how to use these credentials.
+    This approach is for more expiremented users, since you will have to use the terminal.
 
-2.  **Via Telegram Bot**
+    - After launching the instance, click the "Connect" button in the AWS console.
 
-- Ensure you have completed the optional Telegram setup steps mentioned earlier in the guide.
+    - Go to the "SSH client" tab where it will provide you with a command like this:
+      `ssh -i "yourKeyPair-aws.pem" root@yourInstanceDNS`
+      Open your terminal and modify the command to use the `ubuntu` user and add `sudo` for permissions:
 
-- After launching the instance, go to your new bot's chat using the link provided by BotFather.
+    ```sh
+    sudo ssh -i "yourKeyPair-aws.pem" ubuntu@yourInstanceDNS
+    ```
 
-- Send any message to your bot. If the configuration is correct, you should receive a message saying `✅ Successfully saved channel ID`.
-
-- Send the command `/get_wireguard_credentials` in the bot chat. The bot should return your Wireguard credentials. Copy them, as the next step will explain how to use these credentials.
-
-  :::info
-  The installation of Dappnode on your instance may take a few minutes. If you try to obtain the credentials before the installation is complete, you may not receive them. If this happens, wait a few minutes and try again.
-
-  - **Via SSH**: If you encounter this issue, exit your SSH session with the `exit` command and reconnect as explained above.
-  - **Via Telegram Bot**: Simply retry the `/get_wireguard_credentials` command after a short wait.
+    :::tip
+    Ensure this command is run in the directory where your key pair file is located.
     :::
+
+    - Once connected to your instance, run the following command:
+
+    ```sh
+    dappnode_wireguard
+    ```
+
+    This command will output your Wireguard credentials. Copy them from your terminal using `Ctrl+Shift+C` / `⌘+Shift+C`. The next step will explain how to use these credentials.
+
+    :::info
+    The installation of Dappnode on your instance may take a few minutes. If you try to obtain the credentials before the installation is complete, you may not receive them. If this happens, wait a few minutes and try again.
+
+    - **Via SSH**: If you encounter this issue, exit your SSH session with the `exit` command and reconnect as explained above.
+    - **Via Telegram Bot**: Simply retry the `/get_wireguard_credentials` command after a short wait.
+      :::
 
 ### 7. **Connect via Wireguard** 🔌
 
