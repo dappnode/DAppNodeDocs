@@ -1,6 +1,6 @@
 # What is Dappnode Cloud?
 
-Dappnode Cloud is a service that empowers users to perform all the actions available to a traditional Dappnode user, but without the need for physical hardware. It consists of a Dappnode image deployed on a machine instance from a cloud provider, eliminating any hardware headaches.
+Dappnode Cloud is a service that allows users to deploy a Dappnode in a cloud provider so it can be tested without the need for physical hardware. We provide easy pre-configured instances for the main cloud providers (AWS for now, more to come later) to continue to make the deployment of web3 infrastructrure accessible and hassle-free for everyone. It consists of a Dappnode image deployed on a machine instance from a cloud provider, eliminating the need to invest in hardware in order to test Dappnode.
 :::tip
 This allows you to run your decentralized applications more efficiently and cost-effectively, as you can customize your hardware specifications to meet your needs.
 :::
@@ -11,19 +11,31 @@ Dappnode Cloud offers numerous advantages over traditional hardware-based setups
 
 ### No Initial Hardware Investment 💰
 
-With Dappnode Cloud, there is no need to invest in expensive physical servers or other hardware components. This significantly reduces the initial cost barrier, allowing you to allocate resources towards development and innovation rather than infrastructure.
+With Dappnode Cloud, there is no need to purchase an entire new machine every time you need a new Dappnode. This significantly reduces the initial cost barrier, allowing you to test Dappnode before you decide to install it in a physical machine or to quickly deploy a new Dappnode without having to purchase a new machine.
 
-### Maintenance-Free 🧑‍🔧️
+### Stop when you want 🧑‍🔧️
 
-Managing physical hardware can be time-consuming and requires a certain level of expertise. Dappnode Cloud eliminates the need for hardware maintenance, as cloud providers handle all aspects of hardware management. This ensures your Dappnode runs smoothly without any interruptions.
+For short stints, Dappnode Cloud allows you to deploy and also to stop running your Dappnode as soon as you have performed the tasks you wanted to do, with no electronic waste or an unallocated physical machine on your side.
 
 ### Scalability 📈
 
-One of the standout benefits of using cloud infrastructure is its scalability. With Dappnode Cloud, you can easily scale your resources up or down based on your current needs. Whether you're experiencing a lack of storage you can adjust your cloud resources accordingly without the constraints of physical hardware limitations.
+With Dappnode Cloud, you can easily scale your resources up or down based on your current needs. Whether you're experiencing a lack of storage or you need a few more nodes quickly, you can adjust your cloud resources accordingly without the constraints of physical hardware limitations.
 
-### Global Accessibility 🌐
+## Physical or Cloud?
 
-Dappnode Cloud provides the flexibility to access and manage your dappnode instance from anywhere in the world, as long as you have an internet connection. This global accessibility ensures that you are not bound to a single location and can manage your machine status remotely, starting or rebooting it whenever you desire.
+It is much better to run a physical Dappnode at your place for these 2 main reasons:
+
+### 1. Economics
+A physical machine has a higher initial cost, but leverages your existing internet connection and consumes less energy than your fridge. This initial cost is pretty much the only cost you will have for the lifetime of the hardware you use. 
+Cloud servers have monthly costs associated with it that never go away, resulting in higher cost in the long term.
+
+In summary, you will be better off with a physical machine if you plan to use your Dappnode for a long time, and better off with a Dappnode Cloud if you only want to use the instance for a short period of time.
+
+### 2. Decentralization
+The networks you will run on your Dapppnode become more resilient to corporate capture, government interference and localized events the more decentralized their nodes are. By running a Node in the cloud it is very likely that there is already a node of that network in the same data center, therefore adding no extra value to the decentralization of the network. 
+If instead you run the same node in a home setup from your home, you are adding a node that is much harder to censor, block, locate and subjugate than a node controlled by a big infrastructure corporation. 
+
+Remember, "The Cloud" is just someone else's computer.
 
 ## Use cases
 
