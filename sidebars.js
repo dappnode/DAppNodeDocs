@@ -153,6 +153,11 @@ const sidebars = {
               items: [
                 {
                   type: "doc",
+                  label: "Lido",
+                  id: "user/staking/ethereum/lsd-pools/lido",
+                },
+                {
+                  type: "doc",
                   label: "Rocketpool",
                   id: "user/staking/ethereum/lsd-pools/rocketpool",
                 },
@@ -235,17 +240,17 @@ const sidebars = {
       type: "category",
       label: "Packages",
       items: [
-       {
+        {
           type: "doc",
           label: "Understanding Dappnode Packages",
           id: "user/packages/understanding-dappnode-packages",
-       },
-       {
+        },
+        {
           type: "doc",
           label: "Packages' signature",
           id: "user/packages/signature",
-       }, 
-       {
+        },
+        {
           type: "doc",
           label: "DMS",
           id: "user/packages/dms",
