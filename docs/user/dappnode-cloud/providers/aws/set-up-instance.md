@@ -97,8 +97,6 @@ Once in the EC2 "Launch an instance" UI you will have to choose the configuratio
 
 8.  **Summary:** Finally, review your configuration on the 'Summary' section located on the right and click the "Launch instance" button. Once clicked, your instance will be launched.
 
-(RECORD VIDEO DEMO AND INCLUDE VIDEO CLIPS FOR EVERY STEP / ATTACH VIDEO DEMO OF THE FULL PROCESS)
-
 ### 6. **Get wireguard credentials** 🔐
 
 To obtain the Wireguard credentials for your instance, you have two different approaches:
