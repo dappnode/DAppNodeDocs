@@ -80,8 +80,9 @@ Becoming a Lido Node Operator is recommended for users with some experience in r
 ### **FAQs**
 
 <details>
-<summary>Where can I track the performance of validator as Node Operator?</summary>
-Dappnode will provide you a UI in form of a dappnode pacakge where you will be able to track the performance of your validator as Node Operator taking advantage of the data provided by the operator itself and the dappnode host machine.
+   <summary><b>Where can I track the performance of validator as Node Operator?</b></summary>
+   
+   Dappnode will provide you a UI in form of a dappnode pacakge where you will be able to track the performance of your validator as Node Operator taking advantage of the data provided by the operator itself and the dappnode host machine.
 </details>
 
 ---
