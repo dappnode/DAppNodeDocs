@@ -153,6 +153,11 @@ const sidebars = {
               items: [
                 {
                   type: "doc",
+                  label: "Lido",
+                  id: "user/staking/ethereum/lsd-pools/lido",
+                },
+                {
+                  type: "doc",
                   label: "Rocketpool",
                   id: "user/staking/ethereum/lsd-pools/rocketpool",
                 },
