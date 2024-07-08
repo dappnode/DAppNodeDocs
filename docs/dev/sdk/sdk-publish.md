@@ -1,7 +1,6 @@
 # SDK-Publish
 
 The SDK-Publish tool is a component of the Dappnode Software Development Kit (dappnodesdk). This tool simplifies the process of signing and publishing Dappnode package releases, utilizing your wallet for secure and efficient transaction management.
-Comment
 
 With SDK-Publish, developers can ensure their Dappnode packages are authenticated and ready for deployment, enhancing the security and integrity of their releases. Whether you are a seasoned developer or new to Dappnode, SDK-Publish provides an intuitive interface to facilitate the package release process, making it an essential tool for anyone involved in Dappnode Packages development.
 
