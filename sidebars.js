@@ -241,9 +241,45 @@ const sidebars = {
       label: "Packages",
       items: [
         {
-          type: "doc",
+          type: "category",
           label: "Understanding Dappnode Packages",
-          id: "user/packages/understanding-dappnode-packages",
+          items: [
+            {
+              type: "doc",
+              label: "Overview",
+              id: "user/packages/overview",
+            },
+            {
+              type: "doc",
+              label: "Overview",
+              id: "user/packages/info",
+            },
+            {
+              type: "doc",
+              label: "Overview",
+              id: "user/packages/config",
+            },
+            {
+              type: "doc",
+              label: "Overview",
+              id: "user/packages/network",
+            },
+            {
+              type: "doc",
+              label: "Overview",
+              id: "user/packages/logs",
+            },
+            {
+              type: "doc",
+              label: "Overview",
+              id: "user/packages/backup",
+            },
+            {
+              type: "doc",
+              label: "Overview",
+              id: "user/packages/file-manager",
+            },
+          ],
         },
         {
           type: "doc",
