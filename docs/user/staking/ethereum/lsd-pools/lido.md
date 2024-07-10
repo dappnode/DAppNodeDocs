@@ -35,7 +35,7 @@ Becoming a Lido Node Operator is recommended for users with some experience in r
 
 1. **Create the Keystores & Deposit Data**: In order to run a validator, you need to generate the necessary keystores and deposit data. The keystores must be created with the withdrawal credential of Lido:
 
-   - Holesky: `0x285fa3Cac35761d183FFff76cBd9776327FC3D49`.
+   - Holesky: `0xE73a3602b99f1f913e72F8bdcBC235e206794Ac8`.
    - Ethereum: _comming soon_.
    - We recommend using official tools like the [Wagyu Key Gen Tool](https://wagyu.gg/) to create the keystores. This step is crucial and mandatory.
 
