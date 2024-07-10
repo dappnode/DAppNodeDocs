@@ -251,32 +251,32 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "Overview",
+              label: "Info",
               id: "user/packages/understanding-dappnode-packages/info",
             },
             {
               type: "doc",
-              label: "Overview",
+              label: "Config",
               id: "user/packages/understanding-dappnode-packages/config",
             },
             {
               type: "doc",
-              label: "Overview",
+              label: "Network",
               id: "user/packages/understanding-dappnode-packages/network",
             },
             {
               type: "doc",
-              label: "Overview",
+              label: "Logs",
               id: "user/packages/understanding-dappnode-packages/logs",
             },
             {
               type: "doc",
-              label: "Overview",
+              label: "Backup",
               id: "user/packages/understanding-dappnode-packages/backup",
             },
             {
               type: "doc",
-              label: "Overview",
+              label: "File manager",
               id: "user/packages/understanding-dappnode-packages/file-manager",
             },
           ],
