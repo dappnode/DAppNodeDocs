@@ -68,7 +68,7 @@ Becoming a Lido Node Operator is recommended for users with some experience in r
 
 4. **Register as a Lido Node Operator & your validators**:
 
-   - Navigate to the [Lido Deposit UI](https://csm-devnet.vercel.app/) and complete the deposit process.
+   - Navigate to the [Lido Deposit UI](https://csm.testnet.fi/) and complete the deposit process.
    - Your node operator setup is now complete!
 
    <!-- (or do it locally directly from your dappnode installing [this package](http://my.dappnode/installer/dnp/)!) -->
