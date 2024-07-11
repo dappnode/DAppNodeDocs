@@ -1,5 +1,5 @@
 # Config
 
-The package's settings will be available under this tab in both a simple and advanced mode. The advanced mode can be accessed by clicking the lower-right corner of the screen when available.
+The Config section provides access to the package's settings, available in both simple and advanced modes. You can switch to the advanced mode by clicking the option in the lower-right corner of the screen when it is available. This flexibility allows users to customize package parameters according to their needs, from basic adjustments to more detailed configurations.
 
 ![dappnode_packages2](/img/dappnode_packages2.png)
