@@ -43,7 +43,7 @@ Becoming a Lido Node Operator is recommended for users with some experience in r
 
 2. **Set up the Infrastructure**:
 
-   - Navigate to [Dappnode Staking for Ethereum](http://my.dappnode/staking/ethereum) or [Dappnode Staking for Holesky](http://my.dappnode/staking/holesky).
+   - Navigate to [Dappnode Staking for Ethereum](http://my.dappnode/stakers/ethereum) or [Dappnode Staking for Holesky](http://my.dappnode/stakers/holesky).
    - Select your desired execution and consensus clients.
    - Choose Web3signer to upload the keystores.
    - Configure MEV Boost with as many relays as possible.
