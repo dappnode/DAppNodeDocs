@@ -12,3 +12,8 @@ You have **two options** to subscribe to [Smooth](https://smooth.dappnode.io/):
 1. [**Automatic subscription**](/docs/smooth/subscribe-to-smooth/automatic.md): The simplest way to subscribe, change the fee recipient of your validators to Smooth's address and subscribe automatically when proposing your next block!
 
 2. [**Manual subscription**](/docs/smooth/subscribe-to-smooth/manual.md): Change the fee recipient of your validators to Smooth's address and use the Smooth's website to subscribe right now, without waiting for your validators to propose a block. Start earning rewards right away!
+
+:::info
+- Smooth **Mainnet** Address: `0xAdFb8D27671F14f297eE94135e266aAFf8752e35`
+- Smooth **Testnet** (Holesky) Address: `0xE91c7Bbc671E6b2b316f15Db259819C27Bd1f15C`
+:::
