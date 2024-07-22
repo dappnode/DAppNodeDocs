@@ -24,6 +24,10 @@ To launch a Dappnode AMI instance, follow these steps:
 
 - In the "Choose Action" dropdown, select "Launch through EC2" and click "Launch".
 
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s-ZPmD5471Y" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+</center>
+
 ### 4. **Set Up Telegram for Wireguard Credentials (Optional)** 💬
 
 This step is only necessary if you are planning to get your Wireguard credentials via Telegram.
@@ -31,6 +35,10 @@ This step is only necessary if you are planning to get your Wireguard credential
 - Create a new bot using the `/newbot` command via BotFather's chat. It will ask you for a name and username, then generate an authentication token for your new bot. Save this token, as you will need to provide it when launching the AWS instance.
 
 - You will also need to provide your Telegram user ID. You can get it by sending `/start` to a bot such as `@RawDataBot`.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K2DGBWxCTZk" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+</center>
 
 ### 5. **Launch Instance** 🚀
 
@@ -97,6 +105,10 @@ Once in the EC2 "Launch an instance" UI you will have to choose the configuratio
 
 8.  **Summary:** Finally, review your configuration on the 'Summary' section located on the right and click the "Launch instance" button. Once clicked, your instance will be launched.
 
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K8IA5s9bl3g" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+</center>
+
 ### 6. **Get wireguard credentials** 🔐
 
 To obtain the Wireguard credentials for your instance, you have two different approaches:
@@ -110,6 +122,10 @@ To obtain the Wireguard credentials for your instance, you have two different ap
     - Send any message to your bot. If the configuration is correct, you should receive a message saying `✅ Successfully saved channel ID`.
 
     - Send the command `/get_wireguard_credentials` in the bot chat. The bot should return your Wireguard credentials. Copy them, as the next step will explain how to use these credentials.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WlJyHS3KUYU" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+</center>
 
 2.  **Via SSH**
 
@@ -137,12 +153,17 @@ To obtain the Wireguard credentials for your instance, you have two different ap
 
     This command will output your Wireguard credentials. Copy them from your terminal using `Ctrl+Shift+C` / `⌘+Shift+C`. The next step will explain how to use these credentials.
 
-    :::info
-    The installation of Dappnode on your instance may take a few minutes. If you try to obtain the credentials before the installation is complete, you may not receive them. If this happens, wait a few minutes and try again.
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k-y8E4G15WI" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+</center>
+<br/>
 
-    - **Via SSH**: If you encounter this issue, exit your SSH session with the `exit` command and reconnect as explained above.
-    - **Via Telegram Bot**: Simply retry the `/get_wireguard_credentials` command after a short wait.
-      :::
+:::info
+The installation of Dappnode on your instance may take a few minutes. If you try to obtain the credentials before the installation is complete, you may not receive them. If this happens, wait a few minutes and try again.
+
+- **Via SSH**: If you encounter this issue, exit your SSH session with the `exit` command and reconnect as explained above.
+- **Via Telegram Bot**: Simply retry the `/get_wireguard_credentials` command after a short wait.
+:::
 
 ### 7. **Connect via Wireguard** 🔌
 
