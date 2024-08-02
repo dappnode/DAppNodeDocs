@@ -10,6 +10,13 @@ Welcome to the Smooth Documentation! Here, you'll find detailed insights and ess
 :::info
 Interested in Smooth? Check out **[Deep Dive into Smooth](/docs/smooth/deep-dive-into-smooth/overview.md)** to get a general idea of how Smooth works, or check the **[subscription guides](/docs/smooth/subscribe-to-smooth/overview.md)** to learn how to join!
 :::
+---
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WoTfl8h_lKM" frameborder="0" allow="accelerometer; autoplay; fullscreen"></iframe>
+</center>
+
+
 ## What is Smooth and why should you join it?
 
 Smooth is a MEV Smoothing Pool designed to elevate the Ethereum solo staking experience. By pooling MEV rewards, **Smooth offers Solo Stakers the unique opportunity to earn higher rewards consistently**, reducing reliance on luck and maximizing the potential of every staked ether. Join Smooth and take your solo staking experience to the next level!
