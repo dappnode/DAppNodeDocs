@@ -19,12 +19,11 @@ You must connect the wallet you specified while purchasing the Dappnode to the G
 
 ## 3. Generate your validator keys
 
-:::caution:::
+:::caution
 It is mandatory to use the safe address you should have received in your email as the **withdrawal address**. If you don't have it, please contact the Dappnode team.
-
 :::
 
-:::caution:::
+:::caution
 It is mandatory that you specify 3 as the number of validators when generating the keys. If you have participated in the Dappcon program, you should select 4 instead.
 :::
 
