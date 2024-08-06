@@ -205,6 +205,11 @@ const sidebars = {
               label: "Gnosis Solo Staking",
               id: "user/staking/gnosis-chain/solo",
             },
+            {
+              type: "doc",
+              label: "Gnosis Incentive Program",
+              id: "user/staking/gnosis-chain/incentive-program",
+            },
           ],
         },
         {
