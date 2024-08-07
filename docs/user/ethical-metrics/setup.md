@@ -32,8 +32,8 @@ In order to setup your Ethical Metrics notification system, you need to follow t
 
 1. Navigate to http://my.dappnode/system/notifications
 2. Introduce the email address where you want to receive the notifications and click on the switch to activate the notifications.
-3. Thats it! Your Ethical Metrics will automatically register your TOR instance with the email address you provided. This will happen through the TOR network, preserving your privacy. You should receive a welcome email in the following minutes.
+3. That's it! Your Ethical Metrics will automatically register your TOR instance with the email address you provided. This will happen through the TOR network, preserving your privacy. You should receive a welcome email in the following minutes.
 
 :::caution
-To send email notifications, it is necessary that you provide an email address. In order to remain private, we recommend you to use an address that can't be linked to your identity. For example, John Doe probably wouldn't want to use "johndoe@gmail.com" if he wanted to remain anoymous.
+To send email notifications, it is necessary that you provide an email address. In order to remain private, we recommend you to use an address that can't be linked to your identity. For example, John Doe probably wouldn't want to use "johndoe@gmail.com" if he wanted to remain anonymous.
 :::

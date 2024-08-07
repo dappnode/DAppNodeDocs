@@ -27,7 +27,7 @@ Rocketpool is a decentralized Ethereum staking solution that allows users to ear
 
 2. **Setting up the Environment:**
    - Ensure you're running a full, synced Ethereum node (Execution client + Consensus client).
-   - If you are not running a full Ethereum node yet, go to the [Stakers Menu](http://my.dappnode/stakers/ethereum), select your clients and apply the configuration to start syncronization.
+   - If you are not running a full Ethereum node yet, go to the [Stakers Menu](http://my.dappnode/stakers/ethereum), select your clients and apply the configuration to start synchronization.
 
 3. **Starting a Minipool:**
    - Navigate to the Rocketpool package dashboard.

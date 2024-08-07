@@ -25,7 +25,7 @@ Stakehouse’s mission is to bring the benefits of ETH staking to the mainstream
 
 2. **Import your keystore file into Web3Signer:**
    - When you import your keystore, make sure you select Stakehouse under "Staking protocol". This will automatically set your Fee Recipient address and point it to your LSD.
-   - Pay special attention to this, since failing to properly configure the Fee Recipient may incurr in penalties for the Node Runner.
+   - Pay special attention to this, since failing to properly configure the Fee Recipient may incur in penalties for the Node Runner.
 
 ---
 

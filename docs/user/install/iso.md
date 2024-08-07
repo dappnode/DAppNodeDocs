@@ -18,7 +18,7 @@ Consider your specific requirements and the level of customization you need when
 
 ## Burn the ISO in a USB
 
-Burn the ISO to an USB stick. To do so we recommend using [Balena Etcher](https://www.balena.io/etcher/) for the OS with which you will prepare the USB to boot from your server and install Dappnode.
+Burn the ISO to a USB stick. To do so we recommend using [Balena Etcher](https://www.balena.io/etcher/) for the OS with which you will prepare the USB to boot from your server and install Dappnode.
 
 :::danger
 If you trigger the installation in a machine containing data, all existing data will be erased.

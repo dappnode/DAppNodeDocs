@@ -46,7 +46,7 @@ Once in the EC2 "Launch an instance" UI you will have to choose the configuratio
 
 1.  **Name:** Give a name to your instance. This name is for you to identify it in the EC2 UI.
 
-2.  **Application and OS Images (Amazon Machine Image)**: No changes needed, it comes pre-configurted according to the Dappnode Image.
+2.  **Application and OS Images (Amazon Machine Image)**: No changes needed, it comes pre-configured according to the Dappnode Image.
 
 3.  **Instance type:** Choose an instance type. All selectable options are suitable for running Dappnode. For more context based on your requirements, check the [FAQs section](/docs/user/dappnode-cloud/providers/aws/faqs).
 
@@ -129,7 +129,7 @@ To obtain the Wireguard credentials for your instance, you have two different ap
 
 2.  **Via SSH**
 
-    This approach is for more expiremented users, since you will have to use the terminal.
+    This approach is for more experienced users, since you will have to use the terminal.
 
     - After launching the instance, click the "Connect" button in the AWS console.
 

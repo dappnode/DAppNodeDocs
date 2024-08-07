@@ -1,6 +1,6 @@
 # Smooth's architecture
 
-[Smooth](https://smooth.dappnode.io/) is composed of two main components: the **Oracle** and the **Smart Contract**. These two components work together to track validators and distribute rewards fairly. Both are open source and indispensable to the functioning of [Smooth](https://smooth.dappnode.io/). While the Smart Contract serves to track all the events related to the pool onchain (subscriptions, unsubscriptions, block proposals, etc.), the Oracle is responsible of computing the rewards of each validator.
+[Smooth](https://smooth.dappnode.io/) is composed of two main components: the **Oracle** and the **Smart Contract**. These two components work together to track validators and distribute rewards fairly. Both are open source and indispensable to the functioning of [Smooth](https://smooth.dappnode.io/). While the Smart Contract serves to track all the events related to the pool onchain (subscriptions, unsubscriptions, block proposals, etc.), the Oracle is responsible for computing the rewards of each validator.
 
 ## The Smart Contract
 
@@ -20,5 +20,5 @@ Oracle works only with finalized data. This means that Oracle will effectively w
 Once every 28800 slots (4 days), the Oracle sends a transaction to the Smart Contract with the updated Merkle Root. 
 
 :::info
-It is not untill the Oracle sends the transaction to the Smart Contract with the updated Merkle Root that the rewards are available to be claimed by the validators. This means that if a validator correctly proposes a block, it will not be able to claim its rewards until the Oracle sends the transaction to the Smart Contract with the updated Merkle Root.
+It is not until the Oracle sends the transaction to the Smart Contract with the updated Merkle Root that the rewards are available to be claimed by the validators. This means that if a validator correctly proposes a block, it will not be able to claim its rewards until the Oracle sends the transaction to the Smart Contract with the updated Merkle Root.
 :::

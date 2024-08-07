@@ -23,6 +23,6 @@ It is not possible to use both Dappnode WiFi hotspot and VPN at the same time. I
 - **Remote Access**: Connecting to your Dappnode from a different network or location. This is one of the major advantages of using a VPN.
 
 :::info
-VPN provides a balance of security, versatility, and remote access capability. You can choose the VPN technology that best suits your needs and preferences, both fufill the requirements of most users.
+VPN provides a balance of security, versatility, and remote access capability. You can choose the VPN technology that best suits your needs and preferences, both fulfill the requirements of most users.
 :::
 

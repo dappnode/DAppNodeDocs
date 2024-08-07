@@ -12,7 +12,7 @@ Diva is an Ethereum Liquid Staking protocol powered by Distributed Validator Tec
 This package allows you to run a Diva Operator node, and it is available for the [Holesky Testnet](http://my.dappnode/installer/public/diva-holesky.public.dappnode.eth). The Ethereum mainnet version of this package is still undergoing testing and will be available in the DAppStore soon.
 
 ### **Requirements**
-1. The first thing you'll need to do is set up a fully-synced node. This can be don through the Stakers Menu in Dappnode by selecting:
+1. The first thing you'll need to do is set up a fully-synced node. This can be done through the Stakers Menu in Dappnode by selecting:
 - 1 Execution Client (Geth, Besu, Erigon or Nethermind)
 - 1 Consensus Client (Prysm, Lighhouse, Lodestar, Teku or Nimbus)
 - MEV Boost (optional)

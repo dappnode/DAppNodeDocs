@@ -29,7 +29,7 @@ Once all participants have synced nodes, you'll need to install the Obol Dappnod
 ![ObolLaunchpad1](/img/obol-launchpad1.png)
 
 ### **Cluster Configuration**
-For creating a new cluster with a group, all operators must have an operator's address, which will submit the necessary information to the launchpad. The first step in the configuration process will be to select the cluster size and to enter the operator's adresses.
+For creating a new cluster with a group, all operators must have an operator's address, which will submit the necessary information to the launchpad. The first step in the configuration process will be to select the cluster size and to enter the operator's addresses.
 
 ![ObolLaunchpad2](/img/obol-launchpad2.png)
 

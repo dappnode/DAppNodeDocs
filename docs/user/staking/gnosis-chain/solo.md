@@ -106,7 +106,7 @@ After the deposit is gone, you will be able to check the progress of your deposi
 Once you want to finish your staking journey, you will need to withdraw your GNO from the Gnosis Chain. This is a 2 step process of exiting the validator from the Dappnode UI and claiming the GNO from the deposit contract.
 
 :::info Gnosis Chain withdrawals ≠ Ethereum withdrawals
-Because the native token of Gnosis Chain is xDAI (you pay fees in it), but the staking token is GNO, withdrawals work differntly than in the Ethereum chain and do not happen automatically. You must claim your withdrawn tokens from the Deposit Contract. More info [here](https://docs.gnosischain.com/node/management/withdrawals).
+Because the native token of Gnosis Chain is xDAI (you pay fees in it), but the staking token is GNO, withdrawals work differently than in the Ethereum chain and do not happen automatically. You must claim your withdrawn tokens from the Deposit Contract. More info [here](https://docs.gnosischain.com/node/management/withdrawals).
 :::
 
 ### 1. Exit the validator from the Dappnode UI
