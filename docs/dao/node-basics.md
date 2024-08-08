@@ -27,7 +27,7 @@ Check your NODEdrop [here](http://app.dappnode.io/nodedrop).
 
 ### NODEstream
 
-90% of the entire initial supply of NODE has been allocated to the "NODEstream" which is set to flow for a period of 3 years (36 months - i.e. until July 2024). This is essentially a continous stream of NODE that flows out of the "Reservoir" and into the "Claimable" section of the dashboard. NODEstream distribution can be roughly tracked as follows:
+90% of the entire initial supply of NODE has been allocated to the "NODEstream" which is set to flow for a period of 3 years (36 months - i.e. until July 2024). This is essentially a continuous stream of NODE that flows out of the "Reservoir" and into the "Claimable" section of the dashboard. NODEstream distribution can be roughly tracked as follows:
 
 Table for Eth
 
@@ -57,7 +57,7 @@ This chart show how the function works in Etherum network.
     <img width="70%"src="/img/nodestream_vesting.png"/>
 </p>
 
-This chart show how the function works in dao network. In Ethereum 10% was available at the beginning. In xdai is different, initally it was not available any % token.
+This chart show how the function works in dao network. In Ethereum 10% was available at the beginning. In xdai is different, initially it was not available any % token.
 
 <p align="center">
     <img width="70%"src="../../img/nodestream_vesting_xdai.png"/>

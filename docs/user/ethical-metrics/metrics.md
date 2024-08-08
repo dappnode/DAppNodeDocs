@@ -38,11 +38,11 @@ These are all the metrics related directly to the host machine running your Dapp
 The following are all the metrics related to your Dappnode's configuration. These are all stored in your Dappmanager.
 
 - `dappmmanager_staker_config`: Your current staking package.
-- `dappmanager_ipfs_client_target_local`: Wether IPFS client is in local or remote mode.
-- `dappmanager_eth_fallback_enabled`: Wether the ethereum fallback client is enabled.
-- `dappmanager_eth_client_target_local`: Wether ethereum client is in local or remote mode.
-- `dappmanager_auto_updates_user_packages`: Wether auto updates for user packages is enabled.
-- `dappmanager_auto_updates_system_packages`: Wether auto updates for system packages is enabled.
+- `dappmanager_ipfs_client_target_local`: Whether IPFS client is in local or remote mode.
+- `dappmanager_eth_fallback_enabled`: Whether the ethereum fallback client is enabled.
+- `dappmanager_eth_client_target_local`: Whether ethereum client is in local or remote mode.
+- `dappmanager_auto_updates_user_packages`: Whether auto updates for user packages is enabled.
+- `dappmanager_auto_updates_system_packages`: Whether auto updates for system packages is enabled.
 - `dappmanager_host_info`: Details including Docker and Docker Compose versions, kernel version, operating system version, and architecture type.
 
 ## Staking Metrics
@@ -57,8 +57,8 @@ The following metrics are all related directly to the staking packages, includin
 - `signing_bls_missing_identifier_count`: Count of missing BLS identifier.
 - `api_rpc_cons_peers`: Number of connected peers to your staking execution clients.
 - `api_rpc_exec_peers`: Number of connected peers to your staking consensus clients.
-- `api_rpc_cons_syncing`: Wether your staking execution clients are syncing.
-- `api_rpc_exec_syncing`: Wether your staking consensus clients are syncing.
+- `api_rpc_cons_syncing`: Whether your staking execution clients are syncing.
+- `api_rpc_exec_syncing`: Whether your staking consensus clients are syncing.
 
 To sum it up, the metrics we collect give us a peek into how your Dappnode is doing overall, how it allocates resources, memory, disk, and even info related to staking performance.
 

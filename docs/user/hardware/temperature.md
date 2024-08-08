@@ -14,5 +14,5 @@ If you want to configure notifications 🔔 for temperature changes, you can fin
 Some additional tips that will contribute to an optimal temperature are:
 
 - BIOS Adjustments: if you shut your Dappnode down you can access your NUC's BIOS setup with the `F2` key while booting. The UI includes different options that you can check in [Intel's documentation](https://www.intel.com/content/www/us/en/support/articles/000096279/intel-nuc.html) and tweak according to your preferences.
-- If you're using an 11th Generation NUC, check its ambient temperature recomendations [here](https://www.intel.com/content/dam/support/us/en/documents/intel-nuc/NUC11AT_TechProdSpec.pdf).
-- If you're using a 12th Generation NUC, check its ambient temperature recomendations [here](https://www.intel.com/content/dam/support/us/en/documents/intel-nuc/NUC12WSK_L10_UserGuide.pdf).
+- If you're using an 11th Generation NUC, check its ambient temperature recommendations [here](https://www.intel.com/content/dam/support/us/en/documents/intel-nuc/NUC11AT_TechProdSpec.pdf).
+- If you're using a 12th Generation NUC, check its ambient temperature recommendations [here](https://www.intel.com/content/dam/support/us/en/documents/intel-nuc/NUC12WSK_L10_UserGuide.pdf).

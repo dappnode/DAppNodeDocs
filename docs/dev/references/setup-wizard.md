@@ -4,7 +4,7 @@ The setup wizard for Dappnode packages helps automate the package customization 
 
 ## How to use
 
-To add this functionality, create a file `setup-wizard.yml` in the root of your Dappnode package directory. Both JSON and YAML formats are supported, but YAML makes writing markdown text blocks much easier (its used in the [`description`](#description) property).
+To add this functionality, create a file `setup-wizard.yml` in the root of your Dappnode package directory. Both JSON and YAML formats are supported, but YAML makes writing markdown text blocks much easier (it's used in the [`description`](#description) property).
 
 ```diff
   DappnodePackage-my-package.public.dappnode.eth/

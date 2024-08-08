@@ -27,7 +27,7 @@ You can use a remote IPFS node gateway to connect to the IPFS network. You will 
 
 :::note IPFS gateways and security
 
-Connecting to IPFS remote gateways could entail security risks. For example, the gateway could attempt to serve malicious content to the user. We mitigate this risk by verifying the content downladed with [CID technology](https://docs.ipfs.io/concepts/content-addressing/).
+Connecting to IPFS remote gateways could entail security risks. For example, the gateway could attempt to serve malicious content to the user. We mitigate this risk by verifying the content downloaded with [CID technology](https://docs.ipfs.io/concepts/content-addressing/).
 
 If the Dappnode IPFS gateway is not available (we make no uptime guarantees and we offer it on a best-effort basis) the user can set another IPFS gateway in the input field as last resort. Check out all the [IPFS gateways available](https://ipfs.github.io/public-gateway-checker/)
 :::

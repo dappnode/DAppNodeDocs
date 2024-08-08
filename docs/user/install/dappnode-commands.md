@@ -35,7 +35,7 @@ dappnode_help
 <details>
   <summary><b>I get the error "command not found"</b></summary>
   
-If you get the error `command not found` when trying to execute a dappnode command, it means that the command is not available in your system. You need to load the dappndoe profile as follows:
+If you get the error `command not found` when trying to execute a dappnode command, it means that the command is not available in your system. You need to load the dappnode profile as follows:
 
 ```bash
 source /usr/src/dappnode/DNCORE/.dappnode_profile

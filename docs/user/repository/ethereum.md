@@ -22,7 +22,7 @@ Moreover, it is **highly recommended to enable** these additional options:
 
 3. **Use remote during syncing or errors**: If enabled, this will auto-switch from your Local node to the Dappnode Remote node under certain conditions. For instance, if your Ethereum node is syncing or if it's unavailable for some reason. Activating this option ensures uninterrupted access to the Dappnode smart contracts even if there's an issue with your Local node.
 
-4. **Use checkpointsync**: By enabling this, your consensus client will utilize a checkpoint to fast-track the syncing of the Ethereum blockchain, making the process much quicker quicker.
+4. **Use checkpointsync**: By enabling this, your consensus client will utilize a checkpoint to fast-track the syncing of the Ethereum blockchain, making the process much quicker.
 
 :::caution
 Making changes here will also modify selections in the [Stakers](http://my.dappnode/stakers) tab.
