@@ -12,9 +12,11 @@ Staking on the Gnosis Chain is both easy and economical. All it takes is **1 GNO
 
 ## 1. Install the necessary packages on Dappnode
 
-Similar to Ethereum mainnet, Dappnode makes it very easy to set up you Gnosis Chain validator. Here's what the Stakers UI looks like for Gnosis Chain:
+Similar to Ethereum mainnet, Dappnode makes it very easy to set up you Gnosis Chain validator. You need to be running a Gnosis Chain node in order to validate. A node consists of an Execution Layer Client (EL) and a Consensus Layer Client (CL) + Validator. 
 
-![Stakers](/img/gnosischain-staking-screenshot.png)
+Here's what the Stakers UI looks like for Gnosis Chain:
+
+![Stakers](/img/gnosischain-staking.png)
 
 - **Execution Client** (Choose one):
   - Nethermind Xdai (Available now)
@@ -24,6 +26,8 @@ Similar to Ethereum mainnet, Dappnode makes it very easy to set up you Gnosis Ch
   - Teku Gnosis
   - Lodestar Gnosis
 - **Web3Signer Gnosis**
+
+After you’ve chosen from the 3 columns (EL, CL and Remote Signer), click on accept changes.
 
 :::tip Checkpoint Sync is your friend for syncing Consensus Clients
 Execution clients take a long time to sync. Hence, once you start staking with one you will most likely stick with it. However, you can switch consensus clients at any time thanks to the magic of "checkpoint sync". Make sure to toggle the "use checksync" option when installing your consensus client, and you can change at any point from one to another with barely any downtime.
@@ -58,6 +62,10 @@ To ensure that you have copied it somewhere, it will ask you to type it again.
 ![Gnosis Wagyu - 2nd screen](/img/gnosis-wagyu2.png)
 
 Choose 1) How many keys you want to create, 2) the password to protect the keys and 3) the Withdrawal Address where your Consensus Layer profits will be sent.
+
+:::warning GNO Incentive program:
+If you are running this program to generate keys within the context of the DGNO Incentive program, make sure to generate the right amount of validators **3** (**4** if you have participated in Dappcon program) and to fill in the ETH1 Withdrawal Address Field with the withdrawal address that has been provided. Also make sure to choose a directory that reflects the folder where you want the files to be saved.
+:::
 
 ![Gnosis Wagyu - 3rd screen](/img/wagyu4.png)
 
