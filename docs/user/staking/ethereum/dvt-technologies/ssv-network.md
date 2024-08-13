@@ -10,7 +10,7 @@ A Distributed Validator is one or more logical 32 ETH validators being operated 
 The SSV network allows both users and operators to diversify staking risks, optimize performance, and promote decentralization across the Ethereum consensus layer with a wide range of configuration options.
 
 ### **Requirements**
-1. The first thing you'll need to do is set up a fully-synced node. This can be don through the Stakers Menu in Dappnode by selecting:
+1. The first thing you'll need to do is set up a fully-synced node. This can be done through the Stakers Menu in Dappnode by selecting:
 - 1 Execution Client (Geth, Besu, Erigon or Nethermind)
 - 1 Consensus Client (Prysm, Lighhouse, Lodestar, Teku or Nimbus)
 - MEV Boost (optional)
@@ -53,7 +53,7 @@ Enter a number and click _Next_ when ready.
 6. This confirmation screen presents a recap of the information input so far. Double check everything and click _Register Operator_ when ready. This will generate a blockchain transaction you'll need to confirm to complete the Operator registration.
 ![SSV-Launchpad5](/img/registering_operator_5.png)
 
-7. Once the transacion goes through your Operator is successfully registered, and stakers could now choose it to operate their validators.
+7. Once the transaction goes through your Operator is successfully registered, and stakers could now choose it to operate their validators.
 ![SSV-Launchpad7](/img/registering_operator_7.png)
 
 :::warning
@@ -66,7 +66,7 @@ If you want to run the `dkg` service, make sure the operator is registered in th
 Add your node as a DKG endpoint in the [SSV App Operator Config](https://app.ssv.network/). You must set: `http://<your-public-ip>:14515`. Make sure your `14515` port is open in your router setup.
 
 :::info
-You can get your public IP bu clicking on the avatar in the upper-right corner of the Dappnode UI.
+You can get your public IP by clicking on the avatar in the upper-right corner of the Dappnode UI.
 :::
 
 :::tip It's important that you understand that the requirements of the DV node runner are not the same as a Solo Stakers'. This technology facilitates the creation of Distributed Validators between a group of independent people. This means you are placing significant trust in the participants you'll run this Distributed Validator with.

@@ -36,7 +36,7 @@ Becoming a Lido Node Operator is recommended for users with some experience in r
 1. **Create the Keystores & Deposit Data**: In order to run a validator, you need to generate the necessary keystores and deposit data. The keystores must be created with the withdrawal credential of Lido:
 
    - Holesky: `0xF0179dEC45a37423EAD4FaD5fCb136197872EAd9`.
-   - Ethereum: _comming soon_.
+   - Ethereum: _coming soon_.
    - We recommend using official tools like the [Wagyu Key Gen Tool](https://wagyu.gg/) to create the keystores. This step is crucial and mandatory.
 
    The validator Keystores will be used to run the validators on the Ethereum network, while the deposit data will be used to register the validators in the Lido protocol.
@@ -82,7 +82,7 @@ Becoming a Lido Node Operator is recommended for users with some experience in r
 <details>
    <summary><b>Where can I track the performance of validator as Node Operator?</b></summary>
    
-   Dappnode will provide you a UI in form of a dappnode pacakge where you will be able to track the performance of your validator as Node Operator taking advantage of the data provided by the operator itself and the dappnode host machine.
+   Dappnode will provide you a UI in form of a dappnode package where you will be able to track the performance of your validator as Node Operator taking advantage of the data provided by the operator itself and the dappnode host machine.
 </details>
 
 ---

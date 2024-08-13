@@ -6,7 +6,7 @@ As a Dappnode user, there are times when having insights into the performance of
 
 DMS acts as a strong monitoring solution, simplifying the complex task of monitoring your packages and system by automatically collecting all available data and visualizing it for you. But how does it achieve this? DMS primarily comprises two key components: Prometheus and Grafana. Let's break it down
 
-1. **Prometheus Integration:** DMS seamlessly incorporates [Prometheus](https://prometheus.io/), a comprehensive monitoring toolkit. Prometheus is responsible of  gathering all data coming from other Dappnode packages. This information is the foundation for understanding your package's performance.
+1. **Prometheus Integration:** DMS seamlessly incorporates [Prometheus](https://prometheus.io/), a comprehensive monitoring toolkit. Prometheus is responsible for gathering all data coming from other Dappnode packages. This information is the foundation for understanding your package's performance.
 
 2. **Grafana Dashboards:** To transform raw data coming from Prometheus into meaningful insights, DMS brings in [Grafana](https://grafana.com/), renowned for its exceptional data visualization capabilities. Through customizable dashboards, you gain instant access to both real-time and historical perspectives on how your packages are functioning. 
 
