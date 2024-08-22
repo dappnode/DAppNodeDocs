@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This guide was adapted from the original [HOPR Migration Guide](https://github.com/hoprnet/hopr-docs/blob/d8d1ec05e5938eb29254188b711eec47a71a92ab/versioned_docs/version-v2.1.3/node/using-avado.md) & will walk you through the process of migrating your Avado node to a Dappnode.
+This guide was adapted from the original [HOPR Migration Guide](https://github.com/hoprnet/hopr-docs/blob/d8d1ec05e5938eb29254188b711eec47a71a92ab/versioned_docs/version-v2.1.3/node/using-avado.md) & will walk you through the process of migrating your Avado hardware to DappnodeOS, due to the discontinuation of support for HOPR from AVADO.
 
 By following these steps, you'll be able to transition your existing Avado hardware to run DappnodeOS, allowing you to take advantage of Dappnode's features and ecosystem.
 
