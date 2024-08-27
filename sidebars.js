@@ -473,6 +473,11 @@ const sidebars = {
               label: "How to connect a wallet to my node",
               id: "user/videos-and-tutorials/guides/connect-node",
             },
+            {
+              type: "doc",
+              label: "Migrating from Avado",
+              id: "user/videos-and-tutorials/guides/migrating-from-avado",
+            },
           ],
         },
       ],
