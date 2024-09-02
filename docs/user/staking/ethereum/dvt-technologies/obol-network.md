@@ -8,7 +8,7 @@ The Obol Network package for Dappnode aims to make it seamless for Dappnode user
 A Distributed Validator is one or more logical Ethereum validators being operated across a number of nodes that are all online simultaneously and that all control a subset of the validators' private keys. Each of these nodes need to run an Execution client, a Consensus client, a Distributed Validator client, and a Validator client/Key Manager.
 The distributed validator clients in these nodes come to consensus on what should be signed before constructing a signature for the validator that will be accepted by the wider Ethereum network. Dividing a validator across a group of nodes allows for fault tolerant validators that can remain online and validating despite a subset of its nodes experiencing an outage, contributing to a stronger and more resilient network.
 
-The Obol Dappnode package is available for [Ethereum Mainnet](http://my.dappnode/installer/dnp/obol.dnp.dappnode.eth) and the [Holesky Testnet](http://my.dappnode/installer/dnp/holesky-obol.dnp.dappnode.eth).
+The Obol Dappnode package is available for [Ethereum Mainnet](http://dappnode.local/installer/dnp/obol.dnp.dappnode.eth) and the [Holesky Testnet](http://dappnode.local/installer/dnp/holesky-obol.dnp.dappnode.eth).
 
 ### **Requirements**
 
@@ -33,7 +33,7 @@ For creating a new cluster with a group, all operators must have an operator's a
 
 ![ObolLaunchpad2](/img/obol-launchpad2.png)
 
-In this next step, you'll be required to enter your Charon client's ENR, which is a public key that will give your node a unique ID. This ENR can be obtained after installing the Obol Dappnode package [under the Info tab](http://my.dappnode/packages/my/holesky-obol.dnp.dappnode.eth/info).
+In this next step, you'll be required to enter your Charon client's ENR, which is a public key that will give your node a unique ID. This ENR can be obtained after installing the Obol Dappnode package [under the Info tab](http://dappnode.local/packages/my/holesky-obol.dnp.dappnode.eth/info).
 
 :::warning
 The Obol Dappnode package supports up to 5 ENRs. This means that you can participate in 5 different clusters with 5 different ENRs using the same package, however it's important to properly backup the package's database if the generated ENRs are committed to functional clusters.
