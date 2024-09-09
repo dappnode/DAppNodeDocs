@@ -533,6 +533,27 @@ const sidebars = {
       ],
     },
     {
+      type: "category",
+      label: "Package Development",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "dev/package-development/overview",
+        },
+        {
+          type: "doc",
+          label: "Single Configuration",
+          id: "dev/package-development/single-configuration",
+        },
+        {
+          type: "doc",
+          label: "Multi-Configuration",
+          id: "dev/package-development/multi-configuration",
+        },
+      ],
+    },
+    {
       type: "doc",
       label: "Github Actions",
       id: "dev/github-actions",
