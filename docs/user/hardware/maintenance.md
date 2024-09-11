@@ -20,7 +20,7 @@ For diving into the actual cleaning of your Dappnode, try to be in an outside lo
 
 When done, put the bottom metal lid back on and screw it back without leaving it too tight.
 
-## 3. Thermal Paste Change
+### 3. Thermal Paste Change
 
 Your CPU has a heatsink right above it that helps dissipate heat. To facilitate this transfer of heat effectively, thermal paste is applied between the CPU's top plate and the heatsink. Over time, the thermal paste can degrade or dry out, leading to reduced thermal conductivity and potentially higher operating temperatures for the CPU.
 
