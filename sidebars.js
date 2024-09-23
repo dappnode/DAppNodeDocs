@@ -163,7 +163,7 @@ const sidebars = {
                 },
                 {
                   type: "doc",
-                  label: "Stakewise",
+                  label: "StakeWise",
                   id: "user/staking/ethereum/lsd-pools/stakewise",
                 },
                 {
