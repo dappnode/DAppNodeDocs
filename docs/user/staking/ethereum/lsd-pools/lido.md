@@ -8,7 +8,7 @@ Lido is a **liquid staking** solution for Ethereum that addresses the liquidity 
 
 Ethereum plays a significant role in the Lido ecosystem, with more than [9 million ETH](https://lido.fi/ethereum) staked through the platform. Lido stakes these assets on behalf of the users, who receive stETH in return. A set of permissioned **node operators** are responsible for managing the staking infrastructure.
 
-Recently, Lido introduced the **Community Staking Module** (CSM), the first Lido Ethereum module with a **permissionless entry**. By first providing an ETH-based bond, anyone can now become a node operator by running validators in the Lido protocol. The module was designed for solo stakers and community stakers, providing them with the unique ability of becoming Ethereum validator with way less than 32 ETH and one of the friendliest UX possible, but may be utilized by anyone, including professional operators.
+Recently, Lido introduced the [**Community Staking Module** (CSM)](https://csm.testnet.fi/?ref=dappnode), the first Lido Ethereum module with a **permissionless entry**. By first providing an ETH-based bond, anyone can now become a node operator by running validators in the Lido protocol. The module was designed for solo stakers and community stakers, providing them with the unique ability of becoming Ethereum validator with way less than 32 ETH and one of the friendliest UX possible, but may be utilized by anyone, including professional operators.
 
 :::info
 Becoming a Lido Node Operator is recommended for users with some experience in running validators. The process requires a basic understanding of the Ethereum network and the Lido protocol. If you are new to staking, we recommend setting up a validator on the Testnet first to familiarize yourself with the process, see [Staking on the Ethereum Testnet](/docs/user/staking/ethereum/solo/holesky.md).
@@ -68,7 +68,7 @@ Becoming a Lido Node Operator is recommended for users with some experience in r
 
 4. **Register as a Lido Node Operator & your validators**:
 
-   - Navigate to the [Lido Deposit UI](https://csm.testnet.fi/) and complete the deposit process.
+   - Navigate to the [Lido Deposit UI](https://csm.testnet.fi/?ref=dappnode) and complete the deposit process.
    - Your node operator setup is now complete!
 
    <!-- (or do it locally directly from your dappnode installing [this package](http://my.dappnode/installer/dnp/)!) -->
