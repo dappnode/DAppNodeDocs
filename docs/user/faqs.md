@@ -63,8 +63,8 @@
     <summary><strong>How can I know if I'm using Wireguard's local or remote credentials?</strong></summary>
     
     <ul>
-        <li>If you're using local credentials, your Wireguard profile's endpoint should be an IP + Port. Ex. `192.168.X.X:<port>`</li>
-        <li> If you're using remote credentials, then the endpoint should be a dynDNS string + Port. Ex. `<randomstring>.dyndns.dappnode.io:<port>`</li>
+        <li>If you're using local credentials, your Wireguard profile's endpoint should be an IP + Port (e.g., <code>192.168.X.X:&lt;port&gt;</code>).</li>
+        <li>If you're using remote credentials, then the endpoint should be a dynDNS string + Port (e.g., <code>&lt;randomstring&gt;.dyndns.dappnode.io:&lt;port&gt;</code>).</li>
     </ul>
       
 </details>
