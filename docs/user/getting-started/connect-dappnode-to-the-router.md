@@ -27,6 +27,8 @@ If you want to have your UPnP disabled on router, manual port forwarding must be
 
 After that is done, go to [ports page](http://my.dappnode/support/ports) and manually forward all the ports listed there.
 
+Please note that this list is updated automatically after you install new package and you should make sure that you update ports in your router as well.
+
 <hr />
 
 ### Troubleshooting
