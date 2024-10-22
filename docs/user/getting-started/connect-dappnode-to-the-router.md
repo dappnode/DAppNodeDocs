@@ -21,6 +21,12 @@ Here are basic instructions to enable UPnP on most routers:
 3. **Enable UPnP**: There should be an option to enable or disable UPnP. Make sure it's set to "Enable" or "On".
    Save or apply the changes.
 
+## [Advanced] Using dappnode without UPnP enabled
+
+If you want to have your UPnP disabled on router, manual port forwarding must be done. First, make sure that your Wireguard is reachable by forwarding default port 51820. (Pro tip: You can choose any external port you like, but you have to set that port wireguard configuration file by yourself.)
+
+After that is done, go to [ports page](http://my.dappnode/support/ports) and manually forward all the ports listed there.
+
 <hr />
 
 ### Troubleshooting
