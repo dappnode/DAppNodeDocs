@@ -6,7 +6,7 @@
 
 Lido is a **liquid staking** solution for Ethereum that addresses the liquidity issues of traditional staking. Instead of locking up assets and losing access to them, users can stake through Lido and receive liquid tokens. These tokens retain the value of the staked assets and can be used elsewhere while still earning staking rewards.
 
-Lido, with over [9 million ETH](https://lido.fi/ethereum) staked on its platform, is a significant contributor in the Ethereum ecosystem. To broaden and diversify its network of node operators, Lido recently introduced the [**Community Staking Module** (CSM)](https://csm.testnet.fi/?ref=dappnode), the first Lido module with a **permissionless entry** for Ethereum staking. By first providing an ETH-based bond, anyone can now become a node operator by running validators in the Lido protocol. Designed with solo and community stakers in mind, the CSM lowers the barrier to becoming an Ethereum validator, requiring far less than the standard 32 ETH, and offers a user-friendly experience. While tailored for smaller stakers, it is open to all, including professional operators.
+Lido, with over [9 million ETH](https://lido.fi/ethereum) staked on its platform, is a significant contributor in the Ethereum ecosystem. To broaden and diversify its network of node operators, Lido recently introduced the [**Community Staking Module** (CSM)](https://csm.lido.fi/?ref=dappnode), the first Lido module with a **permissionless entry** for Ethereum staking. By first providing an ETH-based bond, anyone can now become a node operator by running validators in the Lido protocol. Designed with solo and community stakers in mind, the CSM lowers the barrier to becoming an Ethereum validator, requiring far less than the standard 32 ETH, and offers a user-friendly experience. While tailored for smaller stakers, it is open to all, including professional operators.
 
 :::info
 Becoming a Lido Node Operator is recommended for users with some experience in running validators. The process requires a basic understanding of the Ethereum network and the Lido protocol. If you are new to staking, we recommend setting up a validator on the Testnet first to familiarize yourself with the process, see [Staking on the Ethereum Testnet](/docs/user/staking/ethereum/solo/holesky.md).
@@ -67,7 +67,7 @@ Becoming a Lido Node Operator is recommended for users with some experience in r
 
 4. **Register as a Lido Node Operator & your validators**:
 
-   - Navigate to the [Lido Deposit UI](https://csm.testnet.fi/?ref=dappnode) and complete the deposit process by submitting the `deposit_data.json` file you generated with your keystore(s).
+   - Navigate to the [Lido Deposit UI](https://csm.lido.fi/?ref=dappnode) and complete the deposit process by submitting the `deposit_data.json` file you generated with your keystore(s).
    ![Lido-CSM4](/img/lido-csm-ss-docs4.png)
    - You'll be prompted to sign an ETH bond depending on the number of validators you're submitting to the CSM.
    - Once the deposit has been confirmed, the CSM and then the Beacon Chain will process your deposit. Keep in mind you'll have to wait 16-24 hours plus the Becaon Chain's entry queue for your validators to activate. Your node operator setup is now complete!
