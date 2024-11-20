@@ -554,6 +554,17 @@ const sidebars = {
       ],
     },
     {
+      type: "category",
+      label: "Package Publishment",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "dev/package-publishment/diego",
+        },
+      ],
+    },
+    {
       type: "doc",
       label: "Github Actions",
       id: "dev/github-actions",
