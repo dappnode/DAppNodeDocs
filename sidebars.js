@@ -555,6 +555,11 @@ const sidebars = {
     },
     {
       type: "doc",
+      label: "Package Publishing",
+      id: "dev/package-publishing",
+    },
+    {
+      type: "doc",
       label: "Github Actions",
       id: "dev/github-actions",
     },
