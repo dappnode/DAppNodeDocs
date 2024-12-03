@@ -5,6 +5,7 @@ title: What is a vanilla block?
 
 
 
+
 In the context of the Smooth protocol, we define a vanilla block as a block build locally by the execution client, as opposed to a block built by professional block builders with sofisticated algorithms for extracting MEV and sometimes private transactions that do not appear in the mempool. 
 
 While building blocks locally is a perfectly valid option for validators, it is one that doesn't serve to maximize the profit that can be extracted from proposing that block. Since the goal of Smooth as a MEV smoothing pool is to use these MEV rewards to maximize high and consistent rewards, proposing vanilla blocks into the pool is suboptimal.
@@ -30,3 +31,4 @@ Update Your Node Configuration: If you are running a validator in Smooth, make s
 
 In order to maximize the rewards for all the participants in Smooth, vanilla block proposers will be banned after 3 consecutive vanilla blocks proposed if they had the chance to be MEV blocks/had MEV opportunity. 
 This banning process requires a voting phase by the SmoothDAO to effectively ban the withdrawal address of the validator. You can read more about it [here](https://discourse.dappnode.io/t/proposal-sip1-smooth-terms-of-use-policy/2388) 
+
