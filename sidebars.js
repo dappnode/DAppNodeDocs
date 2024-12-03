@@ -556,7 +556,7 @@ const sidebars = {
     {
       type: "doc",
       label: "Package Publishing",
-      id: "dev/package-publishing/Publish-packages-clients.md",
+      id: "dev/package-publishing/publish-packages-clients",
     },
     {
       type: "doc",
