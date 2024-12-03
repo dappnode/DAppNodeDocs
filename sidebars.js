@@ -585,6 +585,11 @@ const sidebars = {
           label: "Oracle & Smart Contract",
           id: "smooth/deep-dive-into-smooth/oracle-sm",
         },
+        {
+          type: "doc",
+          label: "Avoid proposing Vanilla Blocks",
+          id: "smooth/deep-dive-into-smooth/vanilla-blocks",
+        },
       ],
     },
     {
