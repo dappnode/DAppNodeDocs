@@ -3,7 +3,7 @@ title: What is a vanilla block?
 
 ---
 
-**What is a vanilla block?**
+
 
 In the context of the Smooth protocol, we define a vanilla block as a block build locally by the execution client, as opposed to a block built by professional block builders with sofisticated algorithms for extracting MEV and sometimes private transactions that do not appear in the mempool. 
 
