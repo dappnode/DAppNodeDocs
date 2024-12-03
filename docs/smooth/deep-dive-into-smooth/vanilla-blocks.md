@@ -29,4 +29,4 @@ Update Your Node Configuration: If you are running a validator in Smooth, make s
 **How does Smooth act on Vanilla blocks?**
 
 In order to maximize the rewards for all the participants in Smooth, vanilla block proposers will be banned after 3 consecutive vanilla blocks proposed if they had the chance to be MEV blocks/had MEV opportunity. 
-This banning process requires a voting phase by the SmoothDAO to effectively ban the withdrawal address of the validator. You can read more about it [here](https://https://discourse.dappnode.io/t/proposal-sip1-smooth-terms-of-use-policy/2388) 
+This banning process requires a voting phase by the SmoothDAO to effectively ban the withdrawal address of the validator. You can read more about it [here](https://discourse.dappnode.io/t/proposal-sip1-smooth-terms-of-use-policy/2388) 
