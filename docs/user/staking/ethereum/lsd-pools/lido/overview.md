@@ -72,7 +72,7 @@ You can import your keystores directly from the DAppNodePackage-lido-csm UI duri
 
 Whenever there are 1 or more keystores that belongs to your NO and are not imported you will be able to see the following message in the DAppNodePackage-lido-csm UI:
 
-![lido-keystores-not-imported](/img/lido-keystores-not-imported.png)
+![lido-keystore-not-imported](/img/lido-keystore-not-imported.png)
 
 ### **Infraestructure monitoring**
 
