@@ -152,9 +152,25 @@ const sidebars = {
               label: "LSD Pools",
               items: [
                 {
-                  type: "doc",
-                  label: "Lido",
-                  id: "user/staking/ethereum/lsd-pools/lido",
+                  type: "category",
+                  label: "Lido CSM",
+                  items: [
+                    {
+                      type: "doc",
+                      label: "Overview",
+                      id: "user/staking/ethereum/lsd-pools/lido/overview",
+                    },
+                    {
+                      type: "doc",
+                      label: "Register as a Node Operator",
+                      id: "user/staking/ethereum/lsd-pools/lido/register",
+                    },
+                    {
+                      type: "doc",
+                      label: "I am already a Node Operator",
+                      id: "user/staking/ethereum/lsd-pools/lido/already-node-operator",
+                    },
+                  ],
                 },
                 {
                   type: "doc",
