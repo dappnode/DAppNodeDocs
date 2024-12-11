@@ -14,6 +14,8 @@
 - Select your desired execution and consensus clients.
 - Choose Web3Signer to upload the keystores.
 - Configure MEV Boost with as many relays as possible. For additional info on MEV in CSM, check the [Lido CSM Docs](https://operatorportal.lido.fi/modules/community-staking-module).
+  - Mainnet relays see `get_relays` from [Mainnet](https://etherscan.io/address/0xf95f069f9ad107938f6ba802a3da87892298610e#readContract)
+  - Holesky relays see `get_relays` from [Holesky](https://holesky.etherscan.io/address/0x2d86C5855581194a386941806E38cA119E50aEA3#readContract)
 
 :::warning
 It is mandatory to choose at least one relay to ensure the node operator does not propose vanilla blocks. When uploading the keystores with the "Lido" tag, this requirement will be automatically checked. As a Lido Node Operator, it is your responsibility to ensure that your infrastructure is properly using MEV Boost.
