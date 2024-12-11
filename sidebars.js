@@ -170,6 +170,11 @@ const sidebars = {
                       label: "I am already a Node Operator",
                       id: "user/staking/ethereum/lsd-pools/lido/already-node-operator",
                     },
+                    {
+                      type: "doc",
+                      label: "Notifications & Warnings",
+                      id: "user/staking/ethereum/lsd-pools/lido/notifications",
+                    },
                   ],
                 },
                 {
