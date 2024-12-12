@@ -32,17 +32,25 @@ You must start the conversation with the bot using `/start` so it can send you n
 Once you setup your notifications, you will receive a test notification to confirm that everything is working properly.
 :::
 
+![lido-csm-telegram-update](/img/lido-csm-telegram-update.png)
+
 Once your notifications are setup, you will receive notificatios for the following events:
 
 - Lido Smart Contract events:
   - [Lido VEVO events](https://docs.lido.fi/staking-modules/csm/guides/events/#contract-vebo): the most important event to remark is the validator exit request event, that will trigger the Ejector to exit the validator.
+  ![lido-csm-report-submitted](/img/lido-csm-report-submitted.png)
   - [Lido CSM events](https://docs.lido.fi/staking-modules/csm/guides/events/#contract-csm): check the Lido documentation for more details.
   - [Lido CSFeeDistributor](https://docs.lido.fi/staking-modules/csm/guides/events/#contract-csfeedistributor): check the Lido documentation for more details.
 - Validator exit:
+  - Exit requested: you will receive a notification when the validator exit has been requested.
+  ![lido-csm-exit-requested](/img/lido-csm-exit-requested.png)
   - Successful exit: you will receive a notification when the validator has been successfully exited.
+  ![lido-csm-exit-success](/img/lido-csm-exit-success.png)
   - Failed exit: you will receive a notification when the validator exit has failed, letting you know that a manual exit is required.
+  ![lido-csm-exit-failed](/img/lido-csm-exit-failed.png)
 - Relays (comming soon):
   - Blocklisted relay: you will receive a notification when your validator is using a blocklisted relay.
+  ![lido-csm-relay-notification](/img/lido-csm-relay-notification.png)
   - No relay: you will receive a notification when your validator is not using any relay.
 - Performance (comming soon):
   - Attestations performance: you will receive a notification when your validator is not performing as expected according to the Lido tresholds.
