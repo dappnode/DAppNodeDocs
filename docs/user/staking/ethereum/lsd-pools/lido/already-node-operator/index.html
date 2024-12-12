@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.0.0">
 <title data-rh="true">Already a node operator | Dappnode</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/already-node-operator"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Already a node operator | Dappnode"><meta data-rh="true" name="description" content="This document provides detailed instructions for existing Node Operators on integrating their setup with the Lido Community Staking Module (CSM) via Dappnode. By following these steps, you can efficiently manage your validators and ensure proper functionality within the Lido protocol."><meta data-rh="true" property="og:description" content="This document provides detailed instructions for existing Node Operators on integrating their setup with the Lido Community Staking Module (CSM) via Dappnode. By following these steps, you can efficiently manage your validators and ensure proper functionality within the Lido protocol."><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/already-node-operator"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/already-node-operator" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/already-node-operator" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Dappnode RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Dappnode Atom Feed"><link rel="stylesheet" href="/assets/css/styles.ffd35c04.css">
-<script src="/assets/js/runtime~main.755148d9.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a77e7041.js" defer="defer"></script>
 <script src="/assets/js/main.5d3b7253.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -51,15 +51,15 @@ While uploading your keystore files, make sure to tag them with “Lido” to de
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-opening-the-lido-csm-ui-and-wallet-connection">2. Opening the Lido CSM UI and Wallet Connection<a href="#2-opening-the-lido-csm-ui-and-wallet-connection" class="hash-link" aria-label="Direct link to 2. Opening the Lido CSM UI and Wallet Connection" title="Direct link to 2. Opening the Lido CSM UI and Wallet Connection">​</a></h2>
 <p>The Lido CSM UI serves as the central interface for managing validator keys and monitoring validator and infrastucture status. Before proceeding with any validator operations, ensure your wallet is connected.</p>
 <ol>
-<li>Access the Lido CSM UI:</li>
-</ol>
+<li>
+<p>Access the Lido CSM UI:</p>
 <p>Navigate to the Lido CSM package UI. - <a href="http://ui.lido-csm-mainnet.dappnode/" target="_blank" rel="noopener noreferrer">Mainnet UI</a> - <a href="http://ui.lido-csm-holesky.dappnode/" target="_blank" rel="noopener noreferrer">Holesky UI</a></p>
-<ol start="2">
-<li>Connect Your Wallet:</li>
-</ol>
+</li>
+<li>
+<p>Connect Your Wallet:</p>
 <p>Use the “I am a Node Operator” button and choose your wallet provider.</p>
 <p><img loading="lazy" alt="Log In as already Node Operator" src="/assets/images/lido-csm-log-in-already-NO-73d10878dc29bca9157afc26ca1bb611.png" width="1460" height="737" class="img_ev3q"></p>
-<ol start="3">
+</li>
 <li>
 <p>Authorize the Connection:</p>
 <ul>
@@ -73,10 +73,10 @@ While uploading your keystore files, make sure to tag them with “Lido” to de
 </li>
 <li>
 <p>Verify Connection:</p>
-</li>
-</ol>
 <p>Once connected, your wallet address will appear in the top-right corner of the interface.</p>
 <p><img loading="lazy" alt="Ensure wallet is connected" src="/assets/images/lido-csm-wallet-connected-113b5e31772ef307fb762443fa5cac15.png" width="664" height="72" class="img_ev3q"></p>
+</li>
+</ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-configuring-telegram-notifications">3. Configuring Telegram Notifications<a href="#3-configuring-telegram-notifications" class="hash-link" aria-label="Direct link to 3. Configuring Telegram Notifications" title="Direct link to 3. Configuring Telegram Notifications">​</a></h2>
 <p>To receive critical updates and alerts regarding your validator operations, it is essential to configure Telegram notifications.</p>
 <p>This provides alerts about validator penalties, slashing incidents, exit requests, key deposits and smart contract events.</p>
@@ -132,6 +132,7 @@ While uploading your keystore files, make sure to tag them with “Lido” to de
 <p>Input the Bot Token and User ID:</p>
 <p>Enter the bot token and your user ID in the Lido CSM package UI and click <code>Update Telegram Data</code>.
 <img loading="lazy" alt="Set up Notifications" src="/assets/images/lido-csm-setup-notifications-6b2635b85b84d6d5def3534b1d8552e3.png" width="1905" height="1046" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>You must start the conversation with the bot using <code>/start</code> so it can send you notifications.</p></div></div>
 <div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>To receive the notifications, is mandatory to fill both inputs, otherwise the notification system won&#x27;t work</p></div></div>
 </li>
 <li>
