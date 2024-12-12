@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.0.0">
 <title data-rh="true">Notifications &amp; Warnings | Dappnode</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/notifications"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Notifications &amp; Warnings | Dappnode"><meta data-rh="true" name="description" content="The DAppNodePackage-lido-csm provides notifications and warnings to help you monitor your infraestructure and validator performance. You will be able to setup your notifications either during the onboarding process if you are registering as a new Node Operator and from the UI navigating to /notifications."><meta data-rh="true" property="og:description" content="The DAppNodePackage-lido-csm provides notifications and warnings to help you monitor your infraestructure and validator performance. You will be able to setup your notifications either during the onboarding process if you are registering as a new Node Operator and from the UI navigating to /notifications."><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/notifications"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/notifications" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/notifications" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Dappnode RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Dappnode Atom Feed"><link rel="stylesheet" href="/assets/css/styles.ffd35c04.css">
-<script src="/assets/js/runtime~main.98b6564f.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.6679597e.js" defer="defer"></script>
 <script src="/assets/js/main.5d3b7253.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -14,22 +14,34 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="ui-warnings"><strong>UI Warnings</strong><a href="#ui-warnings" class="hash-link" aria-label="Direct link to ui-warnings" title="Direct link to ui-warnings">​</a></h2>
 <p>The UI will display in the dashboard the following warnings:</p>
 <ul>
-<li>Infraestructure healthcheck:<!-- -->
+<li>
+<p>Infraestructure healthcheck:</p>
 <ul>
 <li>Execution client health: you will be able to check the status of your execution client, either if its installed, running and syncing.</li>
 <li>Consensus client health: you will be able to check the status of your consensus client, either if its installed, running and syncing.</li>
 <li>Web3signer: you will be able to check the status of your web3signer, either if its installed and running.</li>
 <li>MEV Boost: you will be able to check the status of your MEV Boost, either if its installed and running.</li>
 </ul>
+<p><img loading="lazy" alt="lido-csm-infra-healthcheck" src="/assets/images/lido-csm-infra-healthcheck-a604a0e68905d8ddba967d23dac1316a.png" width="558" height="224" class="img_ev3q"></p>
 </li>
-<li>Relays (comming soon):<!-- -->
+<li>
+<p>Relays (comming soon):</p>
 <ul>
 <li>Blocklisted relay: you will be able to check if your validator is using a blocklisted relay.</li>
 <li>No mandatory relay: you will be able to check if your validator is not using any mandatory relay.</li>
 </ul>
 </li>
-<li>Attestations performance (comming soon): you will be able to check if your validator is not performing as expected according to the Lido tresholds.</li>
-<li>Keystores not imported: you will be able to check if there are 1 or more keystores that belongs to your Node Operator and are not imported in the web3signer.</li>
+<li>
+<p>Attestations performance (comming soon): you will be able to check if your validator is not performing as expected according to the Lido tresholds.</p>
+</li>
+<li>
+<p>Keystores not imported: you will be able to check if there are 1 or more keystores that belongs to your Node Operator and are not imported in the web3signer.</p>
+<p><img loading="lazy" alt="lido-csm-exit-requested" src="/assets/images/lido-csm-keys-not-imported-warning-412139481617c883e7d334ef1014a6a2.png" width="538" height="228" class="img_ev3q"></p>
+</li>
+<li>
+<p>Exit requested: you will be able to check if you have to exit any of your validators manually if the ejector fails at auto-exiting</p>
+<p><img loading="lazy" alt="lido-csm-exit-requested" src="/assets/images/lido-csm-exit-request-warning-97bca18fffa89f3a29d75f5d92ce1928.png" width="538" height="190" class="img_ev3q"></p>
+</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="telegram-notifications"><strong>Telegram notifications</strong><a href="#telegram-notifications" class="hash-link" aria-label="Direct link to telegram-notifications" title="Direct link to telegram-notifications">​</a></h2>
 <p>You will be able to setup your notifications either during the onboarding process if you are registering as a new Node Operator and from the UI navigating to <code>/notifications</code>. You must provide:</p>
