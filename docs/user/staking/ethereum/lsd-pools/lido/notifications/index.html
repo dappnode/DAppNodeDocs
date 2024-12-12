@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.0.0">
 <title data-rh="true">Notifications &amp; Warnings | Dappnode</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/notifications"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Notifications &amp; Warnings | Dappnode"><meta data-rh="true" name="description" content="The DAppNodePackage-lido-csm provides notifications and warnings to help you monitor your infraestructure and validator performance. You will be able to setup your notifications either during the onboarding process if you are registering as a new Node Operator and from the UI navigating to /notifications."><meta data-rh="true" property="og:description" content="The DAppNodePackage-lido-csm provides notifications and warnings to help you monitor your infraestructure and validator performance. You will be able to setup your notifications either during the onboarding process if you are registering as a new Node Operator and from the UI navigating to /notifications."><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/notifications"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/notifications" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/notifications" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Dappnode RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Dappnode Atom Feed"><link rel="stylesheet" href="/assets/css/styles.ffd35c04.css">
-<script src="/assets/js/runtime~main.a77e7041.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.fdc09034.js" defer="defer"></script>
 <script src="/assets/js/main.5d3b7253.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -39,24 +39,31 @@
 </ul>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>You must start the conversation with the bot using <code>/start</code> so it can send you notifications.</p></div></div>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Once you setup your notifications, you will receive a test notification to confirm that everything is working properly.</p></div></div>
+<p><img loading="lazy" alt="lido-csm-telegram-update" src="/assets/images/lido-csm-telegram-update-66045e3ba7c0a2105cd1f40443cf9303.png" width="748" height="96" class="img_ev3q"></p>
 <p>Once your notifications are setup, you will receive notificatios for the following events:</p>
 <ul>
 <li>Lido Smart Contract events:<!-- -->
 <ul>
-<li><a href="https://docs.lido.fi/staking-modules/csm/guides/events/#contract-vebo" target="_blank" rel="noopener noreferrer">Lido VEVO events</a>: the most important event to remark is the validator exit request event, that will trigger the Ejector to exit the validator.</li>
+<li><a href="https://docs.lido.fi/staking-modules/csm/guides/events/#contract-vebo" target="_blank" rel="noopener noreferrer">Lido VEVO events</a>: the most important event to remark is the validator exit request event, that will trigger the Ejector to exit the validator.
+<img loading="lazy" alt="lido-csm-report-submitted" src="/assets/images/lido-csm-report-submitted-ac7350d098dc929c8b448026915b2638.png" width="748" height="96" class="img_ev3q"></li>
 <li><a href="https://docs.lido.fi/staking-modules/csm/guides/events/#contract-csm" target="_blank" rel="noopener noreferrer">Lido CSM events</a>: check the Lido documentation for more details.</li>
 <li><a href="https://docs.lido.fi/staking-modules/csm/guides/events/#contract-csfeedistributor" target="_blank" rel="noopener noreferrer">Lido CSFeeDistributor</a>: check the Lido documentation for more details.</li>
 </ul>
 </li>
 <li>Validator exit:<!-- -->
 <ul>
-<li>Successful exit: you will receive a notification when the validator has been successfully exited.</li>
-<li>Failed exit: you will receive a notification when the validator exit has failed, letting you know that a manual exit is required.</li>
+<li>Exit requested: you will receive a notification when the validator exit has been requested.
+<img loading="lazy" alt="lido-csm-exit-requested" src="/assets/images/lido-csm-exit-requested-25b1322e704dfb430a819dd10984bab7.png" width="910" height="124" class="img_ev3q"></li>
+<li>Successful exit: you will receive a notification when the validator has been successfully exited.
+<img loading="lazy" alt="lido-csm-exit-success" src="/assets/images/lido-csm-exit-success-adc6c34aafd934e61358307adedc9822.png" width="761" height="66" class="img_ev3q"></li>
+<li>Failed exit: you will receive a notification when the validator exit has failed, letting you know that a manual exit is required.
+<img loading="lazy" alt="lido-csm-exit-failed" src="/assets/images/lido-csm-exit-failed-44ffe8b0f03caa85623676c4a0d74d02.png" width="680" height="518" class="img_ev3q"></li>
 </ul>
 </li>
 <li>Relays (comming soon):<!-- -->
 <ul>
-<li>Blocklisted relay: you will receive a notification when your validator is using a blocklisted relay.</li>
+<li>Blocklisted relay: you will receive a notification when your validator is using a blocklisted relay.
+<img loading="lazy" alt="lido-csm-relay-notification" src="/assets/images/lido-csm-relay-notification-02cba2e5996e120b1838c068d9593f69.png" width="960" height="306" class="img_ev3q"></li>
 <li>No relay: you will receive a notification when your validator is not using any relay.</li>
 </ul>
 </li>
