@@ -68,4 +68,8 @@ Do not edit the fee recipient address. Doing so will result in penalties.
 - Introduce your bot token and user ID and confirm
 - You should receive a confirmation message from the bot.
 
+:::warning
+You must start the conversation with the bot using `/start` so it can send you notifications.
+:::
+
 ![lido-notifications-onboarding](/img/lido-notifications-onboarding.png)

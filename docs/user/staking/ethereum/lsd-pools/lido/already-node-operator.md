@@ -41,25 +41,25 @@ The Lido CSM UI serves as the central interface for managing validator keys and 
 
 1. Access the Lido CSM UI:
 
-Navigate to the Lido CSM package UI. - [Mainnet UI](http://ui.lido-csm-mainnet.dappnode/) - [Holesky UI](http://ui.lido-csm-holesky.dappnode/)
+   Navigate to the Lido CSM package UI. - [Mainnet UI](http://ui.lido-csm-mainnet.dappnode/) - [Holesky UI](http://ui.lido-csm-holesky.dappnode/)
 
 2. Connect Your Wallet:
 
-Use the “I am a Node Operator” button and choose your wallet provider.
+   Use the “I am a Node Operator” button and choose your wallet provider.
 
-![Log In as already Node Operator](/img/lido-csm-log-in-already-NO.png)
+   ![Log In as already Node Operator](/img/lido-csm-log-in-already-NO.png)
 
 3. Authorize the Connection:
 
-   - Follow the on-screen prompts to grant the necessary permissions.
+      - Follow the on-screen prompts to grant the necessary permissions.
 
-   - Ensure the wallet’s network matches the intended environment (e.g., Mainnet or Holesky).
+      - Ensure the wallet’s network matches the intended environment (e.g., Mainnet or Holesky).
 
 4. Verify Connection:
 
-Once connected, your wallet address will appear in the top-right corner of the interface.
+   Once connected, your wallet address will appear in the top-right corner of the interface.
 
-![Ensure wallet is connected](/img/lido-csm-wallet-connected.png)
+   ![Ensure wallet is connected](/img/lido-csm-wallet-connected.png)
 
 ## 3. Configuring Telegram Notifications
 
@@ -100,7 +100,11 @@ Staying informed helps safeguard your assets, reduce risks, and maintain transpa
 
    Enter the bot token and your user ID in the Lido CSM package UI and click `Update Telegram Data`. 
    ![Set up Notifications](/img/lido-csm-setup-notifications.png)
-   
+
+   :::warning
+   You must start the conversation with the bot using `/start` so it can send you notifications.
+   :::
+
    :::caution
    To receive the notifications, is mandatory to fill both inputs, otherwise the notification system won't work
    :::

@@ -24,6 +24,14 @@ You will be able to setup your notifications either during the onboarding proces
 - Bot token: this is the secret token from a bot that you must create. You can get it from the Telegram BotFather. See the [obtain your bot token](https://core.telegram.org/bots/tutorial#obtain-your-bot-token) section.
 - User ID: this is your Telegram user ID. You can get it from the [userinfobot](https://t.me/userinfobot) typing `/start`.
 
+:::warning
+You must start the conversation with the bot using `/start` so it can send you notifications.
+:::
+
+:::info
+Once you setup your notifications, you will receive a test notification to confirm that everything is working properly.
+:::
+
 Once your notifications are setup, you will receive notificatios for the following events:
 
 - Lido Smart Contract events:
