@@ -48,13 +48,13 @@ To install the Lido CSM package, select the variant that suits your needs:
 
 ### 4. Register as Node Operator
 
-### 4.1 Connect your wallet
+#### 4.1 Connect your wallet
 
 - Open the Lido CSM package UI.
 - Connect your wallet.
 - Click the Register Node Operator button.
 
-### 4.2 Ensure you have the requirements
+#### 4.2 Ensure you have the requirements
 
 While registering as a node operator, the UI will verify that you meet the following requirements:
 
@@ -65,7 +65,7 @@ While registering as a node operator, the UI will verify that you meet the follo
   - Web3Signer.
   - MEV relay subscriptions.
 
-### 4.3 **Setup notifications**
+#### 4.3 **Setup notifications**
 
 - Use the [Telegram BotFather](https://core.telegram.org/bots/tutorial#obtain-your-bot-token) to create bot and get its token.
 - Start the chat with your bot.
@@ -80,32 +80,18 @@ You must start the conversation with the bot using `/start` so it can send you n
 
 ![lido-notifications-onboarding](/img/lido-notifications-onboarding.png)
 
-### 3. **Upload the Keystores in your Dappnode**
+#### 4.4 **Submit register & Upload your validators' keys**
 
-- Go to the Web3signer UI for [Ethereum](http://brain.web3signer.dappnode) or [Holesky](http://brain.web3signer-holesky.dappnode).
-- Upload the keystores and tag them with "Lido".
-- The fee recipient will be automatically set to `0xE73a3602b99f1f913e72F8bdcBC235e206794Ac8` for Holesky and `0x388C818CA8B9251b393131C08a736A67ccB19297` for Mainnet. It is not editable.
-
-![Lido-CSM3](/img/lido-csm-ss-docs3.png)
-
-:::caution
-Double-check that your Lido keystores are tagged correctly. This is crucial to ensure that the node operator is properly set up, and has the correct fee recipient set.
-:::
-
-:::danger
-Do not edit the fee recipient address. Doing so will result in penalties.
-:::
-
-### 4. **Register as a Lido Node Operator & your validators**
-
-- Navigate to the [Lido Deposit UI](https://csm.lido.fi/?ref=dappnode) and complete the deposit process by submitting the `deposit_data.json` file you generated with your keystore(s).
+- Navigate to the Lido CSM UI and complete the deposit process by submitting the `deposit_data.json` file you generated with your keystore(s).
   ![Lido-CSM4](/img/lido-csm-ss-docs4.png)
+
 - If your validator keys are not already uploaded to Web3Signer, you can import them directly through the Lido CSM package UI.
 
-  Automatically, after providing the `deposit_data.json `a prompt will appear in the UI, allowing you to:
+  Automatically, after providing the `deposit_data.json` a prompt will appear in the UI, allowing you to:
 
-  - Select or drag-and-drop the keystore files associated with your deposit_data.json.
+  - Select or drag-and-drop the keystore files associated with your `deposit_data.json`.
   - Enter the password for the keys in the provided field.
+  ![Lido-CSM4](/img/lido-csm-ss-docs5.png)
 
 - You'll be prompted to sign an ETH bond depending on the number of validators you're submitting to the CSM.
 - Once the deposit has been confirmed, the CSM and then the Beacon Chain will process your deposit. Keep in mind you'll have to wait 16-24 hours plus the Becaon Chain's entry queue for your validators to activate. Your node operator setup is now complete!
