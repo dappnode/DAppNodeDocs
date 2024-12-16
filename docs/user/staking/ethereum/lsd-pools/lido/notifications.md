@@ -63,6 +63,8 @@ Once your notifications are setup, you will receive notificatios for the followi
   ![lido-csm-performance-notification-above](/img/lido-csm-performance-notification-above.png)
   - Below the treshold: you will receive a notification when your validator is performing below the treshold.
   ![lido-csm-performance-notification-below](/img/lido-csm-performance-notification-below.png)
+- Operator stuck: you will receive a notification when your operator is stuck indicating the epoch range.
+  ![lido-csm-stuck](/img/lido-csm-stuck.png)
 - Relays (comming soon):
   - Blocklisted relay: you will receive a notification when your validator is using a blocklisted relay.
     ![lido-csm-relay-notification](/img/lido-csm-relay-notification.png)
