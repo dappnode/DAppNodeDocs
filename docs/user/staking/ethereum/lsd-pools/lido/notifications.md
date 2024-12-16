@@ -59,9 +59,9 @@ Once your notifications are setup, you will receive notificatios for the followi
   - Failed exit: you will receive a notification when the validator exit has failed, letting you know that a manual exit is required.
     ![lido-csm-exit-failed](/img/lido-csm-exit-failed.png)
 - Performance:
-  - Above the reshold: you will receive a notification when your validator is performing above the reshold.
+  - Above the treshold: you will receive a notification when your validator is performing above the treshold.
   ![lido-csm-performance-notification-above](/img/lido-csm-performance-notification-above.png)
-  - Below the reshold: you will receive a notification when your validator is performing below the reshold.
+  - Below the treshold: you will receive a notification when your validator is performing below the treshold.
   ![lido-csm-performance-notification-below](/img/lido-csm-performance-notification-below.png)
 - Relays (comming soon):
   - Blocklisted relay: you will receive a notification when your validator is using a blocklisted relay.
