@@ -39,6 +39,47 @@ The validator Keystores will be used to run the validators on the Ethereum netwo
 Make sure you correcly set the withdrawal address up, otherwise the Lido CSM won't let you move forward with the validator deposits.
 :::
 
+### 3. Install the Lido CSM package
+
+To install the Lido CSM package, select the variant that suits your needs:
+
+- [Holesky package](http://my.dappnode/installer/dnp/lido-csm-holesky.dnp.dappnode.eth)
+- [Ethereum package](http://my.dappnode/installer/dnp/lido-csm-mainnet.dnp.dappnode.eth)
+
+### 4. Register as Node Operator
+
+### 4.1 Connect your wallet
+
+- Open the Lido CSM package UI.
+- Connect your wallet.
+- Click the Register Node Operator button.
+
+### 4.2 Ensure you have the requirements
+
+While registering as a node operator, the UI will verify that you meet the following requirements:
+
+- Stake Requirement: You need 2 ETH or an equivalent amount in stETH or wstETH for the first validator.
+- Infrastructure Setup: Your Dappnode must be running:
+  - An execution client.
+  - A consensus client.
+  - Web3Signer.
+  - MEV relay subscriptions.
+
+### 4.3 **Setup notifications**
+
+- Use the [Telegram BotFather](https://core.telegram.org/bots/tutorial#obtain-your-bot-token) to create bot and get its token.
+- Start the chat with your bot.
+
+:::warning
+You must start the conversation with the bot using `/start` so it can send you notifications.
+:::
+
+- Use [userinfobot](https://t.me/userinfobot) to retrieve your user ID.
+- Introduce your bot token and user ID in the UI and confirm.
+- You should receive a confirmation message from the bot.
+
+![lido-notifications-onboarding](/img/lido-notifications-onboarding.png)
+
 ### 3. **Upload the Keystores in your Dappnode**
 
 - Go to the Web3signer UI for [Ethereum](http://brain.web3signer.dappnode) or [Holesky](http://brain.web3signer-holesky.dappnode).
@@ -59,17 +100,12 @@ Do not edit the fee recipient address. Doing so will result in penalties.
 
 - Navigate to the [Lido Deposit UI](https://csm.lido.fi/?ref=dappnode) and complete the deposit process by submitting the `deposit_data.json` file you generated with your keystore(s).
   ![Lido-CSM4](/img/lido-csm-ss-docs4.png)
+- If your validator keys are not already uploaded to Web3Signer, you can import them directly through the Lido CSM package UI.
+
+  Automatically, after providing the `deposit_data.json `a prompt will appear in the UI, allowing you to:
+
+  - Select or drag-and-drop the keystore files associated with your deposit_data.json.
+  - Enter the password for the keys in the provided field.
+
 - You'll be prompted to sign an ETH bond depending on the number of validators you're submitting to the CSM.
 - Once the deposit has been confirmed, the CSM and then the Beacon Chain will process your deposit. Keep in mind you'll have to wait 16-24 hours plus the Becaon Chain's entry queue for your validators to activate. Your node operator setup is now complete!
-
-### 5. **Setup notifications**
-
-- Get your bot token and user ID from the [Telegram BotFather](https://core.telegram.org/bots/tutorial#obtain-your-bot-token) and [userinfobot](https://t.me/userinfobot) respectively.
-- Introduce your bot token and user ID and confirm
-- You should receive a confirmation message from the bot.
-
-:::warning
-You must start the conversation with the bot using `/start` so it can send you notifications.
-:::
-
-![lido-notifications-onboarding](/img/lido-notifications-onboarding.png)
