@@ -89,7 +89,7 @@ You must start the conversation with the bot using `/start` so it can send you n
 
   Automatically, after providing the `deposit_data.json` a prompt will appear in the UI, allowing you to:
 
-  - Select or drag-and-drop the keystore files associated with your deposit_data.json.
+  - Select or drag-and-drop the keystore files associated with your `deposit_data.json`.
   - Enter the password for the keys in the provided field.
   ![Lido-CSM4](/img/lido-csm-ss-docs5.png)
 
