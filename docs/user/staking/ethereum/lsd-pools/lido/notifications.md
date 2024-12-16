@@ -58,11 +58,14 @@ Once your notifications are setup, you will receive notificatios for the followi
     ![lido-csm-exit-success](/img/lido-csm-exit-success.png)
   - Failed exit: you will receive a notification when the validator exit has failed, letting you know that a manual exit is required.
     ![lido-csm-exit-failed](/img/lido-csm-exit-failed.png)
+- Performance:
+  - Above the treshold: you will receive a notification when your validator is performing above the treshold.
+  ![lido-csm-performance-notification-above](/img/lido-csm-performance-notification-above.png)
+  - Below the treshold: you will receive a notification when your validator is performing below the treshold.
+  ![lido-csm-performance-notification-below](/img/lido-csm-performance-notification-below.png)
 - Relays (comming soon):
   - Blocklisted relay: you will receive a notification when your validator is using a blocklisted relay.
     ![lido-csm-relay-notification](/img/lido-csm-relay-notification.png)
   - No relay: you will receive a notification when your validator is not using any relay.
-- Performance (comming soon):
-  - Attestations performance: you will receive a notification when your validator is not performing as expected according to the Lido tresholds.
 - Keystores not imported (comming soon):
   - You will receive a notification when there are 1 or more keystores that belongs to your Node Operator and are not imported in the web3signer.
