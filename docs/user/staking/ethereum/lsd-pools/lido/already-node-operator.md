@@ -51,9 +51,9 @@ The Lido CSM UI serves as the central interface for managing validator keys and 
 
 3. Authorize the Connection:
 
-      - Follow the on-screen prompts to grant the necessary permissions.
+   - Follow the on-screen prompts to grant the necessary permissions.
 
-      - Ensure the wallet’s network matches the intended environment (e.g., Mainnet or Holesky).
+   - Ensure the wallet’s network matches the intended environment (e.g., Mainnet or Holesky).
 
 4. Verify Connection:
 
@@ -86,7 +86,14 @@ Staying informed helps safeguard your assets, reduce risks, and maintain transpa
    - Follow the instructions to name your bot and choose a username (must end with "bot").
 
    - Once created, BotFather will send you the bot token.
+
      - Example: `123456789:ABCDefghIJKLMNOPQRSTuvwxYZ`.
+
+   - Start the chat with the created bot by clicking `Start` button.
+
+   :::warning
+   You must start the conversation with the bot clicking `Start` so it can send you notifications.
+   :::
 
 3. Obtain Your User ID:
 
@@ -98,7 +105,7 @@ Staying informed helps safeguard your assets, reduce risks, and maintain transpa
 
 4. Input the Bot Token and User ID:
 
-   Enter the bot token and your user ID in the Lido CSM package UI and click `Update Telegram Data`. 
+   Enter the bot token and your user ID in the Lido CSM package UI and click `Update Telegram Data`.
    ![Set up Notifications](/img/lido-csm-setup-notifications.png)
 
    :::warning
