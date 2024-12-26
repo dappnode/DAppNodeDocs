@@ -8,21 +8,26 @@ It is not possible to use both Dappnode WiFi hotspot and VPN at the same time. I
 
 ## VPN Clients
 
-### [WireGuard](/docs/user/access-your-dappnode/vpn/wireguard) (Recommended)
+### [Tailscale](/docs/user/access-your-dappnode/vpn/tailscale) (Recommended)
+
+- Tailscale is a user-friendly VPN service that simplifies the process of connecting to your Dappnode.
+- It's an excellent choice if you're experiencing issues with port forwarding, UPnP, or CGNAT. [Learn more](https://tailscale.com/)
+
+### [WireGuard](/docs/user/access-your-dappnode/vpn/wireguard)
+
 - WireGuard is a newer, streamlined VPN protocol known for its simplicity, speed, and security.
 - It requires less configuration and is considered more efficient in terms of CPU usage. [Learn more](https://www.wireguard.com/)
 
 ### [OpenVPN](/docs/user/access-your-dappnode/vpn/openvpn)
+
 - OpenVPN is a well-established VPN protocol praised for its security and reliability.
 - It's more versatile and can bypass most network restrictions and firewalls. [Learn more](https://openvpn.net/)
 
 ## Local vs. Remote Access
 
 - **Local Access**: Connecting to your Dappnode when you're on the same local network. Generally, this means that your Dappnode machine and the device you're using to access it are connected to the same router.
-  
 - **Remote Access**: Connecting to your Dappnode from a different network or location. This is one of the major advantages of using a VPN.
 
 :::info
 VPN provides a balance of security, versatility, and remote access capability. You can choose the VPN technology that best suits your needs and preferences, both fulfill the requirements of most users.
 :::
-
