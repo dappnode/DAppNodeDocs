@@ -13,20 +13,25 @@ Using Tailscale is an excellent alternative if you're experiencing issues with U
 Before starting, ensure you have:
 
 - A [Tailscale account](https://tailscale.com/).
-- Tailscale installed on your device.
-- Access to your Dappnode's Admin UI.
+- Tailscale installed on your device. Download [here](https://tailscale.com/download)
+- Having access to your [Dappnode's Admin UI](https://my.dappnode) 
 
 ## Step 1: Create an Auth Key
 
 1. Visit [Tailscale Admin Settings](https://login.tailscale.com/admin/settings/keys).
+![Authkey1](/img/authkey1.png)
 2. Create a new auth key. Any name will work.
+![Authkey2](/img/authkey2.png)
 3. Save the key for the next step.
+![Authkey3](/img/authkey3.png)
 
 ## Step 2: Install Tailscale on Your Dappnode
 
-1. Access your Dappnode Admin UI.
-2. Navigate to **Packages** and search for the `Tailscale` package.
-3. Click **Install** and enter the auth key you created during installation.
+1. Access your [Dappnode's Admin UI](https://my.dappnode) 
+2. Navigate to **Dappstore** and search for the `Tailscale` package.
+3. Click **Install** 
+4. Go to the Tailscale package in **Packages** tab and enter the auth key you created during installation.
+![Authkey4](/img/authkey4.png)
 
 Once installed, Tailscale will run as a service on your Dappnode.
 
@@ -35,16 +40,19 @@ Once installed, Tailscale will run as a service on your Dappnode.
 ### a. Accept Advertised Routes from Your Dappnode
 
 1. Go to your [Tailscale Machines Dashboard](https://login.tailscale.com/admin/machines).
-2. Locate your Dappnode device.
+![Machinelist](/img/machinelist.png)
+2. Find your Dappnode device in the list of machines
 3. Open the "Edit Route Settings" modal and check the Subnet Route that appears.
+![Subnetcheck](/img/subnetcheck.png)
 
 ### b. Add a Custom Nameserver
 
 1. Go to your [Tailscale DNS Admin Panel](https://login.tailscale.com/admin/dns).
-2. Find the Nameservers section and add a custom nameserver.
+2. Find the Nameservers section, click Add nameserver button and add a custom nameserver.
+![Customserver](/img/customserver.png)
 3. Fill the popup with:
    - **Nameserver IP:** `172.33.1.2`
-   - Toggle "Restrict to domain" switch.
+   - Activate "Restrict to domain" switch.
    - Set the domain as `dappnode`.
 
 ## Step 4: Access Your Dappnode
