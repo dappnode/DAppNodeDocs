@@ -75,6 +75,11 @@ const sidebars = {
             },
             {
               type: "doc",
+              label: "Tailscale",
+              id: "user/access-your-dappnode/vpn/tailscale",
+            },
+            {
+              type: "doc",
               label: "Wireguard",
               id: "user/access-your-dappnode/vpn/wireguard",
             },
