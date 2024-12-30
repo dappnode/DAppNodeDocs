@@ -8,7 +8,7 @@ It is not possible to use both Dappnode WiFi hotspot and VPN at the same time. I
 
 ## VPN Clients
 
-### [Tailscale](/docs/user/access-your-dappnode/vpn/tailscale) (Recommended)
+### [Tailscale](/docs/user/access-your-dappnode/vpn/tailscale)
 
 - Tailscale is a user-friendly VPN service that simplifies the process of connecting to your Dappnode.
 - It's an excellent choice if you're experiencing issues with port forwarding, UPnP, or CGNAT. [Learn more](https://tailscale.com/)
@@ -18,7 +18,7 @@ It is not possible to use both Dappnode WiFi hotspot and VPN at the same time. I
 - WireGuard is a newer, streamlined VPN protocol known for its simplicity, speed, and security.
 - It requires less configuration and is considered more efficient in terms of CPU usage. [Learn more](https://www.wireguard.com/)
 
-### [OpenVPN](/docs/user/access-your-dappnode/vpn/openvpn)
+### [OpenVPN](/docs/user/access-your-dappnode/vpn/openvpn) (Deprecated)
 
 - OpenVPN is a well-established VPN protocol praised for its security and reliability.
 - It's more versatile and can bypass most network restrictions and firewalls. [Learn more](https://openvpn.net/)
