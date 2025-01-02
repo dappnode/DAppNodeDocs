@@ -81,7 +81,12 @@ That's it! You've successfully configured Tailscale to connect to your Dappnode.
 <details>
 <summary><b>macOS</b></summary>
 
-1. Comming Soon!
+1. Open tailscale app in your finder
+2. Go to the top bar and click the tailscale logo (9 dots)
+<p align="center">
+    <img width="50%"src="/img/tailscale-2.png"/>
+    </p>
+3. Activate the switch to connect.
 
 </details>
 
