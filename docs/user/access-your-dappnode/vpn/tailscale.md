@@ -131,19 +131,9 @@ Having trouble using Tailscale on Windows? Check out the [Tailscale Windows docu
 <details>
 <summary><b>Android</b></summary>
 
-1. Go to the Tailscale app
-<p align="center">
-    <img width="50%"src="/img/tailscale_mobile_1.jpeg"/>
-</p>
-2. Click Connect 
-<p align="center">
-    <img width="50%"src="/img/tailscale_mobile_2.jpeg"/>
-</p>
+1. Open your Tailscale app
+2. Connect to your dappnode by clicking on the "Connect" button.
 
-3. You are connected to your Dappnode
-<p align="center">
-    <img width="50%"src="/img/tailscale_mobile_3.jpeg"/>
-</p>
 </details>
 
 <br/>
