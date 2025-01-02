@@ -93,22 +93,38 @@ That's it! You've successfully configured Tailscale to connect to your Dappnode.
 <details>
 <summary> <b>Linux</b></summary>
 
-Open up a terminal and run the following command:
+1. Open up a terminal and run the following command:
 ```bash
 sudo tailscale up --accept-routes
 ```
-To stop the connection, run:
+
+2. If it's your first time using Tailscale in this device, a browser window may open asking to connect this device to your Tailscale account. Click on **"Connect"**. That's it! You're now connected to your Dappnode.
+
+3. To stop Tailscale in any moment, run the following command:
 ```bash
 sudo tailscale down
 ```
-
+:::info  
+Having trouble using Tailscale on Linux? Check out the [Tailscale Linux documentation](https://tailscale.com/kb/1031/install-linux) for more information.
+:::
 
 </details>
 
 <details>
 <summary><b>Windows</b></summary>
 
-1. Comming Soon!
+1. Once installed, Tailscale's icon will appear in your system tray. Click on it. 
+2. If it's your first time using Tailscale in this device, a browser window may open asking to connect this device to your Tailscale account. Click on **"Connect"**. That's it! You're now connected to your Dappnode.
+
+<p align="center">
+    <img width="50%"src="/img/tailscalewindows.png"/>
+</p>
+
+3. To disconnect tailscale, right click on the icon on the system tray and log out or exit the application.
+
+:::info  
+Having trouble using Tailscale on Windows? Check out the [Tailscale Windows documentation](https://tailscale.com/kb/1022/install-windows) for more information.
+:::
 
 </details>
 
