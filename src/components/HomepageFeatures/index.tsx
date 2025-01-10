@@ -65,7 +65,7 @@ const FeatureList: FeatureItem[] = [
         stake on Ethereum and Holesky as node operators.
       </>
     ),
-    url: "/docs/user/staking/ethereum/lsd-pools/lido",
+    url: "/docs/user/staking/ethereum/lsd-pools/lido/overview",
   },
   {
     title: "Rocketpool",
