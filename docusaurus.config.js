@@ -37,18 +37,12 @@ const config = {
     [
       "@docusaurus/plugin-client-redirects",
       {
-        fromExtensions: ["html", "htm"], // /myPage.html -> /myPage
-        toExtensions: [], // No specific file extensions
         redirects: [
-          // Redirect from old Lido page to the overview page
           {
-            to: "/docs/user/staking/ethereum/lsd-pools/lido/overview",
             from: "/docs/user/staking/ethereum/lsd-pools/lido/",
+            to: "/docs/user/staking/ethereum/lsd-pools/lido/overview",
           },
         ],
-        createRedirects(existingPath) {
-          return undefined; // No additional redirects created
-        },
       },
     ],
   ],
