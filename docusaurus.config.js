@@ -32,7 +32,20 @@ const config = {
     locales: ["en"],
   },
 
-  plugins: [require.resolve("@easyops-cn/docusaurus-search-local")],
+  plugins: [
+    require.resolve("@easyops-cn/docusaurus-search-local"),
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            from: "/docs/user/staking/ethereum/lsd-pools/lido/",
+            to: "/docs/user/staking/ethereum/lsd-pools/lido/overview",
+          },
+        ],
+      },
+    ],
+  ],
 
   presets: [
     [
