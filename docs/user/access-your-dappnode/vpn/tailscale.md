@@ -138,5 +138,15 @@ Having trouble using Tailscale on Windows? Check out the [Tailscale Windows docu
 
 <br/>
 
+### 5. Do you have two Dappnodes?
+
+It won't work automatically and you won't be able to choose which one connects.
+
+You have to go to the machines that you don't want to access and disable subnet routes. Your tailscale will direct you to the one that does have the subnets activated.
+
+<p align="center">
+    <img width="50%"src="/img/connect-two-dappnodes.png"/>
+</p>
+
 
 If you encounter any issues or need further assistance, refer to Dappnode's [Discord](https://discord.gg/dappnode), the [Dappnode Community Forums](https://forum.dappnode.io/), or [Tailscale Support](https://tailscale.com/support/).
