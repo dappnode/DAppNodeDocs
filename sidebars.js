@@ -177,6 +177,11 @@ const sidebars = {
                     },
                     {
                       type: "doc",
+                      label: "Validators performance",
+                      id: "user/staking/ethereum/lsd-pools/lido/performance",
+                    },
+                    {
+                      type: "doc",
                       label: "Notifications & Warnings",
                       id: "user/staking/ethereum/lsd-pools/lido/notifications",
                     },
