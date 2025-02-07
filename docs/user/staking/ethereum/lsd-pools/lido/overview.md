@@ -78,11 +78,41 @@ You will be able to visualize the status of your infraestructure (EC - CC - Sign
 
 ### **Performance**
 
-🚀 Cooming soon
+You can check the performance of the validators associated with your Node Operator by visiting the `/performance` tab. This section provides attestation rates for your validators in a table and a comparison with the Lido threshold in a chart.  
 
-### **MEV boost relays**
+![lido-performance-tab](/img/lido-csm-performance-tab.png)
 
-🚀 Cooming soon
+:::info
+All the data displayed in the performance tab comes from reports already distributed by the Lido CSM team. This means the information is not in real-time but rather backwards looking.
+:::
+
+:::info
+The provided data is sourced from the Lido CSM team. It represents the information used to determine whether your validators received rewards for previous frames.
+:::
+
+For more details, visit the [Validators' Performance section](/docs/user/staking/ethereum/lsd-pools/lido/performance.md) in this documentation.
+
+### **MEV Boost Relays**
+
+Lido CSM only allows certain relays for your node configuration. You must use at least some of the vetted relays, but you should not include any relays that are not on the approved list.
+
+You can check the list of allowed relays in the smart contracts:  
+  - **Mainnet relays**: See `get_relays` from [Mainnet](https://etherscan.io/address/0xf95f069f9ad107938f6ba802a3da87892298610e#readContract#F4)  
+  - **Holesky relays**: See `get_relays` from [Holesky](https://holesky.etherscan.io/address/0x2d86C5855581194a386941806E38cA119E50aEA3#readContract#F4)  
+
+:::warning
+You must select at least one relay to ensure the node operator does not propose vanilla blocks. As a Lido Node Operator, it is your responsibility to ensure that your infrastructure is correctly using MEV Boost.
+:::
+
+The Lido CSM Dappnode package also includes infrastructure checks and warnings in the `/dashboard` tab. Here, you can verify whether the `MEV Boost` package is running, confirm that you are subscribed to at least one approved relay, and ensure that you are not subscribed to any unauthorized relays.
+
+![lido-relays-warnings](/img/lido-csm-relays-warnings.png)
+
+:::tip
+You can select/unselect relays in the [Stakers](http://my.dappnode/stakers) tab in the Dappmanager or directly modify the relay URLs in the `MEV Boost` package configuration tab.
+:::
+
+For more details on MEV in CSM, visit the [Lido CSM Docs](https://operatorportal.lido.fi/modules/community-staking-module).
 
 ## Testnet
 
