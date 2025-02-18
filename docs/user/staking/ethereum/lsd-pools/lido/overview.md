@@ -137,7 +137,12 @@ An execution client RPC (Remote Procedure Call) is an interface that allows appl
 
 ### How to Change the RPC
 
-1. Obtain an RPC URL that provides pre-cached blockchain events.
+:::warning
+Changing the RPC is done at your own risk. Dappnode is not responsible for any performance issues or failures caused by using a centralized external RPC.
+:::
+
+1. Obtain an RPC URL that provides pre-cached blockchain events. (e.g.,
+   Infura).
 2. Navigate to the `/config` tab of your Lido CSM package:
    - [Mainnet Lido CSM package's config tab](http://my.dappnode/packages/my/lido-csm-mainnet.dnp.dappnode.eth/config)
    - [Holesky Lido CSM package's config tab](http://my.dappnode/packages/my/lido-csm-holesky.dnp.dappnode.eth/config)
