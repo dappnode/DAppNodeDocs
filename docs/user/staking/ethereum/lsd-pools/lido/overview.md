@@ -78,7 +78,7 @@ You will be able to visualize the status of your infraestructure (EC - CC - Sign
 
 ### **Performance**
 
-You can check the performance of the validators associated with your Node Operator by visiting the `/performance` tab. This section provides attestation rates for your validators in a table and a comparison with the Lido threshold in a chart.  
+You can check the performance of the validators associated with your Node Operator by visiting the `/performance` tab. This section provides attestation rates for your validators in a table and a comparison with the Lido threshold in a chart.
 
 ![lido-performance-tab](/img/lido-csm-performance-tab.png)
 
@@ -96,9 +96,10 @@ For more details, visit the [Validators' Performance section](/docs/user/staking
 
 Lido CSM only allows certain relays for your node configuration. You must use at least some of the vetted relays, but you should not include any relays that are not on the approved list.
 
-You can check the list of allowed relays in the smart contracts:  
-  - **Mainnet relays**: See `get_relays` from [Mainnet](https://etherscan.io/address/0xf95f069f9ad107938f6ba802a3da87892298610e#readContract#F4)  
-  - **Holesky relays**: See `get_relays` from [Holesky](https://holesky.etherscan.io/address/0x2d86C5855581194a386941806E38cA119E50aEA3#readContract#F4)  
+You can check the list of allowed relays in the smart contracts:
+
+- **Mainnet relays**: See `get_relays` from [Mainnet](https://etherscan.io/address/0xf95f069f9ad107938f6ba802a3da87892298610e#readContract#F4)
+- **Holesky relays**: See `get_relays` from [Holesky](https://holesky.etherscan.io/address/0x2d86C5855581194a386941806E38cA119E50aEA3#readContract#F4)
 
 :::warning
 You must select at least one relay to ensure the node operator does not propose vanilla blocks. As a Lido Node Operator, it is your responsibility to ensure that your infrastructure is correctly using MEV Boost.
@@ -117,6 +118,44 @@ For more details on MEV in CSM, visit the [Lido CSM Docs](https://operatorportal
 ## Testnet
 
 The Lido Community Staking Module is available on the Ethereum Mainnet. If you are new to staking, we recommend setting up a validator on the Testnet first to familiarize yourself with the process. The process is the same, the dappnode package for Lido CSM in testnet is **lido-csm-holesky.dnp.dappnode.eth**.
+
+## Execution Client RPC
+
+When logging in to the Lido CSM package with an Ethereum address for the first time, the execution client must query and scan all Ethereum blockchain events since the deployment of Lido's CSM smart contract. This process determines whether a node operator has already been created with that address.
+
+By default, each Lido CSM package makes these requests to the execution client running on the Dappnode where the package is installed. However, these execution clients do not cache all blockchain events, causing the query to take several minutes (approximately 10 minutes on Mainnet) depending on the execution client. This process occurs only during the first login per address, ensuring a fully decentralized approach where each user relies on their execution client.
+
+### Reducing the Waiting Time
+
+To avoid long waiting times, you can configure the package to use an alternative RPC that caches all required data (e.g., Infura's free RPCs). This significantly reduces the loading time to a few seconds.
+
+:::info
+**What is an Execution client RPC?**
+
+An execution client RPC (Remote Procedure Call) is an interface that allows applications to communicate with an Ethereum execution client. By connecting to an RPC endpoint, users and applications can retrieve blockchain information.
+:::
+
+### How to Change the RPC
+
+:::warning
+Changing the RPC is done at your own risk. Dappnode is not responsible for any performance issues or failures caused by using a centralized external RPC.
+:::
+
+1. Obtain an RPC URL that provides pre-cached blockchain events. (e.g.,
+   Infura).
+2. Navigate to the `/config` tab of your Lido CSM package:
+   - [Mainnet Lido CSM package's config tab](http://my.dappnode/packages/my/lido-csm-mainnet.dnp.dappnode.eth/config)
+   - [Holesky Lido CSM package's config tab](http://my.dappnode/packages/my/lido-csm-holesky.dnp.dappnode.eth/config)
+3. Change the `RPC_URL` environment variable in the **Lido Events Section**.
+4. Click the `Update` button
+   ![lido-csm-config-tab](/img/lido-csm-config-tab.png)
+
+:::tip
+After the first scan we suggest to change it back again to:
+
+- `http://execution.mainnet.dncore.dappnode:8545`
+- `http://execution.holesky.dncore.dappnode:8545`
+  :::
 
 ---
 
