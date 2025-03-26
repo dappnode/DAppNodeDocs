@@ -142,6 +142,15 @@ Once you want to finish your staking journey, you will need to withdraw your ETH
 This means that once you reach the end of the Beacon Chain's exit queue, your 32 ETH will show up in your withdrawal address as a state change in the blockchain, and not as a deposit. You can find more info [here](https://ethereum.org/en/staking/withdrawals/#exiting-staking-entirely).
 :::
 
+### Withdrawal Credentials
+Withdrawing both rewards and your exited 32 ETH requires `0x01` withdrawal credentials. In case you still have `0x00` credentials, you'll need to broadcast a BLS signature to upgrade them. Follow this tutorial to submit the BLS signature required for upgrading your withdrawal credentials to `0x01`:
+
+<center><iframe width="560" height="315" src="https://youtu.be/1uxOIcR92uQ" frameborder="0" allow="accelerometer; autoplay; fullscreen" ></iframe></center>
+
+:::caution Remember
+Your Withdrawal Address can only be set once and it CANNOT be modified once done. Scammers will try to set your validator's withdrawal address with one they control, so make sure you always proceed with caution and NEVER share your seed phrases!
+:::
+
 ### Opening your Web3Signer UI.
 
 Navigate to the Stakers > Ethereum menu and click on the `Upload Keystores` button on the Web3Signer card.
