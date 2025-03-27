@@ -1,19 +1,19 @@
 # 🌐 DNS
 
-By default every dappnode package runs on the docker network `dncore_network` and uses default docker dns server for name resolution. During installation time, the package is assigned a unique domain name (apart from the ones set by default by docker: container name, service name, etc) that can be used to access the services running inside the package. This document aims to provide a comprehensive guide on how to access services running inside a package using the assigned domain name.
+By default, every DAppNode package runs on the Docker network `dncore_network` and uses the default Docker DNS server for name resolution. During installation, the package is assigned a unique domain name (apart from the ones set by default by Docker: container name, service name, etc.) that can be used to access the services running inside the package. This document provides a comprehensive guide on how to access services running inside a package using the assigned domain name.
 
 ## Multiservice packages
 
-In multi-services packages the name convention is: `<serviceName>.<shortDnpName>.dappnode` where `serviceName` is the name of the service running inside the package and `shortDnpName` is the name of the package. For example, if you have a package named `my-package` running a service named `my-service`, the domain name to access the service would be `my-service.my-package.dappnode`.
+In multiservice packages, the naming convention is: `<serviceName>.<shortDnpName>.dappnode`, where `serviceName` is the name of the service running inside the package and `shortDnpName` is the name of the package. For example, if you have a package named `my-package` running a service named `my-service`, the domain name to access the service would be `my-service.my-package.dappnode`.
 
 :::info
-The short dnp name relies on the first part of the dnp name, which is the name of the package. For example, if the dnp name is `my-package.dnp.dappnode.eth`, the short dnp name would be `my-package`.
+The short DNP name is derived from the first part of the DNP name, which corresponds to the package name. For example, if the DNP name is `my-package.dnp.dappnode.eth`, the short DNP name would be `my-package`.
 :::
 
-**Example multiservioce:** [Prysm](https://github.com/dappnode/DAppNodePackage-prysm-generic)
+**Example multiservice:** [Prysm](https://github.com/dappnode/DAppNodePackage-prysm-generic)
 
-- Dnp name: `prysm.dnp.dappnode.eth`
-- Docker compose
+- DNP name: `prysm.dnp.dappnode.eth`
+- Docker Compose
 
 ```yaml
 version: "3.5"
@@ -42,14 +42,18 @@ Aliases will be:
 - beacon-chain service: `beacon-chain.prysm.dnp.dappnode`
 - validator service: `validator.prysm.dnp.dappnode`
 
+:::tip
+A main service can be defined in a multiservice package. This service will be the one used to access the package. For example, if you have a package named `my-package` running a service named `my-service` and you want to access the package using the domain name `my-package.dappnode`, you can define the service `my-service` as the main service. See [manifest file reference](https://docs.dappnode.io/docs/dev/references/manifest) for details on how to define the main service.
+:::
+
 ## Monoservice packages
 
-In mono-services packages the domain name is the same as the package name. For example, if you have a package named `my-package`, the domain name to access the service would be `my-package.dappnode`. It also follows the same convention as the multi-service packages. For example, if you have a package named `my-package` running only one service named `my-service`, the domain name to access the service would be `my-service.my-package.dappnode` or `my-package.dappnode`.
+In monoservice packages, the domain name is the same as the package name. For example, if you have a package named `my-package`, the domain name to access the service would be `my-package.dappnode`. It also follows the same convention as the multiservice packages. For example, if you have a package named `my-package` running only one service named `my-service`, the domain name to access the service would be `my-service.my-package.dappnode` or `my-package.dappnode`.
 
 **Example monoservice:** [Geth](https://github.com/dappnode/DAppNodePackage-geth-generic)
 
-- Dnp name: `geth.dnp.dappnode.eth`
-- Docker compose
+- DNP name: `geth.dnp.dappnode.eth`
+- Docker Compose
 
 ```yaml
 version: "3.5"
@@ -68,15 +72,15 @@ Alias will be:
 
 ## Staker packages - fullnode
 
-The staker packages are a special case in dappnode, they do follow the same DNS conventions mentioned above, with some extra additions:
+Staker packages are a special case in DAppNode. They follow the same DNS conventions mentioned above, with some additional features:
 
-- **EVMs dedicated docker networks**: Each EVM network supported in dappnode has a dedicated docker network that is used by the staker packages to communicate each other. The docker network name follows the convenction `<network>_network`, i.e `hoodi_network` for the hoodi network or `mainnet_network` for the mainnet network.
-- **Fullnode aliases**: The selected Execution and Consensus client has an extra domain name to indicate that its actually the client selected by the user. This domain name can be used by other packages to query the RPC node, the validator API, the beaconchain API, etc (in some cases it might reqire auth). The name convention is:
-  - Execution: `execution.<network>.dncore.dappnode`. i.e `execution.mainnet.dncore.dappnode`
+- **EVMs dedicated Docker networks**: Each EVM network supported in DAppNode has a dedicated Docker network that is used by the staker packages to communicate with each other. The Docker network name follows the convention `<network>_network`, e.g., `hoodi_network` for the Hoodi network or `mainnet_network` for the Mainnet network.
+- **Fullnode aliases**: The selected Execution and Consensus client has an extra domain name to indicate that it is the client selected by the user. This domain name can be used by other packages to query the RPC node, the validator API, the beacon chain API, etc. (in some cases, it might require authentication). The naming convention is:
+  - Execution: `execution.<network>.dncore.dappnode`, e.g., `execution.mainnet.dncore.dappnode`
   - Consensus:
-    - Beacon-chain: `beacon-chain.<network>.dncore.dappnode`. i.e `beacon-chain.mainnet.dncore.dappnode`
-    - Validator: `validator.<network>.dncore.dappnode`. i.e `validator.mainnet.dncore.dappnode`
+    - Beacon-chain: `beacon-chain.<network>.dncore.dappnode`, e.g., `beacon-chain.mainnet.dncore.dappnode`
+    - Validator: `validator.<network>.dncore.dappnode`, e.g., `validator.mainnet.dncore.dappnode`
 
 :::info
-The fullnode alias is added in both docker networks, `dncore_network` and `<network>_network`, so it can be accessed from any package running in the dappnode.
+The fullnode alias is added to both Docker networks, `dncore_network` and `<network>_network`, so it can be accessed from any package running in the DAppNode.
 :::
