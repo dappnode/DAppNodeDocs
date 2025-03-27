@@ -98,7 +98,7 @@ The notifications settings allow users to configure the notifications they want 
 
 ## **Gatus Endpoints**
 
-The most common and easiest way to configure notifications in DAppNode is by using the [Gatus](https://github.com/TwiN/gatus) standard. To configure notifications using Gatus, you need to create a `*notifications.yaml` file. This file must follow the standard defined in the [Gatus - notifications file reference]().
+The most common and easiest way to configure notifications in DAppNode is by using the [Gatus](https://github.com/TwiN/gatus) standard. To configure notifications using Gatus, you need to create a `*notifications.yaml` file. This file must follow the standard defined in the [Gatus - notifications file reference](https://docs.dappnode.io/docs/dev/references/notifications).
 
 Gatus monitors the endpoints you define and automatically triggers alerts with the desired notification payload. Additionally, you can benefit from Gatus features such as:
 
