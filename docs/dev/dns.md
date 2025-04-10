@@ -43,7 +43,7 @@ Aliases will be:
 - validator service: `validator.prysm.dnp.dappnode`
 
 :::tip
-A main service can be defined in a multiservice package. This service will be the one used to access the package. For example, if you have a package named `my-package` running a service named `my-service` and you want to access the package using the domain name `my-package.dappnode`, you can define the service `my-service` as the main service. See [manifest file reference](https://docs.dappnode.io/docs/dev/references/manifest) for details on how to define the main service.
+A main service can be defined in a multiservice package. This service will be the one used to access the package. For example, if you have a package named `my-package` running a service named `my-service` and you want to access the package using the domain name `my-package.dappnode`, you can define the service `my-service` as the main service. See [manifest file reference - mainService](https://docs.dappnode.io/docs/dev/references/manifest#mainservice) for details on how to define the main service.
 :::
 
 ## Monoservice packages
