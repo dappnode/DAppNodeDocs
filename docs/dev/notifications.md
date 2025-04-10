@@ -80,9 +80,7 @@ curl -X POST \
 
 The notifications inbox is a place where users can see all the notifications that have been sent to them. Notifications are grouped by category and can be filtered by date, `dnpName`, and category. Users can also mark notifications as read or delete them.
 
-<p align="center">
-  <img src="/img/notifications-inbox.png" alt="Notifications Inbox" width="400"/>
-</p>
+![Notifications-Inbox](/img/notifications-inbox.png)
 
 ---
 
@@ -90,89 +88,15 @@ The notifications inbox is a place where users can see all the notifications tha
 
 The notifications settings allow users to configure the notifications they want to receive. Users can enable or disable notifications for each category and set thresholds for each notification. Thresholds determine when a notification should be sent. For example, if a user wants to receive a notification when CPU usage exceeds 80%, they can set the threshold to 80%. If the CPU usage goes above 80%, a notification will be sent.
 
-<p align="center">
-  <img src="/img/notifications-settings.png" alt="Notifications Settings" width="400"/>
-</p>
+![Notifications-Settings](/img/notifications-settings.png)
 
----
+Furthermore, the notifications settings can be configured also during the installation process of the dappnode package.
 
-## **Gatus Endpoints**
+![Notifications-Settings-installer](/img/notifications-settings-installer.png)
 
-The most common and easiest way to configure notifications in DAppNode is by using the [Gatus](https://github.com/TwiN/gatus) standard. To configure notifications using Gatus, you need to create a `*notifications.yaml` file. This file must follow the standard defined in the [Gatus - notifications file reference](https://docs.dappnode.io/docs/dev/references/notifications).
-
-Gatus monitors the endpoints you define and automatically triggers alerts with the desired notification payload. Additionally, you can benefit from Gatus features such as:
-
-- `interval`: The interval at which the endpoint will be monitored.
-- `failure-threshold`: The number of consecutive failures before the alert is triggered.
-- `success-threshold`: The number of consecutive successes before the alert is resolved.
-- `send-on-resolved`: If set to `true`, a notification will be sent when the alert is resolved.
-
-### **Example**
-
-```yaml
-endpoints:
-  - name: "Mainnet ETH Node Syncing Check" # Notification title
-    enabled: true
-    group: "ethereum"
-    url: "http://geth.dappnode:8545"
-    method: "POST"
-    body: |
-      {"jsonrpc": "2.0", "id": 1, "method": "eth_syncing", "params": []}
-    headers:
-      Content-Type: "application/json"
-    interval: "30s"
-    conditions:
-      - "[BODY].result == false"
-    definition:
-      title: "Mainnet ETH Node Synced Check" # Notifications - settings: title of the notification to be configured
-      description: "Check if the Mainnet ETH Node is synced. You will receive a notification if the node is syncing and another one when it is synced." # Notifications - settings: description of the notification to be configured
-    alerts:
-      - type: custom
-        enabled: true
-        description: "Geth Ethereum Node syncing" # Notification description
-        failure-threshold: 2
-        success-threshold: 1
-        send-on-resolved: true
-```
-
----
-
-## **Custom Endpoints**
-
-In cases where Gatus has limitations, you can create custom endpoints that will be triggered by Gatus. These endpoints are responsible for sending notifications to the notifications package.
-
-To use custom endpoints, retrieve the user settings from the DAppManager API:
-
-```bash
-curl -X GET \
-  http://dappmanager.dappnode/package-manifest/dms.dnp.dappnode.eth \
-  -H 'Content-Type: application/json'
-```
-
-The response will include the manifest with user settings for custom endpoints:
-
-```json
-{
-  "notifications": {
-    "customEndpoints": [
-      {
-        "name": "string", // e.g., "Package updates notifications"
-        "description": "string", // e.g., "Receive package updates notifications when a new version is available."
-        "enabled": true // e.g., true
-      }
-    ]
-  }
-}
-```
-
-### **Example**
-
-```yaml
-customEndpoints:
-  - name: "Package updates notifications"
-    description: "Receive package updates notifications when a new version is available."
-    enabled: true
-```
+:::tip
+The notifications settings are persisted during the automatic update of the package.
+:::
 
 ---
 
@@ -182,3 +106,7 @@ Currently, the only communication channel available is the DAppNode UI. However,
 
 1. Web push notifications
 2. Telegram
+
+---
+
+Thanks for reading the guide! If you found some problem in the process, do not hesitate to contact us in Discord / Telegram.
