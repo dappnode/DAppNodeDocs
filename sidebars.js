@@ -561,6 +561,11 @@ const sidebars = {
           label: "Setup Wizard",
           id: "dev/references/setup-wizard",
         },
+        {
+          type: "doc",
+          label: "Notifications",
+          id: "dev/references/notifications",
+        },
       ],
     },
     {
@@ -588,6 +593,21 @@ const sidebars = {
       type: "doc",
       label: "Package Publishing",
       id: "dev/package-publishing/publish-packages-clients",
+    },
+    {
+      type: "doc",
+      label: "Package Metrics",
+      id: "dev/metrics",
+    },
+    {
+      type: "doc",
+      label: "Package Notifications",
+      id: "dev/notifications",
+    },
+    {
+      type: "doc",
+      label: "Package DNS",
+      id: "dev/dns",
     },
     {
       type: "doc",
