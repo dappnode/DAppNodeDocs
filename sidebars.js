@@ -403,6 +403,32 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Notifications",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "user/notifications/overview",
+        },
+        {
+          type: "doc",
+          label: "Inbox",
+          id: "user/notifications/inbox",
+        },
+        {
+          type: "doc",
+          label: "Settings",
+          id: "user/notifications/settings",
+        },
+        {
+          type: "doc",
+          label: "Legacy",
+          id: "user/notifications/legacy",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Ethical metrics",
       items: [
         {
