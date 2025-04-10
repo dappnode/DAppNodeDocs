@@ -1,4 +1,4 @@
-# Notifications File Reference
+# Notifications File Reference (Comming soon)
 
 This document serves as a reference for the Notifications configuration file in DAppNode. It defines the structure, fields, and expected values based on the [JSON Schema](https://github.com/dappnode/DAppNode/raw/schema/notifications.schema.json).
 
