@@ -27,7 +27,7 @@ In Aragon, the ACL (Access Control List) is a core smart contract that manages p
 
 ## Actions 💪
 
-The following outlines how to perform each necessary action for this implementation:
+The following outlines how to perform each possible action:
 
 - **Check permission manager**
 
