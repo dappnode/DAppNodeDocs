@@ -590,9 +590,20 @@ const sidebars = {
       ],
     },
     {
-      type: "doc",
+      type: "category",
       label: "Package Publishing",
-      id: "dev/package-publishing/publish-packages-clients",
+      items: [
+        {
+          type: "doc",
+          label: "Publishing Guide",
+          id: "dev/package-publishing/publish-packages-clients",
+        },
+        {
+          type: "doc",
+          label: "Package Ownership",
+          id: "dev/package-publishing/package-ownership",
+        },
+      ],
     },
     {
       type: "doc",
