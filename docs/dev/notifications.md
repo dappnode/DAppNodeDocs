@@ -88,6 +88,12 @@ The notifications inbox is a place where users can see all the notifications tha
 
 The notifications settings allow users to configure the notifications they want to receive. Users can enable or disable notifications for each category and set thresholds for each notification. Thresholds determine when a notification should be sent. For example, if a user wants to receive a notification when CPU usage exceeds 80%, they can set the threshold to 80%. If the CPU usage goes above 80%, a notification will be sent.
 
+In order to have a slider in the UI to adjust the threshold of the notification, the (gatus) endpoint must have a `metric` object. Yo can see it in the [Notifications file reference section](/docs/dev/references/notifications.md#example-gatus-endpoints).
+
+:::info
+Only a threshold per endpoint is supported. The value it will be extracted from the first entry from the conditions array. Updating the value of the slider in the UI will update also the value of that condition.
+:::
+
 ![Notifications-Settings](/img/notifications-settings.png)
 
 Furthermore, the notifications settings can be configured also during the installation process of the dappnode package.
