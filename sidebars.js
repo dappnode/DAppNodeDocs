@@ -657,6 +657,11 @@ const sidebars = {
           label: "Avoid proposing Vanilla Blocks",
           id: "smooth/deep-dive-into-smooth/vanilla-blocks",
         },
+        {
+          type: "doc",
+          label: "Validator Consolidations In Smooth",
+          id: "smooth/deep-dive-into-smooth/consolidations",
+        },
       ],
     },
     {
