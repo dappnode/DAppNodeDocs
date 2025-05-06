@@ -20,8 +20,8 @@ Consolidation is not required—Smooth will continue to work normally even if yo
 
 However, if you want to consolidate any of your validators, we recommend upgrading your validator’s withdrawal credentials to 0x02 and performing the consolidation through the [Staking Launchpad](https://launchpad.ethereum.org/en/) interface. You will not need to do anything else; Smooth will take care of the rest.
 
-A consolidation may take a few days to complete. Once your source validator exits the chain, Smooth will transfer the pending rewards to the target validator. We recommend checking [Smooth's dashboard](https://smooth.dappnode.io/dashboard) to see if the transfer was successful.
-
 :::danger
 DO NOT manually unsubscribe any validator before consolidating it. Manually unsubscribing a validator will remove its pending rewards and Smooth will not be able to transfer them to the target validator.
 :::
+
+A consolidation may take a few days to complete. Once your source validator exits the chain, Smooth will transfer the pending rewards to the target validator. We recommend checking [Smooth's dashboard](https://smooth.dappnode.io/dashboard) to see if the transfer was successful.
