@@ -15,7 +15,9 @@ There are 2 main sources of rewards in Smooth:
 
 When a validator has an active subscription to the pool (`Active` or `YellowCard` state) it is eligible for rewards, meaning that it will receive a given share of each reward that is sent to the pool. Validators in `RedCard` are considered subscribed, but don't earn rewards until they become active again.
 
-**Validator Share = (Validator Effective Balance / Total Effective Balance) × Total Rewards to Distribute**
+<div align="center"><strong>
+Validator Share = (Validator Effective Balance / Total Effective Balance) × Total Rewards to Distribute
+</strong></div>
 
 Where:
 - **Validator Effective Balance**: The staked amount of ETH of the validator.
