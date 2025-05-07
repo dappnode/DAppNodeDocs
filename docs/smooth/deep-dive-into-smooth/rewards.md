@@ -15,6 +15,15 @@ There are 2 main sources of rewards in Smooth:
 
 When a validator has an active subscription to the pool (`Active` or `YellowCard` state) it is eligible for rewards, meaning that it will receive a given share of each reward that is sent to the pool. Validators in `RedCard` are considered subscribed, but don't earn rewards until they become active again.
 
+$$
+\text{Validator Share} = \frac{\text{Validator Effective Balance}}{\text{Total Effective Balance}} \times \text{Total Rewards to Distribute}
+$$
+
+Where:
+- **Validator Effective Balance**: The staked amount of ETH of the validator.
+- **Total Effective Balance**: The sum of all the effective balances of all validators in the pool.
+- **Rewards to Distribute**: The amount of rewards that entered the pool. Normally, these come from block proposals or donations.
+
 :::info
 Since the Pectra Fork on May 7, 2025 (10:05:11 UTC), validators can stake up to 2,048 ETH. The more ETH a validator stakes, the more frequently they are expected to be selected to propose blocks. In Smooth, this directly affects how rewards are distributed: for example, a validator staking 64 ETH will earn twice as much as one staking 32 ETH. This applies to all types of rewards, including donations.
 :::
