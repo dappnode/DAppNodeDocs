@@ -21,7 +21,7 @@ Validator Share = (Validator Effective Balance / Total Effective Balance) × Rew
 
 Where:
 - **Validator Effective Balance**: The staked amount of ETH of the validator.
-- **Total Effective Balance**: The sum of all the effective balances of all validators in the pool.
+- **Total Effective Balance**: The sum of all the effective balances of eligible validators in the pool (in `Active` or `YellowCard` state).
 - **Rewards to Distribute**: The amount of rewards that entered the pool. Normally, these come from block proposals or donations.
 
 :::info
