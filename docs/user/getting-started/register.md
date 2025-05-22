@@ -51,16 +51,19 @@ With your account ready and Recovery Token secured:
 
 <details>
   <summary><b>Want to change your password?</b></summary>
+
 Visit <a href="http://my.dappnode/system/profile">Profile Settings</a> to reset it.
 </details>
 
 <details>
   <summary><b>Forgot your password?</b></summary>
+
 Go to the <a href="http://my.dappnode/">Login</a> page and click on "Forgot your password?". You'll be prompted to enter the recovery token you saved during registration. Once entered, you'll be able to reset your password.
 </details>
 
 <details>
   <summary><b>Lost your recovery token?</b></summary>
+  
 If you've lost your recovery token, there is still a chance to regain access to the Dappmanager UI. However, you will require <a href="/docs/user/access-your-dappnode/terminal">accessing via terminal</a>. Once you are in, you can get your recovery token by running the following command:
 
 ```bash
