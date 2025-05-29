@@ -18,7 +18,7 @@ This is the full list of events that will be notified in your Dappnode.
 
 - Memory usage
 - CPU load
-- Disk status
+- Disk usage
 - Device temperature
 
 ### ⚙️ Execution Clients
