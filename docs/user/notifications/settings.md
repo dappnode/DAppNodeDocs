@@ -1,4 +1,4 @@
-### 🛠️ Notifications Settings
+# 🛠️ Notifications Settings
 
 In the settings section you can configure the type of notification you would like to receive per package. 
 

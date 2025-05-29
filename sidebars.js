@@ -412,6 +412,11 @@ const sidebars = {
         },
         {
           type: "doc",
+          label: "Notifications List",
+          id: "user/notifications/notifications-list",
+        },
+        {
+          type: "doc",
           label: "Inbox",
           id: "user/notifications/inbox",
         },

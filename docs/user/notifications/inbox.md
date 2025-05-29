@@ -1,5 +1,4 @@
-
-### 📨 Notifications Inbox
+# 📨 Notifications Inbox
 
 In the inbox section, you will see new notifications and the complete history.
 To understand how notifications work, there are several key characteristic to consider:
