@@ -1,5 +1,5 @@
 ---
-title: "\U0001F4E3 Dappnode Notifications User Documentation"
+title: "\U0001F4E3 Notifications system"
 
 ---
 
@@ -35,7 +35,7 @@ Find the **bell icon** at the top right corner of your Dappmanager. Click it to 
 ### 📚 Side Menu
 
 You’ll also find a dedicated **Notifications** section in the side menu.
-![Notifications-access](https://hackmd.io/_uploads/rJuhJsHfxl.png)
+![Notifications-access](/img/Notifications_access.png)
 
 
 ## 2. List of Notifications
@@ -98,7 +98,7 @@ To understand how notifications work, there are several key characteristic to co
 - **Banner**: It is shown at the top of the UI for urgent notices.
 - **Filter:** You can filter notifications in the search bar by Package name (`DnpName`) Title and keywords.
 
-![Notifications_inbox](https://hackmd.io/_uploads/ryFNloSGgl.png)
+![Notifications_inbox](/img/Notifications_inbox.png)
 
 
 ### 🛠️ Settings
@@ -113,13 +113,13 @@ In the settings section you can configure the type of notification you would lik
 - Customize which types of notifications are active
 - Set thresholds with a **slider** (e.g., temperature limit before alert)
 
-![Notifications_settings](https://hackmd.io/_uploads/rJ2dxiHMle.png)
+![Notifications_settings](/img/Notifications_settings.png)
 
 ### Legacy
 
 In the legacy section you have access to the previous system of notifications with email and telegram. The aim of the new notification system is to unify the notifications in a single channel in desktop and mobile to facilitate the user experience and be more reliable, configurable and scalable. Therefore, this section will be deprecated in the upcoming core releases. 
 
-![Notifications_legacy](https://hackmd.io/_uploads/HJU2gsSGll.png)
+![Notifications_legacy](/img/Notifications_legacy.png)
 
 
 ### The Notification system will evolve continuously
