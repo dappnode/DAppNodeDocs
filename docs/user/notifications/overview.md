@@ -30,7 +30,7 @@ Find the **bell icon** at the top right corner of your Dappmanager. Click it to 
 ### 📚 Side Menu
 
 You’ll also find a dedicated **Notifications** section in the side menu.
-![Notifications-access](/img/notifications_access.png)
+![Notifications-access](/img/notifications-access.png)
 
 
 ## 2. List of Notifications
