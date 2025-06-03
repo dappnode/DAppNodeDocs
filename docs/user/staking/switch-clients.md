@@ -1,9 +1,5 @@
----
-title: Switch staking clients
+# Switch staking clients
 
----
-
-## Switch staking clients
 This guide explains how to switch execution and consensus clients on Dappnode for Ethereum, Gnosis, and Lukso networks. It includes detailed information about the switching process and expected waiting times for resynchronization and attestation.
 
 ### General Information
