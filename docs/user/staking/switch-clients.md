@@ -2,13 +2,13 @@
 
 This guide explains how to switch execution and consensus clients on Dappnode for Ethereum, Gnosis, and Lukso networks. It includes detailed information about the switching process and expected waiting times for resynchronization and attestation.
 
-### General Information
+## General Information
 Important considerations before switching clients:
 
-**Downtime:** Switching clients will result in temporary downtime and missed attestations.
-**Sync Time:** New clients will need time to synchronize with the network.
-**Disk Space:** Ensure you have enough disk space for the new client before switching.
-**Backup:** Always backup your validator keys and wallet information before making any changes.
+- **Downtime:** Switching clients will result in temporary downtime and missed attestations.
+- **Sync Time:** New clients will need time to synchronize with the network.
+- **Disk Space:** Ensure you have enough disk space for the new client before switching.
+- **Backup:** Always backup your validator keys and wallet information before making any changes.
 
 **Basic Switching Process Overview**
 The following switching process applies to Ethereum, Gnosis and Lukso. 
@@ -36,7 +36,7 @@ Go to the new client package in the packages tab and check the logs section (Tec
 Go to Beaconcha.in dashboard and check if your validators are active and attesting. 
 
 
-### Execution client switch
+## Execution client switch
 
 The current execution clients supported in Dappnode are the following: 
 
@@ -55,9 +55,10 @@ Switching execution clients is a **critical operation that can substantially imp
 
 If the client was not downloaded and sync previously, an initial sync is needed. It typically takes from 12 to 48 hours depending on the client. All times mentioned here assume standard Solid State Disk storage and reasonable network conditions. Actual times may vary based on hardware, network conditions, and chain state. Attestation impact directly correlates with sync time plus small overhead for client initialization.
 
-The sync process might **require high resources of your hardware**, do not worry if your CPU temperature reaches 100ºC or your CPU usage is +90%, it is normal during the sync process. It would be problematic only if it stays at these levels for several days. In this case check maintenance practices in this documentation. 
+:::info The sync process might **require high resources of your hardware**, do not worry if your CPU temperature reaches 100ºC or your CPU usage is +90%, it is normal during the sync process. It would be problematic only if it stays at these levels for several days. In this case check maintenance practices in this documentation. 
+:::
 
-### Consensus client switch
+## Consensus client switch
 
 The current consensus clients supported in Dappnode are the following: 
 Ethereum consensus clients: Lighthouse, Teku, Lodestar Nimbus and Prysm.
@@ -75,9 +76,10 @@ Checkpoint sync helps to connect to the current state of the blockchain getting 
 
 It is always advisable to switch to a new consensus client from scratch (without existent volumes) to trigger the checkpoint sync. Otherwise, if you have a client with previous blockchain data, it will require more time to sync. 
 
-After sync time completes, it has an extra downtime of 1-3 epochs (6 - 18 minutes). This is the “doppelganger” check, an extra protection measure to avoid slashing.
+:::info After sync time completes, it has an extra downtime of 1-3 epochs (6 - 18 minutes). This is the “doppelganger” check, an extra protection measure to avoid slashing.
+:::
 
-### Blockchains sync time & recommended disk space
+## Blockchains sync time & recommended disk space
 The sync time varies depending on the blockchain selected to run your validators. 
 
 | Blockchain | Sync time | Disk space recommended |
@@ -88,7 +90,7 @@ The sync time varies depending on the blockchain selected to run your validators
 | Hoodi      | 2-4 h    | +0.5 TB                |
 
 
-### Best Practices
+## Best Practices
 
 **Plan Your Switch**: Choose a time with low network activity for switching to minimize the impact of missed attestations.
 
@@ -111,7 +113,7 @@ The sync time varies depending on the blockchain selected to run your validators
 **Enable Dappnode notifications:** Push notifications can help to track the status of your validators and clients. 
 
 
-### Troubleshooting
+## Troubleshooting
 Common Issues and Solutions
 
 **New Client Won't Start**
