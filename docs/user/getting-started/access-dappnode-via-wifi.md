@@ -22,6 +22,7 @@ You **don't need** a monitor, keyboard, or mouse to use Dappnode. You just need 
 
 <details>
   <summary><b>How can I change my Dappnode Wi-Fi password?</b></summary>
+  
   To change the Wi-Fi password:
 
   1. While connected to the Dappnode, go to <a href="http://my.dappnode/wireless-network/wifi">Wi-Fi Settings</a>
@@ -34,5 +35,6 @@ You **don't need** a monitor, keyboard, or mouse to use Dappnode. You just need 
 
 <details>
   <summary><b>I can't access my Dappnode via Wi-Fi</b></summary>
+
   You can explore other methods to access your Dappnode <a href="/docs/user/access-your-dappnode/overview">here</a>.
 </details>
