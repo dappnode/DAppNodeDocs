@@ -133,6 +133,11 @@ const sidebars = {
           id: "user/staking/overview",
         },
         {
+          type: "doc",
+          label: "Switch staking clients",
+          id: "user/staking/switch-clients",
+        },
+        {
           type: "category",
           label: "Ethereum",
           items: [
