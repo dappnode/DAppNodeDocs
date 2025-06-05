@@ -33,6 +33,9 @@ endpoints:
     definition:
       title: "Mainnet ETH Node Synced Check" # Notifications - settings: title of the notification to be configured
       description: "Check if the Mainnet ETH Node is synced. You will receive a notification if the node is syncing and another one when it is synced." # Notifications - settings: description of the notification to be configured
+    correlationId: "geth-eth-syncing" # Unique identifier for each notification endpoint
+    isBanner: false  
+    priority: "medium"
     alerts:
       - type: custom
         enabled: true
@@ -51,6 +54,9 @@ An array of configured notification endpoints. Each endpoint object includes:
 - **`conditions`** (`string[]`, required): Array of string expressions representing the conditions that trigger the alert.
 - **`interval`** (`string`, required): Time between checks. Must match the pattern `^[0-9]+[smhd]$` (e.g., `10s`, `5m`, `1h`, `1d`).
 - **`group`** (`string`, required): Group to which the endpoint belongs.
+- **`correlationId`** (`string`, required): It is the unique identifier that links triggered and resolved notifications based on their endpoint.
+- **`isBanner`** (`boolean`, required): Boolean that controls whether a banner displaying the notification appears at the top of the DAppManager UI. Should be set to `true` only for relevant notifications.
+- **`priority`** (`string`, required): Priority that will be displayed on the notification. One of: `low`, `medium`, `high`, `critical`.
 - **`alerts`** (`array`, required): List of alert configurations for this endpoint.
 
   Each alert object includes:
@@ -105,6 +111,8 @@ The response will include the manifest with user settings for custom endpoints:
 ```yaml
 customEndpoints:
   - name: "Package updates notifications"
+    isBanner: false
+    correlationId: "dappmanager-update-pkg"
     description: "Receive package updates notifications when a new version is available."
     enabled: true
 ```
@@ -114,6 +122,8 @@ Each object includes:
 - **`enabled`** (`boolean`, required): Whether the custom endpoint is active.
 - **`name`** (`string`, required): Unique name for the custom metric.
 - **`description`** (`string`, required): Explanation of the custom metric.
+- **`correlationId`** (`string`, required): It is the unique identifier that links triggered and resolved notifications based on their endpoint.
+- **`isBanner`** (`boolean`, required): Boolean that controls whether a banner displaying the notification appears at the top of the DAppManager UI. Should be set to `true` only for relevant notifications.
 - **`metric`** (`object`, optional): Metric boundaries and unit.
   - **`treshold`** (`number`, optional): Threshold value to trigger alert (note: possibly a typo, intended to be `threshold`).
   - **`min`** (`number`, optional): Minimum acceptable value.

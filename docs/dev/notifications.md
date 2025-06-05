@@ -31,11 +31,15 @@ Each notification has a structure that includes the following fields:
 ```json
 {
   "title": "string", // e.g., "Geth Ethereum Node Sync Status"
-  "body": "string", // e.g., "Triggered: Geth Ethereum Node Syncing"
+  "body": "string", // e.g., "Geth Ethereum Node Syncing"
   "category": "string", // e.g., "ethereum"
   "dnpName": "string", // e.g., "geth.dnp.dappnode.eth"
   "seen": false, // e.g., false
   "timestamp": "string", // e.g., "2023-10-01T12:00:00Z"
+  "priority": "string", // e.g., "medium"
+  "status": "string", // e.g., "triggered"
+  "correlationId": "string", // e.g., "geth-eth-syncing"
+  "isBanner": false, // e.g., false
   "callToAction": {
     "title": "string", // e.g., "View Logs"
     "url": "string" // e.g., "http://dappmanager.dappnode/packages/my/geth.dnp.dappnode.eth/logs"
@@ -66,11 +70,14 @@ curl -X POST \
     "body": "This is a test notification sent with curl",
     "category": "other",
     "dnpName": "test.dnp.dappnode.eth",
+    "priority": "low",
+    "status": "triggered",
     "callToAction": {
       "title": "Hello World",
       "url": "http://dappmanager.dappnode"
     },
-    "icon": "https://gateway.ipfs.dappnode.io/ipfs/QmTVc5LQkTuaN3VxcteQ2E27pHSVJakE6XPo2FMxQTP284"
+    "correlationId": "testPkg-test",
+    "isBanner": false
 }'
 ```
 
