@@ -55,7 +55,8 @@ Switching execution clients is a **critical operation that can substantially imp
 
 If the client was not downloaded and sync previously, an initial sync is needed. It typically takes from 12 to 48 hours depending on the client. All times mentioned here assume standard Solid State Disk storage and reasonable network conditions. Actual times may vary based on hardware, network conditions, and chain state. Attestation impact directly correlates with sync time plus small overhead for client initialization.
 
-:::info The sync process might **require high resources of your hardware**, do not worry if your CPU temperature reaches 100ºC or your CPU usage is +90%, it is normal during the sync process. It would be problematic only if it stays at these levels for several days. In this case check maintenance practices in this documentation. 
+:::info 
+The sync process might **require high resources of your hardware**, do not worry if your CPU temperature reaches 100ºC or your CPU usage is +90%, it is normal during the sync process. It would be problematic only if it stays at these levels for several days. In this case check maintenance practices in this documentation. 
 :::
 
 ## Consensus client switch
@@ -76,7 +77,8 @@ Checkpoint sync helps to connect to the current state of the blockchain getting 
 
 It is always advisable to switch to a new consensus client from scratch (without existent volumes) to trigger the checkpoint sync. Otherwise, if you have a client with previous blockchain data, it will require more time to sync. 
 
-:::info After sync time completes, it has an extra downtime of 1-3 epochs (6 - 18 minutes). This is the “doppelganger” check, an extra protection measure to avoid slashing.
+:::info 
+After sync time completes, it has an extra downtime of 1-3 epochs (6 - 18 minutes). This is the “doppelganger” check, an extra protection measure to avoid slashing.
 :::
 
 ## Blockchains sync time & recommended disk space
@@ -116,45 +118,46 @@ The sync time varies depending on the blockchain selected to run your validators
 ## Troubleshooting
 Common Issues and Solutions
 
-**New Client Won't Start**
-
-
+<details>
+  <summary><b>New Client Won't Start</b></summary>
+  
 - Check disk space availability (Go to Dashboard)
 - Verify port conflicts aren't occurring (Go to Support tab/ Ports)
 - Ensure JWT token is correctly configured (Go to Package info)
+</details>
 
-
-**Synchronization Takes Too Long**
-
-
+<details>
+  <summary><b>Synchronization Takes Too Long</b></summary>
+  
 - Check your internet connection speed 
 - Verify sufficient disk I/O performance (use SSD)
 - Restart client in the package to refresh peer connections
 - Delete the volumes of the client package to trigger Checkpoint sync
+</details>
 
-
-**Missing Attestations After Switch**
-
-
+<details>
+  <summary><b>Missing Attestations After Switch</b></summary>
+  
 - Verify execution and consensus clients are properly connected
 - Check that validator keys were correctly imported 
 - Ensure the beacon chain is fully synced
+</details>
 
-
-**API Connection Errors**
-
-
+<details>
+  <summary><b>API Connection Errors</b></summary>
+  
 - Verify API endpoints are correctly configured
 - Check firewall settings
 - Ensure proper authentication is configured
+</details>
 
-
-**High Resource Usage**
-
+<details>
+  <summary><b>High Resource Usage</b></summary>
+  
 - Different clients have different resource profiles
 - Hardware Maintenance (cleaning dust…)
 - Consider hardware upgrades if consistently overloaded
-
+</details>
 
 If you are experiencing a different problem, you can:
 - Ask the community in the support channel in Discord.
