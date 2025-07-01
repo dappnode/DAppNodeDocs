@@ -39,12 +39,14 @@ Consolidation does not change your withdrawal address or risk your funds. It sim
 
 ## How do I consolidate my Gnosis validators? 
 Step 1: Go to https://consolidate.gnosischain.com/
+
 Step 2: Connect your wallet. Remember to use the same address with which you did the staking deposit of your validators. 
 ![Continue](/img/continue.png)
 
 Step 3: You will see a list of your active validators in the UI.
 ![summary](/img/summary.png)
 Step 4: Click Summary button
+
 Step 5: Check the validator list and the target validator. The target validator will stay and the rest will be exited. Click Consolidate Batch
 ![List_validators](/img/list_validators.png)
 
