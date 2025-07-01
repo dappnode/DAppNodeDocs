@@ -246,6 +246,11 @@ const sidebars = {
               label: "Gnosis Incentive Program",
               id: "user/staking/gnosis-chain/incentive-program",
             },
+            {
+              type: "doc",
+              label: "Gnosis Validator consolidation",
+              id: "user/staking/gnosis-chain/consolidate-gnosis-validators",
+            },
           ],
         },
         {
