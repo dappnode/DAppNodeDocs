@@ -248,8 +248,8 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "Gnosis Validators Consolidation",
-              id: "user/staking/gnosis-chain/consolidate-gnosis-validators",
+              label: "Consolidate Gnosis Validators",
+              id: "user/staking/gnosis-chain/consolidation-gnosis",
             },
           ],
         },
