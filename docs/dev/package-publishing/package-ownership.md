@@ -1,6 +1,6 @@
 # Package Ownership
 
-This guide outlines the role permission system used in Dappnode package management, powered by Aragon’s ACL (Access Control List) smart contracts. It explains how to check and modify roles such as permission managers and developers. 
+This guide outlines the role permission system used in Dappnode package management, powered by Aragon’s ACL (Access Control List) smart contracts. It explains how to check and modify roles such as permission managers and developers.
 
 Whether you're assigning roles or verifying access, this doc walks you through each step clearly and effectively.
 
@@ -8,13 +8,20 @@ Whether you're assigning roles or verifying access, this doc walks you through e
 
 For every package, there are three possible roles for any Ethereum address:
 
-- **Permission manager** => The address that can grant or revoke developer permissions for other addresses. This role can be held by only one address.
-- **Developer** => Addresses that are allowed to publish new versions of the package.
-- **Default / Standard** => Addresses that do not have any permissions related to the package.
+- #### Permission manager:
+
+  The address that can grant or revoke developer permissions for other addresses. This role can be held by only one address.
+
+- #### Developer:
+
+  Addresses that are allowed to publish new versions of the package.
+
+- #### Standard:
+  Addresses that do not have any permissions related to the package.
 
 ## Dappnode's ACLs :closed_lock_with_key:
 
-Currently, granting or revoking developer permissions, or assigning a new permission manager, must be done through the respective smart contract ACL of the package repository.
+Dappnode package permissions are managed via the smart contract ACL of their respective package repositories.
 
 :::info
 In Aragon, the ACL (Access Control List) is a core smart contract that manages permissions. It determines which address (or entity) can call which function on which app (smart contract).
@@ -25,76 +32,72 @@ In Aragon, the ACL (Access Control List) is a core smart contract that manages p
 - ACL `.public` => [See the SC in Etherscan](https://etherscan.io/address/0xFCb2C44E61031AE29e5c54A700FB6B4FB430dA4C#readProxyContract)
 - ACL `.dnp` => [See the SC in Etherscan](https://etherscan.io/address/0x89d0A07b792754460Faa49e57437B40aA33FB757#readProxyContract)
 
-## Actions 💪
+## Package Management UI ⚙️
 
-The following outlines how to perform each possible action:
+Our package publishing UI includes an "Ownership" tab that allows you to check the current role of an address for a specified package and perform actions based on that role.
 
-- **Check permission manager**
+You can access this UI by navigating to the [Dappnode SDK-publish UI](https://dappnode.github.io/sdk-publish).
 
-  1. Go to the `Read As Proxy` tab in the package's respective ACL
-  2. Expand and provide the following arguments to the `getPermissionManager` function:
-     - **\_app** => The address where the current version of the package is deployed
+Here's a guide to help you use it:
 
-       :::info
-       This address can be found by typing the package ENS into Etherscan's Mainnet search bar.
-       :::
-     - **role** => `0x0000000000000000000000000000000000000000000000000000000000000001`
-  3. Click `Query` to retrieve the permission manager address
+1. **Connect your wallet**, if it’s not already connected. The connected wallet address will be used for role checking.
+   ![Connect Wallet](/img/pkg-ownership-connect.png)
 
-     :::info
-     By default, the permission manager does not have publishing rights. After (or before) becoming the manager, the address must also be granted developer permissions if it intends to publish new versions.
-     :::
+2. **Click the "Ownership" tab** in the navigation bar.
+   ![Navigate to "Ownership" tab](/img/pkg-ownership-navigate.png)
 
-- **Set a new permission manager**
+3. **Enter the package's ENS** you want to check or manage.
+   ![Provide ENS](/img/pkg-ownership-ens.png)
 
-  :::danger
-  This action will revoke the current manager's permissions and assign management to a new address.
+4. **Review your role.**
+
+Once the ENS is submitted, your role for the specified package will be displayed:
+
+- ### Standard Address
+
+  Your address has no special permissions for this package. You can check who the current manager is and contact them to request permission.
+  ![Standard Address](/img/pkg-ownership-standard.png)
+
+- ### Developer Address
+
+  As a developer, you are allowed to publish new versions of the package. To do this, click on the "Publishing" tab in the navigation bar.
+  ![Developer Address](/img/pkg-ownership-developer.png)
+
+  :::info
+  A package can have multiple addresses with developer permissions.
   :::
 
-  1. Go to the `Write As Proxy` tab in the package's respective ACL
-  2. Connect with the current permission manager address (click `Connect to Web3`)
-  3. Expand and provide the following arguments to the `setPermissionManager` function:
-     - **\_newManager** => The address that will become the new permission manager
-     - **\_app** => The address where the current version of the package is deployed
-     - **role** => `0x0000000000000000000000000000000000000000000000000000000000000001`
-  4. Click `Write` and confirm the transaction
+- ### Manager Address
 
-- **Grant publishing permissions to an address (developer):**
+  The manager is typically the address that published the first version of the package. It is the only address that can transfer management rights, as well as grant or revoke developer permissions.
 
-  1. Go to the `Write As Proxy` tab in the package's respective ACL
-  2. Connect with the current permission manager address (click `Connect to Web3`)
-  3. Expand and provide the following arguments to the `grantPermission` function:
-     - **\_entity** => The address to be granted with developer permissions
-     - **\_app** => The address where the current version of the package is deployed
-     - **role** => `0x0000000000000000000000000000000000000000000000000000000000000001`
-  4. Click `Write` and confirm the transaction
+  :::info
+  A package can only have one address as its package manager.
+  :::
 
-- **Revoke publishing permissions from an address:**
+  - #### Set a New Permission Manager
 
-  1. Go to the `Write As Proxy` tab in the package's respective ACL
-  2. Connect with the current permission manager address (click `Connect to Web3`)
-  3. Expand and provide the following arguments to the `revokePermission` function:
-     - **\_entity** => The address to revoke developer permissions from
-     - **\_app** => The address where the current version of the package is deployed
-     - **role** => `0x0000000000000000000000000000000000000000000000000000000000000001`
-  4. Click `Write` and confirm the transaction
+    :::danger
+    Changing the manager will transfer full control of the package to the specified address, revoking all manager permissions from the current manager. This action is irreversible.
+    :::
 
-- **Check if an address is a developer (can publish new versions):**
+    To change the manager address, provide the new manager address and click **"Transfer Manager Role"** in the **"Change Manager"** section.
 
-  This is the only action that cannot be verified directly from the ACL smart contract.
+    ![Change manager Address](/img/pkg-ownership-change-manager.png)
+    :::info
+    Transferring the manager role does **not** automatically grant developer permissions to the new address. If you want to provide publishing access, you must grant developer rights separately.
+    :::
 
-  1. Go to the smart contract address of the current package version
-     :::info
-     This address can be found by typing the package ENS into Etherscan's Mainnet search bar.
-     :::
+  - #### Grant Developer (Publishing Permissions)
 
-  2. Go to the `Contract` > `Read As Proxy` tab
-  3. Expand and provide the following arguments to the `canPerform` function:
-     - **\_sender** => The address to check
-     - **role** => `0x0000000000000000000000000000000000000000000000000000000000000001`
-     - **params** => `[]` (an empty array)
-  4. Click `Query` to receive a boolean indicating permission
+    Granting developer permissions allows the specified address to publish new versions of the package.
 
-## Package management UI ⚙️
+    To do this, enter the new developer address and click **"Grant Developer Permission"** in the **"Grant Developer"** section.
+    ![Grant developer Address](/img/pkg-ownership-grant-developer.png)
 
-Coming soon...👀
+  - #### Revoke Developer (Publishing Permissions):
+
+    Revoking developer permissions prevents the specified address from publishing new versions of the package (if it previously had developer access).
+
+    To revoke, enter the address and click **"Revoke Developer Permission"** in the **"Revoke Developer"** section.
+    ![Revoke developer Address](/img/pkg-ownership-revoke-developer.png)
