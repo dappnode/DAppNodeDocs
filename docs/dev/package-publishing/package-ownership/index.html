@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Package Ownership | Dappnode</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.dappnode.io/docs/dev/package-publishing/package-ownership"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Package Ownership | Dappnode"><meta data-rh="true" name="description" content="This guide outlines the role permission system used in Dappnode package management, powered by Aragon’s ACL (Access Control List) smart contracts. It explains how to check and modify roles such as permission managers and developers."><meta data-rh="true" property="og:description" content="This guide outlines the role permission system used in Dappnode package management, powered by Aragon’s ACL (Access Control List) smart contracts. It explains how to check and modify roles such as permission managers and developers."><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://docs.dappnode.io/docs/dev/package-publishing/package-ownership"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/dev/package-publishing/package-ownership" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/dev/package-publishing/package-ownership" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Dappnode RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Dappnode Atom Feed"><link rel="stylesheet" href="/assets/css/styles.d3a0467e.css">
-<script src="/assets/js/runtime~main.7cc6752d.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e18cfb4e.js" defer="defer"></script>
 <script src="/assets/js/main.cd59c949.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -15,117 +15,87 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="roles-️">Roles 🎖️<a href="#roles-️" class="hash-link" aria-label="Direct link to Roles 🎖️" title="Direct link to Roles 🎖️">​</a></h2>
 <p>For every package, there are three possible roles for any Ethereum address:</p>
 <ul>
-<li><strong>Permission manager</strong> =&gt; The address that can grant or revoke developer permissions for other addresses. This role can be held by only one address.</li>
-<li><strong>Developer</strong> =&gt; Addresses that are allowed to publish new versions of the package.</li>
-<li><strong>Default / Standard</strong> =&gt; Addresses that do not have any permissions related to the package.</li>
+<li>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="permission-manager">Permission manager:<a href="#permission-manager" class="hash-link" aria-label="Direct link to Permission manager:" title="Direct link to Permission manager:">​</a></h4>
+<p>The address that can grant or revoke developer permissions for other addresses. This role can be held by only one address.</p>
+</li>
+<li>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="developer">Developer:<a href="#developer" class="hash-link" aria-label="Direct link to Developer:" title="Direct link to Developer:">​</a></h4>
+<p>Addresses that are allowed to publish new versions of the package.</p>
+</li>
+<li>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="standard">Standard:<a href="#standard" class="hash-link" aria-label="Direct link to Standard:" title="Direct link to Standard:">​</a></h4>
+<p>Addresses that do not have any permissions related to the package.</p>
+</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="dappnodes-acls-closed_lock_with_key">Dappnode&#x27;s ACLs <!-- -->🔐<a href="#dappnodes-acls-closed_lock_with_key" class="hash-link" aria-label="Direct link to dappnodes-acls-closed_lock_with_key" title="Direct link to dappnodes-acls-closed_lock_with_key">​</a></h2>
-<p>Currently, granting or revoking developer permissions, or assigning a new permission manager, must be done through the respective smart contract ACL of the package repository.</p>
+<p>Dappnode package permissions are managed via the smart contract ACL of their respective package repositories.</p>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>In Aragon, the ACL (Access Control List) is a core smart contract that manages permissions. It determines which address (or entity) can call which function on which app (smart contract).</p></div></div>
 <p><strong>Dappnode&#x27;s ACLs by package suffix:</strong></p>
 <ul>
 <li>ACL <code>.public</code> =&gt; <a href="https://etherscan.io/address/0xFCb2C44E61031AE29e5c54A700FB6B4FB430dA4C#readProxyContract" target="_blank" rel="noopener noreferrer">See the SC in Etherscan</a></li>
 <li>ACL <code>.dnp</code> =&gt; <a href="https://etherscan.io/address/0x89d0A07b792754460Faa49e57437B40aA33FB757#readProxyContract" target="_blank" rel="noopener noreferrer">See the SC in Etherscan</a></li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="actions-">Actions 💪<a href="#actions-" class="hash-link" aria-label="Direct link to Actions 💪" title="Direct link to Actions 💪">​</a></h2>
-<p>The following outlines how to perform each possible action:</p>
-<ul>
-<li>
-<p><strong>Check permission manager</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="package-management-ui-️">Package Management UI ⚙️<a href="#package-management-ui-️" class="hash-link" aria-label="Direct link to Package Management UI ⚙️" title="Direct link to Package Management UI ⚙️">​</a></h2>
+<p>Our package publishing UI includes an &quot;Ownership&quot; tab that allows you to check the current role of an address for a specified package and perform actions based on that role.</p>
+<p>You can access this UI by navigating to the <a href="https://dappnode.github.io/sdk-publish" target="_blank" rel="noopener noreferrer">Dappnode SDK-publish UI</a>.</p>
+<p>Here&#x27;s a guide to help you use it:</p>
 <ol>
 <li>
-<p>Go to the <code>Read As Proxy</code> tab in the package&#x27;s respective ACL</p>
+<p><strong>Connect your wallet</strong>, if it’s not already connected. The connected wallet address will be used for role checking.
+<img decoding="async" loading="lazy" alt="Connect Wallet" src="/assets/images/pkg-ownership-connect-a0129fa2f2ddc0b15bed39572ff31fbb.png" width="927" height="329" class="img_ev3q"></p>
 </li>
 <li>
-<p>Expand and provide the following arguments to the <code>getPermissionManager</code> function:</p>
-<ul>
-<li>
-<p><strong>_app</strong> =&gt; The address where the current version of the package is deployed</p>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>This address can be found by typing the package ENS into Etherscan&#x27;s Mainnet search bar.</p></div></div>
+<p><strong>Click the &quot;Ownership&quot; tab</strong> in the navigation bar.
+<img decoding="async" loading="lazy" alt="Navigate to &amp;quot;Ownership&amp;quot; tab" src="/assets/images/pkg-ownership-navigate-97a949c0ab8c0386dd12925f0f159a68.png" width="1218" height="105" class="img_ev3q"></p>
 </li>
 <li>
-<p><strong>role</strong> =&gt; <code>0x0000000000000000000000000000000000000000000000000000000000000001</code></p>
-</li>
-</ul>
+<p><strong>Enter the package&#x27;s ENS</strong> you want to check or manage.
+<img decoding="async" loading="lazy" alt="Provide ENS" src="/assets/images/pkg-ownership-ens-a2312af3fa7d7d0b98f663c528d151b7.png" width="927" height="482" class="img_ev3q"></p>
 </li>
 <li>
-<p>Click <code>Query</code> to retrieve the permission manager address</p>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>By default, the permission manager does not have publishing rights. After (or before) becoming the manager, the address must also be granted developer permissions if it intends to publish new versions.</p></div></div>
+<p><strong>Review your role.</strong></p>
 </li>
 </ol>
-</li>
-<li>
-<p><strong>Set a new permission manager</strong></p>
-<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p>This action will revoke the current manager&#x27;s permissions and assign management to a new address.</p></div></div>
-<ol>
-<li>Go to the <code>Write As Proxy</code> tab in the package&#x27;s respective ACL</li>
-<li>Connect with the current permission manager address (click <code>Connect to Web3</code>)</li>
-<li>Expand and provide the following arguments to the <code>setPermissionManager</code> function:<!-- -->
+<p>Once the ENS is submitted, your role for the specified package will be displayed:</p>
 <ul>
-<li><strong>_newManager</strong> =&gt; The address that will become the new permission manager</li>
-<li><strong>_app</strong> =&gt; The address where the current version of the package is deployed</li>
-<li><strong>role</strong> =&gt; <code>0x0000000000000000000000000000000000000000000000000000000000000001</code></li>
-</ul>
-</li>
-<li>Click <code>Write</code> and confirm the transaction</li>
-</ol>
+<li>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="standard-address">Standard Address<a href="#standard-address" class="hash-link" aria-label="Direct link to Standard Address" title="Direct link to Standard Address">​</a></h3>
+<p>Your address has no special permissions for this package. You can check who the current manager is and contact them to request permission.
+<img decoding="async" loading="lazy" alt="Standard Address" src="/assets/images/pkg-ownership-standard-29b116867b0f5d018701c815923865e5.png" width="927" height="717" class="img_ev3q"></p>
 </li>
 <li>
-<p><strong>Grant publishing permissions to an address (developer):</strong></p>
-<ol>
-<li>Go to the <code>Write As Proxy</code> tab in the package&#x27;s respective ACL</li>
-<li>Connect with the current permission manager address (click <code>Connect to Web3</code>)</li>
-<li>Expand and provide the following arguments to the <code>grantPermission</code> function:<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="developer-address">Developer Address<a href="#developer-address" class="hash-link" aria-label="Direct link to Developer Address" title="Direct link to Developer Address">​</a></h3>
+<p>As a developer, you are allowed to publish new versions of the package. To do this, click on the &quot;Publishing&quot; tab in the navigation bar.
+<img decoding="async" loading="lazy" alt="Developer Address" src="/assets/images/pkg-ownership-developer-36db8d52926043fe4994ecbd9198d71b.png" width="927" height="620" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>A package can have multiple addresses with developer permissions.</p></div></div>
+</li>
+<li>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="manager-address">Manager Address<a href="#manager-address" class="hash-link" aria-label="Direct link to Manager Address" title="Direct link to Manager Address">​</a></h3>
+<p>The manager is typically the address that published the first version of the package. It is the only address that can transfer management rights, as well as grant or revoke developer permissions.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>A package can only have one address as its package manager.</p></div></div>
 <ul>
-<li><strong>_entity</strong> =&gt; The address to be granted with developer permissions</li>
-<li><strong>_app</strong> =&gt; The address where the current version of the package is deployed</li>
-<li><strong>role</strong> =&gt; <code>0x0000000000000000000000000000000000000000000000000000000000000001</code></li>
+<li>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="set-a-new-permission-manager">Set a New Permission Manager<a href="#set-a-new-permission-manager" class="hash-link" aria-label="Direct link to Set a New Permission Manager" title="Direct link to Set a New Permission Manager">​</a></h4>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p>Changing the manager will transfer full control of the package to the specified address, revoking all manager permissions from the current manager. This action is irreversible.</p></div></div>
+<p>To change the manager address, provide the new manager address and click <strong>&quot;Transfer Manager Role&quot;</strong> in the <strong>&quot;Change Manager&quot;</strong> section.</p>
+<p><img decoding="async" loading="lazy" alt="Change manager Address" src="/assets/images/pkg-ownership-change-manager-82ecca1b7b2637fc29ebbb10157193d5.png" width="927" height="813" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Transferring the manager role does <strong>not</strong> automatically grant developer permissions to the new address. If you want to provide publishing access, you must grant developer rights separately.</p></div></div>
+</li>
+<li>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="grant-developer-publishing-permissions">Grant Developer (Publishing Permissions)<a href="#grant-developer-publishing-permissions" class="hash-link" aria-label="Direct link to Grant Developer (Publishing Permissions)" title="Direct link to Grant Developer (Publishing Permissions)">​</a></h4>
+<p>Granting developer permissions allows the specified address to publish new versions of the package.</p>
+<p>To do this, enter the new developer address and click <strong>&quot;Grant Developer Permission&quot;</strong> in the <strong>&quot;Grant Developer&quot;</strong> section.
+<img decoding="async" loading="lazy" alt="Grant developer Address" src="/assets/images/pkg-ownership-grant-developer-cf868b4a327d1cf4f7f9ff604c046326.png" width="927" height="654" class="img_ev3q"></p>
+</li>
+<li>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="revoke-developer-publishing-permissions">Revoke Developer (Publishing Permissions):<a href="#revoke-developer-publishing-permissions" class="hash-link" aria-label="Direct link to Revoke Developer (Publishing Permissions):" title="Direct link to Revoke Developer (Publishing Permissions):">​</a></h4>
+<p>Revoking developer permissions prevents the specified address from publishing new versions of the package (if it previously had developer access).</p>
+<p>To revoke, enter the address and click <strong>&quot;Revoke Developer Permission&quot;</strong> in the <strong>&quot;Revoke Developer&quot;</strong> section.
+<img decoding="async" loading="lazy" alt="Revoke developer Address" src="/assets/images/pkg-ownership-revoke-developer-459a52b959a310608299c66bdd525099.png" width="927" height="642" class="img_ev3q"></p>
+</li>
 </ul>
 </li>
-<li>Click <code>Write</code> and confirm the transaction</li>
-</ol>
-</li>
-<li>
-<p><strong>Revoke publishing permissions from an address:</strong></p>
-<ol>
-<li>Go to the <code>Write As Proxy</code> tab in the package&#x27;s respective ACL</li>
-<li>Connect with the current permission manager address (click <code>Connect to Web3</code>)</li>
-<li>Expand and provide the following arguments to the <code>revokePermission</code> function:<!-- -->
-<ul>
-<li><strong>_entity</strong> =&gt; The address to revoke developer permissions from</li>
-<li><strong>_app</strong> =&gt; The address where the current version of the package is deployed</li>
-<li><strong>role</strong> =&gt; <code>0x0000000000000000000000000000000000000000000000000000000000000001</code></li>
-</ul>
-</li>
-<li>Click <code>Write</code> and confirm the transaction</li>
-</ol>
-</li>
-<li>
-<p><strong>Check if an address is a developer (can publish new versions):</strong></p>
-<p>This is the only action that cannot be verified directly from the ACL smart contract.</p>
-<ol>
-<li>
-<p>Go to the smart contract address of the current package version</p>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>This address can be found by typing the package ENS into Etherscan&#x27;s Mainnet search bar.</p></div></div>
-</li>
-<li>
-<p>Go to the <code>Contract</code> &gt; <code>Read As Proxy</code> tab</p>
-</li>
-<li>
-<p>Expand and provide the following arguments to the <code>canPerform</code> function:</p>
-<ul>
-<li><strong>_sender</strong> =&gt; The address to check</li>
-<li><strong>role</strong> =&gt; <code>0x0000000000000000000000000000000000000000000000000000000000000001</code></li>
-<li><strong>params</strong> =&gt; <code>[]</code> (an empty array)</li>
-</ul>
-</li>
-<li>
-<p>Click <code>Query</code> to receive a boolean indicating permission</p>
-</li>
-</ol>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="package-management-ui-️">Package management UI ⚙️<a href="#package-management-ui-️" class="hash-link" aria-label="Direct link to Package management UI ⚙️" title="Direct link to Package management UI ⚙️">​</a></h2>
-<p>Coming soon...👀</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/dappnode/DappnodeDocs/edit/master/docs/dev/package-publishing/package-ownership.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/dev/package-publishing/publish-packages-clients"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Publishing Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/dev/metrics"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Package Metrics</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#roles-️" class="table-of-contents__link toc-highlight">Roles 🎖️</a></li><li><a href="#dappnodes-acls-closed_lock_with_key" class="table-of-contents__link toc-highlight">Dappnode&#39;s ACLs 🔐</a></li><li><a href="#actions-" class="table-of-contents__link toc-highlight">Actions 💪</a></li><li><a href="#package-management-ui-️" class="table-of-contents__link toc-highlight">Package management UI ⚙️</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/user/getting-started/choose-your-path">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/user/staking/overview">Staking</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/user/access-your-dappnode/overview">Access your Dappnode</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/user/videos-and-tutorials/driving-school/initial-setup">Driving School</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/dappnode" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/dappnode" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/dappnode" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://dappnode.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Dappnode<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Dappnode. Built with Docusaurus.</div></div></div></footer></div>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/dappnode/DappnodeDocs/edit/master/docs/dev/package-publishing/package-ownership.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/dev/package-publishing/publish-packages-clients"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Publishing Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/dev/metrics"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Package Metrics</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#roles-️" class="table-of-contents__link toc-highlight">Roles 🎖️</a></li><li><a href="#dappnodes-acls-closed_lock_with_key" class="table-of-contents__link toc-highlight">Dappnode&#39;s ACLs 🔐</a></li><li><a href="#package-management-ui-️" class="table-of-contents__link toc-highlight">Package Management UI ⚙️</a><ul><li><a href="#standard-address" class="table-of-contents__link toc-highlight">Standard Address</a></li><li><a href="#developer-address" class="table-of-contents__link toc-highlight">Developer Address</a></li><li><a href="#manager-address" class="table-of-contents__link toc-highlight">Manager Address</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/user/getting-started/choose-your-path">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/user/staking/overview">Staking</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/user/access-your-dappnode/overview">Access your Dappnode</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/user/videos-and-tutorials/driving-school/initial-setup">Driving School</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/dappnode" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/dappnode" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/dappnode" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://dappnode.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Dappnode<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Dappnode. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
