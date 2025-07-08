@@ -28,7 +28,7 @@ Before starting, ensure you have:
 <p align="center">
     <img width="80%"src="/img/authkey1.png"/>
 </p>
-2. Create a new auth key. Any name will work.
+2. Create a new auth key. Any name will work. We recommend activating the "Reusable" option so you can use the same key multiple times.
 <p align="center">
     <img width="50%"src="/img/authkey2.png"/>
 </p>
