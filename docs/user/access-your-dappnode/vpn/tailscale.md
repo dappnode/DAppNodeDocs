@@ -63,10 +63,10 @@ Once installed, Tailscale will run as as any other package on your Dappnode. In 
     <img width="50%"src="/img/subnetcheck.png"/>
 </p>
 
-#### b. Add a Custom Nameserver
+#### b. Add Dappnode Custom Nameservers
 
 1. Go to your [Tailscale DNS Admin Panel](https://login.tailscale.com/admin/dns).
-2. Find the Nameservers section, click on **"Add nameserver"** and add a custom nameserver.
+2. Find the Nameservers section, click on **"Add nameserver"** and add a custom nameserver. 
 <p align="center">
     <img width="50%"src="/img/customserver.png"/>
 </p>
@@ -76,6 +76,12 @@ Once installed, Tailscale will run as as any other package on your Dappnode. In 
    - Activate **"Restrict to domain"** switch.
    - Set the domain as `dappnode`.
 
+4. Add another custom nameserver, this time with the following values:
+   - **Nameserver IP:** `10.20.0.2`
+    - Activate **"Restrict to domain"** switch.
+    - Set the domain as `dappnode.private`.
+
+The end result should look like this:
 <p align="center">
     <img width="50%"src="/img/dnsconfig.png"/>
 </p>
