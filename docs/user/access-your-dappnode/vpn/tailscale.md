@@ -6,6 +6,10 @@ Tailscale is a secure, peer-to-peer VPN solution that simplifies connecting to y
 Using Tailscale is an excellent alternative if you're experiencing issues with UPnP, CGNAT, or port forwarding. It's easy to set up and ensures a seamless connection to your Dappnode.
 :::
 
+:::warn
+When updating or reinstalling Tailscale, a new auth key might be required if the previous one is no longed valid (expired). You can check your current auth key status in the [Tailscale Admin Settings](https://login.tailscale.com/admin/settings/keys). If you encounter issues, generate a new auth key and update it in your Dappnode's Tailscale package settings.
+:::
+
 ---
 
 ## Prerequisites
@@ -71,6 +75,11 @@ Once installed, Tailscale will run as as any other package on your Dappnode. In 
    - **Nameserver IP:** `172.33.1.2`
    - Activate **"Restrict to domain"** switch.
    - Set the domain as `dappnode`.
+
+<p align="center">
+    <img width="50%"src="/img/dnsconfig.png"/>
+</p>
+
 
 That's it! You've successfully configured Tailscale to connect to your Dappnode. All that's left is to install Tailscale on the device you want to access your Dappnode from.
 
