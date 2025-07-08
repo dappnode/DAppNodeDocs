@@ -6,6 +6,10 @@ Tailscale is a secure, peer-to-peer VPN solution that simplifies connecting to y
 Using Tailscale is an excellent alternative if you're experiencing issues with UPnP, CGNAT, or port forwarding. It's easy to set up and ensures a seamless connection to your Dappnode.
 :::
 
+:::warning
+When updating or reinstalling Tailscale, a new auth key might be required if the previous one is no longed valid (expired). You can check your current auth key status in the [Tailscale Admin Settings](https://login.tailscale.com/admin/settings/keys). If you encounter issues, generate a new auth key and update it in your Dappnode's Tailscale package settings.
+:::
+
 ---
 
 ## Prerequisites
@@ -24,7 +28,7 @@ Before starting, ensure you have:
 <p align="center">
     <img width="80%"src="/img/authkey1.png"/>
 </p>
-2. Create a new auth key. Any name will work.
+2. Create a new auth key. Any name will work. We recommend activating the "Reusable" option so you can use the same key multiple times.
 <p align="center">
     <img width="50%"src="/img/authkey2.png"/>
 </p>
@@ -59,10 +63,10 @@ Once installed, Tailscale will run as as any other package on your Dappnode. In 
     <img width="50%"src="/img/subnetcheck.png"/>
 </p>
 
-#### b. Add a Custom Nameserver
+#### b. Add Dappnode Custom Nameservers
 
 1. Go to your [Tailscale DNS Admin Panel](https://login.tailscale.com/admin/dns).
-2. Find the Nameservers section, click on **"Add nameserver"** and add a custom nameserver.
+2. Find the Nameservers section, click on **"Add nameserver"** and add a custom nameserver. 
 <p align="center">
     <img width="50%"src="/img/customserver.png"/>
 </p>
@@ -71,6 +75,17 @@ Once installed, Tailscale will run as as any other package on your Dappnode. In 
    - **Nameserver IP:** `172.33.1.2`
    - Activate **"Restrict to domain"** switch.
    - Set the domain as `dappnode`.
+
+4. Add another custom nameserver, this time with the following values:
+   - **Nameserver IP:** `10.20.0.2`
+    - Activate **"Restrict to domain"** switch.
+    - Set the domain as `dappnode.private`.
+
+The end result should look like this:
+<p align="center">
+    <img width="50%"src="/img/dnsconfig.png"/>
+</p>
+
 
 That's it! You've successfully configured Tailscale to connect to your Dappnode. All that's left is to install Tailscale on the device you want to access your Dappnode from.
 
