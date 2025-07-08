@@ -9,7 +9,7 @@ Starting from core version 0.3.2, you can also access your Dappnode using [my.da
 :::tip
 🔐 From core 0.3.2, you can access your Dappnode through HTTPS if you have the `https.dnp.dappnode.eth` package installed and you are connected via VPN or Wifi to your Dappnode. Use this link: `https://pwa.<your dyndns>.io`
 
-[Learn more about PWA here.](https://docs.dappnode.io/docs/user/pwa/)
+[Learn more about Dappnode App.](https://docs.dappnode.io/docs/user/pwa/)
 :::
 
 Here are **four ways** you can connect to your Dappnode:
