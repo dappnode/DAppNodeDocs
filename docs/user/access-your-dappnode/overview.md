@@ -2,6 +2,10 @@
 
 Dappnode is made to work on a dedicated computer, and its main control panel, the **Dappmanager**, is accessed from another device via [my.dappnode](http://my.dappnode/) , as it is meant to be installed over an operating system that does not include a graphical interface.
 
+:::info
+Starting from core version 0.3.2, you can also access your Dappnode using [my.dappnode.private](http://my.dappnode.private/). This address uses a private IP range, providing a more secure way to access your Dappnode's control panel.
+:::
+
 Here are **four ways** you can connect to your Dappnode:
 
 [**📡 Wifi**](/docs/user/access-your-dappnode/wifi): A user-friendly way, especially for those with Dappnode pre-installed on their machines.
