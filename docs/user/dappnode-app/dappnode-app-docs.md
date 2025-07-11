@@ -1,4 +1,4 @@
-## Dapnode App
+# Dappnode App
 
 The Dappnode app is a new form of interaction with Dappnode from mobile and desktop devices.  It helps users to enter the Dappmanager remotely and get notified about the hardware status and the staking performance.
 
