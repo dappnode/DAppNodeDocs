@@ -444,6 +444,19 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Dappnode App",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "user/notifications/overview",
+        },
+        
+        
+      ],
+    },
+    {
+      type: "category",
       label: "Ethical metrics",
       items: [
         {

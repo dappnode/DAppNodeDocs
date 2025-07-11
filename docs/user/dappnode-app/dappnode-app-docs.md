@@ -83,7 +83,7 @@ Option 2: You can type the following in your browser search bar
 - chrome://apps/ (For Chrome)
 
 Option 3: You can access the Dappnode app using your **dyndns** (Dappnode's unique identifier) and **https** writing the domain below in the browser:  
-https://pwa.<dyndns>.io
+https://pwa.dyndns.io
 e.g. https://pwa.e17cb74a302298e6.dyndns.dappnode.io/
 You can find your dyndns in the top right icon in the Dappmanager.
 ![dyndns](/img/dyndns.png)
