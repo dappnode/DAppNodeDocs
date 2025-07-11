@@ -449,7 +449,7 @@ const sidebars = {
         {
           type: "doc",
           label: "Overview",
-          id: "user/notifications/overview",
+          id: "user/dappnode-app-docs",
         },
         
         
