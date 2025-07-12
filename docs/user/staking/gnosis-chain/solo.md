@@ -142,7 +142,7 @@ As soon as your withdrawal has been processed by the Beacon Chain, you will be a
 
 1. Go to the [Gnosis Chain Deposit Contract page in Gnosisscan.io](https://gnosisscan.io/address/0x0b98057ea310f4d31f2a452b414647007d1645d9#writeProxyContract#F4) and navigate to the `Write as Proxy` tab,
 
-2. Connect your wallet with the `Connect to Web3` button and then locate the `3. claimWithdrawal` function.
+2. Connect your wallet with the `Connect to Web3` button and then locate the `4. claimWithdrawal` function.
 
 3. Type your withdrawal address in the field and click `Write`. A transaction should trigger on your wallet. Approve it and wait for it to be included in a block.
 
