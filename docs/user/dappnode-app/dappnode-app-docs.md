@@ -71,7 +71,7 @@ The Dappnode App will be installed in the browser. **We recommend you to use Chr
 4. Change "Remember my decision" to **Forever** in the Pop up. Click **Allow**. This step is critical to receive the notifications. 
 ![allow-notifications](/img/allow-notifications.png)
 
-5. In Brave you must activate the field "Use Google services for push messaging" in Settings / Privacy & security. To change it, write brave://settings/privacy in the browser search bar. 
+5. In **Brave browser** you must activate the field **"Use Google services for push messaging"** in Settings / Privacy & security. To change it, write brave://settings/privacy in the browser search bar. 
 ![activate-push-messaging](/img/brave-settings.png)
 
 6. The Dappnode app is **successfully installed** and you can manage your **subscribed devices**.  
