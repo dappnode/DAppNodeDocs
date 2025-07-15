@@ -50,6 +50,7 @@ The Dappnode App will be installed in the browser. **We recommend you to use Chr
 ![dnp_app_mobile](/img/dnp-app-mobile.png)
 
 3. The App will open in a new window and you need to click **Grant permissions** button. In the following browser pop up click **Allow**.
+
 ![grant-mobile](/img/grant-mobile.png)
 
 4. The app was **succesfully configured**. You can manage your subscribed devices and test the notifications.
