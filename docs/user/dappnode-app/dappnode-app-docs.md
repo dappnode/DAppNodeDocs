@@ -31,7 +31,7 @@ Follow these steps to setup the VPN connection:
     - Tailscale can be downloaded in the Dappstore
     
 **2. Configure the VPN.**
-    - Follow the installation process of [Wireguard](https://https://docs.dappnode.io/docs/user/access-your-dappnode/vpn/wireguard) or [Tailscale](https://https://docs.dappnode.io/docs/user/access-your-dappnode/vpn/tailscale)
+    - Follow the installation process of [Wireguard](https://docs.dappnode.io/docs/user/access-your-dappnode/vpn/wireguard) or [Tailscale](https://docs.dappnode.io/docs/user/access-your-dappnode/vpn/tailscale)
     
 **3. Install the VPN app in your phone.**
     - Go to Google play/App store and **download the VPN app in your phone**. After the previous configuration, you just need to **activate the VPN connection in the VPN mobile app.** 
@@ -44,9 +44,11 @@ The Dappnode App will be installed in the browser. **We recommend you to use Chr
 
 
 #### Mobile
-1. Go to http://my.dappnode System / App
+1. Go to http://my.dappnode and System / App
+
 2. Click the **Install App** button and then click Install in the pop up. 
 ![dnp_app_mobile](/img/dnp-app-mobile.png)
+
 3. The App will open in a new window and you need to click **Grant permissions** button. In the following browser pop up click **Allow**.
 ![grant-mobile](/img/grant-mobile.png)
 
@@ -65,12 +67,17 @@ The Dappnode App will be installed in the browser. **We recommend you to use Chr
 
 3. **Grant permissions** to receive push notifications. 
 ![grant-permission](/img/grant-permission.png)
+
 4. Change "Remember my decision" to **Forever** in the Pop up. Click **Allow**. This step is critical to receive the notifications. 
 ![allow-notifications](/img/allow-notifications.png)
-5. The Dappnode app is **successfully installed** and you can manage your **subscribed devices**.  
+
+5. In Brave you must activate the field "Use Google services for push messaging" in Settings / Privacy & security. 
+![activate-push-messaging](/img/brave-settings.png)
+
+6. The Dappnode app is **successfully installed** and you can manage your **subscribed devices**.  
 ![app-installed](/img/app-installed.png)
 
-6. In the **Device subscriptions** section you can edit the name of the device subscription, delete the subscription and send a test notification to your device. 
+7. In the **Device subscriptions** section you can edit the name of the device subscription, delete the subscription and send a test notification to your device. 
 ![devices](/img/devices.png)
 
 
@@ -118,7 +125,7 @@ A VPN connection is needed to have the Dappnode App working.
 6. Click on the Popup to activate the notifications
 ![grant-popup](/img/grant-popup.png)
 
-7. Activate Dappnode app Notifications with the general toggle.
+7. Activate Dappnode app Notifications with the general toggle. The Dappnode app notifications are configured directly as a native application installed in the device (not in the browser).
 ![activate-notifications](/img/activate-notifications.png)
 
 8. Close the Dappnode App by clicking Quit at the dock icon to update the configuration changes.
