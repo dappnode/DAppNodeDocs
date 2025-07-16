@@ -32,9 +32,9 @@ Now that you are done with the VPN connection, you can **install the Dappnode Ap
 
 The Dappnode App will be installed in the browser. **We recommend you to use Chrome** to have the best experience. Other browser options are Brave and Safari (requires manual setup, check Browser special cases below)
 
-The following installation process is based on Chrome browser experience: 
+The following installation process is based on the **Chrome mobile and desktop experience**: 
 
-#### Mobile
+#### Mobile installation
 1. Go to http://my.dappnode and System / App
 
 2. Click the **Install App** button and then click Install in the pop up. 
@@ -47,7 +47,7 @@ The following installation process is based on Chrome browser experience:
 ![devices_mobile](/img/devices-mobile.png)
 
 
-#### Desktop
+#### Desktop installation
 1. Go to http://my.dappnode System / App
 ![install-button](/img/install-button.png)
 
@@ -60,26 +60,53 @@ The following installation process is based on Chrome browser experience:
 4. Click **Allow** in the popup to receive push notifications. 
 ![app-popup](/img/app-popup.png)
 
-5. The Dappnode app is **successfully installed** and you can manage your **subscribed devices**.  
+5. The Dappnode app is **successfully configured** and you can manage your **subscribed devices**.  
 ![app-installed](/img/app-success.png)
 
-6. In the **Device subscriptions** section you can edit the name of the device subscription, delete the subscription and send a test notification to your device. 
+6. In the **Devices** tab in the Notifications section you can edit the name of the device subscription, delete the subscription and send a test notification to your device. 
 ![devices](/img/devices.png)
 
 
 ### Frequent Asked Questions
 
-#### Brave installation 
+#### Brave
+The installation process in Brave is very similar to Chrome but there are a few extra steps to consider: 
 
-4. Change "Remember my decision" to **Forever** in the Pop up. Click **Allow**. This step is critical to receive the notifications. 
+After 
+1. Change "Remember my decision" to **Forever** in the Pop up. Click **Allow**. This step is critical to receive the notifications. 
 ![allow-notifications](/img/allow-notifications.png)
 
-5. In **Brave browser** you must activate the field **"Use Google services for push messaging"** in Settings / Privacy & security. To change it, write brave://settings/privacy in the browser search bar. 
+2. In **Brave browser** you must activate the field **"Use Google services for push messaging"** in Settings / Privacy & security. To change it, write brave://settings/privacy in the browser search bar. 
 ![activate-push-messaging](/img/brave-settings.png)
+
+#### Install the Dappnode app in Safari
+
+1. Go to http://my.dappnode in Safari, then go to System / App 
+2. In the Safari menu, go to File / Add to Dock
+![add-dock](/img/add-dock.png)
+
+3. Click the Dappnode App icon in the dock (bottom menu) to open it.
+4. Go to System / App within the Dappnode App. 
+5. Click Grant Permissions.
+![safari-grant](/img/safari-grant.png)
+
+6. Click on the Popup to activate the notifications
+![grant-popup](/img/grant-popup.png)
+
+7. Activate Dappnode app Notifications with the general toggle. The Dappnode app notifications are configured directly as a native application installed in the device (not in the browser).
+![activate-notifications](/img/activate-notifications.png)
+
+8. Close the Dappnode App by clicking Quit at the dock icon to update the configuration changes.
+    
+9. Open the Dappnode App again and click manage devices to subscribe your device to notifications. 
+![manage-devices](/img/manage-devices.png)
+
+10. The Dappnode App installation is complete in Safari. 
+
 
 #### Access the Dappnode app after installation
 Option 1: You will have the Dappnode app icon in your phone or computer home screen (as any other app). 
-Option 2: You can type the following in your browser search bar 
+Option 2: In desktop you can type the following in your browser search bar 
 - brave://apps/ (For Brave)
 - chrome://apps/ (For Chrome)
 
@@ -105,26 +132,3 @@ You need to update at least to Dappnode Core v0.3.2.
 Default packages like Https, Notifications and Bind will be updated automatically with the Core update.
 A VPN connection is needed to have the Dappnode App working.
 
-#### Install the Dappnode app in Safari?
-
-1. Go to http://my.dappnode in Safari, then go to System / App 
-2. In the Safari menu, go to File / Add to Dock
-![add-dock](/img/add-dock.png)
-
-3. Click the Dappnode App icon in the dock (bottom menu) to open it.
-4. Go to System / App within the Dappnode App. 
-5. Click Grant Permissions.
-![safari-grant](/img/safari-grant.png)
-
-6. Click on the Popup to activate the notifications
-![grant-popup](/img/grant-popup.png)
-
-7. Activate Dappnode app Notifications with the general toggle. The Dappnode app notifications are configured directly as a native application installed in the device (not in the browser).
-![activate-notifications](/img/activate-notifications.png)
-
-8. Close the Dappnode App by clicking Quit at the dock icon to update the configuration changes.
-    
-9. Open the Dappnode App again and click manage devices to subscribe your device to notifications. 
-![manage-devices](/img/manage-devices.png)
-
-10. The Dappnode App installation is complete in Safari. 
