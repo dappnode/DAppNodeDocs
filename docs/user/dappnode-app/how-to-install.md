@@ -119,13 +119,14 @@ You can find your dyndns in the top right icon in the Dappmanager.
 
 
 #### Reset notifications permissions
+
 If you deny the permission to send you push notifications, you need to change the notifications setup manually.
-In **Chrome** go to: Settings/Privacy and security/ Site and settings or if you use desktop Copy **chrome://settings/content** in the search bar. 
-In mobile the route changes slightly Settings/Site settings/ Notifications/Managed by app. 
+In **Chrome** go to: **Settings/Privacy and security/ Site and settings** or if you use desktop Copy chrome://settings/content in the search bar. 
+In mobile the route changes slightly: **Settings/Site settings/ Notifications/Managed by app**. 
 
-In Brave go to: Settings/Privacy and security/ Site and Shield settings or if you use desktop Copy **brave://settings/content** in the search bar.
+In Brave go to: **Settings/Privacy and security/ Site and Shield settings** or if you use desktop Copy brave://settings/content in the search bar.
 
-In Safari go to: System Settings/Notifications
+In Safari go to: **System Settings/Notifications**
  
 #### Requirements to use the Dappnode app
 
@@ -133,4 +134,6 @@ You need to update at least to Dappnode Core v0.3.2.
 
 Default packages like Https, Notifications and Bind will be updated automatically with the Core update.
 A VPN connection is needed to have the Dappnode App working.
+
+Enjoy your mobile Dappnode experience! 
 
