@@ -35,13 +35,12 @@ The Dappnode App will be installed in the browser. **We recommend you to use Chr
 The following installation process is based on the **Chrome mobile and desktop experience**: 
 
 #### Mobile installation
-1. Go to http://my.dappnode and System / App
+1. Go to http://my.dappnode and then go to System / App
 
 2. Click the **Install App** button and then click Install in the pop up. 
 ![dnp_app_mobile](/img/dnp-app-mobile.png)
 
 3. The App will open in a new window and you need to click **Grant permissions** button. In the following browser pop up click **Allow**.
-
 ![grantmobile](/img/grant-mobile.png)
 
 4. The app was **succesfully configured**. You can manage your subscribed devices and test the notifications.
@@ -49,7 +48,7 @@ The following installation process is based on the **Chrome mobile and desktop e
 
 
 #### Desktop installation
-1. Go to http://my.dappnode System / App
+1. Go to http://my.dappnode and then go to System / App
 ![install-button](/img/install-button.png)
 
 2. Click **Install** in the browser pop up. The app will be installed and opened in a new window.
@@ -82,8 +81,8 @@ After installing the app, you need to grant permissions twice:
 #### Safari browser
 
 1. Go to http://my.dappnode in Safari, then go to System / App 
-2. In the Safari menu, go to File / **Add to Dock**
-![add-dock](/img/add-dock.png)
+2. In the Safari menu, click on the first icon on the top right corner / **Add to Dock**
+![add-dock](/img/add-to-dock.png)
 
 3. Click the **Dappnode App icon in the dock** (bottom menu) to open it. 
 4. Click Grant Permissions button.
@@ -95,7 +94,7 @@ After installing the app, you need to grant permissions twice:
 7. Your App was successfully configured.
 ![success-popup](/img/app-success.png)
 
-8. In case you blocked the notifications, you need to go to System Settings / Notifications / Dappnode app and activate the general toggle.
+8. In case you blocked the notifications, you need to go to System Settings / Notifications / Dappnode app and activate the Allow notifications toggle.
 ![activate-notifications](/img/activate-notifications.png)
 
 8. To update the Permission changes in the App, **close the App by clicking Quit** at the dock icon.
@@ -125,7 +124,8 @@ You can find your dyndns in the top right icon in the Dappmanager.
 
 #### Reset notifications permissions
 
-If you deny the permission to send you push notifications, you need to change the notifications configuration manually.
+If you denied the permission to send you push notifications, you need to change the notifications configuration manually.
+
 In **Chrome** go to: **Settings/Privacy and security/ Site and settings** or if you use desktop Copy chrome://settings/content in the search bar. 
 In mobile the route changes slightly: **Settings/Site settings/ Notifications/Managed by app**. 
 
