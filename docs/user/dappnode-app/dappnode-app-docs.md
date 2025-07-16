@@ -83,7 +83,7 @@ The Dappnode App will be installed in the browser. **We recommend you to use Chr
 
 ### Frequent Asked Questions
 
-#### How can I access the Dappnode app after installing it?
+#### Access the Dappnode app after installation
 Option 1: You will have the Dappnode app icon in your phone or computer home screen (as any other app). 
 Option 2: You can type the following in your browser search bar 
 - brave://apps/ (For Brave)
@@ -96,7 +96,7 @@ You can find your dyndns in the top right icon in the Dappmanager.
 ![dyndns](/img/dyndns.png)
 
 
-#### I blocked the notifications in the pop up accidentally. What can I do?
+#### Reset notifications permissions
 If you deny the permission to send you push notifications, you need to change the notifications setup manually.
 In **Chrome** go to: Settings/Privacy and security/ Site and settings or Copy **chrome://settings/content** in the search bar. In mobile the route changes slightly Settings/Site settings/ Notifications/Managed by app. 
 
@@ -104,14 +104,14 @@ In Brave go to: Settings/Privacy and security/ Site and Shield settings or Copy 
 
 In Safari go to: System Settings/Notifications
  
-#### What are the requirements to use the Dappnode app?
+#### Requirements to use the Dappnode app
 
 You need to update at least to Dappnode Core v0.3.2.
 
 Default packages like Https, Notifications and Bind will be updated automatically with the Core update.
 A VPN connection is needed to have the Dappnode App working.
 
-#### How can I install the Dappnode app in Safari?
+#### Install the Dappnode app in Safari?
 
 1. Go to http://my.dappnode in Safari, then go to System / App 
 2. In the Safari menu, go to File / Add to Dock
