@@ -40,8 +40,8 @@ The following installation process is based on the **Chrome mobile and desktop e
 2. Click the **Install App** button and then click Install in the pop up. 
 ![dnp_app_mobile](/img/dnp-app-mobile.png)
 
-3. The App will open in a new window and you need to click **Grant permissions** button. In the following browser pop up click **Allow**.
-![grant-mobile](/img/grant-mobile.png)
+3. The App will open in a new window and you need to click **Grant permissions** button. In the following browser pop up click **Allow**. 
+![grant_mobile](/img/grant-mobile.png)
 
 4. The app was **succesfully configured**. You can manage your subscribed devices and test the notifications.
 ![devices_mobile](/img/devices-mobile.png)
@@ -97,13 +97,15 @@ After installing the app, you need to grant permissions twice:
 8. In case you blocked the notifications, you need to go to System Settings / Notifications / Dappnode app and activate the general toggle.
 ![activate-notifications](/img/activate-notifications.png)
 
-8. To update the Permission changes, close the Dappnode App by clicking Quit at the dock icon.
+8. To update the Permission changes in the App, **close the App by clicking Quit** at the dock icon.
     
-9. Open the Dappnode App again and click manage devices to subscribe your device to notifications. 
+9. Open the Dappnode App again and click **manage devices** to subscribe your device to notifications. 
 ![manage-devices](/img/manage-devices.png)
 
 10. The Dappnode App installation is completed in Safari. 
 
+
+### Frequent Asked Questions
 
 #### Access the Dappnode app after installation
 
@@ -122,11 +124,12 @@ You can find your dyndns in the top right icon in the Dappmanager.
 
 #### Reset notifications permissions
 
-If you deny the permission to send you push notifications, you need to change the notifications setup manually.
+If you deny the permission to send you push notifications, you need to change the notifications configuration manually.
 In **Chrome** go to: **Settings/Privacy and security/ Site and settings** or if you use desktop Copy chrome://settings/content in the search bar. 
 In mobile the route changes slightly: **Settings/Site settings/ Notifications/Managed by app**. 
 
 In Brave go to: **Settings/Privacy and security/ Site and Shield settings** or if you use desktop Copy brave://settings/content in the search bar.
+In mobile the route changes slightly: **Settings/Site settings/Notifications**
 
 In Safari go to: **System Settings/Notifications/Dappnode App** and activate the general toggle to allow notifications. If you enter the App and your permissions are not granted yet, please close the App completely to update the permissions and try to enter again. 
  
