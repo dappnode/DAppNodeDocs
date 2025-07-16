@@ -75,7 +75,7 @@ After installing the app, you need to grant permissions twice:
 1. Change "Remember my decision" to **Forever** in the Pop up. Click **Allow**. This step is critical to receive the notifications. 
 ![allow-notifications](/img/allow-notifications.png)
 
-2. You must activate the field **"Use Google services for push messaging"** in Settings / Privacy & security. To change it, go to Brave settings or write brave://settings/privacy in the browser search bar. 
+2. You must activate the field **"Use Google services for push messaging"** in Settings / Privacy & security. To change it, go to Brave settings or write brave://settings/privacy in the browser search bar in desktop. 
 ![activate-push-messaging](/img/brave-settings.png)
 
 #### Safari browser
@@ -102,7 +102,7 @@ After installing the app, you need to grant permissions twice:
 9. Open the Dappnode App again and click **manage devices** to subscribe your device to notifications. 
 ![manage-devices](/img/manage-devices.png)
 
-10. The Dappnode App installation is completed in Safari. 
+10. The Dappnode App **installation is completed** in Safari. Congrats! 
 
 
 ### Frequent Asked Questions
