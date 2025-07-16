@@ -30,7 +30,7 @@ Follow these steps to setup the VPN connection:
 
 Now that you are done with the VPN connection, you can **install the Dappnode App** in your phone or computer. 
 
-The Dappnode App will be installed in the browser. **We recommend you to use Chrome** to have the best experience. Other browser options are Brave and Safari (requires manual setup, check Browser special cases below)
+The Dappnode App will be installed in the browser. **We recommend you to use Chrome** to have the best experience. Other browser options are Brave and Safari (requires manual setup, check Safari section below)
 
 The following installation process is based on the **Chrome mobile and desktop experience**: 
 
@@ -81,26 +81,28 @@ After installing the app, you need to grant permissions twice:
 #### Safari browser
 
 1. Go to http://my.dappnode in Safari, then go to System / App 
-2. In the Safari menu, go to File / Add to Dock
+2. In the Safari menu, go to File / **Add to Dock**
 ![add-dock](/img/add-dock.png)
 
-3. Click the Dappnode App icon in the dock (bottom menu) to open it.
-4. Go to System / App within the Dappnode App. 
-5. Click Grant Permissions.
-![safari-grant](/img/safari-grant.png)
+3. Click the **Dappnode App icon in the dock** (bottom menu) to open it. 
+4. Click Grant Permissions button.
+![grant-permission](/img/enable-notifications.png)
 
-6. Click on the Popup to activate the notifications
-![grant-popup](/img/grant-popup.png)
+6. Click Options and Allow on the Popup to activate the notifications. If you click over the banner, notifications will be blocked directly. 
+![grant-popup](/img/safari-popup.png)
 
-7. Activate Dappnode app Notifications with the general toggle. The Dappnode app notifications are configured directly as a native application installed in the device (not in the browser).
+7. Your App was successfully configured.
+![success-popup](/img/app-success.png)
+
+8. In case you blocked the notifications, you need to go to System Settings / Notifications / Dappnode app and activate the general toggle.
 ![activate-notifications](/img/activate-notifications.png)
 
-8. Close the Dappnode App by clicking Quit at the dock icon to update the configuration changes.
+8. To update the Permission changes, close the Dappnode App by clicking Quit at the dock icon.
     
 9. Open the Dappnode App again and click manage devices to subscribe your device to notifications. 
 ![manage-devices](/img/manage-devices.png)
 
-10. The Dappnode App installation is complete in Safari. 
+10. The Dappnode App installation is completed in Safari. 
 
 
 #### Access the Dappnode app after installation
@@ -126,7 +128,7 @@ In mobile the route changes slightly: **Settings/Site settings/ Notifications/Ma
 
 In Brave go to: **Settings/Privacy and security/ Site and Shield settings** or if you use desktop Copy brave://settings/content in the search bar.
 
-In Safari go to: **System Settings/Notifications**
+In Safari go to: **System Settings/Notifications/Dappnode App** and activate the general toggle to allow notifications. If you enter the App and your permissions are not granted yet, please close the App completely to update the permissions and try to enter again. 
  
 #### Requirements to use the Dappnode app
 
