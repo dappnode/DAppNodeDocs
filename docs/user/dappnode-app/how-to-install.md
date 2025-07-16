@@ -67,19 +67,18 @@ The following installation process is based on the **Chrome mobile and desktop e
 ![devices](/img/devices.png)
 
 
-### Frequent Asked Questions
+#### Brave browser
+The installation process in Brave works similarly to Chrome but there are a few extra steps to consider: 
 
-#### Brave
-The installation process in Brave is very similar to Chrome but there are a few extra steps to consider: 
+After installing the app, you need to grant permissions twice: 
 
-After 
 1. Change "Remember my decision" to **Forever** in the Pop up. Click **Allow**. This step is critical to receive the notifications. 
 ![allow-notifications](/img/allow-notifications.png)
 
-2. In **Brave browser** you must activate the field **"Use Google services for push messaging"** in Settings / Privacy & security. To change it, write brave://settings/privacy in the browser search bar. 
+2. You must activate the field **"Use Google services for push messaging"** in Settings / Privacy & security. To change it, go to Brave settings or write brave://settings/privacy in the browser search bar. 
 ![activate-push-messaging](/img/brave-settings.png)
 
-#### Install the Dappnode app in Safari
+#### Safari browser
 
 1. Go to http://my.dappnode in Safari, then go to System / App 
 2. In the Safari menu, go to File / Add to Dock
@@ -105,7 +104,9 @@ After
 
 
 #### Access the Dappnode app after installation
-Option 1: You will have the Dappnode app icon in your phone or computer home screen (as any other app). 
+
+Option 1: You will have the Dappnode app icon in your phone or computer home screen (as any other app).
+
 Option 2: In desktop you can type the following in your browser search bar 
 - brave://apps/ (For Brave)
 - chrome://apps/ (For Chrome)
@@ -119,9 +120,10 @@ You can find your dyndns in the top right icon in the Dappmanager.
 
 #### Reset notifications permissions
 If you deny the permission to send you push notifications, you need to change the notifications setup manually.
-In **Chrome** go to: Settings/Privacy and security/ Site and settings or Copy **chrome://settings/content** in the search bar. In mobile the route changes slightly Settings/Site settings/ Notifications/Managed by app. 
+In **Chrome** go to: Settings/Privacy and security/ Site and settings or if you use desktop Copy **chrome://settings/content** in the search bar. 
+In mobile the route changes slightly Settings/Site settings/ Notifications/Managed by app. 
 
-In Brave go to: Settings/Privacy and security/ Site and Shield settings or Copy **brave://settings/content** in the search bar
+In Brave go to: Settings/Privacy and security/ Site and Shield settings or if you use desktop Copy **brave://settings/content** in the search bar.
 
 In Safari go to: System Settings/Notifications
  
