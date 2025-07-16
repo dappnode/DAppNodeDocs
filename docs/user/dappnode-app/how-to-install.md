@@ -89,13 +89,13 @@ After installing the app, you need to grant permissions twice:
 4. Click Grant Permissions button.
 ![grant-permission](/img/enable-notifications.png)
 
-6. Click Options and Allow on the Popup to activate the notifications. If you click over the banner, notifications will be blocked directly. 
+5. **Click Options** and **Allow** on the Popup to activate the notifications. If you click over the banner, notifications will be blocked directly. 
 ![grant-popup](/img/safari-popup.png)
 
-7. Your App was successfully configured.
+6. Your App was successfully configured.
 ![success-popup](/img/app-success.png)
 
-8. In case you blocked the notifications, you need to go to System Settings / Notifications / Dappnode app and activate the Allow notifications toggle.
+7. In case you blocked the notifications, you need to go to **System Settings / Notifications / Dappnode app** and activate the **Allow notifications** toggle.
 ![activate-notifications](/img/activate-notifications.png)
 
 8. To update the Permission changes in the App, **close the App by clicking Quit** at the dock icon.
@@ -110,9 +110,9 @@ After installing the app, you need to grant permissions twice:
 
 #### Access the Dappnode app after installation
 
-Option 1: You will have the Dappnode app icon in your phone or computer home screen (as any other app).
+Option 1: You will have the **Dappnode app icon** in your phone or computer home screen (as any other app).
 
-Option 2: In desktop you can type the following in your browser search bar 
+Option 2: In desktop you can type in your browser search bar the following: 
 - brave://apps/ (For Brave)
 - chrome://apps/ (For Chrome)
 
@@ -142,5 +142,5 @@ You need to update at least to Dappnode Core v0.3.2.
 Default packages like Https, Notifications and Bind will be updated automatically with the Core update.
 A VPN connection is needed to have the Dappnode App working.
 
-Enjoy your mobile Dappnode experience! 
+Enjoy your Dappnode App experience! 
 
