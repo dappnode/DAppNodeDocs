@@ -449,7 +449,12 @@ const sidebars = {
         {
           type: "doc",
           label: "Overview",
-          id: "user/dappnode-app/dappnode-app-docs",
+          id: "user/dappnode-app/overview",
+        },
+        {
+          type: "doc",
+          label: "How To Install Dappnode App",
+          id: "user/dappnode-app/how-to-install",
         },
         
         

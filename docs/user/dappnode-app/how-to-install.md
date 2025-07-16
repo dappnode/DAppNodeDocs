@@ -45,13 +45,11 @@ The following installation process is based on Chrome browser experience:
 
 4. The app was **succesfully configured**. You can manage your subscribed devices and test the notifications.
 ![devices_mobile](/img/devices-mobile.png)
-    
 
 
 #### Desktop
 1. Go to http://my.dappnode System / App
 ![install-button](/img/install-button.png)
-
 
 2. Click **Install** in the browser pop up. The app will be installed and opened in a new window.
 ![install-app](/img/install-app.png)
@@ -62,11 +60,10 @@ The following installation process is based on Chrome browser experience:
 4. Click **Allow** in the popup to receive push notifications. 
 ![app-popup](/img/app-popup.png)
 
-
-6. The Dappnode app is **successfully installed** and you can manage your **subscribed devices**.  
+5. The Dappnode app is **successfully installed** and you can manage your **subscribed devices**.  
 ![app-installed](/img/app-success.png)
 
-7. In the **Device subscriptions** section you can edit the name of the device subscription, delete the subscription and send a test notification to your device. 
+6. In the **Device subscriptions** section you can edit the name of the device subscription, delete the subscription and send a test notification to your device. 
 ![devices](/img/devices.png)
 
 
