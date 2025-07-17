@@ -80,7 +80,7 @@ Dappnode advertises its internal networks through Tailscale, allowing you to acc
 
 4. Click and activate the "Override DNS servers" switch.
 
-The end result should look like this:
+The end result should look like this, with two nameservers active:
 <p align="center">
     <img width="50%"src="/img/tailscalednsconfignormal.png"/>
 </p>
