@@ -86,7 +86,11 @@ The end result should look like this:
 </p>
 
 
-That's it! You've successfully configured Tailscale to connect to your Dappnode. All that's left is to install Tailscale on the device you want to access your Dappnode from.
+That's it! You've successfully configured Tailscale to connect to your Dappnode. All that's left is to install Tailscale on the device you want to access your Dappnode from. 
+
+:::info
+If you were already connected to your Dappnode with Tailscale, you may need to disconnect and reconnect to apply the new DNS settings.
+:::
 
 <details>
 <summary><b>Advanced DNS configuration</b></summary>
