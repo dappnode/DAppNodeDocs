@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Connect to Your Dappnode Using Tailscale | Dappnode</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.dappnode.io/docs/user/access-your-dappnode/vpn/tailscale"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Connect to Your Dappnode Using Tailscale | Dappnode"><meta data-rh="true" name="description" content="Tailscale is a secure, peer-to-peer VPN solution that simplifies connecting to your Dappnode without requiring complex port forwarding, solving issues such as UPnP not being recognized, routers behind CGNAT, or other port forwarding challenges. This guide walks you through setting up Tailscale to access your Dappnode."><meta data-rh="true" property="og:description" content="Tailscale is a secure, peer-to-peer VPN solution that simplifies connecting to your Dappnode without requiring complex port forwarding, solving issues such as UPnP not being recognized, routers behind CGNAT, or other port forwarding challenges. This guide walks you through setting up Tailscale to access your Dappnode."><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://docs.dappnode.io/docs/user/access-your-dappnode/vpn/tailscale"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/user/access-your-dappnode/vpn/tailscale" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/user/access-your-dappnode/vpn/tailscale" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Dappnode RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Dappnode Atom Feed"><link rel="stylesheet" href="/assets/css/styles.d3a0467e.css">
-<script src="/assets/js/runtime~main.647e7111.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.cac56bd5.js" defer="defer"></script>
 <script src="/assets/js/main.cd59c949.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -45,7 +45,9 @@
 <p align="center"><img width="80%" src="/img/authkey4.png"></p>
 <p>Once installed, Tailscale will run as as any other package on your Dappnode. In order to connect to your Dappnode with Tailscale, this package will need to be running.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-configure-tailscale-to-connect-to-dappnode-internal-networks">3. Configure Tailscale to Connect to Dappnode Internal Networks<a href="#3-configure-tailscale-to-connect-to-dappnode-internal-networks" class="hash-link" aria-label="Direct link to 3. Configure Tailscale to Connect to Dappnode Internal Networks" title="Direct link to 3. Configure Tailscale to Connect to Dappnode Internal Networks">​</a></h3>
+<p>To ensure you can access your Dappnode&#x27;s internal networks and services, you need to configure Tailscale to accept routes and set up custom DNS servers. There are two main steps to complete this configuration. Accepting advertised routes and adding custom nameservers (DNS).</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="a-accept-advertised-routes-from-your-dappnode">a. Accept Advertised Routes from Your Dappnode<a href="#a-accept-advertised-routes-from-your-dappnode" class="hash-link" aria-label="Direct link to a. Accept Advertised Routes from Your Dappnode" title="Direct link to a. Accept Advertised Routes from Your Dappnode">​</a></h4>
+<p>Dappnode advertises its internal networks through Tailscale, allowing you to access services like the Dappnode Admin UI and other packages. To ensure these routes are accepted:</p>
 <ol>
 <li>Go to your <a href="https://login.tailscale.com/admin/machines" target="_blank" rel="noopener noreferrer">Tailscale Machines Dashboard</a>.</li>
 </ol>
@@ -65,23 +67,18 @@
 <li>
 <p>Fill the popup with:</p>
 <ul>
-<li><strong>Nameserver IP:</strong> <code>172.33.1.2</code></li>
-<li>Activate <strong>&quot;Restrict to domain&quot;</strong> switch.</li>
-<li>Set the domain as <code>dappnode</code>.</li>
+<li><strong>Nameserver IP:</strong> <code>10.20.0.2</code></li>
 </ul>
 </li>
 <li>
-<p>Add another custom nameserver, this time with the following values:</p>
-<ul>
-<li><strong>Nameserver IP:</strong> <code>10.20.0.2</code></li>
-<li>Activate <strong>&quot;Restrict to domain&quot;</strong> switch.</li>
-<li>Set the domain as <code>dappnode.private</code>.</li>
-</ul>
+<p>Click and activate the &quot;Override DNS servers&quot; switch.</p>
 </li>
 </ol>
-<p>The end result should look like this:</p>
-<p align="center"><img width="50%" src="/img/dnsconfig.png"></p>
+<p>The end result should look like this, with two nameservers active:</p>
+<p align="center"><img width="50%" src="/img/tailscalednsconfignormal.png"></p>
 <p>That&#x27;s it! You&#x27;ve successfully configured Tailscale to connect to your Dappnode. All that&#x27;s left is to install Tailscale on the device you want to access your Dappnode from.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>If you were already connected to your Dappnode with Tailscale, you may need to disconnect and reconnect to apply the new DNS settings.</p></div></div>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>Advanced DNS configuration</b></summary><div><div class="collapsibleContent_i85q"><p>If you don&#x27;t want to use the default Dappnode DNS server for everything, you can set up Dappnode&#x27;s DNS server to only resolve Dappnode services. For this, you will need to add a custom DNS server for each dappnode service, restricted to a specific domain.</p><p>The following screenshot shows a configuration that only uses Dappnode&#x27;s DNS server for services under the <code>dappnode</code>, <code>dappnode.private</code> and <code>dyndns.dappnode</code> domains, while using the default Tailscale DNS server for everything else.</p><p align="center"><img width="50%" src="/img/tailscalednsadvanced.png"></p></div></div></details>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-connecting-to-dappnode-with-tailscale">4. Connecting to Dappnode with Tailscale<a href="#4-connecting-to-dappnode-with-tailscale" class="hash-link" aria-label="Direct link to 4. Connecting to Dappnode with Tailscale" title="Direct link to 4. Connecting to Dappnode with Tailscale">​</a></h3>
 <details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>macOS</b></summary><div><div class="collapsibleContent_i85q"><ol>
 <li>Open tailscale app in your finder</li>
