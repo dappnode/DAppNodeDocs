@@ -51,7 +51,11 @@ Once installed, Tailscale will run as as any other package on your Dappnode. In 
 
 ### 3. Configure Tailscale to Connect to Dappnode Internal Networks
 
+To ensure you can access your Dappnode's internal networks and services, you need to configure Tailscale to accept routes and set up custom DNS servers. There are two main steps to complete this configuration. Accepting advertised routes and adding custom nameservers (DNS).
+
 #### a. Accept Advertised Routes from Your Dappnode
+
+Dappnode advertises its internal networks through Tailscale, allowing you to access services like the Dappnode Admin UI and other packages. To ensure these routes are accepted:
 
 1. Go to your [Tailscale Machines Dashboard](https://login.tailscale.com/admin/machines).
 <p align="center">
@@ -72,22 +76,34 @@ Once installed, Tailscale will run as as any other package on your Dappnode. In 
 </p>
 
 3. Fill the popup with:
-   - **Nameserver IP:** `172.33.1.2`
-   - Activate **"Restrict to domain"** switch.
-   - Set the domain as `dappnode`.
-
-4. Add another custom nameserver, this time with the following values:
    - **Nameserver IP:** `10.20.0.2`
-    - Activate **"Restrict to domain"** switch.
-    - Set the domain as `dappnode.private`.
 
-The end result should look like this:
+4. Click and activate the "Override DNS servers" switch.
+
+The end result should look like this, with two nameservers active:
 <p align="center">
-    <img width="50%"src="/img/dnsconfig.png"/>
+    <img width="50%"src="/img/tailscalednsconfignormal.png"/>
 </p>
 
 
-That's it! You've successfully configured Tailscale to connect to your Dappnode. All that's left is to install Tailscale on the device you want to access your Dappnode from.
+That's it! You've successfully configured Tailscale to connect to your Dappnode. All that's left is to install Tailscale on the device you want to access your Dappnode from. 
+
+:::warning
+If you were already connected to your Dappnode with Tailscale, you may need to disconnect and reconnect to apply the new DNS settings.
+:::
+
+<details>
+<summary><b>Advanced DNS configuration</b></summary>
+
+If you don't want to use the default Dappnode DNS server for everything, you can set up Dappnode's DNS server to only resolve Dappnode services. For this, you will need to add a custom DNS server for each dappnode service, restricted to a specific domain. 
+
+The following screenshot shows a configuration that only uses Dappnode's DNS server for services under the `dappnode`, `dappnode.private` and `dyndns.dappnode` domains, while using the default Tailscale DNS server for everything else.
+
+<p align="center">
+    <img width="50%"src="/img/tailscalednsadvanced.png"/>
+</p>
+
+</details>
 
 ### 4. Connecting to Dappnode with Tailscale
 
