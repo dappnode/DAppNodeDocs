@@ -127,8 +127,15 @@ You can find your dyndns in the top right icon in the Dappmanager.
 
 If you denied the permission to send you push notifications, you need to change the notifications configuration manually.
 
-In **Chrome** go to: **Settings/Privacy and security/ Site and settings** or if you use desktop Copy chrome://settings/content in the search bar. 
-In mobile the route changes slightly: **Settings/Site settings/ Notifications/Managed by app**. 
+In **Chrome**: 
+Within the app, go to the three vertical points in the top right corner. 
+![points](/img/three-points.png)
+
+Click App Info and activate Notifications. 
+![app-info](/img/app-info.png)
+
+In mobile the route changes slightly: 
+Go directly to browser settings **Settings/Site settings/ Notifications/Managed by app/ Notifications**. and activate the permission. 
 
 In Brave go to: **Settings/Privacy and security/ Site and Shield settings** or if you use desktop Copy brave://settings/content in the search bar.
 In mobile the route changes slightly: **Settings/Site settings/Notifications**
