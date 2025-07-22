@@ -134,13 +134,19 @@ Within the app, go to the three vertical points in the top right corner.
 Click App Info and activate Notifications. 
 ![app-info](/img/app-info.png)
 
-In mobile the route changes slightly: 
+In Chrome mobile the route changes slightly: 
 Go directly to browser settings **Settings/Site settings/ Notifications/Managed by app/ Notifications**. and activate the permission. 
 
-In Brave go to: **Settings/Privacy and security/ Site and Shield settings** or if you use desktop Copy brave://settings/content in the search bar.
+In **Brave**:
+
+Within the app, go to the three horizontal lines in the top right corner. 
+Click App Info and activate Notifications. 
+
+In the browser you can go to **Settings/Privacy and security/ Site and Shield settings** 
 In mobile the route changes slightly: **Settings/Site settings/Notifications**
 
-In Safari go to: **System Settings/Notifications/Dappnode App** and activate the general toggle to allow notifications. If you enter the App and your permissions are not granted yet, please close the App completely to update the permissions and try to enter again. 
+In **Safari**:
+In your Device go to **System Settings/Notifications/Dappnode App** and activate the general toggle to allow notifications. If you enter the App and your permissions are not granted yet, please close the App completely to update the permissions and try to enter again. 
  
 #### Requirements to use the Dappnode app
 
