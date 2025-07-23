@@ -462,6 +462,24 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Dappnode Premium",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "user/dappnode-premium/premium-overview",
+        },
+        {
+          type: "doc",
+          label: "Premium services",
+          id: "user/dappnode-premium/premium-services",
+        },
+        
+        
+      ],
+    },
+    {
+      type: "category",
       label: "Ethical metrics",
       items: [
         {
