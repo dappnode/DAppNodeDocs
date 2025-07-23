@@ -38,14 +38,19 @@ The following installation process is based on the **Chrome mobile and desktop e
 1. Go to http://my.dappnode and then go to System / App
 
 2. Click the **Install App** button and then click Install in the pop up. 
-![dnp_app_mobile](/img/dnp-app-mobile.png)
+<p align="center">
+    <img src="../../../img/dnp-app-mobile.png"/>
+</p>
 
 3. The App will open in a new window and you need to click **Grant permissions** button. In the following browser pop up click **Allow**.
-
-    ![grantmobile](/img/grant-mobile.png)
+<p align="center">
+    <img src="../../../img/grant-mobile.png"/>
+</p>
 
 4. The app was **succesfully configured**. You can manage your subscribed devices and test the notifications.
-![devices_mobile](/img/devices-mobile.png)
+<p align="center">
+    <img src="../../../img/devices-mobile.png"/>
+</p>
 
 
 #### Desktop installation
