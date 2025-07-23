@@ -444,6 +444,24 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Dappnode App",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "user/dappnode-app/overview",
+        },
+        {
+          type: "doc",
+          label: "How To Install Dappnode App",
+          id: "user/dappnode-app/how-to-install",
+        },
+        
+        
+      ],
+    },
+    {
+      type: "category",
       label: "Ethical metrics",
       items: [
         {
