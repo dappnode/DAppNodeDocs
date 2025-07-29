@@ -8,26 +8,28 @@ title: Premium services
 ### Push notifications
 All Dappnode users have **complete access to the whole set of notifications** in the Dappmanager or in the app for free. The advantage of being a Premium user is to **receive push notifications in mobile and desktop**.
 
-Dappnode users can activate their preferred notifications and manage the subscribed devices in the Dappmanager's Notification section
+Dappnode users can activate their preferred notifications and manage the subscribed devices in the Dappmanager's Notification section.
 
 ### Validator notifications
-In addition to the current [list of notifications](https://docs.dappnode.io/docs/user/notifications/notifications-list) (System, DMS, Execution and Consensus clients and Direct notifications), within the launch of Dappnode Premium we are integrating the following **validator notifications**:
+In addition to the current [list of notifications](https://docs.dappnode.io/docs/user/notifications/notifications-list) (System, DMS, Execution and Consensus clients and Direct notifications), the following free **validator notifications** have been added:
 
-- Validator offline / back online
-- Missed attestation
-- Missed proposal
-- Submitted proposal
-- Validator slashed
+- Validator online. It notifies if your validator(s) is attesting.
+- Validator offline. It notifies if your validator(s) is not attesting. 
+- Validator slashed. It notifies if your validator was slashed
+- Missed block proposal
+- Submitted block proposal
+
+The notifications are sent 6 min after the attestation happens based on the justified epoch data. 
 
 More notifications will be added to the current set gradually to provide a more complete monitoring experience. 
 
 ## Beacon Node Backup
 
-The Beacon Node Backup ensures that **all imported Ethereum validators in your Dappnode remain active** when attestation issues arise. 
+The Beacon Node Backup ensures that **all imported validators in your Dappnode remain active** when attestation issues arise. 
 
-The backup runs for **7 days** once it is activated manually by the user in the Premium interface. This time allows users to fix their staking issues safely and return to normal operation.
+The backup runs for **7 days** once it is activated manually by the user in the Premium interface. This time allows users to fix their staking issues safely and return to normal operation. The backup can be used once a month for 7 days. If the user decides to deactivate the backup before the 7 days, the time remaining can't be used again.  
 
-The backup has a **limit of 10 Ethereum validators per user**. If you exceed this number, we invite you to consolidate your validators to use the service.
+Currently the backup is available in Ethereum. It has a **limit of 10 Ethereum validators per user**. If you exceed this number, we invite you to consolidate your validators to use the service.
 
 The backup service connects to the user's consensus client via an API key. **Validator keys are not managed by Dappnode** in the backup process. The user always retains full control of their keys.
 

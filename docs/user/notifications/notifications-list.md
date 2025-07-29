@@ -31,6 +31,14 @@ This is the full list of events that will be notified in your Dappnode.
 - Sync status
 - Peer count
 
+### ✔️ Validator Notifications
+
+- Validator online
+- Validator offline
+- Validator slashed
+- Block proposal missed
+- Block proposal submitted
+
 ### 📡 Direct Notifications
 
 - Important messages from the Dappnode team

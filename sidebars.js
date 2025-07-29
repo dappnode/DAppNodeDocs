@@ -440,6 +440,11 @@ const sidebars = {
           label: "Legacy",
           id: "user/notifications/legacy",
         },
+        {
+          type: "doc",
+          label: "Devices",
+          id: "user/notifications/devices",
+        },
       ],
     },
     {
