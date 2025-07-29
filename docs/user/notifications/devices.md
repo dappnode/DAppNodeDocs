@@ -1,11 +1,11 @@
 # Devices management
 
-To receive push notifications in Dappnode, users need to subscribe their devices. 
-You can subcribe desktop and mobile devices in different browsers (Chrome, Brave, Safari, Edge...) 
+To receive push notifications in Dappnode, users need to subscribe their devices.
+Both desktop and mobile devices can be subscribed using different browsers, such as Chrome, Brave or Safari.
 
 ### 🖥️ Subscribe your device
 
-To Subscribe a device, you need to:  
+To subscribe a device, you need to:  
 - Go to the Notification section in the navigation menu
 - In notifications, go to the Devices tab
 - Click the Subscribe Device button. 

@@ -43,4 +43,3 @@ This is the full list of events that will be notified in your Dappnode.
 
 - Important messages from the Dappnode team
 
-And more notifications of your validators are coming soon!
