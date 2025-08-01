@@ -25,15 +25,28 @@ More notifications will be added to the current set gradually to provide a more 
 
 ## Beacon Node Backup
 
+### **Backup node for validators**
+
+The Backup node ensures that all imported validators in your Dappnode remain active when your execution client or beacon node experience issues.
+
+**Use cases for the Backup node**
+
+- If your Execution Client gets corrupted, you will have a backup while you resync it.
+- If you want to switch Execution Client, you will have a backup while you sync the new client.
+- If your Beacon Node is down, you will be covered by the backup while resyncing even if it is a short time using checkpoint-sync.
+- If your MEV Boost is down, the backup node also has MEV Boost configured, so you will build MEV blocks while using the backup.
+
+**Backup node characteristics**
+
+The backup runs for **7 days** once it is activated manually by the user in the Premium interface. This time allows users to fix their execution clients issues safely and return to normal operation. 
+
+The backup can be used once a month for 7 days. If the user decides to deactivate the backup before the 7 days, the remaining time can't be used later.
+
+Currently the backup is available only in Ethereum. It has a **limit of 10 Ethereum validators per user**. If you exceed this number, we invite you to consolidate your validators to use the service.
+
+The backup service connects to the user's consensus client via an API key. Validator keys are not managed by Dappnode in the backup process. The users always retains full control of their keys.
+
 The Beacon Node Backup ensures that **all imported validators in your Dappnode remain active** when attestation issues arise. 
-
-The backup runs for **7 days** once it is activated manually by the user in the Premium interface. This time allows users to fix their staking issues safely and return to normal operation. The backup can be used once a month for 7 days. If the user decides to deactivate the backup before the 7 days, the time remaining can't be used later.  
-
-Currently the backup is available in Ethereum. It has a **limit of 10 Ethereum validators per user**. If you exceed this number, we invite you to consolidate your validators to use the service.
-
-The backup service connects to the user's consensus client via an API key. **Validator keys are not managed by Dappnode** in the backup process. The users always retains full control of their keys.
-
-The service is currently **available only for Ethereum**. More chains will be added soon.
 
 
 ## Personalized support
