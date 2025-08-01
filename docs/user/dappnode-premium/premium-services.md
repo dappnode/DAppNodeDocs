@@ -23,9 +23,7 @@ The notifications are sent 6,4 min after the attestation happens based on the ju
 
 More notifications will be added to the current set gradually to provide a more complete monitoring experience. 
 
-## Beacon Node Backup
-
-### **Backup node for validators**
+## Backup node for validators
 
 The Backup node ensures that all imported validators in your Dappnode remain active when your execution client or beacon node experience issues.
 
