@@ -3,9 +3,7 @@ title: Premium services
 
 ---
 
-
 ## Advanced push notifications
-### Push notifications
 All Dappnode users have **complete access to the whole set of notifications** in the Dappmanager or in the app for free. The advantage of being a Premium user is to **receive push notifications in mobile and desktop**.
 
 Dappnode users can activate their preferred notifications and manage the subscribed devices in the Dappmanager's Notification section.
@@ -33,6 +31,8 @@ The Backup node ensures that all imported validators in your Dappnode remain act
 - If you want to switch Execution Client, you will have a backup while you sync the new client.
 - If your Beacon Node is down, you will be covered by the backup while resyncing even if it is a short time using checkpoint-sync.
 - If your MEV Boost is down, the backup node also has MEV Boost configured, so you will build MEV blocks while using the backup.
+
+
 
 **Backup node characteristics**
 
