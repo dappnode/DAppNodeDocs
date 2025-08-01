@@ -440,6 +440,11 @@ const sidebars = {
           label: "Legacy",
           id: "user/notifications/legacy",
         },
+        {
+          type: "doc",
+          label: "Devices",
+          id: "user/notifications/devices",
+        },
       ],
     },
     {
@@ -455,6 +460,24 @@ const sidebars = {
           type: "doc",
           label: "How To Install Dappnode App",
           id: "user/dappnode-app/how-to-install",
+        },
+        
+        
+      ],
+    },
+    {
+      type: "category",
+      label: "Dappnode Premium",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "user/dappnode-premium/premium-overview",
+        },
+        {
+          type: "doc",
+          label: "Premium services",
+          id: "user/dappnode-premium/premium-services",
         },
         
         
