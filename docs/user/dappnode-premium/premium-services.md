@@ -25,7 +25,7 @@ More notifications will be added to the current set gradually to provide a more 
 
 The Backup node ensures that all imported validators in your Dappnode remain active when your execution client or beacon node experience issues.
 
-### Use cases for the Backup node**
+### Use cases for the Backup node
 
 - If your Execution Client gets corrupted, you will have a backup while you resync it.
 - If you want to switch Execution Client, you will have a backup while you sync the new client.
