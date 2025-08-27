@@ -42,7 +42,7 @@ The backup can be used once a month for 7 days. If the user decides to deactivat
 ### Validators limit
 
 Currently the backup is available only in Ethereum. It has a **limit of 10 Ethereum validators in mainnet per user**. If you exceed this number, we invite you to consolidate your validators to use the service. 
-The same limit of 10 validators apply to Hoodi testnet. 
+The same limit of 10 validators apply to Hoodi testnet. Prysm and Teku consensus clients are not supported in the backup service. Please use alternative consensus clients. 
 
 The backup service connects to the user's consensus client via an API key. Validator keys are not managed by Dappnode in the backup process. The users always retains full control of their keys.
 
