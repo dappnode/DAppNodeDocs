@@ -11,13 +11,19 @@ Dappnode users can activate their preferred notifications and manage the subscri
 ### Validator notifications
 In addition to the current [list of notifications](https://docs.dappnode.io/docs/user/notifications/notifications-list) (System, DMS, Execution and Consensus clients and Direct notifications), the following free **validator notifications** have been added recently:
 
-- **Validator online**. Sent if your validator(s) is attesting.
-- **Validator offline**. Sent you if your validator(s) missed an attestation. 
+- **Validator offline**. Sent you if any of your validator(s) missed an attestation. 
+- **Validator back online**. Sent if all your validator(s) are attesting again.
 - **Validator slashed**. Sent if your validator(s) was slashed.
 - **Missed block proposal** Sent if you missed a proposal.
 - **Submitted block proposal** Sent if you proposed a block.
 
-The notifications are sent 6,4 min after the attestation happens based on the justified epoch data. 
+All validator notifications are sent approximately 6 minutes after the event happens, based on the latest justified epoch data.
+
+:::info
+All the data needed to send these notifications is fetched directly from your local consensus client. No third party services are used. Because of this, these notifications are only available if your consensus client is fully synced and running properly. 
+
+Best effort is made to gather the data, but in some cases (e.g. if your consensus client has recently restarted) some notifications may be missed.
+:::
 
 More notifications will be added to the current set gradually to provide a more complete monitoring experience. 
 
