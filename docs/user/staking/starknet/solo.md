@@ -44,13 +44,23 @@ We’ll use **three StarkNet accounts** in Argent:
 ## 3️⃣ Export your operator address private key
 
 The _starknetstaking_ package needs your **operator** address private key to make the _attestations_.  
-You can obtain it from *Argent Wallet* following [these steps](https://support.argent.xyz/hc/en-us/articles/8802319054237-How-to-activate-deploy-my-Argent-Starknet-wallet).
+You can obtain it from *Argent Wallet* following ![these steps](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/export-pk.gif)
 
 ---
 
-## 4️⃣ Stake STRK
+## 4️⃣ Approve spending
 
-To interact with the contracts we will use the block explorers [Voyager](https://voyager.online/) or [StarkScan](https://starkscan.co/).
+1. Go to the block exporer STRK Token contract [STRK (Sepolia)](https://sepolia.voyager.online/contract/0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d#writeContract) or [STRK (Mainnet)](https://sepolia.voyager.online/contract/0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d#writeContract)
+2. Connect your **staker** Argent Wallet.  
+3. Scroll down to the `approve` function.  
+4. Fill in the calldata:
+   - **spender** → Starknet Staking Contract [Starknet Addresses](https://docs.starknet.io/resources/chain-info/#staking)  
+   - **amount** → Amount in FRI (1 STRK = `1000000000000000000`)  
+5. Submit the transaction.  
+
+
+
+## 5️⃣ Stake STRK
 
 1. Open the [Staking Contract on Voyager (Sepolia)](https://sepolia.voyager.online/contract/0x03745ab04a431fc02871a139be6b93d9260b0ff3e779ad9c8b377183b23109f1#writeContract) or the [Staking Contract on Voyager (Mainnet)](https://voyager.online/contract/0x00ca1702e64c81d9a07b86bd2c540188d92a2c73cf5cc0e508d949015e7e84a7#writeContract).  
 2. Connect your **staker** Argent Wallet.  
@@ -67,7 +77,7 @@ To interact with the contracts we will use the block explorers [Voyager](https:/
 
 ---
 
-## 5️⃣ Install the StarkNet Staking Package on DAppNode
+## 6️⃣ Install the StarkNet Staking Package on DAppNode
 
 Now that you’ve staked, you need to set up the validator client on your DAppNode.
 
