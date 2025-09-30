@@ -6,7 +6,7 @@ Dappnode leverages IPFS for distributing packages available in the Dappstore. To
 - **Use a Remote Node**: This is a convenient option, but it comes with the caveat of needing to trust the remote node operator. It is really useful in case your own IPFS node becomes unreliable or unavailable.
 
 :::tip
-To configure your dappnode IPFS repository go to http://my.dappnode/repository/ipfs
+To configure your dappnode IPFS repository go to http://my.dappnode/system/ipfs
 :::
 
 ## Run your own IPFS node
