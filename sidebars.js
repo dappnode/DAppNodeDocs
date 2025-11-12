@@ -280,6 +280,11 @@ const sidebars = {
           label: "Optimism",
           id: "user/rollups/optimism",
         },
+        {
+          type: "doc",
+          label: "Aztec",
+          id: "user/rollups/aztec",
+        }
       ],
     },
     {
