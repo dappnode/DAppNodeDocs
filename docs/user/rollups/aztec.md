@@ -134,7 +134,7 @@ aztec \
 
 Success! 🎉 Your sequencer is now registered on the Aztec testnet and ready to start producing blocks. Welcome to the sequencer club! 🏆
 
-You can check the status of your sequencer in <https://testnet.dashtec.xyz>. Remember that what is called "Sequencer address" in the dashboard is the "Attester" address in your `...staker_output.json` file.
+You can check the status of your sequencer in [Dashtec](https://testnet.dashtec.xyz). Remember that what is called "Sequencer address" in the dashboard is the "Attester" address in your `...staker_output.json` file.
 
 ---
 
