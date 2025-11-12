@@ -31,9 +31,9 @@ source ~/.bashrc
 
 ### Step 3️⃣: Generate Your Keystore
 
-Time to create your secure keystore! 🛡️ You can go with either an automatically generated 12-word mnemonic or your own custom passphrase. **We strongly recommend rolling with a self-determined mnemonic of at least 24 words** for maximum security. Treat it like your most prized possession—store it securely in a password manager or encrypted vault and never share it with a soul!
+Time to create your secure keystore! 🛡️ You can go with either an automatically generated 12-word mnemonic but **we strongly recommend a 24 words mnemonic** for maximum security. Treat it like your most prized possession—store it securely in a password manager or encrypted vault and never share it with a soul!
 
-For all the juicy details on keystore generation, check out the [official Aztec keystore documentation](https://docs.aztec.network/devnet/the_aztec_network/operation/keystore).
+For all the details on keystore generation, check out the [official Aztec keystore documentation](https://docs.aztec.network/devnet/the_aztec_network/operation/keystore).
 
 Example:
 
