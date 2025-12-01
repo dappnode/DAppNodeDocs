@@ -38,17 +38,28 @@ The Backup node ensures that all imported validators in your Dappnode remain act
 - If your Beacon Node is down, you will be covered by the backup while resyncing even if it requires a short time using checkpoint-sync.
 - If your MEV Boost is down, the backup node also has MEV Boost configured, so you will build MEV blocks while using the backup.
 
+![Map-backup](/img/backup-node-infra.png)
 
 ### Backup node characteristics
 
-The backup runs for **7 days** once it is activated manually by the user in the Premium interface. This time allows users to fix their execution clients issues safely and return to normal operation. 
+- The backup node for validators is available in Ethereum, Gnosis and Hoodi.
+- It provides 168h of backup coverage per month in each network. This time should allow users to fix their attestation issues safely and return to normal operation. 
+- The backup is activated manually by the user in the Premium interface. You can activate and deactivate it at any moment. You will only spend backup time when the backup is active in the selected network.
+- After activating the backup, you will need to wait 2 epochs (13 min) to start attesting.
 
-The backup can be used once a month for 7 days. If the user decides to deactivate the backup before the 7 days, the remaining time can't be used later.
+### Validators limit per network
 
-### Validators limit
+The backup has a default limit of validators per network. 
 
-Currently the backup is available only in Ethereum. It has a **limit of 10 Ethereum validators in mainnet per user**. If you exceed this number, we invite you to consolidate your validators to use the service. 
-The same limit of 10 validators apply to Hoodi testnet. Prysm and Teku consensus clients are not supported in the backup service. Please use alternative consensus clients. 
+In Ethereum, the backup service has a limit of **10 validators**. If you exceed this number, you have two options: 
+- 1. Consolidation. You can consolidate your validators in 10 or less validators. Consolidation could be beneficial to reduce maintenance and validator management.
+- 2. Custom backup coverage. You can ask to our team to get extra backup coverage for your validators. Please open a support ticket in Discord. 
+
+In Hoodi (testnet) applies the same limit of **10 validators**. 
+
+In Gnosis, the backup service has a limit of **100 validators**.If you exceed this number, you can ask to our team to get extra backup coverage for your validators. Please open a support ticket in Discord to let us know.
+
+Prysm and Teku consensus clients are not supported in the backup service. Please use alternative consensus clients. 
 
 The backup service connects to the user's consensus client via an API key. Validator keys are not managed by Dappnode in the backup process. The users always retains full control of their keys.
 
