@@ -44,7 +44,7 @@ We’ll use **three StarkNet accounts** in Argent:
 ## 3️⃣ Export your operator address private key
 
 The _starknetstaking_ package needs your **operator** address private key to make the _attestations_.  
-You can obtain it from *Argent Wallet* following these steps:
+You can obtain it from *Argent Wallet* following these steps:  
 ![export PK](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/export-pk.gif)
 
 ---
