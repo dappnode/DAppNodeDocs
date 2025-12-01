@@ -36,7 +36,7 @@ We’ll use **three Starknet accounts** in Ready:
 
 - Fund your **staker** and **operator** accounts with the required STRK amount.  
 
-> Remember to add more than the minnimin Staking ammount to cover gass fees.
+> Remember to add more than the minimum staking amount to cover gas fees.  
 > On Sepolia, you can use the [Starknet Faucet](https://starknet-faucet.vercel.app).  
 
 - Deploy your **accounts** in Ready Wallet following these steps:  
@@ -54,27 +54,28 @@ You can obtain it from _Ready Wallet_ following these steps:
 
 ## 4️⃣ Approve spending
 
-1. Go to the block explorer STRK token contract [STRK (Sepolia)](https://sepolia.voyager.online/contract/0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d#writeContract) or [STRK (Mainnet)](https://sepolia.voyager.online/contract/0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d#writeContract)
+1. Go to the block explorer STRK token contract [STRK (Sepolia)](https://sepolia.voyager.online/contract/0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d#writeContract) or [STRK (Mainnet)](https://voyager.online/contract/0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d#writeContract)  
 2. Connect your **staker** Ready Wallet.  
-3. In the implementation section, scroll down to the `approve` function (#19)  
+3. In the implementation section, scroll down to the `approve` function (#19 on Sepolia #22 in Mainnet)  
 4. Click and fill in the data:
    - **spender** → Starknet Staking Contract [Starknet Addresses](https://docs.starknet.io/resources/chain-info/#staking)  
    - **amount** → Amount in FRI (1 STRK = `1000000000000000000`)  
-5. Submit the transaction.
+5. Click the **Transact** button.
 
 ![Voyager approve](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/voyager-approve.png)
 
+---
 
 ## 5️⃣ Stake STRK
 
 1. Open the [Staking Contract on Voyager (Sepolia)](https://sepolia.voyager.online/contract/0x03745ab04a431fc02871a139be6b93d9260b0ff3e779ad9c8b377183b23109f1#writeContract) or the [Staking Contract on Voyager (Mainnet)](https://voyager.online/contract/0x00ca1702e64c81d9a07b86bd2c540188d92a2c73cf5cc0e508d949015e7e84a7#writeContract).  
 2. Connect your **staker** Ready Wallet.  
-3. In the implementation section, scroll down to the `stake` function. (#1)  
+3. In the implementation section, scroll down to the `stake` function (#1)  
 4. Click and fill in the calldata:
    - **rewards_address** → Your rewards account  
    - **operational_address** → Your operator account  
    - **amount** → Amount in FRI (1 STRK = `1000000000000000000`)  
-5. Submit the transaction.  
+5. Click the **Transact** button.  
 
 📌 **Staking contract addresses:** [Starknet Docs – Staking](https://docs.starknet.io/resources/chain-info/#staking)
 
@@ -87,18 +88,17 @@ You can obtain it from _Ready Wallet_ following these steps:
 Now that you’ve staked, you need to set up the validator client on your DAppNode.
 
 1. Open your Dappnode UI.  
-2. Go to the **DappStore** and search for `starknetstaking`.  
+2. Go to the **DAppStore** and search for `starknetstaking`.  
 3. Click **Install**.  
 
-During the inatallation process, you will need to instruduce the following info:
+During the installation process, you will need to enter the following information:
 
-- `Operational Address` → The address for the `operator` Account you created via Ready Wallet in step #1
+- `Operational Address` → The address for the `operator` Account you created via Ready Wallet in step #1  
 - `Private Key` → The private key from your operator account (exported from Ready Wallet in step #3)
 
 ![Dappnode](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/dappnode-package.png)
 
-
-The attestation process will start automatically, and your validator will be live. You can check reward and more info via the `staker_info_v1` contract in Voyager [Mainnet](https://voyager.online/contract/0x00ca1702e64c81d9a07b86bd2c540188d92a2c73cf5cc0e508d949015e7e84a7#readContract) or [Sepolia](https://sepolia.voyager.online/contract/0x03745Ab04a431fc02871A139be6B93D9260b0Ff3E779AD9c8B377183B23109F1#readContract)
+The attestation process will start automatically, and your validator will be live. You can check rewards and more info via the `staker_info_v1` contract in Voyager [Mainnet](https://voyager.online/contract/0x00ca1702e64c81d9a07b86bd2c540188d92a2c73cf5cc0e508d949015e7e84a7#readContract) or [Sepolia](https://sepolia.voyager.online/contract/0x03745Ab04a431fc02871A139be6B93D9260b0Ff3E779AD9c8B377183B23109F1#readContract)
 
 ---
 
