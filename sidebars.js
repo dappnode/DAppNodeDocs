@@ -264,6 +264,17 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Starknet",
+          items: [
+            {
+              type: "doc",
+              label: "Starknet Solo Staking",
+              id: "user/staking/starknet/solo",
+            },
+          ],
+        },
       ],
     },
     {
