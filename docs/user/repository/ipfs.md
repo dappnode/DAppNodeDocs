@@ -3,7 +3,7 @@
 Dappnode leverages IPFS for distributing packages available in the Dappstore. To download these packages, your Dappnode requires a connection to an IPFS node. When it comes to connecting to the IPFS network, you have two primary choices:
 
 - **Run Your Own IPFS Node**: By opting for this, you maintain full control, ensuring that you directly access the distributed packages without intermediaries. However, it might require some disk space.
-- **Use a Remote Node**: This is a convenient option, but it comes with the caveat of needing to trust the remote node operator. It is really useful in case your own IPFS node becomes unreliable or unavailable.
+- **Use a Remote Node**: This is a convenient option, but it comes with the caveat of needing to trust the remote node operator. It is really useful in case your own IPFS node becomes unreliable or unavailable. For this option, Dappnode offers its gateway `https://gateway.ipfs.dappnode.io/`, but you're welcome to change the URL to any other gateway if you prefer.
 
 :::tip
 To configure your dappnode IPFS repository go to http://my.dappnode/system/ipfs
