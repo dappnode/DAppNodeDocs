@@ -72,7 +72,7 @@
 <details>
     <summary><strong>My Web3Signer status has an odd grey bar in its status, is something wrong?</strong></summary>
     
-    <p>Web3Signer includes 4 containers (services): Web3Signer, Brain, Flyway and Postgres. You can check it yourself in the package view.</p>
+    <p>Web3Signer includes 5 containers (services): Web3Signer, Brain, Flyway, Postgres and Tracker. You can check it yourself in the package view.</p>
     <p>Whenever one is indicated as Stopped (gray), it means that it was stopped. But in this case - just the flyway service is stopped, which is an expected behavior - it should run only once, while migration of the database. If it’s indicated as grey - that means that whenever it migrated - everything went well, and now there is no need for it to run!</p>
 </details>
 
