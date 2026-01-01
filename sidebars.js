@@ -95,11 +95,6 @@ const sidebars = {
           label: "Terminal (Advanced)",
           id: "user/access-your-dappnode/terminal",
         },
-        {
-          type: "doc",
-          label: "Local Proxy (Recovery)",
-          id: "user/access-your-dappnode/local",
-        },
       ],
     },
     {
