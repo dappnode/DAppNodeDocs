@@ -1,0 +1,169 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+:root {
+  --ifm-color-primary: #00b1f4;
+  --ifm-color-primary-dark: #009ed3;
+  --ifm-color-primary-darker: #008cbf;
+  --ifm-color-primary-darkest: #0076a8;
+  --ifm-color-primary-light: #33b8f7;
+  --ifm-color-primary-lighter: #66bff9;
+  --ifm-color-primary-lightest: #99c6fb;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #33b8f7;
+  --ifm-color-primary-dark: #00b1f4;
+  --ifm-color-primary-darker: #009ed3;
+  --ifm-color-primary-darkest: #008cbf;
+  --ifm-color-primary-light: #66bff9;
+  --ifm-color-primary-lighter: #99c6fb;
+  --ifm-color-primary-lightest: #c6daff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom HTML components styling */
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.beautiful-big-button {
+  /* Size */
+  padding: 16px 32px;
+  font-size: 20px;
+
+  /* Gradient Styling */
+  background: linear-gradient(
+    45deg,
+    var(--ifm-color-primary-lighter),
+    var(--ifm-color-primary)
+  );
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  /* Optional: Add some shadow for a more "elevated" look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Smooth transition for hover effects */
+  transition: background-color 0.3s, transform 0.3s;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.beautiful-big-button:active {
+  transform: scale(0.98); /* Slightly scale down */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1); /* Less shadow than default state */
+}
+
+.beautiful-big-button:hover {
+  background: linear-gradient(
+    45deg,
+    var(--ifm-color-primary-dark),
+    var(--ifm-color-primary-darkest)
+  );
+  transform: scale(1.05);
+
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] .beautiful-big-button {
+  background: linear-gradient(
+    45deg,
+    var(--ifm-color-primary-light),
+    var(--ifm-color-primary-darker)
+  );
+  /* Adjust other properties as needed for dark theme */
+}
+
+[data-theme="dark"] .beautiful-big-button:hover {
+  background: linear-gradient(
+    45deg,
+    var(--ifm-color-primary),
+    var(--ifm-color-primary-darkest)
+  );
+}
+
+/* Flexbox for larger screens */
+@media screen and (min-width: 768px) {
+  .button-container {
+    flex-direction: row;
+  }
+}
+
+/* Flexbox for smaller screens */
+@media screen and (max-width: 767px) {
+  .button-container {
+    flex-direction: column;
+  }
+  .beautiful-big-button {
+    margin-bottom: 10px; /* Add spacing between the buttons */
+  }
+}
+
+/* "Choose your path" section cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 18rem; /* Adjust as per your preference */
+  height: 20rem; /* Adjust as per your preference */
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+  text-decoration: none;
+}
+
+.card:active {
+  transform: translateY(-0.25rem);
+}
+
+.card img {
+  width: auto;       
+  display: block;  
+  margin: 0 auto;  
+  border-radius: 0.5rem;
+}
+
+.dappnode-box {
+  height: 61% !important;
+}
+
+.card h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #777;
+  flex-grow: 1; /* This makes sure the text takes up remaining space and pushes buttons to the bottom */
+}

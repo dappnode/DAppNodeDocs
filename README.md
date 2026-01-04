@@ -1,17 +1,41 @@
-# DAppNode Docs
+# Website
 
-## Getting started
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-[Install mkdocs](https://www.mkdocs.org/#installation). In the case of MacOS you can do so with Homebrew
-
-```
-brew install mkdocs
-```
-
-Then run a local server to have a live auto-refresh preview of the docs
+### Installation
 
 ```
-mkdocs serve
+$ yarn
 ```
 
-Now navigate to http://127.0.0.1:8000/
+### Local Development
+
+```
+$ yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
