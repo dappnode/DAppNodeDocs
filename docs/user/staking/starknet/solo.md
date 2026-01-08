@@ -9,7 +9,7 @@ We’ll use **[Ready Wallet](https://www.ready.co/)** and Starknet's block explo
 
 ## 🛠 Prerequisites
 
-✅ [Ready Wallet](https://www.ready.co/) installed  
+✅ [Ready Wallet](https://www.ready.co/ready-wallet) installed  
 ✅ Access to a synced Starknet full node (Juno or Pathfinder)  
 ✅ Minimum STRK balance:
 
