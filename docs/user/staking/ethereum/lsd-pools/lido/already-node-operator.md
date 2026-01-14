@@ -12,9 +12,9 @@ Keystore files contain critical information for managing your validators. When y
 
 2. Access the `/import` tab in Brain UI:
 
-   - Mainnet [Staking Brain](http://brain.web3signer.dappnode/import)
+   - Mainnet [Staking Brain](http://brain.web3signer.dappnode)
 
-   - Hoodi [Staking Brain](http://brain.web3signer-hoodi.dappnode/import)
+   - Hoodi [Staking Brain](http://brain.web3signer-hoodi.dappnode)
 
 3. Select the “Lido” Tag:
    While uploading your keystore files, make sure to tag them with “Lido” to designate automatically the required fee recipient from the Lido protocol:
