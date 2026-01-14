@@ -10,12 +10,12 @@
 
 ### 1. **Getting your Dappnode ready**
 
-- Navigate to [Dappnode Staking for Ethereum](http://my.dappnode/stakers/ethereum) or [Dappnode Staking for Holesky](http://my.dappnode/stakers/holesky).
+- Navigate to [Dappnode Staking for Ethereum](http://my.dappnode/stakers/ethereum) or [Dappnode Staking for Hoodi](http://my.dappnode/stakers/hoodi).
 - Select your desired execution and consensus clients.
 - Choose Web3Signer to upload the keystores.
 - Configure MEV Boost with as many relays as possible. For additional info on MEV in CSM, check the [Lido CSM Docs](https://operatorportal.lido.fi/modules/community-staking-module).
   - Mainnet relays see `get_relays` from [Mainnet](https://etherscan.io/address/0xf95f069f9ad107938f6ba802a3da87892298610e#readContract)
-  - Holesky relays see `get_relays` from [Holesky](https://holesky.etherscan.io/address/0x2d86C5855581194a386941806E38cA119E50aEA3#readContract)
+  - Hoodi relays see `get_relays` from [Hoodi](https://hoodi.etherscan.io/address/0x279d3A456212a1294DaEd0faEE98675a52E8A4Bf#readContract#F4)
 
 :::warning
 It is mandatory to choose at least one relay to ensure the node operator does not propose vanilla blocks. When uploading the keystores with the "Lido" tag, this requirement will be automatically checked. As a Lido Node Operator, it is your responsibility to ensure that your infrastructure is properly using MEV Boost.
@@ -27,8 +27,8 @@ It is mandatory to choose at least one relay to ensure the node operator does no
 In order to run a validator, you need to generate the necessary keystores and deposit data. The keystores **must** be created with the withdrawal credential of Lido:
 :::
 
-- Holesky: `0xF0179dEC45a37423EAD4FaD5fCb136197872EAd9`.
 - Ethereum: `0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f`.
+- Hoodi: `0x4473dCDDbf77679A643BdB654dbd86D67F8d32f2`.
 - We recommend using official tools like [Staking-Deposit-CLI](https://github.com/ethereum/staking-deposit-cli) or the [Wagyu Key Gen Tool](https://wagyu.gg/) to create the keystores. This step is crucial and mandatory.
 
 The validator Keystores will be used to run the validators on the Ethereum network, while the deposit data will be used to register the validators in the Lido protocol.
@@ -43,7 +43,7 @@ Make sure you correcly set the withdrawal address up, otherwise the Lido CSM won
 
 To install the Lido CSM package, select the variant that suits your needs:
 
-- [Holesky package](http://my.dappnode/installer/dnp/lido-csm-holesky.dnp.dappnode.eth)
+- [Hoodi package](http://my.dappnode/installer/dnp/lido-csm-hoodi.dnp.dappnode.eth)
 - [Ethereum package](http://my.dappnode/installer/dnp/lido-csm-mainnet.dnp.dappnode.eth)
 
 ### 4. Register as Node Operator
@@ -58,7 +58,7 @@ To install the Lido CSM package, select the variant that suits your needs:
 
 While registering as a node operator, the UI will verify that you meet the following requirements:
 
-- Stake Requirement: You need 2 ETH or an equivalent amount in stETH or wstETH for the first validator.
+- Stake Requirement: You need either 2.4 ETH or 1.5 ETH, or an equivalent amount in stETH or wstETH for the first validator.
 - Infrastructure Setup: Your Dappnode must be running:
   - An execution client.
   - A consensus client.
@@ -91,7 +91,7 @@ You must start the conversation with the bot using `/start` so it can send you n
 
   - Select or drag-and-drop the keystore files associated with your `deposit_data.json`.
   - Enter the password for the keys in the provided field.
-  ![Lido-CSM4](/img/lido-csm-ss-docs5.png)
+    ![Lido-CSM4](/img/lido-csm-ss-docs5.png)
 
 - You'll be prompted to sign an ETH bond depending on the number of validators you're submitting to the CSM.
 - Once the deposit has been confirmed, the CSM and then the Beacon Chain will process your deposit. Keep in mind you'll have to wait 16-24 hours plus the Becaon Chain's entry queue for your validators to activate. Your node operator setup is now complete!

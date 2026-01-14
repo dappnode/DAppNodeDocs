@@ -6,7 +6,7 @@
 
 Lido is a **liquid staking** solution for Ethereum that addresses the liquidity issues of traditional staking. Instead of locking up assets and losing access to them, users can stake through Lido and receive liquid tokens. These tokens retain the value of the staked assets and can be used elsewhere while still earning staking rewards.
 
-Lido, with over [9,8 million ETH](https://lido.fi/ethereum) staked on its platform, is a significant contributor in the Ethereum ecosystem. To broaden and diversify its network of node operators, Lido recently introduced the [**Community Staking Module** (CSM)](https://csm.lido.fi/?ref=dappnode), the first Lido module with a **permissionless entry** for Ethereum staking. By first providing an ETH-based bond, anyone can now become a node operator by running validators in the Lido protocol. Designed with solo stakers in mind, the CSM lowers the barrier to becoming an Ethereum validator with 2.4 ETH, requiring far less than the standard 32 ETH, and offers a user-friendly experience. While tailored for smaller stakers, it is open to all, including professional operators.
+Lido, with over [8 million ETH](https://lido.fi) staked on its platform, is a significant contributor in the Ethereum ecosystem. To broaden and diversify its network of node operators, Lido introduced the [**Community Staking Module** (CSM)](https://lido.fi/csm), the first Lido module with a **permissionless entry** for Ethereum staking. By first providing an ETH-based bond, anyone can now become a node operator by running validators in the Lido protocol. Designed with solo stakers in mind, the CSM lowers the barrier to becoming an Ethereum validator with 2.4 ETH, requiring far less than the standard 32 ETH, and offers a user-friendly experience. While tailored for smaller stakers, it is open to all, including professional operators.
 
 :::info
 Becoming a Lido Node Operator is recommended for users with some experience in running validators. The process requires a basic understanding of the Ethereum network and the Lido protocol. If you are new to staking, we recommend setting up a validator on the Testnet first to familiarize yourself with the process, see [Staking on the Ethereum Testnet](/docs/user/staking/ethereum/solo/holesky.md).
@@ -31,7 +31,7 @@ The main functionalities covered by Dappnode in the Lido CSM package are:
 - **Telegram Notifications**: you can setup notifications for your Node Operator to be informed about any event. You need to configure the user ID and Telegram token to received your notifications.
 - **Ejector**: whenever any of your validator requires to be exited, it will be done automatically sending you the corresponding notification.
 - **Track multiple Node Operators**: you can track multiple Node Operators from the same DAppNodePackage-lido-csm.
-- **Performance**: your validators attestations performance will be tracked and you will be notified if they are not performing as expected according to the Lido tresholds.
+- **Performance**: your validators performance will be tracked and you will be notified if they are not performing as expected according to the Lido thresholds.
 - **MEV boost relays**: you will receive notifications whenever your validators are using relays blocklisted in the Lido CSM or not using any relay at all.
 - **Import keystores directly from the Lido CSM**: you can import your keystores directly from the Lido CSM to your DAppNodePackage-lido-csm and they will be automatically tagged as Lido.
 - **Infraestructure monitoring**: you will be able to visualize the status of your infraestructure (EC - CC - Signer - MEV Boost).
@@ -99,7 +99,7 @@ Lido CSM only allows certain relays for your node configuration. You must use at
 You can check the list of allowed relays in the smart contracts:
 
 - **Mainnet relays**: See `get_relays` from [Mainnet](https://etherscan.io/address/0xf95f069f9ad107938f6ba802a3da87892298610e#readContract#F4)
-- **Holesky relays**: See `get_relays` from [Holesky](https://holesky.etherscan.io/address/0x2d86C5855581194a386941806E38cA119E50aEA3#readContract#F4)
+- **Hoodi relays**: See `get_relays` from [Hoodi](https://hoodi.etherscan.io/address/0x279d3A456212a1294DaEd0faEE98675a52E8A4Bf#readContract#F4)
 
 :::warning
 You must select at least one relay to ensure the node operator does not propose vanilla blocks. As a Lido Node Operator, it is your responsibility to ensure that your infrastructure is correctly using MEV Boost.
@@ -113,11 +113,11 @@ The Lido CSM Dappnode package also includes infrastructure checks and warnings i
 You can select/unselect relays in the [Stakers](http://my.dappnode/stakers) tab in the Dappmanager or directly modify the relay URLs in the `MEV Boost` package configuration tab.
 :::
 
-For more details on MEV in CSM, visit the [Lido CSM Docs](https://operatorportal.lido.fi/modules/community-staking-module).
+For more details on MEV in CSM, visit the [Lido CSM Docs](https://operatorportal.lido.fi/modules/community-staking-module#block-99fed4cdcc7641f1af431ddb8afafbec).
 
 ## Testnet
 
-The Lido Community Staking Module is available on the Ethereum Mainnet. If you are new to staking, we recommend setting up a validator on the Testnet first to familiarize yourself with the process. The process is the same, the dappnode package for Lido CSM in testnet is **lido-csm-holesky.dnp.dappnode.eth**.
+The Lido Community Staking Module is available on the Ethereum Mainnet. If you are new to staking, we recommend setting up a validator on the Testnet first to familiarize yourself with the process. The process is the same, the dappnode package for Lido CSM in testnet is **lido-csm-hoodi.dnp.dappnode.eth**.
 
 ## Execution Client RPC
 
@@ -145,7 +145,7 @@ Changing the RPC is done at your own risk. Dappnode is not responsible for any p
    Infura).
 2. Navigate to the `/config` tab of your Lido CSM package:
    - [Mainnet Lido CSM package's config tab](http://my.dappnode/packages/my/lido-csm-mainnet.dnp.dappnode.eth/config)
-   - [Holesky Lido CSM package's config tab](http://my.dappnode/packages/my/lido-csm-holesky.dnp.dappnode.eth/config)
+   - [Hoodi Lido CSM package's config tab](http://my.dappnode/packages/my/lido-csm-hoodi.dnp.dappnode.eth/config)
 3. Change the `RPC_URL` environment variable in the **Lido Events Section**.
 4. Click the `Update` button
    ![lido-csm-config-tab](/img/lido-csm-config-tab.png)
@@ -154,7 +154,7 @@ Changing the RPC is done at your own risk. Dappnode is not responsible for any p
 After the first scan we suggest to change it back again to:
 
 - `http://execution.mainnet.dncore.dappnode:8545`
-- `http://execution.holesky.dncore.dappnode:8545`
+- `http://execution.hoodi.dncore.dappnode:8545`
   :::
 
 ---

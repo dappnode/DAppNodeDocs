@@ -12,16 +12,16 @@ Keystore files contain critical information for managing your validators. When y
 
 2. Access the `/import` tab in Brain UI:
 
-   - Mainnet [Staking Brain](http://brain.web3signer.dappnode/import)
+   - Mainnet [Staking Brain](http://brain.web3signer.dappnode)
 
-   - Holesky [Staking Brain](http://brain.web3signer-holesky.dappnode/import)
+   - Hoodi [Staking Brain](http://brain.web3signer-hoodi.dappnode)
 
 3. Select the “Lido” Tag:
    While uploading your keystore files, make sure to tag them with “Lido” to designate automatically the required fee recipient from the Lido protocol:
 
    - Mainnet: `0x388C818CA8B9251b393131C08a736A67ccB19297`
 
-   - Holesky: `0xE73a3602b99f1f913e72F8bdcBC235e206794Ac8`
+   - Hoodi: `0x9b108015fe433F173696Af3Aa0CF7CDb3E104258`
 
    :::danger
    Do not edit the fee recipient address. Doing so will result in penalties.
@@ -41,7 +41,7 @@ The Lido CSM UI serves as the central interface for managing validator keys and 
 
 1. Access the Lido CSM UI:
 
-   Navigate to the Lido CSM package UI. - [Mainnet UI](http://ui.lido-csm-mainnet.dappnode/) - [Holesky UI](http://ui.lido-csm-holesky.dappnode/)
+   Navigate to the Lido CSM package UI. - [Mainnet UI](http://ui.lido-csm-mainnet.dappnode/) - [Hoodi UI](http://ui.lido-csm-hoodi.dappnode/)
 
 2. Connect Your Wallet:
 
@@ -53,7 +53,7 @@ The Lido CSM UI serves as the central interface for managing validator keys and 
 
    - Follow the on-screen prompts to grant the necessary permissions.
 
-   - Ensure the wallet’s network matches the intended environment (e.g., Mainnet or Holesky).
+   - Ensure the wallet’s network matches the intended environment (e.g., Mainnet or Hoodi).
 
 4. Verify Connection:
 

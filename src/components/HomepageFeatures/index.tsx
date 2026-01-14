@@ -57,12 +57,12 @@ const FeatureList: FeatureItem[] = [
     Image: require("@site/static/img/lido-csm.jpeg").default,
     description: (
       <>
-        Community Staking Module (CSM) will most likely be the third Lido on
-        Ethereum module after the Curated Module and Simple DVT, and the first
-        to offer permissionless entry allowing community stakers to operate
-        validators by providing an ETH-based bond. Dappnode facilitates this
-        process by providing a user-friendly interface for community stakers to
-        stake on Ethereum and Holesky as node operators.
+        Community Staking Module (CSM) is the third Lido on Ethereum module
+        after the Curated Module and Simple DVT, and the first to offer
+        permissionless entry allowing community stakers to operate validators by
+        providing an ETH-based bond. Dappnode facilitates this process by
+        providing a user-friendly interface for community stakers to stake on
+        Ethereum and Hoodi as node operators.
       </>
     ),
     url: "/docs/user/staking/ethereum/lsd-pools/lido/overview",
