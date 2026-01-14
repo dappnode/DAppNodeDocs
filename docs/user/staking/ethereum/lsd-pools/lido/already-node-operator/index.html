@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Already a node operator | Dappnode</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.dappnode.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/already-node-operator"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Already a node operator | Dappnode"><meta data-rh="true" name="description" content="This document provides detailed instructions for existing Node Operators on integrating their setup with the Lido Community Staking Module (CSM) via Dappnode. By following these steps, you can efficiently manage your validators and ensure proper functionality within the Lido protocol."><meta data-rh="true" property="og:description" content="This document provides detailed instructions for existing Node Operators on integrating their setup with the Lido Community Staking Module (CSM) via Dappnode. By following these steps, you can efficiently manage your validators and ensure proper functionality within the Lido protocol."><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/already-node-operator"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/already-node-operator" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.dappnode.io/docs/user/staking/ethereum/lsd-pools/lido/already-node-operator" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Dappnode RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Dappnode Atom Feed"><link rel="stylesheet" href="/assets/css/styles.d3a0467e.css">
-<script src="/assets/js/runtime~main.10c23c44.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.bcf66c81.js" defer="defer"></script>
 <script src="/assets/js/main.76788a09.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,10 +22,10 @@
 <p>Access the <code>/import</code> tab in Brain UI:</p>
 <ul>
 <li>
-<p>Mainnet <a href="http://brain.web3signer.dappnode/import" target="_blank" rel="noopener noreferrer">Staking Brain</a></p>
+<p>Mainnet <a href="http://brain.web3signer.dappnode" target="_blank" rel="noopener noreferrer">Staking Brain</a></p>
 </li>
 <li>
-<p>Holesky <a href="http://brain.web3signer-holesky.dappnode/import" target="_blank" rel="noopener noreferrer">Staking Brain</a></p>
+<p>Hoodi <a href="http://brain.web3signer-hoodi.dappnode" target="_blank" rel="noopener noreferrer">Staking Brain</a></p>
 </li>
 </ul>
 </li>
@@ -37,7 +37,7 @@ While uploading your keystore files, make sure to tag them with “Lido” to de
 <p>Mainnet: <code>0x388C818CA8B9251b393131C08a736A67ccB19297</code></p>
 </li>
 <li>
-<p>Holesky: <code>0xE73a3602b99f1f913e72F8bdcBC235e206794Ac8</code></p>
+<p>Hoodi: <code>0x9b108015fe433F173696Af3Aa0CF7CDb3E104258</code></p>
 </li>
 </ul>
 <div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p>Do not edit the fee recipient address. Doing so will result in penalties.</p></div></div>
@@ -53,7 +53,7 @@ While uploading your keystore files, make sure to tag them with “Lido” to de
 <ol>
 <li>
 <p>Access the Lido CSM UI:</p>
-<p>Navigate to the Lido CSM package UI. - <a href="http://ui.lido-csm-mainnet.dappnode/" target="_blank" rel="noopener noreferrer">Mainnet UI</a> - <a href="http://ui.lido-csm-holesky.dappnode/" target="_blank" rel="noopener noreferrer">Holesky UI</a></p>
+<p>Navigate to the Lido CSM package UI. - <a href="http://ui.lido-csm-mainnet.dappnode/" target="_blank" rel="noopener noreferrer">Mainnet UI</a> - <a href="http://ui.lido-csm-hoodi.dappnode/" target="_blank" rel="noopener noreferrer">Hoodi UI</a></p>
 </li>
 <li>
 <p>Connect Your Wallet:</p>
@@ -67,7 +67,7 @@ While uploading your keystore files, make sure to tag them with “Lido” to de
 <p>Follow the on-screen prompts to grant the necessary permissions.</p>
 </li>
 <li>
-<p>Ensure the wallet’s network matches the intended environment (e.g., Mainnet or Holesky).</p>
+<p>Ensure the wallet’s network matches the intended environment (e.g., Mainnet or Hoodi).</p>
 </li>
 </ul>
 </li>
