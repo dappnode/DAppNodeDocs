@@ -7,7 +7,7 @@ The **Performance** tab allows you to monitor the performance of your Lido valid
 Before diving into the details, it's essential to understand what a **Lido CSM report** is. These reports contain performance data for all validators in the CSM and are distributed via IPFS hashes by the Lido team.
 
 - On **Mainnet**, reports are distributed every **28 days**.
-- On **Holesky**, reports are distributed every **7 days**.
+- On **Hoodi**, reports are distributed every **7 days**.
 
 ## Lido Report Cards
 
@@ -39,7 +39,7 @@ The **Range Selector** controls all the data displayed in the Performance tab. I
 - **Ever** (From the first report that included a validator associated with your Node Operator)
 
   :::info
-  On **Holesky**, an additional **week** range is available since reports are distributed weekly.
+  On **Hoodi**, an additional **week** range is available since reports are distributed weekly.
   :::
 
 ## Node Operator Efficiency vs. Lido Average Efficiency

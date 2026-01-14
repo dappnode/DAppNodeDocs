@@ -47,10 +47,10 @@ Once you setup your notifications, you will receive a test notification to confi
 Once your notifications are setup, you will receive notificatios for the following events:
 
 - Lido Smart Contract events:
-  - [Lido VEVO events](https://docs.lido.fi/staking-modules/csm/guides/events/#contract-vebo): the most important event to remark is the validator exit request event, that will trigger the Ejector to exit the validator.
+  - [Lido VEBO events](https://docs.lido.fi/run-on-lido/csm/alerts-and-monitoring/expert-custom-alerts/#contract-vebo): the most important event to remark is the validator exit request event, that will trigger the Ejector to exit the validator.
     ![lido-csm-report-submitted](/img/lido-csm-report-submitted.png)
-  - [Lido CSM events](https://docs.lido.fi/staking-modules/csm/guides/events/#contract-csm): check the Lido documentation for more details.
-  - [Lido CSFeeDistributor](https://docs.lido.fi/staking-modules/csm/guides/events/#contract-csfeedistributor): check the Lido documentation for more details.
+  - [Lido CSM events](https://docs.lido.fi/run-on-lido/csm/alerts-and-monitoring/expert-custom-alerts/#contract-csm): check the Lido documentation for more details.
+  - [Lido CSFeeDistributor](https://docs.lido.fi/run-on-lido/csm/alerts-and-monitoring/expert-custom-alerts#contract-csfeedistributor): check the Lido documentation for more details.
 - Validator exit:
   - Exit requested: you will receive a notification when the validator exit has been requested.
     ![lido-csm-exit-requested](/img/lido-csm-exit-requested.png)
@@ -60,9 +60,9 @@ Once your notifications are setup, you will receive notificatios for the followi
     ![lido-csm-exit-failed](/img/lido-csm-exit-failed.png)
 - Performance:
   - Above the treshold: you will receive a notification when your validator is performing above the treshold.
-  ![lido-csm-performance-notification-above](/img/lido-csm-performance-notification-above.png)
+    ![lido-csm-performance-notification-above](/img/lido-csm-performance-notification-above.png)
   - Below the treshold: you will receive a notification when your validator is performing below the treshold.
-  ![lido-csm-performance-notification-below](/img/lido-csm-performance-notification-below.png)
+    ![lido-csm-performance-notification-below](/img/lido-csm-performance-notification-below.png)
 - Operator stuck: you will receive a notification when your operator is stuck indicating the epoch range.
   ![lido-csm-stuck](/img/lido-csm-stuck.png)
 - Relays (comming soon):
