@@ -67,6 +67,7 @@ The Dappnode Package manifest defines all the necessary information for a Dappno
       "port": 80
     }
   ],
+  "disableUpnp": true,
   "author": "Dappnode Association <admin@dappnode.io> (https://github.com/dappnode)",
   "contributors": [
     "Michael First <developerHanlder@project.io> (https://github.com/developerHanlder)",
@@ -94,36 +95,37 @@ The Dappnode Package manifest defines all the necessary information for a Dappno
 
 ## Properties reference
 
-| Property                              | Type       | Required     |
-| ------------------------------------- | ---------- | ------------ |
-| [name](#name)                         | `string`   | **Required** |
-| [version](#version)                   | `string`   | **Required** |
-| [upstreamVersion](#upstreamversion)   | `string`   | Optional     |
-| [shortDescription](#shortdescription) | `string`   | Optional     |
-| [description](#description)           | `string`   | **Required** |
-| [type](#type)                         | `enum`     | **Required** |
-| [chain](#chain)                       | `enum`     | Optional     |
-| [mainService](#mainservice)           | `string`   | Optional     |
-| [dockerTimeout](#dockertimeout)       | `string`   | Optional     |
-| [dependencies](#dependencies)         | `object`   | Optional     |
-| [requirements](#requirements)         | `object`   | Optional     |
-| [globalEnvs](#globalenvs)             | `object`   | Optional     |
-| [architectures](#architectures)       | `enum[]`   | Optional     |
-| [backup](#backup)                     | `object[]` | Optional     |
-| [changelog](#changelog)               | `string`   | Optional     |
-| [warnings](#warnings)                 | `object`   | Optional     |
-| [updateAlerts](#updatealerts)         | `object[]` | Optional     |
-| [disclaimer](#disclaimer)             | `object`   | Optional     |
-| [style](#style)                       | `object`   | Optional     |
-| [exposable](#exposable)               | `object[]` | Optional     |
-| [author](#author)                     | `string`   | Optional     |
-| [contributors](#contributors)         | `string[]` | Optional     |
-| [categories](#categories)             | `enum[]`   | Optional     |
-| [keywords](#keywords)                 | `string[]` | Optional     |
-| [links](#links)                       | `object`   | Optional     |
-| [repository](#repository)             | `object`   | Optional     |
-| [bugs](#bugs)                         | `object`   | Optional     |
-| [license](#license)                   | `string`   | **Required** |
+| Property                              | Type                    | Required     |
+| ------------------------------------- | ----------------------- | ------------ |
+| [name](#name)                         | `string`                | **Required** |
+| [version](#version)                   | `string`                | **Required** |
+| [upstreamVersion](#upstreamversion)   | `string`                | Optional     |
+| [shortDescription](#shortdescription) | `string`                | Optional     |
+| [description](#description)           | `string`                | **Required** |
+| [type](#type)                         | `enum`                  | **Required** |
+| [chain](#chain)                       | `enum`                  | Optional     |
+| [mainService](#mainservice)           | `string`                | Optional     |
+| [dockerTimeout](#dockertimeout)       | `string`                | Optional     |
+| [dependencies](#dependencies)         | `object`                | Optional     |
+| [requirements](#requirements)         | `object`                | Optional     |
+| [globalEnvs](#globalenvs)             | `object`                | Optional     |
+| [architectures](#architectures)       | `enum[]`                | Optional     |
+| [backup](#backup)                     | `object[]`              | Optional     |
+| [changelog](#changelog)               | `string`                | Optional     |
+| [warnings](#warnings)                 | `object`                | Optional     |
+| [updateAlerts](#updatealerts)         | `object[]`              | Optional     |
+| [disclaimer](#disclaimer)             | `object`                | Optional     |
+| [style](#style)                       | `object`                | Optional     |
+| [exposable](#exposable)               | `object[]`              | Optional     |
+| [disableUpnp](#disableupnp)           | `object[]` or `boolean` | Optional     |
+| [author](#author)                     | `string`                | Optional     |
+| [contributors](#contributors)         | `string[]`              | Optional     |
+| [categories](#categories)             | `enum[]`                | Optional     |
+| [keywords](#keywords)                 | `string[]`              | Optional     |
+| [links](#links)                       | `object`                | Optional     |
+| [repository](#repository)             | `object`                | Optional     |
+| [bugs](#bugs)                         | `object`                | Optional     |
+| [license](#license)                   | `string`                | **Required** |
 
 ### name
 
@@ -813,6 +815,26 @@ Examples:
 ```
 
 Single exposable service item
+
+### disableupnp
+
+Controls UPnP port forwarding for this package. By default, DAppNode attempts to create UPnP port mappings for all ports defined in the docker-compose file. This property can either disable UPnP completely for the package or selectively disable it for specific ports.
+
+- is optional
+- type: `boolean` or `number[]`
+
+If set to `true`, UPnP will be disabled for all ports in this package.
+If set as an array of numbers, UPnP will be disabled only for the specified ports.
+
+Examples:
+
+```json
+true
+```
+
+```json
+[8545, 30303]
+```
 
 ### author
 
