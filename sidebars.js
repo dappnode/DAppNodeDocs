@@ -609,6 +609,11 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "doc",
+          label: "Core release 0.3.0 - IP range migration",
+          id: "user/videos-and-tutorials/release-0.3.0",
+        },
       ],
     },
     {
