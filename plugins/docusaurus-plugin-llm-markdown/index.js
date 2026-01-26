@@ -46,9 +46,7 @@ module.exports = function pluginLlmMarkdown(context, options) {
         fs.mkdirSync(outputDir, { recursive: true });
 
         // Create header with reference to llms.txt index
-        const header = `# ${getTitle(fileContent, file)}
-
-> ## Documentation Index
+        const header = `> ## Documentation Index
 > Fetch the complete documentation index at: ${siteUrl}/llms.txt
 > Use this file to discover all available pages before exploring further.
 
@@ -67,14 +65,9 @@ module.exports = function pluginLlmMarkdown(context, options) {
       markdownUrls.sort();
 
       // Generate llms.txt
-      const llmsTxtContent = `# Dappnode Documentation - LLM Markdown Index
-# Generated: ${new Date().toISOString()}
-#
-# This file lists all documentation pages available in plain markdown format.
-# These URLs return raw markdown content optimized for LLM consumption.
-#
-# Usage: Append .md to any documentation URL to get the markdown version.
-# Example: ${siteUrl}/docs/dao -> ${siteUrl}/docs/dao.md
+      const llmsTxtContent = `# Knowledge Base
+
+## Docs
 
 ${markdownUrls.join('\n')}
 `;
@@ -95,30 +88,3 @@ function stripFrontmatter(content) {
   return content.replace(frontmatterRegex, '');
 }
 
-/**
- * Extract title from frontmatter or filename
- */
-function getTitle(content, filename) {
-  // Try to get title from frontmatter
-  const frontmatterMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (frontmatterMatch) {
-    const titleMatch = frontmatterMatch[1].match(/^title:\s*["']?(.+?)["']?\s*$/m);
-    if (titleMatch) {
-      return titleMatch[1];
-    }
-  }
-
-  // Try to get title from first heading
-  const headingMatch = content.match(/^#\s+(.+)$/m);
-  if (headingMatch) {
-    return headingMatch[1];
-  }
-
-  // Fall back to filename
-  return filename
-    .replace(/\.mdx?$/, '')
-    .split('/')
-    .pop()
-    .replace(/-/g, ' ')
-    .replace(/\b\w/g, c => c.toUpperCase());
-}
