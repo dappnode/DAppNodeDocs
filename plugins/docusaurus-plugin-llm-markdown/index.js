@@ -45,11 +45,12 @@ module.exports = function pluginLlmMarkdown(context, options) {
         // Ensure directory exists
         fs.mkdirSync(outputDir, { recursive: true });
 
-        // Create header with source info
+        // Create header with reference to llms.txt index
         const header = `# ${getTitle(fileContent, file)}
 
-> Source: ${siteUrl}${urlPath.replace(/\.md$/, '')}
-> This is the raw markdown source optimized for LLM consumption.
+> ## Documentation Index
+> Fetch the complete documentation index at: ${siteUrl}/llms.txt
+> Use this file to discover all available pages before exploring further.
 
 ---
 
