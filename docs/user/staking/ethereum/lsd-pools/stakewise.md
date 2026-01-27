@@ -1,3 +1,7 @@
+---
+llm_description: "StakeWise liquid staking setup on Dappnode with solo or pooled staking options."
+---
+
 # StakeWise
 
 ---

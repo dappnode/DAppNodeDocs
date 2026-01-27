@@ -1,3 +1,7 @@
+---
+llm_description: "Guide to merge multiple Gnosis validators into fewer ones after Pectra hard fork."
+---
+
 # Consolidate your Gnosis validators
 
 After the Pectra hard fork, validator consolidations are ready to use in Gnosis chain. 

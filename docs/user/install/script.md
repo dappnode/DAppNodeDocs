@@ -1,3 +1,7 @@
+---
+llm_description: "Install Dappnode via bash script on Debian/Ubuntu, including prerequisites and update commands."
+---
+
 # Script installation
 
 You can install Dappnode using the installation script. In this case, we recommend you use Ubuntu or Debian as your operating system.

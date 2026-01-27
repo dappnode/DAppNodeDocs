@@ -1,3 +1,7 @@
+---
+llm_description: "Configure Telegram notifications and UI warnings for Lido CSM validator monitoring."
+---
+
 # Notifications & Warnings
 
 The DAppNodePackage-lido-csm provides notifications and warnings to help you monitor your infraestructure and validator performance. You will be able to setup your notifications either during the onboarding process if you are registering as a new Node Operator and from the UI navigating to `/notifications`.

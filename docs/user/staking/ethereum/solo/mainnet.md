@@ -1,3 +1,7 @@
+---
+llm_description: "Complete guide to solo staking on Ethereum mainnet: setup, key generation, and deposits."
+---
+
 # Ethereum mainnet
 
 Ethereum stands as a titan in the realm of smart contract platforms. Its monumental shift from Proof of Work (PoW) to Proof of Stake (PoS) has opened up opportunities for individuals to participate in Ethereum's block production by staking ETH.

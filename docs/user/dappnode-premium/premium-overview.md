@@ -1,6 +1,6 @@
 ---
 title: Dappnode Premium
-
+llm_description: "Dappnode Premium: paid services including monitoring, support, and beacon node backup."
 ---
 
 ### What is Dappnode Premium?

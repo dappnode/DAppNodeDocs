@@ -1,3 +1,7 @@
+---
+llm_description: "Introduction to staking with Dappnode on Ethereum, Gnosis Chain, and LUKSO networks."
+---
+
 # Earn with Staking in Dappnode
 
 ## Decentralize Proof-of-Stake chains and earn

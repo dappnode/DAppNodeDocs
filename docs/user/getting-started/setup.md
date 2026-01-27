@@ -1,3 +1,7 @@
+---
+llm_description: "Initial configuration: repository source, auto-updates, notifications, and host password setup."
+---
+
 # Setup
 
 Setting up Dappnode is a straightforward process. This guide will walk you through configuring your Dappnode for the first time.

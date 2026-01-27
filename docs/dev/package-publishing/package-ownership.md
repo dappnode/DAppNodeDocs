@@ -1,3 +1,7 @@
+---
+llm_description: "Role permission system for managing package ownership via Aragon ACL contracts."
+---
+
 # Package Ownership
 
 This guide outlines the role permission system used in Dappnode package management, powered by Aragon’s ACL (Access Control List) smart contracts. It explains how to check and modify roles such as permission managers and developers.

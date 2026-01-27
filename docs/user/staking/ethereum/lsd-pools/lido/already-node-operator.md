@@ -1,3 +1,7 @@
+---
+llm_description: "Instructions for existing Lido CSM node operators to integrate with Dappnode."
+---
+
 # Already a node operator
 
 This document provides detailed instructions for existing Node Operators on integrating their setup with the Lido Community Staking Module (CSM) via Dappnode. By following these steps, you can efficiently manage your validators and ensure proper functionality within the Lido protocol.

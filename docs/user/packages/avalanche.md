@@ -1,3 +1,8 @@
+---
+title: Avalanche
+llm_description: Running Avalanche nodes on Dappnode for network decentralization and AVAX staking rewards.
+---
+
 # Avalanche
 
 ## Avalanche: A Revolutionary Consensus Protocol

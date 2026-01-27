@@ -1,3 +1,7 @@
+---
+llm_description: "Monitor Lido validator performance with attestation rates and efficiency comparisons."
+---
+
 # Validator performance monitoring
 
 The **Performance** tab allows you to monitor the performance of your Lido validators associated with your Node Operator.

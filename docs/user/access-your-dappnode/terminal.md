@@ -1,3 +1,7 @@
+---
+llm_description: "Advanced CLI access via SSH or physical terminal for deep control and management."
+---
+
 # Terminal Access to Dappnode
 
 Accessing the terminal of your Dappnode, often referred to as the command-line interface (CLI), provides deep control and management capabilities. However, this method is considered advanced and requires familiarity with command line interactions. Incorrect or misguided commands can lead to unintended changes or potential system damage.

@@ -1,3 +1,7 @@
+---
+llm_description: "Guide for developing multi-variant packages supporting different networks from one codebase."
+---
+
 # Multi-Config Package Development
 
 This guide will walk you through the steps to develop a multi-config Dappnode package, allowing you to create multiple package configurations from a single source. We'll use the Lodestar Generic package as a reference, which builds multiple variants for different networks like Mainnet, Holesky, and Gnosis.

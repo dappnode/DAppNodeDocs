@@ -1,3 +1,7 @@
+---
+llm_description: "Overview of two subscription methods: automatic and manual, with address info."
+---
+
 # Subscribing to Smooth
 
 Hello! In this section you will find all the information on how to subscribe your Validators to [Smooth](https://smooth.dappnode.io/). Even though the process is simple, it is important to follow the steps carefully. 

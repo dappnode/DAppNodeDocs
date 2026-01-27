@@ -1,3 +1,7 @@
+---
+llm_description: How to unsubscribe via website; warns that pending rewards are lost on exit.
+---
+
 # Unsubscribing from Smooth.
 
 Unsubscribing from [Smooth](https://smooth.dappnode.io/) is as simple as subscribing to it. You can unsubscribe from [Smooth](https://smooth.dappnode.io/) at any time, it is done through **[Smooth's website](https://smooth.dappnode.io/)** and it only takes one simple transaction.

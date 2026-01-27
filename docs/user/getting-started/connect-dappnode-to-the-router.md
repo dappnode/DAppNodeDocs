@@ -1,3 +1,7 @@
+---
+llm_description: "Instructions to connect Dappnode to router via ethernet and enable UPnP for port forwarding."
+---
+
 # Connect your dappnode to the router and power
 
 Dappnode offers a seamless plug-and-play experience. For optimal performance and to ensure smooth operation, please connect your Dappnode to your router and enable UPnP settings within the router.

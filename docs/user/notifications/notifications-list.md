@@ -1,3 +1,7 @@
+---
+llm_description: "Complete list of Dappnode notifications: system, DMS, execution/consensus clients, validators."
+---
+
 # List of Notifications
 
 This is the full list of events that will be notified in your Dappnode. 

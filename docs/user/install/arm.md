@@ -1,3 +1,7 @@
+---
+llm_description: "ARM installation guide using script method, plus instructions to add external SSD storage."
+---
+
 # Install - ARM
 
 ## Hardware Recommendations

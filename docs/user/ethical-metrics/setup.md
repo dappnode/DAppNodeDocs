@@ -1,3 +1,7 @@
+---
+llm_description: "Step-by-step guide to configure Telegram and email notifications for Ethical Metrics alerts."
+---
+
 # Setting up Ethical Metrics
 
 :::tip

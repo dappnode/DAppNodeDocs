@@ -1,5 +1,6 @@
 ---
 title: Dappnode DAO FAQ
+llm_description: FAQ explaining what a DAO is and Dappnode DAO's mission for decentralized infrastructure.
 ---
 <details>
   <summary><b>What is a DAO?</b></summary>

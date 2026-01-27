@@ -1,3 +1,7 @@
+---
+llm_description: "Register and run an SSV distributed validator operator node on Dappnode."
+---
+
 # SSV Distributed Validator package for Dappnode
 
 ---

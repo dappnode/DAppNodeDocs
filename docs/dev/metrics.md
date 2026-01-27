@@ -1,3 +1,7 @@
+---
+llm_description: "Prometheus and Grafana metrics framework for DAppNode packages via DMS."
+---
+
 # 📊 Package Metrics
 
 DAppNode supports an integrated metrics framework based on [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/), powered by the [DMS package](https://docs.dappnode.io/docs/user/packages/dms/).

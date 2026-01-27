@@ -1,3 +1,7 @@
+---
+llm_description: "Setup Tailscale VPN for easy access without port forwarding; solves UPnP and CGNAT issues."
+---
+
 # Connect to Your Dappnode Using Tailscale
 
 Tailscale is a secure, peer-to-peer VPN solution that simplifies connecting to your Dappnode without requiring complex port forwarding, solving issues such as UPnP not being recognized, routers behind CGNAT, or other port forwarding challenges. This guide walks you through setting up Tailscale to access your Dappnode.

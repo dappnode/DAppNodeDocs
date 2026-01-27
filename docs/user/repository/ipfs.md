@@ -1,3 +1,7 @@
+---
+llm_description: "Configure local or remote IPFS nodes for downloading Dappnode packages from the Dappstore."
+---
+
 # IPFS repository
 
 Dappnode leverages IPFS for distributing packages available in the Dappstore. To download these packages, your Dappnode requires a connection to an IPFS node. When it comes to connecting to the IPFS network, you have two primary choices:

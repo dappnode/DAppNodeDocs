@@ -1,3 +1,7 @@
+---
+llm_description: FAQ about fees, claiming rewards, and glossary of terms like pending/accumulated rewards.
+---
+
 # FAQ & Glossary
 
 ## FAQ

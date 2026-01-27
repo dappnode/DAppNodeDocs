@@ -1,6 +1,6 @@
 ---
 title: Premium services
-
+llm_description: "Premium features: push notifications, validator alerts, backup node (168h/month), and support calls."
 ---
 
 ## Advanced push notifications

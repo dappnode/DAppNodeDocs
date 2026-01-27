@@ -1,3 +1,7 @@
+---
+llm_description: "Reference for setup-wizard.yml to customize package installation with forms."
+---
+
 # Wizard Reference
 
 The setup wizard for Dappnode packages helps automate the package customization and improve its user experience. You can allow users to conveniently edit environment variables, port mappings, and upload files while interacting with a simple web form, right before installing the package.

@@ -1,3 +1,7 @@
+---
+llm_description: "Dappnode Monitoring Service using Prometheus and Grafana for system and package health monitoring."
+---
+
 # Dappnode Monitoring Service (DMS)
 
 As a Dappnode user, there are times when having insights into the performance of your packages or your whole system can be incredibly beneficial. This means understanding the condition or "health" of your packages, the utilization of your computer resources such as CPU, RAM, and disk space, as well as monitoring network traffic flow. Yet, managing all of these aspects can become complex and tedious, even for those with experience. This is precisely where the Dappnode Monitoring Service (DMS) steps in to simplify matters.

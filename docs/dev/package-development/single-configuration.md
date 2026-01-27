@@ -1,3 +1,7 @@
+---
+llm_description: "Step-by-step guide for developing single-variant Dappnode packages."
+---
+
 # Single-Variant Package Development
 
 This guide will walk you through the steps to develop a single-variant Dappnode package using a simple example. We'll start with initializing a basic package and progress to a more complex setup, using the Holesky Geth package as a reference.

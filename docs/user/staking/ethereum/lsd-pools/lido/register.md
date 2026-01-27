@@ -1,3 +1,7 @@
+---
+llm_description: "Step-by-step guide to register as a new Lido CSM node operator on Dappnode."
+---
+
 # **Become a Lido Node Operator with Dappnode**
 
 **Dappnode** provides an easy-to-use and intuitive interface for most of the infrastructure needed to become a Lido Node Operator. The process is straightforward and requires only a few steps to set up a node operator and start earning rewards. An overview of the process is how the Lido CSM UI will greet you when first connecting your wallet to the dApp:

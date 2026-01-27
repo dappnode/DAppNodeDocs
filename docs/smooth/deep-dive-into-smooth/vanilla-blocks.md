@@ -1,6 +1,6 @@
 ---
 title: What is a vanilla block?
-
+llm_description: Explains vanilla blocks and why MEV blocks are required; 3 vanilla blocks leads to ban.
 ---
 
 **What is a vanilla block?**

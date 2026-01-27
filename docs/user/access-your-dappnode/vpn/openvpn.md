@@ -1,3 +1,7 @@
+---
+llm_description: "Setup guide for OpenVPN access with credential retrieval and multi-platform installation steps."
+---
+
 # OpenVPN Access to Dappnode
 
 OpenVPN is a widely-accepted VPN protocol known for its reliability and high-security standards. Here's how you can set it up with Dappnode.

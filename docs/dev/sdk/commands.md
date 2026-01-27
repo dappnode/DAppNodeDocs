@@ -1,3 +1,7 @@
+---
+llm_description: "Documentation for SDK init, build, and publish commands with options."
+---
+
 # Main commands
 
 This page covers the top three functionalities of DappnodeSDK: `init`, `build`, and `publish`. Each command plays a crucial role in the development and deployment process of dappnode packages (DNPs).

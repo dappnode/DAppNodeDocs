@@ -1,3 +1,7 @@
+---
+llm_description: How Smooth handles Pectra validator consolidations and transfers pending rewards automatically.
+---
+
 # Consolidations
 
 Since the [Pectra](https://ethereum.org/en/history/#pectra) update on May 7, 2025, validators can stake up to 2048 ETH. Instead of having to manage multiple 32 ETH validators, users can now choose to stake an arbitrary amount of ETH in a single validator. 

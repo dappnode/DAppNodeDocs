@@ -1,3 +1,7 @@
+---
+llm_description: "How to connect to DappnodeWIFI hotspot and access the web interface via browser."
+---
+
 # Access Dappnode via Wi-Fi
 
 After connecting your Dappnode to the router and power, and turning it on, it's time to connect to it.

@@ -1,3 +1,7 @@
+---
+llm_description: "Notification system for alerting users about events via the DAppNode UI."
+---
+
 # 🔔 Package Notifications (Coming soon)
 
 Notifications are a way to inform users about events happening in the DAppNode. They are displayed in the [notifications tab](http://dappmanager.dappnode/notifications) within the DAppNode UI. Notifications are sent by third-party software, "Gatus," which monitors the services running in the DAppNode or arbitrary services that send notifications. Users can configure the notifications they want to receive and set thresholds (if applicable) for these notifications.
