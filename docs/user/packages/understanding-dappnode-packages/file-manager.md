@@ -1,0 +1,11 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.dappnode.io/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+---
+
+# File Manager
+
+Also handy whenever your package has a database you'll need to access or modify, but without going through a terminal. Download and upload files in an easy way with the File Manager.
+
+![dappnode_packages6](/img/dappnode_packages6.png)
