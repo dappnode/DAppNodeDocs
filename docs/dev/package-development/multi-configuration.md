@@ -1,4 +1,5 @@
 ---
+title: "Multi-Config Package Development"
 llm_description: "Guide for developing multi-variant packages supporting different networks from one codebase."
 ---
 

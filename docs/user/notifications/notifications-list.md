@@ -1,4 +1,5 @@
 ---
+title: "List of Notifications"
 llm_description: "Complete list of Dappnode notifications: system, DMS, execution/consensus clients, validators."
 ---
 

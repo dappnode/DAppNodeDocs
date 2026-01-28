@@ -1,4 +1,5 @@
 ---
+title: "Ethereum repository"
 llm_description: "How Dappnode connects to Ethereum nodes for package distribution via smart contracts."
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "Package Development"
 llm_description: "Overview of single-config and multi-config package repository types."
 ---
 

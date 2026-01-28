@@ -1,4 +1,5 @@
 ---
+title: "Welcome to the Developer Documentation!"
 sidebar_label: Introduction
 llm_description: "Introduction to Dappnode developer docs for creating, deploying, and managing custom packages."
 ---

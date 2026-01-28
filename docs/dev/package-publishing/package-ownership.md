@@ -1,4 +1,5 @@
 ---
+title: "Package Ownership"
 llm_description: "Role permission system for managing package ownership via Aragon ACL contracts."
 ---
 

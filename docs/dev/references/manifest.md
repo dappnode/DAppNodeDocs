@@ -1,4 +1,5 @@
 ---
+title: "Dappnode Package (DNP) manifest"
 llm_description: "Complete reference for dappnode_package.json manifest file properties."
 ---
 

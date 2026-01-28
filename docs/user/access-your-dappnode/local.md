@@ -1,4 +1,5 @@
 ---
+title: "Local Proxy Access to Dappnode"
 llm_description: "Access Dappnode via http://dappnode.local on same network; limited to Admin UI dashboard only."
 ---
 

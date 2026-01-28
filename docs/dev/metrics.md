@@ -1,4 +1,5 @@
 ---
+title: "📊 Package Metrics"
 llm_description: "Prometheus and Grafana metrics framework for DAppNode packages via DMS."
 ---
 

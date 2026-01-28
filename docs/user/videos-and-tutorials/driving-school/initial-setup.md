@@ -1,4 +1,5 @@
 ---
+title: "1. Initial Dappnode Setup"
 llm_description: "Video tutorials for initial Dappnode setup: ISO boot, UI access, security, VPN, and syncing."
 ---
 

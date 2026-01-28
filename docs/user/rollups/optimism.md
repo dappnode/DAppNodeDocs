@@ -1,4 +1,5 @@
 ---
+title: "Optimism Rollup"
 llm_description: "Setting up an Optimism Layer 2 node on Dappnode using op-node and op-geth/op-erigon."
 ---
 

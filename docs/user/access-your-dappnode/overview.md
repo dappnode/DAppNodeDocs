@@ -1,4 +1,5 @@
 ---
+title: "🌐 Access your Dappnode"
 llm_description: "Overview of four ways to access Dappnode: WiFi, VPN, Local Proxy, and Terminal."
 ---
 

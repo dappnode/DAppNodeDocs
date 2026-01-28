@@ -1,4 +1,5 @@
 ---
+title: "Manual Subscription"
 llm_description: Manual subscription via website with 0.01 ETH deposit to start earning immediately.
 ---
 

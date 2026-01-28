@@ -1,4 +1,5 @@
 ---
+title: "Connect to Your Dappnode Using Tailscale"
 llm_description: "Setup Tailscale VPN for easy access without port forwarding; solves UPnP and CGNAT issues."
 ---
 

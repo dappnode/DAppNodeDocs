@@ -1,4 +1,5 @@
 ---
+title: "How to Connect to My Blockchain Node"
 llm_description: "How to connect applications and Metamask to your Dappnode blockchain node via RPC."
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "🚀 Becoming an Aztec Sequencer with DAppNode"
 llm_description: "Step-by-step guide to becoming an Aztec sequencer using DAppNode infrastructure."
 ---
 

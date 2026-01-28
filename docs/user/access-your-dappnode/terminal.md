@@ -1,4 +1,5 @@
 ---
+title: "Terminal Access to Dappnode"
 llm_description: "Advanced CLI access via SSH or physical terminal for deep control and management."
 ---
 

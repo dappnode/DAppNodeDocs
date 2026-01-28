@@ -1,4 +1,5 @@
 ---
+title: "FAQs & Troubleshooting"
 llm_description: "AWS FAQs: machine selection, storage requirements, security groups, Telegram setup, troubleshooting."
 ---
 

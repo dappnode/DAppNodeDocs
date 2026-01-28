@@ -1,4 +1,5 @@
 ---
+title: "Obol Distributed Validator package for Dappnode"
 llm_description: "Set up Obol distributed validators with DKG ceremony and cluster configuration on Dappnode."
 ---
 

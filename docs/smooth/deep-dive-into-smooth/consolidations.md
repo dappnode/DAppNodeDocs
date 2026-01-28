@@ -1,4 +1,5 @@
 ---
+title: "Consolidations"
 llm_description: How Smooth handles Pectra validator consolidations and transfers pending rewards automatically.
 ---
 

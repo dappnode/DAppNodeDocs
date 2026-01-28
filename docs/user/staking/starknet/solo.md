@@ -1,4 +1,5 @@
 ---
+title: "🚀 Starknet Validator Solo Staking Guide"
 llm_description: "Guide to become a Starknet validator: create accounts, stake STRK, run attestation client."
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "Next Steps"
 llm_description: "Suggested actions after setup: configure VPN access, start staking, and enable Ethical Metrics."
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "Hardware"
 llm_description: "Overview of hardware-related documentation covering maintenance and temperature monitoring."
 ---
 

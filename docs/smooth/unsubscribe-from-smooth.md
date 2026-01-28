@@ -1,4 +1,5 @@
 ---
+title: "Unsubscribing from Smooth."
 llm_description: How to unsubscribe via website; warns that pending rewards are lost on exit.
 ---
 

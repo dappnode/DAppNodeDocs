@@ -1,4 +1,5 @@
 ---
+title: "Ethereum mainnet"
 llm_description: "Complete guide to solo staking on Ethereum mainnet: setup, key generation, and deposits."
 ---
 

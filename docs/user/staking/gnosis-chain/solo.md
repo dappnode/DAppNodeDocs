@@ -1,4 +1,5 @@
 ---
+title: "Gnosis Chain"
 llm_description: "Complete guide to solo staking on Gnosis Chain: install packages, generate keys, deposit 1 GNO."
 ---
 

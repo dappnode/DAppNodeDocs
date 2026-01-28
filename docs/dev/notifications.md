@@ -1,4 +1,5 @@
 ---
+title: "🔔 Package Notifications (Coming soon)"
 llm_description: "Notification system for alerting users about events via the DAppNode UI."
 ---
 

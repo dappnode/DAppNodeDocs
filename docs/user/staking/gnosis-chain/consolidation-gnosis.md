@@ -1,4 +1,5 @@
 ---
+title: "Consolidate your Gnosis validators"
 llm_description: "Guide to merge multiple Gnosis validators into fewer ones after Pectra hard fork."
 ---
 

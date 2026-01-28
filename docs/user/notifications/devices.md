@@ -1,4 +1,5 @@
 ---
+title: "Devices management"
 llm_description: "How to subscribe desktop/mobile devices to receive push notifications in Dappnode."
 ---
 

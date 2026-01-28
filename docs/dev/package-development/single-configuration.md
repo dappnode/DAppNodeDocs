@@ -1,4 +1,5 @@
 ---
+title: "Single-Variant Package Development"
 llm_description: "Step-by-step guide for developing single-variant Dappnode packages."
 ---
 

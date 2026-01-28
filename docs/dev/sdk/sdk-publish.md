@@ -1,4 +1,5 @@
 ---
+title: "SDK-Publish"
 llm_description: "Guide for using SDK-Publish tool to sign and publish package releases."
 ---
 

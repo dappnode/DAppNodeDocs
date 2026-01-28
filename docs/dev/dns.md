@@ -1,4 +1,5 @@
 ---
+title: "🌐 DNS"
 llm_description: "DNS-based service discovery and domain naming conventions for DAppNode packages."
 ---
 

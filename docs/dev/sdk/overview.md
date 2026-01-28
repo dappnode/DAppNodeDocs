@@ -1,4 +1,5 @@
 ---
+title: "DappnodeSDK"
 llm_description: "Overview of DappnodeSDK tool for creating, building, and publishing packages."
 ---
 

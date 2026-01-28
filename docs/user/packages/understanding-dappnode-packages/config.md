@@ -1,4 +1,5 @@
 ---
+title: "Config"
 llm_description: "Package configuration settings with simple and advanced modes for parameter customization."
 ---
 

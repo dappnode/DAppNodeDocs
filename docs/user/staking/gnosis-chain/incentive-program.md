@@ -1,4 +1,5 @@
 ---
+title: "Gnosis Chain Incentive Program"
 llm_description: "How to claim free GNO validators through Dappnode's Gnosis Chain incentive program."
 ---
 

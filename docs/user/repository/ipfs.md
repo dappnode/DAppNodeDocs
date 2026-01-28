@@ -1,4 +1,5 @@
 ---
+title: "IPFS repository"
 llm_description: "Configure local or remote IPFS nodes for downloading Dappnode packages from the Dappstore."
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "Videos and Tutorials"
 llm_description: "Overview of Dappnode video tutorials and guides for beginners and advanced users."
 ---
 

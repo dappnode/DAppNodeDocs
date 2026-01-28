@@ -1,4 +1,5 @@
 ---
+title: "Notifications & Warnings"
 llm_description: "Configure Telegram notifications and UI warnings for Lido CSM validator monitoring."
 ---
 

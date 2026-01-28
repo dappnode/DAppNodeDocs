@@ -1,4 +1,5 @@
 ---
+title: "Access Dappnode via Wi-Fi"
 llm_description: "How to connect to DappnodeWIFI hotspot and access the web interface via browser."
 ---
 

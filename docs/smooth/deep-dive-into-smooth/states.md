@@ -1,4 +1,5 @@
 ---
+title: "Smooth Validator States"
 llm_description: "Validator state machine: Active, YellowCard, RedCard, NotSubscribed, Banned, and Untracked."
 ---
 

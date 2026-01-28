@@ -1,4 +1,5 @@
 ---
+title: "What is Dappnode Cloud?"
 llm_description: "Deploy Dappnode in cloud (AWS) without hardware; ideal for testing, dev, or short-term use."
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "Validator performance monitoring"
 llm_description: "Monitor Lido validator performance with attestation rates and efficiency comparisons."
 ---
 
