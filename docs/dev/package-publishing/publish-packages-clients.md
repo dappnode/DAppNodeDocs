@@ -1,6 +1,6 @@
 ---
 title: Publish your packages seamlessly
-
+llm_description: "Step-by-step guide for publishing packages using the SDK-publish UI."
 ---
 
 # Publish your packages seamlessly

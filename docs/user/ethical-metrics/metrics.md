@@ -1,3 +1,8 @@
+---
+title: "Metrics Collected by Ethical Metrics"
+llm_description: "Lists all metrics collected by Ethical Metrics: host, Dappmanager, and staking metrics via TOR."
+---
+
 # Metrics Collected by Ethical Metrics
 
 Dappnode has absolutely no hidden telemetry and is completely private by design. We were reluctant of setting up a monitoring service because we did NOT want to collect any data from our users. Because of our community's continuous requests to offer alerts, we came up with a solution that doesn't compromise your privacy.

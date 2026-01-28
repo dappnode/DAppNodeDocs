@@ -1,3 +1,8 @@
+---
+title: "🚀 Starknet Validator Solo Staking Guide"
+llm_description: "Guide to become a Starknet validator: create accounts, stake STRK, run attestation client."
+---
+
 # 🚀 Starknet Validator Solo Staking Guide
 
 **Starknet** is a Layer 2 network built on Ethereum, designed for scalability and performance using STARK proofs.  

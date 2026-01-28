@@ -1,3 +1,8 @@
+---
+title: Bitcoin
+llm_description: Running a Bitcoin node on Dappnode to validate transactions and support network decentralization.
+---
+
 # Bitcoin
 
 ## Exploring Bitcoin: The Pioneer of Cryptocurrency

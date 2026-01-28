@@ -1,3 +1,8 @@
+---
+title: "Register"
+llm_description: "Guide to create a Dappnode account, secure recovery token, and log in to the interface."
+---
+
 # Register
 
 ## 1. Register as New User

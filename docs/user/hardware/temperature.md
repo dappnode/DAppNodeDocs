@@ -1,3 +1,8 @@
+---
+title: "Temperature"
+llm_description: "How to monitor CPU temperature via dashboard and configure temperature alerts."
+---
+
 # Temperature
 
 Keeping a close eye to your Dappnode's temperature is part of the Node Runner's basic good practices. Dappnode provides you with metrics 📊 in the [main dashboard](http://my.dappnode/dashboard) to do so.

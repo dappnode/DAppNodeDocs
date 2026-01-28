@@ -1,3 +1,8 @@
+---
+title: "Notifications Overview"
+llm_description: "Introduction to Dappnode's built-in notification system for monitoring hardware, system, and staking."
+---
+
 # Notifications Overview
 
 Dappnode Notifications is a built-in system that keeps you informed about important events and updates across your Dappnode setup. Whether it's a new software release, a hardware warning, or a consensus sync alert — notifications are your go-to source for staying up to date.

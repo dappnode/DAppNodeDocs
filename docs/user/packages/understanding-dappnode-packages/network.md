@@ -1,3 +1,8 @@
+---
+title: "Network"
+llm_description: "Network configuration for packages: port mapping, HTTPS domains, and basic authentication."
+---
+
 # Network
 
 The Network section allows you to manage and configure the network settings for your packages. This includes adjusting network settings for individual services, changing port mappings, and setting up domain mappings to expose your package to the internet.

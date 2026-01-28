@@ -1,3 +1,8 @@
+---
+title: "1. Initial Dappnode Setup"
+llm_description: "Video tutorials for initial Dappnode setup: ISO boot, UI access, security, VPN, and syncing."
+---
+
 # 1. Initial Dappnode Setup
 
 Welcome to Dappnode Driving School! Here you'll find a series of videos that will guide you through the initial setup process. From booting Dappnode from ISO and accessing it through VPN, to setting up your Ethereum node, we've got you covered.

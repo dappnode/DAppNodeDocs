@@ -1,3 +1,8 @@
+---
+title: "Hardware"
+llm_description: "Overview of hardware-related documentation covering maintenance and temperature monitoring."
+---
+
 # Hardware
 
 In this section you will find information related to the hardware of the Dappnode's host machine. If you had noticed any issue with it and have tried some steps provided by the Dappnode community and/or staff without success, this section of the Dappnode documentation will help you solving those that are on the hardware side of things.

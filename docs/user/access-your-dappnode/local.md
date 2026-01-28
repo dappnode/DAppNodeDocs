@@ -1,3 +1,8 @@
+---
+title: "Local Proxy Access to Dappnode"
+llm_description: "Access Dappnode via http://dappnode.local on same network; limited to Admin UI dashboard only."
+---
+
 # Local Proxy Access to Dappnode
 
 The local proxy method provides a way to access your Dappnode from within the same local network without any previous configuration required. However, it's essential to understand that due to certain network incompatibilities, this method might not work for all users.

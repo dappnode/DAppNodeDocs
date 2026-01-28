@@ -1,3 +1,8 @@
+---
+title: "Notifications Legacy"
+llm_description: "Legacy email/telegram notification system being deprecated in favor of the new unified system."
+---
+
 # Notifications Legacy
 
 In the legacy section you have access to the previous system of notifications with email and telegram. The aim of the new notification system is to unify the notifications in a single channel in desktop and mobile to facilitate the user experience and be more reliable, configurable and scalable. Therefore, this section will be deprecated in the upcoming core releases. 

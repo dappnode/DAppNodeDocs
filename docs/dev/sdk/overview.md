@@ -1,3 +1,8 @@
+---
+title: "DappnodeSDK"
+llm_description: "Overview of DappnodeSDK tool for creating, building, and publishing packages."
+---
+
 # DappnodeSDK
 
 The DappnodeSDK `dappnodesdk` is a tool that makes creating and publishing new Dappnode packages as simple as possible. It helps to initialize, build, test, and publish the new package/repo to an APM tracked on the Ethereum Mainnet.

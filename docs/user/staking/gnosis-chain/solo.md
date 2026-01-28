@@ -1,3 +1,8 @@
+---
+title: "Gnosis Chain"
+llm_description: "Complete guide to solo staking on Gnosis Chain: install packages, generate keys, deposit 1 GNO."
+---
+
 # Gnosis Chain
 
 **Gnosis Chain** stands as a sentinel, functioning as a canary chain for Ethereum. It's operated and nurtured by the **GnosisDAO community**. With over 10% of its validators being home stakers via Dappnode, it's a testament to its popularity and accessibility.

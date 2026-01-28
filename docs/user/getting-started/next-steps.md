@@ -1,3 +1,8 @@
+---
+title: "Next Steps"
+llm_description: "Suggested actions after setup: configure VPN access, start staking, and enable Ethical Metrics."
+---
+
 # Next Steps
 
 Now that your DAppNode is set up and ready to go, it's time to explore further configurations and features to get the most out of your experience. Here are some of the most common next steps:

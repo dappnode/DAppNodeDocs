@@ -1,3 +1,8 @@
+---
+title: "FAQs"
+llm_description: "Common questions about staking, installation issues, VPN/Wireguard, client syncing, and specs."
+---
+
 # FAQs
 
 <details>

@@ -1,0 +1,6 @@
+{
+  "name": "docusaurus-plugin-llm-markdown",
+  "version": "1.0.0",
+  "description": "Generates plain markdown files for LLM consumption",
+  "main": "index.js"
+}

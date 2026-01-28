@@ -1,3 +1,8 @@
+---
+title: "Rewards"
+llm_description: How Smooth distributes rewards based on effective balance and converts pending to claimable.
+---
+
 # Rewards
 
 Receiving and distributing rewards is one of the core functionalities of [Smooth](https://smooth.dappnode.io/). In this section we will explain how rewards are handled by [Smooth](https://smooth.dappnode.io/) and how they are distributed to validators, as well as how users can claim their rewards.

@@ -34,6 +34,7 @@ const config = {
 
   plugins: [
     require.resolve("@easyops-cn/docusaurus-search-local"),
+    require.resolve("./plugins/docusaurus-plugin-llm-markdown"),
     [
       "@docusaurus/plugin-client-redirects",
       {

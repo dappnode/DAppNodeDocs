@@ -1,3 +1,8 @@
+---
+title: "VPN Access to Dappnode"
+llm_description: "Overview of VPN options (Tailscale, WireGuard, OpenVPN) for secure local and remote access."
+---
+
 # VPN Access to Dappnode
 
 Virtual Private Network (VPN) is a robust method for accessing your Dappnode. It ensures a secure and encrypted connection between your device and the Dappnode, allowing you to manage your Dappnode from virtually anywhere. Depending on your needs and preferences, Dappnode offers support for two primary VPN technologies: **WireGuard** and **OpenVPN**.

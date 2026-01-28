@@ -1,3 +1,8 @@
+---
+title: "Maintenance"
+llm_description: "Hardware maintenance tips: airflow, dust cleaning, and thermal paste replacement procedures."
+---
+
 # Maintenance
 
 This section will cover four different approaches to servicing your hardware. The order is by level of difficulty from easiest to hardest. Remember that if you have any questions they're always welcome in our [Discord server](https://discord.gg/dappnode).

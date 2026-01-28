@@ -1,3 +1,8 @@
+---
+title: "Choose your path"
+llm_description: "Entry point to choose between using pre-installed Dappnode or installing on your own machine."
+---
+
 # Choose your path
 
 Regardless of how you wish to utilize Dappnode, taking the initiative to contribute to decentralization and earning rewards is commendable. Embark on your desired path and experience the full potential of Dappnode.

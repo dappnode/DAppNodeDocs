@@ -1,3 +1,8 @@
+---
+title: "What is Dappnode Cloud?"
+llm_description: "Deploy Dappnode in cloud (AWS) without hardware; ideal for testing, dev, or short-term use."
+---
+
 # What is Dappnode Cloud?
 
 Dappnode Cloud is a service that allows users to deploy a Dappnode in a cloud provider so it can be tested without the need for physical hardware. We provide easy pre-configured instances for the main cloud providers (AWS for now, more to come later) to continue to make the deployment of web3 infrastructure accessible and hassle-free for everyone. It consists of a Dappnode image deployed on a machine instance from a cloud provider, eliminating the need to invest in hardware in order to test Dappnode.

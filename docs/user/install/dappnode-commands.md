@@ -1,3 +1,8 @@
+---
+title: "Dappnode commands"
+llm_description: "Reference list of CLI commands: wifi, VPN credentials, status, start, and stop Dappnode."
+---
+
 # Dappnode commands
 
 Dappnode comes with a set of commands that can be used to manage the system. These commands can be used directly from the command line.

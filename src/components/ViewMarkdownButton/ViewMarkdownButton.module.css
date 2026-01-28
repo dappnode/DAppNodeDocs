@@ -1,0 +1,31 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--ifm-color-primary);
+  background-color: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  vertical-align: middle;
+  margin-left: auto;
+}
+
+.button:hover {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  text-decoration: none;
+}
+
+/* Small code icon */
+.button::before {
+  content: "{ }";
+  font-family: monospace;
+  font-size: 0.7rem;
+  font-weight: bold;
+}

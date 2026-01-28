@@ -1,3 +1,8 @@
+---
+title: "Docker compose file"
+llm_description: "Reference for docker-compose.yml structure, environment variables, and build arguments."
+---
+
 # Docker compose file
 
 Dappnode packages are built upon Docker containers. The heart of defining how these containers run and interact lies in the `docker-compose.yml` file. In this guide, we will explain the typical structure of the `docker-compose.yml` file for a Dappnode package.

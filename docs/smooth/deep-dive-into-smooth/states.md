@@ -1,3 +1,8 @@
+---
+title: "Smooth Validator States"
+llm_description: "Validator state machine: Active, YellowCard, RedCard, NotSubscribed, Banned, and Untracked."
+---
+
 # Smooth Validator States
 
 A [Smooth](https://smooth.dappnode.io/) validator can be in multiple states depending on its behavior. In this section we will explain all possible states a validator can have, the consequences of being each state, and how a validator can transition from one state to another.

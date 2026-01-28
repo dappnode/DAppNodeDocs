@@ -1,3 +1,8 @@
+---
+title: "Transitioning To Dappnode"
+llm_description: "Step-by-step guide to migrate Avado hardware to DAppnodeOS using a bootable USB."
+---
+
 # Transitioning To Dappnode
 
 :::caution Warning

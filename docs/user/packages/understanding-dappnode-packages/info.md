@@ -1,3 +1,8 @@
+---
+title: "Info"
+llm_description: "Package info section showing version, status, links, and management options like remove/restart."
+---
+
 # Info
 
 The Info section provides a comprehensive overview of the package's status and essential details. This section is crucial for understanding the current state of the package and managing its basic operations. Below are the key features you'll find in the Info section:

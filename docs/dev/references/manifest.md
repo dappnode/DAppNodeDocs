@@ -1,3 +1,8 @@
+---
+title: "Dappnode Package (DNP) manifest"
+llm_description: "Complete reference for dappnode_package.json manifest file properties."
+---
+
 # Dappnode Package (DNP) manifest
 
 The Dappnode Package manifest defines all the necessary information for a Dappnode to understand this package:

@@ -1,3 +1,8 @@
+---
+title: "ISO Installation"
+llm_description: "Guide to install Dappnode from ISO: download, burn to USB, boot, and follow prompts."
+---
+
 # ISO Installation
 
 When you want to perform a clean installation by installing the base operating system and Dappnode. Installing from an ISO will wipe the machine data and install Dappnode over Debian.

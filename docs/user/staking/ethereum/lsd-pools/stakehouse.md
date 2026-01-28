@@ -1,3 +1,8 @@
+---
+title: "Stakehouse"
+llm_description: "Become a Stakehouse node runner with 4 ETH using Web3Signer integration."
+---
+
 # Stakehouse
 
 ---

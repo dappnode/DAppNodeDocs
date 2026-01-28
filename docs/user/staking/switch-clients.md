@@ -1,3 +1,8 @@
+---
+title: "Switch staking clients"
+llm_description: "How to switch execution and consensus clients on Dappnode with sync times and best practices."
+---
+
 # Switch staking clients
 
 This guide explains how to switch execution and consensus clients on Dappnode for Ethereum, Gnosis, and Lukso networks. It includes detailed information about the switching process and expected waiting times for resynchronization and attestation.

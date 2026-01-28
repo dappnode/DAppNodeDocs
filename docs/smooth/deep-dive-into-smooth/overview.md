@@ -1,3 +1,8 @@
+---
+title: "Deep Dive into Smooth!"
+llm_description: Index page linking to deep-dive sections on rewards, validator states, and architecture.
+---
+
 # Deep Dive into Smooth!
 
 In this section, you will find an in-depth explanation on how [Smooth](https://smooth.dappnode.io/) works. This includes its different components, all states possible of a subscribed validator, and much more!

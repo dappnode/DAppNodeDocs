@@ -1,3 +1,8 @@
+---
+title: "LUKSO"
+llm_description: "Complete guide to solo staking on LUKSO: install packages, generate keys, deposit 32 LYX."
+---
+
 # LUKSO
 
 **LUKSO** is the next-gen blockchain designed with creative industries in mind. Imagine a digital realm where the spirit of Ethereum meets the world of fashion, art, and design. That's LUKSO for you!

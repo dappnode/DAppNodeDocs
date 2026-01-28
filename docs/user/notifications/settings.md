@@ -1,3 +1,8 @@
+---
+title: "🛠️ Notifications Settings"
+llm_description: "Configure notification preferences per package with master switch and threshold sliders."
+---
+
 # 🛠️ Notifications Settings
 
 In the settings section you can configure the type of notification you would like to receive per package. 

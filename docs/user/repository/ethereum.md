@@ -1,3 +1,8 @@
+---
+title: "Ethereum repository"
+llm_description: "How Dappnode connects to Ethereum nodes for package distribution via smart contracts."
+---
+
 # Ethereum repository
 
 Dappnode uses smart contracts to distribute Dappnode's packages available in the Dappstore and the Stakers tab. These smart contracts are deployed on the Ethereum blockchain, and the execution client interacts with them to get the list of available packages and download them.

@@ -1,3 +1,8 @@
+---
+title: "WireGuard Access to Dappnode"
+llm_description: "WireGuard VPN setup guide with credential retrieval and multi-platform client configuration."
+---
+
 # WireGuard Access to Dappnode
 
 WireGuard is a modern, high-performance VPN protocol that offers a simple and streamlined approach for securely accessing your Dappnode. This guide will walk you through setting up WireGuard with your Dappnode.

@@ -1,3 +1,8 @@
+---
+title: "Manual Subscription"
+llm_description: Manual subscription via website with 0.01 ETH deposit to start earning immediately.
+---
+
 # Manual Subscription
 
 Would you rather not wait until your next proposed block to subscribe and begin earning rewards? You can take a proactive step and opt for manual subscription right away. During this process, you'll change your validator's fee recipient to Smooth's address, just like in the automatic subscription. However, instead of waiting for your next proposed block, you'll immediately start accumulating rewards from [Smooth](https://smooth.dappnode.io/).

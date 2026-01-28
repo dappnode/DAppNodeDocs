@@ -1,3 +1,8 @@
+---
+title: "How to install the Dappnode app"
+llm_description: "Step-by-step guide to install Dappnode PWA app on mobile/desktop with VPN and notifications."
+---
+
 # How to install the Dappnode app
 
 The complete process to install the Dappnode app is the following: 

@@ -1,3 +1,8 @@
+---
+title: "🚀 Becoming an Aztec Sequencer with DAppNode"
+llm_description: "Step-by-step guide to becoming an Aztec sequencer using DAppNode infrastructure."
+---
+
 # 🚀 Becoming an Aztec Sequencer with DAppNode
 
 Your comprehensive guide to setting up and joining the Aztec network as a sequencer using DAppNode infrastructure. Let's get you sequencing! 🎯
