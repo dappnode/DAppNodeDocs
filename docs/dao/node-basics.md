@@ -1,3 +1,8 @@
+---
+title: The NODE Economy
+llm_description: "NODE token economics: 100M supply distribution, NODEdrop recipients, and NODEstream vesting."
+---
+
 # The NODE Economy
 
 ### NODE Basics

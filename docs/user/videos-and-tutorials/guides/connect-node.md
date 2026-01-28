@@ -1,3 +1,7 @@
+---
+llm_description: "How to connect applications and Metamask to your Dappnode blockchain node via RPC."
+---
+
 # How to Connect to My Blockchain Node
 
 When you've set up your Dappnode, you might want to connect various applications to your blockchain node. This process can vary depending on which blockchain you've selected. Below is a guide on how to do this:

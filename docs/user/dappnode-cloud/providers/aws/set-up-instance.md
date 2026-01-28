@@ -1,3 +1,7 @@
+---
+llm_description: "Step-by-step guide to launch Dappnode on AWS EC2 with Telegram or SSH credential retrieval."
+---
+
 # How to Set Up an Instance
 
 To launch a Dappnode AMI instance, follow these steps:

@@ -1,3 +1,7 @@
+---
+llm_description: "Dappnode PWA app for mobile/desktop: remote management, notifications, and staking configuration."
+---
+
 # Overview
 
 The **Dappnode app** is a new form of interaction with Dappnode from **mobile and desktop devices**.  It helps users to enter the Dappmanager remotely and get notified about the hardware status and the staking performance.

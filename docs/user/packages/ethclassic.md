@@ -1,3 +1,8 @@
+---
+title: Ethereum Classic
+llm_description: Running Ethereum Classic nodes on Dappnode to support blockchain immutability principles.
+---
+
 # Ethereum Classic
 ## Introducing Ethereum Classic: Preserving Blockchain Principles
 Ethereum Classic, a steadfast blockchain, emerged from the Ethereum chain split, committed to upholding the unwavering principles of blockchain immutability. Ethereum Classic champions the preservation of transaction history and decentralized governance.

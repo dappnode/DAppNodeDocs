@@ -1,3 +1,7 @@
+---
+llm_description: "View notification inbox with history, priority levels, status, categories, and filtering options."
+---
+
 # 📨 Notifications Inbox
 
 In the inbox section, you will see new notifications and the complete history.

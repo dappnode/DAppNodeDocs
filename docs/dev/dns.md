@@ -1,3 +1,7 @@
+---
+llm_description: "DNS-based service discovery and domain naming conventions for DAppNode packages."
+---
+
 # 🌐 DNS
 
 By default, every DAppNode package runs on Docker networks that provide DNS-based service discovery. The main network is `dncore_network`, which uses a public IP range, and starting from core version 0.3.2, there is also a `dnprivate_network` with the private IP range `10.20.0.0/24`. Both networks allow packages to communicate and resolve service names, but `dnprivate_network` adds a security layer by restricting access to a private IP range, making it ideal for accessing sensitive UIs and services.

@@ -1,3 +1,7 @@
+---
+llm_description: "Overview of single-config and multi-config package repository types."
+---
+
 # Package Development
 
 Welcome to the **Package Development** section! This guide will help you create your own Dappnode packages. In Dappnode, packages are applications that you can download and install on your Dappnode machine, allowing you to enhance its functionality.

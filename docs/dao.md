@@ -1,6 +1,7 @@
 ---
 title: DAO
 description: DAO information
+llm_description: "Dappnode DAO governance overview: NODE token addresses, mission, Snapshot voting, and ValidatorDAO."
 ---
 
 :::danger Documentation alert

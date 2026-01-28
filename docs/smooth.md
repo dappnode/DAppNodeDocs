@@ -1,6 +1,7 @@
 ---
 title: Smooth
 description: Smooth introduction
+llm_description: Introduction to Smooth, Dappnode's MEV Smoothing Pool for consistent solo staker rewards.
 ---
 
 # Welcome to Smooth, Dappnode's MEV Smoothing Pool!

@@ -1,3 +1,7 @@
+---
+llm_description: "Introduces Ethical Metrics for privacy-preserving external monitoring and offline alerts via TOR."
+---
+
 # Ethical Metrics
 
 :::note

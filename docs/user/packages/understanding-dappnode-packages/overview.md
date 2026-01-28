@@ -1,3 +1,7 @@
+---
+llm_description: "Overview of Dappnode package features: Info, Config, Network, Logs, File Manager, and Backup."
+---
+
 # Dappnode Packages
 
 ### What are Dappnode packages? What features do they offer? How are they managed?

@@ -5,22 +5,23 @@ const { glob } = require('glob');
 /**
  * Docusaurus plugin that generates plain markdown files for LLM consumption.
  *
- * At build time, this plugin:
- * 1. Scans all .md/.mdx files in the docs directory
- * 2. Copies them to build/docs/*.md with frontmatter stripped
- * 3. Adds a header to each file with source information
- * 4. Generates /llms.txt listing all markdown URLs
+ * Each markdown file should have an `llm_description` field in its frontmatter:
+ *
+ * ---
+ * title: My Page
+ * llm_description: Brief description of this page for LLM consumption.
+ * ---
  */
-module.exports = function pluginLlmMarkdown(context, options) {
-  const { siteConfig, outDir } = context;
+module.exports = function pluginLlmMarkdown(context) {
+  const { siteConfig } = context;
   const siteUrl = siteConfig.url;
 
   return {
     name: 'docusaurus-plugin-llm-markdown',
 
-    async postBuild({ outDir, content }) {
+    async postBuild({ outDir }) {
       const docsDir = path.join(context.siteDir, 'docs');
-      const markdownUrls = [];
+      const docsMetadata = [];
 
       console.log('[LLM Markdown] Generating markdown files for LLM consumption...');
 
@@ -31,19 +32,22 @@ module.exports = function pluginLlmMarkdown(context, options) {
         const sourcePath = path.join(docsDir, file);
         const fileContent = fs.readFileSync(sourcePath, 'utf-8');
 
-        // Strip frontmatter (content between --- markers at the start)
+        // Get title and llm_description from frontmatter
+        const title = getTitle(fileContent, file);
+        const llmDescription = getLlmDescription(fileContent);
+
+        // Strip frontmatter
         const strippedContent = stripFrontmatter(fileContent);
 
         // Convert file path to URL path
-        // e.g., user/getting-started/choose-your-path.md -> /docs/user/getting-started/choose-your-path.md
         const urlPath = `/docs/${file.replace(/\.mdx?$/, '')}.md`;
 
         // Create output path
         const outputPath = path.join(outDir, 'docs', file.replace(/\.mdx?$/, '.md'));
-        const outputDir = path.dirname(outputPath);
+        const outputDirPath = path.dirname(outputPath);
 
         // Ensure directory exists
-        fs.mkdirSync(outputDir, { recursive: true });
+        fs.mkdirSync(outputDirPath, { recursive: true });
 
         // Create header with reference to llms.txt index
         const header = `> ## Documentation Index
@@ -57,24 +61,33 @@ module.exports = function pluginLlmMarkdown(context, options) {
         // Write the file with header
         fs.writeFileSync(outputPath, header + strippedContent);
 
-        // Add to URL list
-        markdownUrls.push(`${siteUrl}${urlPath}`);
+        // Store metadata for llms.txt
+        docsMetadata.push({
+          title,
+          description: llmDescription,
+          url: `${siteUrl}${urlPath}`,
+          path: file,
+        });
       }
 
-      // Sort URLs alphabetically
-      markdownUrls.sort();
+      // Sort by path alphabetically
+      docsMetadata.sort((a, b) => a.path.localeCompare(b.path));
 
-      // Generate llms.txt
+      // Generate llms.txt with descriptions
+      const docsList = docsMetadata
+        .map(doc => `- [${doc.title}](${doc.url}): ${doc.description}`)
+        .join('\n');
+
       const llmsTxtContent = `# Knowledge Base
 
 ## Docs
 
-${markdownUrls.join('\n')}
+${docsList}
 `;
 
       fs.writeFileSync(path.join(outDir, 'llms.txt'), llmsTxtContent);
 
-      console.log(`[LLM Markdown] Generated ${markdownUrls.length} markdown files`);
+      console.log(`[LLM Markdown] Generated ${docsMetadata.length} markdown files`);
       console.log(`[LLM Markdown] Created /llms.txt index`);
     },
   };
@@ -88,3 +101,41 @@ function stripFrontmatter(content) {
   return content.replace(frontmatterRegex, '');
 }
 
+/**
+ * Extract title from frontmatter or first heading
+ */
+function getTitle(content, filename) {
+  const frontmatterMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (frontmatterMatch) {
+    const titleMatch = frontmatterMatch[1].match(/^title:\s*["']?(.+?)["']?\s*$/m);
+    if (titleMatch) {
+      return titleMatch[1];
+    }
+  }
+
+  const headingMatch = content.match(/^#\s+(.+)$/m);
+  if (headingMatch) {
+    return headingMatch[1];
+  }
+
+  return filename
+    .replace(/\.mdx?$/, '')
+    .split('/')
+    .pop()
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, c => c.toUpperCase());
+}
+
+/**
+ * Extract llm_description from frontmatter
+ */
+function getLlmDescription(content) {
+  const frontmatterMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (frontmatterMatch) {
+    const descMatch = frontmatterMatch[1].match(/^llm_description:\s*["']?(.+?)["']?\s*$/m);
+    if (descMatch) {
+      return descMatch[1];
+    }
+  }
+  return 'Documentation page';
+}

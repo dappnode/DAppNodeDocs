@@ -1,3 +1,7 @@
+---
+llm_description: Auto-subscribe by setting fee recipient to Smooth address and proposing a block.
+---
+
 # Automatic Subscription
 
 This is the simplest way to subscribe to [Smooth](https://smooth.dappnode.io/). It consists of changing the fee recipient of your validator to Smooth's address and subscribing automatically when proposing your next block.

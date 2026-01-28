@@ -1,3 +1,7 @@
+---
+llm_description: "FAQ for Ethical Metrics: verifying registration, testing alerts, and unregistering from monitoring."
+---
+
 # Troubleshooting
 
 Experiencing trouble when setting your notifications up? Check this FAQ. If your issue isn't listed, please pay us a visit in the [Dappnode Discord](https://discord.gg/dappnode) and we'll be happy to assist you!

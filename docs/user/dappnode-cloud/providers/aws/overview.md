@@ -1,3 +1,8 @@
+---
+title: AWS
+llm_description: "AWS overview: Dappnode AMI at $15/month plus AWS infrastructure costs (pay-as-you-go)."
+---
+
 # AWS
 
 Amazon Web Services (AWS) is a cloud computing platform provided by Amazon. It offers a wide range of services, including computing power, storage options, and networking capabilities, enabling users to build and deploy applications and services efficiently.

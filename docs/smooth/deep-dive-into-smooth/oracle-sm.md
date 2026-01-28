@@ -1,3 +1,7 @@
+---
+llm_description: Explains Smooth's Oracle and Smart Contract architecture for tracking validators and rewards.
+---
+
 # Smooth's architecture
 
 [Smooth](https://smooth.dappnode.io/) is composed of two main components: the **Oracle** and the **Smart Contract**. These two components work together to track validators and distribute rewards fairly. Both are open source and indispensable to the functioning of [Smooth](https://smooth.dappnode.io/). While the Smart Contract serves to track all the events related to the pool onchain (subscriptions, unsubscriptions, block proposals, etc.), the Oracle is responsible for computing the rewards of each validator.

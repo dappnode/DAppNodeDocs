@@ -1,3 +1,8 @@
+---
+title: Liquidity Mining
+llm_description: "NODE liquidity mining program details: pool allocations, contract addresses, and weekly rewards."
+---
+
 # Liquidity Mining
 
 Liquidity Mining (LM) launched on Jul 17 2021, 20:00:00 GMT. 5.5% of the total token supply, 5.5 Million NODE, has been allocated to the first LM round of 6 months. NODE reward distribution for the 4 pools available is as follows:

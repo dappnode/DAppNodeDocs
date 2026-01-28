@@ -1,3 +1,7 @@
+---
+llm_description: "GitHub Actions workflows for automating upstream updates and package releases."
+---
+
 # GitHub Actions for Dappnode Packages
 
 GitHub Actions help automate workflows around your projects on GitHub. For Dappnode packages, we utilize specific GitHub Actions to manage updates and releases.

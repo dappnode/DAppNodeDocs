@@ -1,3 +1,7 @@
+---
+llm_description: "How to subscribe desktop/mobile devices to receive push notifications in Dappnode."
+---
+
 # Devices management
 
 To receive push notifications in Dappnode, users need to subscribe their devices.

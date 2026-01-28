@@ -1,3 +1,7 @@
+---
+llm_description: "Connect to Dappnode via built-in WiFi hotspot (SSID: DappnodeWIFI, password: dappnode)."
+---
+
 # Wi-Fi Access to Dappnode
 
 If you bought a Dappnode from our store, or installed Dappnode on a computer with a built-in Wi-Fi chip, you can easily connect to the **Dappmanager** (Dappnode web UI) using the Dappnode's Wi-Fi hotspot.

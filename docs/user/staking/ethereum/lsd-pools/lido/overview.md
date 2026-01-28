@@ -1,3 +1,7 @@
+---
+llm_description: "Lido CSM overview: permissionless staking from 2.4 ETH with Dappnode integration features."
+---
+
 # Lido Community Staking Module (CSM)
 
 ---

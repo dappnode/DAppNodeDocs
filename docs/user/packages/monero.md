@@ -1,3 +1,8 @@
+---
+title: Monero
+llm_description: Running a Monero node on Dappnode to support the privacy-focused cryptocurrency network.
+---
+
 # Monero
 
 ## Introducing Monero: A Privacy-Centric Cryptocurrency

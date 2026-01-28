@@ -1,3 +1,7 @@
+---
+llm_description: "Run validators on Holesky testnet for risk-free Ethereum staking practice."
+---
+
 # Holesky Testnet
 
 The **Holesky testnet** is a testnet for the Ethereum ecosystem, serving as a sandbox for users and developers alike. 

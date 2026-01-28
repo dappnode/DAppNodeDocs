@@ -1,3 +1,7 @@
+---
+llm_description: "How to claim free GNO validators through Dappnode's Gnosis Chain incentive program."
+---
+
 # Gnosis Chain Incentive Program
 
 Gnosis Chain is a Proof of Stake blockchain that uses the GNO token for staking. The Gnosis incentive program rewards validators for their work in the network. It is designed to incentivize validators to participate and secure the network.
