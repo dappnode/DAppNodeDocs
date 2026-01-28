@@ -1,4 +1,5 @@
 ---
+title: "Holesky Testnet"
 llm_description: "Run validators on Holesky testnet for risk-free Ethereum staking practice."
 ---
 

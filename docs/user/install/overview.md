@@ -1,4 +1,5 @@
 ---
+title: "Installation Overview"
 llm_description: "Installation overview: minimum hardware specs and comparison of ISO vs script methods."
 ---
 

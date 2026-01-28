@@ -1,4 +1,5 @@
 ---
+title: "Rewards"
 llm_description: How Smooth distributes rewards based on effective balance and converts pending to claimable.
 ---
 

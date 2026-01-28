@@ -1,4 +1,5 @@
 ---
+title: "Dappnode Packages"
 llm_description: "Overview of Dappnode package features: Info, Config, Network, Logs, File Manager, and Backup."
 ---
 

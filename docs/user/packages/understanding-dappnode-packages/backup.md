@@ -1,4 +1,5 @@
 ---
+title: "Backup"
 llm_description: "Backup and restore functionality for packages with sensitive data like validator keystores."
 ---
 

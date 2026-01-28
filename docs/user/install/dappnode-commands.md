@@ -1,4 +1,5 @@
 ---
+title: "Dappnode commands"
 llm_description: "Reference list of CLI commands: wifi, VPN credentials, status, start, and stop Dappnode."
 ---
 

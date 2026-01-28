@@ -1,4 +1,5 @@
 ---
+title: "Maintenance"
 llm_description: "Hardware maintenance tips: airflow, dust cleaning, and thermal paste replacement procedures."
 ---
 

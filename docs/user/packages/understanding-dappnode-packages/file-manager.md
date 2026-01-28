@@ -1,4 +1,5 @@
 ---
+title: "File Manager"
 llm_description: "File Manager for downloading and uploading files to package databases without terminal."
 ---
 

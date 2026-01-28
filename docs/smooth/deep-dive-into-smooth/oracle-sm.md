@@ -1,4 +1,5 @@
 ---
+title: "Smooth's architecture"
 llm_description: Explains Smooth's Oracle and Smart Contract architecture for tracking validators and rewards.
 ---
 

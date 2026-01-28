@@ -1,4 +1,5 @@
 ---
+title: "How to install the Dappnode app"
 llm_description: "Step-by-step guide to install Dappnode PWA app on mobile/desktop with VPN and notifications."
 ---
 

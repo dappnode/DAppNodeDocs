@@ -1,4 +1,5 @@
 ---
+title: "Notifications File Reference (Comming soon)"
 llm_description: "Schema reference for notifications.yaml configuration using Gatus endpoints."
 ---
 

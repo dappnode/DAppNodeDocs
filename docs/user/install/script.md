@@ -1,4 +1,5 @@
 ---
+title: "Script installation"
 llm_description: "Install Dappnode via bash script on Debian/Ubuntu, including prerequisites and update commands."
 ---
 

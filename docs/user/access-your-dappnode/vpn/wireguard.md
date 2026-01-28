@@ -1,4 +1,5 @@
 ---
+title: "WireGuard Access to Dappnode"
 llm_description: "WireGuard VPN setup guide with credential retrieval and multi-platform client configuration."
 ---
 

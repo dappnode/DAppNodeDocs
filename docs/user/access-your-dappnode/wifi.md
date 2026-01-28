@@ -1,4 +1,5 @@
 ---
+title: "Wi-Fi Access to Dappnode"
 llm_description: "Connect to Dappnode via built-in WiFi hotspot (SSID: DappnodeWIFI, password: dappnode)."
 ---
 

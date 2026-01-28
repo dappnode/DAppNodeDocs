@@ -1,4 +1,5 @@
 ---
+title: "📨 Notifications Inbox"
 llm_description: "View notification inbox with history, priority levels, status, categories, and filtering options."
 ---
 

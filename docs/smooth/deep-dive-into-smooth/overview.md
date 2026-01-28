@@ -1,4 +1,5 @@
 ---
+title: "Deep Dive into Smooth!"
 llm_description: Index page linking to deep-dive sections on rewards, validator states, and architecture.
 ---
 

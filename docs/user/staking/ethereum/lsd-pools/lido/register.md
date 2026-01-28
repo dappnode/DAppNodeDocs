@@ -1,4 +1,5 @@
 ---
+title: "**Become a Lido Node Operator with Dappnode**"
 llm_description: "Step-by-step guide to register as a new Lido CSM node operator on Dappnode."
 ---
 

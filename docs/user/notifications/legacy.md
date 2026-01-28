@@ -1,4 +1,5 @@
 ---
+title: "Notifications Legacy"
 llm_description: "Legacy email/telegram notification system being deprecated in favor of the new unified system."
 ---
 

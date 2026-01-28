@@ -1,4 +1,5 @@
 ---
+title: "More coming soon"
 llm_description: "More cloud providers coming soon; request new providers via GitHub issues."
 ---
 

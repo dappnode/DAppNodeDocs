@@ -1,4 +1,5 @@
 ---
+title: "🛠️ Notifications Settings"
 llm_description: "Configure notification preferences per package with master switch and threshold sliders."
 ---
 

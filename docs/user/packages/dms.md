@@ -1,4 +1,5 @@
 ---
+title: "Dappnode Monitoring Service (DMS)"
 llm_description: "Dappnode Monitoring Service using Prometheus and Grafana for system and package health monitoring."
 ---
 

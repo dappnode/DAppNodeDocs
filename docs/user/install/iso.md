@@ -1,4 +1,5 @@
 ---
+title: "ISO Installation"
 llm_description: "Guide to install Dappnode from ISO: download, burn to USB, boot, and follow prompts."
 ---
 

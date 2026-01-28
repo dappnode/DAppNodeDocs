@@ -1,4 +1,5 @@
 ---
+title: "Automatic Subscription"
 llm_description: Auto-subscribe by setting fee recipient to Smooth address and proposing a block.
 ---
 

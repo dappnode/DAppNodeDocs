@@ -1,4 +1,5 @@
 ---
+title: "Choose your path"
 llm_description: "Entry point to choose between using pre-installed Dappnode or installing on your own machine."
 ---
 

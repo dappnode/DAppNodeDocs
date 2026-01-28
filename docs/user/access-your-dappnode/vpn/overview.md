@@ -1,4 +1,5 @@
 ---
+title: "VPN Access to Dappnode"
 llm_description: "Overview of VPN options (Tailscale, WireGuard, OpenVPN) for secure local and remote access."
 ---
 

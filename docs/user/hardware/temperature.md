@@ -1,4 +1,5 @@
 ---
+title: "Temperature"
 llm_description: "How to monitor CPU temperature via dashboard and configure temperature alerts."
 ---
 

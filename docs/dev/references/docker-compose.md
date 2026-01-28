@@ -1,4 +1,5 @@
 ---
+title: "Docker compose file"
 llm_description: "Reference for docker-compose.yml structure, environment variables, and build arguments."
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "Overview"
 llm_description: "Dappnode PWA app for mobile/desktop: remote management, notifications, and staking configuration."
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "Ethereum Rollups: An Overview"
 llm_description: "Overview of Ethereum rollups as Layer 2 scaling solutions and how to enable them in Dappnode."
 ---
 

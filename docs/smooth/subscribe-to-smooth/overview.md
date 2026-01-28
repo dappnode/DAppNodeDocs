@@ -1,4 +1,5 @@
 ---
+title: "Subscribing to Smooth"
 llm_description: "Overview of two subscription methods: automatic and manual, with address info."
 ---
 

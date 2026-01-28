@@ -1,4 +1,5 @@
 ---
+title: "GitHub Actions for Dappnode Packages"
 llm_description: "GitHub Actions workflows for automating upstream updates and package releases."
 ---
 

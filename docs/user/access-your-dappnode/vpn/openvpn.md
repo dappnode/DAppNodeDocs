@@ -1,4 +1,5 @@
 ---
+title: "OpenVPN Access to Dappnode"
 llm_description: "Setup guide for OpenVPN access with credential retrieval and multi-platform installation steps."
 ---
 

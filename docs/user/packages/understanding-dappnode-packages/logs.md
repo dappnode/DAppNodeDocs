@@ -1,4 +1,5 @@
 ---
+title: "Logs"
 llm_description: "View package logs for troubleshooting, with multi-service support for beacon-chain/validator."
 ---
 

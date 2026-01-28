@@ -1,4 +1,5 @@
 ---
+title: "Rocketpool"
 llm_description: "Run Rocketpool minipools on Dappnode with as little as 8 or 16 ETH."
 ---
 

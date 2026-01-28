@@ -1,4 +1,5 @@
 ---
+title: "Setup"
 llm_description: "Initial configuration: repository source, auto-updates, notifications, and host password setup."
 ---
 

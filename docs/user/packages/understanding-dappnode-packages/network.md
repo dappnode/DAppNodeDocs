@@ -1,4 +1,5 @@
 ---
+title: "Network"
 llm_description: "Network configuration for packages: port mapping, HTTPS domains, and basic authentication."
 ---
 

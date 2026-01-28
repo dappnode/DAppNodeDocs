@@ -1,4 +1,5 @@
 ---
+title: "Guide to Installing Bee Node on Dappnode"
 llm_description: "Guide to installing and running a Swarm Bee node on Dappnode for decentralized storage."
 ---
 

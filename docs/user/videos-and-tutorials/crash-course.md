@@ -1,4 +1,5 @@
 ---
+title: "Crash Course"
 llm_description: "Collection of YouTube workshop recordings covering Dappnode setup, validators, and staking."
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "Diva package for Dappnode"
 llm_description: "Run a Diva DVT operator node for liquid staking with distributed validator technology."
 ---
 

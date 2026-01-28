@@ -1,4 +1,5 @@
 ---
+title: "Notifications Overview"
 llm_description: "Introduction to Dappnode's built-in notification system for monitoring hardware, system, and staking."
 ---
 

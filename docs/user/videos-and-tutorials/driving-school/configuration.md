@@ -1,4 +1,5 @@
 ---
+title: "2. Configuring your Dappnode"
 llm_description: "Video tutorials on configuring Dappnode: repositories, monitoring service, and notifications."
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "Connect your dappnode to the router and power"
 llm_description: "Instructions to connect Dappnode to router via ethernet and enable UPnP for port forwarding."
 ---
 

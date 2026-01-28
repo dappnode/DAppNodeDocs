@@ -1,4 +1,5 @@
 ---
+title: "Already a node operator"
 llm_description: "Instructions for existing Lido CSM node operators to integrate with Dappnode."
 ---
 

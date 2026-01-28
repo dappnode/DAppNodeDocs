@@ -1,4 +1,5 @@
 ---
+title: "Troubleshooting"
 llm_description: "FAQ for Ethical Metrics: verifying registration, testing alerts, and unregistering from monitoring."
 ---
 

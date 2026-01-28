@@ -1,4 +1,5 @@
 ---
+title: "Main commands"
 llm_description: "Documentation for SDK init, build, and publish commands with options."
 ---
 

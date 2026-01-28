@@ -1,4 +1,5 @@
 ---
+title: "Info"
 llm_description: "Package info section showing version, status, links, and management options like remove/restart."
 ---
 

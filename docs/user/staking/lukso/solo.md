@@ -1,4 +1,5 @@
 ---
+title: "LUKSO"
 llm_description: "Complete guide to solo staking on LUKSO: install packages, generate keys, deposit 32 LYX."
 ---
 

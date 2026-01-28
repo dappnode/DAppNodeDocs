@@ -1,4 +1,5 @@
 ---
+title: "Metrics Collected by Ethical Metrics"
 llm_description: "Lists all metrics collected by Ethical Metrics: host, Dappmanager, and staking metrics via TOR."
 ---
 

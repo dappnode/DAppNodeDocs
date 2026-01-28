@@ -1,4 +1,5 @@
 ---
+title: "Switch staking clients"
 llm_description: "How to switch execution and consensus clients on Dappnode with sync times and best practices."
 ---
 
