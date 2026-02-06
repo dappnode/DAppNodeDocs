@@ -195,6 +195,6 @@ After running the publish command, you will receive a link to sign the transacti
 
 ### Automating Publication with GitHub Actions
 
-If your package source code is hosted on GitHub, you can automate the publishing process by setting up GitHub Actions. Use the workflows [here](/docs/dev/github-actions.md) to integrate publishing workflows, ensuring your package builds and publishes automatically.
+If your package source code is hosted on GitHub, you can automate the publishing process by setting up GitHub Actions. Use the workflows [here](/docs/dev/github-actions/overview.md) to integrate publishing workflows, ensuring your package builds and publishes automatically.
 
 By following these steps, you'll be able to develop, build, and publish multi-variant packages on Dappnode, making it easier to support multiple configurations from a single codebase.
