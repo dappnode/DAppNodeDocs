@@ -10,7 +10,12 @@
 - [NODEstream](https://docs.dappnode.io/docs/dao/node-stream.md): NODEstream vesting program for gradual token distribution to participants.
 - [Welcome to the Developer Documentation!](https://docs.dappnode.io/docs/dev.md): Introduction to Dappnode developer docs for creating, deploying, and managing custom packages.
 - [🌐 DNS](https://docs.dappnode.io/docs/dev/dns.md): DNS-based service discovery and domain naming conventions for DAppNode packages.
-- [GitHub Actions for Dappnode Packages](https://docs.dappnode.io/docs/dev/github-actions.md): GitHub Actions workflows for automating upstream updates and package releases.
+- [GitHub Actions for Dappnode Packages](https://docs.dappnode.io/docs/dev/github-actions/overview.md): Overview of GitHub Actions workflows for automating upstream updates, testing, and releases in Dappnode packages.
+- [Consensus Client Workflows](https://docs.dappnode.io/docs/dev/github-actions/staker-packages/consensus-clients.md): GitHub Actions workflows for Dappnode consensus client packages including sync-test and release workflows.
+- [Execution Client Workflows](https://docs.dappnode.io/docs/dev/github-actions/staker-packages/execution-clients.md): GitHub Actions workflows for Dappnode execution client packages including sync, sync-test, and release workflows.
+- [Staker Packages CI Overview](https://docs.dappnode.io/docs/dev/github-actions/staker-packages/overview.md): Overview of CI/CD workflows for Dappnode staker packages including execution clients, consensus clients, and web3signer.
+- [Web3Signer Workflows](https://docs.dappnode.io/docs/dev/github-actions/staker-packages/web3signer.md): GitHub Actions workflows for the Dappnode Web3Signer package (to be designed).
+- [Standard Packages CI](https://docs.dappnode.io/docs/dev/github-actions/standard-packages.md): GitHub Actions workflows for standard Dappnode packages including upstream version checking and release automation.
 - [📊 Package Metrics](https://docs.dappnode.io/docs/dev/metrics.md): Prometheus and Grafana metrics framework for DAppNode packages via DMS.
 - [🔔 Package Notifications (Coming soon)](https://docs.dappnode.io/docs/dev/notifications.md): Notification system for alerting users about events via the DAppNode UI.
 - [Multi-Config Package Development](https://docs.dappnode.io/docs/dev/package-development/multi-configuration.md): Guide for developing multi-variant packages supporting different networks from one codebase.

@@ -119,4 +119,4 @@ All package names must follow this convention:
 
 ### Automating Publication with GitHub Actions
 
-If the package source code is hosted on GitHub, you can automate the publishing process by setting up GitHub Actions. Use the workflows [here](/docs/dev/github-actions.md) to integrate publishing workflows.
+If the package source code is hosted on GitHub, you can automate the publishing process by setting up GitHub Actions. Use the workflows [here](/docs/dev/github-actions/overview.md) to integrate publishing workflows.
