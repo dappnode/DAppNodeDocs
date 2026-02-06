@@ -30,8 +30,6 @@ Staker packages require more complex CI that includes integration testing on rea
 - **Web3Signer**
 - **MEV-Boost**
 
-The staker package CI runs on a GitHub self-hosted runner with Dappnode pre-installed and running with `DEV=true`, which enables the WebSocket frontend-backend RPC as an API. This allows the CI to use the same RPC calls a user would make to configure a staker setup.
-
 See [Staker Packages CI](./staker-packages/overview.md) for detailed information about:
 
 - [Execution Client Workflows](./staker-packages/execution-clients.md)
