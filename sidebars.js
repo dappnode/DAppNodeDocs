@@ -295,7 +295,7 @@ const sidebars = {
           type: "doc",
           label: "Aztec",
           id: "user/rollups/aztec",
-        }
+        },
       ],
     },
     {
@@ -477,8 +477,6 @@ const sidebars = {
           label: "How To Install Dappnode App",
           id: "user/dappnode-app/how-to-install",
         },
-        
-        
       ],
     },
     {
@@ -495,8 +493,6 @@ const sidebars = {
           label: "Premium services",
           id: "user/dappnode-premium/premium-services",
         },
-        
-        
       ],
     },
     {
@@ -719,9 +715,46 @@ const sidebars = {
       id: "dev/dns",
     },
     {
-      type: "doc",
-      label: "Github Actions",
-      id: "dev/github-actions",
+      type: "category",
+      label: "GitHub Actions",
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "dev/github-actions/overview",
+        },
+        {
+          type: "doc",
+          label: "Standard Packages",
+          id: "dev/github-actions/standard-packages",
+        },
+        {
+          type: "category",
+          label: "Staker Packages",
+          items: [
+            {
+              type: "doc",
+              label: "Overview",
+              id: "dev/github-actions/staker-packages/overview",
+            },
+            {
+              type: "doc",
+              label: "Execution Clients",
+              id: "dev/github-actions/staker-packages/execution-clients",
+            },
+            {
+              type: "doc",
+              label: "Consensus Clients",
+              id: "dev/github-actions/staker-packages/consensus-clients",
+            },
+            {
+              type: "doc",
+              label: "Web3Signer",
+              id: "dev/github-actions/staker-packages/web3signer",
+            },
+          ],
+        },
+      ],
     },
   ],
   smoothSidebar: [
