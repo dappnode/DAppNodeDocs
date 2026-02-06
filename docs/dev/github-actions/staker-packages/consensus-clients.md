@@ -1,7 +1,7 @@
 ---
 title: "Consensus Client Workflows"
 sidebar_label: Consensus Clients
-llm_description: "GitHub Actions workflows for DAppNode consensus client packages including sync-test and release workflows."
+llm_description: "GitHub Actions workflows for Dappnode consensus client packages including sync-test and release workflows."
 ---
 
 # Consensus Client Workflows

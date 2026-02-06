@@ -23,14 +23,14 @@ See [Standard Packages CI](./standard-packages.md) for detailed workflow configu
 
 ### Staker Packages
 
-Staker packages require more complex CI that includes integration testing on real DAppNode hardware. These packages include:
+Staker packages require more complex CI that includes integration testing on real Dappnode hardware. These packages include:
 
 - **Execution clients** (Geth, Reth, Nethermind, Besu, Erigon)
 - **Consensus clients** (Lodestar, Teku, Prysm, Nimbus, Lighthouse)
 - **Web3Signer**
 - **MEV-Boost**
 
-The staker package CI runs on a GitHub self-hosted runner with DAppNode pre-installed and running with `DEV=true`, which enables the WebSocket frontend-backend RPC as an API. This allows the CI to use the same RPC calls a user would make to configure a staker setup.
+The staker package CI runs on a GitHub self-hosted runner with Dappnode pre-installed and running with `DEV=true`, which enables the WebSocket frontend-backend RPC as an API. This allows the CI to use the same RPC calls a user would make to configure a staker setup.
 
 See [Staker Packages CI](./staker-packages/overview.md) for detailed information about:
 
@@ -40,12 +40,12 @@ See [Staker Packages CI](./staker-packages/overview.md) for detailed information
 
 ## Common Requirements
 
-All DAppNode package workflows require:
+All Dappnode package workflows require:
 
 - **`GITHUB_TOKEN`**: Automatically provided by GitHub for authentication
 - **`PINATA_API_KEY`** and **`PINATA_SECRET_API_KEY`**: For interfacing with the IPFS pinning service Pinata (standard packages)
 
 Staker packages additionally require:
 
-- Access to a self-hosted runner with DAppNode installed
+- Access to a self-hosted runner with Dappnode installed
 - Pre-synced execution client volumes for faster test execution

@@ -1,21 +1,30 @@
 ---
 title: "Staker Packages CI Overview"
 sidebar_label: Overview
-llm_description: "Overview of CI/CD workflows for DAppNode staker packages including execution clients, consensus clients, and web3signer."
+llm_description: "Overview of CI/CD workflows for Dappnode staker packages including execution clients, consensus clients, and web3signer."
 ---
 
 # Staker Packages CI Overview
 
-Staker packages require more complex CI than standard packages because they need integration testing on real DAppNode hardware. This ensures that execution clients, consensus clients, web3signer, and MEV-boost work correctly together in a real staking environment.
+Staker packages require more complex CI than standard packages because they need integration testing on real Dappnode hardware. This ensures that execution clients, consensus clients, web3signer, and MEV-boost work correctly together in a real staking environment.
 
 ## Architecture
 
 The staker package CI runs on a **GitHub self-hosted runner** with the following characteristics:
 
-- **DAppNode pre-installed** and running with `DEV=true`
-- The `DEV=true` environment variable enables the **WebSocket frontend-backend RPC as an API**
-- The CI uses the **same RPC calls a user would make** to configure a staker setup
-- **Pre-synced execution client volumes** are loaded on the runner, enabling fast sync and attestation tests
+### Fresh Dappnode Instance
+
+Each test runs on a **fresh Dappnode instance** that is always kept up to date with the **latest versions of all core packages**. When a test starts, **no staker packages are installed** - the environment is completely clean, ensuring consistent and reproducible test results.
+
+### API-Driven Testing
+
+- The Dappmanager runs with `DEV=true`, which **enables the WebSocket frontend-backend RPC as an API**
+- The CI uses the **same RPC calls a user would make** through the UI to configure their staker setup (installing execution clients, consensus clients, web3signer, etc.)
+- This ensures tests are as close to real user interactions as possible
+
+### Pre-Synced Volumes
+
+- **Pre-synced execution client databases** are stored in their respective volumes on the runner, enabling fast sync without waiting hours for a full sync from scratch
 - Consensus clients use **checkpoint sync**, so no pre-synced volume is required
 
 ## Test Types
