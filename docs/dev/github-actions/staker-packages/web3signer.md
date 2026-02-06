@@ -1,7 +1,7 @@
 ---
 title: "Web3Signer Workflows"
 sidebar_label: Web3Signer
-llm_description: "GitHub Actions workflows for the DAppNode Web3Signer package (to be designed)."
+llm_description: "GitHub Actions workflows for the Dappnode Web3Signer package (to be designed)."
 ---
 
 # Web3Signer Workflows

@@ -1,7 +1,7 @@
 ---
 title: "Execution Client Workflows"
 sidebar_label: Execution Clients
-llm_description: "GitHub Actions workflows for DAppNode execution client packages including sync, sync-test, and release workflows."
+llm_description: "GitHub Actions workflows for Dappnode execution client packages including sync, sync-test, and release workflows."
 ---
 
 # Execution Client Workflows
@@ -83,7 +83,7 @@ jobs:
 - **Scheduled daily**: Runs at 4 AM UTC to keep the client synced
 - **Manual trigger**: Can be triggered manually with any consensus client
 - **Uses test-runner image**: The `ghcr.io/dappnode/staker-test-util/test-runner` container handles the sync logic
-- **Network access**: Connects to the DAppNode's `dncore_network` to communicate with other services
+- **Network access**: Connects to the Dappnode's `dncore_network` to communicate with other services
 
 ## 3. Sync Test (`sync-test.yml`)
 
@@ -149,7 +149,7 @@ jobs:
 
 ### Features
 
-- **Builds to local IPFS**: Uses the DAppNode's IPFS node as the provider
+- **Builds to local IPFS**: Uses the Dappnode's IPFS node as the provider
 - **IPFS hash extraction**: Extracts the hash from `releases.json` for the test
 - **PR integration**: Posts a test report to the PR with results
 - **GitHub context**: Passes GitHub environment variables for PR commenting
