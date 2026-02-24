@@ -394,6 +394,11 @@ const sidebars = {
           label: "IPFS",
           id: "user/repository/ipfs",
         },
+        {
+          type: "doc",
+          label: "Content provider",
+          id: "user/repository/mirror-provider",
+        },
       ],
     },
     {
