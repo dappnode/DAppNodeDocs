@@ -16,7 +16,7 @@ To enable or disable the Dappnode content provider, go to [System â†’ Advanced â
 
 ## Why it exists
 
-IPFS is a decentralized protocol and, as such, download speed and reliability depend on the availability of peers seeding the content. For large packages this can result in slow or failed installations. The Dappnode content provider offers a fast, reliable HTTP alternative backed by Dappnode infrastructure to improve the installation experience.
+IPFS is a decentralized protocol and, as such, download speed and reliability depend on the availability of peers seeding the content. For large packages this can result in slow or failed installations. The Dappnode content provider offers a fast, reliable alternative backed by Dappnode infrastructure to improve the installation experience.
 
 ## Security model
 
