@@ -100,6 +100,7 @@
 - [Dappnode Packages](https://docs.dappnode.io/docs/user/packages/understanding-dappnode-packages/overview.md): Overview of Dappnode package features: Info, Config, Network, Logs, File Manager, and Backup.
 - [Ethereum repository](https://docs.dappnode.io/docs/user/repository/ethereum.md): How Dappnode connects to Ethereum nodes for package distribution via smart contracts.
 - [IPFS repository](https://docs.dappnode.io/docs/user/repository/ipfs.md): Configure local or remote IPFS nodes for downloading Dappnode packages from the Dappstore.
+- [Dappnode content provider](https://docs.dappnode.io/docs/user/repository/mirror-provider.md): Optional HTTP content provider operated by Dappnode as a fast alternative to IPFS for downloading large packages from the Dappstore.
 - [🚀 Becoming an Aztec Sequencer with DAppNode](https://docs.dappnode.io/docs/user/rollups/aztec.md): Step-by-step guide to becoming an Aztec sequencer using DAppNode infrastructure.
 - [Optimism Rollup](https://docs.dappnode.io/docs/user/rollups/optimism.md): Setting up an Optimism Layer 2 node on Dappnode using op-node and op-geth/op-erigon.
 - [Ethereum Rollups: An Overview](https://docs.dappnode.io/docs/user/rollups/overview.md): Overview of Ethereum rollups as Layer 2 scaling solutions and how to enable them in Dappnode.
