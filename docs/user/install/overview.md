@@ -1,49 +1,87 @@
 ---
 title: "Installation Overview"
-llm_description: "Installation overview: minimum hardware specs and comparison of ISO vs script methods."
+llm_description: "Installation overview: supported platforms, hardware specs by use case, and installation method comparison."
 ---
 
 # Installation Overview
 
-## Specifications & Minimum Requirements
-Dappnode is a Debian-based OS, which makes it friendly with most available commercial hardware. Depending on what you intend to run in your Dappnode you might need higher specifications, but a great number of available features can be used with the following recommendations:
-- Intel Core i5/i7
-- 32 GB RAM
-- 4 TB NVMe storage
+Dappnode can be installed on **Linux (Debian/Ubuntu)** and **macOS** machines. Whether you are setting up a dedicated home server or running Dappnode on your personal computer, choose the platform and installation method that best fits your needs.
 
-As minimum requirements we recommend:
-- Intel Core i3
-- 16 GB RAM
-- 2 TB NVMe or fast SSD storage
+## Supported Platforms
 
-If you don't have enough technical experience to customize your own hardware, remember you can always get a plug n play [Dappnode Home](https://dappnode.com/collections/all) in our online shop.
+| Platform | Installation Methods | Notes |
+| --- | --- | --- |
+| **Linux (Debian/Ubuntu)** | [ISO](/docs/user/install/iso), [Script](/docs/user/install/script) | Recommended for dedicated servers and staking |
+| **macOS** | [Script](/docs/user/install/macos) | Apple Silicon & Intel supported |
+| **ARM (Linux)** | [Script](/docs/user/install/arm) | Raspberry Pi and similar boards |
 
-## Installation Methods
+## Hardware Recommendations
 
-Installing Dappnode can be achieved through two primary methods:
+Hardware requirements depend heavily on your intended use case. Below are general guidelines:
 
-### 1. [ISO Installation](/docs/user/install/iso)
-- **Description**: This method involves downloading the Dappnode ISO file and using it to directly install Dappnode on your system.
-- **Best for**: Most users as it provides a comprehensive setup designed specifically for Dappnode.
+### Home Server (24/7 staking, full nodes)
 
-### 2. [Script Installation](/docs/user/install/script) over Debian-based Distribution
-- **Description**: If you're already running a Debian-based distribution, you can utilize the Dappnode script to facilitate the installation process.
-- **Best for**: Users who want to install Dappnode on a cloud server, ARM device (where it's the only option), or those who desire a specific Debian-based distro.
+This is the recommended setup for staking, running full blockchain nodes, and other always-on workloads.
 
-:::note
-For ARM-based systems, only the script installation method is available.
+| Component | Recommended | Minimum |
+| --- | --- | --- |
+| CPU | Intel Core i5/i7 or AMD equivalent | Intel Core i3 |
+| RAM | 32 GB | 16 GB |
+| Storage | 4 TB NVMe | 2 TB NVMe or fast SSD |
+
+### Personal Desktop / Laptop (light usage)
+
+If you are running Dappnode on your personal computer for lighter workloads (e.g. testing, light node operation, development), lower specs are acceptable:
+
+| Component | Recommended | Minimum |
+| --- | --- | --- |
+| CPU | Intel Core i5 / Apple M1 or better | Intel Core i3 / Apple M1 |
+| RAM | 16 GB | 8 GB |
+| Storage | 1 TB NVMe or SSD | 512 GB SSD |
+
+### AI & Advanced Workloads
+
+Running AI packages or other compute-heavy workloads alongside blockchain nodes requires significantly more resources:
+
+| Component | Recommended |
+| --- | --- |
+| CPU | Intel Core i7/i9 or Apple M2 Pro/Max or better |
+| RAM | 64 GB+ |
+| Storage | 4 TB+ NVMe |
+| GPU | Dedicated GPU recommended for AI inference |
+
+### macOS Compatibility
+
+Dappnode supports macOS on both Apple Silicon (M1/M2/M3/M4) and Intel Macs. Server-class Macs (Mac mini, Mac Studio, Mac Pro) are recommended for always-on usage. Laptops and iMacs can run Dappnode in desktop/personal mode. See the [macOS installation guide](/docs/user/install/macos) for details.
+
+:::tip
+If you don't have enough technical experience to customize your own hardware, you can always get a plug-and-play [Dappnode Home](https://dappnode.com/collections/all) from our online shop.
 :::
 
-Choose the method that best fits your needs and system setup. Make sure to follow the respective installation instructions carefully for a smooth and successful Dappnode deployment.
+## Installation Methods at a Glance
+
+### Linux (Debian/Ubuntu)
+
+| Method | Best For | Link |
+| --- | --- | --- |
+| **ISO** | Clean installs on dedicated machines; wipes disk and installs Dappnode over Debian | [ISO Installation](/docs/user/install/iso) |
+| **Script (server)** | Installing on an existing Debian/Ubuntu system as a 24/7 server | [Script Installation](/docs/user/install/script) |
+| **Script (desktop / `--lite`)** | Installing on a personal Linux desktop or laptop | [Script Installation](/docs/user/install/script) |
+
+### macOS
+
+| Method | Best For | Link |
+| --- | --- | --- |
+| **Script (server)** | Always-on Mac mini / Mac Studio / Mac Pro | [macOS Installation](/docs/user/install/macos) |
+| **Script (desktop / `--minimal`)** | Personal MacBook, iMac, or Mac mini used as a desktop | [macOS Installation](/docs/user/install/macos) |
 
 :::caution Continuous Uptime
 
-Dappnode is designed to run 24/7. Many features and functions within Dappnode, especially blockchain nodes, rely on continuous uptime to maintain their state, sync, and functionality. For instance:
+Dappnode is designed to run 24/7 when used as a server. Many features, especially blockchain nodes and validators, rely on continuous uptime:
 
-- **Blockchain Nodes**: If you have a synced blockchain node and you turn off Dappnode, the node will lose its sync. This means when you turn it back on, it'll take time to catch up to the latest state, which can be resource-intensive and time-consuming.
+- **Blockchain Nodes**: Turning off Dappnode causes nodes to lose sync. Re-syncing can be resource-intensive and time-consuming.
+- **Validator Nodes**: For staking, continuous uptime is crucial. Being offline may result in missed rewards or penalties.
 
-- **Validator Nodes**: For users staking on certain blockchain networks, continuous uptime is crucial. Being offline might result in missed opportunities or even penalties.
-
-Considering these aspects, it's recommended to ensure your Dappnode device remains powered on and running at all times.
+If you are running Dappnode on a personal desktop or laptop, be aware that shutting down or suspending the machine will stop all Dappnode services.
 :::
 
