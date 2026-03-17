@@ -9,17 +9,17 @@ The Dappnode installation script supports a variety of flags and environment var
 
 ## CLI Flags
 
-| Flag                          | Description                                                                                                               | Equivalent Env Variable     |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| `--update`                    | Clean existing downloaded artifacts before installing. Useful to force a fresh re-download of all components.             | `UPDATE=true`               |
-| `--static-ip <ipv4>`          | Set a static IP address for the Dappnode instance.                                                                        | `STATIC_IP=<ipv4>`          |
-| `--local-profile-path <path>` | Use a local `.dappnode_profile` file instead of downloading one from GitHub. Useful for offline or custom installations.  | `LOCAL_PROFILE_PATH=<path>` |
-| `--ipfs-endpoint <url>`       | Override the default IPFS gateway endpoint used to download packages.                                                     | `IPFS_ENDPOINT=<url>`       |
-| `--profile-url <url>`         | Override the URL from which the core packages profile (version list) is downloaded.                                       | `PROFILE_URL=<url>`         |
-| `--minimal`                   | Install only the bare minimum packages: BIND, DAPPMANAGER, NOTIFICATIONS, PREMIUM. No VPN, WIFI, IPFS, or HTTPS.          | `MINIMAL=true`              |
-| `--lite`                      | Install a reduced package set: BIND, VPN, WIREGUARD, DAPPMANAGER, NOTIFICATIONS, PREMIUM. No WIFI, IPFS, or HTTPS.        | `LITE=true`                 |
-| `--packages <list>`           | Override the package selection entirely. Comma or space-separated list. DAPPMANAGER is automatically included if omitted. | `PACKAGES=<list>`           |
-| `-h`, `--help`                | Show the help message and exit.                                                                                           | —                           |
+| Flag                          | Description                                                                                                                 | Equivalent Env Variable     |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| `--update`                    | Clean existing downloaded artifacts before installing. Useful to force a fresh re-download of all components.               | `UPDATE=true`               |
+| `--static-ip <ipv4>`          | Set a static IP address for the Dappnode instance.                                                                          | `STATIC_IP=<ipv4>`          |
+| `--local-profile-path <path>` | Use a local `.dappnode_profile` file instead of downloading one from GitHub. Useful for offline or custom installations.    | `LOCAL_PROFILE_PATH=<path>` |
+| `--ipfs-endpoint <url>`       | Override the default IPFS gateway endpoint used to download packages.                                                       | `IPFS_ENDPOINT=<url>`       |
+| `--profile-url <url>`         | Override the URL from which the core packages profile (version list) is downloaded.                                         | `PROFILE_URL=<url>`         |
+| `--minimal`                   | Install only the bare minimum packages: BIND, DAPPMANAGER, NOTIFICATIONS, PREMIUM. No VPN, WIREGUARD, WIFI, IPFS, or HTTPS. | `MINIMAL=true`              |
+| `--lite`                      | Install a reduced package set: BIND, VPN, WIREGUARD, DAPPMANAGER, NOTIFICATIONS, PREMIUM. No WIFI, IPFS, or HTTPS.          | `LITE=true`                 |
+| `--packages <list>`           | Override the package selection entirely. Comma or space-separated list. DAPPMANAGER is automatically included if omitted.   | `PACKAGES=<list>`           |
+| `-h`, `--help`                | Show the help message and exit.                                                                                             | —                           |
 
 :::note
 `--minimal` and `--lite` are mutually exclusive. If both are specified, the installer will exit with an error. If `--packages` is provided, it takes priority over `--minimal` and `--lite`.
