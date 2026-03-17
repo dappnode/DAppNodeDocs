@@ -58,6 +58,10 @@ Since Dappnode is running locally on the same machine, connect using:
 
 Once connected via VPN, access the Dappnode UI at [http://my.dappnode](http://my.dappnode).
 
+:::tip
+In order to access `.dappnode` domains from same macOS machine you need to connect to VPN with `--localhost` flag to ensure the correct routing of requests.
+:::
+
 ### Server Mac
 
 For a server Mac on your local network, you have additional connectivity options:
