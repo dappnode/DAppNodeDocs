@@ -25,10 +25,10 @@ Make sure Docker Desktop is running before starting the installation. You can ve
 
 ### Desktop / Personal Mac (MacBook, iMac)
 
-If you are running Dappnode on a Mac that you also use as your personal computer, use the `--minimal` flag. This installs only the essential Dappnode components (BIND, DAPPMANAGER, NOTIFICATIONS, PREMIUM), keeping your system lightweight:
+If you are running Dappnode on a Mac that you also use as your personal computer, use the `--lite` flag. This installs a reduced package set (BIND, VPN, WIREGUARD, DAPPMANAGER, NOTIFICATIONS, PREMIUM), keeping your system lightweight while enabling VPN access:
 
 ```bash
-sudo wget -O - https://installer.dappnode.io | sudo bash -s -- --minimal
+sudo wget -O - https://installer.dappnode.io | sudo bash -s -- --lite
 ```
 
 ### Server Mac (Mac mini, Mac Studio, Mac Pro)
@@ -42,7 +42,7 @@ sudo wget -O - https://installer.dappnode.io | sudo bash
 The installer automatically detects server-class Mac models and installs the full package set including WIFI, IPFS, VPN, WIREGUARD, and HTTPS.
 
 :::tip
-If you have a Mac mini that you use as a personal desktop rather than a server, you can force the minimal installation by passing `--minimal`.
+If you have a Mac mini that you use as a personal desktop rather than a server, you can force the lite installation by passing `--lite`.
 :::
 
 ## Connecting to Dappnode
