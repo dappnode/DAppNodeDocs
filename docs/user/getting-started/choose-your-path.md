@@ -19,9 +19,9 @@ Interested in purchasing a Dappnode? Explore our <a href="https://dappnode.io">o
     <p>I have bought a Dappnode or I already installed it</p>
   </a>
 
-  <a href="/docs/user/install/iso" className="card">
+  <a href="/docs/user/install/overview" className="card">
     <img src="/img/install_dappnode.png" alt="Install Dappnode" />
     <h2>I want to install Dappnode</h2>
-    <p>I own a machine where I want to install Dappnode software</p>
+    <p>Install on Linux (Debian/Ubuntu) or macOS</p>
   </a>
 </div>

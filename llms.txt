@@ -65,7 +65,7 @@
 - [Troubleshooting](https://docs.dappnode.io/docs/user/ethical-metrics/troubleshooting.md): FAQ for Ethical Metrics: verifying registration, testing alerts, and unregistering from monitoring.
 - [FAQs](https://docs.dappnode.io/docs/user/faqs.md): Common questions about staking, installation issues, VPN/Wireguard, client syncing, and specs.
 - [Access Dappnode via Wi-Fi](https://docs.dappnode.io/docs/user/getting-started/access-dappnode-via-wifi.md): How to connect to DappnodeWIFI hotspot and access the web interface via browser.
-- [Choose your path](https://docs.dappnode.io/docs/user/getting-started/choose-your-path.md): Entry point to choose between using pre-installed Dappnode or installing on your own machine.
+- [Choose your path](https://docs.dappnode.io/docs/user/getting-started/choose-your-path.md): Entry point to choose between using pre-installed Dappnode or installing on your own machine (Linux or macOS).
 - [Connect your dappnode to the router and power](https://docs.dappnode.io/docs/user/getting-started/connect-dappnode-to-the-router.md): Instructions to connect Dappnode to router via ethernet and enable UPnP for port forwarding.
 - [Next Steps](https://docs.dappnode.io/docs/user/getting-started/next-steps.md): Suggested actions after setup: configure VPN access, start staking, and enable Ethical Metrics.
 - [Register](https://docs.dappnode.io/docs/user/getting-started/register.md): Guide to create a Dappnode account, secure recovery token, and log in to the interface.
@@ -76,8 +76,11 @@
 - [Install - ARM](https://docs.dappnode.io/docs/user/install/arm.md): ARM installation guide using script method, plus instructions to add external SSD storage.
 - [Dappnode commands](https://docs.dappnode.io/docs/user/install/dappnode-commands.md): Reference list of CLI commands: wifi, VPN credentials, status, start, and stop Dappnode.
 - [ISO Installation](https://docs.dappnode.io/docs/user/install/iso.md): Guide to install Dappnode from ISO: download, burn to USB, boot, and follow prompts.
-- [Installation Overview](https://docs.dappnode.io/docs/user/install/overview.md): Installation overview: minimum hardware specs and comparison of ISO vs script methods.
-- [Script installation](https://docs.dappnode.io/docs/user/install/script.md): Install Dappnode via bash script on Debian/Ubuntu, including prerequisites and update commands.
+- [Linux (Debian/Ubuntu)](https://docs.dappnode.io/docs/user/install/linux.md): Overview of installing Dappnode on Linux: ISO and script methods for server and desktop use cases.
+- [macOS Installation](https://docs.dappnode.io/docs/user/install/macos.md): Guide to install Dappnode on macOS via script, covering both desktop and server modes.
+- [Installation Overview](https://docs.dappnode.io/docs/user/install/overview.md): Installation overview: supported platforms, hardware specs by use case, and installation method comparison.
+- [Script Installation](https://docs.dappnode.io/docs/user/install/script.md): Install Dappnode via bash script on Debian/Ubuntu, including prerequisites, install modes, and update commands.
+- [Advanced Script Options](https://docs.dappnode.io/docs/user/install/script/advanced.md): Full reference of all CLI flags and environment variables for the Dappnode install script.
 - [Devices management](https://docs.dappnode.io/docs/user/notifications/devices.md): How to subscribe desktop/mobile devices to receive push notifications in Dappnode.
 - [📨 Notifications Inbox](https://docs.dappnode.io/docs/user/notifications/inbox.md): View notification inbox with history, priority levels, status, categories, and filtering options.
 - [Notifications Legacy](https://docs.dappnode.io/docs/user/notifications/legacy.md): Legacy email/telegram notification system being deprecated in favor of the new unified system.
