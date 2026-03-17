@@ -28,7 +28,7 @@ Make sure Docker Desktop is running before starting the installation. You can ve
 If you are running Dappnode on a Mac that you also use as your personal computer, use the `--lite` flag. This installs a reduced package set (BIND, VPN, WIREGUARD, DAPPMANAGER, NOTIFICATIONS, PREMIUM), keeping your system lightweight while enabling VPN access:
 
 ```bash
-sudo wget -O - https://installer.dappnode.io | sudo bash -s -- --lite
+curl -fsSL https://installer.dappnode.io | bash -s -- --lite
 ```
 
 ### Server Mac (Mac mini, Mac Studio, Mac Pro)
@@ -36,7 +36,7 @@ sudo wget -O - https://installer.dappnode.io | sudo bash -s -- --lite
 For always-on Macs intended to run as dedicated servers, use the full installation:
 
 ```bash
-sudo wget -O - https://installer.dappnode.io | sudo bash
+curl -fsSL https://installer.dappnode.io | bash
 ```
 
 The installer automatically detects server-class Mac models and installs the full package set including WIFI, IPFS, VPN, WIREGUARD, and HTTPS.
@@ -80,7 +80,7 @@ Once connected, access the Dappnode UI at [http://my.dappnode](http://my.dappnod
 To update Dappnode to the latest version without erasing any data:
 
 ```bash
-sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash
+curl -fsSL https://installer.dappnode.io | UPDATE=true bash
 ```
 
 ## Uninstall
@@ -88,7 +88,7 @@ sudo wget -O - https://installer.dappnode.io | sudo UPDATE=true bash
 To uninstall Dappnode components:
 
 ```bash
-wget -qO - https://uninstaller.dappnode.io | sudo bash
+curl -fsSL https://uninstaller.dappnode.io | bash
 ```
 
 :::info
