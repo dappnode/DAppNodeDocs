@@ -5,7 +5,7 @@ llm_description: "Overview of installing Dappnode on Linux: ISO and script metho
 
 # Linux (Debian/Ubuntu)
 
-Dappnode runs natively on Debian-based Linux distributions. You can install it on a dedicated server for 24/7 operation or on your personal Linux desktop or laptop.
+Dappnode runs natively on Debian-based Linux distributions (amd64 and arm64). You can install it on a dedicated server for 24/7 operation or on your personal Linux desktop or laptop.
 
 ## Installation Methods
 
@@ -21,6 +21,7 @@ The ISO method performs a clean install: it wipes the disk and installs Dappnode
 The script method installs Dappnode on top of an existing Debian or Ubuntu system. It offers more flexibility through flags that control which components are installed.
 
 - **Best for**: Existing Debian/Ubuntu systems, cloud servers, ARM devices, or users who want more control over the installation.
+- **Supported architectures**: amd64, arm64
 
 ## Server vs Desktop Installation
 
