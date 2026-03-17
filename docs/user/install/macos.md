@@ -54,7 +54,7 @@ After installation, the script will display your VPN credentials. How you connec
 Since Dappnode is running locally on the same machine, connect using:
 
 - **Wireguard VPN** (recommended): Import the Wireguard credentials displayed after installation into the [Wireguard app](https://apps.apple.com/app/wireguard/id1451685025). Use `dappnode_wireguard --localhost` to get credentials optimized for local connections.
-- **OpenVPN**: Import the OpenVPN credentials into your preferred OpenVPN client. Use `dappnode_openvpn` to retrieve them.
+- **OpenVPN**: Import the OpenVPN credentials into your preferred OpenVPN client. Use `dappnode_openvpn --localhost` to retrieve them.
 
 Once connected via VPN, access the Dappnode UI at [http://my.dappnode](http://my.dappnode).
 
