@@ -411,19 +411,40 @@ const sidebars = {
           id: "user/install/overview",
         },
         {
-          type: "doc",
-          label: "ISO",
-          id: "user/install/iso",
+          type: "category",
+          label: "Linux (Debian/Ubuntu)",
+          items: [
+            {
+              type: "doc",
+              label: "Overview",
+              id: "user/install/linux",
+            },
+            {
+              type: "doc",
+              label: "ISO",
+              id: "user/install/iso",
+            },
+            {
+              type: "doc",
+              label: "Script",
+              id: "user/install/script",
+            },
+            {
+              type: "doc",
+              label: "ARM",
+              id: "user/install/arm",
+            },
+          ],
         },
         {
           type: "doc",
-          label: "Script",
-          id: "user/install/script",
+          label: "macOS",
+          id: "user/install/macos",
         },
         {
           type: "doc",
-          label: "ARM",
-          id: "user/install/arm",
+          label: "Advanced Script Options",
+          id: "user/install/script/advanced",
         },
         {
           type: "doc",
