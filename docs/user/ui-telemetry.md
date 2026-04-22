@@ -116,7 +116,6 @@ Dappnode takes your privacy seriously. The following data is **never** collected
 - **Personal information** — no names, emails, or account identifiers
 - **Form inputs or credentials** — no passwords, seed phrases, or private keys
 - **Wallet addresses** — no blockchain addresses of any kind
-- **IP addresses** — the proxy strips identifying network information
 - **Screenshots or session recordings** — no visual capture of your screen
 - **Keystrokes** — no keyboard input is recorded
   :::
