@@ -128,6 +128,7 @@
 - [Earn with Staking in Dappnode](https://docs.dappnode.io/docs/user/staking/overview.md): Introduction to staking with Dappnode on Ethereum, Gnosis Chain, and LUKSO networks.
 - [🚀 Starknet Validator Solo Staking Guide](https://docs.dappnode.io/docs/user/staking/starknet/solo.md): Guide to become a Starknet validator: create accounts, stake STRK, run attestation client.
 - [Switch staking clients](https://docs.dappnode.io/docs/user/staking/switch-clients.md): How to switch execution and consensus clients on Dappnode with sync times and best practices.
+- [UI Telemetry](https://docs.dappnode.io/docs/user/ui-telemetry.md): Explains what anonymous frontend telemetry data Dappnode collects, how it flows through a proxy to Grafana Cloud, and how to enable or disable it.
 - [Crash Course](https://docs.dappnode.io/docs/user/videos-and-tutorials/crash-course.md): Collection of YouTube workshop recordings covering Dappnode setup, validators, and staking.
 - [2. Configuring your Dappnode](https://docs.dappnode.io/docs/user/videos-and-tutorials/driving-school/configuration.md): Video tutorials on configuring Dappnode: repositories, monitoring service, and notifications.
 - [1. Initial Dappnode Setup](https://docs.dappnode.io/docs/user/videos-and-tutorials/driving-school/initial-setup.md): Video tutorials for initial Dappnode setup: ISO boot, UI access, security, VPN, and syncing.
