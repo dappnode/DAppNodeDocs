@@ -548,6 +548,11 @@ const sidebars = {
       ],
     },
     {
+      type: "doc",
+      label: "UI Telemetry",
+      id: "user/ui-telemetry",
+    },
+    {
       type: "category",
       label: "Dappnode Cloud",
       items: [
