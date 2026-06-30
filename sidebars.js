@@ -549,6 +549,11 @@ const sidebars = {
     },
     {
       type: "doc",
+      label: "Nexus Chat",
+      id: "user/nexus-chat",
+    },
+    {
+      type: "doc",
       label: "UI Telemetry",
       id: "user/ui-telemetry",
     },
@@ -701,6 +706,11 @@ const sidebars = {
           type: "doc",
           label: "Overview",
           id: "dev/package-development/overview",
+        },
+        {
+          type: "doc",
+          label: "Agent-assisted Development",
+          id: "dev/package-development/agent-assisted-development",
         },
         {
           type: "doc",
