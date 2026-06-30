@@ -13,7 +13,7 @@ Nexus chat is built into the Dappmanager UI. External agent clients can use the 
 
 - Dappmanager `v0.2.125` or newer.
 - Admin access to the Dappmanager UI.
-- A private connection to your Dappnode, such as local network access or VPN.
+- A private connection to your Dappnode, such as Wireguar VPN or Tailscale.
 - For Nexus chat, a Nexus API key from [nexus.dappnode.com](https://nexus.dappnode.com).
 - For external MCP clients, a DAppNode MCP API key generated in the Dappmanager UI.
 
