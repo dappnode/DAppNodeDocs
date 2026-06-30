@@ -704,6 +704,11 @@ const sidebars = {
         },
         {
           type: "doc",
+          label: "Agent-assisted Development",
+          id: "dev/package-development/agent-assisted-development",
+        },
+        {
+          type: "doc",
           label: "Single Configuration",
           id: "dev/package-development/single-configuration",
         },
