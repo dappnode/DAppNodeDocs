@@ -549,6 +549,11 @@ const sidebars = {
     },
     {
       type: "doc",
+      label: "Nexus Chat",
+      id: "user/nexus-chat",
+    },
+    {
+      type: "doc",
       label: "UI Telemetry",
       id: "user/ui-telemetry",
     },

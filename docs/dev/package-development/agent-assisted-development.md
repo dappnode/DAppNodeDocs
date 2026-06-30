@@ -1,38 +1,28 @@
 ---
 title: "Agent-assisted package development"
-llm_description: "Use Dappmanager v0.2.125 Nexus chat and DAppNode MCP tools to develop, validate, upload, and install packages with coding agents."
+llm_description: "Use Dappmanager MCP tools to develop, validate, upload, install, and debug Dappnode packages with external coding agents."
 ---
 
 # Agent-assisted package development
 
-[Dappmanager v0.2.125](https://github.com/dappnode/DNP_DAPPMANAGER/releases/tag/v0.2.125), published on June 29, 2026, added **Nexus chat** and a **DAppNode MCP server**. Together they let operators and developers use AI agents with live Dappnode context: installed packages, logs, diagnostics, docs search, package validation, registry previews, and development-package installation.
+[Dappmanager v0.2.125](https://github.com/dappnode/DNP_DAPPMANAGER/releases/tag/v0.2.125), published on June 29, 2026, added a **DAppNode MCP server**. It lets external MCP-capable coding agents use live Dappnode context for package development: installed packages, logs, diagnostics, docs search, package validation, registry previews, and development-package installation.
 
-Nexus chat is built into the Dappmanager UI. External agent clients can use the same Dappnode tools through the MCP endpoint at `/mcp`.
+External agent clients connect to Dappmanager through the MCP endpoint at `/mcp`.
+
+:::info
+This page is for developers and power users who want to connect an external MCP client to Dappmanager. For the built-in Dappmanager chat, see [Nexus Chat](/docs/user/nexus-chat.md).
+:::
 
 ## Requirements
 
 - Dappmanager `v0.2.125` or newer.
 - Admin access to the Dappmanager UI.
-- A private connection to your Dappnode, such as Wireguar VPN or Tailscale.
-- For Nexus chat, a Nexus API key from [nexus.dappnode.com](https://nexus.dappnode.com).
-- For external MCP clients, a DAppNode MCP API key generated in the Dappmanager UI.
+- A private connection to your Dappnode, such as WireGuard VPN or Tailscale.
+- A DAppNode MCP API key generated in the Dappmanager UI.
 
 :::note
-The Nexus API key and the DAppNode MCP API key are different keys. The Nexus API key lets the built-in chat talk to Nexus. The DAppNode MCP API key lets external MCP clients authenticate to your Dappnode's `/mcp` endpoint.
+The DAppNode MCP API key is different from the Nexus API key used by Nexus Chat. The MCP API key lets external MCP clients authenticate to your Dappnode's `/mcp` endpoint.
 :::
-
-## Use Nexus chat
-
-Open **Nexus** from the Dappmanager sidebar. On first use, paste a Nexus API key. The key is stored on your Dappnode and used by the Dappmanager backend to talk to Nexus.
-
-You can use Nexus chat to:
-
-- Ask questions about your Dappnode using installed-package context.
-- Search and summarize Dappnode docs from the chat.
-- Inspect package status, logs, system info, notifications, updates, disk usage, and ports.
-- Start workflows that need confirmation, such as package changes.
-
-When a chat action can change package state, Dappmanager asks for confirmation before the action runs.
 
 ## Connect an external MCP client
 
@@ -57,7 +47,7 @@ External MCP clients such as coding agents connect to the Dappmanager MCP server
 
 Use the same origin you use to access Dappmanager.
 
-Read-only MCP tools are available by default. To let external clients run package-changing tools, enable **Allow mutating MCP tools** in the same **System > Advanced > MCP API key** section. Disable it again when you are done with the agent workflow.
+Read-only MCP tools are available by default. To let external clients run package-changing tools, enable **Allow mutating MCP tools** in the same **System > Advanced > MCP API key** section. Disable it again when you are done with the development workflow.
 
 ## What agents can do
 
