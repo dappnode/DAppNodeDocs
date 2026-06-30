@@ -17,6 +17,7 @@ There are two main types of package repositories:
 
 ### Developing Packages
 
+- **Agent-assisted development**: If you want to use an external MCP-capable coding agent to validate, upload, install, and debug packages on a Dappnode, follow the guide [here](/docs/dev/package-development/agent-assisted-development.md).
 - **Single-Configuration Package**: If you want to develop a package with a single configuration, like [Rotki](https://github.com/dappnode/DAppNodePackage-rotki), follow the instructions [here](/docs/dev/package-development/single-configuration.md).
 - **Multi-Configuration Package**: For packages with multiple configurations, like [Lodestar](https://github.com/dappnode/DAppNodePackage-lodestar-generic), refer to [this guide](/docs/dev/package-development/multi-configuration.md).
 

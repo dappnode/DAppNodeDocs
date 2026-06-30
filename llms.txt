@@ -18,6 +18,7 @@
 - [Standard Packages CI](https://docs.dappnode.io/docs/dev/github-actions/standard-packages.md): GitHub Actions workflows for standard Dappnode packages including upstream version checking and release automation.
 - [📊 Package Metrics](https://docs.dappnode.io/docs/dev/metrics.md): Prometheus and Grafana metrics framework for DAppNode packages via DMS.
 - [🔔 Package Notifications (Coming soon)](https://docs.dappnode.io/docs/dev/notifications.md): Notification system for alerting users about events via the DAppNode UI.
+- [Agent-assisted package development](https://docs.dappnode.io/docs/dev/package-development/agent-assisted-development.md): Use Dappmanager MCP tools to develop, validate, upload, install, and debug Dappnode packages with external coding agents.
 - [Multi-Config Package Development](https://docs.dappnode.io/docs/dev/package-development/multi-configuration.md): Guide for developing multi-variant packages supporting different networks from one codebase.
 - [Package Development](https://docs.dappnode.io/docs/dev/package-development/overview.md): Overview of single-config and multi-config package repository types.
 - [Single-Variant Package Development](https://docs.dappnode.io/docs/dev/package-development/single-configuration.md): Step-by-step guide for developing single-variant Dappnode packages.
@@ -81,6 +82,7 @@
 - [Installation Overview](https://docs.dappnode.io/docs/user/install/overview.md): Installation overview: supported platforms, hardware specs by use case, and installation method comparison.
 - [Script Installation](https://docs.dappnode.io/docs/user/install/script.md): Install Dappnode via bash script on Debian/Ubuntu, including prerequisites, install modes, and update commands.
 - [Advanced Script Options](https://docs.dappnode.io/docs/user/install/script/advanced.md): Full reference of all CLI flags and environment variables for the Dappnode install script.
+- [Nexus Chat](https://docs.dappnode.io/docs/user/nexus-chat.md): Use Nexus chat in Dappmanager to ask questions, inspect Dappnode status, search docs, review logs, and start confirmed package workflows.
 - [Devices management](https://docs.dappnode.io/docs/user/notifications/devices.md): How to subscribe desktop/mobile devices to receive push notifications in Dappnode.
 - [📨 Notifications Inbox](https://docs.dappnode.io/docs/user/notifications/inbox.md): View notification inbox with history, priority levels, status, categories, and filtering options.
 - [Notifications Legacy](https://docs.dappnode.io/docs/user/notifications/legacy.md): Legacy email/telegram notification system being deprecated in favor of the new unified system.
