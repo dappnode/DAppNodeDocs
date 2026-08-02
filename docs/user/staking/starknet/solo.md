@@ -1,124 +1,157 @@
----
-title: "🚀 Starknet Validator Solo Staking Guide"
-llm_description: "Guide to become a Starknet validator: create accounts, stake STRK, run attestation client."
----
-
 # 🚀 Starknet Validator Solo Staking Guide
 
-**Starknet** is a Layer 2 network built on Ethereum, designed for scalability and performance using STARK proofs.  
-This guide will walk you through the **complete process of becoming a Starknet validator and Solo Staker**, from wallet setup to running your attestation client and validator on DAppNode.
-
-We’ll use **[Ready Wallet](https://www.ready.co/)** and Starknet's block explorer interfaces for all on-chain interactions.
+**Starknet** is a Layer 2 network built on Ethereum, designed for scalability and performance using STARK proofs ⚡
+This guide walks you through the **complete process of becoming a Starknet validator and Solo Staker** using the DAppNode Starknet Staking package and its built-in UI. Let's get started! 🎉
 
 ---
 
-## 🛠 Prerequisites
+## ✅ Prerequisites
 
-✅ [Ready Wallet](https://www.ready.co/ready-wallet) installed  
-✅ Access to a synced Starknet full node (Juno or Pathfinder)  
-✅ Minimum STRK balance:
-
-- **Sepolia:** 1 STRK  
-- **Mainnet:** 20,000 STRK  
+- 🦊 A Starknet-compatible wallet: [Ready Wallet](https://www.ready.co/), [MetaMask (Starknet Snap)](https://snaps.metamask.io/snap/npm/consensys/starknet-snap/), or [Braavos](https://braavos.app/)
+- 🖥️ Access to a synced Starknet full node (Juno or Pathfinder)
+- 💰 Minimum STRK balance:
+  - **Sepolia:** 1 STRK
+  - **Mainnet:** 20,000 STRK
 
 ---
 
-## 1️⃣ Create Accounts
+## 1️⃣ Install the Starknet Staking Package on DAppNode
 
-We’ll use **three Starknet accounts** in Ready:
+1. Open your DAppNode UI.
+2. Go to the **Stakers** tab and select **Starknet** 🎯
+3. Follow the setup flow to install the package.
 
-- **staker** → Holds your stake  
-- **operator** → Runs the validator  
-- **rewards** → Receives rewards  
+![Stakers tab](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/stakers-tab.png)
 
-👉 Create them directly in Ready Wallet as _Standard Account_
+During the installation process, you will need to enter:
+
+- `Operational Address` — The address for your **operator** account
+- `Private Key` — The private key from your operator account (needed for attestations 🔑)
+
+> 💡 See step 2 for how to create and set up your accounts if you haven't already.
+
+![Dappnode](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/dappnode-package.png)
+
+---
+
+## 2️⃣ Set Up Your Accounts
+
+Open the package UI from DAppNode. The **landing page** guides you through the entire setup! 🧭
+
+![Landing page](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/ui-landing.png)
+
+### 🦊 Choose Your Wallet
+
+Download and install one of the supported wallets:
+
+- [Ready Wallet](https://www.ready.co/) (Argent)
+- [MetaMask](https://snaps.metamask.io/snap/npm/consensys/starknet-snap/) (Starknet Snap)
+- [Braavos](https://braavos.app/)
+
+### 👛 Create Three Accounts
+
+You need **three Starknet accounts** for security:
+
+- 🏦 **Staker** — Holds your stake (cold wallet recommended)
+- ⚙️ **Operator** — Signs attestations and pays gas (hot wallet)
+- 🎁 **Rewards** — Receives earned rewards
+
+Create them in your wallet as _Standard Accounts_.
 
 ![Ready wallet create account](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/argent-create-account.png)
 
----
+### 💸 Fund Your Accounts
 
-## 2️⃣ Fund and Deploy the Accounts
+- Fund your **staker** account with the required STRK amount (plus extra for gas fees).
+- Fund your **operator** account with a small amount for gas.
 
-- Fund your **staker** and **operator** accounts with the required STRK amount.  
+> 🧪 On Sepolia, you can use the [Starknet Faucet](https://starknet-faucet.vercel.app).
+> 🌉 You can bridge STRK from Ethereum via [StarkGate](https://starkgate.starknet.io/) or swap on a Starknet DEX like [AVNU](https://app.avnu.fi/).
 
-> Remember to add more than the minimum staking amount to cover gas fees.  
-> On Sepolia, you can use the [Starknet Faucet](https://starknet-faucet.vercel.app).  
+### 🔐 Export Your Operator Private Key
 
-- Deploy your **accounts** in Ready Wallet following these steps:  
-![account deploy](https://i.imgur.com/LzwWHl0.gif)
+The staking package needs your **operator** private key for attestations. Export it from your wallet:
 
----
-
-## 3️⃣ Export your operator address private key
-
-The _starknetstaking_ package needs your **operator** address private key to make the _attestations_.  
-You can obtain it from _Ready Wallet_ following these steps:  
 ![export PK](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/export-pk.gif)
 
 ---
 
-## 4️⃣ Approve spending
+## 3️⃣ Connect Your Wallet
 
-1. Go to the block explorer STRK token contract [STRK (Sepolia)](https://sepolia.voyager.online/contract/0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d#writeContract) or [STRK (Mainnet)](https://voyager.online/contract/0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d#writeContract)  
-2. Connect your **staker** Ready Wallet.  
-3. In the implementation section, scroll down to the `approve` function (#19 on Sepolia #22 in Mainnet)  
-4. Click and fill in the data:
-   - **spender** → Starknet Staking Contract [Starknet Addresses](https://docs.starknet.io/resources/chain-info/#staking)  
-   - **amount** → Amount in FRI (1 STRK = `1000000000000000000`)  
-5. Click the **Transact** button.
+1. Open the package UI from DAppNode.
+2. Click **Connect Wallet** in the header 🔗
+3. Select your wallet and approve the connection.
+4. The UI will verify you are on the correct network (Mainnet or Sepolia).
 
-![Voyager approve](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/voyager-approve.png)
+![Connect Wallet](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/ui-connect-wallet.png)
 
----
+Once connected, you'll see the **Dashboard** with your account balances! 🎊
 
-## 5️⃣ Stake STRK
-
-1. Open the [Staking Contract on Voyager (Sepolia)](https://sepolia.voyager.online/contract/0x03745ab04a431fc02871a139be6b93d9260b0ff3e779ad9c8b377183b23109f1#writeContract) or the [Staking Contract on Voyager (Mainnet)](https://voyager.online/contract/0x00ca1702e64c81d9a07b86bd2c540188d92a2c73cf5cc0e508d949015e7e84a7#writeContract).  
-2. Connect your **staker** Ready Wallet.  
-3. In the implementation section, scroll down to the `stake` function (#1)  
-4. Click and fill in the calldata:
-   - **rewards_address** → Your rewards account  
-   - **operational_address** → Your operator account  
-   - **amount** → Amount in FRI (1 STRK = `1000000000000000000`)  
-5. Click the **Transact** button.  
-
-📌 **Staking contract addresses:** [Starknet Docs – Staking](https://docs.starknet.io/resources/chain-info/#staking)
-
-![Voyager write contract stake](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/voyager-stake.png)
+![Dashboard](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/ui-dashboard.png)
 
 ---
 
-## 6️⃣ Install the Starknet Staking Package on Dappnode
+## 4️⃣ Create Your Validator
 
-Now that you’ve staked, you need to set up the validator client on your DAppNode.
+From the Dashboard, click **Create Validator**. The UI handles the full staking process for you! 🪄
 
-1. Open your Dappnode UI.  
-2. Go to the **DAppStore** and search for `starknetstaking`.  
-3. Click **Install**.  
+<img src="https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/ui-create-validator.png" alt="Create Validator" width="500" />
 
-During the installation process, you will need to enter the following information:
+### Step 1: Approve STRK ✍️
 
-- `Operational Address` → The address for the `operator` Account you created via Ready Wallet in step #1  
-- `Private Key` → The private key from your operator account (exported from Ready Wallet in step #3)
+- Enter the amount you want to stake.
+- Click **Approve STRK Allowance** and confirm in your wallet.
 
-![Dappnode](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/dappnode-package.png)
+### Step 2: Stake 🥩
 
-The attestation process will start automatically, and your validator will be live. You can check rewards and more info via the `staker_info_v1` contract in Voyager [Mainnet](https://voyager.online/contract/0x00ca1702e64c81d9a07b86bd2c540188d92a2c73cf5cc0e508d949015e7e84a7#readContract) or [Sepolia](https://sepolia.voyager.online/contract/0x03745Ab04a431fc02871A139be6B93D9260b0Ff3E779AD9c8B377183B23109F1#readContract)
+- Enter your **operator address** and **rewards address**.
+- Click **Confirm Stake** and confirm in your wallet.
 
----
-
-## 🧠 Notes & Tips
-
-- You can **claim rewards** or **increase stake** later from the same Voyager contract UI.  
-- Make sure your validator client runs **24/7** to avoid penalties.  
-- Always test your setup on Sepolia before moving to mainnet.  
+The attestation process starts automatically and your validator will be live! 🟢🎉
 
 ---
 
-**References:**
+## 5️⃣ Manage Your Validator
 
-- [Ready Wallet](https://www.ready.co/)  
-- [Voyager StarkNet Explorer](https://voyager.online/)  
-- [Starkscan Starknet Explorer](https://starkscan.co/)  
-- [Starknet Staking Docs](https://docs.starknet.io/architecture/staking/)  
-- [Juno Full Node](https://github.com/NethermindEth/juno)  
+The Dashboard shows your validator status with real-time data:
+
+- 🟢 **Validator status** — Active, Paused, Exiting, or Exited
+- 💰 **Staked amount** — Total STRK staked
+- 🎁 **Rewards earned** — Accumulated rewards
+
+![Validator](https://github.com/dappnode/DAppNodePackage-starknetstaking-generic/raw/main/images/ui-validator.png)
+
+### 🎮 Available Actions
+
+- 🎁 **Claim Rewards** — Withdraw earned rewards to your rewards account
+- ➕ **Add Stake** — Increase your staked amount (approve + stake flow)
+- 📝 **Change Reward Address** — Update where rewards are sent
+- 🔓 **Unstake** — Initiate the unstaking process (irreversible)
+
+### ⏳ Unstaking Process
+
+Unstaking is a two-phase process:
+
+1. 🚪 **Initiate Unstake** — Start the withdrawal process. This action is irreversible!
+2. ⏰ **Waiting Period** — 7 days on Mainnet / 5 minutes on Sepolia. The UI shows a countdown.
+3. ✅ **Complete Unstake** — Once the waiting period ends, withdraw your staked funds.
+
+---
+
+## 💡 Notes & Tips
+
+- ⏰ Keep your validator client running **24/7** to avoid penalties.
+- 🧪 Always test your setup on **Sepolia** before moving to Mainnet.
+- 🔐 Use separate accounts for staker, operator, and rewards for better security.
+
+---
+
+## 📚 References
+
+- [Ready Wallet](https://www.ready.co/)
+- [Braavos Wallet](https://braavos.app/)
+- [MetaMask Starknet Snap](https://snaps.metamask.io/snap/npm/consensys/starknet-snap/)
+- [Voyager StarkNet Explorer](https://voyager.online/)
+- [Starknet Staking Docs](https://docs.starknet.io/architecture/staking/)
+- [Starknet Chain Info & Contract Addresses](https://docs.starknet.io/resources/chain-info/#staking)
+- [Juno Full Node](https://github.com/NethermindEth/juno)
