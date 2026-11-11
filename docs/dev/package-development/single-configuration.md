@@ -55,6 +55,20 @@ In the `dappnode_package.json`, update fields such as:
 - `name`, `version`, `description`, and `author` to reflect your package.
 - Add relevant `categories`, `architectures`, and exposed services (e.g., API endpoints).
 
+### Declare upstream software
+
+Use `upstream[]` to connect each upstream repository to an explicit compose build argument. The upstream version is separate from the package’s own `version`.
+
+```json
+{
+  "upstream": [
+    { "repo": "ethereum/go-ethereum", "version": "v1.2.3", "arg": "UPSTREAM_VERSION" }
+  ]
+}
+```
+
+Set `build.args.UPSTREAM_VERSION` to `v1.2.3` in every compose service that declares it. See the [manifest reference](../references/manifest.md#upstream) for the full contract.
+
 ### Simplified Dockerfile
 
 Here’s a simplified version of the Dockerfile inside the `geth` directory:

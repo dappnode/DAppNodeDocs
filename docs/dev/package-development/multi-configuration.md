@@ -50,6 +50,14 @@ package_variants/
 
 The contents within each variant directory include the fields that differ from one variant to another. When building a specific variant, such as `testnet`, the data from these variant-specific files is merged with the root-level `dappnode_package.json` and `docker-compose.yml`. This ensures that only the necessary variant-specific changes are applied, while the common configuration remains consistent across all variants.
 
+### Manifest identity and inheritance
+
+The root manifest holds shared fields and omits `name` and `version`. Each variant supplies its own package ENS name and registry version; the merged manifest is validated as the installable package.
+
+Manifest objects merge recursively, scalars are overridden, and arrays merge by index. Shorter variant arrays inherit the root’s trailing entries; an empty array does not clear a root array. For `upstream[]`, retain the same repository at each overlapping position. Do not reorder entries to select a different upstream.
+
+After merging, every `upstream[].arg` must exist in the compose and every service declaring it must match the upstream version. Explicit `mainService`, `chain.serviceName`, `backup[].service` and `globalEnvs[].services` values must name services in the resolved compose.
+
 You can add more variants as needed by creating additional directories and files following this structure.
 
 ### Customize the Avatar
@@ -76,7 +84,7 @@ Example of a variant-specific `dappnode_package.json`:
 
 And the corresponding `docker-compose.yml`:
 
-```json
+```yaml
 version: "3.5"
 services:
   test:

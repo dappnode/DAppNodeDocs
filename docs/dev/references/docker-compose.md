@@ -79,28 +79,37 @@ In the complex example, you'll find:
 - All environment variables (`envs`) defined in the `docker-compose.yml` file will be visible in the package config post-installation. Users can modify these.
 - If the package has a `setup-wizard`, those environment variables not set within it will be hidden by default in the configuration. Users can view these by selecting "Show advanced config".
 
-#### The `UPSTREAM_VERSION` Argument
+#### Upstream build arguments
 
-- The `UPSTREAM_VERSION` argument is mandatory if you wish to leverage GitHub actions that automatically create PRs when there's a new release in the upstream repository.
-- In the Dockerfile, `UPSTREAM_VERSION` is usually declared and used like this:
+Declare an explicit argument for each upstream, such as `UPSTREAM_VERSION`, `GETH_VERSION` or `TEKU_VERSION`. The name is not fixed; it must match `upstream[].arg` exactly. Use a mapping under `build.args`.
 
-  ```dockerfile
-  ARG UPSTREAM_VERSION
-  FROM consensys/teku:$UPSTREAM_VERSION
-  ```
+Manifest excerpt:
 
-:::note
-The `upstreamVersion` and `upstreamRepo` fields need to be defined in the `dappnode_package.json` file for the GitHub actions to work. Here is an example:
-
-```
+```json
 {
-  ...
-  "upstreamVersion": "23.8.0",
-  "upstreamRepo": "ConsenSys/teku",
-  ...
+  "upstream": [
+    { "repo": "ConsenSys/teku", "version": "v4.0.7", "arg": "TEKU_VERSION" }
+  ]
 }
 ```
-:::
+
+Corresponding compose build configuration:
+
+```yaml
+services:
+  beacon-chain:
+    build:
+      context: beacon-chain
+      args:
+        TEKU_VERSION: v4.0.7
+```
+
+```dockerfile
+ARG TEKU_VERSION
+FROM consensys/teku:${TEKU_VERSION}
+```
+
+If several services declare `TEKU_VERSION`, every value must match the manifest version. A digest pin must contain the same version followed by `@sha256:` and 64 hexadecimal characters. The legacy top-level `upstreamRepo`, `upstreamVersion` and `upstreamArg` fields are deprecated; use the [upstream array](manifest.md#upstream).
 
 #### The `EXTRA_OPTS` Environment Variable
 
